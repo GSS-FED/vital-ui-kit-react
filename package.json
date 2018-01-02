@@ -7,12 +7,20 @@
     "build": "babel lib -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-info": "^3.3.3",
+    "@storybook/addon-knobs": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3",
+    "@storybook/addon-notes": "^3.3.3",
+    "@storybook/react": "^3.3.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
