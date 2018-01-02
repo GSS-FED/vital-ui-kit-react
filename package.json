@@ -4,7 +4,10 @@
   "description": "Vital UI Kit for React!",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
