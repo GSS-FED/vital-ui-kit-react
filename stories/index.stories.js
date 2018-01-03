@@ -14,7 +14,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Label } from '../lib/';
+import { Button, Label, ButtonGroup } from '../lib/';
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
@@ -116,6 +116,18 @@ storiesOf('Button', module)
     withInfo('Link style')(
       withNotes('')(() => (
         <Button link>{text('Label', 'Disable Button')}</Button>
+      )),
+    ),
+  )
+  .add(
+    'ButtonGroup',
+    withInfo('Button Group')(
+      withNotes('')(() => (
+        <ButtonGroup>
+          <Button>{text('Label', 'Button')}</Button>
+          <Button>{text('Label', 'Button')}</Button>
+          <Button>{text('Label', 'Button')}</Button>
+        </ButtonGroup>
       )),
     ),
   );
