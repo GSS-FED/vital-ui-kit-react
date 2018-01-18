@@ -20,7 +20,11 @@ storiesOf('Checkbox', module)
     'Checkbox',
     withInfo(`info`)(
       withNotes('This is label')(() => (
-        <Checkbox label={text('Label', 'Label')} />
+        <Checkbox
+          isRound={boolean('Round', false)}
+          isDisabled={boolean('Disable', false)}
+          label={text('Label', 'Label')}
+        />
       )),
     ),
   );
