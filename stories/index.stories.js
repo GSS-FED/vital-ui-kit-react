@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-expressions */
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
+import { injectGlobal } from 'styled-components';
 import {
   withKnobs,
   text,
@@ -16,9 +18,36 @@ import { Welcome } from '@storybook/react/demo';
 
 import { Button, Label, ButtonGroup } from '../lib/';
 
-storiesOf('Welcome', module).add('to Storybook', () => (
-  <Welcome showApp={linkTo('Button')} />
-));
+injectGlobal`
+  @font-face {
+    font-family: 'icomoon';
+    src: url('../lib/assets/fonts/icomoon.ttf');
+  }
+
+  body {
+    font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", "sans-serif", "Microsoft JhengHei", "Heiti TC";
+  }
+`;
+
+
+// storiesOf('Welcome', module).add('to Storybook', () => (
+//   <Welcome showApp={linkTo('Button')} />
+// ));
+
+const props = {
+  nature: select(
+    'Nature',
+    {
+      default: 'Default',
+      primary: 'Primary',
+      success: 'Success',
+      info: 'Info',
+      alarm: 'Alarm',
+      warning: 'Warning',
+    },
+    'default',
+  ),
+};
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -27,18 +56,7 @@ storiesOf('Button', module)
     withInfo('Buttons default style')(
       withNotes('This is note')(() => (
         <Button
-          nature={select(
-            'Nature',
-            {
-              default: 'Default',
-              primary: 'Primary',
-              success: 'Success',
-              info: 'Info',
-              alarm: 'Alarm',
-              warning: 'Warning',
-            },
-            'default',
-          )}
+          {...props}
           size={select(
             'Size',
             {
@@ -59,20 +77,7 @@ storiesOf('Button', module)
     'Flat',
     withInfo('Buttons Flat style')(
       withNotes('')(() => (
-        <Button
-          flat={boolean('Flat', true)}
-          nature={select(
-            'Nature',
-            {
-              default: 'Default',
-              primary: 'Primary',
-              success: 'Success',
-              info: 'Info',
-              alarm: 'Alarm',
-              warning: 'Warning',
-            },
-            'default',
-          )}>
+        <Button flat={boolean('Flat', true)} {...props}>
           {text('Label', 'Flat Button')}
         </Button>
       )),
@@ -82,20 +87,7 @@ storiesOf('Button', module)
     'Light',
     withInfo('Button Light Style')(
       withNotes('')(() => (
-        <Button
-          light={boolean('Light', true)}
-          nature={select(
-            'Nature',
-            {
-              default: 'Default',
-              primary: 'Primary',
-              success: 'Success',
-              info: 'Info',
-              alarm: 'Alarm',
-              warning: 'Warning',
-            },
-            'default',
-          )}>
+        <Button light={boolean('Light', true)} {...props}>
           {text('Label', 'Light Button')}
         </Button>
       )),
