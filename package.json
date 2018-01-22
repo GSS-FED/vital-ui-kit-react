@@ -8,7 +8,7 @@
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
     "prepublish": "npm run build",
-    "storybook": "start-storybook -p 6006 -s ./lib/assets/fonts",
+    "storybook": "yarn install && start-storybook -p 6006 -s ./lib/assets/fonts",
     "build-storybook": "build-storybook"
   },
   "author": "",
