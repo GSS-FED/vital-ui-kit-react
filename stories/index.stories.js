@@ -134,7 +134,12 @@ storiesOf('Button', module)
     'Link',
     withInfo('Link style')(
       withNotes('')(() => (
-        <Button link>{text('Label', 'Disable Button')}</Button>
+        <Button
+          link
+          dark={boolean('Dark', false)}
+          underline={boolean('Underline', false)}>
+          {text('Label', 'Disable Button')}
+        </Button>
       )),
     ),
   )
