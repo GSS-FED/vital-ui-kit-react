@@ -16,7 +16,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Label, ButtonGroup } from '../lib/';
+import { Button, Icon, ButtonGroup } from '../lib/';
 
 injectGlobal`
   @font-face {
@@ -139,6 +139,16 @@ storiesOf('Button', module)
           dark={boolean('Dark', false)}
           underline={boolean('Underline', false)}>
           {text('Label', 'Disable Button')}
+        </Button>
+      )),
+    ),
+  )
+  .add(
+    'Circular style',
+    withInfo('')(
+      withNotes('')(() => (
+        <Button circle={boolean('circle', false)}>
+          <Icon name="facebook" color="#3b5998" />
         </Button>
       )),
     ),
