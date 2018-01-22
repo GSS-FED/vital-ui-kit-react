@@ -24,30 +24,19 @@ injectGlobal`
     src: url('../lib/assets/fonts/icomoon.ttf');
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", "sans-serif", "Microsoft JhengHei", "Heiti TC";
+    font-size: 14px;
   }
 `;
-
 
 // storiesOf('Welcome', module).add('to Storybook', () => (
 //   <Welcome showApp={linkTo('Button')} />
 // ));
-
-const props = {
-  nature: select(
-    'Nature',
-    {
-      default: 'Default',
-      primary: 'Primary',
-      success: 'Success',
-      info: 'Info',
-      alarm: 'Alarm',
-      warning: 'Warning',
-    },
-    'default',
-  ),
-};
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -56,7 +45,18 @@ storiesOf('Button', module)
     withInfo('Buttons default style')(
       withNotes('This is note')(() => (
         <Button
-          {...props}
+          nature={select(
+            'Nature',
+            {
+              default: 'Default',
+              primary: 'Primary',
+              success: 'Success',
+              info: 'Info',
+              alarm: 'Alarm',
+              warning: 'Warning',
+            },
+            'default',
+          )}
           size={select(
             'Size',
             {
@@ -77,7 +77,20 @@ storiesOf('Button', module)
     'Flat',
     withInfo('Buttons Flat style')(
       withNotes('')(() => (
-        <Button flat={boolean('Flat', true)} {...props}>
+        <Button
+          flat={boolean('Flat', true)}
+          nature={select(
+            'Nature',
+            {
+              default: 'Default',
+              primary: 'Primary',
+              success: 'Success',
+              info: 'Info',
+              alarm: 'Alarm',
+              warning: 'Warning',
+            },
+            'default',
+          )}>
           {text('Label', 'Flat Button')}
         </Button>
       )),
@@ -87,7 +100,20 @@ storiesOf('Button', module)
     'Light',
     withInfo('Button Light Style')(
       withNotes('')(() => (
-        <Button light={boolean('Light', true)} {...props}>
+        <Button
+          light={boolean('Light', true)}
+          nature={select(
+            'Nature',
+            {
+              default: 'Default',
+              primary: 'Primary',
+              success: 'Success',
+              info: 'Info',
+              alarm: 'Alarm',
+              warning: 'Warning',
+            },
+            'default',
+          )}>
           {text('Label', 'Light Button')}
         </Button>
       )),
