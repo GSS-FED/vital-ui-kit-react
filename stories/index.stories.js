@@ -28,9 +28,10 @@ injectGlobal`
     box-sizing: border-box;
   }
 
-  body {
+  html {
     font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", "sans-serif", "Microsoft JhengHei", "Heiti TC";
-    font-size: 14px;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
   }
 `;
 
