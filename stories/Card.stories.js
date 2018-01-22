@@ -12,7 +12,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Badge } from '../lib/';
+import { Card, ButtonGroup, Button, Icon } from '../lib/';
 import heroImage from '../lib/assets/img/card-header-pic.png';
 
 const content =
@@ -78,10 +78,49 @@ storiesOf('Card', module)
       withNotes('')(() => (
         <Card width="300px" height="400px">
           <Card.Header image={heroImage} title="Title" />
-          <Card.Container>{content}{content}{content}{content}</Card.Container>
+          <Card.Container>
+            {content}
+            {content}
+            {content}
+            {content}
+          </Card.Container>
           <Card.Footer
             actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}
           />
+        </Card>
+      )),
+    ),
+  )
+  .add(
+    'With Icon',
+    withInfo(`info`)(
+      withNotes('')(() => (
+        <Card width="300px">
+          <Card.Container style={{ 'text-align': 'center' }}>
+            <Icon name="thumbs-up" size="90px" color="#0e86fe" />
+            <div
+              style={{
+                'font-size': '1.25rem',
+                'line-height': '1.5rem',
+                overflow: 'hidden',
+                'white-space': 'nowrap',
+                'text-overflow': 'ellipsis',
+                paddingTop: '1.25rem',
+                width: '100%',
+                color: '#456297',
+              }}>
+              Congrats
+            </div>
+            <div
+              style={{
+                'font-size': '0.93333rem',
+                'line-height': '1.25rem',
+                'padding-top': '10px',
+              }}>
+              Let’s Get Started
+            </div>
+          </Card.Container>
+          <Card.Footer actions={[{ text: 'Confirm', primary: true }]} />
         </Card>
       )),
     ),
