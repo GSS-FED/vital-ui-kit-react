@@ -9,6 +9,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-closing-bracket-location": [0, "tag-aligned"],
     "react/forbid-prop-types": 0,
-    "react/require-default-props": [0, { "forbidDefaultForRequired": true }]
+    "react/require-default-props": [0, { "forbidDefaultForRequired": true }],
+    "flowtype/define-flow-type": 1
   }
 }
