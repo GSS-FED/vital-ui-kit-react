@@ -159,7 +159,7 @@ storiesOf('Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <ButtonGroup>
+        <ButtonGroup> 
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>

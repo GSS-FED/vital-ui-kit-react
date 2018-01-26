@@ -102,11 +102,11 @@ storiesOf('Card', module)
             <Icon name="thumbs-up" size="90px" color="#0e86fe" />
             <div
               style={{
-                'font-size': '1.25rem',
-                'line-height': '1.5rem',
+                'fontSize': '1.25rem',
+                'lineHeight': '1.5rem',
                 overflow: 'hidden',
-                'white-space': 'nowrap',
-                'text-overflow': 'ellipsis',
+                'whiteSpace': 'nowrap',
+                'textOverflow': 'ellipsis',
                 paddingTop: '1.25rem',
                 width: '100%',
                 color: '#456297',
