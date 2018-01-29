@@ -23,6 +23,11 @@ import {
   TextArea,
   StatelessTextArea,
   MultipleInput,
+  Hint,
+  Addon,
+  Icon,
+  Button,
+  ButtonGroup,
 } from '../lib/';
 
 const FormWrapper = styled.div`
@@ -37,28 +42,30 @@ storiesOf('Form', module)
     withInfo(`Info`)(
       withNotes('')(() => (
         <FormWrapper>
-          <FieldInput
-            isRequired
-            label="Username">
+          <FieldInput isRequired label="Username">
             <Input placeholder="Enter your username" />
           </FieldInput>
           <FieldInput isRequired label="Fullname">
-            <MultipleInput
-              firstInput={
-                <Input placeholder="First Name" />
-              }
-              secondInput={
-                <Input placeholder='Last Name' />
-              }
-            />
+            <MultipleInput>
+              <Input placeholder="First Name" />
+              <Input placeholder="Last Name" />
+            </MultipleInput>
           </FieldInput>
-          <FieldInput
-            label="Comment"
-            inline>
-            <TextArea
-              placeholder="Comment here"
-              minRows={3}
-            />
+          <FieldInput isRequired label="Birthday">
+            <MultipleInput>
+              <Input placeholder="Month" />
+              <Input placeholder="Day" />
+              <Input placeholder="Year" />
+            </MultipleInput>
+          </FieldInput>
+          <FieldInput label="Website">
+            <MultipleInput>
+              <Addon>http://</Addon>
+              <Input placeholder="LabelAddon on the left" />
+            </MultipleInput>
+          </FieldInput>
+          <FieldInput label="Comment" inline>
+            <TextArea placeholder="Comment here" minRows={3} />
           </FieldInput>
         </FormWrapper>
       )),
@@ -83,7 +90,79 @@ storiesOf('Form', module)
       )),
     ),
   )
-
+  .add(
+    'Hint',
+    withInfo(`Info`)(
+      withNotes('')(() => (
+        <FormWrapper>
+          <FieldInput label="Username" inline>
+            <Input value="dramsign" />
+            <Hint text="Username is available" success />
+            <Hint text="Example: James Allen" />
+          </FieldInput>
+        </FormWrapper>
+      )),
+    ),
+  )
+  .add(
+    'Multiple & Addon',
+    withInfo(`Info`)(
+      withNotes('')(() => (
+        <FormWrapper>
+          <FieldInput label="Weight" inline>
+            <MultipleInput>
+              <Input placeholder="LabelAddon on the right" />
+              <Addon>kg</Addon>
+            </MultipleInput>
+          </FieldInput>
+          <FieldInput label="Price" inline>
+            <MultipleInput>
+              <Addon>
+                <Icon name="dollar" />
+              </Addon>
+              <Input placeholder="LabelAddon on the both" />
+              <Addon>.00</Addon>
+            </MultipleInput>
+          </FieldInput>
+          <FieldInput label="Button" inline>
+            <MultipleInput>
+              <Input placeholder="LabelAddon on the both" />
+              <Button nature="primary" flat>
+                Search
+              </Button>
+            </MultipleInput>
+          </FieldInput>
+        </FormWrapper>
+      )),
+    ),
+  )
+  .add(
+    'Multiple & Button',
+    withInfo(`Info`)(
+      withNotes('')(() => (
+        <FormWrapper>
+          <FieldInput label="Button" inline>
+            <MultipleInput>
+              <ButtonGroup marginHorizontal="0">
+                <Button>A</Button>
+                <Button>B</Button>
+                <Button>C</Button>
+              </ButtonGroup>
+              <Input placeholder="LabelAddon on the both" />
+            </MultipleInput>
+          </FieldInput>
+          <FieldInput label="Button" inline>
+            <MultipleInput>
+              <Input placeholder="LabelAddon on the both" />
+              <Button nature="primary" flat>
+                Search
+              </Button>
+            </MultipleInput>
+          </FieldInput>
+        </FormWrapper>
+      )),
+    ),
+  );
 
 storiesOf('Form/Input', module)
   .addDecorator(withKnobs)
@@ -99,6 +178,7 @@ storiesOf('Form/Input', module)
           isDisabled={boolean('Disabled', false)}
           isAlarm={boolean('Alarm', false)}
           isWarning={boolean('Warning', false)}
+          icon="plus"
         />
       )),
     ),
