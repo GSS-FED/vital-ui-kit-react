@@ -1,9 +1,9 @@
-image: node:6.9.4
-
-script:
-  - npm install -g surge
-  - npm install
-  - npm run build-storybook
-  - surge storybook-static illegal-number.surge.sh
-only:
-  - master
+storybook:
+    stage: deploy
+    script:
+      - npm install -g surge
+      - npm install
+      - npm run build-storybook
+      - surge storybook-static vital.surge.sh
+    only:
+      - master
