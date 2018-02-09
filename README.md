@@ -4,6 +4,10 @@ Vital UI Kit react storybook
 
 ## Development
 
+`yarn install`
+
+then run storybook
+
 `yarn run storybook`
 
 ## Build
