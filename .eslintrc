@@ -15,6 +15,6 @@
     "react/require-default-props": [0, { "forbidDefaultForRequired": true }],
     "flowtype/define-flow-type": 1,
     "no-use-before-define": 0,
-    "react/sort-comp": 0,
+    "react/sort-comp": 0
   }
 }
