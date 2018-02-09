@@ -23,6 +23,7 @@
     "polished": "^1.9.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-click-outside": "^3.0.0",
     "react-dom": "^16.2.0",
     "recompose": "^0.26.0",
     "styled-components": "^2.4.0",

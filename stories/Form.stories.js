@@ -28,6 +28,7 @@ import {
   Icon,
   Button,
   ButtonGroup,
+  Select,
 } from '../lib/';
 
 const FormWrapper = styled.div`
@@ -178,7 +179,6 @@ storiesOf('Form/Input', module)
           isDisabled={boolean('Disabled', false)}
           isAlarm={boolean('Alarm', false)}
           isWarning={boolean('Warning', false)}
-          icon="plus"
         />
       )),
     ),
@@ -193,6 +193,18 @@ storiesOf('Form/Input', module)
           isAlarm={boolean('Alarm', false)}
           isWarning={boolean('Warning', false)}
         />
+      )),
+    ),
+  )
+  .add(
+    'With Icon',
+    withInfo(`Icon in Left or Right`)(
+      withNotes('insert icon component')(() => (
+        <FormWrapper>
+          <StatelessInput placeholder="Right side icon" icon="search" />
+          <br />
+          <StatelessInput placeholder="Left side icon" icon="search" iconPosition="left" />
+        </FormWrapper>
       )),
     ),
   );
@@ -228,3 +240,28 @@ storiesOf('Form/TextArea', module)
       )),
     ),
   );
+
+storiesOf('Form/Select', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Basic',
+    withInfo(``)(
+      withNotes(`Uncontrolled component`)(() => (
+        <FormWrapper>
+          <Select placeholder="Select One" items={items} />
+        </FormWrapper>
+      )),
+    ),
+  );
+
+const items = [
+  { content: 'All Files', value: 'all' },
+  { content: 'PDF', value: 'pdf' },
+  { content: 'PPT', value: 'ppt' },
+];
+
+const groupItem = [
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+];
