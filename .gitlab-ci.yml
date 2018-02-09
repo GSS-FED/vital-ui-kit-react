@@ -4,6 +4,6 @@ pages:
     - echo 'deploy storybook...'
   artifacts:
     paths:
-    - public
+    - storybook-static
   only:
   - master
