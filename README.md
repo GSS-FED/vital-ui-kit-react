@@ -2,7 +2,7 @@
 
 Vital UI Kit react storybook
 
-[demo](a3964f94ae6259380a1bb90b9311815e)
+[demo](http://illegal-number.surge.sh/)
 
 ## Development
 
