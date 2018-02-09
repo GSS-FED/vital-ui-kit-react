@@ -1,9 +1,9 @@
-pages:
-  stage: deploy
-  script:
-    - echo 'deploy storybook...'
-  artifacts:
-    paths:
-    - storybook-static
-  only:
-  - master
+# pages:
+#   stage: deploy
+#   script:
+#     - echo 'deploy storybook...'
+#   artifacts:
+#     paths:
+#     - storybook-static
+#   only:
+#   - master
