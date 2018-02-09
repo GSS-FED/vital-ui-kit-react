@@ -27,7 +27,6 @@ import {
   Addon,
   Icon,
   Button,
-  ButtonGroup,
   Select,
 } from '../lib/';
 
@@ -144,11 +143,9 @@ storiesOf('Form', module)
         <FormWrapper>
           <FieldInput label="Button" inline>
             <MultipleInput>
-              <ButtonGroup marginHorizontal="0">
-                <Button>A</Button>
-                <Button>B</Button>
-                <Button>C</Button>
-              </ButtonGroup>
+              <Button>A</Button>
+              <Button>B</Button>
+              <Button>C</Button>
               <Input placeholder="LabelAddon on the both" />
             </MultipleInput>
           </FieldInput>
@@ -173,13 +170,15 @@ storiesOf('Form/Input', module)
       visit https://reactjs.org/docs/uncontrolled-components.html for more
     `)(
       withNotes(`Uncontrolled component`)(() => (
-        <StatelessInput
-          placeholder={text('Placeholder', 'Uncontrolled Input')}
-          defaultValue={text('Default Value', 'default')}
-          isDisabled={boolean('Disabled', false)}
-          isAlarm={boolean('Alarm', false)}
-          isWarning={boolean('Warning', false)}
-        />
+        <FormWrapper>
+          <StatelessInput
+            placeholder={text('Placeholder', 'Uncontrolled Input')}
+            defaultValue={text('Default Value', 'default')}
+            isDisabled={boolean('Disabled', false)}
+            isAlarm={boolean('Alarm', false)}
+            isWarning={boolean('Warning', false)}
+          />
+        </FormWrapper>
       )),
     ),
   )
@@ -187,12 +186,14 @@ storiesOf('Form/Input', module)
     'Controlled Input',
     withInfo(`Input handle by React state`)(
       withNotes('This is basic input style')(() => (
-        <Input
-          placeholder={text('Placeholder', 'Controlled Input')}
-          isDisabled={boolean('Disabled', false)}
-          isAlarm={boolean('Alarm', false)}
-          isWarning={boolean('Warning', false)}
-        />
+        <FormWrapper>
+          <Input
+            placeholder={text('Placeholder', 'Controlled Input')}
+            isDisabled={boolean('Disabled', false)}
+            isAlarm={boolean('Alarm', false)}
+            isWarning={boolean('Warning', false)}
+          />
+        </FormWrapper>
       )),
     ),
   )
@@ -203,7 +204,11 @@ storiesOf('Form/Input', module)
         <FormWrapper>
           <StatelessInput placeholder="Right side icon" icon="search" />
           <br />
-          <StatelessInput placeholder="Left side icon" icon="search" iconPosition="left" />
+          <StatelessInput
+            placeholder="Left side icon"
+            icon="search"
+            iconPosition="left"
+          />
         </FormWrapper>
       )),
     ),
