@@ -14,7 +14,18 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pill } from '../lib/';
+import { PillGroups } from '../lib/';
+
+const items = [
+  {
+    text: 'Dashboard',
+    current: true,
+  },
+  { text: 'Projects', badge: '23' },
+  { text: 'Issues', badge: '99+' },
+  { text: 'Reports', badge: '6' },
+  { text: 'User Center' },
+];
 
 storiesOf('Pill', module)
   .addDecorator(withKnobs)
@@ -22,7 +33,7 @@ storiesOf('Pill', module)
     'Basic',
     withInfo(`info`)(
       withNotes('This is pill')(() => (
-        <Pill text="Hihi" badge="99" />
+        <PillGroups vertical={boolean('Vertical', false)} items={items} />
       )),
     ),
   );
