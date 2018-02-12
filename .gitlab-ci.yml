@@ -1,3 +1,5 @@
+image: node:6.9.4
+
 storybook:
     stage: deploy
     script:
