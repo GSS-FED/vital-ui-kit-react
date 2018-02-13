@@ -1,6 +1,9 @@
 [ignore]
+.*/node_modules/styled-components/.*
+.*/storybook-static/*
 
 [include]
+flow/
 
 [libs]
 
