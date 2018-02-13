@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Components-Avatars" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1459.000000, -1854.000000)">
+        <g id="Group-17" transform="translate(1459.000000, 1854.000000)">
+            <g id="Group-14" fill="#7189B6">
+                <rect id="Rectangle-10" x="0" y="0" width="124" height="124"></rect>
+            </g>
+            <circle id="Oval-2" fill="#FFFFFF" cx="62" cy="41" r="18"></circle>
+            <path d="M28,102 C28,82.117749 43.2223185,66 62,66 C80.7776815,66 96,82.117749 96,102 L28,102 Z" id="Combined-Shape-Copy-2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
