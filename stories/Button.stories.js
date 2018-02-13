@@ -21,19 +21,8 @@ import { Welcome } from '@storybook/react/demo';
 import { Button, Icon, ButtonGroup } from '../lib/';
 
 injectGlobal`
-  @font-face {
-    font-family: 'icomoon';
-    src: url('../lib/assets/fonts/icomoon.ttf');
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", "sans-serif", "Microsoft JhengHei", "Heiti TC";
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
+  #root {
+    padding: 20px;
   }
 `;
 
@@ -159,7 +148,7 @@ storiesOf('Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <ButtonGroup> 
+        <ButtonGroup>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
