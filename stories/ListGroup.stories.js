@@ -59,6 +59,15 @@ const itemsWithChildren = [
       },
     ],
   },
+  {
+    content: 'Item 03',
+    children: [
+      {
+        content: 'SubItem 01',
+        badge: '99+',
+      },
+    ],
+  },
 ];
 
 const Display = styled.div`
