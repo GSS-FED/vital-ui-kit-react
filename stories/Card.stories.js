@@ -98,7 +98,7 @@ storiesOf('Card', module)
     withInfo(`info`)(
       withNotes('')(() => (
         <Card width="300px">
-          <Card.Container style={{ 'text-align': 'center' }}>
+          <Card.Container style={{ 'textAlign': 'center' }}>
             <Icon name="thumbs-up" size="90" color="#0e86fe" />
             <div
               style={{
@@ -107,7 +107,7 @@ storiesOf('Card', module)
                 overflow: 'hidden',
                 'whiteSpace': 'nowrap',
                 'textOverflow': 'ellipsis',
-                paddingTop: '1.25rem',
+                'paddingTop': '1.25rem',
                 width: '100%',
                 color: '#456297',
               }}>
@@ -115,9 +115,9 @@ storiesOf('Card', module)
             </div>
             <div
               style={{
-                'font-size': '0.93333rem',
-                'line-height': '1.25rem',
-                'padding-top': '10px',
+                'fontSize': '0.93333rem',
+                'lineHeight': '1.25rem',
+                'paddingTop': '10px',
               }}>
               Let’s Get Started
             </div>
