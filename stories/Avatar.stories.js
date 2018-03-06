@@ -23,9 +23,9 @@ storiesOf('Avatar', module)
     withInfo(`info`)(
       withNotes('This is Avatar')(() => (
         <Avatar
-          badge={text('Badge', '99+')}
+          badge={text('badge', '99+')}
           size={select(
-            'Size',
+            'size',
             {
               xsmall: 'xsmall',
               small: 'small',
@@ -35,7 +35,17 @@ storiesOf('Avatar', module)
             },
             'medium',
           )}
-          round={boolean('Round', false)}
+          gender={select(
+            'gender',
+            {
+              unknown: null,
+              male: 'male',
+              female: 'female',
+            },
+            'unknown',
+          )}
+          round={boolean('round', false)}
+          outline={boolean('outline', false)}
         />
       )),
     ),
