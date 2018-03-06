@@ -99,7 +99,7 @@ storiesOf('Card', module)
       withNotes('')(() => (
         <Card width="300px">
           <Card.Container style={{ 'text-align': 'center' }}>
-            <Icon name="thumbs-up" size="90px" color="#0e86fe" />
+            <Icon name="thumbs-up" size="90" color="#0e86fe" />
             <div
               style={{
                 'fontSize': '1.25rem',
