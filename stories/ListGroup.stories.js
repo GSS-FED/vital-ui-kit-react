@@ -70,6 +70,17 @@ const itemsWithChildren = [
   },
 ];
 
+const itemsWithContent = [
+  {
+    content: 'Collapse 01',
+    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+  },
+  {
+    content: 'Collapse 02',
+    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+  },
+]
+
 const Display = styled.div`
   padding: 20px;
 `;
@@ -97,6 +108,20 @@ storiesOf('ListGroup', module)
           <ListGroup
             items={itemsWithChildren}
             themed={select('Themed', { light: 'light', dark: 'dark' })}
+          />
+        </Display>
+      )),
+    ),
+  )
+  .add(
+    'Collapse',
+    withInfo(`info`)(
+      withNotes('This is Collapse')(() => (
+        <Display>
+          <ListGroup
+            items={itemsWithContent}
+            themed={select('themed', { light: 'light', dark: 'dark' })}
+            border={boolean('border', false)}
           />
         </Display>
       )),
