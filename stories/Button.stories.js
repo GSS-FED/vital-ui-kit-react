@@ -139,7 +139,7 @@ storiesOf('Button', module)
     withInfo('')(
       withNotes('')(() => (
         <Button circle={boolean('circle', false)}>
-          <Icon name="facebook" color="#3b5998" />
+          <Icon name="plus" color="#3b5998" />
         </Button>
       )),
     ),
