@@ -1,6 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
+import { setOptions } from '@storybook/addon-options';
 
 import Theme from '../lib/styles/colors';
 import { ThemeProvider } from 'styled-components';
@@ -25,6 +26,14 @@ setDefaults({
     }
   }),
 });
+
+setOptions({
+  name: 'Vital UI Kit React',
+  addonPanelInRight: false,
+  sortStoriesByKind: true,
+  sidebarAnimations: false,
+});
+
 
 addDecorator(story => <ThemeProvider theme={Theme}>{story()}</ThemeProvider>);
 
