@@ -29,6 +29,7 @@ setDefaults({
 
 setOptions({
   name: 'Vital UI Kit React',
+  url: '#',
   addonPanelInRight: false,
   sortStoriesByKind: true,
   sidebarAnimations: false,
