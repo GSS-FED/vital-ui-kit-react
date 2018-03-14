@@ -18,6 +18,7 @@
   "dependencies": {
     "polished": "^1.9.2",
     "prop-types": "^15.6.1",
+    "rc-trigger": "^2.3.4",
     "react": "^16.2.0",
     "react-click-outside": "^3.0.1",
     "react-dom": "^16.2.0",

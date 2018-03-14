@@ -45,6 +45,7 @@ storiesOf('Slider', module)
             'medium'
           )}
           disabled={boolean('disabled', false)}
+          hasButton={boolean('hasButton', false)}
           value={0}
           max={number('max', 100)}
           min={number('min', 0)}

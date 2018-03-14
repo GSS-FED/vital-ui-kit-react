@@ -11,30 +11,31 @@ import {
   text,
   boolean,
   number,
-  select,
+  select
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { PillGroups } from '../lib/';
+import { ProgressBar } from '../lib/';
 
-const items = [
-  {
-    text: 'Dashboard',
-    current: true,
-  },
-  { text: 'Projects', badge: '23' },
-  { text: 'Issues', badge: '99+' },
-  { text: 'Reports', badge: '6' },
-  { text: 'User Center' },
-];
-
-storiesOf('Pill', module)
+storiesOf('ProgressBar', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(`info`)(
       withNotes('This is pill')(() => (
-        <PillGroups vertical={boolean('Vertical', false)} items={items} />
-      )),
-    ),
+        <ProgressBar
+          value={number('value', 60)}
+          size={select(
+            'size',
+            { small: 'small', medium: 'medium', large: 'large' },
+            'medium'
+          )}
+          alarm={boolean('alarm', false)}
+          warning={boolean('warning', false)}
+          success={boolean('succes', false)}
+          showStatus={boolean('showStatus', true)}
+          textLabel={text('textLabel', 'File uploading')}
+        />
+      ))
+    )
   );
