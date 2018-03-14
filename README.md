@@ -18,5 +18,7 @@ then run storybook
 
 ## RoadMap
 
-- Slider
-- Tooltip
+v0.0.2
+- Grid
+- Windows
+- Calendar

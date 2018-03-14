@@ -1,6 +1,6 @@
 {
   "name": "vital-ui-kit-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vital UI Kit for React!",
   "main": "build/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "storybook": "yarn && start-storybook -p 6006 -s ./lib/assets",
     "build-storybook": "build-storybook",
     "surge": "surge storybook-static http://vital.surge.sh/",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "author": "",
   "license": "ISC",
