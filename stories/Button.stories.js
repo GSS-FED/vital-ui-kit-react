@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 
@@ -138,8 +139,8 @@ storiesOf('Button', module)
     'Circular style',
     withInfo('')(
       withNotes('')(() => (
-        <Button circle={boolean('circle', false)}>
-          <Icon name="plus" color="#3b5998" />
+        <Button circle={boolean('circle', true)}>
+          <Icon className="icon-plus" color="#3b5998" />
         </Button>
       )),
     ),

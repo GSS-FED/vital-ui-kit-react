@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -118,7 +119,7 @@ storiesOf('Form', module)
           <FieldInput label="Price" inline>
             <MultipleInput>
               <Addon>
-                <Icon name="dollar" />
+                <Icon className="icon-dollar" />
               </Addon>
               <Input placeholder="LabelAddon on the both" />
               <Addon>.00</Addon>
@@ -202,11 +203,11 @@ storiesOf('Form/Input', module)
     withInfo(`Icon in Left or Right`)(
       withNotes('insert icon component')(() => (
         <FormWrapper>
-          <StatelessInput placeholder="Right side icon" icon="search" />
+          <StatelessInput placeholder="Right side icon" icon="icon-search" />
           <br />
           <StatelessInput
             placeholder="Left side icon"
-            icon="search"
+            icon="icon-search"
             iconPosition="left"
           />
         </FormWrapper>
