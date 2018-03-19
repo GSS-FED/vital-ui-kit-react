@@ -1,35 +1,72 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
-const Root = styled.nav`
+import { Button as ButtonBase } from '../Button';
+import Icon from '../Icon/';
+
+const Root = styled.ul`
   font-size: 0;
 `;
 
-const ListWrapper = styled.ul``;
-
-const ListItem = styled.li`
+const Button = styled(ButtonBase)`
   font-size: 0.875rem;
+`;
+
+const ListWrapper = styled.li`
   display: inline-block;
   vertical-align: middle;
+  font-size: 0.875rem;
 `;
 
-const Link = styled.a`
-      display: block;
-    padding: 0.53rem 0.8rem;
-    border-right: 0;
-    transition: all 0.2s ease;
-    color: #456297;
-    border-radius: 4px;
-    margin: 0 2px;
-`;
+type Props = {
+  /** total page size */
+  pageSize: number,
+  /** current active page size */
+  current: number
+};
 
-const Pagination = () => (
-  <Root>
-    <ListWrapper>
-      <ListItem>
-        <Link href="#">yoyo</Link>
-      </ListItem>
+function Item({
+  children,
+  selected,
+  ...props
+}: {
+  children: React.Node,
+  selected: boolean
+}) {
+  return (
+    <ListWrapper {...props}>
+      <Button subtle selected={selected}>
+        {children}
+      </Button>
     </ListWrapper>
+  );
+}
+
+const Pagination = ({ pageSize, current }: Props) => (
+  <Root>
+    <Item>First</Item>
+    <Item>
+      <Icon
+        style={{ marginRight: '5px' }}
+        className="icon-chevron-left"
+        size="12"
+      />
+      Prev
+    </Item>
+    {[...Array(pageSize).keys()].map(size => (
+      <Item selected={size + 1 === current} key={size}>
+        {size + 1}
+      </Item>
+    ))}
+    <Item>
+      Next
+      <Icon
+        style={{ marginLeft: '5px' }}
+        className="icon-chevron-right"
+        size="12"
+      />
+    </Item>
+    <Item>Last</Item>
   </Root>
 );
 

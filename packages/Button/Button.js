@@ -15,11 +15,13 @@ type Props = {
   nature?: nature,
   default?: boolean,
   flat?: boolean,
+  subtle?: boolean,
   light?: boolean,
   link?: boolean,
   size?: size,
   theme?: any,
   circle?: boolean,
+  selected?: boolean,
 }
 
 const Button = ({ children, onClick, ...props }: Props) => (
@@ -38,6 +40,8 @@ Button.defaultProps = {
   light: false,
   flat: false,
   link: false,
+  subtle: false,
+  selected: false,
   onClick: () => {},
 };
 

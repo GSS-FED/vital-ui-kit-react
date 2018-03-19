@@ -71,7 +71,7 @@ storiesOf('Button', module)
     withInfo('Buttons Flat style')(
       withNotes('')(() => (
         <Button
-          flat={boolean('Flat', true)}
+          flat={boolean('flat', true)}
           nature={select(
             'Nature',
             {
@@ -130,7 +130,19 @@ storiesOf('Button', module)
           link
           dark={boolean('Dark', false)}
           underline={boolean('Underline', false)}>
-          {text('Label', 'Disable Button')}
+          {text('Label', 'Link Button')}
+        </Button>
+      )),
+    ),
+  )
+  .add(
+    'Subtle',
+    withInfo('subtle style')(
+      withNotes('')(() => (
+        <Button
+          subtle
+          >
+          {text('Label', 'Subtle Button')}
         </Button>
       )),
     ),

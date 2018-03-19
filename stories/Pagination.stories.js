@@ -36,6 +36,8 @@ storiesOf('Pagination', module)
     withInfo(`info`)(
       withNotes('This is Pagination')(() => (
         <Pagination
+          pageSize={5}
+          current={3}
         />
       ))
     )

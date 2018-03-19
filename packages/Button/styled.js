@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import is from 'styled-is';
 import { darken, lighten } from 'polished';
 
 import { Styles } from '../Base/';
@@ -37,52 +36,55 @@ const ButtonElement = styled.button`
     background: ${colors.primaryList[4]};
   }
 
-  ${is('flat')`
-   background: ${props =>
-     props.nature === 'default'
+  ${({ subtle, selected }) => subtle &&`
+    background: ${selected ? colors.primaryList4 : 'transparent'};
+    color: ${colors.primaryList7};
+    border: 1px solid transparent;
+
+    &:hover {
+      background: ${colors.primaryList[2]};
+    }
+  `};
+
+  ${props => props.flat &&`
+   background: ${props.nature === 'default'
        ? colors.primaryList[1]
        : props.theme.Button[props.nature].color};
-   color: ${props =>
-     props.nature === 'default'
+   color: ${props.nature === 'default'
        ? props.theme.Button.default.color
        : colors.white};
-   border-color: ${props =>
-     props.nature === 'default'
+   border-color: ${props.nature === 'default'
        ? colors.primaryList[1]
        : props.theme.Button[props.nature].color};
 
    &:hover {
-     background: ${props =>
-       props.nature === 'default'
+     background: ${props.nature === 'default'
          ? colors.primaryList[2]
          : lighten(0.1, props.theme.Button[props.nature].color)};
-     border-color: ${props =>
-       props.nature === 'default'
+     border-color: ${props.nature === 'default'
          ? colors.primaryList[2]
          : lighten(0.1, props.theme.Button[props.nature].color)};
    }
    &:active {
-     background: ${props =>
-       props.nature === 'default'
+     background: ${props.nature === 'default'
          ? colors.primaryList[4]
          : darken(0.12, props.theme.Button[props.nature].color)};
-     border-color: ${props =>
-       props.nature === 'default'
+     border-color: ${props.nature === 'default'
          ? colors.primaryList[4]
          : darken(0.12, props.theme.Button[props.nature].color)};
    }
   `};
 
-  ${is('light')`
+  ${props => props.light &&`
    background: ${colors.white};
-   color: ${props => props.theme.Button[props.nature].color};
+   color: ${props.theme.Button[props.nature].color};
 
    &:hover {
      background: ${colors.primaryList[2]};
    }
   `}
 
-  ${is('link')`
+  ${({ link }) => link &&`
    background: transparent;
    color: ${colors.primary};
    border: 1px solid transparent;
@@ -92,7 +94,7 @@ const ButtonElement = styled.button`
      color: ${lighten(0.1, colors.primary)};
    }`}
 
-   ${is('link', 'dark')`
+   ${({ link, dark }) => (link && dark) &&`
       color: ${colors.primaryList[6]};
 
     &:hover {
@@ -100,13 +102,13 @@ const ButtonElement = styled.button`
     }
    `}
 
-   ${is('underline')`
+   ${({ underline }) => underline &&`
       &:hover {
         text-decoration: underline;
       }
    `}
 
-   ${is('circle')`
+   ${({ circle }) => circle &&`
       padding: 0;
       border-radius: 100%;
       width: 2.066rem;
