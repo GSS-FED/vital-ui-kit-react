@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import styled from 'styled-components';
@@ -15,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Collapse } from '../lib/';
+import { Collapse } from '../packages/';
 
 const Display = styled.div`
   padding: 20px;

@@ -19,7 +19,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon, ButtonGroup } from '../lib/';
+import { Button, Icon, ButtonGroup } from '../packages/';
 
 injectGlobal`
   #root {

@@ -3,8 +3,10 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import Theme from '../lib/styles/colors';
+import Theme from '../packages/Base/styles/colors';
 import { ThemeProvider } from 'styled-components';
+
+import '../packages/Base/styles/global.css'
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);

@@ -15,8 +15,8 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Icon } from '../lib/';
-import heroImage from '../lib/assets/img/card-header-pic.png';
+import { Card, ButtonGroup, Button, Icon } from '../packages/';
+import heroImage from '../assets/img/card-header-pic.png';
 
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';

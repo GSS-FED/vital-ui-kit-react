@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { PillGroups } from '../lib/';
+import { PillGroups } from '../packages/';
 
 const items = [
   {

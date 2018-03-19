@@ -18,7 +18,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 
 import LoadData from './LoadData';
-import { Table, TableCaption as Caption, TableColumn as Column } from '../lib/';
+import { Table, TableCaption as Caption, TableColumn as Column } from '../packages/';
 
 const sample = [
   {
