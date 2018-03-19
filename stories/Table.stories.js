@@ -18,7 +18,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 
 import LoadData from './LoadData';
-import { Table, TableCaption as Caption, TableColumn as Column } from '../lib/';
+import { Table, TableCaption as Caption, TableColumn as Column, TableHeader as Header } from '../packages/';
 
 const sample = [
   {
@@ -55,6 +55,7 @@ storiesOf('Table', module)
           hasHightlight={boolean('hasHightlight', true)}
           data={sample}
           caption={<Caption>Caption</Caption>}
+          renderHeader={props => <Header {...props} />}
         >
           <Column title="Name" field="name" className="test" />
           <Column title="Age" field="age" className="test2" />
