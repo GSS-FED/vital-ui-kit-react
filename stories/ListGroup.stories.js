@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import styled from 'styled-components';
@@ -108,20 +109,6 @@ storiesOf('ListGroup', module)
           <ListGroup
             items={itemsWithChildren}
             themed={select('Themed', { light: 'light', dark: 'dark' })}
-          />
-        </Display>
-      )),
-    ),
-  )
-  .add(
-    'Collapse',
-    withInfo(`info`)(
-      withNotes('This is Collapse')(() => (
-        <Display>
-          <ListGroup
-            items={itemsWithContent}
-            themed={select('themed', { light: 'light', dark: 'dark' })}
-            border={boolean('border', false)}
           />
         </Display>
       )),

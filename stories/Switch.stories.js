@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
@@ -34,7 +35,7 @@ storiesOf('Switch', module)
     withInfo(`info`)(
       withNotes('This is switch')(() => (
         <Switch
-          iconBtn="wifi"
+          iconBtn="icon-wifi"
           isDisabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
@@ -46,8 +47,8 @@ storiesOf('Switch', module)
     withInfo(`info`)(
       withNotes('This is switch')(() => (
         <Switch
-          iconLabelFront="wifi"
-          iconLabelBack="wifi"
+          iconLabelFront="icon-wifi"
+          iconLabelBack="icon-wifi"
           isDisabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
