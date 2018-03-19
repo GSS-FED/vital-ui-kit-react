@@ -5,9 +5,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import { rgba } from 'polished';
 
 import Icon from '../Icon/';
-import * as colors from '../Base/styles/colors';
+import { Styles } from '../Base';
 
-// const { colors } = Styles;
+const { colors } = Styles;
 
 const Root = styled.label`
   font-size: 15px;

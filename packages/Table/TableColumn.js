@@ -7,6 +7,8 @@ type Props = {
   className?: string
 };
 
-const TableColumn = ({ title, field, className }: Props) => null;
+function TableColumn(props: Props) {
+  return null
+};
 
 export default TableColumn;

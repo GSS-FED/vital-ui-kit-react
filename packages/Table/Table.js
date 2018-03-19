@@ -1,10 +1,10 @@
 // @flow
 
-import React, { type Node, Component } from 'react';
+import * as React from 'react';
 
 import { StyledTable } from './styled';
-import Caption from './Caption';
-
+import Caption from './TableCaption';
+import Header from './TableHeader';
 
 type State = {
   headers: Array<string>,
@@ -13,21 +13,23 @@ type State = {
 
 type Props = {
   data: Array<Object>,
-  children: Node,
-  caption: Node,
+  children: React.Node,
+  caption: React.Node,
   textAlign?: 'left' | 'center' | 'right',
   hasHorizontalBorder?: boolean,
   hasVerticalBorder?: boolean,
   isStriped?: boolean,
   hasHightlight?: boolean,
-  isResponsive?: boolean
+  isResponsive?: boolean,
+  renderHeader?: (props: State) => React.Element<HTMLTableHeaderCellElement>
 };
 
-class Table extends Component<Props, State> {
+class Table extends React.Component<Props, State> {
   static defaultProps = {
     isResponsive: false,
     hasHightLight: true,
-  }
+    headers: null
+  };
 
   state = {
     headers: Object.keys(this.props.data[0]),
@@ -75,6 +77,18 @@ class Table extends Component<Props, State> {
     });
   };
 
+  renderHeader = () => {
+    const props = {
+      columnProps: this.state.columnProps,
+      headers: this.state.headers
+    };
+    return this.props.renderHeader ? (
+      this.props.renderHeader(props)
+    ) : (
+      <Header {...props} />
+    );
+  };
+
   render() {
     // TODO: Find why rerender twice at start
     // console.log('rerender');
@@ -88,24 +102,7 @@ class Table extends Component<Props, State> {
         textAlign={this.props.textAlign}
       >
         {this.props.caption && this.renderCaption()}
-        {/* TODO: define header components */}
-        <thead>
-          <tr>
-            {this.state.headers.map((title, i) => {
-              const props = this.state.columnProps.find(
-                column => title === column.field
-              );
-              if (props) {
-                return (
-                  <th key={title || i} className={props.className}>
-                    {props.title}
-                  </th>
-                );
-              }
-              return <th key={title || i}>{title}</th>;
-            })}
-          </tr>
-        </thead>
+        {this.renderHeader()}
         <tbody>
           {this.props.data.map((dataset, i) => {
             const datamap = new Map(Object.entries(dataset));

@@ -147,3 +147,13 @@
    font-weight: normal;
    margin-top: 1.125em;
    margin-bottom: 1.125em; }
+
+   a {
+    color: #0E86FE;
+    text-decoration: none; }
+    a:hover {
+      color: #419FFE;
+      text-decoration: underline; }
+    a:active {
+      color: #0E86FE;
+      text-decoration: underline; }

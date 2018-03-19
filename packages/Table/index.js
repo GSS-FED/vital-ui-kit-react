@@ -1,5 +1,6 @@
 import Table from './Table';
-import TableColumn from './Column';
-import TableCaption from './Caption';
+import TableColumn from './TableColumn';
+import TableCaption from './TableCaption';
+import TableHeader from './TableHeader';
 
-export { Table, TableColumn, TableCaption };
+export { Table, TableColumn, TableCaption, TableHeader };
