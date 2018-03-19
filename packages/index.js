@@ -1,8 +1,9 @@
 // @flow
 
+import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
-import Badge from './Badge';
 import { CheckboxGroup, Checkbox } from './Checkbox';
+import Badge from './Badge';
 import Card from './Card';
 import Icon from './Icon';
 import { Radio, RadioGroup } from './Radio/';
@@ -19,20 +20,19 @@ import {
   StatelessTextArea
 } from './Form/';
 import Select from './Select/';
-import { Pill, PillsGroup } from './Pill';
-import Avatar from './Avatar';
-import ListGroup from './ListGroup/';
 import Collapse from './Collapse/';
-import Slider from './Slider/';
-import Tooltip from './/Tooltip/';
+import ListGroup from './ListGroup/';
+import { Pill, PillsGroup } from './Pill';
+import Slider from './Slider';
+import Tooltip from './Tooltip/';
 import ProgressBar from './ProgressBar/';
 import { Table, TableCaption, TableColumn } from './Table';
 
 export {
   Avatar,
   Button,
-  Checkbox,
   ButtonGroup,
+  Checkbox,
   CheckboxGroup,
   Card,
   Badge,
@@ -50,10 +50,10 @@ export {
   Hint,
   Addon,
   Select,
+  Collapse,
+  ListGroup,
   Pill,
   PillsGroup,
-  ListGroup,
-  Collapse,
   Slider,
   Tooltip,
   ProgressBar,

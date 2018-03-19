@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ButtonBase from '../Button';
+import { Button as ButtonBase } from '../Button';
 import constants from './constants';
 
 const Root = styled.div`
