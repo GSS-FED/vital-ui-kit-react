@@ -26,6 +26,7 @@ const sample = [
     age: 30,
     gender: 'Female',
     Job: 'Front-end',
+    test: '2'
   },
   {
     name: 'Oliver',
@@ -48,6 +49,10 @@ storiesOf('Table', module)
       withNotes('This is slider')(() => (
         <Table
           textAlign={select('textAlign', {left: 'left', center: 'center' ,right: 'right'}, 'left')}
+          hasHorizontalBorder={boolean('hasHorizontalBorder', false)}
+          hasVerticalBorder={boolean('hasVerticalBorder', false)}
+          isStriped={boolean('isStriped', false)}
+          hasHightlight={boolean('hasHightlight', true)}
           data={sample}
           caption={<Caption>Caption</Caption>}
         >

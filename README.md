@@ -19,6 +19,6 @@ then run storybook
 ## RoadMap
 
 v0.0.2
-- Grid
+- Table(pag, checkbox, input, header, )
 - Windows
 - Calendar
