@@ -1,7 +1,7 @@
 // @flow
-import { Styles } from '../Base';
+import * as colors from '../Base/styles/colors';
 
-const { colors } = Styles;
+// const { colors } = Styles;
 
 const buttonSizes = {
   xsmall: {

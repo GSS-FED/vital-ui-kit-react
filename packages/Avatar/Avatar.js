@@ -3,7 +3,7 @@
 import React, { type Node } from 'react';
 import styled from 'styled-components';
 
-import { AvatarBadge } from './';
+import AvatarBadge from './AvatarBadge';
 import { avatarSizes } from './constants';
 import DEFAULT_AVATAR from '../../assets/img/avatar/default-avatar.svg';
 import DEFAULT_AVATAR_OUTLINE from '../../assets/img/avatar/default-avatar-o.svg';

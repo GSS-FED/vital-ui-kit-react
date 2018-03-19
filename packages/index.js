@@ -1,11 +1,11 @@
 // @flow
 
-import Button, { ButtonGroup } from './Button';
+import { ButtonGroup, Button } from './Button';
 import Badge from './Badge';
-import Checkbox, { CheckboxGroup } from './Checkbox';
+import { CheckboxGroup, Checkbox } from './Checkbox';
 import Card from './Card';
 import Icon from './Icon';
-import RadioGroup, { Radio } from './Radio/';
+import { Radio, RadioGroup } from './Radio/';
 import Switch from './Switch';
 import {
   Input,
@@ -19,8 +19,8 @@ import {
   StatelessTextArea
 } from './Form/';
 import Select from './Select/';
-import PillGroups, { Pill } from './Pill';
-import Avatar, { AvatarBadge } from './Avatar';
+import { Pill, PillsGroup } from './Pill';
+import Avatar from './Avatar';
 import ListGroup from './ListGroup/';
 import Collapse from './Collapse/';
 import Slider from './Slider/';
@@ -30,7 +30,6 @@ import { Table, TableCaption, TableColumn } from './Table';
 
 export {
   Avatar,
-  AvatarBadge,
   Button,
   Checkbox,
   ButtonGroup,
@@ -52,7 +51,7 @@ export {
   Addon,
   Select,
   Pill,
-  PillGroups,
+  PillsGroup,
   ListGroup,
   Collapse,
   Slider,

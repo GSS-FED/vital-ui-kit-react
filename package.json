@@ -4,9 +4,9 @@
   "description": "Vital UI Kit for React!",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel lib -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
+    "build": "babel packages -d build",
+    "lint": "eslint packages/**; exit 0",
+    "lint:watch": "esw -w packages/**",
     "prepublish": "npm run build",
     "storybook": "yarn && start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook",
