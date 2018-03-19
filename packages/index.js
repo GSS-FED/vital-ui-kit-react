@@ -26,7 +26,8 @@ import { Pill, PillsGroup } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip/';
 import ProgressBar from './ProgressBar/';
-import { Table, TableCaption, TableColumn } from './Table';
+import { Table, TableCaption, TableColumn, TableHeader } from './Table';
+import Pagination from './Pagination/';
 
 export {
   Avatar,
@@ -59,5 +60,7 @@ export {
   ProgressBar,
   Table,
   TableCaption,
-  TableColumn
+  TableColumn,
+  TableHeader,
+  Pagination
 };
