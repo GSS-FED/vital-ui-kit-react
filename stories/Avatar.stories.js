@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
@@ -14,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Avatar, AvatarBadge } from '../lib/';
+import { Avatar } from '../packages/';
 
 storiesOf('Avatar', module)
   .addDecorator(withKnobs)
@@ -23,9 +24,9 @@ storiesOf('Avatar', module)
     withInfo(`info`)(
       withNotes('This is Avatar')(() => (
         <Avatar
-          badge={text('Badge', '99+')}
+          badge={text('badge', '99+')}
           size={select(
-            'Size',
+            'size',
             {
               xsmall: 'xsmall',
               small: 'small',
@@ -35,7 +36,17 @@ storiesOf('Avatar', module)
             },
             'medium',
           )}
-          round={boolean('Round', false)}
+          gender={select(
+            'gender',
+            {
+              unknown: null,
+              male: 'male',
+              female: 'female',
+            },
+            'unknown',
+          )}
+          round={boolean('round', false)}
+          outline={boolean('outline', false)}
         />
       )),
     ),

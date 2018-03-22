@@ -16,3 +16,9 @@ then run storybook
 
 `yarn run build-storybook`
 
+## RoadMap
+
+v0.0.2
+- Table(pag, checkbox, input, header, )
+- Windows
+- Calendar

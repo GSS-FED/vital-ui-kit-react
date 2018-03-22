@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
@@ -14,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { PillGroups } from '../lib/';
+import { PillsGroup } from '../packages/';
 
 const items = [
   {
@@ -33,7 +34,7 @@ storiesOf('Pill', module)
     'Basic',
     withInfo(`info`)(
       withNotes('This is pill')(() => (
-        <PillGroups vertical={boolean('Vertical', false)} items={items} />
+        <PillsGroup vertical={boolean('Vertical', false)} items={items} />
       )),
     ),
   );
