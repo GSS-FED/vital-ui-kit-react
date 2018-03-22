@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
@@ -14,8 +15,8 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Icon } from '../lib/';
-import heroImage from '../lib/assets/img/card-header-pic.png';
+import { Card, ButtonGroup, Button, Icon } from '../packages/';
+import heroImage from '../assets/img/card-header-pic.png';
 
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';
@@ -98,8 +99,8 @@ storiesOf('Card', module)
     withInfo(`info`)(
       withNotes('')(() => (
         <Card width="300px">
-          <Card.Container style={{ 'text-align': 'center' }}>
-            <Icon name="thumbs-up" size="90px" color="#0e86fe" />
+          <Card.Container style={{ 'textAlign': 'center' }}>
+            <Icon className="icon-thumbs-up" size="90" color="#0e86fe" />
             <div
               style={{
                 'fontSize': '1.25rem',
@@ -107,7 +108,7 @@ storiesOf('Card', module)
                 overflow: 'hidden',
                 'whiteSpace': 'nowrap',
                 'textOverflow': 'ellipsis',
-                paddingTop: '1.25rem',
+                'paddingTop': '1.25rem',
                 width: '100%',
                 color: '#456297',
               }}>
@@ -115,9 +116,9 @@ storiesOf('Card', module)
             </div>
             <div
               style={{
-                'font-size': '0.93333rem',
-                'line-height': '1.25rem',
-                'padding-top': '10px',
+                'fontSize': '0.93333rem',
+                'lineHeight': '1.25rem',
+                'paddingTop': '10px',
               }}>
               Let’s Get Started
             </div>

@@ -1,9 +1,12 @@
 import { configure, addDecorator } from '@storybook/react';
 import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
+import { setOptions } from '@storybook/addon-options';
 
-import Theme from '../lib/styles/colors';
+import Theme from '../packages/Base/styles/colors';
 import { ThemeProvider } from 'styled-components';
+
+import '../packages/Base/styles/global.css'
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);
@@ -25,6 +28,15 @@ setDefaults({
     }
   }),
 });
+
+setOptions({
+  name: 'Vital UI Kit React',
+  url: '#',
+  addonPanelInRight: false,
+  sortStoriesByKind: true,
+  sidebarAnimations: false,
+});
+
 
 addDecorator(story => <ThemeProvider theme={Theme}>{story()}</ThemeProvider>);
 

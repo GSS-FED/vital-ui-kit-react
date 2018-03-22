@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
@@ -14,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { RadioGroup } from '../lib/';
+import { RadioGroup } from '../packages/';
 
 const items = [
   { name: 'color', value: 'red', label: 'Red' },

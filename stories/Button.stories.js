@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-unused-vars */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
 
@@ -18,22 +19,11 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon, ButtonGroup } from '../lib/';
+import { Button, Icon, ButtonGroup } from '../packages/';
 
 injectGlobal`
-  @font-face {
-    font-family: 'icomoon';
-    src: url('../lib/assets/fonts/icomoon.ttf');
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", "sans-serif", "Microsoft JhengHei", "Heiti TC";
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
+  #root {
+    padding: 20px;
   }
 `;
 
@@ -81,7 +71,7 @@ storiesOf('Button', module)
     withInfo('Buttons Flat style')(
       withNotes('')(() => (
         <Button
-          flat={boolean('Flat', true)}
+          flat={boolean('flat', true)}
           nature={select(
             'Nature',
             {
@@ -140,7 +130,19 @@ storiesOf('Button', module)
           link
           dark={boolean('Dark', false)}
           underline={boolean('Underline', false)}>
-          {text('Label', 'Disable Button')}
+          {text('Label', 'Link Button')}
+        </Button>
+      )),
+    ),
+  )
+  .add(
+    'Subtle',
+    withInfo('subtle style')(
+      withNotes('')(() => (
+        <Button
+          subtle
+          >
+          {text('Label', 'Subtle Button')}
         </Button>
       )),
     ),
@@ -149,8 +151,8 @@ storiesOf('Button', module)
     'Circular style',
     withInfo('')(
       withNotes('')(() => (
-        <Button circle={boolean('circle', false)}>
-          <Icon name="facebook" color="#3b5998" />
+        <Button circle={boolean('circle', true)}>
+          <Icon className="icon-plus" color="#3b5998" />
         </Button>
       )),
     ),
@@ -159,7 +161,7 @@ storiesOf('Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <ButtonGroup> 
+        <ButtonGroup>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
