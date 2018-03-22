@@ -1,0 +1,13 @@
+{
+    "env": {
+        "compiler": "bit.envs/compilers/react@0.0.13",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "componentsDefaultDirectory": "packages/{namespace}/{name}",
+    "packageManager": "yarn",
+    "dist": {
+        "entry": "packages",
+        "target": "build"
+    }
+}

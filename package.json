@@ -16,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@bit/amit.react-desktop-demo.compilers.react-css": "0.0.2",
+    "@bit/bit.envs.internal.babel-base-compiler": "0.0.1",
     "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "rc-trigger": "^2.3.4",
