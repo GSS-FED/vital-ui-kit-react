@@ -30,6 +30,17 @@ type Props = {
   shadow?: boolean,
 }
 
+/**
+ * @render react
+ * @name Card
+ * @description Card Component
+ * @example
+ * <Card width="300px" height="220px">
+ *   <Card.Container>Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.</Card.Container>
+ *    <Card.Footer actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}></Card.Footer>
+ * </Card>
+ */
+
 const Card = ({ children, width, height, shadow, ...props }: Props) => (
   <Root width={width} height={height} shadow={shadow} {...props}>
     {children}

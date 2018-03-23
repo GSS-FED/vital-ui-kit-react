@@ -14,9 +14,18 @@ const Root = styled.span`
 `;
 
 type Props = {
+  /** Text on the badge */
   label: string | number,
   children?: React.Node,
 };
+
+/**
+ * @render react
+ * @name Badge
+ * @description badge component
+ * @example
+ * <Badge label="99+" />
+ */
 
 const Badge = ({ label, children, ...props }: Props) => (
   <Root {...props}>
