@@ -5,12 +5,12 @@ import styled from 'styled-components';
 
 import AvatarBadge from './AvatarBadge';
 import { avatarSizes } from './constants';
-import DEFAULT_AVATAR from '../../assets/img/avatar/default-avatar.svg';
-import DEFAULT_AVATAR_OUTLINE from '../../assets/img/avatar/default-avatar-o.svg';
-import DEFAULT_AVATAR_M from '../../assets/img/avatar/default-avatar-m.svg';
-import DEFAULT_AVATAR_F from '../../assets/img/avatar/default-avatar-f.svg';
-import DEFAULT_AVATAR_M_O from '../../assets/img/avatar/default-avatar-m-o.svg';
-import DEFAULT_AVATAR_F_O from '../../assets/img/avatar/default-avatar-f-o.svg';
+import DEFAULT_AVATAR from './assets/default-avatar.svg';
+import DEFAULT_AVATAR_OUTLINE from './assets/default-avatar-o.svg';
+import DEFAULT_AVATAR_M from './assets/default-avatar-m.svg';
+import DEFAULT_AVATAR_F from './assets/default-avatar-f.svg';
+import DEFAULT_AVATAR_M_O from './assets/default-avatar-m-o.svg';
+import DEFAULT_AVATAR_F_O from './assets/default-avatar-f-o.svg';
 
 const Root = styled.div`
   position: relative;
@@ -27,7 +27,7 @@ const Image = styled.img`
 `;
 
 type SizeType = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
-type Gender = 'male' | 'female'
+type Gender = 'male' | 'female';
 
 type Props = {
   src?: string,
@@ -35,10 +35,31 @@ type Props = {
   size?: SizeType,
   badge?: string,
   gender?: Gender,
-  outline?: boolean,
+  outline?: boolean
 };
 
-const Avatar = ({ src, round, size, badge, outline, gender, ...props }: Props) => {
+/**
+ * @render react
+ * @name Avatar
+ * @description Avatar UI Component
+ * @example
+ * <Avatar
+ *  badge="99+"
+ *  size="large"
+ *  gender="male"
+ *  round
+ * />
+ */
+
+const Avatar = ({
+  src,
+  round,
+  size,
+  badge,
+  outline,
+  gender,
+  ...props
+}: Props) => {
   const renderBadge = (): ?Node => {
     if (!badge) {
       return null;
@@ -64,7 +85,7 @@ const Avatar = ({ src, round, size, badge, outline, gender, ...props }: Props) =
       return DEFAULT_AVATAR_OUTLINE;
     }
     return DEFAULT_AVATAR;
-  }
+  };
 
   return (
     <Root>
@@ -77,7 +98,7 @@ const Avatar = ({ src, round, size, badge, outline, gender, ...props }: Props) =
 Avatar.defaultProps = {
   round: false,
   size: 'medium',
-  outline: false,
-}
+  outline: false
+};
 
 export default Avatar;
