@@ -1,0 +1,13 @@
+{
+    "env": {
+        "compiler": "ericyip.bundlers/bitwebpack/webpack@0.0.4",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "componentsDefaultDirectory": "packages/{namespace}/{name}",
+    "packageManager": "yarn",
+    "dist": {
+        "entry": "packages",
+        "target": "build"
+    }
+}
