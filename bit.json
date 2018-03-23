@@ -1,6 +1,6 @@
 {
     "env": {
-        "compiler": "bit.envs/compilers/react@0.0.13",
+        "compiler": "ericyip.bundlers/bitwebpack/webpack@0.0.4",
         "tester": "none"
     },
     "dependencies": {},

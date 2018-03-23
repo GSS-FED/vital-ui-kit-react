@@ -2,7 +2,7 @@
 import * as React from 'react';
 import is from 'styled-is';
 import styled from 'styled-components';
-import { Addon } from './components/Addon';
+import Addon from './components/Addon';
 
 const Root = styled.div`
   position: relative;
