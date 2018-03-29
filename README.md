@@ -1,17 +1,19 @@
 # Vital UI Kit React
 
 ## Demo
-[Storybook Demo](http://react.vitaluikit.com/) 👯 ‍♀️👯‍♀️ 
+[Storybook Demo](http://react.vitaluikit.com/) 👯
 
  [BitSrc](https://bitsrc.io/gssfed/vital-ui-kit-react)
-  💃💃
+  💃
 
 ## Usage
 
 ### Installation
-```
+```bash
+# yarn
 yarn add @gssfed/vital-ui-kit-react
-// or
+
+# npm
 npm i --save @gssfed/vital-ui-kit-react
 ```
 
