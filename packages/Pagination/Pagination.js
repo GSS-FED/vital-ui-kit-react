@@ -1,3 +1,9 @@
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
+
 import * as React from 'react';
 import styled from 'styled-components';
 
@@ -31,7 +37,7 @@ function Item({
   ...props
 }: {
   children: React.Node,
-  selected: boolean
+  selected?: boolean
 }) {
   return (
     <ListWrapper {...props}>
@@ -41,6 +47,18 @@ function Item({
     </ListWrapper>
   );
 }
+
+
+/**
+ * @render react
+ * @name Pagination
+ * @description display pages
+ * @example
+ * <Pagination
+ *  pageSize={5}
+ *  current={3}
+ * />
+ */
 
 const Pagination = ({ pageSize, current }: Props) => (
   <Root>

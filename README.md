@@ -1,20 +1,32 @@
 # Vital UI Kit React
 
-Vital UI Kit react storybook
+## Demo
+[Storybook Demo](http://react.vitaluikit.com/) 👯 ‍♀️👯‍♀️ 
 
-[Storybook Demo](https://vital-ui-kit.netlify.com)
-[BitSrc](https://bitsrc.io/gssfed/vital-ui-kit-react)
+ [BitSrc](https://bitsrc.io/gssfed/vital-ui-kit-react)
+  💃💃
 
-## How to use
-Install UI Kit from npm
+## Usage
+
+### Installation
 ```
 yarn add @gssfed/vital-ui-kit-react
 // or
 npm i --save @gssfed/vital-ui-kit-react
 ```
-Import packages you want to use
 
-`import { Button } from '@gssfed/vital-ui-kit-react`
+Import packages you need
+
+```js
+import { Button } from '@gssfed/vital-ui-kit-react'
+
+/* ... */
+render() {
+  return (
+    <Button>Vital 💜 React!</Button>
+  )
+}
+````
 
 
 
@@ -32,7 +44,8 @@ then run storybook
 
 ## RoadMap
 
-v0.0.2
+v0.0.5
+- rollup for commonjs(main) and es (module), typeing
 - Table(pag, checkbox, input, header)
 - Windows
 - Calendar
