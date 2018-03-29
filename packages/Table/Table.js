@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 
@@ -21,9 +25,14 @@ type Props = {
   isStriped?: boolean,
   hasHightlight?: boolean,
   isResponsive?: boolean,
-  renderHeader?: (props: State) => React.Element<HTMLTableHeaderCellElement>
+  renderHeader?: (props: State) => React.Element<HTMLElement>
 };
 
+/**
+ * @render react
+ * @name Table
+ * @description Vital Table
+ */
 class Table extends React.Component<Props, State> {
   static defaultProps = {
     isResponsive: false,

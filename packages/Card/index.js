@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -51,6 +55,7 @@ const Card = ({ children, width, height, shadow, ...props }: Props) => (
 
 Card.Header = Header;
 Card.Container = Container;
+// TODO: action callback
 Card.Footer = Footer;
 Card.FooterButton = FooterButton;
 

@@ -16,9 +16,19 @@ yarn add @gssfed/vital-ui-kit-react
 # npm
 npm i --save @gssfed/vital-ui-kit-react
 ```
-Import packages you want to use
 
-`import { Button } from '@gssfed/vital-ui-kit-react`
+Import packages you need
+
+```js
+import { Button } from '@gssfed/vital-ui-kit-react'
+
+/* ... */
+render() {
+  return (
+    <Button>Vital 💜 React!</Button>
+  )
+}
+````
 
 
 
@@ -36,7 +46,8 @@ then run storybook
 
 ## RoadMap
 
-v0.0.2
+v0.0.5
+- rollup for commonjs(main) and es (module), typeing
 - Table(pag, checkbox, input, header)
 - Windows
 - Calendar

@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -53,6 +57,11 @@ type State = {
   selectedItem: ?ItemType,
 };
 
+/**
+ * @render react
+ * @name Select
+ * @description select element
+ */
 class Select extends React.Component<Props, State> {
   wrapperNode: HTMLElement | null;
 

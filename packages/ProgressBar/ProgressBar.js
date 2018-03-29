@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -57,6 +61,18 @@ type Props = {
   success?: boolean
 };
 
+
+/**
+ * @render react
+ * @name ProgressBar
+ * @description show the progress with percentage of current status
+ * @example
+ * <ProgressBar
+ *  value={60}
+ *  showStatus
+ *  textLabel="File uploading"
+ * />
+ */
 class ProgressBar extends React.Component<Props, State> {
   static defaultProps = {
     size: 'medium',

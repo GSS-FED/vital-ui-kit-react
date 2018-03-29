@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
@@ -30,6 +34,12 @@ type Props = {
   themed?: 'light' | 'dark',
   items: Array<ListItemType>
 };
+
+/**
+ * @render react
+ * @name ListGroup
+ * @description Vital Tree-view list group
+ */
 
 class ListGroup extends Component<Props, State> {
   static defaultProps = {
