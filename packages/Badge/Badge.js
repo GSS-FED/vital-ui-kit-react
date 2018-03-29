@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -22,7 +26,7 @@ type Props = {
 /**
  * @render react
  * @name Badge
- * @description badge component
+ * @description Vital UI Kit Badge Label
  * @example
  * <Badge label="99+" />
  */

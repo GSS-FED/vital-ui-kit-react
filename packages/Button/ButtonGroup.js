@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -11,8 +15,8 @@ const Root = styled.div`
 
 /**
  * @render react
- * @name Button
- * @description Vital UI Button
+ * @name ButtonGroup
+ * @description Vital Buttons Group
  * @example
  * <ButtonGroup>
  *   <Button nature="default" size="xlarge">Default</Button>
