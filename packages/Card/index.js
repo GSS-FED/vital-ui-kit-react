@@ -35,7 +35,7 @@ type Props = {
  * @name Card
  * @description Card Component with header, footer, buttons
  * @example
- * <Card width="300px" height="220px">
+ * <Card width="300px" height="420px">
  *   <Card.Header image={"http://react.vitaluikit.com/static/media/card-header-pic.0080a766.png"} title="Title" />
  *   <Card.Container>Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.</Card.Container>
  *    <Card.Footer actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}></Card.Footer>
