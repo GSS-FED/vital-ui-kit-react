@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React from 'react';
 import styled from 'styled-components';
@@ -17,6 +21,17 @@ type Props = {
   onClick?: () => void
 };
 
+/**
+ * @render react
+ * @name Icon
+ * @description Icon based on icomoon file, `icon-` prefix
+ * @example
+ * <Icon
+ *  size="12"
+ *  color="#FED"
+ *  className="icon-wifi"
+ * />
+ */
 const Icon = ({ className, size = 16, color, onClick, ...props }: Props) => (
   <I
     size={size}

@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -14,9 +18,18 @@ const Root = styled.span`
 `;
 
 type Props = {
+  /** Text on the badge */
   label: string | number,
   children?: React.Node,
 };
+
+/**
+ * @render react
+ * @name Badge
+ * @description Vital UI Kit Badge Label
+ * @example
+ * <Badge label="99+" />
+ */
 
 const Badge = ({ label, children, ...props }: Props) => (
   <Root {...props}>

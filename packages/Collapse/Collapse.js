@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React, { Component, type Node } from 'react';
 
@@ -17,6 +21,12 @@ type Props = {
 type State = {
   items: Array<ListItemType>
 };
+
+/**
+ * @render react
+ * @name Collapse
+ * @description Collapse group with toggle
+ */
 
 class Collapse extends Component<Props, State> {
   static ListItemWrapper: (props: any) => Node;

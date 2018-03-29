@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
@@ -35,6 +39,20 @@ type Props = {
   onChangeComplete?: (SyntheticEvent<HTMLElement>) => mixed
 };
 
+/**
+ * @render react
+ * @name Slider
+ * @description Define the value by dragging the handle or side buttons
+ * @example
+ * <Slider
+ *  size="large"
+ *  hasButton
+ *  value={50}
+ *  max={100}
+ *  min={0}
+ *  step={5}
+ * />
+ */
 class Slider extends React.Component<Props, State> {
   static defaultProps = {
     size: 'medium',

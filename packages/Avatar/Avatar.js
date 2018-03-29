@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React, { type Node } from 'react';
 import styled from 'styled-components';
@@ -41,7 +45,7 @@ type Props = {
 /**
  * @render react
  * @name Avatar
- * @description Avatar UI Component
+ * @description Vital UI Kit Avatar Component
  * @example
  * <Avatar
  *  badge="99+"

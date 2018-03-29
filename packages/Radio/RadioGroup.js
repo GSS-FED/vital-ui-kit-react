@@ -1,10 +1,14 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
 import Radio from './Radio';
 
-import type { Items } from './type';
+import { Items } from './type';
 
 const Root = styled.div``;
 

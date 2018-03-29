@@ -1,7 +1,4 @@
 .babelrc
-lib
-CODE_OF_CONDUCT.md
-packages
 .storybook
 assets
 build
@@ -15,3 +12,4 @@ storybook-static
 bit.json
 rollup.config.json
 yarn-error.log
+bundle-stats.html
