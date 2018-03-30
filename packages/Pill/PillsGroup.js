@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Pill from './Pill';
-import { PillGroupType, PillType } from './type';
+import type { PillGroupType, PillType } from './type';
 
 const Root = styled.div`
   position: relative;
