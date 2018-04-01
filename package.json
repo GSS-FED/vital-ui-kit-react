@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vital UI Kit for React!",
   "main": "dist/vital-ui-kit.cjs.js",
   "module": "dist/vital-ui-kit.es.js",
@@ -66,6 +66,7 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-watch": "^3.1.3",
     "flow-bin": "^0.68.0",
+    "lerna": "^2.9.1",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^9.1.0",

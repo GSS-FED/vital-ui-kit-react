@@ -44,10 +44,9 @@ then run storybook
 
 `yarn run build-storybook`
 
-## RoadMap
+## Roadmap
 
-v0.0.5
-- rollup for commonjs(main) and es (module), typeing
-- Table(pag, checkbox, input, header)
-- Windows
+- docs
+- Table(page, checkbox, input, header)
+- Windows modal
 - Calendar
