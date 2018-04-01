@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -30,6 +34,18 @@ type Props = {
   shadow?: boolean,
 }
 
+/**
+ * @render react
+ * @name Card
+ * @description Card Component with header, footer, buttons
+ * @example
+ * <Card width="300px" height="420px">
+ *   <Card.Header image={"http://react.vitaluikit.com/static/media/card-header-pic.0080a766.png"} title="Title" />
+ *   <Card.Container>Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.</Card.Container>
+ *    <Card.Footer actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}></Card.Footer>
+ * </Card>
+ */
+
 const Card = ({ children, width, height, shadow, ...props }: Props) => (
   <Root width={width} height={height} shadow={shadow} {...props}>
     {children}
@@ -39,6 +55,7 @@ const Card = ({ children, width, height, shadow, ...props }: Props) => (
 
 Card.Header = Header;
 Card.Container = Container;
+// TODO: action callback
 Card.Footer = Footer;
 Card.FooterButton = FooterButton;
 

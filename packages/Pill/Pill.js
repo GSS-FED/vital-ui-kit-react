@@ -1,10 +1,14 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Badge from '../Badge';
-import type { PillType } from './type';
+import { PillType } from './type';
 
 const textWidth = props => {
   if (props.vertical && props.badge) {

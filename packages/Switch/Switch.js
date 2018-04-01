@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
@@ -111,6 +115,15 @@ type Props = {
   iconLabelBack?: string,
 };
 
+/**
+ * @render react
+ * @name Switch
+ * @description Toggle boolean value
+ * @example
+ * <Switch
+ *  isRound
+ * />
+ */
 class Switch extends Component<Props, State> {
   state = {
     isChecked: this.props.defaultChecked || false,
