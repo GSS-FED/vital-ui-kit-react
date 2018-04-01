@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Badge from '../Badge';
-import { PillType } from './type';
+import type { PillType } from './type';
 
 const textWidth = props => {
   if (props.vertical && props.badge) {
