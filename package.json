@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vital UI Kit for React!",
   "main": "dist/vital-ui-kit.cjs.js",
   "module": "dist/vital-ui-kit.es.js",
@@ -23,8 +23,8 @@
     "Eric Yip (https://github.com/ericyip)",
     "Laura Lee (https://github.com/l443018)"
   ],
-  "workspace": [
-    "doc"
+  "workspaces": [
+    "packages/*"
   ],
   "license": "MIT",
   "dependencies": {
