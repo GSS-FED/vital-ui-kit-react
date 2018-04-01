@@ -23,9 +23,6 @@
     "Eric Yip (https://github.com/ericyip)",
     "Laura Lee (https://github.com/l443018)"
   ],
-  "workspaces": [
-    "packages/*"
-  ],
   "license": "MIT",
   "dependencies": {
     "polished": "^1.9.2",
