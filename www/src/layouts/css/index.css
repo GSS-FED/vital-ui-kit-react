@@ -1,8 +1,11 @@
 /**********
  Reset
 ***********/
+<<<<<<< HEAD
 
 /**
+=======
+>>>>>>> 986daac6dede2bcdede718821f51977dfde91088
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,9 +23,12 @@ table, th, td {
 /**********
  Text
 ***********/
+<<<<<<< HEAD
 
 /**
 
+=======
+>>>>>>> 986daac6dede2bcdede718821f51977dfde91088
 html {
     font-size: 10px;
 }
@@ -64,4 +70,9 @@ a {
 a:hover {
     border-bottom: 1px solid black;
 }
+<<<<<<< HEAD
 **/
+=======
+
+
+>>>>>>> 986daac6dede2bcdede718821f51977dfde91088

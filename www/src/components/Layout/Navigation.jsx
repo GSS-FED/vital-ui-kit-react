@@ -9,14 +9,12 @@ const NavContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   background: ${props => props.theme.brand};
-
   .nav-link {
     font-size: 1.6rem;
     margin-right: 10px;
     font-weight: 200;
     color: black;
   }
-
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
