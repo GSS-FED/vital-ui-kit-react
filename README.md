@@ -17,10 +17,11 @@ yarn add @gssfed/vital-ui-kit-react
 npm i --save @gssfed/vital-ui-kit-react
 ```
 
-Import packages you need
-
 ```js
+// import package you need
 import { Button } from '@gssfed/vital-ui-kit-react'
+// recommend importing the global style
+import from '@gssfed/vital-ui-kit-react/dist/global.css'
 
 /* ... */
 render() {

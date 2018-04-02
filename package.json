@@ -1,11 +1,18 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.0.6",
+  "version": "0.0.8-3",
   "description": "Vital UI Kit for React!",
   "main": "dist/vital-ui-kit.cjs.js",
   "module": "dist/vital-ui-kit.es.js",
+  "keywords": [
+    "vital",
+    "react",
+    "ui",
+    "component"
+  ],
+  "style": "dist/global.css",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && cp packages/Base/styles/global.css dist",
     "prebuild": "rm -rf dist",
     "flow": "flow check",
     "lint": "eslint packages/**; exit 0",
@@ -13,7 +20,8 @@
     "prepare": "npm run build",
     "storybook": "yarn && start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "prepublish": "yarn run build",
+    "publish": "lerna publish"
   },
   "repository": {
     "type": "git",
@@ -56,7 +64,6 @@
     "babel-preset-es2015-rollup": "^3.0.0",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "conventional-changelog": "^1.1.18",
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
