@@ -54,6 +54,7 @@ const Input = styled.input`
 `;
 
 const IconWrapper = styled.div`
+  text-align: center;
   width: 100%;
   height: 100%;
   position: relative;
