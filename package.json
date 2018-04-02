@@ -20,7 +20,8 @@
     "prepare": "npm run build",
     "storybook": "yarn && start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook",
-    "publish": "lerna run build"
+    "prepublish": "yarn run build",
+    "publish": "lerna publish"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,8 @@
 /**********
  Reset
 ***********/
+
+/**
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,6 +20,9 @@ table, th, td {
 /**********
  Text
 ***********/
+
+/**
+
 html {
     font-size: 10px;
 }
@@ -59,5 +64,4 @@ a {
 a:hover {
     border-bottom: 1px solid black;
 }
-
-
+**/
