@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import styled, {ThemeProvider} from "styled-components"
+import '@gssfed/vital-ui-kit-react/dist/global.css';
 import config from "../../data/SiteConfig";
 import "./css/index.css";
 import "./css/prism-okaidia.css"
