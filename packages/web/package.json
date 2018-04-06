@@ -23,6 +23,14 @@
     "component",
     "web"
   ],
+  "dependencies": {
+    "react-click-outside": "^3.0.1",
+    "resize-observer-polyfill": "^1.5.0",
+    "rc-trigger": "^2.3.4"
+  },
+  "devDependencies": {
+    "@storybook/react": "3.4.0"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
