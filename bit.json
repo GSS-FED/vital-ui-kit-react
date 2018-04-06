@@ -4,7 +4,7 @@
         "tester": "none"
     },
     "dependencies": {},
-    "componentsDefaultDirectory": "packages/{namespace}/{name}",
+    "componentsDefaultDirectory": "packages/web/components/{namespace}/{name}",
     "packageManager": "yarn",
     "dist": {
         "entry": "packages",

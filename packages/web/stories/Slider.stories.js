@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Slider, Button } from '../packages/';
+import { Slider, Button } from '../src';
 
 const items = [
   {

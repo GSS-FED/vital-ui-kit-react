@@ -29,7 +29,7 @@ import {
   Icon,
   Button,
   Select,
-} from '../packages/';
+} from '../src';
 
 const FormWrapper = styled.div`
   max-width: 500px;

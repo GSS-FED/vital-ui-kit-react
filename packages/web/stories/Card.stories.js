@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Icon } from '../packages/';
+import { Card, ButtonGroup, Button, Icon } from '../src';
 import heroImage from '../assets/img/card-header-pic.png';
 
 const content =

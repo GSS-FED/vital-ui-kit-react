@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Checkbox, CheckboxGroup } from '../packages/';
+import { Checkbox, CheckboxGroup } from '../src';
 
 storiesOf('Checkbox', module)
   .addDecorator(withKnobs)

@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Switch } from '../packages/';
+import { Switch } from '../src';
 
 storiesOf('Switch', module)
   .addDecorator(withKnobs)

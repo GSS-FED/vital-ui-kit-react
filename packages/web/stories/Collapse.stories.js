@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Collapse } from '../packages/';
+import { Collapse } from '../src';
 
 const Display = styled.div`
   padding: 20px;

@@ -2,7 +2,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
@@ -16,29 +15,27 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pagination } from '../packages/';
+import { ProgressBar } from '../src';
 
-const items = [
-  {
-    text: 'Dashboard',
-    current: true
-  },
-  { text: 'Projects', badge: '23' },
-  { text: 'Issues', badge: '99+' },
-  { text: 'Reports', badge: '6' },
-  { text: 'User Center' }
-];
-
-storiesOf('Pagination', module)
+storiesOf('ProgressBar', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(`info`)(
-      withNotes('This is Pagination')(() => (
-        <Pagination
-          pageSize={5}
-          current={3}
+      withNotes('This is pill')(() => (
+        <ProgressBar
+          value={number('value', 60)}
+          size={select(
+            'size',
+            { small: 'small', medium: 'medium', large: 'large' },
+            'medium'
+          )}
+          alarm={boolean('alarm', false)}
+          warning={boolean('warning', false)}
+          success={boolean('succes', false)}
+          showStatus={boolean('showStatus', true)}
+          textLabel={text('textLabel', 'File uploading')}
         />
       ))
     )
-  )
+  );

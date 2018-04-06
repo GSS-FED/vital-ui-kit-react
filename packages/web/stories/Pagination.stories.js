@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
@@ -11,30 +12,33 @@ import {
   text,
   boolean,
   number,
-  select,
+  select
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { PillsGroup } from '../packages/';
+import { Pagination } from '../src';
 
 const items = [
   {
     text: 'Dashboard',
-    current: true,
+    current: true
   },
   { text: 'Projects', badge: '23' },
   { text: 'Issues', badge: '99+' },
   { text: 'Reports', badge: '6' },
-  { text: 'User Center' },
+  { text: 'User Center' }
 ];
 
-storiesOf('Pill', module)
+storiesOf('Pagination', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(`info`)(
-      withNotes('This is pill')(() => (
-        <PillsGroup vertical={boolean('Vertical', false)} items={items} />
-      )),
-    ),
-  );
+      withNotes('This is Pagination')(() => (
+        <Pagination
+          pageSize={5}
+          current={3}
+        />
+      ))
+    )
+  )

@@ -1,25 +1,20 @@
 {
-  "name": "@gssfed/vital-ui-kit-react",
+  "name": "@gssfed/vital-react",
   "version": "0.0.8-3",
-  "description": "Vital UI Kit for React!",
-  "main": "dist/vital-ui-kit.cjs.js",
-  "module": "dist/vital-ui-kit.es.js",
-  "keywords": [
-    "vital",
-    "react",
-    "ui",
-    "component"
+  "description": "Vital UI Kit React",
+  "private": true,
+  "workspace": [
+    "packages/web"
   ],
-  "style": "dist/global.css",
   "scripts": {
-    "build": "rollup -c && cp packages/Base/styles/global.css dist",
-    "prebuild": "rm -rf dist",
+    "build:web": "rollup -c && cp packages/Base/styles/global.css packages/web/dist",
+    "prebuild:web": "rm -rf packages/web/dist",
+    "storybook:web": "cd packages/web && start-storybook -p 6006",
+    "build-storybook:web": "cd packages/web && build-storybook",
     "flow": "flow check",
     "lint": "eslint packages/**; exit 0",
     "lint:watch": "esw -w packages/**",
     "prepare": "npm run build",
-    "storybook": "yarn && start-storybook -p 6006 -s ./assets",
-    "build-storybook": "build-storybook",
     "prepublish": "yarn run build",
     "publish": "lerna publish"
   },
