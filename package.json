@@ -3,7 +3,10 @@
   "version": "0.0.8-3",
   "description": "Vital UI Kit React",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**", "**/react-native-scripts", "**/react-native-scripts/**"]
+  },
   "scripts": {
     "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
     "prebuild:web": "rm -rf packages/web/dist",
