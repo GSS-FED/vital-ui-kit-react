@@ -1,26 +1,24 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
   "version": "0.0.8-3",
-  "description": "Vital UI Kit for React!",
-  "main": "dist/vital-ui-kit.cjs.js",
-  "module": "dist/vital-ui-kit.es.js",
-  "keywords": [
-    "vital",
-    "react",
-    "ui",
-    "component"
-  ],
-  "style": "dist/global.css",
+  "description": "Vital UI Kit React",
+  "private": true,
+  "workspaces": {
+    "packages": ["packages/*"],
+    "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**", "**/react-native-scripts", "**/react-native-scripts/**"]
+  },
   "scripts": {
-    "build": "rollup -c && cp packages/Base/styles/global.css dist",
-    "prebuild": "rm -rf dist",
+    "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
+    "prebuild:web": "rm -rf packages/web/dist",
+    "storybook:web": "cd packages/web && start-storybook -p 6006",
+    "build-storybook:web": "cd packages/web && build-storybook",
+    "storybook:native": "cd packages/native && yarn run storybook",
+    "dev:ios": "cd packages/native && yarn run ios",
     "flow": "flow check",
     "lint": "eslint packages/**; exit 0",
     "lint:watch": "esw -w packages/**",
-    "prepare": "npm run build",
-    "storybook": "yarn && start-storybook -p 6006 -s ./assets",
-    "build-storybook": "build-storybook",
-    "prepublish": "yarn run build",
+    "prepare": "npm run build:web",
+    "prepublish": "yarn run build:web",
     "publish": "lerna publish"
   },
   "repository": {
@@ -34,12 +32,8 @@
   "license": "MIT",
   "dependencies": {
     "polished": "^1.9.2",
-    "prop-types": "^15.6.1",
-    "rc-trigger": "^2.3.4",
     "react": "^16.2.0",
-    "react-click-outside": "^3.0.1",
     "react-dom": "^16.2.0",
-    "resize-observer-polyfill": "^1.5.0",
     "styled-components": "^3.2.3",
     "styled-is": "^1.1.2",
     "styled-theme": "^0.3.3"
@@ -51,7 +45,6 @@
     "@storybook/addon-links": "3.4.0",
     "@storybook/addon-notes": "3.4.0",
     "@storybook/addon-options": "3.4.0",
-    "@storybook/react": "3.4.0",
     "axios": "0.18.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",

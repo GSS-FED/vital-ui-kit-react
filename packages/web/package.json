@@ -1,0 +1,42 @@
+{
+  "name": "@gssfed/vital-ui-kit-react",
+  "version": "0.0.8-4",
+  "description": "Vital UI Kit for React!",
+  "main": "dist/vital-ui-kit.cjs.js",
+  "module": "dist/vital-ui-kit.es.js",
+  "style": "dist/global.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "Eric Yip (https://github.com/ericyip)",
+    "Laura Lee (https://github.com/l443018)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSS-FED/vital-ui-kit-react.git"
+  },
+  "keywords": [
+    "vital",
+    "react",
+    "ui",
+    "component",
+    "web"
+  ],
+  "dependencies": {
+    "react-click-outside": "^3.0.1",
+    "resize-observer-polyfill": "^1.5.0",
+    "rc-trigger": "^2.3.4"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "3.4.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
+  },
+  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme"
+}
