@@ -26,15 +26,15 @@ const commonPlugins = [
 ];
 
 const configBase = {
-  input: 'packages/index.js',
+  input: 'packages/web/src/index.js',
   external: ['react'].concat(Object.keys(pkg.dependencies)),
   plugins: commonPlugins
 };
 
 const serverConfig = Object.assign({}, configBase, {
   output: [
-    { file: 'dist/vitail-ui-kit.es.js', format: 'es' },
-    Object.assign({}, { format: 'cjs', file: 'dist/vital-ui-kit.cjs.js' })
+    { file: 'packages/web/dist/vitail-ui-kit.es.js', format: 'es' },
+    Object.assign({}, { format: 'cjs', file: 'packages/web/dist/vital-ui-kit.cjs.js' })
   ]
 });
 
@@ -42,7 +42,7 @@ const serverConfig = Object.assign({}, configBase, {
 
 const minifyConfig = Object.assign({}, configBase, {
   output: {
-    file: 'dist/vital-ui-kit.min.js',
+    file: 'packages/web/dist/vital-ui-kit.min.js',
     format: 'cjs'
   },
   plugins: [
