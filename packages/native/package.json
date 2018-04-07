@@ -24,6 +24,9 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "peerDependencies": {
+    "styled-components": "^2.1.0"
+  },
   "dependencies": {
     "expo": "^26.0.0",
     "react": "16.3.0-alpha.1",
