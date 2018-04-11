@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import PriorityNav from 'react-priority-navigation';
 
 import Pill from './Pill';
 import type { PillGroupType, PillType } from './type';
@@ -17,34 +18,36 @@ const Root = styled.div`
 `;
 
 type State = {
-  selected: PillType,
+  selected: PillType
 };
 
 class PillsGroup extends Component<PillGroupType, State> {
   state = {
-    selected: this.props.items.filter(item => item.current === true)[0],
+    selected: this.props.items.filter(item => item.current === true)[0]
   };
 
   onSelect = (item: PillType) => {
     this.setState({
-      selected: item,
+      selected: item
     });
   };
 
+  renderChildren = () =>
+    this.props.items.map((item, i) => (
+      <Pill
+        key={i}
+        item={item}
+        onSelect={this.onSelect}
+        selected={item === this.state.selected}
+        vertical={this.props.vertical}
+      />
+    ));
+
   render() {
-    return (
-      <Root>
-        {this.props.items.map((item, idx) => (
-          <Pill
-            key={idx}
-            item={item}
-            onSelect={this.onSelect}
-            selected={item === this.state.selected}
-            vertical={this.props.vertical}
-          />
-        ))}
-      </Root>
-    );
+    if (this.props.vertical) {
+      return <Root>{this.renderChildren()}</Root>;
+    }
+    return <PriorityNav>{this.renderChildren()}</PriorityNav>;
   }
 }
 

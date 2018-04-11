@@ -8,6 +8,7 @@
     "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**", "**/react-native-scripts", "**/react-native-scripts/**"]
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces --nohoist=react-native",
     "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
     "prebuild:web": "rm -rf packages/web/dist",
     "storybook:web": "cd packages/web && start-storybook -p 6006",
