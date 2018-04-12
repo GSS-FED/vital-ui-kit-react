@@ -28,7 +28,7 @@ type State = {
 
 export default class TextArea extends React.Component<Props, State> {
   state = {
-    value: this.props.value,
+    value: this.props.value || '',
   };
 
   input: any;
