@@ -37,7 +37,7 @@ export default class Input extends React.Component<Props, State> {
     size: 'Small',
   };
   state = {
-    value: this.props.value,
+    value: this.props.value || '',
   };
   input: any;
 
