@@ -60,6 +60,13 @@
   dependencies:
     "@babel/types" "7.0.0-beta.44"
 
+"@babel/helper-builder-binary-assignment-operator-visitor@7.0.0-beta.44":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/helper-builder-binary-assignment-operator-visitor/-/helper-builder-binary-assignment-operator-visitor-7.0.0-beta.44.tgz#0e86d393c192bc846f871f3fcf4920b08a9cbb27"
+  dependencies:
+    "@babel/helper-explode-assignable-expression" "7.0.0-beta.44"
+    "@babel/types" "7.0.0-beta.44"
+
 "@babel/helper-builder-react-jsx@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/helper-builder-react-jsx/-/helper-builder-react-jsx-7.0.0-beta.44.tgz#52a4fd63ce92df425a4fb550c7a1a3ca30e0f234"
@@ -82,6 +89,13 @@
     "@babel/helper-function-name" "7.0.0-beta.44"
     "@babel/types" "7.0.0-beta.44"
     lodash "^4.2.0"
+
+"@babel/helper-explode-assignable-expression@7.0.0-beta.44":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/helper-explode-assignable-expression/-/helper-explode-assignable-expression-7.0.0-beta.44.tgz#1f06b9f76017deac2767ee09f3021d5b209bf5cd"
+  dependencies:
+    "@babel/traverse" "7.0.0-beta.44"
+    "@babel/types" "7.0.0-beta.44"
 
 "@babel/helper-function-name@7.0.0-beta.40":
   version "7.0.0-beta.40"
@@ -211,10 +225,6 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@babel/plugin-check-constants@^7.0.0-beta":
-  version "7.0.0-beta.38"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-check-constants/-/plugin-check-constants-7.0.0-beta.38.tgz#bbda6306d45a4f097ccb416c0b52d6503f6502cf"
-
 "@babel/plugin-external-helpers@^7.0.0-beta":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-external-helpers/-/plugin-external-helpers-7.0.0-beta.44.tgz#9ccdea7ec83623b6e580e17b639d4dfe2fd93828"
@@ -302,6 +312,13 @@
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.0.0-beta.44.tgz#57c8b40d56db45eaa39b44696818b24004306752"
   dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/plugin-transform-exponentiation-operator@^7.0.0-beta":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.0.0-beta.44.tgz#e6a9699b5036a7a75274e1546c23414ba945a135"
+  dependencies:
+    "@babel/helper-builder-binary-assignment-operator-visitor" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
 
 "@babel/plugin-transform-flow-strip-types@^7.0.0-beta":
@@ -397,6 +414,18 @@
   dependencies:
     "@babel/helper-annotate-as-pure" "7.0.0-beta.44"
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
+
+"@babel/register@^7.0.0-beta":
+  version "7.0.0-beta.44"
+  resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.0.0-beta.44.tgz#89cce279f1444aa560f10597073d0e448482d960"
+  dependencies:
+    core-js "^2.5.3"
+    find-cache-dir "^1.0.0"
+    home-or-tmp "^3.0.0"
+    lodash "^4.2.0"
+    mkdirp "^0.5.1"
+    pirates "^3.0.1"
+    source-map-support "^0.4.2"
 
 "@babel/template@7.0.0-beta.40":
   version "7.0.0-beta.40"
@@ -3036,7 +3065,7 @@ buffer@^5.0.3:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
 
-builtin-modules@^1.0.0, builtin-modules@^1.1.1:
+builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
@@ -4756,11 +4785,10 @@ eslint-plugin-flowtype@2.46.1:
   dependencies:
     lodash "^4.15.0"
 
-eslint-plugin-import@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.10.0.tgz#fa09083d5a75288df9c6c7d09fe12255985655e7"
+eslint-plugin-import@2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.11.0.tgz#15aeea37a67499d848e8e981806d4627b5503816"
   dependencies:
-    builtin-modules "^1.1.1"
     contains-path "^0.1.0"
     debug "^2.6.8"
     doctrine "1.5.0"
@@ -4770,6 +4798,7 @@ eslint-plugin-import@2.10.0:
     lodash "^4.17.4"
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
+    resolve "^1.6.0"
 
 eslint-plugin-jsx-a11y@6.0.3:
   version "6.0.3"
@@ -4782,6 +4811,16 @@ eslint-plugin-jsx-a11y@6.0.3:
     damerau-levenshtein "^1.0.0"
     emoji-regex "^6.1.0"
     jsx-ast-utils "^2.0.0"
+
+eslint-plugin-react-native-globals@^0.1.1:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native-globals/-/eslint-plugin-react-native-globals-0.1.2.tgz#ee1348bc2ceb912303ce6bdbd22e2f045ea86ea2"
+
+eslint-plugin-react-native@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-native/-/eslint-plugin-react-native-3.2.1.tgz#04fcadd3285b7cd2f27146e640c941b00acc4e7e"
+  dependencies:
+    eslint-plugin-react-native-globals "^0.1.1"
 
 eslint-plugin-react@7.7.0:
   version "7.7.0"
@@ -6044,6 +6083,10 @@ home-or-tmp@^2.0.0:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.1"
+
+home-or-tmp@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/home-or-tmp/-/home-or-tmp-3.0.0.tgz#57a8fe24cf33cdd524860a15821ddc25c86671fb"
 
 homedir-polyfill@^1.0.1:
   version "1.0.1"
@@ -7949,51 +7992,51 @@ methods@^1.1.1, methods@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-metro-babylon7@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-babylon7/-/metro-babylon7-0.28.0.tgz#cf9701ffdc1992d1562b4cb667d9692164950df4"
+metro-babylon7@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-babylon7/-/metro-babylon7-0.30.2.tgz#73784a958916bf5541b6a930598b62460fc376f5"
   dependencies:
     babylon "^7.0.0-beta"
 
-metro-cache@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.28.0.tgz#c5164a361985fc0294059fccdf4ea824e3173c1d"
+metro-cache@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-cache/-/metro-cache-0.30.2.tgz#1fb1ff92d3d8c596fd8cddc1635a9cb1c26e4cba"
   dependencies:
     jest-serializer "^22.4.0"
     mkdirp "^0.5.1"
 
-metro-core@0.28.0, metro-core@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.28.0.tgz#e1ced4cf07ca8fb5196a6e5ca853b5d893f06038"
+metro-core@0.30.2, metro-core@^0.30.0:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-core/-/metro-core-0.30.2.tgz#380ae13cceee29e5be166df7acca9f1daa19fd7e"
   dependencies:
     lodash.throttle "^4.1.1"
+    wordwrap "^1.0.0"
 
-metro-minify-uglify@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.28.0.tgz#c9aecb8e893430d2fd58e00cf799c00b99dc0f79"
+metro-minify-uglify@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-minify-uglify/-/metro-minify-uglify-0.30.2.tgz#7299a0376ad6340e9acf415912d54b5309702040"
   dependencies:
     uglify-es "^3.1.9"
 
-metro-resolver@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.28.0.tgz#813802d60fc762772927c81d02e01c7eec84bad8"
+metro-resolver@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-resolver/-/metro-resolver-0.30.2.tgz#c26847e59cdc6a8ab1fb4b92d765165ec06946dd"
   dependencies:
     absolute-path "^0.0.0"
 
-metro-source-map@0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.28.0.tgz#ec8c3161d8516ad3c4e7149f2c3d4802f4fd6fa2"
+metro-source-map@0.30.2:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro-source-map/-/metro-source-map-0.30.2.tgz#4ac056642a2c521d974d42a617c8731d094365bb"
   dependencies:
     source-map "^0.5.6"
 
-metro@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/metro/-/metro-0.28.0.tgz#22999c96c3129682a76acd4e1f2adc17f7d77cac"
+metro@^0.30.0:
+  version "0.30.2"
+  resolved "https://registry.yarnpkg.com/metro/-/metro-0.30.2.tgz#e722e0eb106530f6d5bcf8de1f50353a0732cfb3"
   dependencies:
     "@babel/core" "^7.0.0-beta"
     "@babel/generator" "^7.0.0-beta"
     "@babel/helper-remap-async-to-generator" "^7.0.0-beta"
-    "@babel/plugin-check-constants" "^7.0.0-beta"
     "@babel/plugin-external-helpers" "^7.0.0-beta"
     "@babel/plugin-proposal-class-properties" "^7.0.0-beta"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0-beta"
@@ -8003,6 +8046,7 @@ metro@^0.28.0:
     "@babel/plugin-transform-classes" "^7.0.0-beta"
     "@babel/plugin-transform-computed-properties" "^7.0.0-beta"
     "@babel/plugin-transform-destructuring" "^7.0.0-beta"
+    "@babel/plugin-transform-exponentiation-operator" "^7.0.0-beta"
     "@babel/plugin-transform-flow-strip-types" "^7.0.0-beta"
     "@babel/plugin-transform-for-of" "^7.0.0-beta"
     "@babel/plugin-transform-function-name" "^7.0.0-beta"
@@ -8017,6 +8061,7 @@ metro@^0.28.0:
     "@babel/plugin-transform-shorthand-properties" "^7.0.0-beta"
     "@babel/plugin-transform-spread" "^7.0.0-beta"
     "@babel/plugin-transform-template-literals" "^7.0.0-beta"
+    "@babel/register" "^7.0.0-beta"
     "@babel/template" "^7.0.0-beta"
     "@babel/traverse" "^7.0.0-beta"
     "@babel/types" "^7.0.0-beta"
@@ -8025,10 +8070,13 @@ metro@^0.28.0:
     babel-core "^6.24.1"
     babel-generator "^6.26.0"
     babel-plugin-external-helpers "^6.22.0"
+    babel-plugin-react-transform "^3.0.0"
+    babel-plugin-transform-flow-strip-types "^6.21.0"
     babel-preset-es2015-node "^6.1.1"
     babel-preset-fbjs "^2.1.4"
     babel-preset-react-native "^4.0.0"
     babel-register "^6.24.1"
+    babel-template "^6.24.1"
     babylon "^6.18.0"
     chalk "^1.1.1"
     concat-stream "^1.6.0"
@@ -8049,15 +8097,16 @@ metro@^0.28.0:
     left-pad "^1.1.3"
     lodash.throttle "^4.1.1"
     merge-stream "^1.0.1"
-    metro-babylon7 "0.28.0"
-    metro-cache "0.28.0"
-    metro-core "0.28.0"
-    metro-minify-uglify "0.28.0"
-    metro-resolver "0.28.0"
-    metro-source-map "0.28.0"
+    metro-babylon7 "0.30.2"
+    metro-cache "0.30.2"
+    metro-core "0.30.2"
+    metro-minify-uglify "0.30.2"
+    metro-resolver "0.30.2"
+    metro-source-map "0.30.2"
     mime-types "2.1.11"
     mkdirp "^0.5.1"
-    request "^2.79.0"
+    node-fetch "^1.3.3"
+    resolve "^1.5.0"
     rimraf "^2.5.4"
     serialize-error "^2.1.0"
     source-map "^0.5.6"
@@ -8424,7 +8473,11 @@ node-libs-browser@^2.0.0:
     util "^0.10.3"
     vm-browserify "0.0.4"
 
-node-notifier@^5.1.2, node-notifier@^5.2.1:
+node-modules-regexp@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
+
+node-notifier@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/node-notifier/-/node-notifier-5.2.1.tgz#fa313dd08f5517db0e2502e5758d664ac69f9dea"
   dependencies:
@@ -8964,6 +9017,12 @@ pinkie-promise@^2.0.0:
 pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
+
+pirates@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/pirates/-/pirates-3.0.2.tgz#7e6f85413fd9161ab4e12b539b06010d85954bb9"
+  dependencies:
+    node-modules-regexp "^1.0.0"
 
 pkg-dir@^1.0.0:
   version "1.0.0"
@@ -9946,9 +10005,9 @@ react-native-vector-icons@4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native@0.54.0:
-  version "0.54.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.54.0.tgz#1582cc2b2a639d46e39c44bcc50e051d0061820a"
+react-native@0.55.2:
+  version "0.55.2"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.55.2.tgz#80d26a3f4193ebd1fd49a4859011c501b0ca3bab"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -9971,6 +10030,7 @@ react-native@0.54.0:
     denodeify "^1.2.1"
     envinfo "^3.0.0"
     errorhandler "^1.5.0"
+    eslint-plugin-react-native "^3.2.1"
     event-target-shim "^1.0.5"
     fbjs "^0.8.14"
     fbjs-scripts "^0.8.1"
@@ -9979,14 +10039,14 @@ react-native@0.54.0:
     graceful-fs "^4.1.3"
     inquirer "^3.0.6"
     lodash "^4.17.5"
-    metro "^0.28.0"
-    metro-core "^0.28.0"
+    metro "^0.30.0"
+    metro-core "^0.30.0"
     mime "^1.3.4"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
     morgan "^1.9.0"
     node-fetch "^1.3.3"
-    node-notifier "^5.1.2"
+    node-notifier "^5.2.1"
     npmlog "^2.0.4"
     opn "^3.0.2"
     optimist "^0.6.1"
@@ -10495,7 +10555,7 @@ request@2.81.0:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
-request@^2.79.0, request@^2.81.0, request@^2.83.0:
+request@^2.81.0, request@^2.83.0:
   version "2.85.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.85.0.tgz#5a03615a47c61420b3eb99b7dba204f83603e1fa"
   dependencies:
@@ -10603,6 +10663,12 @@ resolve@^1.1.6, resolve@^1.2.0:
 resolve@^1.3.2, resolve@^1.5.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.6.0.tgz#0fbd21278b27b4004481c395349e7aba60a9ff5c"
+  dependencies:
+    path-parse "^1.0.5"
+
+resolve@^1.6.0:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
 
