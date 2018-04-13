@@ -16,71 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { ListGroup } from '../src';
-
-const items = [
-  {
-    content: 'Item 01',
-    href: 'google.com',
-  },
-  {
-    content: 'Item 02',
-  },
-  {
-    content: 'Item 02',
-    badge: '99+',
-  },
-  {
-    content: 'Item 03',
-    badge: '99+',
-    href: 'google.com',
-  },
-];
-
-const itemsWithChildren = [
-  {
-    content: 'Item 01',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-        href: 'google.com',
-      },
-      {
-        content: 'SubItem 01',
-      },
-    ],
-  },
-  {
-    content: 'Item 02',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-      },
-    ],
-  },
-  {
-    content: 'Item 03',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-      },
-    ],
-  },
-];
-
-const itemsWithContent = [
-  {
-    content: 'Collapse 01',
-    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  },
-  {
-    content: 'Collapse 02',
-    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  },
-]
+import { ListGroup, ListContent, ListItem } from '../src';
 
 const Display = styled.div`
   padding: 20px;
@@ -94,9 +30,22 @@ storiesOf('ListGroup', module)
       withNotes('This is ListGroup')(() => (
         <Display>
           <ListGroup
-            items={items}
-            themed={select('Themed', { light: 'light', dark: 'dark' })}
-          />
+            themed={select('themed', { light: 'light', dark: 'dark' })}
+          >
+            <ListItem title="Level 1" badge="99+" >
+              <ListItem title="Level 2">
+                <ListItem title="Level 3">
+                  <ListItem title="Level 4">
+                    <ListItem title="Level 5" />
+                  </ListItem>
+                  <ListItem title="Level 4" />
+                  <ListItem title="Level 4" />
+                </ListItem>
+                <ListItem title="Level 3" />
+                <ListItem title="Level3" />
+              </ListItem>
+            </ListItem>
+          </ListGroup>
         </Display>
       )),
     ),
@@ -107,7 +56,6 @@ storiesOf('ListGroup', module)
       withNotes('This is ListGroup')(() => (
         <Display>
           <ListGroup
-            items={itemsWithChildren}
             themed={select('Themed', { light: 'light', dark: 'dark' })}
           />
         </Display>

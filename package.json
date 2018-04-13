@@ -4,8 +4,17 @@
   "description": "Vital UI Kit React",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"],
-    "nohoist": ["**/react-native", "**/react-native/**", "**/expo", "**/expo/**", "**/react-native-scripts", "**/react-native-scripts/**"]
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/expo",
+      "**/expo/**",
+      "**/react-native-scripts",
+      "**/react-native-scripts/**"
+    ]
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces --nohoist=react-native",

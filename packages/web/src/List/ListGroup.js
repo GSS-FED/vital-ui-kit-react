@@ -4,30 +4,41 @@
  * MIT license
  */
 
-import React, { type Node } from 'react';
-import styled from 'styled-components';
+import React, { type Node, Component } from 'react';
 
-import sharedStyle from '../ListGroup/styled';
-
-const Root = styled.ul`
-  list-style: none;
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow: hidden;
-  border-radius: ${props => (props.collapse ? '4px' : 0)};
-  ${props =>
-    props.border
-      ? sharedStyle.themeWithBorder
-      : sharedStyle.themeWithoutBorder};
-`;
+import { ListGroupWrapper } from './styled';
 
 type Props = {
   children: Array<Node>,
-  themed: 'light' | 'dark'
+  themed?: 'light' | 'dark',
+  border?: boolean,
+  icon?: string | Node,
+  collapse?: boolean
 };
 
-const List = ({ children, ...props }: Props) => (
-  <Root {...props}>{children}</Root>
-);
+class List extends Component<Props> {
+
+  renderChildren = () => React.Children.map(this.props.children, child =>
+      React.cloneElement(child, {
+        themed: this.props.themed,
+        collapse: this.props.collapse,
+        border: this.props.border
+      })
+    )
+
+  render() {
+    const { themed, border, collapse, children, ...props } = this.props;
+    return (
+      <ListGroupWrapper
+        {...props}
+        themed={themed}
+        border={border}
+        collapse={collapse}
+      >
+        {this.renderChildren()}
+      </ListGroupWrapper>
+    );
+  }
+}
 
 export default List;

@@ -2,6 +2,9 @@
   "presets": ["flow", "react", ["env", {"modules": false}]],
   "plugins": [
     "transform-object-rest-spread",
-    "babel-plugin-transform-class-properties"
+    "babel-plugin-transform-class-properties",
+    ["babel-plugin-styled-components", {
+      "displayName": true
+    }]
   ]
 }
