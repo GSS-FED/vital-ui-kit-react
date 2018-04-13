@@ -39,12 +39,12 @@
     "styled-theme": "0.3.3"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.4.0",
-    "@storybook/addon-info": "3.4.0",
-    "@storybook/addon-knobs": "3.4.0",
-    "@storybook/addon-links": "3.4.0",
-    "@storybook/addon-notes": "3.4.0",
-    "@storybook/addon-options": "3.4.0",
+    "@storybook/addon-actions": "3.4.1",
+    "@storybook/addon-info": "3.4.1",
+    "@storybook/addon-knobs": "3.4.1",
+    "@storybook/addon-links": "3.4.1",
+    "@storybook/addon-notes": "3.4.1",
+    "@storybook/addon-options": "3.4.1",
     "axios": "0.18.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
