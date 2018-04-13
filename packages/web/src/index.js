@@ -22,7 +22,7 @@ import {
 import Select from './Select/';
 // import Collapse from './Collapse/';
 // import ListGroup from './ListGroup/';
-import { ListGroup, ListContent, ListItem } from './List';
+import { ListGroup, ListContent, ListItem } from './ListGroup';
 import { Pill, PillsGroup } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip/';

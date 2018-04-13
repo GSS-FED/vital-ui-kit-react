@@ -6,15 +6,9 @@
 
  import styled from 'styled-components';
 
- import sharedStyled from '../ListGroup/styled';
-
  export const ListContent = styled.div`
    display: block;
    font-size: 1.2rem;
-   ${props =>
-     props.border
-       ? sharedStyled.themeWithBorder
-       : sharedStyled.themeWithoutBorder};
    border-left: ${props => props.border ? '1px solid #d8e3f6' : 'none'};
    border-right: ${props => props.border ? '1px solid #d8e3f6' : 'none'};
    padding: 0.928rem 2.856rem 0.928rem 1.428rem;
