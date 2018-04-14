@@ -37,7 +37,7 @@
     "styled-theme": "^0.3.3"
   },
   "devDependencies": {
-    "@storybook/react": "3.4.0",
+    "@storybook/react": "3.4.1",
     "babel-plugin-styled-components": "^1.5.1",
     "popmotion": "^8.1.22"
   },
