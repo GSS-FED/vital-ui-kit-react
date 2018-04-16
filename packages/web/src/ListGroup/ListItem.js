@@ -4,8 +4,6 @@
  * MIT license
  */
 
- // TODO: border style
-
 import React, { type Node, Component } from 'react';
 import styled from 'styled-components';
 import { tween, styler, easing } from 'popmotion';
@@ -60,6 +58,8 @@ type Props = {
   collapse?: boolean,
   /** @private */
   dispatchClose: () => mixed,
+  /** @private */
+  border?: boolean,
 };
 
 type State = {
@@ -135,7 +135,7 @@ class ListItem extends Component<Props, State> {
     this.props.children ? 'icon-chevron-down' : 'icon-chevron-right';
 
   render() {
-    const { title, children, hasLink, level, themed, badge } = this.props;
+    const { title, children, hasLink, level, themed, badge, border } = this.props;
 
     return (
       <List>
@@ -144,6 +144,7 @@ class ListItem extends Component<Props, State> {
           hasLink={hasLink}
           onClick={this.onItemClick}
           level={level}
+          border={border}
           themed={themed}
         >
           <Title>{title}</Title>
