@@ -38,8 +38,8 @@
   },
   "devDependencies": {
     "@storybook/react": "3.4.1",
-    "babel-plugin-styled-components": "^1.5.1",
-    "popmotion": "^8.1.22"
+    "babel-plugin-styled-components": "1.5.1",
+    "popmotion": "8.1.22"
   },
   "license": "MIT",
   "bugs": {
