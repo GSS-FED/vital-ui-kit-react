@@ -4,101 +4,66 @@
  * MIT license
  */
 
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { type Node, Component } from 'react';
 
-import Badge from '../Badge';
-import ListGroupBase from './ListGroupBase';
-
-import { ListContent, List, ListWrapper } from './styled';
-
-import type { ListItemType } from './type';
-
-const BadgeWrapper = styled(ListContent)`
-  text-align: right;
-  padding-right: ${props => (props.href ? '20px' : '0')};
-`;
-
-const InnerList = styled(List)`
-  padding-left: 2.5rem;
-  border: none;
-`;
-
-type State = {
-  items: Array<ListItemType>
-};
+import { ListGroupWrapper } from './styled';
 
 type Props = {
-  icon?: string | Node,
-  border?: boolean,
+  /** Children of ListItem */
+  children: Array<Node>,
+  /** Light or dark theme */
   themed?: 'light' | 'dark',
-  items: Array<ListItemType>
+  /** Border around ListGroup and ListItem */
+  border?: boolean,
+  /** Customize Icon */
+  icon?: string | Node,
+  /** Collapse mode, show one item one time */
+  collapse?: boolean
 };
 
-/**
- * @render react
- * @name ListGroup
- * @description Vital Tree-view list group
- */
+type State = {
+  open: boolean
+};
 
 class ListGroup extends Component<Props, State> {
-  static defaultProps = {
-    border: true,
-    themed: 'light'
-  };
-
-  state = {
-    items: this.props.items
-  };
   nodes: Map<number, HTMLElement> = new Map();
 
-  onListOpen = (index: number) => {
-    const node = this.nodes.get(index);
-
-    this.setState({
-      items: this.state.items.map(
-        (item, i) =>
-          i === index && item.children
-            ? {
-                ...item,
-                open: !item.open,
-                childrenHeight: node ? node.scrollHeight : 0
-              }
-            : item
-      )
-    });
+  setNodes = (i: number, el: HTMLElement) => {
+    this.nodes.set(i, el);
   };
 
-  renderChildren = (item: ListItemType) =>
-    item.children &&
-    Array.isArray(item.children) &&
-    item.children.map((child, i) => (
-      <ListWrapper key={child.id || i}>
-        <InnerList>{child.content}</InnerList>
-      </ListWrapper>
-    ));
+  renderChildren = () =>
+    React.Children.map(this.props.children, (child, i) =>
+      React.cloneElement(child, {
+        ref: node => {
+          this.setNodes(i, node);
+        },
+        themed: this.props.themed,
+        collapse: this.props.collapse,
+        border: this.props.border,
+        dispatchClose: this.dispatchClose,
+      })
+    );
 
-  renderBadge = (item: ListItemType) => (
-    <BadgeWrapper href={item.href}>
-      {item.badge && <Badge label={item.badge} />}
-    </BadgeWrapper>
-  );
-
-  setNodes = (i: number, c: HTMLElement) => {
-    this.nodes.set(i, c);
+  dispatchClose = (level: number) => {
+    this.nodes.forEach(node => {
+      if (node.props.level === level && node.state.open) {
+        node.startAnimation();
+      }
+    })
   };
 
   render() {
+    const { themed, border, collapse, children, ...props } = this.props;
     return (
-      <ListGroupBase
-        nodes={this.nodes}
-        setNodes={this.setNodes}
-        onListOpen={this.onListOpen}
-        renderChilden={this.renderChildren}
-        renderBadge={this.renderBadge}
-        data={this.state.items}
-        {...this.props}
-      />
+      <ListGroupWrapper
+        {...props}
+        themed={themed}
+        border={border}
+        collapse={collapse}
+      >
+        {this.renderChildren()}
+      </ListGroupWrapper>
     );
   }
 }

@@ -20,8 +20,9 @@ import {
   StatelessTextArea
 } from './Form/';
 import Select from './Select/';
-import Collapse from './Collapse/';
-import ListGroup from './ListGroup/';
+// import Collapse from './Collapse/';
+// import ListGroup from './ListGroup/';
+import { ListGroup, ListContent, ListItem } from './ListGroup';
 import { Pill, PillsGroup } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip/';
@@ -51,8 +52,9 @@ export {
   Hint,
   Addon,
   Select,
-  Collapse,
   ListGroup,
+  ListContent,
+  ListItem,
   Pill,
   PillsGroup,
   Slider,

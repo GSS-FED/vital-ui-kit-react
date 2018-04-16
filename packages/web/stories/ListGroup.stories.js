@@ -16,71 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { ListGroup } from '../src';
-
-const items = [
-  {
-    content: 'Item 01',
-    href: 'google.com',
-  },
-  {
-    content: 'Item 02',
-  },
-  {
-    content: 'Item 02',
-    badge: '99+',
-  },
-  {
-    content: 'Item 03',
-    badge: '99+',
-    href: 'google.com',
-  },
-];
-
-const itemsWithChildren = [
-  {
-    content: 'Item 01',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-        href: 'google.com',
-      },
-      {
-        content: 'SubItem 01',
-      },
-    ],
-  },
-  {
-    content: 'Item 02',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-      },
-    ],
-  },
-  {
-    content: 'Item 03',
-    children: [
-      {
-        content: 'SubItem 01',
-        badge: '99+',
-      },
-    ],
-  },
-];
-
-const itemsWithContent = [
-  {
-    content: 'Collapse 01',
-    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  },
-  {
-    content: 'Collapse 02',
-    children: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  },
-]
+import { ListGroup, ListContent, ListItem } from '../src';
 
 const Display = styled.div`
   padding: 20px;
@@ -94,9 +30,27 @@ storiesOf('ListGroup', module)
       withNotes('This is ListGroup')(() => (
         <Display>
           <ListGroup
-            items={items}
-            themed={select('Themed', { light: 'light', dark: 'dark' })}
-          />
+            themed={select('themed', { light: 'light', dark: 'dark' })}
+          >
+            <ListItem title="Level 1" badge="99+" >
+              <ListItem title="Level 2">
+                <ListItem title="Level 3">
+                  <ListItem title="Level 4">
+                    <ListItem title="Level 5" />
+                  </ListItem>
+                  <ListItem title="Level 4" hasLink />
+                  <ListItem title="Level 4 link with badge" badge="1" hasLink />
+                </ListItem>
+                <ListItem title="Level 3" />
+                <ListItem title="Level 3 has Content">
+                  <ListContent>
+                    Vero sint molestiae sit consequuntur aut aliquam. Aut porro maiores est rerum sed quasi fugiat culpa fuga. Voluptatem quasi excepturi earum. Repellendus qui deleniti aut blanditiis exercitationem eum dolorem libero debitis.
+                  </ListContent>
+                </ListItem>
+              </ListItem>
+            </ListItem>
+            <ListItem badge="10" title="Level 1" />
+          </ListGroup>
         </Display>
       )),
     ),
@@ -107,9 +61,29 @@ storiesOf('ListGroup', module)
       withNotes('This is ListGroup')(() => (
         <Display>
           <ListGroup
-            items={itemsWithChildren}
+            collapse
+            border
             themed={select('Themed', { light: 'light', dark: 'dark' })}
-          />
+          >
+            <ListItem title="Collaspe 1">
+              <ListContent>
+                Quo voluptates numquam nulla libero vel facere quibusdam sunt. Hic sed delectus et ipsum iste. Eos eligendi quibusdam. Possimus quisquam minima velit maxime officia consequatur et magni. Necessitatibus quos sed alias architecto est pariatur. Et vero aperiam quaerat.
+
+Ut numquam quaerat et aut neque ratione velit et dolor. Ipsam repellendus saepe quas et iste debitis molestias recusandae ipsum. Praesentium cumque est velit delectus non atque ullam.
+
+Non quis voluptate doloribus voluptatum assumenda. Illum est incidunt a eius voluptatum laudantium repellat. Ipsum eos non molestias qui ab quasi pariatur. Ipsum ea perferendis dolorem nihil et dolor. Expedita officia accusantium incidunt illum illum consequuntur velit.
+              </ListContent>
+            </ListItem>
+            <ListItem title="Collaspe 2" badge="1">
+              <ListContent>
+                Nostrum tempora ipsum et in. Numquam praesentium voluptas itaque ratione iste quisquam harum. Voluptatibus sit rerum.
+
+Vitae consequatur eaque aliquid porro perspiciatis culpa et sit. Iste illo eum cum. Et ea beatae dolorum tempore possimus iste quia nobis beatae.
+
+Aut voluptatibus illo possimus inventore laudantium nobis aperiam. Aut aut vel officiis laborum nihil dolor. Aut velit eligendi at at sed esse inventore. Perspiciatis ipsum debitis in voluptatem error cumque iure earum nostrum. Quo recusandae dolores esse. Ipsam voluptas aut et nisi iste qui minima mollitia alias.
+              </ListContent>
+            </ListItem>
+          </ListGroup>
         </Display>
       )),
     ),
