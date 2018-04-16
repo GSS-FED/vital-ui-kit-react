@@ -1,3 +1,4 @@
+import path from 'path';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
@@ -6,11 +7,16 @@ import uglify from 'rollup-plugin-uglify';
 import url from 'rollup-plugin-url';
 import flow from 'rollup-plugin-flow';
 import visualizer from 'rollup-plugin-visualizer';
+import autoExternal from 'rollup-plugin-auto-external';
 // import globals from 'rollup-plugin-node-globals';
-import pkg from './package.json';
+import pkg from './packages/web/package.json';
 
 const commonPlugins = [
+  autoExternal({
+    packagePath: path.resolve('./packages/web/package.json')
+  }),
   resolve({
+    module: true,
     jsnext: true,
     main: true,
     browser: true
@@ -27,7 +33,7 @@ const commonPlugins = [
 
 const configBase = {
   input: 'packages/web/src/index.js',
-  external: ['react'].concat(Object.keys(pkg.dependencies)),
+  // external: ['react'].concat(Object.keys(pkg.dependencies)).concat(Object.keys(pkg.devDependencies)),
   plugins: commonPlugins
 };
 
