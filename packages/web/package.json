@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.0.8-4",
+  "version": "0.1.0",
   "description": "Vital UI Kit for React!",
   "main": "dist/vital-ui-kit.cjs.js",
   "module": "dist/vital-ui-kit.es.js",
@@ -24,11 +24,11 @@
     "web"
   ],
   "dependencies": {
+    "popmotion": "^8.1.22",
     "rc-trigger": "^2.3.4",
     "react-click-outside": "^3.0.1",
     "react-priority-navigation": "^0.0.3",
-    "resize-observer-polyfill": "^1.5.0",
-    "popmotion": "^8.1.22"
+    "resize-observer-polyfill": "^1.5.0"
   },
   "peerDependencies": {
     "react": "15.6.0 - 16.3.1",
