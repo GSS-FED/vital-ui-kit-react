@@ -30,9 +30,10 @@ storiesOf('Card', module)
         <Card width="300px" height="220px">
           <Card.Header badge="99+" title="Title" />
           <Card.Container>{content}</Card.Container>
-          <Card.Footer
-            actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}
-          />
+          <Card.Footer>
+            <Card.FooterButton>Cancel</Card.FooterButton>
+            <Card.FooterButton primary>Confirm</Card.FooterButton>
+          </Card.Footer>
         </Card>
       )),
     ),
@@ -45,7 +46,7 @@ storiesOf('Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <ButtonGroup>
+            <ButtonGroup style={{ padding: 10 }}>
               <Button>Cancel</Button>
               <Button flat nature="primary">
                 Confirm
@@ -64,7 +65,7 @@ storiesOf('Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <ButtonGroup>
+            <ButtonGroup style={{ padding: 10 }}>
               <Button link>Cancel</Button>
               <Button link nature="primary">
                 Confirm
@@ -87,9 +88,10 @@ storiesOf('Card', module)
             {content}
             {content}
           </Card.Container>
-          <Card.Footer
-            actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}
-          />
+          <Card.Footer>
+            <Card.FooterButton>Cancel</Card.FooterButton>
+            <Card.FooterButton primary>Confirm</Card.FooterButton>
+          </Card.Footer>
         </Card>
       )),
     ),
@@ -123,7 +125,9 @@ storiesOf('Card', module)
               Let’s Get Started
             </div>
           </Card.Container>
-          <Card.Footer actions={[{ text: 'Confirm', primary: true }]} />
+          <Card.Footer>
+            <Card.FooterButton primary>Confirm</Card.FooterButton>
+          </Card.Footer>
         </Card>
       )),
     ),

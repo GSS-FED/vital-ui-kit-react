@@ -55,7 +55,6 @@ const Card = ({ children, width, height, shadow, ...props }: Props) => (
 
 Card.Header = Header;
 Card.Container = Container;
-// TODO: action callback
 Card.Footer = Footer;
 Card.FooterButton = FooterButton;
 
