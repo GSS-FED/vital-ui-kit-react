@@ -42,7 +42,10 @@ type Props = {
  * <Card width="300px" height="420px">
  *   <Card.Header image={"http://react.vitaluikit.com/static/media/card-header-pic.0080a766.png"} title="Title" />
  *   <Card.Container>Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.</Card.Container>
- *    <Card.Footer actions={[{ text: 'Confirm', primary: true }, { text: 'Cancel' }]}></Card.Footer>
+ *    <Card.Footer>
+ *      <Card.FooterButton>Cancel</Card.FooterButton>
+ *      <Card.FooterButton primary>Confirm</Card.FooterButton>
+ *    </Card.Footer>
  * </Card>
  */
 
@@ -55,7 +58,6 @@ const Card = ({ children, width, height, shadow, ...props }: Props) => (
 
 Card.Header = Header;
 Card.Container = Container;
-// TODO: action callback
 Card.Footer = Footer;
 Card.FooterButton = FooterButton;
 

@@ -4,11 +4,11 @@
  * MIT license
  */
 
-import React, { Component } from 'react';
+import React, { type Node, Component } from 'react';
 import styled from 'styled-components';
 
 import Badge from '../Badge';
-import type { PillType } from './type';
+import PillsGroup from './PillsGroup';
 
 const textWidth = props => {
   if (props.vertical && props.badge) {
@@ -66,29 +66,37 @@ const PillBadge = styled(Badge)`
 `;
 
 type Props = {
-  item: PillType,
-  selected?: boolean,
+  /** Require id for each Pills */
+  id: string | number,
+  /** Content inside Pill */
+  label: Node,
+  /** show badge if needed */
+  badge?: string | number,
+  /** The current state */
+  current?: boolean,
   vertical?: boolean,
-  onSelect: (item: PillType) => mixed,
+  onSelect: (id: string | number) => mixed,
 };
 
 class Pill extends Component<Props> {
   handleSelect = () => {
-    this.props.onSelect(this.props.item);
+    this.props.onSelect(this.props.id);
   };
 
+  static Group = PillsGroup;
+
   render() {
-    const { vertical, selected, item, ...props } = this.props;
+    const { vertical, current, badge, id, label, ...props } = this.props;
     return (
       <Root
         vertical={vertical}
-        selected={selected}
+        selected={current === id}
         onClick={this.handleSelect}
         {...props}>
-        <Text vertical={vertical} badge={item.badge}>
-          {item.text}
+        <Text vertical={vertical} badge={badge}>
+          {label}
         </Text>
-        {item.badge && <PillBadge label={item.badge} />}
+        {badge && <PillBadge label={badge} />}
       </Root>
     );
   }

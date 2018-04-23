@@ -1,4 +1,10 @@
-import React from 'react';
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
+
+import React, { type Node } from 'react';
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.div`
@@ -46,13 +52,14 @@ const Button = styled.button`
 `;
 
 type Props = {
-  label: string,
+  children: Node,
   primary?: boolean,
+  onClick: () => {},
 };
 
-const FooterButton = ({ label, primary, ...props }: Props) => (
-  <ButtonWrapper {...props}>
-    <Button primary={primary}>{label}</Button>
+const FooterButton = ({ children, primary, onClick, ...props, }: Props) => (
+  <ButtonWrapper {...props} onClick={onClick}>
+    <Button primary={primary}>{children}</Button>
   </ButtonWrapper>
 );
 

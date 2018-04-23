@@ -4,12 +4,9 @@
  * MIT license
  */
 
-import React, { Component } from 'react';
+import React, { type Node, Component } from 'react';
 import styled from 'styled-components';
 import PriorityNav from 'react-priority-navigation';
-
-import Pill from './Pill';
-import type { PillGroupType, PillType } from './type';
 
 const Root = styled.div`
   position: relative;
@@ -17,37 +14,51 @@ const Root = styled.div`
   white-space: nowrap;
 `;
 
-type State = {
-  selected: PillType
+type Props = {
+  children: Node,
+  vertical?: boolean,
+  /** The default active, match with pill's id */
+  default?: string | number | void
 };
 
-class PillsGroup extends Component<PillGroupType, State> {
+type State = {
+  current: string | number | void
+};
+
+class PillsGroup extends Component<Props, State> {
+  static defaultProps = {
+    vertical: false,
+    current: null
+  };
   state = {
-    selected: this.props.items.filter(item => item.current === true)[0]
+    current: this.props.default
   };
 
-  onSelect = (item: PillType) => {
+  onSelect = (id: string | number) => {
     this.setState({
-      selected: item
+      current: id
     });
   };
 
   renderChildren = () =>
-    this.props.items.map((item, i) => (
-      <Pill
-        key={i}
-        item={item}
-        onSelect={this.onSelect}
-        selected={item === this.state.selected}
-        vertical={this.props.vertical}
-      />
-    ));
+    React.Children.map(this.props.children, child =>
+      React.cloneElement(child, {
+        current: this.state.current,
+        onSelect: this.onSelect,
+        vertical: this.state.vertical
+      })
+    );
 
   render() {
-    if (this.props.vertical) {
+    const { vertical } = this.props;
+    if (vertical) {
       return <Root>{this.renderChildren()}</Root>;
     }
-    return <PriorityNav>{this.renderChildren()}</PriorityNav>;
+    return (
+      <PriorityNav vertical={vertical} current={this.state.current}>
+        {this.renderChildren()}
+      </PriorityNav>
+    );
   }
 }
 

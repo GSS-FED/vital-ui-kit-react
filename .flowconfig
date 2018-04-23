@@ -1,6 +1,7 @@
 [ignore]
 .*/storybook-static/*
 .*/node_modules/styled-components/.*
+./packages/native/.*
 
 [include]
 flow/*
