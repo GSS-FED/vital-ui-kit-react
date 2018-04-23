@@ -23,7 +23,7 @@ import Select from './Select/';
 // import Collapse from './Collapse/';
 // import ListGroup from './ListGroup/';
 import { ListGroup, ListContent, ListItem } from './ListGroup';
-import { Pill, PillsGroup } from './Pill';
+import { Pill } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip/';
 import ProgressBar from './ProgressBar/';
@@ -56,7 +56,6 @@ export {
   ListContent,
   ListItem,
   Pill,
-  PillsGroup,
   Slider,
   Tooltip,
   ProgressBar,
