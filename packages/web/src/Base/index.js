@@ -1,3 +1,2 @@
-export { default as Utils } from './utils';
-
-export { default as Styles } from './styles/';
+export { default as styles } from './styles/';
+export { default as ThemeProvider } from './ThemeProvider';

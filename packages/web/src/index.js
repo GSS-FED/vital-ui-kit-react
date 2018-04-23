@@ -2,6 +2,7 @@
 
 import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
+import { ThemeProvider, styles } from './Base';
 import { CheckboxGroup, Checkbox } from './Checkbox';
 import Badge from './Badge';
 import Card from './Card';
@@ -64,5 +65,7 @@ export {
   TableCaption,
   TableColumn,
   TableHeader,
-  Pagination
+  Pagination,
+  ThemeProvider,
+  styles,
 };

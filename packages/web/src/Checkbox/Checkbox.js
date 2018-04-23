@@ -9,9 +9,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import { rgba } from 'polished';
 
 import Icon from '../Icon/';
-import { Styles } from '../Base';
+import { styles } from '../Base';
 
-const { colors } = Styles;
+const { colors } = styles;
 
 const Root = styled.label`
   font-size: 15px;

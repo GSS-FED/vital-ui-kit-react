@@ -4,7 +4,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import constants from './constants';
-import { borderRightRadius, stateColor } from '../Base/utils';
+import { borderRightRadius, stateColor } from '../utils';
 
 const Root = styled.div`
   position: absolute;

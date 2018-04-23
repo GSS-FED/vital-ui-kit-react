@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import { Styles } from '../Base/';
+import { styles } from '../Base/';
 import { buttonSizes } from './constant';
 
-const { colors } = Styles;
+const { colors } = styles;
 
 const ButtonElement = styled.button`
   position: relative;

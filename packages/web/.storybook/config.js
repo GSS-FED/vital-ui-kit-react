@@ -3,8 +3,7 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import Theme from '../src/Base/styles/colors';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from '../src/Base';
 
 import '../src/Base/styles/global.css'
 
@@ -38,6 +37,6 @@ setOptions({
 });
 
 
-addDecorator(story => <ThemeProvider theme={Theme}>{story()}</ThemeProvider>);
+addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
 
 configure(loadStories, module);

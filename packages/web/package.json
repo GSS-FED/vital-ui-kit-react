@@ -34,7 +34,8 @@
     "react": "15.6.0 - 16.3.1",
     "styled-components": "1.4.6 - 3",
     "styled-is": "^1.1.2",
-    "styled-theme": "^0.3.3"
+    "styled-theme": "^0.3.3",
+    "polished": "^1.9.2"
   },
   "devDependencies": {
     "@storybook/react": "3.4.1",
