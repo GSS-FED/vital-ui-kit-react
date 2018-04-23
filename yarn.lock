@@ -9957,9 +9957,9 @@ react-onclickoutside@^6.5.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.0.tgz#997a4d533114c9a0a104913638aa26afc084f75c"
 
-react-priority-navigation@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.3.tgz#9c035f919ea31318e627f4e565509842a0eadd98"
+react-priority-navigation@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.7.tgz#714a80d7ccfa10301c89709a4e4d025cebfbb853"
   dependencies:
     rc-trigger "^2.3.4"
     resize-observer-polyfill "^1.5.0"

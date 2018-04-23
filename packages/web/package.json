@@ -27,7 +27,7 @@
     "popmotion": "^8.1.22",
     "rc-trigger": "^2.3.4",
     "react-click-outside": "^3.0.1",
-    "react-priority-navigation": "^0.0.3",
+    "react-priority-navigation": "^0.0.7",
     "resize-observer-polyfill": "^1.5.0"
   },
   "peerDependencies": {
@@ -38,8 +38,7 @@
   },
   "devDependencies": {
     "@storybook/react": "3.4.1",
-    "babel-plugin-styled-components": "1.5.1",
-    "popmotion": "8.1.22"
+    "babel-plugin-styled-components": "1.5.1"
   },
   "license": "MIT",
   "bugs": {
