@@ -5,3 +5,4 @@ node_modules/
 dist
 bundle-stats.html
 yarn-error.log
+esm

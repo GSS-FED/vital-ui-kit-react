@@ -3,6 +3,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
+import { trunTo } from '../utils/math';
 import { badgeSizes } from './constants';
 
 const badgeStyle = props => {
@@ -59,7 +60,7 @@ type Props = {
 
 const AvatarBadge = ({ label, size, round }: Props) => (
   <Root label={label} size={size} round={round}>
-    {size === 'xlarge' ? label : null}
+    {size === 'xlarge' ? trunTo(label) : null}
   </Root>
 );
 

@@ -7,6 +7,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+import { trunTo } from '../utils/math';
+
 const Root = styled.span`
   display: inline-block;
   vertical-align: middle;
@@ -21,6 +23,8 @@ type Props = {
   /** Text on the badge */
   label: string | number,
   children?: React.Node,
+  /**  */
+  trunc?: boolean,
 };
 
 /**
@@ -31,9 +35,9 @@ type Props = {
  * <Badge label="99+" />
  */
 
-const Badge = ({ label, children, ...props }: Props) => (
+const Badge = ({ label, children, trunc, ...props }: Props) => (
   <Root {...props}>
-    {label}
+    {trunc ? trunTo(label) : label}
     {children}
   </Root>
 );

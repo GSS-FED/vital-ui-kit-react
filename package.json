@@ -20,6 +20,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces --nohoist=react-native",
     "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
+    "build:webesm": "babel packages/web/src --out-dir packages/web/esm",
+    "build": "npm-run-all clean --parallel build:web build:webesm",
+    "clean": "rimraf packages/web/dist && rimraf packages/web/esm",
     "prebuild:web": "rm -rf packages/web/dist",
     "storybook:web": "cd packages/web && start-storybook -p 6006",
     "build-storybook:web": "cd packages/web && build-storybook",
@@ -78,6 +81,8 @@
     "eslint-watch": "3.1.4",
     "flow-bin": "0.69.0",
     "lerna": "2.10.1",
+    "npm-run-all": "^4.1.2",
+    "rimraf": "^2.6.2",
     "rollup": "0.57.1",
     "rollup-plugin-auto-external": "1.2.0",
     "rollup-plugin-babel": "3.0.3",
