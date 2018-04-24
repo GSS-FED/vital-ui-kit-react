@@ -127,7 +127,7 @@ class Checkbox extends Component<Props, State> {
           <Box isChecked={this.state.isChecked} isDisabled={isDisabled} isRound={isRound}>
             <IconWrapper isChecked={this.state.isChecked} isDisabled={isDisabled}>
               <Icon
-                className="icon-check"
+                name="check"
                 size="12"
                 color={iconColor(isRound, isDisabled, theme)}
               />

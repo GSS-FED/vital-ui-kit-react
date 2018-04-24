@@ -119,7 +119,7 @@ storiesOf('Form', module)
           <FieldInput label="Price" inline>
             <MultipleInput>
               <Addon>
-                <Icon className="icon-dollar" />
+                <Icon name="dollar" />
               </Addon>
               <Input placeholder="LabelAddon on the both" />
               <Addon>.00</Addon>
@@ -203,11 +203,11 @@ storiesOf('Form/Input', module)
     withInfo(`Icon in Left or Right`)(
       withNotes('insert icon component')(() => (
         <FormWrapper>
-          <StatelessInput placeholder="Right side icon" icon="icon-search" />
+          <StatelessInput placeholder="Right side icon" icon="search" />
           <br />
           <StatelessInput
             placeholder="Left side icon"
-            icon="icon-search"
+            icon="search"
             iconPosition="left"
           />
         </FormWrapper>

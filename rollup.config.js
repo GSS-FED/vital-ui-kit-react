@@ -9,11 +9,16 @@ import flow from 'rollup-plugin-flow';
 import visualizer from 'rollup-plugin-visualizer';
 import autoExternal from 'rollup-plugin-auto-external';
 // import globals from 'rollup-plugin-node-globals';
-import pkg from './packages/web/package.json';
+// import pkg from './packages/web/package.json';
+import json from 'rollup-plugin-json';
 
 const commonPlugins = [
   autoExternal({
     packagePath: path.resolve('./packages/web/package.json')
+  }),
+  json({
+    exclude: ['node_modules/**'],
+    preferConst: true
   }),
   resolve({
     module: true,
@@ -28,7 +33,7 @@ const commonPlugins = [
     externalHelpers: true
   }),
   url(),
-  commonjs()
+  commonjs(),
 ];
 
 const configBase = {

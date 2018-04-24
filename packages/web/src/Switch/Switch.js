@@ -154,19 +154,19 @@ class Switch extends Component<Props, State> {
         <Label isRound={isRound} isDisabled={isDisabled}>
           {iconLabelFront && (
             <TextOn isChecked={this.state.isChecked}>
-              <Icon className={iconLabelFront} color="#FFFFFF" />
+              <Icon name={iconLabelFront} color="#FFFFFF" />
             </TextOn>
           )}
           {iconLabelBack && (
             <TextOff isChecked={this.state.isChecked}>
-              <Icon className={iconLabelBack} color="#C4D2EB" />
+              <Icon name={iconLabelBack} color="#C4D2EB" />
             </TextOff>
           )}
           <Btn icon={iconBtn} isRound={isRound} isDisabled={isDisabled}>
             {iconBtn && (
               <Icon
                 color={this.state.isChecked ? '#0e86fe' : '#C4D2EB'}
-                className={iconBtn}
+                name={iconBtn}
                 size="17"
               />
             )}

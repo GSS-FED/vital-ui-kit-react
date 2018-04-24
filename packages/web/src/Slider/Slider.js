@@ -220,7 +220,7 @@ class Slider extends React.Component<Props, State> {
       }
       return (
         <Button {...buttonProps} circle size="xsmall">
-          <Icon className="icon-chevron-left" size="13" />
+          <Icon name="chevron-left" size="13" />
         </Button>
       );
     }
@@ -244,7 +244,7 @@ class Slider extends React.Component<Props, State> {
       }
       return (
         <Button {...buttonProps} circle size="xsmall">
-          <Icon className="icon-chevron-right" size="13" />
+          <Icon name="chevron-right" size="13" />
         </Button>
       );
     }

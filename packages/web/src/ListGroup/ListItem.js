@@ -132,7 +132,7 @@ class ListItem extends Component<Props, State> {
   );
 
   iconHandler = () =>
-    this.props.children ? 'icon-chevron-down' : 'icon-chevron-right';
+    this.props.children ? 'chevron-down' : 'chevron-right';
 
   render() {
     const { title, children, hasLink, level, themed, badge, border } = this.props;
@@ -152,7 +152,7 @@ class ListItem extends Component<Props, State> {
           {(children || hasLink) && (
             <Icon
               open={this.state.open}
-              className={this.iconHandler()}
+              name={this.iconHandler()}
               size={ICON_SIZE}
             />
           )}

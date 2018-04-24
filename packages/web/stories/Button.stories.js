@@ -152,7 +152,7 @@ storiesOf('Button', module)
     withInfo('')(
       withNotes('')(() => (
         <Button circle={boolean('circle', true)}>
-          <Icon className="icon-plus" color="#3b5998" />
+          <Icon name="plus" color="#3b5998" />
         </Button>
       )),
     ),
