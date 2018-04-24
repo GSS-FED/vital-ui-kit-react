@@ -106,14 +106,15 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@gssfed/vital-ui-kit-react@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.1.1.tgz#0e740cc6923023b3025a26bb0f1369c6eba82883"
+"@gssfed/vital-ui-kit-react@^0.2.0":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.2.1.tgz#c4b78b524d7a57c96d5023cd852965674e088309"
   dependencies:
     popmotion "^8.1.22"
+    prop-types "^15.6.1"
     rc-trigger "^2.3.4"
     react-click-outside "^3.0.1"
-    react-priority-navigation "^0.0.3"
+    react-priority-navigation "^0.0.7"
     resize-observer-polyfill "^1.5.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -8868,7 +8869,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.x, prop-types@^15.3.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@15.x, prop-types@^15.3.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -9150,9 +9151,9 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
-react-priority-navigation@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.3.tgz#9c035f919ea31318e627f4e565509842a0eadd98"
+react-priority-navigation@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.7.tgz#714a80d7ccfa10301c89709a4e4d025cebfbb853"
   dependencies:
     rc-trigger "^2.3.4"
     resize-observer-polyfill "^1.5.0"
