@@ -20,4 +20,4 @@ We use [rollup](https://github.com/rollup/rollup) for bundling packages. It will
 
 Run `yarn run build` will handle this process.
 
-We follow [semantic versioning](https://semver.org/) and publish via `lerna`. Run `yarn run publish` and beware it should be stable in `production` branch.
+We follow [semantic versioning](https://semver.org/) and publish via `lerna`. Run `yarn run publish` and beware it should be stable in `master` branch.

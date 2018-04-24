@@ -38,15 +38,18 @@ const Root = styled.div`
   margin-left: ${props => (props.vertical ? '0' : '10px')};
   margin-right: ${props => (props.vertical ? '0' : '10px')};
 
-  &:hover {
-    background-color: #d8e2f5;
-    color: #456296;
-  }
+  ${props => !props.selected && `
+    &:hover {
+      background-color: #d8e2f5;
+      color: #456296;
+    }
 
-  &:active {
-    background-color: #c3d1eb;
-    color: #456296;
-  }
+    &:active {
+      background-color: #c3d1eb;
+      color: #456296;
+    }
+  `
+  };
 `;
 
 const Text = styled.span`
