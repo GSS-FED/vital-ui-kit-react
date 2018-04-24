@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import ResizeObserver from 'resize-observer-polyfill';
 
 import Track from '../Track/';
-import { stateColor } from '../Base/utils';
+import { stateColor } from '../utils';
 
 const Root = styled.div`
   display: block;

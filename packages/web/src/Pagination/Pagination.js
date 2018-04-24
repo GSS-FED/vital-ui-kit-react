@@ -66,7 +66,7 @@ const Pagination = ({ pageSize, current }: Props) => (
     <Item>
       <Icon
         style={{ marginRight: '5px' }}
-        className="icon-chevron-left"
+        name="chevron-left"
         size="12"
       />
       Prev
@@ -80,7 +80,7 @@ const Pagination = ({ pageSize, current }: Props) => (
       Next
       <Icon
         style={{ marginLeft: '5px' }}
-        className="icon-chevron-right"
+        name="chevron-right"
         size="12"
       />
     </Item>

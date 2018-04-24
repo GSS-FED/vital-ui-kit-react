@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+// import { css } from 'styled-components';
 
 export const stateColor = (props, defaultColor = '#7189b6') => {
   if (props.alarm) return `#EB5000`;

@@ -120,7 +120,7 @@ class StatelessInput extends React.Component<Props> {
           }}
           {...this.props}
         />
-        {icon && <InputIcon iconPosition={iconPosition} className={icon} />}
+        {icon && <InputIcon iconPosition={iconPosition} name={icon} />}
       </Root>
     );
   }

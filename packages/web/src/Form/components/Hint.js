@@ -3,7 +3,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { stateColor } from '../../Base/utils';
+import { stateColor } from '../../utils';
 
 const Root = styled.div`
   display: block !important;

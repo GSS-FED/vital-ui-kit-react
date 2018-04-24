@@ -35,7 +35,7 @@ storiesOf('Switch', module)
     withInfo(`info`)(
       withNotes('This is switch')(() => (
         <Switch
-          iconBtn="icon-wifi"
+          iconBtn="wifi"
           isDisabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
@@ -47,8 +47,8 @@ storiesOf('Switch', module)
     withInfo(`info`)(
       withNotes('This is switch')(() => (
         <Switch
-          iconLabelFront="icon-wifi"
-          iconLabelBack="icon-wifi"
+          iconLabelFront="wifi"
+          iconLabelBack="wifi"
           isDisabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />

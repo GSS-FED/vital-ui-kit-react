@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { borderTopRadius } from '../Base/utils';
+import { borderTopRadius } from '../utils';
 
 const linkStyle = props => {
   if (props.hasLink || props.hasChildren) {

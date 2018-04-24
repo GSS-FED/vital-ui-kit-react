@@ -107,7 +107,7 @@ class Select extends React.Component<Props, State> {
           filltoContainer={this.props.filltoContainer}
           {...this.props}>
           {this.renderSelect()}
-          <Icon style={{ float: 'right' }} className="icon-caret-down" size="15" />
+          <Icon style={{ float: 'right' }} name="caret-down" size="15" />
         </SelectButton>
         {this.state.isOpen && (
           <Droplist onClick={this.onSelect} items={this.props.items} />

@@ -2,10 +2,11 @@
 
 import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
+import { ThemeProvider, styles } from './Base';
 import { CheckboxGroup, Checkbox } from './Checkbox';
 import Badge from './Badge';
 import Card from './Card';
-import Icon from './Icon';
+import Icon, { withIcon } from './Icon';
 import { Radio, RadioGroup } from './Radio/';
 import Switch from './Switch';
 import {
@@ -63,5 +64,8 @@ export {
   TableCaption,
   TableColumn,
   TableHeader,
-  Pagination
+  Pagination,
+  ThemeProvider,
+  styles,
+  withIcon,
 };

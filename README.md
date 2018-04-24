@@ -19,17 +19,19 @@ npm i --save @gssfed/vital-ui-kit-react
 
 ```js
 // import package you need
-import { Button } from '@gssfed/vital-ui-kit-react'
+import { Button, ThemeProvider } from '@gssfed/vital-ui-kit-react'
 // recommend importing the global style
 import '@gssfed/vital-ui-kit-react/dist/global.css'
 
 /* ... */
 render() {
   return (
-    <Button>Vital 💜 React!</Button>
+    <ThemeProvider>
+      <Button>Vital 💜 React!</Button>
+    </ThemeProvider>
   )
 }
-````
+```
 
 
 

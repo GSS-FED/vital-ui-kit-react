@@ -2,6 +2,8 @@
 .*/storybook-static/*
 .*/node_modules/styled-components/.*
 ./packages/native/.*
+.*/examples/.*
+.*/www/.*
 
 [include]
 flow/*

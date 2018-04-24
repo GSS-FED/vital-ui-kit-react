@@ -9,9 +9,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import { rgba } from 'polished';
 
 import Icon from '../Icon/';
-import { Styles } from '../Base';
+import { styles } from '../Base';
 
-const { colors } = Styles;
+const { colors } = styles;
 
 const Root = styled.label`
   font-size: 15px;
@@ -127,7 +127,7 @@ class Checkbox extends Component<Props, State> {
           <Box isChecked={this.state.isChecked} isDisabled={isDisabled} isRound={isRound}>
             <IconWrapper isChecked={this.state.isChecked} isDisabled={isDisabled}>
               <Icon
-                className="icon-check"
+                name="check"
                 size="12"
                 color={iconColor(isRound, isDisabled, theme)}
               />
