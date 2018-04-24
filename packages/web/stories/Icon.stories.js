@@ -12,14 +12,28 @@ import {
   text,
   boolean,
   number,
-  select,
+  select
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
+import defaultIcon from '../src/Icon/selection.json';
 import Icon from '../src/Icon/';
+import Tooltip from '../src/Tooltip/';
 
 const Display = styled.div`
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+const Wrapper = styled.div`
+  padding: 20px;
+  ${'' /* margin: 10px; */} border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background: #c4d2eb;
+  }
 `;
 
 storiesOf('Icon', module)
@@ -29,8 +43,18 @@ storiesOf('Icon', module)
     withInfo(`info`)(
       withNotes('')(() => (
         <Display>
-          <Icon name="download" />
+          {defaultIcon.icons.map(icon => (
+            <Tooltip
+              placement="bottom"
+              overlay={icon.properties.name}
+              trigger={['hover']}
+            >
+              <Wrapper>
+                <Icon name={icon.icon.tags[0]} size={32} color="#2A487F" />
+              </Wrapper>
+            </Tooltip>
+          ))}
         </Display>
-      )),
-    ),
+      ))
+    )
   );
