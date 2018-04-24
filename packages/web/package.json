@@ -39,7 +39,7 @@
     "styled-theme": "^0.3.3"
   },
   "devDependencies": {
-    "@storybook/react": "3.4.1",
+    "@storybook/react": "3.4.2",
     "babel-plugin-styled-components": "1.5.1"
   },
   "license": "MIT",
