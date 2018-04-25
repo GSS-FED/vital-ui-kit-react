@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.3.2",
+  "version": "0.3.3-0",
   "description": "Vital UI Kit for React!",
   "main": "./dist/vitail-ui-kit.cj.js",
   "module": "./dist/vitail-ui-kit.es.js",
