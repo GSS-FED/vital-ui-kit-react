@@ -48,6 +48,7 @@ storiesOf('Icon', module)
               placement="bottom"
               overlay={icon.properties.name}
               trigger={['hover']}
+              mouseLeaveDelay={0}
             >
               <Wrapper>
                 <Icon name={icon.icon.tags[0]} size={32} color="#2A487F" />
