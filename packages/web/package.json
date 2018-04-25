@@ -2,8 +2,8 @@
   "name": "@gssfed/vital-ui-kit-react",
   "version": "0.2.1",
   "description": "Vital UI Kit for React!",
-  "main": "dist/vital-ui-kit.cjs.js",
-  "module": "esm/index.js",
+  "main": "src/index.js",
+  "module": "dist/index.js",
   "style": "dist/global.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

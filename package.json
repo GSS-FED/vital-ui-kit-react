@@ -20,9 +20,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces --nohoist=react-native",
     "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
-    "build:webesm": "babel packages/web/src --out-dir packages/web/esm",
+    "build:webesm": "babel packages/web/src --out-dir packages/web/dist",
     "build": "npm-run-all clean --parallel build:web build:webesm",
-    "clean": "rimraf packages/web/dist && rimraf packages/web/esm",
+    "clean": "rimraf packages/web/dist",
     "prebuild:web": "rm -rf packages/web/dist",
     "storybook:web": "cd packages/web && start-storybook -p 6006",
     "build-storybook:web": "cd packages/web && build-storybook",
