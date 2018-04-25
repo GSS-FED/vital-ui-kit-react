@@ -19,6 +19,7 @@ import { withNotes } from '@storybook/addon-notes';
 import defaultIcon from '../src/Icon/selection.json';
 import Icon from '../src/Icon/';
 import Tooltip from '../src/Tooltip/';
+import Filter from './Container/Filter';
 
 const Display = styled.div`
   padding: 20px;
@@ -42,20 +43,32 @@ storiesOf('Icon', module)
     'Basic',
     withInfo(`info`)(
       withNotes('')(() => (
-        <Display>
-          {defaultIcon.icons.map(icon => (
-            <Tooltip
-              placement="bottom"
-              overlay={icon.properties.name}
-              trigger={['hover']}
-              mouseLeaveDelay={0}
-            >
-              <Wrapper>
-                <Icon name={icon.icon.tags[0]} size={32} color="#2A487F" />
-              </Wrapper>
-            </Tooltip>
-          ))}
-        </Display>
+        <Filter>
+          {value => (
+            <Display>
+              {defaultIcon.icons
+              .filter(icon => {
+                if (value === "") {
+                  return true;
+                }
+                return icon.properties.name.indexOf(value) > -1;
+              })
+              .map(icon => (
+                <Tooltip
+                  key={icon.icon.defaultCode}
+                  placement="bottom"
+                  overlay={icon.properties.name}
+                  trigger={['hover']}
+                  mouseLeaveDelay={0}
+                >
+                  <Wrapper>
+                    <Icon name={icon.icon.tags[0]} size={32} color="#2A487F" />
+                  </Wrapper>
+                </Tooltip>
+              ))}
+            </Display>
+          )}
+        </Filter>
       ))
     )
   );
