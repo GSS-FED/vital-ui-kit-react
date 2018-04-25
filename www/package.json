@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "author": "Eric Windmill <eric@ericwindmill.com>",
   "dependencies": {
-    "@gssfed/vital-ui-kit-react": "^0.2.0",
+    "@gssfed/vital-ui-kit-react": "^0.3.0",
     "babel-plugin-lodash": "^3.2.11",
     "gatsby": "^1.9.231",
     "gatsby-link": "^1.6.7",
