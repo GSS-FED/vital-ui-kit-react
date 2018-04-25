@@ -4,6 +4,8 @@
 ./packages/native/.*
 .*/examples/.*
 .*/www/.*
+.*/dist/.*
+.*/build/.*
 
 [include]
 flow/*

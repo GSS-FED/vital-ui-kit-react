@@ -40,8 +40,8 @@ type Props = {
   children: React.Node,
 }
 
-const FieldInput = ({ label, align, inline, required, children }: Props) => (
-  <Root inline={inline}>
+const FieldInput = ({ label, align, inline, required, children, ...props }: Props) => (
+  <Root inline={inline} {...props}>
     <Label text={label} required={required} align={align} />
     {children}
   </Root>
