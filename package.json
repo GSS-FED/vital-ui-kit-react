@@ -20,7 +20,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces --nohoist=react-native",
     "build:web": "rollup -c && cp packages/web/src/Base/styles/global.css packages/web/dist",
-    "build:webesm": "babel packages/web/src --out-dir packages/web/dist",
+    "build:webesm": "babel packages/web/src --out-dir packages/web/dist --compact --copy-files",
     "build": "npm-run-all clean --parallel build:web build:webesm",
     "clean": "rimraf packages/web/dist",
     "prebuild:web": "rm -rf packages/web/dist",
@@ -31,8 +31,8 @@
     "flow": "flow check",
     "lint": "eslint packages/**; exit 0",
     "lint:watch": "esw -w packages/**",
-    "prepare": "npm run build:web",
-    "prepublish": "yarn run build:web",
+    "prepare": "npm run build",
+    "prepublish": "yarn run build",
     "publish": "lerna publish"
   },
   "repository": {
