@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
 
 import Nav from './components/Nav';
 import Main from './components/Main';
-import Theme from './colors';
 
 const Wrapper = styled.div`
   position: relative;
@@ -57,7 +57,7 @@ const MainWrapper = styled.div`
 class App extends Component {
   render() {
     return (
-      <ThemeProvider theme={Theme}>
+      <ThemeProvider>
         <Wrapper>
           <Box>
             <Header />

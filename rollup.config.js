@@ -42,12 +42,12 @@ const configBase = {
   plugins: commonPlugins
 };
 
-// const serverConfig = Object.assign({}, configBase, {
-//   output: [
-//     { file: 'packages/web/dist/vitail-ui-kit.es.js', format: 'es' },
-//     Object.assign({}, { format: 'cjs', file: 'packages/web/dist/vital-ui-kit.cjs.js' })
-//   ]
-// });
+const serverConfig = Object.assign({}, configBase, {
+  output: [
+    { file: 'packages/web/dist/vitail-ui-kit.es.js', format: 'es' },
+    Object.assign({}, { format: 'cjs', file: 'packages/web/dist/vital-ui-kit.cjs.js' })
+  ]
+});
 
 // const umdConfig
 
@@ -64,4 +64,7 @@ const minifyConfig = Object.assign({}, configBase, {
   ].concat(commonPlugins)
 })
 
-export default minifyConfig;
+export default [
+  serverConfig,
+  minifyConfig
+];

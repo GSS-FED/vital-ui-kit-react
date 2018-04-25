@@ -106,9 +106,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@gssfed/vital-ui-kit-react@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.2.1.tgz#c4b78b524d7a57c96d5023cd852965674e088309"
+"@gssfed/vital-ui-kit-react@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.3.2.tgz#60065572e2ebd649cde9b1138748bd8fb292c652"
   dependencies:
     popmotion "^8.1.22"
     prop-types "^15.6.1"
