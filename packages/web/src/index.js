@@ -33,6 +33,7 @@ import Tooltip from './Tooltip/';
 import ProgressBar from './ProgressBar/';
 import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination/';
+import Menu from './Menu/';
 
 export {
   Avatar,
@@ -71,5 +72,6 @@ export {
   ThemeProvider,
   styles,
   withIcon,
-  Modal
+  Modal,
+  Menu
 };
