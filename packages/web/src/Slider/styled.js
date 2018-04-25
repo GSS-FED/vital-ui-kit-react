@@ -53,6 +53,8 @@ const Button = styled(ButtonBase)`
   flex: 0 0 auto;
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
 `;
 
 export {

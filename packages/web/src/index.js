@@ -1,4 +1,8 @@
-// @flow
+/**
+ * @flow
+ * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * MIT license
+ */
 
 import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
@@ -21,8 +25,7 @@ import {
   StatelessTextArea
 } from './Form/';
 import Select from './Select/';
-// import Collapse from './Collapse/';
-// import ListGroup from './ListGroup/';
+import Modal from './Modal/';
 import { ListGroup, ListContent, ListItem } from './ListGroup';
 import { Pill } from './Pill';
 import Slider from './Slider';
@@ -68,4 +71,5 @@ export {
   ThemeProvider,
   styles,
   withIcon,
+  Modal
 };

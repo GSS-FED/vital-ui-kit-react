@@ -47,6 +47,10 @@ then run storybook
 
 `yarn run build-storybook`
 
+## Contributing
+
+Make sure read our [contributing guide](CONTRIBUTING.md) to learn about our development process.
+
 ## Roadmap
 
 - docs

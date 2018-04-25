@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "description": "Vital UI Kit for React!",
   "main": "dist/vital-ui-kit.cjs.js",
-  "module": "dist/vital-ui-kit.es.js",
+  "module": "esm/index.js",
   "style": "dist/global.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -33,10 +33,11 @@
   },
   "peerDependencies": {
     "polished": "^1.9.2",
-    "react": "15.6.0 - 16.3.1",
+    "react": "^16",
     "styled-components": "1.4.6 - 3",
     "styled-is": "^1.1.2",
-    "styled-theme": "^0.3.3"
+    "styled-theme": "^0.3.3",
+    "react-dom": "^16"
   },
   "devDependencies": {
     "@storybook/react": "3.4.2",
