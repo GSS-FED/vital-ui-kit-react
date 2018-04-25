@@ -1,10 +1,10 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Vital UI Kit for React!",
-  "main": "src/index.js",
-  "module": "dist/index.js",
-  "style": "dist/global.css",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "style": "./dist/global.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

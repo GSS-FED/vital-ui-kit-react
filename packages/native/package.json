@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "3.4.2",
