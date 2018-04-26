@@ -4,6 +4,7 @@ import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
 
 import Nav from './components/Nav';
 import Main from './components/Main';
+import Header from './components/Header';
 
 const Wrapper = styled.div`
   position: relative;
@@ -11,6 +12,7 @@ const Wrapper = styled.div`
   margin: 0px auto;
   background-color: #f8f8f8;
   max-width: 1440px;
+  overflow: hidden;
 `;
 
 const Box = styled.div`
@@ -22,17 +24,6 @@ const Box = styled.div`
   box-shadow: 0px 5px 10px rgba(13, 13, 13, 0.33);
 `;
 
-const Header = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background-color: #ffffff;
-  z-index: 5;
-  border-bottom: 1px solid #c4d2eb;
-`;
-
 const NavWrapper = styled.div`
   position: absolute;
   top: 50px;
@@ -41,6 +32,7 @@ const NavWrapper = styled.div`
   transition: width 0.3s ease-in-out;
   z-index: 7;
   background-color: #1E3768;
+  overflow: auto;
 `;
 
 const MainWrapper = styled.div`

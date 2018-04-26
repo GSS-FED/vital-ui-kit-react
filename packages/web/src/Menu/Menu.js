@@ -9,7 +9,9 @@ import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
 
-const Root = styled.div``;
+const Root = styled.div`
+  display: inline-block;
+`;
 
 type Props = {
   border?: boolean,
@@ -25,7 +27,7 @@ class Menu extends React.Component<Props> {
   render() {
     const { children, border, ...props } = this.props;
     return (
-      <Root>
+      <Root {...props}>
         {React.Children.map(children, child => (
           React.cloneElement(child, {
             border,
