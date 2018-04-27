@@ -20,7 +20,7 @@
 
 
 ## Intro
-[Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [GSSCLoud](https://www.gsscloud.com). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
+[Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [GSSCLoud](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
 
 - Themeable, build with styled-components 💅
 - Composing simple components allows hight flexibility
@@ -32,6 +32,9 @@
 ### Speed
 An example of Offical Document contains all Vital UI Kit components
 
+<img 
+  src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit-react/master/assets/demo_screen_shot.png"
+/>
 <a href="https://speed-vital-react.netlify.com/"><b>View Demo</b></a>
 
 
