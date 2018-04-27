@@ -1,12 +1,52 @@
-# Vital UI Kit React
+<p align="center">
+  <a href="https://react.vitaluikit.com">
+    <img src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit/develop/assets/img/icon.png" height=72 />
+    <img src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit-react/master/assets/uwillx.png" height=72 />
+  </a>
+</p>
+<h3 align="center">Vital UI Kit React</h3>
+<p align="center">
+  Simple, Themeable, Customizable React UI library
+  <br>
+  <a href="http://react.vitaluikit.com/">
+    <strong>View Storybook &raquo;</strong>
+  </a>
+  <br>
+  <a href="https://github.com/GSS-FED/vital-ui-kit">
+    <strong>Look for css version? &raquo;</strong>
+  </a>
+  <br>
+</p>
+
+
+## Intro
+[Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [GSSCLoud](https://www.gsscloud.com). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
+
+- Themeable, build with styled-components 💅
+- Composing simple components allows hight flexibility
+- Consistent development environment, by encapsulating internal UI style.
+- Easy to use, provide detailed API
 
 ## Demo
-[Storybook Demo](http://react.vitaluikit.com/) 👯
 
- [BitSrc](https://bitsrc.io/gssfed/vital-ui-kit-react)
-  💃
+### Speed
+An example of Offical Document contains all Vital UI Kit components
 
-## Usage
+<a href="https://speed-vital-react.netlify.com/"><b>View Demo</b></a>
+
+
+
+### Bit
+<img 
+  src="https://cdn-images-1.medium.com/max/1600/1*C_gNgDDeyTO_SMXw5sIX5g.gif"
+/>
+
+<a href="https://bitsrc.io/gssfed/vital-ui-kit-react">
+  Play them on BitSrc
+</a>
+
+
+## Getting Started
 
 ### Installation
 ```bash
@@ -18,34 +58,20 @@ npm i --save @gssfed/vital-ui-kit-react
 ```
 
 ```js
-// import package you need
+// ThemeProvider contains default theme and icon, you can override it.
 import { Button, ThemeProvider } from '@gssfed/vital-ui-kit-react'
-// recommend importing the global style
+// recommend importing the global style.
 import '@gssfed/vital-ui-kit-react/dist/global.css'
 
 /* ... */
 render() {
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={YOUR_CUSTOM_THEME} icon={ICON}>
       <Button>Vital 💜 React!</Button>
     </ThemeProvider>
   )
 }
 ```
-
-
-
-## Development
-
-`yarn install`
-
-then run storybook
-
-`yarn run storybook`
-
-## Build
-
-`yarn run build-storybook`
 
 ## Contributing
 
@@ -55,5 +81,4 @@ Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-
 
 - docs
 - Table(page, checkbox, input, header)
-- Windows modal
 - Calendar
