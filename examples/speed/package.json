@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "NODE_ENV=development parcel public/index.html",
-    "build": "NODE_ENV=production parcel build public/index.html --no-minify --public-url ./",
+    "build": "NODE_ENV=production parcel build public/index.html --no-minify --public-url ./"
   },
   "devDependencies": {
     "parcel-bundler": "^1.7.1"
