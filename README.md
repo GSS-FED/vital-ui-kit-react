@@ -49,7 +49,7 @@ then run storybook
 
 ## Contributing
 
-Make sure read our [contributing guide](CONTRIBUTING.md) to learn about our development process.
+Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-react/blob/master/CONTRIBUTING.md) to learn about our development process.
 
 ## Roadmap
 

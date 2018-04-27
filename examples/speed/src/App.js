@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
 
-import Nav from './components/Nav';
-import Main from './components/Main';
-import Header from './components/Header';
+import Nav from './components/Layout/Nav';
+import Main from './components/Layout/Main';
+import Header from './components/Layout/Header';
 
 const Wrapper = styled.div`
   position: relative;

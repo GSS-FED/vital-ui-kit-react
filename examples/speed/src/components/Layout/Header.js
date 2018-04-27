@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Menu, Icon } from '@gssfed/vital-ui-kit-react';
 
-import uwillx from '../assets/uwillx.png';
+// import uwillx from '../../../';
+// eslint-disable-next-line
+import uwillx from '~/../../assets/uwillx.png';
 
 const MenuIcon = styled(Icon)`
   margin-right: 10px;
 `;
-
 
 const Root = styled.div`
   position: absolute;
