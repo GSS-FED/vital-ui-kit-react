@@ -9,6 +9,11 @@ import styled from 'styled-components';
 
 import { trunTo } from '../utils/math';
 
+const inverseStyle = ({ inverse }) => inverse &&`
+  background-color: #ffffff;
+  color: #00c3ff;
+`
+
 const Root = styled.span`
   display: inline-block;
   vertical-align: middle;
@@ -17,14 +22,16 @@ const Root = styled.span`
   padding: 0.25rem 0.75rem;
   border-radius: 0.75rem;
   font-size: 0.725rem;
+
+  ${inverseStyle}
 `;
 
 type Props = {
   /** Text on the badge */
   label: string | number,
-  children?: React.Node,
-  /**  */
+  /** show 99+ if number is more than 100 */
   trunc?: boolean,
+  inverse?: boolean,
 };
 
 /**
@@ -35,10 +42,9 @@ type Props = {
  * <Badge label="99+" />
  */
 
-const Badge = ({ label, children, trunc, ...props }: Props) => (
-  <Root {...props}>
+const Badge = ({ label, trunc = true, inverse = false, ...props }: Props) => (
+  <Root inverse={inverse} {...props}>
     {trunc ? trunTo(label) : label}
-    {children}
   </Root>
 );
 

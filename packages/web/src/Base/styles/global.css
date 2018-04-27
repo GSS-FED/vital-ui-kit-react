@@ -157,3 +157,7 @@
     a:active {
       color: #0E86FE;
       text-decoration: underline; }
+
+p {
+  line-height: 1.25rem;
+}
