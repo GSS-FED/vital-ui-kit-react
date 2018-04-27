@@ -14,28 +14,12 @@ const Root = styled.ul`
 
 type Props = {
   children: TabItem,
-  activeIndex: number,
-  onTabClick: () => {},
 };
 
-class TabList extends React.Component<Props> {
-  state = {};
-
-  renderChildren = () => React.Children.map(this.props.children, (child, i) => {
-      if (child.type === TabItem) {
-        return React.cloneElement(child, {
-          index: i,
-          active: this.props.activeIndex === i,
-          onTabClick: this.props.onTabClick
-        });
-      }
-      return child
-    });
-
-  render() {
-    const { children, ...props } = this.props;
-    return <Root {...props}>{this.renderChildren()}</Root>;
-  }
-}
+const TabList = ({ children, ...props}: Props) => (
+  <Root {...props}>
+    {children}
+  </Root>
+)
 
 export default TabList;
