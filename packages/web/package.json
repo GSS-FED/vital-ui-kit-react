@@ -1,10 +1,10 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.2.1",
+  "version": "0.3.5",
   "description": "Vital UI Kit for React!",
-  "main": "src/index.js",
-  "module": "dist/index.js",
-  "style": "dist/global.css",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "style": "./dist/global.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -35,9 +35,7 @@
     "polished": "^1.9.2",
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "1.4.6 - 3",
-    "styled-is": "^1.1.2",
-    "styled-theme": "^0.3.3"
+    "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
     "@storybook/react": "3.4.2",

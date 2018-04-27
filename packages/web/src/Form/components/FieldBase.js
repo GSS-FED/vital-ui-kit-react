@@ -1,5 +1,4 @@
 // @flow
-import is from 'styled-is';
 import { css } from 'styled-components';
 
 const FieldBase = () => css`
@@ -34,7 +33,8 @@ const FieldBase = () => css`
     border-color: #c4d2eb;
     background-color: #eef2fc;
 
-    ${is('alarm')`
+
+    ${props => props.alarm && `
       pointer-events: none;
       background-color: #FFD0B8;
       border-color: #EB5000;
@@ -42,14 +42,17 @@ const FieldBase = () => css`
       &::placeholder {
         color: #EB5000;
       }
-  `};
+    `};
   }
 
-  ${is('alarm')`
-    border-color: #EB5000;
-  `} ${is('warning')`
-    border-color: #FFB400;
-  `};
+
+    ${props => props.alarm && `
+      border-color: #EB5000;
+    `};
+
+    ${props => props.alarm && `
+      border-color: #FFB400;
+    `};
 `;
 
 export default FieldBase;

@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import is from 'styled-is';
 
 import Label from './components/Label';
 
@@ -12,24 +11,20 @@ const Root = styled.div`
   position: relative;
   width: 100%;
 
-  ${is('inline')`
-     ${'' /* > * {
-       display: table-cell;
-     } */}
-
-     > span {
-      display: table-cell;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 1%;
-      min-width: 8rem;
-      padding-right: 1.2rem;
-      line-height: 1;
-      vertical-align: top;
-      padding-top: calc(0.46633rem + 2px);
-     }
-  `}
+  ${props => props.inline && `
+    > span {
+        display: table-cell;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 1%;
+        min-width: 8rem;
+        padding-right: 1.2rem;
+        line-height: 1;
+        vertical-align: top;
+        padding-top: calc(0.46633rem + 2px);
+      }
+  `};
 `;
 
 type Props = {

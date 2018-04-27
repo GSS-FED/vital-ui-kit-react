@@ -61,10 +61,12 @@ class Modal extends React.Component<Props, State> {
   }
 
   handleUpdate = () => {
-    this.setState({
-      windowWidth: this.overlay.offsetWidth,
-      windowHeight: this.overlay.offsetHeight
-    });
+    if (this.overlay) {
+      this.setState({
+        windowWidth: this.overlay.offsetWidth,
+        windowHeight: this.overlay.offsetHeight
+      });
+    }
   };
 
   getWidth = () => {

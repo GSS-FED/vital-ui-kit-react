@@ -6,3 +6,4 @@ dist
 bundle-stats.html
 yarn-error.log
 esm
+.cache/

@@ -6,7 +6,6 @@
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import is from 'styled-is';
 import Icon from '../Icon/';
 
 const Root = styled.div``;
@@ -65,7 +64,7 @@ const Btn = styled.div`
   box-sizing: border-box;
   border: 1px solid #c4d2eb;
 
-  ${is('icon')`
+  ${props => props.icon &&`
     width: 36px;
     height: 36px;
     position: absolute;

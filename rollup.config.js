@@ -64,4 +64,7 @@ const minifyConfig = Object.assign({}, configBase, {
   ].concat(commonPlugins)
 })
 
-export default minifyConfig;
+export default [
+  // serverConfig,
+  minifyConfig
+];

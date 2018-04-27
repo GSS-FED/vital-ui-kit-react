@@ -1,6 +1,5 @@
 /* eslint-disable react/no-array-index-key */
 import * as React from 'react';
-import is from 'styled-is';
 import styled from 'styled-components';
 import Addon from './components/Addon';
 
@@ -49,7 +48,7 @@ const LabelCell = styled.div`
     }
   }
 
-  ${is('addon')`
+  ${props => props.addon && `
     width: 1%;
     white-space: nowrap;
   `};

@@ -34,6 +34,7 @@ import ProgressBar from './ProgressBar/';
 import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination/';
 import Menu from './Menu/';
+import Tabs from './Tabs';
 
 export {
   Avatar,
@@ -73,5 +74,6 @@ export {
   styles,
   withIcon,
   Modal,
-  Menu
+  Menu,
+  Tabs
 };
