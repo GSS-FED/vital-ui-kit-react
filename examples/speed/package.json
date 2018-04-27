@@ -1,9 +1,9 @@
 {
   "name": "speed",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "dependencies": {
-    "@gssfed/vital-ui-kit-react": "^0.3.3",
+    "@gssfed/vital-ui-kit-react": "^0.3.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4",
