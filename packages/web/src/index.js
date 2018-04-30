@@ -8,6 +8,7 @@ import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
 import { ThemeProvider, styles } from './Base';
 import { CheckboxGroup, Checkbox } from './Checkbox';
+import Box from './Box';
 import Badge from './Badge';
 import Card from './Card';
 import Icon, { withIcon } from './Icon';
@@ -35,11 +36,13 @@ import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination/';
 import Menu from './Menu/';
 import Tabs from './Tabs';
+import utils from './utils';
 
 export {
   Avatar,
   Button,
   ButtonGroup,
+  Box,
   Checkbox,
   CheckboxGroup,
   Card,
@@ -75,5 +78,6 @@ export {
   withIcon,
   Modal,
   Menu,
-  Tabs
+  Tabs,
+  utils
 };

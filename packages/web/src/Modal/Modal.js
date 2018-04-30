@@ -7,7 +7,8 @@
 import React, { type Node } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
-import ResizeObserver from 'resize-observer-polyfill';
+
+import ModalWrapper from './ModalWrapper';
 
 type Props = {
   show: boolean,
@@ -15,10 +16,8 @@ type Props = {
 };
 
 type State = {
-  innerWidth: number,
-  innerHeight: number,
-  windowWidth: number,
-  windowHeight: number
+  modalTop: number,
+  modalLeft: number,
 };
 
 const OverLay = styled.div`
@@ -30,83 +29,56 @@ const OverLay = styled.div`
   bottom: 0;
   right: 0;
   opacity: 0.5;
-`;
-
-const ModalWrapper = styled.div`
-  position: absolute;
+  backdrop-filter: blur(5px);
 `;
 
 class Modal extends React.Component<Props, State> {
   state = {
-    innerWidth: 0,
-    innerHeight: 0,
     windowWidth: 0,
-    windowHeight: 0
+    windowHeight: 0,
   };
   static defaultProps = {
     show: false
   };
 
-  overlay: HTMLElement;
   modal: HTMLElement;
+  container: HTMLElement;
 
   componentDidMount() {
     this.handleUpdate();
-    if (this.modal.firstChild) {
-      this.getWidth();
+    window.addEventListener('resize', this.handleUpdate)
+  }
+
+  componentWillUnmount() {
+    if (this.container) {
+      this.container.parentNode.removeChild(this.container)
     }
-    this.handleUpdate();
-    const resizeObserver = new ResizeObserver(this.handleUpdate);
-    resizeObserver.observe(this.overlay);
+    window.removeEventListener('resize', this.handleUpdate);
   }
 
   handleUpdate = () => {
-    if (this.overlay) {
-      this.setState({
-        windowWidth: this.overlay.offsetWidth,
-        windowHeight: this.overlay.offsetHeight
-      });
-    }
-  };
-
-  getWidth = () => {
     this.setState({
-      innerWidth: this.modal.firstChild.offsetWidth,
-      innerHeight: this.modal.firstChild.offsetHeight
-    });
-  };
-
-  getContainer = () => {
-    const container = document.createElement('div');
-    document.body.appendChild(container);
-    return container;
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight,
+    })
   };
 
   render() {
     if (!this.props.show) {
       return null;
     }
-
-    return ReactDOM.createPortal(
-      <OverLay
-        innerRef={s => {
-          this.overlay = s;
-        }}
-      >
-        <ModalWrapper
-          innerRef={s => {
-            this.modal = s;
-          }}
-          style={{
-            left: (this.state.windowWidth - this.state.innerWidth) / 2,
-            top: (this.state.windowHeight - this.state.innerHeight) / 2
-          }}
-        >
-          {React.Children.only(this.props.children)}
-        </ModalWrapper>
-      </OverLay>,
-      this.getContainer()
-    );
+      return ReactDOM.createPortal(
+        <div className="VitalModal">
+          <OverLay />
+          <ModalWrapper
+            windowWidth={this.state.windowWidth}
+            windowHeight={this.state.windowHeight}
+          >
+            {React.Children.only(this.props.children)}
+          </ModalWrapper>
+        </div>,
+        document.body.parentElement
+      );
   }
 }
 

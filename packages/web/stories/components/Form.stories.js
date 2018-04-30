@@ -29,14 +29,14 @@ import {
   Icon,
   Button,
   Select,
-} from '../src';
+} from '../../src';
 
 const FormWrapper = styled.div`
   max-width: 500px;
   padding: 40px;
 `;
 
-storiesOf('Form', module)
+storiesOf('Components | Form', module)
   .addDecorator(withKnobs)
   .add(
     'Full Example',
@@ -163,7 +163,7 @@ storiesOf('Form', module)
     ),
   );
 
-storiesOf('Form/Input', module)
+storiesOf('Components | Form/Input', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -215,7 +215,7 @@ storiesOf('Form/Input', module)
     ),
   );
 
-storiesOf('Form/TextArea', module)
+storiesOf('Components | Form/TextArea', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -247,7 +247,7 @@ storiesOf('Form/TextArea', module)
     ),
   );
 
-storiesOf('Form/Select', module)
+storiesOf('Components | Form/Select', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

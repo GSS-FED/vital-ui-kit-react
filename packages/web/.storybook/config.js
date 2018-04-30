@@ -13,6 +13,11 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+setOptions({
+  hierarchySeparator: /\//,
+  hierarchyRootSeparator: /\|/,
+});
+
 // addon-info
 setDefaults({
   styles: stylesheet => ({

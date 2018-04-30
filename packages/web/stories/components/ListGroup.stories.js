@@ -16,13 +16,13 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { ListGroup, ListContent, ListItem } from '../src';
+import { ListGroup, ListContent, ListItem } from '../../src';
 
 const Display = styled.div`
   padding: 20px;
 `;
 
-storiesOf('ListGroup', module)
+storiesOf('Components | ListGroup', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

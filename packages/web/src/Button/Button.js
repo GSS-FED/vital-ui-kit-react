@@ -6,6 +6,7 @@
 
 import * as React from 'react';
 
+import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
 import { defaultTheme } from './constant';
 
@@ -34,27 +35,32 @@ type Props = {
   /** Circle button */
   circle?: boolean,
   /** Selected state */
-  selected?: boolean,
-}
-
-const Button = ({ children, onClick, ...props }: Props) => (
-  <ButtonElement onClick={onClick} {...props}>
-    {children}
-  </ButtonElement>
-);
-
-
-Button.defaultProps = {
-  children: 'Button',
-  nature: 'default',
-  theme: defaultTheme,
-  size: 'medium',
-  light: false,
-  flat: false,
-  link: false,
-  subtle: false,
-  selected: false,
-  onClick: () => {},
+  selected?: boolean
 };
+
+class Button extends React.Component<Props> {
+  static defaultProps = {
+    children: '',
+    nature: 'default',
+    theme: defaultTheme,
+    size: 'medium',
+    light: false,
+    flat: false,
+    link: false,
+    subtle: false,
+    selected: false,
+    onClick: () => {},
+  };
+
+  static Group = ButtonGroup;
+  render() {
+    const { children, onClick, ...props } = this.props;
+    return (
+      <ButtonElement onClick={onClick} {...props}>
+        {children}
+      </ButtonElement>
+    );
+  }
+}
 
 export default Button;

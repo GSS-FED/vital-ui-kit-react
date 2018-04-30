@@ -16,13 +16,13 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Menu, Icon } from '../src';
+import { Menu, Icon } from '../../src';
 
 const MenuIcon = styled(Icon)`
   margin-right: 10px;
 `;
 
-storiesOf('Menu', module)
+storiesOf('Components | Menu', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

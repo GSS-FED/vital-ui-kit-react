@@ -19,7 +19,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon, ButtonGroup } from '../src';
+import { Button, Icon, ButtonGroup } from '../../src';
 
 injectGlobal`
   #root {
@@ -31,7 +31,7 @@ injectGlobal`
 //   <Welcome showApp={linkTo('Button')} />
 // ));
 
-storiesOf('Button', module)
+storiesOf('Components | Button', module)
   .addDecorator(withKnobs)
   .add(
     'Default',

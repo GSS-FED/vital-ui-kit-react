@@ -15,9 +15,9 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Switch } from '../src';
+import { Switch } from '../../src';
 
-storiesOf('Switch', module)
+storiesOf('Components | Switch', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

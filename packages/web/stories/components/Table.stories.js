@@ -17,8 +17,8 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import LoadData from './LoadData';
-import { Table, TableCaption as Caption, TableColumn as Column, TableHeader as Header } from '../src';
+import LoadData from '../Container/LoadData';
+import { Table, TableCaption as Caption, TableColumn as Column, TableHeader as Header } from '../../src';
 
 const sample = [
   {
@@ -41,7 +41,7 @@ const sample = [
   }
 ];
 
-storiesOf('Table', module)
+storiesOf('Components | Table', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

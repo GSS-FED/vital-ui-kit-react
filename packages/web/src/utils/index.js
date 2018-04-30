@@ -1,4 +1,37 @@
+// @flow
 // import { css } from 'styled-components';
+
+export type Space = {
+  margin?: string,
+  marginBottom?: string,
+  marginLeft?: string,
+  marginTop?: string,
+  marginHorizontal?: string,
+  marginVertical?: string,
+  paddingHorizontal?: string,
+  paddingVertical?: string,
+  padding?: string,
+  paddingTop?: string,
+  paddingLeft?: string,
+  paddingRight?: string,
+  paddingBottom?: string,
+}
+
+export const space = (props: Space) => ({
+  margin: props.margin || '',
+  marginBottom: props.marginBottom || '',
+  marginLeft: props.marginLeft || '',
+  marginTop: props.marginTop || '',
+  marginHorizontal: props.marginHorizontal || '',
+  marginVertical: props.marginVertical || '',
+  paddingHorizontal: props.paddingHorizontal || '',
+  paddingVertical: props.paddingVertical || '',
+  padding: props.padding || '',
+  paddingTop: props.paddingTop || '',
+  paddingLeft: props.paddingLeft || '',
+  paddingRight: props.paddingRight || '',
+  paddingBottom: props.paddingBottom || '',
+})
 
 export const stateColor = (props, defaultColor = '#7189b6') => {
   if (props.alarm) return `#EB5000`;
@@ -28,6 +61,7 @@ export const borderRightRadius = props => `
 `;
 
 export default {
+  space,
   stateColor,
   borderBottomRadius,
   borderTopRadius,

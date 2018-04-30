@@ -16,10 +16,10 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import defaultIcon from '../src/Icon/selection.json';
-import Icon from '../src/Icon/';
-import Tooltip from '../src/Tooltip/';
-import Filter from './Container/Filter';
+import defaultIcon from '../../src/Icon/selection.json';
+import Icon from '../../src/Icon/';
+import Tooltip from '../../src/Tooltip/';
+import Filter from '../Container/Filter';
 
 const Display = styled.div`
   padding: 20px;
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf('Icon', module)
+storiesOf('Components | Icon', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

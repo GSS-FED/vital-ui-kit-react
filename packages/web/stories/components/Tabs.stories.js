@@ -16,9 +16,9 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Tabs, Badge } from '../src';
+import { Tabs, Badge } from '../../src';
 
-storiesOf('TabPanel', module)
+storiesOf('Components | TabPanel', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

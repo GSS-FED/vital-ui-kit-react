@@ -8,7 +8,6 @@ const { colors } = styles;
 
 const ButtonElement = styled.button`
   position: relative;
-  display: inline-block;
   background: ${props => props.theme.Button[props.nature].background};
   color: ${props => props.theme.Button[props.nature].color};
   cursor: pointer;
@@ -36,9 +35,9 @@ const ButtonElement = styled.button`
     background: ${colors.primaryList[4]};
   }
 
-  ${({ subtle, selected }) => subtle &&`
-    background: ${selected ? colors.primaryList4 : 'transparent'};
-    color: ${colors.primaryList7};
+  ${(props) => props.subtle &&`
+    background: ${props.selected ? props.theme.primaryList4 : 'transparent'};
+    color: ${props.natrue === 'default' ? props.theme.primaryList7 : props.theme.Button[props.nature].color};};
     border: 1px solid transparent;
 
     &:hover {
@@ -109,6 +108,9 @@ const ButtonElement = styled.button`
    `}
 
    ${({ circle }) => circle &&`
+      display: flex;
+      justify-content: center;
+      align-items: center;
       padding: 0;
       border-radius: 100%;
       width: 2.066rem;

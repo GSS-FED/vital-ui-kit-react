@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 type P = {
-  children: (value: string) => React.ReactNode
+  children: (value: string) => React.Node
 };
 
 type S = {

@@ -6,11 +6,12 @@ import {
   ButtonGroup,
   Card,
   Icon,
-  Modal,
+  // Modal,
   // ProgressBar,
   Tooltip
 } from '@gssfed/vital-ui-kit-react';
 
+import Modal from './Modal';
 import CardCommon from './CardCommon';
 import ScrollView from './Layout/ScrollView';
 
@@ -40,10 +41,10 @@ const Section = ({ title, children }) => (
   </SectionWrapper>
 );
 
-class Overview extends React.Component {
+class Overview extends React.PureComponent {
   state = {
-    showModal: false,
-  }
+    showModal: false
+  };
   render() {
     return (
       <ScrollView>
@@ -55,6 +56,21 @@ class Overview extends React.Component {
           ))}
         </Section>
         <Section title="Button">
+          <ButtonGroup
+            marginHorizontal="10px"
+            style={{ paddingBottom: '20px' }}
+          >
+            <Button link>Link</Button>
+            <Button dark link>
+              Link
+            </Button>ƒƒ
+            <Button link undeline>
+              Link
+            </Button>
+            <Button link undeline dark>
+              Link
+            </Button>
+          </ButtonGroup>
           {BUTTON_STYLE.map((button, i) => (
             <ButtonGroup
               key={i}
@@ -68,7 +84,6 @@ class Overview extends React.Component {
                   flat={button === 'flat'}
                   subtle={button === 'subtle'}
                   light={button === 'light'}
-                  link={button === 'link'}
                 >
                   {nature === 'default' ? button : nature}
                 </Button>
@@ -76,8 +91,8 @@ class Overview extends React.Component {
             </ButtonGroup>
           ))}
           <ButtonGroup>
-            {SIZE.map(size => (
-              <Button size={size} flat nature="primary">
+            {SIZE.map((size, i) => (
+              <Button size={size} key={i} flat nature="primary">
                 {size}
               </Button>
             ))}
@@ -129,10 +144,16 @@ class Overview extends React.Component {
           </Vertical>
         </Section>
         <Section title="Modal">
-          <Button onClick={() => {this.setState({showModal: true})}}>Click here!</Button>
-          {/* <Modal show={this.state.showModal}>
+          <Button
+            onClick={() => {
+              this.setState({ showModal: true });
+            }}
+          >
+            Click here!
+          </Button>
+          <Modal show={this.state.showModal}>
             <CardCommon content="Modal is controlled by state" onConfirm={() => {this.setState({showModal: false})}} />
-          </Modal> */}
+          </Modal>
         </Section>
       </ScrollView>
     );
@@ -142,14 +163,14 @@ class Overview extends React.Component {
 export default Overview;
 
 const AVATAR = [
-  { gender: 'male', size: 'xsmall', round: true },
+  { size: 'xsmall', round: true, outline: true },
   { gender: 'male', size: 'small', round: true, outline: true },
-  { gender: 'female', size: 'medium', round: true, outline: true },
+  { gender: 'female', size: 'medium', round: true, badge: 10 },
   { gender: 'male', size: 'large', round: true },
-  { gender: 'female', size: 'xlarge', round: true }
+  { gender: 'female', size: 'xlarge', round: true, badge: 100 }
 ];
 
-const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light', 'link'];
+const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
 
 const NATRUE = ['default', 'primary', 'success', 'info', 'alarm', 'warning'];
 
