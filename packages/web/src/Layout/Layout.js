@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
+// import React from 'react';
+// import styled from 'styled-components';
 
-type Props = {
+// type Props = {
 
-}
+// }
 
-class Layout extends Component {
-  state = {  }
-  render() {
-    return (
+// class Layout extends Component {
+//   state = {  }
+//   render() {
+//     return (
 
-    );
-  }
-}
+//     );
+//   }
+// }
 
-export default Layout;
+// export default Layout;
