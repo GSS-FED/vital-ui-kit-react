@@ -57,7 +57,7 @@ storiesOf('Getting Started', module)
                 {NATRUE.map((nature, index) => (
                   <Button
                     nature={nature}
-                    key={index}
+                    key={`next${index}`}
                     flat={button === 'flat'}
                     subtle={button === 'subtle'}
                     light={button === 'light'}

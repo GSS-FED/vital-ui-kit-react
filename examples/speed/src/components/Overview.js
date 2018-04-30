@@ -6,12 +6,11 @@ import {
   ButtonGroup,
   Card,
   Icon,
-  // Modal,
+  Modal,
   // ProgressBar,
   Tooltip
 } from '@gssfed/vital-ui-kit-react';
 
-import Modal from './Modal';
 import CardCommon from './CardCommon';
 import ScrollView from './Layout/ScrollView';
 
@@ -80,7 +79,7 @@ class Overview extends React.PureComponent {
               {NATRUE.map((nature, index) => (
                 <Button
                   nature={nature}
-                  key={index}
+                  key={`next${index}`}
                   flat={button === 'flat'}
                   subtle={button === 'subtle'}
                   light={button === 'light'}

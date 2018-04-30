@@ -77,7 +77,7 @@ class Modal extends React.Component<Props, State> {
             {React.Children.only(this.props.children)}
           </ModalWrapper>
         </div>,
-        document.body.parentElement
+        document.body
       );
   }
 }
