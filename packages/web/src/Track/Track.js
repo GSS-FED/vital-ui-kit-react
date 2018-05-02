@@ -36,11 +36,11 @@ type Props = {
   warning?: boolean,
   /** state success */
   success?: boolean,
-  onMouseDown?: (e: SyntheticMouseEvent<HTMLElement>) => mixed,
-  onMouseUp?: (e: SyntheticMouseEvent<HTMLElement>) => mixed,
-  onTouchStart?: (e: SyntheticMouseEvent<HTMLElement>) => mixed,
-  onTouchEnd?: (e: SyntheticMouseEvent<HTMLElement>) => mixed,
-  trackRef?: (s: HTMLElement) => mixed
+  onMouseDown?: (e: SyntheticMouseEvent<HTMLElement>) => {},
+  onMouseUp?: (e: SyntheticMouseEvent<HTMLElement>) => {},
+  onTouchStart?: (e: SyntheticMouseEvent<HTMLElement>) => {},
+  onTouchEnd?: (e: SyntheticMouseEvent<HTMLElement>) => {},
+  trackRef?: (s: HTMLElement) => {}
 };
 
 const Track = ({

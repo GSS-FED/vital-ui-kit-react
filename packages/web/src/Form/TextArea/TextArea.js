@@ -19,7 +19,7 @@ type Props = {
   /** Spell check attr */
   spellCheck?: boolean,
   /** when input changes */
-  onChange?: (event: any) => mixed,
+  onChange?: (event: any) => {},
 };
 
 type State = {

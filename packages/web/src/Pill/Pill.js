@@ -78,7 +78,7 @@ type Props = {
   /** The current state */
   current?: boolean,
   vertical?: boolean,
-  onSelect: (id: string | number) => mixed,
+  onSelect: (id: string | number) => {},
 };
 
 class Pill extends Component<Props> {

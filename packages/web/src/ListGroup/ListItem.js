@@ -49,7 +49,7 @@ type Props = {
   /** Badge on right, show if exist */
   badge?: Node,
   /** `onClick`, **it will not override the default expand event** */
-  onClick?: () => mixed,
+  onClick?: () => {},
   /** @private Light or Dark theme */
   themed: 'light' | 'dark',
   /** @private  Check if it is a children */
@@ -57,7 +57,7 @@ type Props = {
   /** @private Pass down from ListGroup */
   collapse?: boolean,
   /** @private */
-  dispatchClose: () => mixed,
+  dispatchClose: () => {},
   /** @private */
   border?: boolean,
 };
