@@ -25,7 +25,7 @@ type Props = {
   /** Spell check attr */
   isSpellCheck?: boolean,
   /** when input changes */
-  onChange?: (event: SyntheticInputEvent<any>) => mixed,
+  onChange?: (event: SyntheticInputEvent<any>) => {},
 };
 
 type State = {

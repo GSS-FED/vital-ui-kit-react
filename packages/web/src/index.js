@@ -36,6 +36,7 @@ import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination/';
 import Menu from './Menu/';
 import Tabs from './Tabs';
+import Layout from './Layout';
 import utils from './utils';
 
 export {
@@ -79,5 +80,6 @@ export {
   Modal,
   Menu,
   Tabs,
+  Layout,
   utils
 };

@@ -34,9 +34,9 @@ type Props = {
   decreaseButton?: React.Element<any>,
   increaseButton?: React.Element<any>,
   trackLabel?: boolean,
-  onChange: (number, SyntheticEvent<HTMLElement>) => mixed,
-  onChangeStart?: (SyntheticEvent<HTMLElement>) => mixed,
-  onChangeComplete?: (SyntheticEvent<HTMLElement>) => mixed
+  onChange: (number, SyntheticEvent<HTMLElement>) => {},
+  onChangeStart?: (SyntheticEvent<HTMLElement>) => {},
+  onChangeComplete?: (SyntheticEvent<HTMLElement>) => {}
 };
 
 /**

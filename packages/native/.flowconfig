@@ -37,6 +37,8 @@
 <PROJECT_ROOT>/node_modules/reqwest/.*
 <PROJECT_ROOT>/node_modules/metro-bundler/.*
 
+node_modules/.*
+
 [include]
 
 [libs]
