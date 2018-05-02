@@ -11,11 +11,12 @@ import MenuItem from './MenuItem';
 
 const Root = styled.div`
   display: inline-block;
+  height: 100%;
 `;
 
 type Props = {
   border?: boolean,
-  children?: React.ReactNode,
+  children?: React.Node,
 }
 
 class Menu extends React.Component<Props> {
@@ -23,7 +24,7 @@ class Menu extends React.Component<Props> {
     border: true,
   }
   static Item = MenuItem;
-  state = {  }
+
   render() {
     const { children, border, ...props } = this.props;
     return (

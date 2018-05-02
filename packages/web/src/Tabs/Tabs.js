@@ -39,7 +39,7 @@ class Tabs extends React.Component<Props, State> {
   static Tab = TabItem;
   static Panel = TabPanel;
 
-  onTabChange = (panel: React.ReactNode, index: number) => {
+  onTabChange = (panel: React.Node, index: number) => {
     const { beforeTabChange, afterTabChange } = this.props;
     if (beforeTabChange) beforeTabChange(index);
 

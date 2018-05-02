@@ -83,5 +83,7 @@ Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-
 ## Roadmap
 
 - docs
+- layout
+- box
 - Table(page, checkbox, input, header)
 - Calendar

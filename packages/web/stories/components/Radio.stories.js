@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { RadioGroup } from '../src';
+import { RadioGroup } from '../../src';
 
 const items = [
   { name: 'color', value: 'red', label: 'Red' },
@@ -24,7 +24,7 @@ const items = [
   { name: 'color', value: 'green', label: 'Green' },
 ];
 
-storiesOf('Radio', module)
+storiesOf('Components | Radio', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

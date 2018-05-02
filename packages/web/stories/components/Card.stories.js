@@ -15,13 +15,13 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Icon } from '../src';
-import heroImage from '../assets/img/card-header-pic.png';
+import { Card, ButtonGroup, Button, Icon } from '../../src';
+import heroImage from '../../assets/img/card-header-pic.png';
 
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';
 
-storiesOf('Card', module)
+storiesOf('Components | Card', module)
   .addDecorator(withKnobs)
   .add(
     'Default Full Button type',

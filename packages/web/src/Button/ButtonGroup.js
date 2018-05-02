@@ -11,6 +11,10 @@ const Root = styled.div`
   > button:not(:last-child) {
     margin-right: ${props => props.vertical ? 0 : props.marginHorizontal};
   }
+
+  > button {
+    display: inline-block;
+  }
 `;
 
 /**

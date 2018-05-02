@@ -1,8 +1,8 @@
 [ignore]
 .*/storybook-static/*
-.*/node_modules/styled-components/.*
 ./packages/native/.*
 .*/examples/.*
+/*/stories/.*
 .*/www/.*
 .*/dist/.*
 .*/build/.*

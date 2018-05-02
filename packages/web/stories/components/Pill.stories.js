@@ -2,7 +2,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
@@ -12,33 +11,25 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pagination } from '../src';
+import { Pill } from '../../src';
 
-const items = [
-  {
-    text: 'Dashboard',
-    current: true
-  },
-  { text: 'Projects', badge: '23' },
-  { text: 'Issues', badge: '99+' },
-  { text: 'Reports', badge: '6' },
-  { text: 'User Center' }
-];
-
-storiesOf('Pagination', module)
+storiesOf('Components | Pill', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(`info`)(
-      withNotes('This is Pagination')(() => (
-        <Pagination
-          pageSize={5}
-          current={3}
-        />
-      ))
-    )
-  )
+      withNotes('This is pill')(() => (
+        <Pill.Group default={1} vertical={boolean('vertical', false)}>
+          <Pill id={1} label="Dashboard" badge="23" />
+          <Pill id={2} label="Projects" badge="99+" />
+          <Pill id={3} label="Issues" badge="6" />
+          <Pill id={4} label="Reports" />
+          <Pill id={5} label="User Center" />
+        </Pill.Group>
+      )),
+    ),
+  );

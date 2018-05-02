@@ -14,6 +14,7 @@
   vertical-align: middle;
   text-align: left;
   border-left: ${props => props.border ? '1px solid #D8E2F5' : 'none'};
+  height: 100%;
 
   &:first-child {
     border-left: none;
@@ -26,7 +27,7 @@ const MenuButton = styled(Button)`
 `;
 
 type Props = {
-  children: React.ReactNode,
+  children: React.Node,
   border?: boolean,
 }
 
@@ -34,7 +35,7 @@ type Props = {
 class MenuItem extends React.Component<Props> {
   render() {
     return (
-      <Root border={this.props.border}>
+      <Root border={this.props.border} {...this.props}>
         <MenuButton subtle>{this.props.children}</MenuButton>
       </Root>
     );

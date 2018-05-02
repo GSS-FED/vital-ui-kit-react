@@ -15,9 +15,9 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { ProgressBar } from '../src';
+import { ProgressBar } from '../../src';
 
-storiesOf('ProgressBar', module)
+storiesOf('Components | ProgressBar', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

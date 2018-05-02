@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Slider, Button, Select } from '../src';
+import { Slider, Button, Select } from '../../src';
 
 const items = [
   {
@@ -29,7 +29,7 @@ const items = [
   { text: 'User Center' }
 ];
 
-storiesOf('Slider', module)
+storiesOf('Components | Slider', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
