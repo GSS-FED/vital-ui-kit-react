@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 import { Menu, Icon } from '@gssfed/vital-ui-kit-react';
 
@@ -42,6 +42,10 @@ const TheName = styled.div`
   color: #2A4880;
 `;
 
+const MenuItem = styled(Menu.Item)`
+  display: flex;
+`;
+
 const MenuWrapper = styled.div`
   display: flex;
   height: 100%;
@@ -51,7 +55,7 @@ const MenuWrapper = styled.div`
   top: 0;
 `;
 
-class Header extends Component {
+class Header extends PureComponent {
   state = {  }
   render() {
     return (
@@ -63,23 +67,23 @@ class Header extends Component {
           Vital Ui Kit
         </TheName>
         <MenuWrapper>
-          <Menu>
-            <Menu.Item>
+          <Menu style={{ flexDirection: 'row', display: 'flex' }}>
+            <MenuItem>
               <MenuIcon name="user" />
               User Accounts
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               <MenuIcon name="search" />
               Search
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               <MenuIcon name="cog" />
               Setting
-            </Menu.Item>
-            <Menu.Item>
+            </MenuItem>
+            <MenuItem>
               <MenuIcon name="power-off" />
               Logout
-            </Menu.Item>
+            </MenuItem>
           </Menu>
         </MenuWrapper>
       </Root>

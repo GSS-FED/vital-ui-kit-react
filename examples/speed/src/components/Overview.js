@@ -62,7 +62,7 @@ class Overview extends React.PureComponent {
             <Button link>Link</Button>
             <Button dark link>
               Link
-            </Button>ƒƒ
+            </Button>
             <Button link undeline>
               Link
             </Button>
