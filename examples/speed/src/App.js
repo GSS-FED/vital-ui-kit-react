@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
+import { ThemeProvider, Layout } from '@gssfed/vital-ui-kit-react';
 
 import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';
@@ -31,7 +31,7 @@ const NavWrapper = styled.div`
   width: 220px;
   transition: width 0.3s ease-in-out;
   z-index: 7;
-  background-color: #1E3768;
+  background-color: #1e3768;
   overflow: auto;
 `;
 
@@ -50,17 +50,19 @@ class App extends Component {
   render() {
     return (
       <ThemeProvider>
-        <Wrapper>
-          <Box>
+        <Layout>
+          {/* <Box> */}
+          {/* <Layout.Header> */}
             <Header />
-            <NavWrapper>
-              <Nav />
-            </NavWrapper>
-            <MainWrapper>
-              <Main />
-            </MainWrapper>
-          </Box>
-        </Wrapper>
+          {/* </Layout.Header> */}
+          <Layout.Sidebar>
+            <Nav />
+          </Layout.Sidebar>
+          <Layout.Content>
+            <Main />
+          </Layout.Content>
+          {/* </Box> */}
+        </Layout>
       </ThemeProvider>
     );
   }
