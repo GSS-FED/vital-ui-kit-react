@@ -43,16 +43,16 @@ storiesOf('Components | Form', module)
     withInfo(`Info`)(
       withNotes('')(() => (
         <FormWrapper>
-          <FieldInput isRequired label="Username">
+          <FieldInput required label="Username">
             <Input placeholder="Enter your username" />
           </FieldInput>
-          <FieldInput isRequired label="Fullname">
+          <FieldInput required label="Fullname">
             <MultipleInput>
               <Input placeholder="First Name" />
               <Input placeholder="Last Name" />
             </MultipleInput>
           </FieldInput>
-          <FieldInput isRequired label="Birthday">
+          <FieldInput required label="Birthday">
             <MultipleInput>
               <Input placeholder="Month" />
               <Input placeholder="Day" />
@@ -78,7 +78,7 @@ storiesOf('Components | Form', module)
       withNotes('')(() => (
         <FormWrapper>
           <FieldInput
-            isRequired={boolean('Required 1', true)}
+            required={boolean('Required 1', true)}
             align={select('Align', {
               left: 'Left',
               right: 'Right',

@@ -7,7 +7,7 @@ const Root = styled.div``;
 
 
 
-class GettingStarted extends React.Component {
+class GettingStarted extends React.PureComponent {
   state = {
       innerHeight: 0,
     }

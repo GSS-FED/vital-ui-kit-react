@@ -10,7 +10,7 @@ type S = {
   innerHeight: number,
 }
 
-class ScrollView extends React.Component<P, S> {
+class ScrollView extends React.PureComponent<P, S> {
   state = {
     innerHeight: 0,
    }
