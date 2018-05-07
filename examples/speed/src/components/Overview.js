@@ -61,13 +61,13 @@ class Overview extends React.PureComponent {
           >
             <Button link>Link</Button>
             <Button dark link>
-              Link
+              Dark Link
             </Button>
-            <Button link undeline>
-              Link
+            <Button link underline>
+              Underline Link
             </Button>
-            <Button link undeline dark>
-              Link
+            <Button link underline dark>
+              Dark Underline Link
             </Button>
           </ButtonGroup>
           {BUTTON_STYLE.map((button, i) => (
