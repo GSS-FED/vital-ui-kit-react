@@ -7,6 +7,7 @@ import { Keyboard, Dimensions, Animated } from 'react-native';
 const DURATION = 200;
 
 type Props = {
+  duration?: number,
   children?: (renderProps: any) => React.Node,
   render?: (renderProps: any) => React.Node
 };
@@ -17,6 +18,9 @@ type State = {
 };
 
 class ListSpacer extends React.PureComponent<Props, State> {
+  static defaultProps = {
+    duration: DURATION,
+  }
   state = {
     // screenHeight: Dimensions.get('window').height,
     flatListHeight: new Animated.Value(
@@ -47,14 +51,14 @@ class ListSpacer extends React.PureComponent<Props, State> {
     Animated.timing(this.state.flatListHeight, {
       toValue:
         Dimensions.get('window').height - e.endCoordinates.height,
-      duration: DURATION
+      duration: this.props.duration
     }).start();
   };
 
   _keyBoardDidHide = () => {
     Animated.timing(this.state.flatListHeight, {
       toValue: Dimensions.get('window').height,
-      duration: DURATION
+      duration: this.props.duration
     }).start();
   };
 

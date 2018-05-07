@@ -1,7 +1,7 @@
 {
   "name": "@gssfed/vital-ui-kit-native",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "main": "./src/index.js",
   "workspaces": {
     "nohoist": [

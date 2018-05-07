@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button, Avatar, Badge, Checkbox } from '../../src';
+import { Button, Avatar, Badge, Checkbox, LargeButton  } from '../../src';
 import CenterView from './CenterView';
 
 
@@ -37,3 +37,9 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button onPress={action('clicked-emoji')} title="😀 😎 👍 💯" />
   ));
+
+storiesOf('LargeButton', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('with text', () => (
+    <LargeButton onPress={action('clicked-text')} />
+  ))

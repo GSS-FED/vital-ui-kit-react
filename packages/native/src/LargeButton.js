@@ -15,7 +15,7 @@ const LinearGradientWrapper = styled(LinearGradient)`
   align-items: center;
   shadow-opacity: 0.9;
   shadow-radius: 5px;
-  shadow-color: ${props => props.shadowColor}
+  ${'' /* shadow-color: ${props => props.shadowColor}; */}
   shadow-offset: 0px 5px;
 `;
 
@@ -27,8 +27,8 @@ const Root = styled.View`
   align-items: center;
   shadow-opacity: 0.26;
   shadow-radius: 5px;
-  shadow-color: ${props => props.shadowColor || props.bg};
-  background: ${props => props.bg}
+  ${'' /* shadow-color: ${props => props.shadowColor || props.bg}; */}
+  background-color: ${props => props.bg};
   shadow-offset: 0px 5px;
 `;
 
@@ -47,6 +47,7 @@ class LargeButton extends React.Component<Props> {
     icon: 'ios-add',
     iconColor: '#fff',
     iconSize: 45,
+    bg: '#fff',
     onPress: () => {},
   };
 
