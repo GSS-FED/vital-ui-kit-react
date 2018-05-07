@@ -1,35 +1,40 @@
 {
   "name": "@gssfed/vital-ui-kit-native",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "@storybook/addon-actions": "3.4.3",
-    "@storybook/addon-links": "3.4.3",
-    "@storybook/react-native": "3.4.3",
-    "jest-expo": "26.0.0",
-    "prop-types": "15.6.1",
-    "react-dom": "16.3.2",
-    "react-native-scripts": "1.13.1",
-    "react-test-renderer": "16.3.2"
+  "main": "./src/index.js",
+  "workspaces": {
+    "nohoist": [
+      "styled-components",
+      "styled-components/**"
+    ]
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "storybook": "storybook start -p 7007"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "peerDependencies": {
-    "styled-components": "^3.0.1"
+    "react-native-vector-icons": "^4.0.0",
+    "styled-components": "^3.0.0"
   },
-  "dependencies": {
-    "expo": "26.0.0",
-    "react": "16.3.2",
-    "react-native": "0.55.2"
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-links": "^3.4.3",
+    "@storybook/react-native": "^3.4.3",
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "prop-types": "^15.6.1",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-native": "0.55.3",
+    "react-native-linear-gradient": "^2.4.0",
+    "react-native-vector-icons": "^4.6.0",
+    "react-test-renderer": "16.3.1",
+    "styled-components": "^3.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
   }
 }
