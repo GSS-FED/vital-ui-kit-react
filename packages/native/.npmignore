@@ -2,5 +2,5 @@ ios/
 android/
 node_modules/
 storybook/
-App.js
-index.js
+./App.js
+./index.js
