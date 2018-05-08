@@ -27,7 +27,7 @@ const AnimatedLinearCoverLeft = Animated.createAnimatedComponent(
 type Props = {
   linear: Array<string>,
   locations: Array<number>,
-  children: React.Node,
+  children: React.ReactNode,
 };
 
 class MaskView extends React.PureComponent<Props> {

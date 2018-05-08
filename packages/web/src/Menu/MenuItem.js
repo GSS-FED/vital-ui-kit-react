@@ -27,7 +27,7 @@ const MenuButton = styled(Button)`
 `;
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
   border?: boolean,
 }
 

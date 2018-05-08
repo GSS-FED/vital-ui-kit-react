@@ -48,12 +48,12 @@ const Label = Span.extend`
 `;
 
 type Props = {
-  label: React.Node,
+  label: React.ReactNode,
   current?: boolean,
   badge?: number | string,
-  panel: React.Node,
+  panel: React.ReactNode,
   index: number,
-  onTabChange: (panel: React.Node, index: number) => {}
+  onTabChange: (panel: React.ReactNode, index: number) => {}
 };
 
 class TabItem extends React.Component<Props> {

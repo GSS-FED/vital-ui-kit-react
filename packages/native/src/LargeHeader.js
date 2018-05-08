@@ -21,19 +21,19 @@ const AvatarView = styled.View`
   bottom: 18;
 `;
 
-type Props = {
-  children: (onScroll: () => void) => React.Node,
+export type LargeHeaderProps = {
+  children: (onScroll: () => void) => React.ReactNode,
   title: string,
   titleStyle?: TextStyle,
-  avatar?: React.Node,
+  avatar?: React.ReactNode,
 };
 
-type State = {
+export type LargeHeaderState = {
   scrollOffset: Animated.Value,
   titleWidth: number,
 };
 
-class LargeHeader extends React.Component<Props, State> {
+class LargeHeader extends React.Component<LargeHeaderProps, LargeHeaderState> {
   state = {
     scrollOffset: new Animated.Value(0),
     titleWidth: 0,

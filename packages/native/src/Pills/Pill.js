@@ -16,13 +16,13 @@ const Label = styled.Text`
   font-size: 16;
 `;
 
-type Props = {
+export type PillProps = {
   label: string,
   bg?: string,
   color?: string,
 }
 
-const Pill = ({ label, bg, color, ...props }: Props) => (
+const Pill = ({ label, bg, color, ...props }: PillProps) => (
   <Root bg={bg} {...props} >
     <Label color={color}>{label}</Label>
   </Root>

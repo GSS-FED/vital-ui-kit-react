@@ -15,17 +15,19 @@ const SafeAreaView = styled.SafeAreaView`
   flex: 1;
 `;
 
-type Props = {
-  children: React.Node,
-}
+export type ImageBackgroundProps = {
+  children: React.ReactNode,
+  src?: string,
+  localRequire?: NodeRequire
+};
 
-const ImageBackground = ({ children }: Props) => (
-  <Background
-    source={require('../assets/bg.png')}
-  >
-    <SafeAreaView>
-      {children}
-    </SafeAreaView>
+const ImageBackground = ({
+  children,
+  src,
+  localRequire = require('../assets/bg.png')
+}: ImageBackgroundProps) => (
+  <Background source={src ? { uri: src } : localRequire}>
+    <SafeAreaView>{children}</SafeAreaView>
   </Background>
 );
 

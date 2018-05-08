@@ -16,7 +16,7 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
 }
 
 class TabPanel extends React.Component<Props> {

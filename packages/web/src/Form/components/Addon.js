@@ -20,7 +20,7 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
 };
 
 const Addon = ({ children }: Props) => <Root>{children}</Root>;

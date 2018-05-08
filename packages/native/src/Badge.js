@@ -17,13 +17,13 @@ const Label = styled.Text`
   font-size: 12;
 `;
 
-type Props = {
+export type BadgeProps = {
   label: string | number,
   bg?: string,
   color?: string,
 }
 
-const Badge = ({ label, bg, color, ...props }: Props) => (
+const Badge = ({ label, bg, color, ...props }: BadgeProps) => (
   <Root bg={bg} {...props}>
     <Label color={color}>{label}</Label>
   </Root>

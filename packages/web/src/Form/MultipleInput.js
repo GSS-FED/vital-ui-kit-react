@@ -55,7 +55,7 @@ const LabelCell = styled.div`
 `;
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
 };
 
 const MultipleInput = ({ children }: Props) => (

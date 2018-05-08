@@ -3,12 +3,6 @@
   "version": "0.0.5",
   "private": false,
   "main": "./src/index.js",
-  "workspaces": {
-    "nohoist": [
-      "styled-components",
-      "styled-components/**"
-    ]
-  },
   "typings": "./src/index.d.ts",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -28,6 +22,7 @@
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.3",
+    "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "react": "16.3.1",
     "react-dom": "16.3.1",

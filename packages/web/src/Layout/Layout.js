@@ -40,7 +40,7 @@ Sidebar.displayName = 'Sidebar';
 Sidebar.Content = 'Content';
 
 type Props = {
-  children: React.Node
+  children: React.ReactNode
 };
 
 class Layout extends React.Component<Props> {

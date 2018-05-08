@@ -7,12 +7,12 @@ const Root = styled.View`
   flex-direction: row;
 `;
 
-type Props = {
+export type PillsGroupProps = {
   marginBetween?: number,
-  children: React.Node,
+  children: React.ReactNode,
 };
 
-const PillsGroup = ({ marginBetween = 6, children, ...props }: Props) => (
+const PillsGroup = ({ marginBetween = 6, children, ...props }: PillsGroupProps) => (
   <Root marginBetween={marginBetween} {...props}>
     {React.Children.map(children, child => React.cloneElement(child, { style: { marginRight: marginBetween } }))}
   </Root>

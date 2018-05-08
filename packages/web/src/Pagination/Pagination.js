@@ -36,7 +36,7 @@ function Item({
   selected,
   ...props
 }: {
-  children: React.Node,
+  children: React.ReactNode,
   selected?: boolean
 }) {
   return (

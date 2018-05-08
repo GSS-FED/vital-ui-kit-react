@@ -39,13 +39,13 @@ type Placement =
 
 type Props = {
   /** the element target for tooltip */
-  children: React.Node,
+  children: React.ReactNode,
   /** an array of 'click', 'hover', 'focus', 'contextMenu' */
   trigger: Array<string>,
   /** the placement tooltip show up */
   placement: Placement,
   /** popup overlay content, with default styled wrapper */
-  overlay?: React.Node,
+  overlay?: React.ReactNode,
   /** render your own custom overlay with no default style */
   mouseEnterDelay?: number,
   mouseLeaveDelay?: number,

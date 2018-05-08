@@ -21,13 +21,13 @@ const Text = styled.Text`
   font-size: 16;
 `;
 
-type Props = {
+export type ButtonProps = {
   title: string,
   active?: boolean,
   onPress: () => void
 };
 
-const Button = ({ title, active, onPress, ...props }: Props) => (
+const Button = ({ title, active, onPress, ...props }: ButtonProps) => (
   <Root active={active} onPress={onPress} {...props}>
     <Text active={active}>{title}</Text>
   </Root>

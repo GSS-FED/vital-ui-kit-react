@@ -6,18 +6,18 @@ import { Keyboard, Dimensions, Animated } from 'react-native';
 
 const DURATION = 200;
 
-type Props = {
+export type ListSpacerProps = {
   duration?: number,
-  children?: (renderProps: any) => React.Node,
-  render?: (renderProps: any) => React.Node
+  children?: (renderProps: any) => React.ReactNode,
+  render?: (renderProps: any) => React.ReactNode
 };
 
-type State = {
+export type ListSpacerState = {
   // screenHeight: number,
   flatListHeight: Animated.Value
 };
 
-class ListSpacer extends React.PureComponent<Props, State> {
+class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
   static defaultProps = {
     duration: DURATION,
   }

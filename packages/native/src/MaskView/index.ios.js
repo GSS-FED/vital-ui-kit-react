@@ -8,7 +8,7 @@ import LinearGradient from 'react-native-linear-gradient';
 type Props = {
   linear: Array<string>,
   locations: Array<number>,
-  children: React.Node,
+  children: React.ReactNode,
 };
 
 const LinearCover = styled(LinearGradient)`

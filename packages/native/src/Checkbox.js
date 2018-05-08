@@ -25,17 +25,17 @@ const Check = styled(Icon)`
   left: 2;
 `;
 
-type P = {
+export type CheckboxProps = {
   checked: boolean,
   size: number,
   onChange?: (checked: boolean) => {},
 };
 
-type S = {
+export type CheckboxState = {
   checked: boolean,
 };
 
-class Checkbox extends React.Component<P, S> {
+class Checkbox extends React.Component<CheckboxProps, CheckboxState> {
   static defaultProps = {
     checked: false,
     size: 16,

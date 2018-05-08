@@ -12,11 +12,11 @@ const PressOutsideView = styled.View`
   right: 0;
 `;
 
-type Props = {
+export type PressOutsideProps = {
   onPressOutside: () => {},
 } & TouchableWithoutFeedbackProps;
 
-class PressOutside extends React.Component<Props> {
+class PressOutside extends React.Component<PressOutsideProps> {
   static defaultProps = {
     onPressOutside: () => {},
   };
