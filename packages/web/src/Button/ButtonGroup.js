@@ -40,7 +40,7 @@ type Props = {
   /** horizontal margin between buttons */
   marginHorizontal?: string,
   /** Buttons as children */
-  children: React.Node,
+  children: React.ReactNode,
 }
 
 const ButtonGroup = ({ children, marginHorizontal = '5px' ,...props }: Props) => (

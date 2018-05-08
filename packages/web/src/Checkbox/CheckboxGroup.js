@@ -10,7 +10,7 @@ import styled from 'styled-components';
 const StyledCheckboxGroup = styled.div``;
 
 type Props = {
-  children: React.Node
+  children: React.ReactNode
 };
 
 /** @render react

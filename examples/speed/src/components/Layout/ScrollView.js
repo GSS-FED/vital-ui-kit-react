@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 type P ={
-  children: React.Node,
+  children: React.ReactNode,
 }
 
 type S = {

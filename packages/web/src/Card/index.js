@@ -28,7 +28,7 @@ const Root = styled.div`
 `
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
   width?: string,
   height?: string,
   shadow?: boolean,

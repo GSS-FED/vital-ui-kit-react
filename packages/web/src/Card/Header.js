@@ -48,7 +48,7 @@ const BadgeCell = styled(Cell)`
 `
 
 type Props = {
-  children: React.Node,
+  children: React.ReactNode,
   image?: string,
   title?: string,
   badge?: string,

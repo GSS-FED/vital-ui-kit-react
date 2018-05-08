@@ -32,7 +32,7 @@ type Props = {
   align: 'left' | 'right',
   inline?: boolean,
   required?: boolean,
-  children: React.Node,
+  children: React.ReactNode,
 }
 
 const FieldInput = ({ label, align, inline, required, children, ...props }: Props) => (

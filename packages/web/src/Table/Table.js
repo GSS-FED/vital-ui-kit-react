@@ -17,8 +17,8 @@ type State = {
 
 type Props = {
   data: Array<Object>,
-  children: React.Node,
-  caption: React.Node,
+  children: React.ReactNode,
+  caption: React.ReactNode,
   textAlign?: 'left' | 'center' | 'right',
   hasHorizontalBorder?: boolean,
   hasVerticalBorder?: boolean,

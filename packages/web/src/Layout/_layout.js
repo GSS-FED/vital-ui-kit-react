@@ -48,7 +48,7 @@ Sidebar.displayName = 'Sidebar';
 Sidebar.Main = 'Main';
 
 type Props = {
-  children: React.Node
+  children: React.ReactNode
 }
 
 class Layout extends React.Component<Props>{

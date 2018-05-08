@@ -16,7 +16,7 @@ type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
 type Props = {
   /** The content of the button */
-  children?: React.Node,
+  children?: React.ReactNode,
   /** on click event */
   onClick?: () => void,
   /** 6 nature state */
