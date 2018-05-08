@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Vital UI Kit for React!",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
