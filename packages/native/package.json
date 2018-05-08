@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-native",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "./src/index.js",
   "workspaces": {
@@ -15,10 +15,10 @@
     "storybook": "storybook start -p 7007"
   },
   "peerDependencies": {
+    "polished": "^1.9.2",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-vector-icons": "^4.0.0",
-    "styled-components": "^3.0.0",
-    "polished": "^1.9.2"
+    "styled-components": "^3.0.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
