@@ -10,7 +10,7 @@ const Container = styled.View`
   ${flex}
 `;
 
-type Props = Space & Flex;
+export type Props = Space & Flex;
 
 const Box = ({ children, ...props }: Props) => (
   <Container {...props}>{children}</Container>

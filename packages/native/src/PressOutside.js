@@ -2,7 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import * as React from 'react';
 import styled from 'styled-components/native';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, TouchableWithoutFeedbackProps } from 'react-native';
 
 const PressOutsideView = styled.View`
   position: absolute;
@@ -14,7 +14,7 @@ const PressOutsideView = styled.View`
 
 type Props = {
   onPressOutside: () => {},
-};
+} & TouchableWithoutFeedbackProps;
 
 class PressOutside extends React.Component<Props> {
   static defaultProps = {
@@ -22,7 +22,7 @@ class PressOutside extends React.Component<Props> {
   };
   render() {
     return (
-      <TouchableWithoutFeedback onPress={this.props.onPressOutside}>
+      <TouchableWithoutFeedback onPress={this.props.onPressOutside} {...this.props}>
         <PressOutsideView />
       </TouchableWithoutFeedback>
     );

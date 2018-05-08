@@ -6,9 +6,9 @@ import { ThemeProvider as Provider } from 'styled-components/native';
 import defaultTheme from './theme';
 
 
-type Props = {
+export type Props = {
   theme?: any,
-  children: Node
+  children: React.ReactNode,
 }
 
 class ThemeProvider extends React.Component<Props> {

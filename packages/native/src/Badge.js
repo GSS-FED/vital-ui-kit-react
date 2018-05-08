@@ -17,7 +17,7 @@ const Label = styled.Text`
   font-size: 12;
 `;
 
-type Props ={
+type Props = {
   label: string | number,
   bg?: string,
   color?: string,

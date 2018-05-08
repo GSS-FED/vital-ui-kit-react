@@ -2,8 +2,10 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
+import { ImageStyle, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 import boxShadow from './helper/boxShadow';
+import defaultAvatar from '../assets/avatar-alien.png';
 
 const AVATAR_SIZE = 37;
 
@@ -26,11 +28,13 @@ type Props = {
   size?: number,
   src?: string,
   shadow: boolean,
+  wrapperStyle: ViewStyle,
+  imageStyle: ImageStyle,
 }
 
-const Avatar = ({ size = AVATAR_SIZE, src = 'https://randomuser.me/api/portraits/men/39.jpg', shadow = false, ...props }: Props) => (
-  <Root shadow={shadow} size={size} {...props}>
-    <Image source={{ uri: src }} size={size} />
+const Avatar = ({ size = AVATAR_SIZE, src = defaultAvatar, shadow = false, wrapperStyle, imageStyle, ...props }: Props) => (
+  <Root shadow={shadow} size={size} style={wrapperStyle} {...props}>
+    <Image source={{ uri: src }} size={size} style={imageStyle} />
   </Root>
 );
 

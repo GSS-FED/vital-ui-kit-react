@@ -1,7 +1,7 @@
 // @flow
 /* eslint-disable import/no-extraneous-dependencies */
 import * as React from 'react';
-import { Dimensions, Animated } from 'react-native';
+import { Dimensions, Animated, TextStyle } from 'react-native';
 import styled from 'styled-components/native';
 
 const Header = styled.View`
@@ -24,7 +24,7 @@ const AvatarView = styled.View`
 type Props = {
   children: (onScroll: () => void) => React.Node,
   title: string,
-  titleStyle?: Object,
+  titleStyle?: TextStyle,
   avatar?: React.Node,
 };
 

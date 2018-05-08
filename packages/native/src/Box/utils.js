@@ -14,31 +14,23 @@ export type Space = {
   paddingBottom?: string
 };
 
+type FlexAlignType = "flex-start" | "flex-end" | "center" | "stretch" | "baseline";
+
 export type Flex = {
-  flex?: any,
+  flex?: number,
+  alignContent?: "flex-start" | "flex-end" | "center" | "stretch" | "space-between" | "space-around",
   flexDirection?:
     | 'row'
     | 'row-reverse'
     | 'column'
-    | 'column-reverse'
-    | 'initial'
-    | 'inherit',
+    | 'column-reverse',
   justifyContent?:
     | 'flex-start'
     | 'flex-end'
     | 'center'
     | 'space-between'
-    | 'space-around'
-    | 'initial'
-    | 'inherit',
-  alignItems?:
-    | 'stretch'
-    | 'center'
-    | 'flex-start'
-    | 'flex-end'
-    | 'baseline'
-    | 'initial'
-    | 'inherit'
+    | 'space-around',
+  alignItems?: FlexAlignType
 };
 
 export const space = (props: Space) => ({

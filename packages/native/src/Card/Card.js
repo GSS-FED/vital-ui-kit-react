@@ -17,8 +17,8 @@ const Root = styled.View`
   `}
 `;
 
-type Props = {
-  children: React.Node,
+export type Props = {
+  children: React.ReactNode,
   width?: string | number,
   height?: string | number,
   bg?: string,

@@ -1,7 +1,8 @@
 import Theme from './theme';
-import ThemeProvider from './ThemeProvider';
+import ThemeProvider, { Props as ThemeProps } from './ThemeProvider';
 
 export {
   Theme,
   ThemeProvider,
+  ThemeProps
 }
