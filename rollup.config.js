@@ -30,7 +30,8 @@ const commonPlugins = [
   postcss({ modules: true }),
   babel({
     exclude: 'node_modules/**',
-    externalHelpers: true
+    externalHelpers: true,
+    runtimeHelpers: true,
   }),
   url(),
   commonjs(),
