@@ -1,4 +1,5 @@
 import Button from './Button';
+import Box from './Box';
 import Card from './Card';
 import Avatar from './Avatar';
 import Badge from './Badge';
@@ -12,6 +13,7 @@ import { Theme, ThemeProvider } from './Theme/';
 
 export {
   Avatar,
+  Box,
   Badge,
   Button,
   Checkbox,
