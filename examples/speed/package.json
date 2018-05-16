@@ -5,16 +5,17 @@
   "dependencies": {
     "@gssfed/vital-ui-kit-react": "latest",
     "formik": "^0.11.11",
+    "polished": "^1.9.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-markdown": "^3.3.0",
+    "react-scripts": "^1.1.4",
     "styled-components": "3.2.6"
   },
   "scripts": {
-    "start": "NODE_ENV=development parcel public/index.html",
-    "build": "NODE_ENV=production parcel build public/index.html --no-minify --public-url ./"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.7.1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

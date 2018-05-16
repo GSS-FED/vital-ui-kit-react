@@ -1,17 +1,14 @@
 {
-  "presets": ["flow", "react", ["env", {"modules": false}]],
+  "presets": ["@babel/flow", "@babel/react", ["@babel/env", {"modules": false}]],
   "plugins": [
-    "transform-object-rest-spread",
-    "babel-plugin-transform-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-runtime",
     ["babel-plugin-root-import", {
       "rootPathSuffix": "./"
     }]
   ],
   "env": {
-    "development": {
-      "plugins": [["babel-plugin-styled-components", {
-        "displayName": true
-      }]]
-    }
   }
 }
