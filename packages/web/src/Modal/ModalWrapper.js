@@ -8,7 +8,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const Root = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 10000;
 `;
 

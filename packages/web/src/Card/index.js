@@ -15,6 +15,7 @@ import FooterButton from './FooterButton';
 const Root = styled.div`
   position: relative;
   display: flex;
+  margin: auto;
   box-sizing: border-box;
   flex-direction: column;
   word-break: break-word;
