@@ -53,7 +53,7 @@ const Root = styled.span`
 `;
 
 type Props = {
-  label?: string,
+  label: string,
   size?: string,
   round?: boolean
 };
