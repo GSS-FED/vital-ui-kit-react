@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -16,8 +16,8 @@ const TooltipContent = styled.div`
   display: inline-block;
   padding: 8px 16px;
   text-align: center;
-  color: #fff;
-  background: #182d54;
+  color: ${({ theme }) => theme.tooltip.color};
+  background: ${({ theme }) => theme.tooltip.background};
   border-radius: 4px;
 `;
 
@@ -56,6 +56,7 @@ type Props = {
   zIndex?: number,
   popupAlign?: Object,
   popupClassName?: string,
+  /** whether destroy popup when hide */
   destroyPopupOnHide?: boolean
 };
 
@@ -99,5 +100,17 @@ const Tooltip = ({
     </Trigger>
   );
 };
+
+Tooltip.defaultProps = {
+  overlay: null,
+  mouseEnterDelay: 0,
+  mouseLeaveDelay: 0,
+  popupStyle: {},
+  popupTransitionName: "",
+  zIndex: null,
+  popupAlign: null,
+  popupClassName: "vital-popup",
+  destroyPopupOnHide: false,
+}
 
 export default Tooltip;

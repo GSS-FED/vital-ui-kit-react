@@ -9,10 +9,10 @@ const Root = styled.div`
   font-weight: 400;
   line-height: 1;
   height: 1.93267rem;
-  color: #7189b6;
+  color: ${({ theme }) => theme.primaryList[5]};
   text-align: center;
-  background-color: #eef2fc;
-  border: 1px solid #c4d2eb;
+  background-color: ${({ theme }) => theme.primaryList[1]};
+  border: ${({ theme }) => `1px solid ${theme.primaryList[3]}`};
   border-radius: 4px;
   z-index: 5;
   position: relative;
@@ -20,9 +20,13 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.ReactNode,
+  children: React.ReactNode
 };
 
-const Addon = ({ children }: Props) => <Root>{children}</Root>;
+const Addon = ({ children }: Props) => (
+  <Root>
+    {children}
+  </Root>
+);
 
 export default Addon;

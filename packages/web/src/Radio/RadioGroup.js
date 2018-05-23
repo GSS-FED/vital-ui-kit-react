@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -28,7 +28,12 @@ type Props = {
  * @example
  * <RadioGroup items={[{name: 'color', value: 'red', label: 'Red'}, {name: 'color', value: 'blue', label: 'Blue', defaultChecked: true}, {name: 'color', value:'yello', label: 'Yellow'}]} />
  */
-const RadioGroup = ({ isDisabled, items, onRadioChange, ...props }: Props) => (
+const RadioGroup = ({
+  isDisabled,
+  items,
+  onRadioChange,
+  ...props
+}: Props) => (
   <Root>
     {items.map(item => (
       <Radio
@@ -41,5 +46,9 @@ const RadioGroup = ({ isDisabled, items, onRadioChange, ...props }: Props) => (
     ))}
   </Root>
 );
+
+RadioGroup.defaultProps = {
+  isDisabled: false
+};
 
 export default RadioGroup;

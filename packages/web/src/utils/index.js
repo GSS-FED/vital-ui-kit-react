@@ -14,8 +14,8 @@ export type Space = {
   paddingTop?: string,
   paddingLeft?: string,
   paddingRight?: string,
-  paddingBottom?: string,
-}
+  paddingBottom?: string
+};
 
 export const space = (props: Space) => ({
   margin: props.margin || '',
@@ -30,15 +30,28 @@ export const space = (props: Space) => ({
   paddingTop: props.paddingTop || '',
   paddingLeft: props.paddingLeft || '',
   paddingRight: props.paddingRight || '',
-  paddingBottom: props.paddingBottom || '',
-})
+  paddingBottom: props.paddingBottom || ''
+});
 
-export const stateColor = (props, defaultColor = '#7189b6') => {
-  if (props.alarm) return `#EB5000`;
-  if (props.warning) return `#FFB400`;
-  if (props.success) return `#2BCD86`;
-  return defaultColor;
-}
+export const stateColor = (
+  { alarm, warning, success, theme },
+  defaultColor
+) => {
+  if (alarm) return theme.alarm;
+  if (warning) return theme.warning;
+  if (success) return theme.success;
+  return defaultColor || theme.primaryList[5];
+};
+
+export const transitionBase = (
+  _props,
+  type = 'all',
+  duration = '120ms',
+  timing = 'ease-out',
+  delay = ''
+) => `transition: ${type} ${duration} ${timing} ${delay}`;
+
+export const borderBaseColor = theme => theme.primaryList[2];
 
 export const borderBottomRadius = props => `
   border-bottom-left-radius: ${props}px;
@@ -67,4 +80,5 @@ export default {
   borderTopRadius,
   borderLeftRadius,
   borderRightRadius,
+  borderBaseColor
 };

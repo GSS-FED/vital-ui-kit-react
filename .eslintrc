@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "extends": ["@gssfed", "prettier", "plugin:flowtype/recommended"],
   "plugins": [
     "react",
     "flowtype"
@@ -10,17 +10,10 @@
     "window": false
   },
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-closing-bracket-location": [0, "tag-aligned"],
-    "react/forbid-prop-types": 0,
-    "react/require-default-props": [0, { "forbidDefaultForRequired": true }],
-    "react/no-array-index-key": 0,
-    "flowtype/define-flow-type": 1,
-    "no-use-before-define": 0,
-    "react/sort-comp": 0,
     "react/prefer-stateless-function": 0,
-    "import/prefer-default-export": 0,
-    "jsx-a11y/anchor-is-valid": 0
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": 0,
+    "react/sort-comp": 0
   },
   "settings": {
     "import/resolver": "babel-plugin-root-import"

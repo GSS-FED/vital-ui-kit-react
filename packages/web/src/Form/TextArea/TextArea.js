@@ -19,21 +19,19 @@ type Props = {
   /** Spell check attr */
   spellCheck?: boolean,
   /** when input changes */
-  onChange?: (event: any) => {},
+  onChange?: (event: any) => {}
 };
 
 type State = {
-  value: string,
+  value: string
 };
 
 export default class TextArea extends React.Component<Props, State> {
   state = {
-    value: this.props.value || '',
+    value: this.props.value || ''
   };
 
-  input: any;
-
-  handleChange = (e: any) => {
+  handleChange = (e: SyntheticInputEvent<any>) => {
     this.setState({ value: e.target.value });
     if (this.props.onChange) this.props.onChange(e);
   };
@@ -41,6 +39,8 @@ export default class TextArea extends React.Component<Props, State> {
   focus = () => {
     this.input.focus();
   };
+
+  input: any;
 
   render() {
     return (

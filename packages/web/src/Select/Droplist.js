@@ -24,9 +24,9 @@ const Root = styled.ul`
   font-size: 1rem;
   text-align: left;
   list-style: none;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.white};
   background-clip: padding-box;
-  border: 1px solid #c4d2eb;
+  border: 1px solid ${({ theme }) => theme.primaryList[3]};
   border-radius: 4px;
 `;
 
@@ -38,6 +38,4 @@ const Droplist = ({ items, onClick }: Props) => (
   </Root>
 );
 
-// {items.map(item =>
-// )}
 export default Droplist;

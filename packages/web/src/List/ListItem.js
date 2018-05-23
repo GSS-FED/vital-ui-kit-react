@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -10,7 +10,7 @@ import { tween, styler, easing } from 'popmotion';
 
 import { TitleWrapper, List, Title } from './styled';
 import Badge from '../Badge';
-import IconBase from '../Icon/';
+import IconBase from '../Icon';
 import SubListItem from './SubListItem';
 
 const ICON_SIZE = 10;
@@ -20,8 +20,9 @@ const Icon = styled(IconBase)`
   right: 15px;
   top: calc(50% - ${ICON_SIZE / 2}px);
   pointer-events: none;
-  color: ${props => (props.open ? '#00C3FF' : 'inherit')};
-  transform: ${props => (props.open ? `rotateZ(-180deg)` : `rotateZ(0deg)`)};
+  color: ${({ open, theme }) => (open ? `${theme.info}` : 'inherit')};
+  transform: ${props =>
+    props.open ? `rotateZ(-180deg)` : `rotateZ(0deg)`};
   transition: all 0.05s ease-in;
   transform-origin: center center;
 `;
@@ -59,7 +60,7 @@ type Props = {
   /** @private */
   dispatchClose: () => {},
   /** @private */
-  border?: boolean,
+  border?: boolean
 };
 
 type State = {
@@ -69,12 +70,14 @@ type State = {
 class ListItem extends Component<Props, State> {
   static defaultProps = {
     level: 0,
-    isChildren: false
+    isChildren: false,
+    open: false,
+    badge: null
   };
+
   state = {
-    open: this.props.open || false
+    open: this.props.open
   };
-  child: HTMLElement;
 
   componentDidMount() {
     if (this.child) {
@@ -125,17 +128,29 @@ class ListItem extends Component<Props, State> {
     });
   };
 
+  iconHandler = () =>
+    this.props.children ? 'chevron-down' : 'chevron-right';
+
+  child: HTMLElement;
+
   renderBadge = () => (
-    <BadgeWrapper hasIconRight={this.props.children || this.props.hasLink}>
+    <BadgeWrapper
+      hasIconRight={this.props.children || this.props.hasLink}
+    >
       <Badge label={this.props.badge} />
     </BadgeWrapper>
   );
 
-  iconHandler = () =>
-    this.props.children ? 'chevron-down' : 'chevron-right';
-
   render() {
-    const { title, children, hasLink, level, themed, badge, border } = this.props;
+    const {
+      title,
+      children,
+      hasLink,
+      level,
+      themed,
+      badge,
+      border
+    } = this.props;
 
     return (
       <List>
@@ -147,7 +162,9 @@ class ListItem extends Component<Props, State> {
           border={border}
           themed={themed}
         >
-          <Title>{title}</Title>
+          <Title>
+            {title}
+          </Title>
           {badge && this.renderBadge()}
           {(children || hasLink) && (
             <Icon
@@ -163,7 +180,11 @@ class ListItem extends Component<Props, State> {
               this.child = s;
             }}
           >
-            <SubListItem isChildren={!!children} level={level + 1} themed={themed}>
+            <SubListItem
+              isChildren={!!children}
+              level={level + 1}
+              themed={themed}
+            >
               {children}
             </SubListItem>
           </InnerWrapper>

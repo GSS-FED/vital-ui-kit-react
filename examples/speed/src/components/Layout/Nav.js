@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ListGroup, ListItem } from '@gssfed/vital-ui-kit-react';
+import { List } from '@gssfed/vital-ui-kit-react';
 
 const TitleWrapper = styled.div`
   padding-top: 5px;
@@ -11,39 +11,39 @@ class Nav extends React.PureComponent {
   render() {
     return (
       <div style={{ background: '#1E3768', height: '100%' }}>
-        <ListGroup themed="dark">
-          <ListItem
+        <List themed="dark">
+          <List.Item
             title={<TitleWrapper>Doc Inbox</TitleWrapper>}
             badge="99+"
             open
           >
-            <ListItem title={<TitleWrapper>Appointments</TitleWrapper>} />
-            <ListItem
+            <List.Item title={<TitleWrapper>Appointments</TitleWrapper>} />
+            <List.Item
               title={<TitleWrapper>Requisitions</TitleWrapper>}
               badge="10"
               open
             >
-              <ListItem title={<TitleWrapper>Hardware</TitleWrapper>} />
-              <ListItem title={<TitleWrapper>Software</TitleWrapper>} />
-              <ListItem
+              <List.Item title={<TitleWrapper>Hardware</TitleWrapper>} />
+              <List.Item title={<TitleWrapper>Software</TitleWrapper>} />
+              <List.Item
                 title={<TitleWrapper>Stationery</TitleWrapper>}
                 badge="2"
               />
-            </ListItem>
-          </ListItem>
-          <ListItem title={<TitleWrapper>Sending Operation</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>Form Operation</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>File Managment</TitleWrapper>}>
-            <ListItem title={<TitleWrapper>Hardware</TitleWrapper>} />
-            <ListItem title={<TitleWrapper>Software</TitleWrapper>} />
-            <ListItem title={<TitleWrapper>Stationery</TitleWrapper>} badge="2" />
-          </ListItem>
-          <ListItem title={<TitleWrapper>Integrated Delivery</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>Register Operation</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>Remove Operation</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>Maintainance</TitleWrapper>} />
-          <ListItem title={<TitleWrapper>Setting</TitleWrapper>} />
-        </ListGroup>
+            </List.Item>
+          </List.Item>
+          <List.Item title={<TitleWrapper>Sending Operation</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>Form Operation</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>File Managment</TitleWrapper>}>
+            <List.Item title={<TitleWrapper>Hardware</TitleWrapper>} />
+            <List.Item title={<TitleWrapper>Software</TitleWrapper>} />
+            <List.Item title={<TitleWrapper>Stationery</TitleWrapper>} badge="2" />
+          </List.Item>
+          <List.Item title={<TitleWrapper>Integrated Delivery</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>Register Operation</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>Remove Operation</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>Maintainance</TitleWrapper>} />
+          <List.Item title={<TitleWrapper>Setting</TitleWrapper>} />
+        </List>
       </div>
     );
   }

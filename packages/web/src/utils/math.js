@@ -6,4 +6,4 @@ export const trunTo = (value: string | number): string | number => {
     return number > 99 ? '99+' : number;
   }
   return value;
-}
+};

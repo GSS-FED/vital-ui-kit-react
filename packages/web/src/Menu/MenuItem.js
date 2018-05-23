@@ -4,16 +4,18 @@
  * MIT license
  */
 
- import * as React from 'react';
- import styled from 'styled-components';
+import * as React from 'react';
+import styled from 'styled-components';
 
- import Button from '../Button/Button';
+import Button from '../Button/Button';
+import { borderBaseColor } from '../utils';
 
- const Root = styled.div`
+const Root = styled.div`
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  border-left: ${props => props.border ? '1px solid #D8E2F5' : 'none'};
+  border-left: ${props =>
+    props.border ? borderBaseColor(props.theme) : 'none'};
   height: 100%;
 
   &:first-child {
@@ -28,15 +30,21 @@ const MenuButton = styled(Button)`
 
 type Props = {
   children: React.ReactNode,
-  border?: boolean,
-}
-
+  border?: boolean
+};
 
 class MenuItem extends React.Component<Props> {
+  static defaultProps = {
+    border: false
+  };
+
   render() {
+    const { border, children, ...props } = this.props;
     return (
-      <Root border={this.props.border} {...this.props}>
-        <MenuButton subtle>{this.props.children}</MenuButton>
+      <Root border={border} {...props}>
+        <MenuButton subtle>
+          {children}
+        </MenuButton>
       </Root>
     );
   }

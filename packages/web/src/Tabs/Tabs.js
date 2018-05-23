@@ -1,7 +1,6 @@
-
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -13,7 +12,10 @@ import TabList from './TabList';
 import TabPanel from './TabPanel';
 
 const Root = styled.div`
-  background: linear-gradient(to left, #00c3ff, #0e86fe);
+  background: ${({ theme }) =>
+    `linear-gradient(to left, ${theme.info}, ${
+      theme.secondaryList[4]
+    })`};
   width: auto;
   border-radius: 4px 4px 0 0;
   padding: 8px 0 0 12px;
@@ -27,16 +29,16 @@ type Props = {
 };
 
 type State = {
-  activeIndex: number,
-}
+  activeIndex: number
+};
 
 class Tabs extends React.Component<Props, State> {
   state = {
-    activeIndex: this.props.defaultActiveIndex || 0,
-
+    activeIndex: this.props.defaultActiveIndex || 0
   };
 
   static Tab = TabItem;
+
   static Panel = TabPanel;
 
   onTabChange = (panel: React.ReactNode, index: number) => {
@@ -65,21 +67,21 @@ class Tabs extends React.Component<Props, State> {
                 if (this.state.activeIndex === i) {
                   activePanel = child.props.panel;
                 }
-                return React.cloneElement(child,{
+                return React.cloneElement(child, {
                   index: i,
                   current: this.state.activeIndex === i,
-                  onTabChange: this.onTabChange,
+                  onTabChange: this.onTabChange
                 });
               }
               return null;
             })}
           </TabList>
         </Root>
-        {activePanel &&
+        {activePanel && (
         <div>
           {activePanel}
         </div>
-        }
+)}
       </React.Fragment>
     );
   }

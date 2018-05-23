@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -8,7 +8,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import { Button as ButtonBase } from '../Button';
-import Icon from '../Icon/';
+import Icon from '../Icon';
 
 const Root = styled.ul`
   font-size: 0;
@@ -24,30 +24,36 @@ const ListWrapper = styled.li`
   font-size: 0.875rem;
 `;
 
-type Props = {
-  /** total page size */
-  pageSize: number,
-  /** current active page size */
-  current: number
-};
-
 function Item({
   children,
   selected,
+  onChange,
   ...props
 }: {
   children: React.ReactNode,
-  selected?: boolean
+  selected?: boolean,
+  onChange: () => {}
 }) {
   return (
     <ListWrapper {...props}>
-      <Button subtle selected={selected}>
+      <Button subtle selected={selected} onChange={onChange}>
         {children}
       </Button>
     </ListWrapper>
   );
 }
 
+Item.defaultProps = {
+  selected: false
+};
+
+type Props = {
+  /** total page size */
+  pageSize: number,
+  /** current active page size */
+  current: number,
+  onChange: () => {}
+};
 
 /**
  * @render react
@@ -57,12 +63,15 @@ function Item({
  * <Pagination
  *  pageSize={5}
  *  current={3}
+ *  onChange={() => {}}
  * />
  */
 
-const Pagination = ({ pageSize, current }: Props) => (
+const Pagination = ({ pageSize, current, onChange }: Props) => (
   <Root>
-    <Item>First</Item>
+    <Item>
+      First
+    </Item>
     <Item>
       <Icon
         style={{ marginRight: '5px' }}
@@ -72,7 +81,11 @@ const Pagination = ({ pageSize, current }: Props) => (
       Prev
     </Item>
     {[...Array(pageSize).keys()].map(size => (
-      <Item selected={size + 1 === current} key={size}>
+      <Item
+        selected={size + 1 === current}
+        key={size}
+        onClick={onChange}
+      >
         {size + 1}
       </Item>
     ))}
@@ -84,7 +97,9 @@ const Pagination = ({ pageSize, current }: Props) => (
         size="12"
       />
     </Item>
-    <Item>Last</Item>
+    <Item>
+      Last
+    </Item>
   </Root>
 );
 

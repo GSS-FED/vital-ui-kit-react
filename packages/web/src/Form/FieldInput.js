@@ -6,12 +6,14 @@ import styled from 'styled-components';
 import Label from './components/Label';
 
 const Root = styled.div`
-  display: ${props => props.inline ? 'table' : 'block'};
-  margin-bottom: ${props => props.inline ? '1.866rem' : '1.333rem'};
+  display: ${props => (props.inline ? 'table' : 'block')};
+  margin-bottom: ${props => (props.inline ? '1.866rem' : '1.333rem')};
   position: relative;
   width: 100%;
 
-  ${props => props.inline && `
+  ${props =>
+    props.inline &&
+    `
     > span {
         display: table-cell;
         overflow: hidden;
@@ -32,14 +34,36 @@ type Props = {
   align: 'left' | 'right',
   inline?: boolean,
   required?: boolean,
-  children: React.ReactNode,
-}
+  children: React.ReactNode
+};
 
-const FieldInput = ({ label, align, inline, required, children, ...props }: Props) => (
+/**
+ * @render react
+ * @name FieldInput
+ * @desc Couple with input and label
+ * @example
+ * <FieldInput inline required label="email">
+ *   ...
+ * </FieldInput>
+ */
+
+const FieldInput = ({
+  label,
+  align,
+  inline,
+  required,
+  children,
+  ...props
+}: Props) => (
   <Root inline={inline} {...props}>
     <Label text={label} required={required} align={align} />
     {children}
   </Root>
 );
+
+FieldInput.defaultProps = {
+  inline: false,
+  required: false
+};
 
 export default FieldInput;

@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -9,21 +9,23 @@ import styled from 'styled-components';
 
 const Root = styled.div`
   display: block;
-  background-color: #fff;
-  color: #7189b6;
+  background-color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.primaryList[5]};
   font-size: 0.93333rem;
   padding: 10px;
 `;
 
 type Props = {
-  children: React.ReactNode,
-}
+  children: React.ReactNode
+};
 
 class TabPanel extends React.Component<Props> {
   render() {
     return (
-      <Root>{this.props.children}</Root>
-    );
+      <Root>
+        {this.props.children}
+      </Root>
+);
   }
 }
 

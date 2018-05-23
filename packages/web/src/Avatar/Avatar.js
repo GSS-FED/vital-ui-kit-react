@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -22,11 +22,11 @@ const Root = styled.div`
 `;
 
 const Image = styled.img`
-  width: ${props => avatarSizes[props.size].size};
-  height: ${props => avatarSizes[props.size].size};
-  border-radius: ${props =>
-    props.round ? '50%' : avatarSizes[props.size].borderRadius};
-  background-color: #f0f0f0;
+  width: ${({ size }) => avatarSizes[size].size};
+  height: ${({ size }) => avatarSizes[size].size};
+  border-radius: ${({ size, round }) =>
+    round ? '50%' : avatarSizes[size].borderRadius};
+  background-color: ${({ theme }) => theme.blackList[1]};
   box-sizing: border-box;
 `;
 
@@ -80,7 +80,8 @@ const Avatar = ({
       if (gender === 'female') return DEFAULT_AVATAR_F_O;
       if (gender === 'male') return DEFAULT_AVATAR_M_O;
       return DEFAULT_AVATAR_OUTLINE;
-    } else if (!outline && gender) {
+    }
+    if (!outline && gender) {
       if (gender === 'female') return DEFAULT_AVATAR_F;
       if (gender === 'male') return DEFAULT_AVATAR_M;
       return DEFAULT_AVATAR;
@@ -93,13 +94,21 @@ const Avatar = ({
 
   return (
     <Root>
-      <Image src={renderDefaultAvatar()} size={size} round={round} {...props} />
+      <Image
+        src={renderDefaultAvatar()}
+        size={size}
+        round={round}
+        {...props}
+      />
       {renderBadge()}
     </Root>
   );
 };
 
 Avatar.defaultProps = {
+  badge: null,
+  src: null,
+  gender: undefined,
   round: false,
   size: 'medium',
   outline: false

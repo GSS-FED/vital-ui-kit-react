@@ -1,7 +1,9 @@
 // @flow
 import { css } from 'styled-components';
 
-const FieldBase = () => css`
+const fieldBorderColor = ({ theme }) => theme.primaryList[3];
+
+const FieldBase = ({ theme }) => css`
   position: relative;
   display: block;
   width: 100%;
@@ -9,49 +11,54 @@ const FieldBase = () => css`
   font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid #c4d2eb;
+  background-color: ${theme.white};
+  border: 1px solid ${fieldBorderColor};
   border-radius: 4px;
-  color: #456297;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  color: ${theme.primaryList[6]};
+  transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
 
   &::placeholder {
-    color: #95acd4;
+    color: ${theme.primaryList[4]};
   }
 
   &:focus {
     outline: 0;
-    border: 1px solid #0e86fe;
+    border: 1px solid ${theme.secondaryList[4]};
     box-shadow: 0 0 0 2px rgba(14, 134, 254, 0.2);
     z-index: 7;
   }
 
   &:disabled {
     pointer-events: none;
-    border-color: #c4d2eb;
-    background-color: #eef2fc;
+    border-color: ${fieldBorderColor};
+    background-color: ${theme.primaryList[1]};
 
+    ${({ alarm }) =>
+      alarm &&
+      css`
+        pointer-events: none;
+        background-color: #ffd0b8; //TODO:
+        border-color: ${theme.alarm};
 
-    ${props => props.alarm && `
-      pointer-events: none;
-      background-color: #FFD0B8;
-      border-color: #EB5000;
-
-      &::placeholder {
-        color: #EB5000;
-      }
-    `};
+        &::placeholder {
+          color: ${theme.alarm};
+        }
+      `};
   }
 
-
-    ${props => props.alarm && `
-      border-color: #EB5000;
+  ${({ alarm }) =>
+    alarm &&
+    css`
+      border-color: ${theme.alarm};
     `};
 
-    ${props => props.alarm && `
-      border-color: #FFB400;
+  ${({ warning }) =>
+    warning &&
+    css`
+      border-color: ${theme.warning};
     `};
 `;
 

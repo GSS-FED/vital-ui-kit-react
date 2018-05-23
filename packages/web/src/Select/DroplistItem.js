@@ -11,21 +11,20 @@ const Item = styled.div`
   padding: 0.5em 1em 0.5em;
   clear: both;
   line-height: 1;
-  color: #7189b6;
+  color: ${({ theme }) => theme.primaryList[5]};
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    color: #7189b6;
     text-decoration: none;
-    background-color: #eef2fc;
+    background-color: ${({ theme }) => theme.primaryList[1]};
   }
 `;
 
 type Props = {
   item: ItemType,
-  onClick: (item: ItemType) => void,
+  onClick: (item: ItemType) => void
 };
 
 const DroplistItem = ({ item, onClick }: Props) => (

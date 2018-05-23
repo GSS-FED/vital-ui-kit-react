@@ -2,26 +2,32 @@
 
 import React, { type Node } from 'react';
 import { ThemeProvider as Provider } from 'styled-components';
-import defaultTheme from './styles/colors';
+import defaultTheme from './styles/theme';
 import IconProvider from '../Icon/components/IconProvider';
 import defaultIcon from '../Icon/selection.json';
 
 type Props = {
-  theme?: any,
+  theme?: {
+    primaryList: string[],
+    secondaryList: string[],
+    blackList: string[],
+  },
   icon?: any,
   children: Node
-}
+};
 
 class ThemeProvider extends React.Component<Props> {
   static defaultProps = {
     theme: {},
-    icon: {},
-  }
+    icon: {}
+  };
+
   render() {
+    const { theme, icon, children } = this.props;
     return (
-      <Provider theme={{...defaultTheme, ...this.props.theme}}>
-        <IconProvider icon={{...defaultIcon, ...this.props.icon}}>
-          {this.props.children}
+      <Provider theme={{ ...defaultTheme, ...theme }}>
+        <IconProvider icon={{ ...defaultIcon, ...icon }}>
+          {children}
         </IconProvider>
       </Provider>
     );

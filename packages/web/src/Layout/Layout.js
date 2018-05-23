@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -43,22 +43,47 @@ type Props = {
   children: React.ReactNode
 };
 
+/**
+ * @render react
+ * @name Layout
+ * @desc Layout component contains Header, Sidebar and Content
+ * @example
+ * <Layout>
+ *  <Layout.Header />
+ *  <Layout.Sidebar />
+ *  <Layout.Content />
+ * </Layout>
+ */
 class Layout extends React.Component<Props> {
-  state = {};
 
   static Header = Header;
+
   static Sidebar = Sidebar;
+
   static Content = Content;
 
   render() {
     const { children, ...props } = this.props;
-    const childrenArray = React.Children.map(this.props.children, child => child);
-    const header = childrenArray.filter(child => child.type.displayName === 'Header');
-    const main = childrenArray.filter(child => child.type.displayName !== 'Header');
+    const childrenArray = React.Children.map(
+      this.props.children,
+      child => child
+    );
+    const header = childrenArray.filter(
+      child => child.type.displayName === 'Header'
+    );
+    const main = childrenArray.filter(
+      child => child.type.displayName !== 'Header'
+    );
     return (
       <Root {...props}>
-        {header && <Header>{header}</Header>}
-        <Main>{main}</Main>
+        {header && (
+        <Header>
+          {header}
+        </Header>
+)}
+        <Main>
+          {main}
+        </Main>
       </Root>
     );
   }
