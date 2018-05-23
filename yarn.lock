@@ -9858,9 +9858,9 @@ rollup-plugin-flow@1.1.1:
     flow-remove-types "^1.1.0"
     rollup-pluginutils "^1.5.1"
 
-rollup-plugin-json@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-2.3.0.tgz#3c07a452c1b5391be28006fbfff3644056ce0add"
+rollup-plugin-json@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-2.3.1.tgz#9759d27f33dcd2c896de18b6235df162b88edd77"
   dependencies:
     rollup-pluginutils "^2.0.1"
 
