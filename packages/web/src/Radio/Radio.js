@@ -1,11 +1,12 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { transitionBase } from '../utils';
 
 const Root = styled.label`
   display: inline-block;
@@ -13,16 +14,17 @@ const Root = styled.label`
   position: relative;
   margin: 0 5px 10px 0;
   word-break: break-word;
-  color: ${props => props.isDisabled ? '#95ACD4' : '#456297'};
+  color: ${({ isDisabled, theme }) =>
+    isDisabled ? theme.primaryList[4] : theme.primaryList[6]};
   line-height: 1.3333rem;
   font-size: 1rem;
-  cursor: ${props => props.isDisabled? 'not-allowed' : 'pointer'};;
-  pointer-events: ${props => props.isDisabled? 'none' : 'auto'};
+  cursor: ${props => (props.isDisabled ? 'not-allowed' : 'pointer')};
+  pointer-events: ${props => (props.isDisabled ? 'none' : 'auto')};
 
   :hover {
     input {
       box-shadow: 0 0 0 2px rgba(14, 134, 254, 0.2);
-      border-color: #0e86fe;
+      border-color: ${({ theme }) => theme.secondaryList[4]};
     }
   }
 `;
@@ -36,19 +38,20 @@ const Input = styled.input`
   margin: -2px 0 0 0;
   width: 15px;
   height: 15px;
-  border: 1px solid #c4d2eb;
+  border: 1px solid ${({ theme }) => theme.primaryList[3]};
   border-radius: 50%;
   background-color: #ffffff;
-  transition: all 120ms ease-out;
-  cursor: pointer;
+  ${transitionBase} cursor: pointer;
 
   &:checked {
-    border-color: ${props => props.isDisabled ? '#C4D2EB' : '#0e86fe'};
+    border-color: ${({ isDisabled, theme }) =>
+      isDisabled ? theme.primaryList[3] : theme.secondaryList[4]};
 
     &:after {
       opacity: 1;
       transform: scale(1);
-      background: ${props => props.isDisabled ? '#95ACD4' : '#0e86fe'};
+      background: ${({ isDisabled, theme }) =>
+        isDisabled ? theme.primaryList[4] : theme.secondaryList[4]};
     }
   }
 
@@ -57,14 +60,14 @@ const Input = styled.input`
     position: absolute;
     width: 9px;
     height: 9px;
-    top: calc((15px - 9px)/2);
-    left: calc((15px - 9px)/2);
+    top: calc((15px - 9px) / 2);
+    left: calc((15px - 9px) / 2);
     border-radius: 50%;
     background: transparent;
     opacity: 0;
     pointer-events: none;
     transform: scale(0);
-    transition: all 120ms ease-out;
+    ${transitionBase};
   }
 `;
 
@@ -78,7 +81,7 @@ type Props = {
   value: string,
   defaultChecked?: boolean,
   isDisabled?: boolean,
-  onChange: () => void,
+  onChange: () => void
 };
 
 const Radio = ({
@@ -100,8 +103,15 @@ const Radio = ({
       onChange={onChange}
       {...props}
     />
-    <Label isDisabled={isDisabled}>{label}</Label>
+    <Label isDisabled={isDisabled}>
+      {label}
+    </Label>
   </Root>
 );
+
+Radio.defaultProps = {
+  defaultChecked: false,
+  isDisabled: false
+};
 
 export default Radio;

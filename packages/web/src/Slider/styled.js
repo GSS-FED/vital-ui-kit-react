@@ -24,11 +24,10 @@ const Wrapper = styled.div`
 
 const Handler = styled.div`
   top: 0;
-  left: ${props => `${props.left}px`}
   position: absolute;
   border-radius: 100%;
-  border-color: #c4d2eb;
-  background-color: #ffffff;
+  border-color: ${({ theme }) => theme.primaryList[3]};
+  background-color: ${({ theme }) => theme.white};
   box-shadow: 0 0 0 1px rgba(196, 210, 235, 0.3);
   text-indent: -3333px;
   overflow: hidden;
@@ -37,14 +36,13 @@ const Handler = styled.div`
   outline: 0;
   border-style: solid;
   border-width: 1px;
-  width: ${props =>
-     constants[props.size].handlerSize};
+  width: ${props => constants[props.size].handlerSize};
   height: ${props => constants[props.size].handlerSize};
   cursor: pointer;
 
   &:hover {
-    border-color: #C4D2EB;
-    background-color: #FFFFFF;
+    border-color: ${({ theme }) => theme.primaryList[3]};
+    background-color: ${({ theme }) => theme.white};
     box-shadow: 0 0 0 2px rgba(196, 210, 235, 0.3);
   }
 `;
@@ -57,9 +55,4 @@ const Button = styled(ButtonBase)`
   justify-content: center;
 `;
 
-export {
-  Root,
-  Wrapper,
-  Handler,
-  Button,
-}
+export { Root, Wrapper, Handler, Button };

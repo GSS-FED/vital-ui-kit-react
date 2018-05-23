@@ -1,15 +1,15 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 
-import Icon from '../Icon/';
+import Icon from '../Icon';
 import { Root, Wrapper, Handler, Button } from './styled';
-import Tooltip from '../Tooltip/';
+import Tooltip from '../Tooltip';
 import Track from '../Track';
 
 import constants from './constants';
@@ -58,7 +58,12 @@ class Slider extends React.Component<Props, State> {
     size: 'medium',
     disabled: false,
     hasButton: false,
+    min: 0,
+    step: 5,
+    max: 100,
+    value: 0
   };
+
   state = {
     active: false,
     position: -constants[this.props.size].handlerSize / 2,
@@ -70,11 +75,16 @@ class Slider extends React.Component<Props, State> {
     startX: 0,
     value: this.props.value || 0
   };
+
   slider: HTMLElement;
+
   track: HTMLElement;
+
   handle: HTMLElement;
+
   // delay timeout of the button calling function
   start = 700;
+
   timeout = undefined;
 
   componentDidMount() {
@@ -89,11 +99,11 @@ class Slider extends React.Component<Props, State> {
     }
     const trackWidth = this.track.offsetWidth;
     const handleWith = this.handle.offsetWidth;
-    this.setState({
+    this.setState(prevState => ({
       limit: trackWidth - handleWith,
       grab: -handleWith / 2,
-      position: this.getPositionFromValue(this.state.value)
-    });
+      position: this.getPositionFromValue(prevState.value)
+    }));
   };
 
   handleStart = (e: SyntheticMouseEvent<HTMLElement>) => {
@@ -117,7 +127,9 @@ class Slider extends React.Component<Props, State> {
     const value =
       this.props.step *
       Math.round(
-        percentage * (this.props.max - this.props.min) / this.props.step
+        percentage *
+          (this.props.max - this.props.min) /
+          this.props.step
       );
     this.setState({ value });
     if (this.props.onChange) this.props.onChange(value, e);
@@ -132,10 +144,10 @@ class Slider extends React.Component<Props, State> {
 
   handleEnd = (e: SyntheticMouseEvent<HTMLElement>) => {
     if (this.props.onChangeComplete) this.props.onChangeComplete(e);
-    this.setState({
+    this.setState(prevState => ({
       active: false,
-      position: this.getPositionFromValue(this.state.value)
-    });
+      position: this.getPositionFromValue(prevState.value)
+    }));
     // $FlowFixMe
     document.removeEventListener('mousemove', this.handleDrag);
     // $FlowFixMe
@@ -157,23 +169,23 @@ class Slider extends React.Component<Props, State> {
   };
 
   increaseByStep = () => {
-    this.setState({
+    this.setState(prevState => ({
       value: this.clamp(
-        this.state.value + this.props.step,
+        prevState.value + this.props.step,
         this.props.max,
         this.props.min
       )
-    });
+    }));
   };
 
   decreaseByStep = () => {
-    this.setState({
+    this.setState(prevState => ({
       value: this.clamp(
-        this.state.value - this.props.step,
+        prevState.value - this.props.step,
         this.props.max,
         this.props.min
       )
-    });
+    }));
   };
 
   getPositionFromValue = (value: number): number => {
@@ -195,7 +207,9 @@ class Slider extends React.Component<Props, State> {
     const value =
       this.props.step *
       Math.round(
-        percentage * (this.props.max - this.props.min) / this.props.step
+        percentage *
+          (this.props.max - this.props.min) /
+          this.props.step
       );
     return value;
   };
@@ -216,7 +230,9 @@ class Slider extends React.Component<Props, State> {
         style: { marginRight: '12px', flex: '0 0 auto' }
       };
       if (this.props.decreaseButton) {
-        return React.cloneElement(this.props.decreaseButton, { ...buttonProps });
+        return React.cloneElement(this.props.decreaseButton, {
+          ...buttonProps
+        });
       }
       return (
         <Button {...buttonProps} circle size="xsmall">
@@ -240,7 +256,9 @@ class Slider extends React.Component<Props, State> {
         style: { marginLeft: '12px', flex: '0 0 auto' }
       };
       if (this.props.increaseButton) {
-        return React.cloneElement(this.props.increaseButton, { ...buttonProps });
+        return React.cloneElement(this.props.increaseButton, {
+          ...buttonProps
+        });
       }
       return (
         <Button {...buttonProps} circle size="xsmall">
@@ -266,7 +284,10 @@ class Slider extends React.Component<Props, State> {
         aria-valuenow={this.props.value}
       >
         {this.renderDecreaseButton()}
-        <Wrapper size={this.props.size} disabled={this.props.disabled}>
+        <Wrapper
+          size={this.props.size}
+          disabled={this.props.disabled}
+        >
           <Track
             size={this.props.size}
             onMouseDown={this.handleTrack}
@@ -292,7 +313,9 @@ class Slider extends React.Component<Props, State> {
               innerRef={s => {
                 this.handle = s;
               }}
-              left={position}
+              style={{
+                left: `${position}px`
+              }}
               active={this.state.active}
               onMouseDown={this.handleStart}
             />

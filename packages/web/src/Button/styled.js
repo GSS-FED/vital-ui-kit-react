@@ -1,113 +1,139 @@
 import styled from 'styled-components';
 import { darken, lighten } from 'polished';
 
-import { styles } from '../Base/';
-import { buttonSizes } from './constant';
-
-const { colors } = styles;
+import { size as SIZE, natureColor } from './constant';
 
 const ButtonElement = styled.button`
   position: relative;
-  background: ${props => props.theme.Button[props.nature].background};
-  color: ${props => props.theme.Button[props.nature].color};
+  background: ${({ theme }) => theme.primaryList[0]};
+  color: ${({ theme, nature }) => natureColor(theme)[nature]};
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: ${colors.primaryList[3]};
-  font-size: ${({ size }) => buttonSizes[size]['font-size']};
-  border-radius: ${({ size }) => buttonSizes[size]['border-radius']};
-  padding: ${({ size }) => buttonSizes[size].padding};
+  border-color: ${({ theme }) => theme.primaryList[3]};
+  font-size: ${({ size }) => SIZE[size].fontSize};
+  border-radius: ${({ size }) => SIZE[size].borderRadius};
+  padding: ${({ size }) => SIZE[size].padding};
   line-height: 1;
   font-weight: normal;
   margin: 0;
   outline: none;
-  padding: ${({ size }) => buttonSizes[size].padding};
+  padding: ${({ size }) => SIZE[size].padding};
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
 
   &:hover {
-    background: ${colors.primaryList[2]};
+    background: ${({ theme }) => theme.primaryList[2]};
   }
 
   &:active {
-    background: ${colors.primaryList[4]};
+    background: ${({ theme }) => theme.primaryList[4]};
   }
 
-  ${(props) => props.subtle &&`
-    background: ${props.selected ? props.theme.primaryList4 : 'transparent'};
-    color: ${props.natrue === 'default' ? props.theme.primaryList7 : props.theme.Button[props.nature].color};};
+  ${({ subtle, selected, theme, nature }) =>
+    subtle &&
+    `
+    background: ${selected ? theme.primaryList4 : 'transparent'};
+    color: ${
+      nature === 'default'
+        ? theme.primaryList7
+        : natureColor(theme)[nature]
+    };
     border: 1px solid transparent;
 
     &:hover {
-      background: ${colors.primaryList[2]};
+      background: ${theme.primaryList[2]};
     }
   `};
 
-  ${props => props.flat &&`
-   background: ${props.nature === 'default'
-       ? colors.primaryList[1]
-       : props.theme.Button[props.nature].color};
-   color: ${props.nature === 'default'
-       ? props.theme.Button.default.color
-       : colors.white};
-   border-color: ${props.nature === 'default'
-       ? colors.primaryList[1]
-       : props.theme.Button[props.nature].color};
+  ${({ flat, nature, theme }) =>
+    flat &&
+    `
+   background: ${
+     nature === 'default'
+       ? theme.primaryList[1]
+       : natureColor(theme)[nature]
+   };
+   color: ${
+     nature === 'default' ? natureColor(theme).default : theme.white
+   };
+   border-color: ${
+     nature === 'default' ? theme.primaryList[1] : natureColor(theme)
+   };
 
    &:hover {
-     background: ${props.nature === 'default'
-         ? colors.primaryList[2]
-         : lighten(0.1, props.theme.Button[props.nature].color)};
-     border-color: ${props.nature === 'default'
-         ? colors.primaryList[2]
-         : lighten(0.1, props.theme.Button[props.nature].color)};
+     background: ${
+       nature === 'default'
+         ? theme.primaryList[2]
+         : lighten(0.1, natureColor(theme)[nature])
+     };
+     border-color: ${
+       nature === 'default'
+         ? theme.primaryList[2]
+         : lighten(0.1, natureColor(theme)[nature])
+     };
    }
    &:active {
-     background: ${props.nature === 'default'
-         ? colors.primaryList[4]
-         : darken(0.12, props.theme.Button[props.nature].color)};
-     border-color: ${props.nature === 'default'
-         ? colors.primaryList[4]
-         : darken(0.12, props.theme.Button[props.nature].color)};
+     background: ${
+       nature === 'default'
+         ? theme.primaryList[4]
+         : darken(0.12, natureColor(theme)[nature])
+     };
+     border-color: ${
+       nature === 'default'
+         ? theme.primaryList[4]
+         : darken(0.12, natureColor(theme)[nature])
+     };
    }
   `};
 
-  ${props => props.light &&`
-   background: ${colors.white};
-   color: ${props.theme.Button[props.nature].color};
+  ${({ light, theme, nature }) =>
+    light &&
+    `
+   background: ${theme.white};
+   color: ${natureColor(theme)[nature]};
 
    &:hover {
-     background: ${colors.primaryList[2]};
+     background: ${theme.primaryList[2]};
    }
   `}
 
-  ${({ link }) => link &&`
+  ${({ link, theme }) =>
+    link &&
+    `
    background: transparent;
-   color: ${colors.primary};
+   color: ${theme.primary};
    border: 1px solid transparent;
 
    &:hover {
      background: transparent;
-     color: ${lighten(0.1, colors.primary)};
+     color: ${lighten(0.1, theme.primary)};
    }`}
 
-   ${({ link, dark }) => (link && dark) &&`
-      color: ${colors.primaryList[6]};
+   ${({ link, dark, theme }) =>
+     link &&
+     dark &&
+     `
+      color: ${theme.primaryList[6]};
 
     &:hover {
-      color: ${lighten(0.1, colors.primaryList[6])};
+      color: ${lighten(0.1, theme.primaryList[6])};
     }
    `}
 
-   ${({ underline }) => underline &&`
+   ${({ underline }) =>
+     underline &&
+     `
       &:hover {
         text-decoration: underline;
       }
    `}
 
-   ${({ circle }) => circle &&`
+   ${({ circle }) =>
+     circle &&
+     `
       display: flex;
       justify-content: center;
       align-items: center;

@@ -6,18 +6,18 @@ import styled from 'styled-components';
 const LabelElement = styled.span`
   position: relative;
   font-size: 0.866rem;
-  color: #7189b6;
+  color: ${({ theme }) => theme.primaryList[5]};
   line-height: 1.8;
   display: inline-block;
   text-align: ${props => props.align};
 
-  ${props =>
-    props.required &&
+  ${({ required, theme }) =>
+    required &&
     `
     :before {
       content: "";
       display: inline-block;
-      background-color: #EB5000;
+      background-color: ${theme.warning};
       margin: -0.133rem 0.533rem 0 0;
       vertical-align: middle;
       height: 0.266rem;
@@ -45,17 +45,26 @@ const LabelElement = styled.span`
 `;
 
 type Props = {
+  /** text of the label */
   text: string,
+  /** is required? */
   required?: boolean,
+  /** label display inline */
   inline?: boolean,
   /** align `left` or `right` */
   align?: 'left' | 'right'
 };
 
-const Label = ({ text, required, inline, align = 'left' }: Props) => (
+const Label = ({ text, required, inline, align }: Props) => (
   <LabelElement inline={inline} align={align} required={required}>
     {text}
   </LabelElement>
 );
+
+Label.defaultProps = {
+  required: false,
+  align: 'left',
+  inline: false
+};
 
 export default Label;

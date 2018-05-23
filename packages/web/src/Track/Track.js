@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -20,10 +20,11 @@ const Root = styled.div`
   margin-top: -4px;
   background-repeat: repeat-x;
   border-radius: 5px;
-  border-color: #c4d2eb;
+  border-color: ${({ theme }) => theme.track.borderColor};
   width: 100%;
-  background-color: ${props => (props.alarm ? '#FFD0B8' : '#d8e3f6')};
-  ${props => props.onMouseDown && `cursor: pointer`};
+  background-color: ${({ theme, alarm }) =>
+    alarm ? theme.track.alarmBackground : theme.track.background};
+  ${props => props.onMouseDown && 'cursor: pointer'};
 `;
 
 type Props = {
@@ -75,6 +76,18 @@ const Track = ({
     />
   </Root>
 );
+
+Track.defaultProps = {
+  size: 'medium',
+  alarm: false,
+  warning: false,
+  success: false,
+  onMouseDown: () => {},
+  onMouseUp: () => {},
+  onTouchEnd: () => {},
+  onTouchStart: () => {},
+  trackRef: () => {}
+};
 
 Track.Selection = Selection;
 

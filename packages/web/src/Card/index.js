@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -22,18 +22,19 @@ const Root = styled.div`
   border-radius: 0.25rem;
   overflow: hidden;
   background-color: #FFFFFF;
-  box-shadow: ${props => props.shadow ? '2px 2px 4px 0px #cfd8dc' : 'none'};
-  width: ${props => props.width || 'auto'};
-  height ${props => props.height || 'auto'};
+  box-shadow: ${({ shadow }) =>
+    shadow ? '2px 2px 4px 0px #cfd8dc' : 'none'};
+  width: ${({ width }) => width};
+  height ${({ height }) => height};
   border: 1px solid #D8E3F6;
-`
+`;
 
 type Props = {
   children: React.ReactNode,
   width?: string,
   height?: string,
-  shadow?: boolean,
-}
+  shadow?: boolean
+};
 
 /**
  * @render react
@@ -50,12 +51,23 @@ type Props = {
  * </Card>
  */
 
-const Card = ({ children, width, height, shadow, ...props }: Props) => (
+const Card = ({
+  children,
+  width,
+  height,
+  shadow,
+  ...props
+}: Props) => (
   <Root width={width} height={height} shadow={shadow} {...props}>
     {children}
   </Root>
-)
+);
 
+Card.defaultProps = {
+  width: 'auto',
+  height: 'auto',
+  shadow: false
+};
 
 Card.Header = Header;
 Card.Container = Container;

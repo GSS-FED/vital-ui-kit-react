@@ -1,12 +1,12 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import Icon from '../Icon/';
+import styled, { withTheme } from 'styled-components';
+import Icon from '../Icon';
 
 const Root = styled.div``;
 
@@ -15,12 +15,12 @@ const Input = styled.input`
 
   &:checked {
     & + label {
-      background-color: #0e86fe;
-      box-shadow: 0 0 0 1px #0e86fe;
+      background-color: ${({ theme }) => theme.secondary[4]};
+      box-shadow: 0 0 0 1px ${({ theme }) => theme.secondary[4]};
 
       div {
         transform: translate3d(30px, 0, 0);
-        border-color: #0e86fe;
+        border-color: ${({ theme }) => theme.secondary[4]};
         box-shadow: 0 0 0 3px rgba(14, 134, 254, 0.3);
       }
     }
@@ -28,12 +28,12 @@ const Input = styled.input`
 
   &:disabled {
     & + label {
-      background-color: #eef2fc;
+      background-color: ${({ theme }) => theme.primarylist[1]};
       cursor: not-allowed;
       point-events: none;
 
       div {
-        background-color: #eef2fc;
+        background-color: ${({ theme }) => theme.primarylist[1]};
         box-shadow: none;
       }
     }
@@ -47,9 +47,9 @@ const Label = styled.label`
   width: 53px;
   height: 24px;
   border-radius: ${props => (props.isRound ? '24px' : '4px')};
-  background-color: #eef2fc;
+  background-color: ${({ theme }) => theme.primarylist[1]};
   padding: 1px;
-  box-shadow: 0 0 0 1px #c4d2eb;
+  box-shadow: 0 0 0 1px ${({ theme }) => theme.primarylist[3]};
   cursor: pointer;
 `;
 
@@ -62,9 +62,11 @@ const Btn = styled.div`
   box-shadow: 1px 0 0 1px rgba(196, 210, 235, 0.2);
   transition: all 120ms ease-in;
   box-sizing: border-box;
-  border: 1px solid #c4d2eb;
+  border: 1px solid ${({ theme }) => theme.primarylist[3]};
 
-  ${props => props.icon &&`
+  ${props =>
+    props.icon &&
+    `
     width: 36px;
     height: 36px;
     position: absolute;
@@ -73,7 +75,7 @@ const Btn = styled.div`
     text-align: center;
     line-height: 36px;
     font-size: 1.2rem;
-    color: #C4D2EB;
+    color: ${props.theme.primarylist[3]};
   `};
 `;
 
@@ -85,7 +87,7 @@ const Text = styled.div`
   width: 18px;
   height: 18px;
   line-height: 18px;
-  color: #c4d2eb;
+  color: ${({ theme }) => theme.primarylist[3]};
   text-align: center;
   transition: all 300ms ease-in;
   opacity: 1;
@@ -102,7 +104,7 @@ const TextOn = styled(Text)`
 `;
 
 type State = {
-  isChecked: boolean,
+  isChecked: boolean
 };
 
 type Props = {
@@ -112,6 +114,7 @@ type Props = {
   iconBtn?: string,
   iconLabelFront?: string,
   iconLabelBack?: string,
+  theme: Object
 };
 
 /**
@@ -124,13 +127,18 @@ type Props = {
  * />
  */
 class Switch extends Component<Props, State> {
+  static defaultProps = {
+    isRound: false,
+    isChecked: false
+  };
+
   state = {
-    isChecked: this.props.defaultChecked || false,
+    isChecked: this.props.defaultChecked
   };
 
   onCheck = () => {
     if (this.props.isDisabled) return;
-    this.setState({ isChecked: !this.state.isChecked });
+    this.setState(prevState => ({ isChecked: !prevState.isChecked }));
   };
 
   render() {
@@ -141,6 +149,7 @@ class Switch extends Component<Props, State> {
       iconBtn,
       iconLabelFront,
       iconLabelBack,
+      theme
     } = this.props;
     return (
       <Root onClick={this.onCheck}>
@@ -153,18 +162,29 @@ class Switch extends Component<Props, State> {
         <Label isRound={isRound} isDisabled={isDisabled}>
           {iconLabelFront && (
             <TextOn isChecked={this.state.isChecked}>
-              <Icon name={iconLabelFront} color="#FFFFFF" />
+              <Icon name={iconLabelFront} color={theme.white} />
             </TextOn>
           )}
           {iconLabelBack && (
             <TextOff isChecked={this.state.isChecked}>
-              <Icon name={iconLabelBack} color="#C4D2EB" />
+              <Icon
+                name={iconLabelBack}
+                color={theme.primarylist[3]}
+              />
             </TextOff>
           )}
-          <Btn icon={iconBtn} isRound={isRound} isDisabled={isDisabled}>
+          <Btn
+            icon={iconBtn}
+            isRound={isRound}
+            isDisabled={isDisabled}
+          >
             {iconBtn && (
               <Icon
-                color={this.state.isChecked ? '#0e86fe' : '#C4D2EB'}
+                color={
+                  this.state.isChecked
+                    ? theme.secondaryList[4]
+                    : theme.primarylist[3]
+                }
                 name={iconBtn}
                 size="17"
               />
@@ -176,5 +196,4 @@ class Switch extends Component<Props, State> {
   }
 }
 
-export default Switch;
-
+export default withTheme(Switch);

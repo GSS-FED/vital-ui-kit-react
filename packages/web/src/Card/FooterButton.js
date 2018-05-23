@@ -1,10 +1,10 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
-import React, { type Node } from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.div`
@@ -33,7 +33,7 @@ const Button = styled.button`
   border-radius: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.white};
   transition: all 120ms ease-in;
   line-height: 50px;
   box-sizing: border-box;
@@ -44,23 +44,35 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  color: ${props => (props.primary ? '#0E86FE' : '#456297')};
+  color: ${({ primary, theme }) =>
+    primary ? theme.secondaryList[4] : theme.primaryList[6]};
 
   &:hover {
-    background-color: #d8e3f6;
+    background-color: ${({ theme }) => theme.primaryList[2]};
   }
 `;
 
 type Props = {
-  children: Node,
+  children: React.Node,
   primary?: boolean,
-  onClick: () => {},
+  onClick: () => {}
 };
 
-const FooterButton = ({ children, primary, onClick, ...props, }: Props) => (
+const FooterButton = ({
+  children,
+  primary,
+  onClick,
+  ...props
+}: Props) => (
   <ButtonWrapper {...props} onClick={onClick}>
-    <Button primary={primary}>{children}</Button>
+    <Button primary={primary}>
+      {children}
+    </Button>
   </ButtonWrapper>
 );
+
+FooterButton.defaultProps = {
+  primary: false
+};
 
 export default FooterButton;

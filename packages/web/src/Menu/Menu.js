@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -16,25 +16,26 @@ const Root = styled.div`
 
 type Props = {
   border?: boolean,
-  children?: React.ReactNode,
-}
+  children?: React.ReactNode
+};
 
 class Menu extends React.Component<Props> {
   static defaultProps = {
-    border: true,
-  }
+    border: true
+  };
+
   static Item = MenuItem;
 
   render() {
     const { children, border, ...props } = this.props;
     return (
       <Root {...props}>
-        {React.Children.map(children, child => (
+        {React.Children.map(children, child =>
           React.cloneElement(child, {
             border,
             ...props
           })
-        ))}
+        )}
       </Root>
     );
   }

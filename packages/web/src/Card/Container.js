@@ -6,7 +6,7 @@ const Root = styled.div`
   position: relative;
   padding: 0.75rem 1.25rem;
   flex-grow: 1;
-  color: #7189b6;
+  color: ${({ theme }) => theme.primaryList[5]};
   font-size: 0.93333rem;
   overflow-x: hidden;
 `;

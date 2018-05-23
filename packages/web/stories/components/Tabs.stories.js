@@ -18,7 +18,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Tabs, Badge } from '../../src';
 
-storiesOf('Components | TabPanel', module)
+storiesOf('Components | Tab', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

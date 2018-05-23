@@ -19,7 +19,7 @@ type Props = {
   text: string,
   alarm?: boolean,
   warning?: boolean,
-  success?: boolean,
+  success?: boolean
 };
 
 const Hint = ({ text, alarm, warning, success }: Props) => (
@@ -27,5 +27,11 @@ const Hint = ({ text, alarm, warning, success }: Props) => (
     {text}
   </Root>
 );
+
+Hint.defaultProps = {
+  alarm: false,
+  warning: false,
+  success: false
+};
 
 export default Hint;

@@ -17,7 +17,12 @@ const Root = styled.div`
   width: ${props => `${props.width}px`};
   pointer-events: none;
   background-color: ${props =>
-      stateColor(props, props.disabled ? '#95ABD3' : '#0e86fe')}
+      stateColor(
+        props,
+        props.disabled
+          ? props.theme.disabledBackground
+          : props.theme.background
+      )}
     ${borderRightRadius(0)};
 `;
 
@@ -50,5 +55,13 @@ const Selection = ({
     success={success}
   />
 );
+
+Selection.defaultProps = {
+  size: 'medium',
+  disabled: false,
+  alarm: false,
+  warning: false,
+  success: false
+};
 
 export default Selection;

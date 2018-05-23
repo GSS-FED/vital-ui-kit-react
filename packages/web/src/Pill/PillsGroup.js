@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -16,6 +16,7 @@ const Root = styled.div`
 
 type Props = {
   children: Node,
+  /** Vertical display */
   vertical?: boolean,
   /** The default active, match with pill's id */
   default?: string | number | void
@@ -30,6 +31,7 @@ class PillsGroup extends Component<Props, State> {
     vertical: false,
     current: null
   };
+
   state = {
     current: this.props.default
   };
@@ -52,7 +54,11 @@ class PillsGroup extends Component<Props, State> {
   render() {
     const { vertical } = this.props;
     if (vertical) {
-      return <Root>{this.renderChildren()}</Root>;
+      return (
+        <Root>
+          {this.renderChildren()}
+        </Root>
+);
     }
     return (
       <PriorityNav vertical={vertical} current={this.state.current}>

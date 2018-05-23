@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -13,15 +13,18 @@ import PillsGroup from './PillsGroup';
 const textWidth = props => {
   if (props.vertical && props.badge) {
     return 'calc(100% - 40px)';
-  } else if (props.vertical) {
+  }
+  if (props.vertical) {
     return '100%';
   }
   return 'auto';
 };
 
 const Root = styled.div`
-  background-color: ${props => (props.selected ? '#2A4880' : 'transparent')};
-  color: ${props => (props.selected ? '#fff' : '#456296')};
+  background-color: ${props =>
+    props.selected ? '#2A4880' : 'transparent'};
+  color: ${({ selected, theme }) =>
+    selected ? theme.white : '#456296'};
   font-size: 1rem;
   position: relative;
   z-index: 5;
@@ -38,7 +41,9 @@ const Root = styled.div`
   margin-left: ${props => (props.vertical ? '0' : '10px')};
   margin-right: ${props => (props.vertical ? '0' : '10px')};
 
-  ${props => !props.selected && `
+  ${props =>
+    !props.selected &&
+    `
     &:hover {
       background-color: #d8e2f5;
       color: #456296;
@@ -48,8 +53,7 @@ const Root = styled.div`
       background-color: #c3d1eb;
       color: #456296;
     }
-  `
-  };
+  `};
 `;
 
 const Text = styled.span`
@@ -73,29 +77,53 @@ type Props = {
   id: string | number,
   /** Content inside Pill */
   label: Node,
-  /** show badge if needed */
+  /** Show badge if it has one */
   badge?: string | number,
   /** The current state */
   current?: boolean,
+  /** Vertical display */
   vertical?: boolean,
-  onSelect: (id: string | number) => {},
+  /** Call when pill selected */
+  onSelect: (id: string | number) => {}
 };
 
+/**
+ * @render react
+ * @name Pill
+ * @description Group of Pills
+ * @example
+ *       <Pill.Group default={1} vertical={boolean('vertical', false)}>
+ *        <Pill id={1} label="Dashboard" badge="23" />
+ *        <Pill id={2} label="Projects" badge="99+" />
+ *        <Pill id={3} label="Issues" badge="6" />
+ *        <Pill id={4} label="Reports" />
+ *        <Pill id={5} label="User Center" />
+ *      </Pill.Group>
+ */
+
 class Pill extends Component<Props> {
+  static Group = PillsGroup;
+
   handleSelect = () => {
     this.props.onSelect(this.props.id);
   };
 
-  static Group = PillsGroup;
-
   render() {
-    const { vertical, current, badge, id, label, ...props } = this.props;
+    const {
+      vertical,
+      current,
+      badge,
+      id,
+      label,
+      ...props
+    } = this.props;
     return (
       <Root
         vertical={vertical}
         selected={current === id}
         onClick={this.handleSelect}
-        {...props}>
+        {...props}
+      >
         <Text vertical={vertical} badge={badge}>
           {label}
         </Text>

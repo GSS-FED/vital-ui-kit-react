@@ -25,21 +25,22 @@ type Props = {
   /** Spell check attr */
   isSpellCheck?: boolean,
   /** when input changes */
-  onChange?: (event: SyntheticInputEvent<any>) => {},
+  onChange?: (event: SyntheticInputEvent<any>) => {}
 };
 
 type State = {
-  value: string,
+  value: string
 };
 
 export default class Input extends React.Component<Props, State> {
   static defaultProps = {
-    size: 'Small',
+    size: 'Small'
   };
+
   state = {
-    value: this.props.value || '',
+    value: this.props.value || ''
   };
-  input: any;
+
 
   handleChange = (e: SyntheticInputEvent<any>) => {
     this.setState({ value: e.target.value });
@@ -49,6 +50,8 @@ export default class Input extends React.Component<Props, State> {
   focus = () => {
     this.input.focus();
   };
+
+  input: any;
 
   render() {
     return (

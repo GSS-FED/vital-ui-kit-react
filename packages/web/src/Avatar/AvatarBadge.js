@@ -6,15 +6,15 @@ import styled, { css } from 'styled-components';
 import { trunTo } from '../utils/math';
 import { badgeSizes } from './constants';
 
-const badgeStyle = props => {
-  if (props.size === 'xlarge') {
+const badgeStyle = ({ size, round, label }) => {
+  if (size === 'xlarge') {
     return css`
       padding: 0 5px;
       border-radius: 0.75rem;
       font-size: 0.725rem;
-      left: ${props.round ? '70%' : 'auto'};
-      right: ${props.round ? 'auto' : '-12%'};
-      top: ${props.round ? 0 : `calc(${badgeSizes[props.size].height} / -2)`};
+      left: ${round ? '70%' : 'auto'};
+      right: ${round ? 'auto' : '-12%'};
+      top: ${round ? 0 : `calc(${badgeSizes[size].height} / -2)`};
     `;
   }
   // circle badge style
@@ -22,19 +22,19 @@ const badgeStyle = props => {
     padding: 0;
     border-radius: 50%;
     font-size: 0;
-    width: ${badgeSizes[props.size].height};
-    height: ${badgeSizes[props.size].height};
-    right: calc(${badgeSizes[props.size].height} / -2);
-    top: ${props.round ? 0 : `calc(${badgeSizes[props.size].height} / -2)`};
-    left: ${props.round ? '70%' : 'auto'};
-    right: ${props.round ? 'auto' : badgeSizes[props.size].height / -2};
+    width: ${badgeSizes[size].height};
+    height: ${badgeSizes[size].height};
+    right: calc(${badgeSizes[size].height} / -2);
+    top: ${round ? 0 : `calc(${badgeSizes[size].height} / -2)`};
+    left: ${round ? '70%' : 'auto'};
+    right: ${round ? 'auto' : badgeSizes[size].height / -2};
 
     &:before {
       content: '';
       position: absolute;
       top: calc(50% - (3px / 2));
       left: calc(50% - (3px / 2));
-      background: ${props.label ? '#fff' : 'transparent'};
+      background: ${label ? '#fff' : 'transparent'};
       border-radius: 50%;
       width: 3px;
       height: 3px;
@@ -47,8 +47,8 @@ const Root = styled.span`
   background-color: #eb5000;
   color: #fff;
   vertical-align: middle;
-  height: ${props => badgeSizes[props.size].height};
-  line-height: ${props => badgeSizes[props.size].height};
+  height: ${({ size }) => badgeSizes[size].height};
+  line-height: ${({ size }) => badgeSizes[size].height};
   ${props => badgeStyle(props)};
 `;
 
@@ -63,5 +63,10 @@ const AvatarBadge = ({ label, size, round }: Props) => (
     {size === 'xlarge' ? trunTo(label) : null}
   </Root>
 );
+
+AvatarBadge.defaultProps = {
+  round: false,
+  size: 'medium'
+};
 
 export default AvatarBadge;

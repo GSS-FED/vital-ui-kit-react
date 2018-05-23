@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -10,7 +10,6 @@ import ClickOutside from 'react-click-outside';
 
 import Droplist from './Droplist';
 import Icon from '../Icon';
-// import baseStyle from '../FieldBase';
 
 import type { ItemType } from './type';
 
@@ -19,9 +18,10 @@ const Root = styled.div`
   position: relative;
 `;
 const SelectButton = styled.div`
-  ${'' /* ${baseStyle} */} width: 100%;
+  width: 100%;
   position: relative;
-  display: ${props => (props.filltoContainer ? 'block' : 'inline-block')};
+  display: ${props =>
+    props.filltoContainer ? 'block' : 'inline-block'};
   margin: 0;
   padding: calc(0.533rem - 1px) 1.066rem;
   border-radius: 4px;
@@ -33,8 +33,8 @@ const SelectButton = styled.div`
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  color: #456297;
-  border: 1px solid #c4d2eb;
+  color: ${({ theme }) => theme.primaryList[6]};
+  border: 1px solid ${({ theme }) => theme.primaryList[3]};
   z-index: 5;
   outline: 0;
   text-align: left;
@@ -43,18 +43,18 @@ const SelectButton = styled.div`
 const Selector = styled.span``;
 
 const Placeholder = styled(Selector)`
-  color: #95acd4;
+  color: ${({ theme }) => theme.primaryList[4]};
 `;
 
 type Props = {
   placeholder?: string,
   filltoContainer?: boolean,
-  items: Array<ItemType>,
+  items: Array<ItemType>
 };
 
 type State = {
   isOpen: boolean,
-  selectedItem: ?ItemType,
+  selectedItem: ?ItemType
 };
 
 /**
@@ -63,37 +63,45 @@ type State = {
  * @description select element
  */
 class Select extends React.Component<Props, State> {
-  wrapperNode: HTMLElement | null;
-
   static defaultProps = {
     filltoContainer: true,
-    placholder: '',
+    placholder: ''
   };
 
   state = {
     isOpen: false,
-    selectedItem: null,
+    selectedItem: null
   };
 
   onSelect = (item: ItemType) => {
     this.setState({ selectedItem: item });
     this.onToggle(false);
-  }
-
-  handleClickOutside() {
-    this.onToggle(false);
   };
 
   onToggle = (value: boolean) => {
-    this.setState({ isOpen: value});
+    this.setState({ isOpen: value });
+  };
+
+  handleClickOutside() {
+    this.onToggle(false);
   }
 
+  wrapperNode: ?HTMLElement;
 
   renderSelect = () => {
     if (!this.state.selectedItem) {
-      return <Placeholder>{this.props.placeholder}</Placeholder>;
+      return (
+        <Placeholder>
+          {this.props.placeholder}
+        </Placeholder>
+);
     }
-    return <Selector>{this.state.selectedItem.label || this.state.selectedItem.content }</Selector>;
+    return (
+      <Selector>
+        {this.state.selectedItem.label ||
+          this.state.selectedItem.content}
+      </Selector>
+    );
   };
 
   render() {
@@ -101,16 +109,25 @@ class Select extends React.Component<Props, State> {
       <Root
         innerRef={ref => {
           this.wrapperNode = ref;
-        }}>
+        }}
+      >
         <SelectButton
           onClick={() => this.onToggle(!this.state.isOpen)}
           filltoContainer={this.props.filltoContainer}
-          {...this.props}>
+          {...this.props}
+        >
           {this.renderSelect()}
-          <Icon style={{ float: 'right' }} name="caret-down" size="15" />
+          <Icon
+            style={{ float: 'right' }}
+            name="caret-down"
+            size="15"
+          />
         </SelectButton>
         {this.state.isOpen && (
-          <Droplist onClick={this.onSelect} items={this.props.items} />
+          <Droplist
+            onClick={this.onSelect}
+            items={this.props.items}
+          />
         )}
       </Root>
     );

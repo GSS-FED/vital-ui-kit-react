@@ -14,9 +14,9 @@ export { default as StatelessTextArea } from './TextArea/StatelessTextArea';
 export { default as MultipleInput } from './MultipleInput';
 export { default as FieldInput } from './FieldInput';
 
-
+// TODO: Form html tag
 /**
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  * @render react
  * @name Form

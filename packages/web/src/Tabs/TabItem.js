@@ -1,11 +1,11 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Badge from '../Badge';
 
@@ -14,24 +14,24 @@ const TabBadge = styled(Badge)`
   font-size: 0.75rem;
   border-radius: 4.975rem;
   margin: 0 -5px 0 4px;
-`
+`;
 
 const Root = styled.div`
   display: inline-block;
   padding: 5px 20px 4px;
   line-height: 1.4;
   font-size: 1rem;
-  color: #fff;
+  color: ${({ theme }) => theme.white};
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px 4px 0 0;
   margin-right: 2px;
   cursor: pointer;
 
-  ${props =>
-    props.current &&
-    `
-    color: #456297
-    background-color: #fff;
+  ${({ current, theme }) =>
+    current &&
+    css`
+    color: ${theme.primaryList[6]}
+    background-color: ${theme.white};
   `};
 `;
 
@@ -57,16 +57,27 @@ type Props = {
 };
 
 class TabItem extends React.Component<Props> {
-
   render() {
-    const { current, onTabChange, index, label, badge, panel, ...props } = this.props;
+    const {
+      current,
+      onTabChange,
+      index,
+      label,
+      badge,
+      panel,
+      ...props
+    } = this.props;
     return (
       <Root
         current={current}
         onClick={() => onTabChange(panel, index)}
         {...props}
       >
-        {label && <Label>{label}</Label>}
+        {label && (
+        <Label>
+          {label}
+        </Label>
+)}
         {badge && <TabBadge inverse={!current} label={badge} />}
       </Root>
     );

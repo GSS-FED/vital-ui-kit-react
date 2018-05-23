@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -12,7 +12,7 @@ const Root = styled.div`
   display: table;
   width: 100%;
   flex-grow: 0;
-  border-top: 1px solid #d8e3f6;
+  border-top: ${({ theme }) => `1px solid ${theme.primaryList[2]}`};
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -21,11 +21,13 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children?: React.ReactNode
+  children: React.ReactNode
 };
 
 const Footer = ({ children, ...props }: Props) => (
-  <Root {...props}>{children}</Root>
+  <Root {...props}>
+    {children}
+  </Root>
 );
 
 export default Footer;

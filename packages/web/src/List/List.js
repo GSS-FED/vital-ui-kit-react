@@ -1,19 +1,21 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import React, { type Node, Component } from 'react';
 
-import { ListGroupWrapper } from './styled';
+import { ListWrapper } from './styled';
+import ListItem from './ListItem';
+import ListContent from './ListContent';
 
 type Props = {
   /** Children of ListItem */
   children: Array<Node>,
   /** Light or dark theme */
   themed?: 'light' | 'dark',
-  /** Border around ListGroup and ListItem */
+  /** Border around List and ListItem */
   border?: boolean,
   /** Customize Icon */
   icon?: string | Node,
@@ -25,11 +27,24 @@ type State = {
   open: boolean
 };
 
-class ListGroup extends Component<Props, State> {
+class List extends Component<Props, State> {
+  static Item = ListItem;
+
+  static Content = ListContent;
+
   nodes: Map<number, HTMLElement> = new Map();
+
 
   setNodes = (i: number, el: HTMLElement) => {
     this.nodes.set(i, el);
+  };
+
+  dispatchClose = (level: number) => {
+    this.nodes.forEach(node => {
+      if (node.props.level === level && node.state.open) {
+        node.startAnimation();
+      }
+    });
   };
 
   renderChildren = () =>
@@ -41,31 +56,29 @@ class ListGroup extends Component<Props, State> {
         themed: this.props.themed,
         collapse: this.props.collapse,
         border: this.props.border,
-        dispatchClose: this.dispatchClose,
+        dispatchClose: this.dispatchClose
       })
     );
 
-  dispatchClose = (level: number) => {
-    this.nodes.forEach(node => {
-      if (node.props.level === level && node.state.open) {
-        node.startAnimation();
-      }
-    })
-  };
-
   render() {
-    const { themed, border, collapse, children, ...props } = this.props;
+    const {
+      themed,
+      border,
+      collapse,
+      children,
+      ...props
+    } = this.props;
     return (
-      <ListGroupWrapper
+      <ListWrapper
         {...props}
         themed={themed}
         border={border}
         collapse={collapse}
       >
         {this.renderChildren()}
-      </ListGroupWrapper>
+      </ListWrapper>
     );
   }
 }
 
-export default ListGroup;
+export default List;

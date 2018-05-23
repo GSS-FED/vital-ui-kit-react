@@ -1,6 +1,6 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
@@ -8,7 +8,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import ResizeObserver from 'resize-observer-polyfill';
 
-import Track from '../Track/';
+import Track from '../Track';
 import { stateColor } from '../utils';
 
 const Root = styled.div`
@@ -20,7 +20,7 @@ const StatusWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: ${props => props.size === 'large' ? '8px': '4px'};
+  top: ${props => (props.size === 'large' ? '8px' : '4px')};
   border: 1px solid transparent;
   line-height: 2em;
   width: 100%;
@@ -61,7 +61,6 @@ type Props = {
   success?: boolean
 };
 
-
 /**
  * @render react
  * @name ProgressBar
@@ -79,10 +78,10 @@ class ProgressBar extends React.Component<Props, State> {
     value: 0,
     showStatus: false
   };
+
   state = {
     width: 0
   };
-  node: HTMLElement;
 
   componentDidMount() {
     this.handleUpdate();
@@ -96,6 +95,14 @@ class ProgressBar extends React.Component<Props, State> {
     }
   }
 
+  getPositionFromValue = () => {
+    this.setState({
+      width: Math.round(
+        this.props.value / 100 * this.node.offsetWidth
+      )
+    });
+  };
+
   handleUpdate = () => {
     if (!this.node) {
       return;
@@ -103,11 +110,7 @@ class ProgressBar extends React.Component<Props, State> {
     this.getPositionFromValue();
   };
 
-  getPositionFromValue = () => {
-    this.setState({
-      width: Math.round(this.props.value / 100 * this.node.offsetWidth)
-    });
-  };
+  node: HTMLElement;
 
   render() {
     const {
@@ -126,7 +129,10 @@ class ProgressBar extends React.Component<Props, State> {
             <Label alarm={alarm} warning={warning} success={success}>
               {textLabel && textLabel}
             </Label>
-            <Status>{value}%</Status>
+            <Status>
+              {value}
+              %
+            </Status>
           </StatusWrapper>
         )}
         <Track

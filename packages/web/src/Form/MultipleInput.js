@@ -48,22 +48,32 @@ const LabelCell = styled.div`
     }
   }
 
-  ${props => props.addon && `
+  ${props =>
+    props.addon &&
+    `
     width: 1%;
     white-space: nowrap;
   `};
 `;
 
 type Props = {
-  children: React.ReactNode,
+  children: React.ReactNode
 };
 
+/**
+ * @render react
+ * @name MultipleInput
+ * @desc Group of multiple inputs
+ * @example
+ * <MultipleInput>
+ *  <Addon>addon</Addon>
+ *  ...
+ * </MultipleInput>
+ */
 const MultipleInput = ({ children }: Props) => (
   <Root>
     {children.map((child, i) => (
-      <LabelCell
-        addon={child.type === Addon}
-        key={i}>
+      <LabelCell addon={child.type === Addon} key={i}>
         {child}
       </LabelCell>
     ))}

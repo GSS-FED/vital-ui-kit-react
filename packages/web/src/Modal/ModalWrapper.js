@@ -1,39 +1,56 @@
 /**
  * @flow
- * Copyright © 2017 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
+ * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { transitionBase } from '../utils';
 
 const Root = styled.div`
   position: fixed;
   z-index: 10000;
+  ${transitionBase}
 `;
 
 type Props = {
   children: React.ReactNode,
   windowWidth: number,
-  windowHeight: number,
-}
+  windowHeight: number
+};
 
 class ModalWrapper extends React.Component<Props> {
-  state = {
-    modalTop: 0,
-    modalLeft: 0,
-  }
-
   componentDidMount() {
     this.getWidth();
   }
 
-  getWidth = () => {
-    this.setState({
-      modalTop: (this.props.windowHeight - this.modal.firstChild.offsetHeight) / 2,
-      modalLeft: (this.props.windowWidth - this.modal.firstChild.offsetWidth) / 2,
-    });
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (snapshot !== null) {
+      this.modal.style.top = snapshot.modalTop;
+      this.modal.style.left = snapshot.modalLeft;
+    }
   }
+
+  getSnapshotBeforeUpdate(nextProps) {
+    return {
+      modalTop: `${(nextProps.windowHeight -
+        this.modal.firstChild.offsetHeight) /
+        2}px`,
+      modalLeft: `${(nextProps.windowWidth -
+        this.modal.firstChild.offsetWidth) /
+        2}px`
+    };
+  }
+
+  getWidth = () => {
+    this.modal.style.top = `${(this.props.windowHeight -
+      this.modal.firstChild.offsetHeight) /
+      2}px`;
+    this.modal.style.left = `${(this.props.windowWidth -
+      this.modal.firstChild.offsetWidth) /
+      2}px`;
+  };
 
   model: HTMLElement;
 
@@ -42,10 +59,6 @@ class ModalWrapper extends React.Component<Props> {
       <Root
         innerRef={s => {
           this.modal = s;
-        }}
-        style={{
-          top: this.state.modalTop,
-          left: this.state.modalLeft
         }}
       >
         {React.Children.only(this.props.children)}

@@ -4,7 +4,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import baseStyle from '../components/FieldBase';
-import Icon from '../../Icon/';
+import Icon from '../../Icon';
 
 const iconPositionStyle = position => {
   if (position === 'left') {
@@ -36,7 +36,7 @@ const Root = styled.div`
 `;
 
 const InputElement = styled.input`
-  ${baseStyle};
+  ${({ theme }) => baseStyle(theme)};
   vertical-align: middle;
   height: 1.93267rem;
   ${props => inputPaddingStyle(props)};
@@ -78,8 +78,6 @@ type Props = {
 };
 
 class StatelessInput extends React.Component<Props> {
-  input: any;
-
   static defaultProps = {
     type: 'text',
   };
@@ -87,6 +85,8 @@ class StatelessInput extends React.Component<Props> {
   focus = () => {
     this.input.focus();
   };
+
+  input: any;
 
   render() {
     const {
