@@ -1,9 +1,9 @@
 // @flow
 import { css } from 'styled-components';
 
-const fieldBorderColor = theme => theme.primaryList[3];
+const fieldBorderColor = ({ theme }) => theme.primaryList[3];
 
-const FieldBase = theme => css`
+const FieldBase = ({ theme }) => css`
   position: relative;
   display: block;
   width: 100%;
@@ -12,7 +12,7 @@ const FieldBase = theme => css`
   line-height: 1;
   box-sizing: border-box;
   background-color: ${theme.white};
-  border: 1px solid ${fieldBorderColor(theme)};
+  border: 1px solid ${fieldBorderColor};
   border-radius: 4px;
   color: ${theme.primaryList[6]};
   transition: border-color ease-in-out 0.15s,
@@ -33,7 +33,7 @@ const FieldBase = theme => css`
 
   &:disabled {
     pointer-events: none;
-    border-color: ${fieldBorderColor(theme)};
+    border-color: ${fieldBorderColor};
     background-color: ${theme.primaryList[1]};
 
     ${({ alarm }) =>

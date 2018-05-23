@@ -36,10 +36,10 @@ const Root = styled.div`
 `;
 
 const InputElement = styled.input`
-  ${({ theme }) => baseStyle(theme)};
   vertical-align: middle;
   height: 1.93267rem;
-  ${props => inputPaddingStyle(props)};
+  ${baseStyle};
+  ${inputPaddingStyle};
 `;
 
 const InputIcon = styled(Icon)`
