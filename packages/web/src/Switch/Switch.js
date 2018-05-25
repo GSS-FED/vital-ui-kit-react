@@ -15,12 +15,12 @@ const Input = styled.input`
 
   &:checked {
     & + label {
-      background-color: ${({ theme }) => theme.secondary[4]};
-      box-shadow: 0 0 0 1px ${({ theme }) => theme.secondary[4]};
+      background-color: ${({ theme }) => theme.secondaryList[4]};
+      box-shadow: 0 0 0 1px ${({ theme }) => theme.secondaryList[4]};
 
       div {
         transform: translate3d(30px, 0, 0);
-        border-color: ${({ theme }) => theme.secondary[4]};
+        border-color: ${({ theme }) => theme.secondaryList[4]};
         box-shadow: 0 0 0 3px rgba(14, 134, 254, 0.3);
       }
     }
@@ -28,12 +28,12 @@ const Input = styled.input`
 
   &:disabled {
     & + label {
-      background-color: ${({ theme }) => theme.primarylist[1]};
+      background-color: ${({ theme }) => theme.primaryList[1]};
       cursor: not-allowed;
       point-events: none;
 
       div {
-        background-color: ${({ theme }) => theme.primarylist[1]};
+        background-color: ${({ theme }) => theme.primaryList[1]};
         box-shadow: none;
       }
     }
@@ -47,9 +47,9 @@ const Label = styled.label`
   width: 53px;
   height: 24px;
   border-radius: ${props => (props.isRound ? '24px' : '4px')};
-  background-color: ${({ theme }) => theme.primarylist[1]};
+  background-color: ${({ theme }) => theme.primaryList[1]};
   padding: 1px;
-  box-shadow: 0 0 0 1px ${({ theme }) => theme.primarylist[3]};
+  box-shadow: 0 0 0 1px ${({ theme }) => theme.primaryList[3]};
   cursor: pointer;
 `;
 
@@ -62,7 +62,7 @@ const Btn = styled.div`
   box-shadow: 1px 0 0 1px rgba(196, 210, 235, 0.2);
   transition: all 120ms ease-in;
   box-sizing: border-box;
-  border: 1px solid ${({ theme }) => theme.primarylist[3]};
+  border: 1px solid ${({ theme }) => theme.primaryList[3]};
 
   ${props =>
     props.icon &&
@@ -75,7 +75,7 @@ const Btn = styled.div`
     text-align: center;
     line-height: 36px;
     font-size: 1.2rem;
-    color: ${props.theme.primarylist[3]};
+    color: ${props.theme.primaryList[3]};
   `};
 `;
 
@@ -87,7 +87,7 @@ const Text = styled.div`
   width: 18px;
   height: 18px;
   line-height: 18px;
-  color: ${({ theme }) => theme.primarylist[3]};
+  color: ${({ theme }) => theme.primaryList[3]};
   text-align: center;
   transition: all 300ms ease-in;
   opacity: 1;
@@ -133,7 +133,7 @@ class Switch extends Component<Props, State> {
   };
 
   state = {
-    isChecked: this.props.defaultChecked
+    isChecked: this.props.defaultChecked || false
   };
 
   onCheck = () => {
@@ -169,7 +169,7 @@ class Switch extends Component<Props, State> {
             <TextOff isChecked={this.state.isChecked}>
               <Icon
                 name={iconLabelBack}
-                color={theme.primarylist[3]}
+                color={theme.primaryList[3]}
               />
             </TextOff>
           )}
@@ -183,7 +183,7 @@ class Switch extends Component<Props, State> {
                 color={
                   this.state.isChecked
                     ? theme.secondaryList[4]
-                    : theme.primarylist[3]
+                    : theme.primaryList[3]
                 }
                 name={iconBtn}
                 size="17"
