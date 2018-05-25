@@ -70,6 +70,7 @@
     "@storybook/addon-links": "3.4.5",
     "@storybook/addon-notes": "3.4.5",
     "@storybook/addon-options": "3.4.5",
+    "@storybook/addons": "^3.4.5",
     "axios": "0.18.0",
     "babel-eslint": "8.2.3",
     "babel-plugin-react-docgen": "1.9.0",
