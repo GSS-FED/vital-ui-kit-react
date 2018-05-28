@@ -8341,6 +8341,10 @@ p-locate@^2.0.0:
   dependencies:
     p-limit "^1.1.0"
 
+p-queue@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-2.4.2.tgz#03609826682b743be9a22dba25051bd46724fc34"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -10020,9 +10024,9 @@ rollup-plugin-node-resolve@3.3.0:
     is-module "^1.0.0"
     resolve "^1.1.6"
 
-rollup-plugin-postcss@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-1.5.1.tgz#c041c25189e961b080644e1209799af355618cc3"
+rollup-plugin-postcss@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-postcss/-/rollup-plugin-postcss-1.6.2.tgz#f3422a56dab21bcb2e9b7182763733d4ff2c1b4c"
   dependencies:
     "@vue/component-compiler-utils" "^1.0.0"
     chalk "^2.0.0"
@@ -10030,6 +10034,7 @@ rollup-plugin-postcss@1.5.1:
     cssnano "^3.10.0"
     fs-extra "^5.0.0"
     import-cwd "^2.1.0"
+    p-queue "^2.4.2"
     pify "^3.0.0"
     postcss "^6.0.21"
     postcss-load-config "^1.2.0"
