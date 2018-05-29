@@ -6,14 +6,25 @@ import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';
 
 class App extends PureComponent {
+  state = {
+    newColor: {},
+  };
   render() {
     return (
-      <ThemeProvider>
+      <ThemeProvider theme={this.state.newColor}>
         <Layout>
           <Layout.Header>
-            <Header />
+            <Header
+              onChangeColor={color =>
+                this.setState({
+                  newColor: {
+                    primary: color,
+                  },
+                })
+              }
+            />
           </Layout.Header>
-          <Layout.Sidebar>
+          <Layout.Sidebar style={{ overflow: 'scroll'}}>
             <Nav />
           </Layout.Sidebar>
           <Layout.Content>
