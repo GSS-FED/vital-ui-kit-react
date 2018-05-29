@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  labels: ["renovate"],
+  "labels": ["renovate"],
   "packageRules": [
   {
     "packagePatterns": ["^eslint"],
