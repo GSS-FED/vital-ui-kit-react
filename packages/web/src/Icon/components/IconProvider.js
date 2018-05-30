@@ -4,12 +4,13 @@ import { Component, Children, type Node } from 'react';
 import PropTypes from 'prop-types';
 
 type Props = {
-  icon: object,
+  icon: Object,
   children: Node,
 }
 
 class IconProvider extends Component<Props> {
   static childContextTypes = {
+    // eslint-disable-next-line
     icon: PropTypes.object.isRequired,
   }
 

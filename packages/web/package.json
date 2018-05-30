@@ -6,7 +6,8 @@
   "module": "./dist/index.js",
   "style": "./dist/global.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 6006"
   },
   "contributors": [
     "Eric Yip (https://github.com/ericyip)",

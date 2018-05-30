@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { Menu, Icon } from '@gssfed/vital-ui-kit-react';
+import { Menu, Icon, styles } from '@gssfed/vital-ui-kit-react';
+import 'rc-color-picker/assets/index.css';
+import ColorPicker from 'rc-color-picker';
 
-// import uwillx from '../../../';
 // eslint-disable-next-line
 import uwillx from '~/../../assets/uwillx.png';
 
@@ -19,7 +20,6 @@ const Root = styled.div`
   background-color: #ffffff;
   z-index: 10;
   border-bottom: 1px solid #c4d2eb;
-  ${'' /* overflow: hidden; */}
 `;
 
 const LogoWrapper = styled.div`
@@ -39,7 +39,7 @@ const TheName = styled.div`
   display: inline-block;
   line-height: 50px;
   font-size: 20px;
-  color: #2A4880;
+  color: #2a4880;
 `;
 
 const MenuItem = styled(Menu.Item)`
@@ -56,18 +56,28 @@ const MenuWrapper = styled.div`
 `;
 
 class Header extends PureComponent {
-  state = {  }
+  state = {};
+
+  changeHandler = (value) => {
+    this.props.onChangeColor(value.color)
+  }
+
   render() {
     return (
       <Root>
         <LogoWrapper>
           <LogoImage src={uwillx} />
         </LogoWrapper>
-        <TheName>
-          Vital Ui Kit
-        </TheName>
+        <TheName>Vital Ui Kit</TheName>
         <MenuWrapper>
           <Menu style={{ flexDirection: 'row', display: 'flex' }}>
+            <MenuItem>
+              <ColorPicker
+                animation="slide-up"
+                color={styles.primary}
+                onChange={this.changeHandler}
+              />
+            </MenuItem>
             <MenuItem>
               <MenuIcon name="user" />
               User Accounts

@@ -1,12 +1,13 @@
 import styled, { css } from 'styled-components';
 
+// eslint-disable-next-line
 export const StyledTable = styled.table`
   width: 100%;
   text-align: ${props => props.textAlign || 'left'};
 
   thead {
     border-bottom: ${props =>
-      props.hasHorizontalBorder && `1px solid #D8E3F6`};
+      props.hasHorizontalBorder && props.theme.border};
 
     ${props =>
       props.isResponsive &&
@@ -21,17 +22,17 @@ export const StyledTable = styled.table`
         @media (max-width: 800px) {
           float: left;
           border: 0;
-          border-right: 1px solid #d8e3f6;
-          border-bottom: 1px solid #d8e3f6;
+          border-right: ${props.theme.border};
+          border-bottom: ${props.theme.border};
         }
       `};
   }
 
   th {
-    color: #456297;
+    color: ${props => props.theme.table.color};
     padding: 0.6667rem 1.3333rem;
     border-right: ${props =>
-      props.hasVerticalBorder && `1px solid #D8E3F6`};
+      props.hasVerticalBorder && props.theme.border};
 
     &:last-child {
       border: 0;
@@ -68,7 +69,7 @@ export const StyledTable = styled.table`
         props.hasHightlight &&
         css`
           &:hover {
-            background-color: #d8e3f6;
+            background-color: ${props.theme.hoverBg};
           }
         `};
 
@@ -76,10 +77,10 @@ export const StyledTable = styled.table`
         props.isStriped &&
         css`
           &:nth-child(odd) {
-            background-color: #f7f9fe;
+            background-color: ${props.theme.striped.odd};
 
             &:hover {
-              background-color: #d8e3f6;
+              background-color: ${props.theme.hoverBg};
             }
           }
         `};
@@ -99,7 +100,7 @@ export const StyledTable = styled.table`
 
   tr {
     border-bottom: ${props =>
-      props.hasHorizontalBorder && `1px solid #D8E3F6`};
+      props.hasHorizontalBorder && props.theme.border};
 
     &:last-child {
       border: 0;
@@ -107,11 +108,10 @@ export const StyledTable = styled.table`
   }
 
   td {
-
-  padding: 0.6667rem 1.3333rem;
+    padding: 0.6667rem 1.3333rem;
     color: #456297;
     border-right: ${props =>
-      props.hasVerticalBorder && `1px solid #D8E3F6`};
+      props.hasVerticalBorder && props.theme.border};
     &:last-child {
       border: 0;
     }
