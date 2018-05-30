@@ -33,44 +33,49 @@ export const space = (props: Space) => ({
   paddingBottom: props.paddingBottom || ''
 });
 
+type StatusProps = {
+  alarm: boolean,
+  warning: boolean,
+  success: boolean,
+  theme: Object
+}
+
 export const stateColor = (
-  { alarm, warning, success, theme },
-  defaultColor
+  { alarm, warning, success, theme }: StatusProps,
+  defaultColor: string
 ) => {
   if (alarm) return theme.alarm;
   if (warning) return theme.warning;
   if (success) return theme.success;
-  return defaultColor || theme.primaryList[5];
+  return defaultColor || theme.primary600;
 };
 
 export const transitionBase = (
-  _props,
-  type = 'all',
-  duration = '120ms',
-  timing = 'ease-out',
-  delay = ''
+  _props: any,
+  type: string = 'all',
+  duration: string = '120ms',
+  timing: string = 'ease-out',
+  delay: string = ''
 ) => `transition: ${type} ${duration} ${timing} ${delay}`;
 
-export const borderBaseColor = theme => theme.primaryList[2];
-
-export const borderBottomRadius = props => `
-  border-bottom-left-radius: ${props}px;
-  border-bottom-right-radius: ${props}px;
+export const borderBottomRadius = (size: number) => `
+  border-bottom-left-radius: ${size}px;
+  border-bottom-right-radius: ${size}px;
 `;
 
-export const borderTopRadius = props => `
-  border-top-left-radius: ${props}px;
-  border-top-right-radius: ${props}px;
+export const borderTopRadius = (size: number) => `
+  border-top-left-radius: ${size}px;
+  border-top-right-radius: ${size}px;
 `;
 
-export const borderLeftRadius = props => `
-  border-top-left-radius: ${props}px;
-  border-bottom-left-radius: ${props}px;
+export const borderLeftRadius = (size: number) => `
+  border-top-left-radius: ${size}px;
+  border-bottom-left-radius: ${size}px;
 `;
 
-export const borderRightRadius = props => `
-  border-bottom-right-radius: ${props}px;
-  border-top-right-radius: ${props}px;
+export const borderRightRadius = (size: number) => `
+  border-bottom-right-radius: ${size}px;
+  border-top-right-radius: ${size}px;
 `;
 
 export default {
@@ -80,5 +85,4 @@ export default {
   borderTopRadius,
   borderLeftRadius,
   borderRightRadius,
-  borderBaseColor
 };

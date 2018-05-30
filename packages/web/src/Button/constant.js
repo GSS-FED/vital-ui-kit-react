@@ -32,7 +32,7 @@ export const size = {
 };
 
 export const natureColor = (colors) => ({
-    default: colors.primaryList[6],
+    default: colors.secondary700,
     primary: colors.primary,
     success: colors.success,
     info: colors.info,

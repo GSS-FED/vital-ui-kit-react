@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Button as ButtonBase } from '../Button';
 import constants from './constants';
 
@@ -8,11 +8,11 @@ const Root = styled.div`
   min-width: 200px;
   align-items: center;
 
-  ${props =>
-    props.disabled &&
-    `
-    opacity: .6;
-  `};
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      opacity: 0.6;
+    `};
 `;
 
 const Wrapper = styled.div`
@@ -26,7 +26,7 @@ const Handler = styled.div`
   top: 0;
   position: absolute;
   border-radius: 100%;
-  border-color: ${({ theme }) => theme.primaryList[3]};
+  border-color: ${({ theme }) => theme.form.borderColor};
   background-color: ${({ theme }) => theme.white};
   box-shadow: 0 0 0 1px rgba(196, 210, 235, 0.3);
   text-indent: -3333px;
@@ -41,7 +41,7 @@ const Handler = styled.div`
   cursor: pointer;
 
   &:hover {
-    border-color: ${({ theme }) => theme.primaryList[3]};
+    border-color: ${({ theme }) => theme.form.focusBorderColor};
     background-color: ${({ theme }) => theme.white};
     box-shadow: 0 0 0 2px rgba(196, 210, 235, 0.3);
   }

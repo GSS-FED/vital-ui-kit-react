@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 
 import { size as SIZE, natureColor } from './constant';
 
 const ButtonElement = styled.button`
   position: relative;
-  background: ${({ theme }) => theme.primaryList[0]};
+  background: ${({ theme }) => theme.button.default.bg};
   color: ${({ theme, nature }) => natureColor(theme)[nature]};
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: ${({ theme }) => theme.primaryList[3]};
+  border-color: ${({ theme }) => theme.borderColor};
   font-size: ${({ size }) => SIZE[size].fontSize};
   border-radius: ${({ size }) => SIZE[size].borderRadius};
   padding: ${({ size }) => SIZE[size].padding};
@@ -25,129 +25,134 @@ const ButtonElement = styled.button`
   text-decoration: none;
 
   &:hover {
-    background: ${({ theme }) => theme.primaryList[2]};
+    background: ${({ theme }) => theme.button.default.hoverBg};
   }
 
   &:active {
-    background: ${({ theme }) => theme.primaryList[4]};
+    background: ${({ theme }) => theme.button.default.activeBg};
   }
 
   ${({ subtle, selected, theme, nature }) =>
     subtle &&
-    `
-    background: ${selected ? theme.primaryList4 : 'transparent'};
-    color: ${
-      nature === 'default'
-        ? theme.primaryList7
-        : natureColor(theme)[nature]
-    };
-    border: 1px solid transparent;
+    css`
+      background: ${selected
+        ? theme.button.subtle.bg
+        : 'transparent'};
+      color: ${nature === 'default'
+        ? theme.button.subtle.color
+        : natureColor(theme)[nature]};
+      border: 1px solid transparent;
 
-    &:hover {
-      background: ${theme.primaryList[2]};
-    }
-  `};
+      &:hover {
+        background: ${theme.button.subtle.hoverBg};
+      }
+    `};
 
   ${({ flat, nature, theme }) =>
     flat &&
-    `
-   background: ${
-     nature === 'default'
-       ? theme.primaryList[1]
-       : natureColor(theme)[nature]
-   };
-   color: ${
-     nature === 'default' ? natureColor(theme).default : theme.white
-   };
-   border-color: ${
-     nature === 'default' ? theme.primaryList[1] : natureColor(theme)
-   };
+    css`
+      background: ${
+        nature === 'default'
+          ? theme.button.flat.bg
+          : natureColor(theme)[nature]
+      };
+      color: ${
+        nature === 'default'
+          ? natureColor(theme).default
+          : theme.button.flat.color
+      };
+      border-color: ${
+        nature === 'default'
+          ? theme.button.flat.bg
+          : natureColor(theme)[nature]
+      };
 
-   &:hover {
-     background: ${
-       nature === 'default'
-         ? theme.primaryList[2]
-         : lighten(0.1, natureColor(theme)[nature])
-     };
-     border-color: ${
-       nature === 'default'
-         ? theme.primaryList[2]
-         : lighten(0.1, natureColor(theme)[nature])
-     };
-   }
-   &:active {
-     background: ${
-       nature === 'default'
-         ? theme.primaryList[4]
-         : darken(0.12, natureColor(theme)[nature])
-     };
-     border-color: ${
-       nature === 'default'
-         ? theme.primaryList[4]
-         : darken(0.12, natureColor(theme)[nature])
-     };
-   }
-  `};
+      &:hover {
+        background: ${
+          nature === 'default'
+            ? theme.button.flat.hoverBg
+            : lighten(0.1, natureColor(theme)[nature])
+        };
+        border-color: ${
+          nature === 'default'
+            ? theme.borderColor
+            : lighten(0.1, natureColor(theme)[nature])
+        };
+      }
+      &:active {
+        background: ${
+          nature === 'default'
+            ? theme.button.flat.activeBg
+            : darken(0.12, natureColor(theme)[nature])
+        };
+        border-color: ${
+          nature === 'default'
+            ? theme.button.flat.activeBorderColor
+            : darken(0.12, natureColor(theme)[nature])
+        };
+      }
+    `};
 
   ${({ light, theme, nature }) =>
     light &&
-    `
-   background: ${theme.white};
-   color: ${natureColor(theme)[nature]};
+    css`
+      background: ${theme.button.light.bg};
+      color: ${natureColor(theme)[nature]};
 
-   &:hover {
-     background: ${theme.primaryList[2]};
-   }
-  `}
+      &:hover {
+        background: ${theme.button.light.hoverBg};
+      }
+    `}
 
   ${({ link, theme }) =>
     link &&
-    `
-   background: transparent;
-   color: ${theme.primary};
-   border: 1px solid transparent;
+    css`
+      background: ${theme.button.link.bg};
+      color: ${theme.button.link.color};
+      border: 1px solid transparent;
 
-   &:hover {
-     background: transparent;
-     color: ${lighten(0.1, theme.primary)};
-   }`}
+      &:hover {
+        background: ${theme.button.link.hoverBg};
+        color: ${theme.button.link.hoverColor};
+      }
+    `}
 
    ${({ link, dark, theme }) =>
      link &&
      dark &&
-     `
-      color: ${theme.primaryList[6]};
+     css`
+       color: ${theme.button.link.darkColor};
 
-    &:hover {
-      color: ${lighten(0.1, theme.primaryList[6])};
-    }
-   `}
+       &:hover {
+         color: ${theme.button.link.hoverDarkColor};
+       }
+     `}
 
    ${({ underline }) =>
      underline &&
-     `
-      &:hover {
-        text-decoration: underline;
-      }
-   `}
+     css`
+       &:hover {
+         text-decoration: underline;
+       }
+     `}
 
    ${({ circle }) =>
      circle &&
-     `
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      border-radius: 100%;
-      width: 2.066rem;
-      line-height: 2.066rem;
-      height: 2.066rem;
-   `}
+     css`
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0;
+       border-radius: 100%;
+       width: 2.066rem;
+       line-height: 2.066rem;
+       height: 2.066rem;
+     `}
 
   &[disabled] {
-    color: #93a8ce;
-    border-color: #eaeff8;
-    background-color: #f7f9fe;
+    color: ${({ theme }) => theme.button.disabled.color};
+    border-color: ${({ theme }) => theme.button.disabled.borderColor};
+    background-color: ${({ theme }) => theme.button.disabled.bg};
     cursor: not-allowed;
     pointer-events: none;
   }

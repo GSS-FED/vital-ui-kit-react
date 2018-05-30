@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { borderTopRadius, borderBaseColor } from '../utils';
+import { borderTopRadius } from '../utils';
 
 const linkStyle = ({ hasLink, hasChildren, theme }) => {
   if (hasLink || hasChildren) {
@@ -9,8 +9,8 @@ const linkStyle = ({ hasLink, hasChildren, theme }) => {
       cursor: pointer;
 
       &:hover {
-        background-color: ${theme.primaryList[2]};
-        color: ${theme.secondaryList[3]};
+        background-color: ${theme.list.bg};
+        color: ${theme.link.color};
         text-decoration: none;
       }
     `;
@@ -22,19 +22,19 @@ const levelStyle = ({ level, themed, theme }) => {
   if (level < 1) {
     return css`
       background: ${themed === 'dark'
-        ? theme.primaryList[8]
+        ? theme.primary900
         : theme.white};
       color: ${themed === 'dark'
         ? theme.white
-        : theme.primaryList[6]};
+        : theme.primary700};
     `;
   }
   return css`
     padding-left: calc(0.75rem + ${level * 16}px);
-    color: ${themed === 'dark' ? theme.white : theme.primaryList[6]};
+    color: ${themed === 'dark' ? theme.white : theme.primary[6]};
     background: ${themed === 'dark'
-      ? theme.primaryList[8 - level]
-      : theme.primaryList[level]};
+      ? theme[`primary${8 - level}00`]
+      : theme[`primary${level}00`]};
   `;
 };
 
@@ -64,11 +64,11 @@ const TitleWrapper = styled.div`
   font-size: 1.125rem;
   word-break: break-word;
   border: ${({ border, collapse, theme }) =>
-    border && collapse ? borderBaseColor(theme) : 'none'};
+    border && collapse ? theme.borderColor : 'none'};
   border-bottom: ${({ border, theme }) =>
-    border ? borderBaseColor(theme) : 'none'};
+    border ? theme.borderColor : 'none'};
   border-top: ${({ border, theme }) =>
-    border ? borderBaseColor(theme) : 'none'};
+    border ? theme.borderColor : 'none'};
   ${props => linkStyle(props)};
   ${props => levelStyle(props)};
 `;

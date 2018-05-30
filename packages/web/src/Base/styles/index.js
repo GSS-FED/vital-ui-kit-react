@@ -1,3 +1,3 @@
-import theme from './theme';
+import * as defaultTheme from './theme';
 
-export default theme;
+export default defaultTheme;

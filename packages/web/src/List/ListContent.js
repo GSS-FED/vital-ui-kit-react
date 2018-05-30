@@ -9,13 +9,13 @@ import styled from 'styled-components';
 const ListContent = styled.div`
   display: block;
   font-size: 1.2rem;
-  border-left: ${props =>
-    props.border
-      ? `1px solid ${props.theme.primaryList[2]}`
+  border-left: ${({ border, theme }) =>
+    border
+      ? theme.border
       : 'none'};
-  border-right: ${props =>
-    props.border
-      ? `1px solid ${props.theme.primaryList[2]}`
+  border-right: ${({ border, theme }) =>
+    border
+      ? theme.border
       : 'none'};
   padding: 0.928rem 2.856rem 0.928rem 1.428rem;
   line-height: 1.866rem;

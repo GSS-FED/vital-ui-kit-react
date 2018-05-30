@@ -2,7 +2,8 @@
   "extends": ["@gssfed", "prettier", "plugin:flowtype/recommended"],
   "plugins": [
     "react",
-    "flowtype"
+    "flowtype",
+    "eslint-plugin-import"
   ],
   "parser": "babel-eslint",
   "globals": {
@@ -11,11 +12,18 @@
   },
   "rules": {
     "react/prefer-stateless-function": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/destructuring-assignment": 0,
     "react/sort-comp": 0
   },
   "settings": {
-    "import/resolver": "babel-plugin-root-import"
+    "import/resolver": {
+      "babel-plugin-root-import": {},
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
   }
 }
