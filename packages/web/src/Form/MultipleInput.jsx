@@ -57,7 +57,7 @@ const LabelCell = styled.div`
 `;
 
 type Props = {
-  children: React.Node[]
+  children: React.Node
 };
 
 /**

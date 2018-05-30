@@ -11,7 +11,7 @@ const Root = styled.div`
   height: 1.93267rem;
   color: ${({ theme }) => theme.labelColor};
   text-align: center;
-  background-color: ${({ theme }) => theme.primary200};
+  background-color: ${({ theme }) => theme.form.addon.bg};
   border: ${({ theme }) => `1px solid ${theme.form.borderColor}`};
   border-radius: 4px;
   z-index: 5;

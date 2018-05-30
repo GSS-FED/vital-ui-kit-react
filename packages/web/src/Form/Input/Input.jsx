@@ -45,7 +45,6 @@ export default class Input extends React.Component<Props, State> {
     autoFocus: false,
     spellCheck: false,
     onChange: null,
-    value: ''
   };
 
   state = {

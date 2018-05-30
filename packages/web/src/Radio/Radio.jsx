@@ -46,13 +46,13 @@ const Input = styled.input`
 
   &:checked {
     border-color: ${({ isDisabled, theme }) =>
-      isDisabled ? theme.primary400 : theme.secondary};
+      isDisabled ? theme.secondary400 : theme.primary};
 
     &:after {
       opacity: 1;
       transform: scale(1);
       background: ${({ isDisabled, theme }) =>
-        isDisabled ? theme.primary : theme.secondary};
+        isDisabled ? theme.secondary : theme.primary};
     }
   }
 

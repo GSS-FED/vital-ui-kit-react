@@ -103,7 +103,8 @@ export const button = {
 };
 
 export const card = {
-  color: secondary,
+  bg: white,
+  color: secondary700,
   button: {
     bg: white,
     color: (isPrimary: boolean) =>
@@ -117,12 +118,12 @@ export const checkbox = {
   borderColor: secondary400,
   checkedBorderColor: secondary,
   bg: (isCheckAndRound: boolean) =>
-    isCheckAndRound ? secondary : white,
+    isCheckAndRound ? primary : white,
   label: {
     color: secondary700
   },
   icon: {
-    color: secondary,
+    color: primary,
     roundColor: white,
     disabledColor: secondary300
   }
@@ -136,6 +137,9 @@ export const form = {
   focusBorderColor: primary,
   placeholder: {
     color: secondary
+  },
+  addon: {
+    bg: secondary200,
   },
   disabled: {
     bg: secondary200,

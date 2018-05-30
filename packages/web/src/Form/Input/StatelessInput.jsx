@@ -6,8 +6,8 @@ import styled, { css } from 'styled-components';
 import baseStyle from '../components/FieldBase';
 import Icon from '../../Icon';
 
-const iconPositionStyle = ({position, theme}) => {
-  if (position === 'left') {
+const iconPositionStyle = ({iconPosition, theme}) => {
+  if (iconPosition === 'left') {
     return css`
       left: 0;
       color: ${theme.form.inputIcon.leftColor};`;
@@ -83,7 +83,7 @@ class StatelessInput extends React.Component<Props> {
     placeholder: null,
     icon: null,
     iconPosition: 'right',
-    defaultValue: null,
+    defaultValue: '',
     disabled: false,
     alarm: false,
     warning: false,

@@ -12,7 +12,7 @@ import TabList from './TabList';
 import TabPanel from './TabPanel';
 
 const Root = styled.div`
-  background: ${({ theme }) => theme.tag.bg};
+  background: ${({ theme }) => theme.tab.bg};
   width: auto;
   border-radius: 4px 4px 0 0;
   padding: 8px 0 0 12px;

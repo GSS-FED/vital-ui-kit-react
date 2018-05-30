@@ -21,7 +21,7 @@ const Root = styled.div`
   word-break: break-word;
   border-radius: 0.25rem;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: ${({ theme }) => theme.card.bg};
   box-shadow: ${({ shadow }) =>
     shadow ? '2px 2px 4px 0px #cfd8dc' : 'none'};
   width: ${({ width }) => width};

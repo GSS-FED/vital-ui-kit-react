@@ -12,14 +12,14 @@ const fieldBase = ({ theme }: any) => css`
   background-color: ${theme.white};
   border: 1px solid ${theme.form.borderColor};
   border-radius: 4px;
-  color: ${theme.primary[6]};
+  color: ${theme.form.color};
   transition: border-color ease-in-out 0.15s,
     box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
 
   &::placeholder {
-    color: ${theme.primary[4]};
+    color: ${theme.form.placeholder.color};
   }
 
   &:focus {

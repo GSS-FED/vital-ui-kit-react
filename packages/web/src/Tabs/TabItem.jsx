@@ -30,7 +30,7 @@ const Root = styled.div`
   ${({ current, theme }) =>
     current &&
     css`
-    color: ${theme.tab.item.current.color}
+    color: ${theme.tab.item.current.color};
     background-color: ${theme.tab.item.current.bg};
   `};
 `;

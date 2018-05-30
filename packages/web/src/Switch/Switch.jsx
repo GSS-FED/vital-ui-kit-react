@@ -186,7 +186,7 @@ class Switch extends Component<Props, State> {
               <Icon
                 color={
                   this.state.checked
-                    ? theme.switch.checked
+                    ? theme.form.switch.checked
                     : theme.form.switch.icon
                 }
                 name={iconBtn}

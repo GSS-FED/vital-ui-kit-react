@@ -8,7 +8,7 @@ import * as React from 'react';
 import { withTheme } from 'styled-components';
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
-import defaultTheme from '../Base/styles';
+import defaultTheme from '../Base/theme';
 
 type Nature =
   | 'default'
@@ -37,7 +37,7 @@ type Props = {
   link?: boolean,
   /** Button size */
   size?: Size,
-  theme?: Object,
+  theme: Object,
   /** Circle button */
   circle?: boolean,
   /** Selected state */

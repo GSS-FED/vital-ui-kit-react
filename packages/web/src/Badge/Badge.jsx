@@ -10,8 +10,8 @@ import styled from 'styled-components';
 import { trunTo } from '../utils/math';
 
 const inverseOrNot = ({ inverse, theme }) => `
-  background-color: ${inverse ? theme.badge.inverseBg : theme.bg};
-  color: ${inverse ? theme.inverseColor : theme.color};
+  background-color: ${inverse ? theme.badge.inverseBg : theme.badge.bg};
+  color: ${inverse ? theme.badge.inverseColor : theme.badge.color};
 `;
 
 const Root = styled.span`

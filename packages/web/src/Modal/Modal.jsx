@@ -21,7 +21,7 @@ type State = {
 };
 
 const OverLay = styled.div`
-  background-color: ${props => props.theme.blackList[7]};
+  background-color: ${props => props.theme.grey800};
   z-index: 9999;
   position: fixed;
   top: 0;

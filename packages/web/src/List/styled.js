@@ -9,8 +9,8 @@ const linkStyle = ({ hasLink, hasChildren, theme }) => {
       cursor: pointer;
 
       &:hover {
-        background-color: ${theme.list.bg};
-        color: ${theme.link.color};
+        background-color: ${theme.list.link.bg};
+        color: ${theme.list.link.color};
         text-decoration: none;
       }
     `;
@@ -22,19 +22,19 @@ const levelStyle = ({ level, themed, theme }) => {
   if (level < 1) {
     return css`
       background: ${themed === 'dark'
-        ? theme.primary900
+        ? theme.secondary900
         : theme.white};
       color: ${themed === 'dark'
         ? theme.white
-        : theme.primary700};
+        : theme.secondary700};
     `;
   }
   return css`
     padding-left: calc(0.75rem + ${level * 16}px);
-    color: ${themed === 'dark' ? theme.white : theme.primary[6]};
+    color: ${themed === 'dark' ? theme.white : theme.secondary700};
     background: ${themed === 'dark'
-      ? theme[`primary${8 - level}00`]
-      : theme[`primary${level}00`]};
+      ? theme[`secondary${8 - level}00`]
+      : theme[`secondary${level}00`]};
   `;
 };
 

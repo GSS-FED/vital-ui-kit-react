@@ -5,7 +5,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import { ThemeProvider } from '../src/Base';
 
-import '../src/Base/styles/global.css'
+import '../src/Base/global.css'
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);

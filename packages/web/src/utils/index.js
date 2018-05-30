@@ -42,12 +42,12 @@ type StatusProps = {
 
 export const stateColor = (
   { alarm, warning, success, theme }: StatusProps,
-  defaultColor: string
+  defaultColor?: string
 ) => {
   if (alarm) return theme.alarm;
   if (warning) return theme.warning;
   if (success) return theme.success;
-  return defaultColor || theme.primary600;
+  return defaultColor || theme.primary;
 };
 
 export const transitionBase = (

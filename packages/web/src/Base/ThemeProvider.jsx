@@ -2,7 +2,7 @@
 
 import React, { type Node } from 'react';
 import { ThemeProvider as Provider } from 'styled-components';
-import defaultTheme from './styles';
+import defaultTheme from './theme';
 import IconProvider from '../Icon/components/IconProvider';
 import defaultIcon from '../Icon/selection.json';
 
