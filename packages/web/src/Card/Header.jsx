@@ -20,7 +20,7 @@ const RootWithImage = styled(Root)`
   min-height: 183px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-color: ${({ theme }) => theme.greyLight};
+  background-color: ${({ theme }) => theme.grey300};
   background-size: cover;
   border-bottom: ${({ theme }) => theme.border};
   color: ${({ theme }) => theme.white};

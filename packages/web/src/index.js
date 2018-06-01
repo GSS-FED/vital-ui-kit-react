@@ -6,7 +6,7 @@
 
 import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
-import { ThemeProvider, styles, colorPaletteGenerator } from './base';
+import { ThemeProvider, defaultTheme, colorPaletteGenerator } from './base';
 import { CheckboxGroup, Checkbox } from './Checkbox';
 import Box from './Box';
 import Badge from './Badge';
@@ -75,7 +75,7 @@ export {
   TableHeader,
   Pagination,
   ThemeProvider,
-  styles,
+  defaultTheme,
   withIcon,
   Modal,
   Menu,

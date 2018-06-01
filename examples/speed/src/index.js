@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@gssfed/vital-ui-kit-react/dist/global.css'
+import '@gssfed/vital-ui-kit-react/dist/base/global.css'
 import './App.css';
 import './markdown.css';
 import App from './App';

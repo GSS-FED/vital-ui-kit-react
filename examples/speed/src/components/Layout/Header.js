@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { Menu, Icon, styles } from '@gssfed/vital-ui-kit-react';
+import { Menu, Icon, defaultTheme } from '@gssfed/vital-ui-kit-react';
 import 'rc-color-picker/assets/index.css';
 import ColorPicker from 'rc-color-picker';
 
@@ -74,7 +74,7 @@ class Header extends PureComponent {
             <MenuItem>
               <ColorPicker
                 animation="slide-up"
-                color={styles.primary}
+                color={defaultTheme.primary}
                 onChange={this.changeHandler}
               />
             </MenuItem>

@@ -150,7 +150,6 @@ class Switch extends Component<Props, State> {
 
   render() {
     const {
-      defaultChecked,
       isRound,
       disabled,
       iconBtn,
@@ -163,7 +162,6 @@ class Switch extends Component<Props, State> {
         <Input
           type="checkbox"
           checked={this.state.checked}
-          defaultChecked={defaultChecked}
           disabled={disabled}
         />
         <Label isRound={isRound} disabled={disabled}>
