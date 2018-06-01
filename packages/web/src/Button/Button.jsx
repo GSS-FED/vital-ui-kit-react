@@ -8,7 +8,7 @@ import * as React from 'react';
 import { withTheme } from 'styled-components';
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
-import defaultTheme from '../Base/theme';
+import defaultTheme from '../base/theme';
 
 type Nature =
   | 'default'
