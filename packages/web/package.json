@@ -1,10 +1,10 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Vital UI Kit for React!",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "style": "./dist/global.css",
+  "style": "./dist/base/global.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "start-storybook -p 6006"
