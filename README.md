@@ -64,7 +64,7 @@ npm i --save @gssfed/vital-ui-kit-react
 // ThemeProvider contains default theme and icon, you can override it.
 import { Button, ThemeProvider } from '@gssfed/vital-ui-kit-react'
 // recommend importing the global style.
-import '@gssfed/vital-ui-kit-react/dist/Base/global.css'
+import '@gssfed/vital-ui-kit-react/dist/base/global.css'
 
 /* ... */
 render() {

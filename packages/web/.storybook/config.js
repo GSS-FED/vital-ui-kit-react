@@ -3,9 +3,9 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import { ThemeProvider } from '../src/Base';
+import { ThemeProvider } from '../src/base';
 
-import '../src/Base/global.css'
+import '../src/base/global.css'
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);
