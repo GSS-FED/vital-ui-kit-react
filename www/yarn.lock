@@ -106,15 +106,16 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@gssfed/vital-ui-kit-react@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.3.2.tgz#60065572e2ebd649cde9b1138748bd8fb292c652"
+"@gssfed/vital-ui-kit-react@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.5.0.tgz#b710e4a77c3fb55c9235a07ad3925fc096ad7c06"
   dependencies:
+    polished "^1.9.2"
     popmotion "^8.1.22"
     prop-types "^15.6.1"
     rc-trigger "^2.3.4"
     react-click-outside "^3.0.1"
-    react-priority-navigation "^0.0.7"
+    react-priority-navigation "^0.0.8-rc2"
     resize-observer-polyfill "^1.5.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -8164,6 +8165,10 @@ pngquant-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+polished@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.2.tgz#d705cac66f3a3ed1bd38aad863e2c1e269baf6b6"
+
 popmotion@^8.1.22:
   version "8.1.22"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-8.1.22.tgz#71857484546ae5b7335b0704423a3a761de1fe67"
@@ -9151,9 +9156,9 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
-react-priority-navigation@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.7.tgz#714a80d7ccfa10301c89709a4e4d025cebfbb853"
+react-priority-navigation@^0.0.8-rc2:
+  version "0.0.8-rc2"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.0.8-rc2.tgz#f4154a5e31aeaa50ace94a112d3dbb63a0de20f9"
   dependencies:
     rc-trigger "^2.3.4"
     resize-observer-polyfill "^1.5.0"
