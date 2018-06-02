@@ -463,7 +463,7 @@
     "@babel/helper-plugin-utils" "7.0.0-beta.44"
     "@babel/plugin-syntax-optional-catch-binding" "7.0.0-beta.44"
 
-"@babel/plugin-proposal-optional-chaining@^7.0.0-beta.47":
+"@babel/plugin-proposal-optional-chaining@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-optional-chaining/-/plugin-proposal-optional-chaining-7.0.0-beta.49.tgz#d6e1757fdd439a62b84faf2a851e822a18e2b42c"
   dependencies:
@@ -853,7 +853,7 @@
   dependencies:
     regenerator-transform "^0.12.3"
 
-"@babel/plugin-transform-runtime@^7.0.0-beta.47":
+"@babel/plugin-transform-runtime@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.0.0-beta.49.tgz#65a30ec0bc36f4249325dbc2438f97f563b41f1a"
   dependencies:
@@ -1065,7 +1065,7 @@
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-"@gssfed/eslint-config@^0.0.2":
+"@gssfed/eslint-config@0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@gssfed/eslint-config/-/eslint-config-0.0.2.tgz#2b9195703f320777fe8e4c39f2bc989c9b4604bb"
   dependencies:
@@ -1073,7 +1073,7 @@
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-"@storybook/addon-actions@3.4.6", "@storybook/addon-actions@^3.4.6":
+"@storybook/addon-actions@3.4.6":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.4.6.tgz#70ca84a4754ea2969640428890d9a3c9369261f6"
   dependencies:
@@ -1121,7 +1121,7 @@
     react-textarea-autosize "^5.2.1"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-links@3.4.6", "@storybook/addon-links@^3.4.6":
+"@storybook/addon-links@3.4.6":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-3.4.6.tgz#0e167c03932ddfcbeba02215af1a420c0d3f0843"
   dependencies:
@@ -1145,7 +1145,7 @@
   dependencies:
     babel-runtime "^6.26.0"
 
-"@storybook/addons@3.4.6", "@storybook/addons@^3.4.6":
+"@storybook/addons@3.4.6":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.4.6.tgz#8275e46b8dfe7c751f2f18a431bc3339c999a2ae"
 
@@ -1243,7 +1243,7 @@
     lodash.pick "^4.4.0"
     shallowequal "^0.2.2"
 
-"@storybook/react-native@^3.4.6":
+"@storybook/react-native@3.4.6":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-3.4.6.tgz#7819db53f52dedc6f641ae40297239605b5c4140"
   dependencies:
@@ -2933,7 +2933,7 @@ babel-preset-stage-3@^6.24.1:
     babel-plugin-transform-exponentiation-operator "^6.24.1"
     babel-plugin-transform-object-rest-spread "^6.22.0"
 
-babel-register@^6.24.1, babel-register@^6.26.0:
+babel-register@6.26.0, babel-register@^6.24.1, babel-register@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.26.0.tgz#6ed021173e2fcb486d7acb45c6009a856f647071"
   dependencies:
@@ -7014,7 +7014,7 @@ left-pad@^1.1.3, left-pad@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
 
-lerna@^2.9.1:
+lerna@2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/lerna/-/lerna-2.11.0.tgz#89b5681e286d388dda5bbbdbbf6b84c8094eff65"
   dependencies:
@@ -8832,7 +8832,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@15.6.1, prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.5.9, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -9181,13 +9181,13 @@ react-native-iphone-x-helper@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.3.tgz#7a2f1e0574e899a0f1d426e6167fd98990083214"
 
-react-native-linear-gradient@^2.4.0:
+react-native-linear-gradient@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-native-linear-gradient/-/react-native-linear-gradient-2.4.0.tgz#51d8ea12bb72a59bede9edc87b694b16b64cf435"
   dependencies:
     prop-types "^15.5.10"
 
-react-native-vector-icons@^4.6.0:
+react-native-vector-icons@4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.6.0.tgz#e4014311ffa6de397d914ffc31b7097a874cc8d5"
   dependencies:
@@ -9809,7 +9809,7 @@ rollup-plugin-auto-external@1.2.0:
     read-pkg "^3.0.0"
     safe-resolve "^1.0.0"
 
-rollup-plugin-babel@^4.0.0-beta.2:
+rollup-plugin-babel@4.0.0-beta.4:
   version "4.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-4.0.0-beta.4.tgz#d869646885d6ad73dd10791a261fb92674a80410"
   dependencies:
@@ -10554,7 +10554,7 @@ style-value-types@^1.0.6, style-value-types@^1.0.8:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-1.0.10.tgz#e46a11922f7b9efe265fb22bfd3b5429611bc016"
 
-styled-components@3.3.0, styled-components@^3.3.0:
+styled-components@3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-3.3.0.tgz#335b1b2b673b416cd5ec012010e237ed1f877fe9"
   dependencies:
