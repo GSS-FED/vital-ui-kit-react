@@ -20,8 +20,6 @@ After install the dependencies
 
 ### Build and Publish
 
-We use [rollup](https://github.com/rollup/rollup) for bundling packages to minfy js.
-
 Run `yarn run build` will handle all process.
 
 We follow [semantic versioning](https://semver.org/) and publish via `lerna`. Run `yarn run publish` and beware it should be stable in `master` branch.
