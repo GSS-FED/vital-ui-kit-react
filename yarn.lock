@@ -1065,9 +1065,9 @@
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-"@gssfed/eslint-config@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config/-/eslint-config-0.0.2.tgz#2b9195703f320777fe8e4c39f2bc989c9b4604bb"
+"@gssfed/eslint-config@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config/-/eslint-config-0.0.3.tgz#ccaa205c472def2fa299e304170e71ec2aeadcd3"
   dependencies:
     "@gssfed/eslint-config-base" "^0.0.1"
     object.assign "^4.1.0"
