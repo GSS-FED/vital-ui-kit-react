@@ -7,10 +7,6 @@
   {
     "packagePatterns": ["^eslint"],
     "groupName": "eslint packages"
-  },
-  {
-    "packagePatterns": ["^rollup"],
-    "groupName": "rollup packages"
   }
 ]
 }

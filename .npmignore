@@ -10,6 +10,5 @@ storybook-static
 .eslintrc
 .flowconfig
 bit.json
-rollup.config.json
 yarn-error.log
 bundle-stats.html

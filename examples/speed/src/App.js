@@ -28,7 +28,6 @@ class App extends PureComponent {
                 this.setState({
                   newColor: color,
                 })
-console.log({...defaultTheme, ...colorPaletteGenerator(this.state.newColor)})
               }
               }
             />
