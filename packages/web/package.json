@@ -6,7 +6,7 @@
   "module": "./dist/index.js",
   "style": "./dist/base/global.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test jest",
     "start": "start-storybook -p 6006"
   },
   "contributors": [
@@ -46,5 +46,17 @@
   "bugs": {
     "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
   },
-  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme"
+  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.md?$": "markdown-loader-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
 }

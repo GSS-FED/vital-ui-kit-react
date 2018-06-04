@@ -1,13 +1,28 @@
 {
-  "presets": ["@babel/flow", "@babel/react", ["@babel/env", {"modules": false}]],
+  "presets": ["flow", "react", ["env", {"modules": false}]],
   "plugins": [
-    "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-proposal-optional-chaining",
+    "babel-plugin-transform-object-rest-spread",
+    "babel-plugin-transform-class-properties",
     ["babel-plugin-root-import", {
       "rootPathSuffix": "./"
     }]
   ],
   "env": {
+    "development": {
+      "plugins": [["babel-plugin-styled-components", {
+        "displayName": true
+      }]]
+    },
+    "test": {
+      "presets": [
+        "flow",
+        ["env", { "modules": "commonjs" }],
+        "react"
+      ],
+      "plugins": [
+        "babel-plugin-transform-object-rest-spread",
+        "babel-plugin-transform-class-properties"
+      ]
+    }
   }
 }

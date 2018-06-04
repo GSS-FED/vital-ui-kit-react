@@ -68,8 +68,8 @@ storiesOf('Getting Started', module)
               </ButtonGroup>
             ))}
             <ButtonGroup>
-              {SIZE.map(size => (
-                <Button size={size} flat nature="primary">
+              {SIZE.map((size, i) => (
+                <Button size={size} key={i} flat nature="primary">
                   {size}
                 </Button>
               ))}
