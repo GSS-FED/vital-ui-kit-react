@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select,
+  select
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -28,13 +28,26 @@ import {
   Addon,
   Icon,
   Button,
-  Select,
+  Select
 } from '../../src';
 
 const FormWrapper = styled.div`
   max-width: 500px;
   padding: 40px;
 `;
+
+const items = [
+  { content: 'All Files', value: 'all' },
+  { content: 'PDF', value: 'pdf' },
+  { content: 'PPT', value: 'ppt' }
+];
+
+const groupItem = [
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] }
+];
+
 
 storiesOf('Components | Form', module)
   .addDecorator(withKnobs)
@@ -69,8 +82,8 @@ storiesOf('Components | Form', module)
             <TextArea placeholder="Comment here" minRows={3} />
           </FieldInput>
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'Input with Label',
@@ -81,15 +94,21 @@ storiesOf('Components | Form', module)
             required={boolean('Required 1', true)}
             align={select('Align', {
               left: 'Left',
-              right: 'Right',
+              right: 'Right'
             })}
             label="Username"
-            inline={boolean('Inline', false)}>
-            <Input placeholder={text('Placeholder 1', 'Enter your username')} />
+            inline={boolean('Inline', false)}
+          >
+            <Input
+              placeholder={text(
+                'Placeholder 1',
+                'Enter your username'
+              )}
+            />
           </FieldInput>
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'Hint',
@@ -102,8 +121,8 @@ storiesOf('Components | Form', module)
             <Hint text="Example: James Allen" />
           </FieldInput>
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'Multiple & Addon',
@@ -134,8 +153,8 @@ storiesOf('Components | Form', module)
             </MultipleInput>
           </FieldInput>
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'Multiple & Button',
@@ -159,8 +178,8 @@ storiesOf('Components | Form', module)
             </MultipleInput>
           </FieldInput>
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   );
 
 storiesOf('Components | Form/Input', module)
@@ -180,8 +199,8 @@ storiesOf('Components | Form/Input', module)
             isWarning={boolean('Warning', false)}
           />
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'Controlled Input',
@@ -195,15 +214,18 @@ storiesOf('Components | Form/Input', module)
             isWarning={boolean('Warning', false)}
           />
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   )
   .add(
     'With Icon',
     withInfo(`Icon in Left or Right`)(
       withNotes('insert icon component')(() => (
         <FormWrapper>
-          <StatelessInput placeholder="Right side icon" icon="search" />
+          <StatelessInput
+            placeholder="Right side icon"
+            icon="search"
+          />
           <br />
           <StatelessInput
             placeholder="Left side icon"
@@ -211,8 +233,8 @@ storiesOf('Components | Form/Input', module)
             iconPosition="left"
           />
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   );
 
 storiesOf('Components | Form/TextArea', module)
@@ -228,8 +250,8 @@ storiesOf('Components | Form/TextArea', module)
           warning={boolean('Warning', false)}
           minRows={3}
         />
-      )),
-    ),
+      ))
+    )
   )
   .addDecorator(withKnobs)
   .add(
@@ -243,8 +265,8 @@ storiesOf('Components | Form/TextArea', module)
           warning={boolean('Warning', false)}
           minRows={3}
         />
-      )),
-    ),
+      ))
+    )
   );
 
 storiesOf('Components | Form/Select', module)
@@ -256,18 +278,6 @@ storiesOf('Components | Form/Select', module)
         <FormWrapper>
           <Select placeholder="Select One" items={items} />
         </FormWrapper>
-      )),
-    ),
+      ))
+    )
   );
-
-const items = [
-  { content: 'All Files', value: 'all' },
-  { content: 'PDF', value: 'pdf' },
-  { content: 'PPT', value: 'ppt' },
-];
-
-const groupItem = [
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-];
