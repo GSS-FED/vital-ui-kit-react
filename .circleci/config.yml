@@ -44,4 +44,6 @@ jobs:
           paths:
             - node_modules
 
-      - test: yarn run test:web
+      - run:
+          name: Test storyshots
+          command: yarn run test:web
