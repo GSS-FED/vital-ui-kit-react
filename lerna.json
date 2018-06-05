@@ -11,6 +11,7 @@
     "labels": {
       "enhancement": ":rocket: Enhancement",
       "bug": ":bug: Bug Fix"
-    }
+    },
+    "cacheDir": ".changelog"
   }
 }
