@@ -15,8 +15,7 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     # working_directory: ~/repo
-  # Check all the environment versions.
-  versions:
+
     steps:
       - run: node --version
       - run: npm --version
