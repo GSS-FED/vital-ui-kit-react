@@ -20,6 +20,8 @@
 
 
 ## Intro
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react?ref=badge_shield)
+
 [Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [Vital Cloud Services Family](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
 
 - Themeable, build with styled-components 💅
@@ -87,3 +89,7 @@ Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-
 - box
 - Table(page, checkbox, input, header)
 - Calendar
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react?ref=badge_large)
