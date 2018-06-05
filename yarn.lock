@@ -7029,7 +7029,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-loader-jest@^0.1.1:
+markdown-loader-jest@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/markdown-loader-jest/-/markdown-loader-jest-0.1.1.tgz#7de45f7e6c8644805bd02ca126dfb54a55cf8255"
   dependencies:
