@@ -1,10 +1,11 @@
 # Changelog
 
-## [Unreleased]
+## Unreleased (2018-06-05)
 
-## [0.0.8-3] - 2017-4-2
-### Add
-- Add global css in dist
+#### :rocket: Enhancement
+* `web`
+  * [#151](https://github.com/GSS-FED/vital-ui-kit-react/pull/151) Add Theme story and export defaultComponentsTheme ([@ericyip](https://github.com/ericyip))
 
-### Changed
-- Use Lerna to manage monorepo
+#### Committers: 1
+- Eric Yip ([ericyip](https://github.com/ericyip))
+

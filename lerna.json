@@ -10,8 +10,11 @@
     "repo": "GSS-FED/vital-ui-kit-react",
     "labels": {
       "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix"
+      "bug": ":bug: Bug Fix",
+      "internal": ":internal: Internal",
+      "breaking change": ":boom: Breaking Change"
     },
-    "cacheDir": ".changelog"
+    "cacheDir": ".changelog",
+    "ignoreCommitters": ["renovate"]
   }
 }
