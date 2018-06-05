@@ -133,7 +133,7 @@ class ListItem extends React.Component<Props, State> {
   iconHandler = () =>
     this.props.children ? 'chevron-down' : 'chevron-right';
 
-  child: HTMLElement;
+  child: ?HTMLElement;
 
   renderBadge = () => (
     <BadgeWrapper

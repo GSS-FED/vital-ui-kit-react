@@ -1,9 +1,13 @@
 // @flow
 
 import { rgba, lighten } from 'polished';
+import * as defaultTheme from './theme';
 
 // component theme
-export default (theme: Object) => ({
+export default (theme: typeof defaultTheme) => ({
+  borderColor: theme.secondary300,
+  labelColor: theme.secondary600,
+  border: `1px solid ${theme.secondary300}`,
   avatar: {
     badgeBg: theme.alarm,
   },

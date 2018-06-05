@@ -13,7 +13,7 @@ const Root = styled.ul`
 `;
 
 type Props = {
-  children: TabItem,
+  children: TabItem[],
 };
 
 const TabList = ({ children, ...props }: Props) => (

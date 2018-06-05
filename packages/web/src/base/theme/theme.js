@@ -41,11 +41,6 @@ export const success = '#2BCD86';
 export const alarm = '#EB5000';
 export const warning = '#FFB400';
 
-// common
-export const borderColor = secondary300;
-export const border = `1px solid ${secondary300}`;
-export const labelColor = secondary600;
-
 export const defaultTransition = 'all 120ms ease-out';
 
 // ----- break point ----- //

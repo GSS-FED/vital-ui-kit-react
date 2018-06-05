@@ -61,9 +61,9 @@ class Modal extends React.Component<Props, State> {
     });
   };
 
-  modal: HTMLElement;
+  modal: ?HTMLElement;
 
-  container: HTMLElement;
+  container: ?HTMLElement;
 
   render() {
     if (!this.props.show) {

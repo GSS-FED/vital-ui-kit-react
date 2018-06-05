@@ -57,6 +57,7 @@
   "devDependencies": {
     "@gssfed/eslint-config": "0.0.3",
     "@storybook/addon-actions": "3.4.6",
+    "@storybook/addon-centered": "3.4.6",
     "@storybook/addon-info": "3.4.6",
     "@storybook/addon-knobs": "3.4.6",
     "@storybook/addon-links": "3.4.6",

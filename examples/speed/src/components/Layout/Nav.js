@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { List } from '@gssfed/vital-ui-kit-react';
 
 const TitleWrapper = styled.div`
@@ -10,7 +10,7 @@ const TitleWrapper = styled.div`
 class Nav extends React.PureComponent {
   render() {
     return (
-      <div style={{ background: '#1E3768', height: '100%' }}>
+      <div style={{ background: this.props.theme.secondary900, height: '100%' }}>
         <List themed="dark">
           <List.Item
             title={<TitleWrapper>Doc Inbox</TitleWrapper>}
@@ -76,4 +76,4 @@ class Nav extends React.PureComponent {
   }
 }
 
-export default Nav;
+export default withTheme(Nav);

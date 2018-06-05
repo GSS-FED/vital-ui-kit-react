@@ -1,7 +1,7 @@
 ```js
-import { utils } from '../../src';
+import { space } from '@gssfed/vital-ui-kit/utils';
 
 const Container = styled.div`
-  ${utils.space};
+  ${space};
 `;
 ```

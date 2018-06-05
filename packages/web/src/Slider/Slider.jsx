@@ -77,11 +77,11 @@ class Slider extends React.Component<Props, State> {
     value: this.props.value || 0,
   };
 
-  slider: HTMLElement;
+  slider: ?HTMLElement;
 
-  track: HTMLElement;
+  track: ?HTMLElement;
 
-  handle: HTMLElement;
+  handle: ?HTMLElement;
 
   // delay timeout of the button calling function
   start = 700;

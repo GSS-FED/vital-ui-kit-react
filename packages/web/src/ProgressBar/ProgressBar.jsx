@@ -114,7 +114,7 @@ class ProgressBar extends React.Component<Props, State> {
     this.getPositionFromValue();
   };
 
-  node: HTMLElement;
+  node: ?HTMLElement;
 
   render() {
     const {
