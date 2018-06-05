@@ -10,6 +10,7 @@ import {
   ThemeProvider,
   defaultTheme,
   colorPaletteGenerator,
+  defaultComponentsTheme,
 } from './base';
 import { CheckboxGroup, Checkbox } from './Checkbox';
 import Box from './Box';
@@ -36,12 +37,7 @@ import { Pill } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip';
 import ProgressBar from './ProgressBar';
-import {
-  Table,
-  TableCaption,
-  TableColumn,
-  TableHeader,
-} from './Table';
+import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination';
 import Menu from './Menu';
 import Tabs from './Tabs';
@@ -92,4 +88,5 @@ export {
   Layout,
   utils,
   colorPaletteGenerator,
+  defaultComponentsTheme,
 };

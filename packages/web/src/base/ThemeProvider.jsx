@@ -5,7 +5,7 @@ import { ThemeProvider as Provider } from 'styled-components';
 import defaultTheme from './theme';
 import IconProvider from '../Icon/components/IconProvider';
 import defaultIcon from '../Icon/selection.json';
-import defeaultComponentsTheme from './theme/components';
+import defaultComponentsTheme from './theme/components';
 
 type Props = {
   theme?: any,
@@ -24,7 +24,7 @@ class ThemeProvider extends React.Component<Props> {
     const combinedTheme = { ...defaultTheme, ...theme };
     const combinedWithComponentTheme = {
       ...combinedTheme,
-      ...defeaultComponentsTheme(combinedTheme),
+      ...defaultComponentsTheme(combinedTheme),
     };
     return (
       <Provider theme={combinedWithComponentTheme}>
