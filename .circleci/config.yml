@@ -15,6 +15,12 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     # working_directory: ~/repo
+  # Check all the environment versions.
+  versions:
+    steps:
+      - run: node --version
+      - run: npm --version
+      - run: yarn --version
 
     steps:
       - checkout
@@ -32,6 +38,7 @@ jobs:
       - run:
           name: Install Dependencies
           command: |
+            sudo apt-get install yarn
             yarn config set cache-folder .yarn-cache
             yarn install --pure-lockfile
       - run: yarn cache dir
