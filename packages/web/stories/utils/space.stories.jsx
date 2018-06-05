@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 import md from './space.md';
@@ -27,11 +27,7 @@ storiesOf('utils | space', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
-    withInfo(md)(
-      () => (
-        <Container padding="20px">
-          Container with space utils
-        </Container>
-      )
-    )
+    withInfo(md)(() => (
+      <Container padding="20px">Container with space utils</Container>
+    )),
   );

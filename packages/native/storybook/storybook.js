@@ -14,7 +14,7 @@ configure(() => {
 // to set manually use, e.g. host: 'localhost' option
 const StorybookUIRoot = getStorybookUI({
   port: 7007,
-  onDeviceUI: true
+  onDeviceUI: true,
 });
 
 // react-native hot module loader must take in a Class - https://github.com/facebook/react-native/issues/10991

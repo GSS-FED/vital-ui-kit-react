@@ -11,7 +11,7 @@ const Container = styled.div`
 type Props = {
   ...Space,
   children: React.Node,
-  style?: CSSStyleDeclaration
+  style?: CSSStyleDeclaration,
 };
 
 const Box = ({ children, style, ...props }: Props) => (
@@ -21,7 +21,7 @@ const Box = ({ children, style, ...props }: Props) => (
 );
 
 Box.defaultProps = {
-  style: null
+  style: null,
 };
 
 export default Box;

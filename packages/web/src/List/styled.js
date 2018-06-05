@@ -24,16 +24,14 @@ const levelStyle = ({ level, themed, theme }) => {
       background: ${themed === 'dark'
         ? theme.secondary900
         : theme.white};
-      color: ${themed === 'dark'
-        ? theme.white
-        : theme.secondary700};
+      color: ${themed === 'dark' ? theme.white : theme.secondary700};
     `;
   }
   return css`
     padding-left: calc(0.75rem + ${level * 16}px);
     color: ${themed === 'dark' ? theme.white : theme.secondary700};
     background: ${themed === 'dark'
-      ? theme[`secondary${8 - level}00`]
+      ? theme[`secondary${9 - level}00`]
       : theme[`secondary${level}00`]};
   `;
 };

@@ -3,7 +3,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import { Subject } from 'rxjs'
+import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
 import { FieldInput, Input } from '../../src';
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 type P = {
-  children: (value: string) => React.ReactNode
+  children: (value: string) => React.ReactNode,
 };
 
 type S = {
@@ -28,30 +28,35 @@ class Filter extends React.PureComponent<P, S> {
   state = {
     filterValue: '',
     value: '',
-   }
+  };
 
-   onSearch$: Subject<string> = new Subject();
+  onSearch$: Subject<string> = new Subject();
 
-   componentDidMount() {
-     this.onSearch$.asObservable().pipe(
-       distinctUntilChanged(), debounceTime(500)).subscribe(v => {
-         this.setState({
-           value: v
-         })
-       })
-   }
+  componentDidMount() {
+    this.onSearch$
+      .asObservable()
+      .pipe(
+        distinctUntilChanged(),
+        debounceTime(500),
+      )
+      .subscribe(v => {
+        this.setState({
+          value: v,
+        });
+      });
+  }
 
-   onInputChange = (e) => {
-     e.persist();
-     const { value } = e.target;
-     this.setState({ filterValue : value})
-     this.onSearch$.next(value);
-   }
+  onInputChange = e => {
+    e.persist();
+    const { value } = e.target;
+    this.setState({ filterValue: value });
+    this.onSearch$.next(value);
+  };
 
   render() {
     return (
       <Wrapper>
-        <FieldInput style={{ width: '60%'}}>
+        <FieldInput style={{ width: '60%' }}>
           <Input
             icon="search"
             value={this.state.filterValue}

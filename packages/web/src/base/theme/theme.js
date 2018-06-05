@@ -31,7 +31,6 @@ export const grey700 = '#555555';
 export const grey800 = '#333333';
 export const grey900 = '#0D0D0D';
 
-
 // default color
 export const white = '#ffffff';
 export const primary = primary500;
@@ -41,11 +40,6 @@ export const info = '#00C3FF';
 export const success = '#2BCD86';
 export const alarm = '#EB5000';
 export const warning = '#FFB400';
-
-// common
-export const borderColor = secondary300;
-export const border = `1px solid ${secondary300}`;
-export const labelColor = secondary600;
 
 export const defaultTransition = 'all 120ms ease-out';
 
@@ -57,5 +51,5 @@ export const bp = {
   padPortrait: ' 768px',
   phoneLand: ' 667px',
   phoneMiddle: ' 480px',
-  phonePortrait: ' 320px'
+  phonePortrait: ' 320px',
 };

@@ -9,23 +9,26 @@ const DURATION = 200;
 export type ListSpacerProps = {
   duration?: number,
   children?: (renderProps: any) => React.ReactNode,
-  render?: (renderProps: any) => React.ReactNode
+  render?: (renderProps: any) => React.ReactNode,
 };
 
 export type ListSpacerState = {
   // screenHeight: number,
-  flatListHeight: Animated.Value
+  flatListHeight: Animated.Value,
 };
 
-class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
+class ListSpacer extends React.PureComponent<
+  ListSpacerProps,
+  ListSpacerState,
+> {
   static defaultProps = {
     duration: DURATION,
-  }
+  };
   state = {
     // screenHeight: Dimensions.get('window').height,
     flatListHeight: new Animated.Value(
-      Dimensions.get('window').height
-    )
+      Dimensions.get('window').height,
+    ),
   };
 
   _keyboardDidShowListener: any;
@@ -34,11 +37,11 @@ class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
   componentDidMount() {
     this._keyboardDidShowListener = Keyboard.addListener(
       'keyboardDidShow',
-      this._keyBoardDidShow
+      this._keyBoardDidShow,
     );
     this._keyboardDidHideListener = Keyboard.addListener(
       'keyboardDidHide',
-      this._keyBoardDidHide
+      this._keyBoardDidHide,
     );
   }
 
@@ -51,20 +54,20 @@ class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
     Animated.timing(this.state.flatListHeight, {
       toValue:
         Dimensions.get('window').height - e.endCoordinates.height,
-      duration: this.props.duration
+      duration: this.props.duration,
     }).start();
   };
 
   _keyBoardDidHide = () => {
     Animated.timing(this.state.flatListHeight, {
       toValue: Dimensions.get('window').height,
-      duration: this.props.duration
+      duration: this.props.duration,
     }).start();
   };
 
   render() {
     const renderProps = {
-      flatListHeight: this.state.flatListHeight
+      flatListHeight: this.state.flatListHeight,
     };
 
     if (this.props.children) {

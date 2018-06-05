@@ -30,9 +30,9 @@ const Root = styled.div`
   ${({ current, theme }) =>
     current &&
     css`
-    color: ${theme.tab.item.current.color};
-    background-color: ${theme.tab.item.current.bg};
-  `};
+      color: ${theme.tab.item.current.color};
+      background-color: ${theme.tab.item.current.bg};
+    `};
 `;
 
 const Span = styled.span`
@@ -53,13 +53,13 @@ type Props = {
   badge?: number | string,
   panel: React.Node,
   index: number,
-  onTabChange: (panel: React.Node, index: number) => {}
+  onTabChange: (panel: React.Node, index: number) => {},
 };
 
 class TabItem extends React.Component<Props> {
   static defaultProps = {
     current: false,
-    badge: null
+    badge: null,
   };
 
   render() {
@@ -78,11 +78,7 @@ class TabItem extends React.Component<Props> {
         onClick={() => onTabChange(panel, index)}
         {...props}
       >
-        {label && (
-        <Label>
-          {label}
-        </Label>
-)}
+        {label && <Label>{label}</Label>}
         {badge && <TabBadge inverse={!current} label={badge} />}
       </Root>
     );

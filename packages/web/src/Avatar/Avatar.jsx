@@ -75,7 +75,14 @@ const Avatar = ({
       return null;
     }
 
-    return <AvatarBadge label={badge} size={size} round={round} style={badgeStyle} />;
+    return (
+      <AvatarBadge
+        label={badge}
+        size={size}
+        round={round}
+        style={badgeStyle}
+      />
+    );
   };
 
   const renderDefaultAvatar = (): string => {
@@ -121,7 +128,7 @@ Avatar.defaultProps = {
   outline: false,
   imageStyle: null,
   containerStyle: null,
-  badgeStyle: null
+  badgeStyle: null,
 };
 
 export default Avatar;

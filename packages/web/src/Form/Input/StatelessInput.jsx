@@ -6,11 +6,12 @@ import styled, { css } from 'styled-components';
 import baseStyle from '../components/FieldBase';
 import Icon from '../../Icon';
 
-const iconPositionStyle = ({iconPosition, theme}) => {
+const iconPositionStyle = ({ iconPosition, theme }) => {
   if (iconPosition === 'left') {
     return css`
       left: 0;
-      color: ${theme.form.inputIcon.leftColor};`;
+      color: ${theme.form.inputIcon.leftColor};
+    `;
   }
   return css`
     right: 0;
@@ -18,7 +19,8 @@ const iconPositionStyle = ({iconPosition, theme}) => {
 
     &:hover {
       color: ${theme.form.inputIcon.rightHoverColor};
-    }`;
+    }
+  `;
 };
 
 const inputPaddingStyle = props => {
@@ -129,7 +131,9 @@ class StatelessInput extends React.Component<Props> {
           }}
           {...this.props}
         />
-        {icon && <InputIcon iconPosition={iconPosition} name={icon} />}
+        {icon && (
+          <InputIcon iconPosition={iconPosition} name={icon} />
+        )}
       </Root>
     );
   }

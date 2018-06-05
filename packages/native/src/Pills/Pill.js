@@ -20,10 +20,10 @@ export type PillProps = {
   label: string,
   bg?: string,
   color?: string,
-}
+};
 
 const Pill = ({ label, bg, color, ...props }: PillProps) => (
-  <Root bg={bg} {...props} >
+  <Root bg={bg} {...props}>
     <Label color={color}>{label}</Label>
   </Root>
 );

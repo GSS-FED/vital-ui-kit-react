@@ -13,13 +13,11 @@ const Root = styled.ul`
 `;
 
 type Props = {
-  children: TabItem,
+  children: TabItem[],
 };
 
-const TabList = ({ children, ...props}: Props) => (
-  <Root {...props}>
-    {children}
-  </Root>
-)
+const TabList = ({ children, ...props }: Props) => (
+  <Root {...props}>{children}</Root>
+);
 
 export default TabList;

@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 
 type Props = {
   icon: Object,
-}
+};
 
 const withIcon = (WrappedComponent: ComponentType<*>) =>
   class Cp extends Component<Props> {
     static contextTypes = {
       // eslint-disable-next-line
-      icon: PropTypes.object.isRequired
+      icon: PropTypes.object.isRequired,
     };
 
     render() {

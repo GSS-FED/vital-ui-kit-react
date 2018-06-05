@@ -36,6 +36,18 @@ const FormWrapper = styled.div`
   padding: 40px;
 `;
 
+const items = [
+  { content: 'All Files', value: 'all' },
+  { content: 'PDF', value: 'pdf' },
+  { content: 'PPT', value: 'ppt' },
+];
+
+const groupItem = [
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+];
+
 storiesOf('Components | Form', module)
   .addDecorator(withKnobs)
   .add(
@@ -84,8 +96,14 @@ storiesOf('Components | Form', module)
               right: 'Right',
             })}
             label="Username"
-            inline={boolean('Inline', false)}>
-            <Input placeholder={text('Placeholder 1', 'Enter your username')} />
+            inline={boolean('Inline', false)}
+          >
+            <Input
+              placeholder={text(
+                'Placeholder 1',
+                'Enter your username',
+              )}
+            />
           </FieldInput>
         </FormWrapper>
       )),
@@ -203,7 +221,10 @@ storiesOf('Components | Form/Input', module)
     withInfo(`Icon in Left or Right`)(
       withNotes('insert icon component')(() => (
         <FormWrapper>
-          <StatelessInput placeholder="Right side icon" icon="search" />
+          <StatelessInput
+            placeholder="Right side icon"
+            icon="search"
+          />
           <br />
           <StatelessInput
             placeholder="Left side icon"
@@ -259,15 +280,3 @@ storiesOf('Components | Form/Select', module)
       )),
     ),
   );
-
-const items = [
-  { content: 'All Files', value: 'all' },
-  { content: 'PDF', value: 'pdf' },
-  { content: 'PPT', value: 'ppt' },
-];
-
-const groupItem = [
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-];

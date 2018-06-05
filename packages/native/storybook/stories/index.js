@@ -13,7 +13,7 @@ import {
   Checkbox,
   Pill,
   Card,
-  ImageBackground
+  ImageBackground,
 } from '../../src';
 import CenterView from './CenterView';
 
@@ -37,11 +37,9 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button onPress={action('clicked-emoji')} title="😀 😎 👍 💯" />
   ));
-
 storiesOf('Pill', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Basic', () => <Pill label="Text" />);
-
 storiesOf('Card', module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add('Basic', () => (
@@ -50,9 +48,12 @@ storiesOf('Card', module)
       <Card.SideLabel color="blue" />
     </Card>
   ));
-
 storiesOf('ImageBackground', module)
-  .addDecorator(getStory => <ImageBackground><CenterView>{getStory()}</CenterView></ImageBackground>)
+  .addDecorator(getStory => (
+    <ImageBackground>
+      <CenterView>{getStory()}</CenterView>
+    </ImageBackground>
+  ))
   .add('Basic', () => (
     <Card width="90%" shadow style={{ marginBottom: 20 }}>
       <Card.Header title="My Forms" action={<Button title="All" />} />

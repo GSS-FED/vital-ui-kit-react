@@ -22,11 +22,11 @@ type Props = {
   children: TabList,
   defaultActiveIndex?: number,
   beforeTabChange?: (index: number) => {},
-  afterTabChange?: (index: number) => {}
+  afterTabChange?: (index: number) => {},
 };
 
 type State = {
-  activeIndex: number
+  activeIndex: number,
 };
 
 class Tabs extends React.Component<Props, State> {
@@ -34,10 +34,10 @@ class Tabs extends React.Component<Props, State> {
     defaultActiveIndex: 0,
     beforeTabChange: () => {},
     afterTabChange: () => {},
-  }
+  };
 
   state = {
-    activeIndex: this.props.defaultActiveIndex || 0
+    activeIndex: this.props.defaultActiveIndex || 0,
   };
 
   static Tab = TabItem;
@@ -50,11 +50,11 @@ class Tabs extends React.Component<Props, State> {
 
     this.setState(
       {
-        activeIndex: index
+        activeIndex: index,
       },
       () => {
         if (afterTabChange) afterTabChange(index);
-      }
+      },
     );
   };
 
@@ -73,18 +73,14 @@ class Tabs extends React.Component<Props, State> {
                 return React.cloneElement(child, {
                   index: i,
                   current: this.state.activeIndex === i,
-                  onTabChange: this.onTabChange
+                  onTabChange: this.onTabChange,
                 });
               }
               return null;
             })}
           </TabList>
         </Root>
-        {activePanel && (
-        <div>
-          {activePanel}
-        </div>
-)}
+        {activePanel && <div>{activePanel}</div>}
       </React.Fragment>
     );
   }

@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
@@ -15,30 +16,26 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { RadioGroup } from '../../src';
+import { Pagination } from '../../src';
 
 const items = [
-  { name: 'color', value: 'red', label: 'Red' },
-  { name: 'color', value: 'blue', label: 'Blue', defaultChecked: true },
-  { name: 'color', value: 'yellow', label: 'Yellow' },
-  { name: 'color', value: 'green', label: 'Green' },
+  {
+    text: 'Dashboard',
+    current: true,
+  },
+  { text: 'Projects', badge: '23' },
+  { text: 'Issues', badge: '99+' },
+  { text: 'Reports', badge: '6' },
+  { text: 'User Center' },
 ];
 
-storiesOf('Components | Radio', module)
+storiesOf('Components | Pagination', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(`info`)(
-      withNotes('This is radio')(() => (
-        <RadioGroup items={items} />
-      )),
-    ),
-  )
-  .add(
-    'Disable',
-    withInfo(`info`)(
-      withNotes('Disabled radio')(() => (
-        <RadioGroup items={items} isDisabled />
+      withNotes('This is Pagination')(() => (
+        <Pagination pageSize={5} current={3} />
       )),
     ),
   );

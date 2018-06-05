@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -46,6 +46,6 @@ storiesOf('Components | Menu', module)
             Logout
           </Menu.Item>
         </Menu>
-      ))
-    )
+      )),
+    ),
   );

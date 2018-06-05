@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = (baseConfig, env, defaultConfig) => {
   // Extend defaultConfig as you need.
@@ -12,9 +12,9 @@ module.exports = (baseConfig, env, defaultConfig) => {
   // defaultConfig.resolve.extensions.push(".ts", ".tsx");
 
   console.log(defaultConfig.node);
-defaultConfig.node = {
-  fs: 'empty'
-};
+  defaultConfig.node = {
+    fs: 'empty',
+  };
 
   return defaultConfig;
 };

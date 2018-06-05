@@ -12,9 +12,13 @@ const Root = styled.View`
   background-color: ${props => props.bg || '#fff'};
   width: ${props => props.width || 'auto'};
   height: ${props => props.height || 'auto'};
-  ${props => props.shadow && `
-    box-shadow: 0 13px 29px ${props.bg ? rgba(props.bg, 0.5) : 'rgba(64, 63, 81, 0.4)'}
-  `}
+  ${props =>
+    props.shadow &&
+    `
+    box-shadow: 0 13px 29px ${
+      props.bg ? rgba(props.bg, 0.5) : 'rgba(64, 63, 81, 0.4)'
+    }
+  `};
 `;
 
 export type Props = {
@@ -25,8 +29,21 @@ export type Props = {
   shadow?: boolean,
 };
 
-const Card = ({ children, width, height, bg, shadow = false, ...props }: Props) => (
-  <Root width={width} height={height} bg={bg} {...props} shadow={shadow}>
+const Card = ({
+  children,
+  width,
+  height,
+  bg,
+  shadow = false,
+  ...props
+}: Props) => (
+  <Root
+    width={width}
+    height={height}
+    bg={bg}
+    {...props}
+    shadow={shadow}
+  >
     {children}
   </Root>
 );

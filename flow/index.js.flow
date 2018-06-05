@@ -1,5 +1,5 @@
 // @flow
 
-declare module 'poblished' {
+declare module 'resize-observer-polyfill' {
   declare module.exports: any
 }

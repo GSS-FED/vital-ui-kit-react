@@ -19,7 +19,7 @@ type Props = {
   text: string,
   alarm?: boolean,
   warning?: boolean,
-  success?: boolean
+  success?: boolean,
 };
 
 const Hint = ({ text, alarm, warning, success }: Props) => (
@@ -31,7 +31,7 @@ const Hint = ({ text, alarm, warning, success }: Props) => (
 Hint.defaultProps = {
   alarm: false,
   warning: false,
-  success: false
+  success: false,
 };
 
 export default Hint;

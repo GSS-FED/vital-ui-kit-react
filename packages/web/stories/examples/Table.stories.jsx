@@ -13,12 +13,17 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import LoadData from '../Container/LoadData';
-import { Table, TableCaption as Caption, TableColumn as Column, TableHeader as Header } from '../../src';
+import {
+  Table,
+  TableCaption as Caption,
+  TableColumn as Column,
+  TableHeader as Header,
+} from '../../src';
 
 const sample = [
   {
@@ -26,7 +31,7 @@ const sample = [
     age: 30,
     gender: 'Female',
     Job: 'Front-end',
-    test: '2'
+    test: '2',
   },
   {
     name: 'Oliver',
@@ -37,8 +42,8 @@ const sample = [
     name: 'Jordan',
     age: 53,
     gender: 'Male',
-    test: 'haha'
-  }
+    test: 'haha',
+  },
 ];
 
 storiesOf('Components | Table', module)
@@ -48,7 +53,11 @@ storiesOf('Components | Table', module)
     withInfo(`info`)(
       withNotes('This is slider')(() => (
         <Table
-          textAlign={select('textAlign', {left: 'left', center: 'center' ,right: 'right'}, 'left')}
+          textAlign={select(
+            'textAlign',
+            { left: 'left', center: 'center', right: 'right' },
+            'left',
+          )}
           hasHorizontalBorder={boolean('hasHorizontalBorder', false)}
           hasVerticalBorder={boolean('hasVerticalBorder', false)}
           isStriped={boolean('isStriped', false)}
@@ -60,14 +69,18 @@ storiesOf('Components | Table', module)
           <Column title="Name" field="name" className="test" />
           <Column title="Age" field="age" className="test2" />
         </Table>
-      ))
-    )
+      )),
+    ),
   )
   .add('fetch from external data', () => (
     <LoadData url="https://jsonplaceholder.typicode.com/photos">
       {data => (
         <Table data={data}>
-          <Column title="Album Number" field="albumId" className="test" />
+          <Column
+            title="Album Number"
+            field="albumId"
+            className="test"
+          />
           <Column title="Link" field="url" className="test2" />
         </Table>
       )}

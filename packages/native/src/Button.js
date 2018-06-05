@@ -17,17 +17,22 @@ const Root = styled.TouchableOpacity`
 `;
 
 const Text = styled.Text`
-  color: ${props => (props.active ? '#fff' : props.theme.tintColor )};
+  color: ${props => (props.active ? '#fff' : props.theme.tintColor)};
   font-size: 16;
 `;
 
 export type ButtonProps = {
   title: string,
   active?: boolean,
-  onPress: () => void
+  onPress: () => void,
 };
 
-const Button = ({ title, active, onPress, ...props }: ButtonProps) => (
+const Button = ({
+  title,
+  active,
+  onPress,
+  ...props
+}: ButtonProps) => (
   <Root active={active} onPress={onPress} {...props}>
     <Text active={active}>{title}</Text>
   </Root>

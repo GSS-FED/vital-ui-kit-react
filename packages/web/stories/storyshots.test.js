@@ -1,6 +1,4 @@
-require('babel-register')
-
 import initStoryshots from '@storybook/addon-storyshots';
-import 'jest-styled-components'
+import 'jest-styled-components';
 
 initStoryshots({});

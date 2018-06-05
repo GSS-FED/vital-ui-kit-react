@@ -32,7 +32,7 @@ function Item({
 }: {
   children: React.Node,
   selected?: boolean,
-  onChange: () => {}
+  onChange: () => {},
 }) {
   return (
     <ListWrapper {...props}>
@@ -44,7 +44,7 @@ function Item({
 }
 
 Item.defaultProps = {
-  selected: false
+  selected: false,
 };
 
 type Props = {
@@ -52,7 +52,7 @@ type Props = {
   pageSize: number,
   /** current active page size */
   current: number,
-  onChange: () => {}
+  onChange: () => {},
 };
 
 /**
@@ -69,9 +69,7 @@ type Props = {
 
 const Pagination = ({ pageSize, current, onChange }: Props) => (
   <Root>
-    <Item>
-      First
-    </Item>
+    <Item>First</Item>
     <Item>
       <Icon
         style={{ marginRight: '5px' }}
@@ -97,9 +95,7 @@ const Pagination = ({ pageSize, current, onChange }: Props) => (
         size="12"
       />
     </Item>
-    <Item>
-      Last
-    </Item>
+    <Item>Last</Item>
   </Root>
 );
 

@@ -15,8 +15,7 @@ const LinearGradientWrapper = styled(LinearGradient)`
   align-items: center;
   shadow-opacity: 0.9;
   shadow-radius: 5px;
-  ${'' /* shadow-color: ${props => props.shadowColor}; */}
-  shadow-offset: 0px 5px;
+  ${'' /* shadow-color: ${props => props.shadowColor}; */} shadow-offset: 0px 5px;
 `;
 
 const Root = styled.View`

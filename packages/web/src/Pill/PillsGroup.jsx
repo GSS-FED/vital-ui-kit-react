@@ -19,27 +19,27 @@ type Props = {
   /** Vertical display */
   vertical?: boolean,
   /** The default active, match with pill's id */
-  default?: string | number | void
+  default?: string | number | void,
 };
 
 type State = {
-  current: string | number | void
+  current: string | number | void,
 };
 
 class PillsGroup extends React.Component<Props, State> {
   static defaultProps = {
     default: null,
     vertical: false,
-    current: null
+    current: null,
   };
 
   state = {
-    current: this.props.default
+    current: this.props.default,
   };
 
   onSelect = (id: string | number) => {
     this.setState({
-      current: id
+      current: id,
     });
   };
 
@@ -48,18 +48,14 @@ class PillsGroup extends React.Component<Props, State> {
       React.cloneElement(child, {
         current: this.state.current,
         onSelect: this.onSelect,
-        vertical: this.props.vertical
-      })
+        vertical: this.props.vertical,
+      }),
     );
 
   render() {
     const { vertical } = this.props;
     if (vertical) {
-      return (
-        <Root>
-          {this.renderChildren()}
-        </Root>
-);
+      return <Root>{this.renderChildren()}</Root>;
     }
     return (
       <PriorityNav vertical={vertical} current={this.state.current}>

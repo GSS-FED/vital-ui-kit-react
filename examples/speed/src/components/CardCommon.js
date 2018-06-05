@@ -8,8 +8,12 @@ const CardCommon = ({ content = null, onConfirm }) => (
       {content || 'Welcome to Vital UI Kit!'}
     </Card.Container>
     <Card.Footer>
-      <Card.FooterButton onClick={onConfirm}>Cancel</Card.FooterButton>
-      <Card.FooterButton onClick={onConfirm} primary>Confirm</Card.FooterButton>
+      <Card.FooterButton onClick={onConfirm}>
+        Cancel
+      </Card.FooterButton>
+      <Card.FooterButton onClick={onConfirm} primary>
+        Confirm
+      </Card.FooterButton>
     </Card.Footer>
   </Card>
 );

@@ -7,7 +7,7 @@ import { space, Space, flex, Flex } from './utils';
 
 const Container = styled.View`
   ${space};
-  ${flex}
+  ${flex};
 `;
 
 export type Props = Space & Flex;

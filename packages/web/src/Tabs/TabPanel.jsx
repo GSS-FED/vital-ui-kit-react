@@ -16,16 +16,12 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.Node
+  children: React.Node,
 };
 
 class TabPanel extends React.Component<Props> {
   render() {
-    return (
-      <Root>
-        {this.props.children}
-      </Root>
-);
+    return <Root>{this.props.children}</Root>;
   }
 }
 

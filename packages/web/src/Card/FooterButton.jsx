@@ -54,7 +54,7 @@ const Button = styled.button`
 type Props = {
   children: React.Node,
   primary?: boolean,
-  onClick: () => {}
+  onClick: () => {},
 };
 
 const FooterButton = ({
@@ -64,14 +64,12 @@ const FooterButton = ({
   ...props
 }: Props) => (
   <ButtonWrapper {...props} onClick={onClick}>
-    <Button primary={primary}>
-      {children}
-    </Button>
+    <Button primary={primary}>{children}</Button>
   </ButtonWrapper>
 );
 
 FooterButton.defaultProps = {
-  primary: false
+  primary: false,
 };
 
 export default FooterButton;

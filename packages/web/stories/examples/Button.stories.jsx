@@ -60,7 +60,8 @@ storiesOf('Components | Button', module)
               xlarge: 'xlarge',
             },
             'medium',
-          )}>
+          )}
+        >
           {text('Label', 'Default Button')}
         </Button>
       )),
@@ -83,7 +84,8 @@ storiesOf('Components | Button', module)
               warning: 'Warning',
             },
             'default',
-          )}>
+          )}
+        >
           {text('Label', 'Flat Button')}
         </Button>
       )),
@@ -106,7 +108,8 @@ storiesOf('Components | Button', module)
               warning: 'Warning',
             },
             'default',
-          )}>
+          )}
+        >
           {text('Label', 'Light Button')}
         </Button>
       )),
@@ -129,7 +132,8 @@ storiesOf('Components | Button', module)
         <Button
           link
           dark={boolean('Dark', false)}
-          underline={boolean('Underline', false)}>
+          underline={boolean('Underline', false)}
+        >
           {text('Label', 'Link Button')}
         </Button>
       )),
@@ -139,11 +143,7 @@ storiesOf('Components | Button', module)
     'Subtle',
     withInfo('subtle style')(
       withNotes('')(() => (
-        <Button
-          subtle
-          >
-          {text('Label', 'Subtle Button')}
-        </Button>
+        <Button subtle>{text('Label', 'Subtle Button')}</Button>
       )),
     ),
   )
@@ -170,15 +170,4 @@ storiesOf('Components | Button', module)
     ),
   );
 // .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-// .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
-
-// storiesOf('Label', module)
-//   .addDecorator(withKnobs)
-//   .add(
-//     'Input Label',
-//     withInfo(`info`)(
-//       withNotes('This is label')(() => (
-//         <Label>Hello {text('Label', 'Eric')}</Label>
-//       )),
-//     ),
-//   );
+// .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>); // storiesOf('Label', module) //   .addDecorator(withKnobs) //   .add( //     'Input Label', //     withInfo(`info`)( //       withNotes('This is label')(() => ( //         <Label>Hello {text('Label', 'Eric')}</Label> //       )), //     ), //   );

@@ -8,7 +8,7 @@ import {
   Icon,
   Modal,
   // ProgressBar,
-  Tooltip
+  Tooltip,
 } from '@gssfed/vital-ui-kit-react';
 
 import CardCommon from './CardCommon';
@@ -42,7 +42,7 @@ const Section = ({ title, children }) => (
 
 class Overview extends React.PureComponent {
   state = {
-    showModal: false
+    showModal: false,
   };
   render() {
     return (
@@ -121,7 +121,7 @@ class Overview extends React.PureComponent {
                     textOverflow: 'ellipsis',
                     paddingTop: '1.25rem',
                     width: '100%',
-                    color: '#456297'
+                    color: '#456297',
                   }}
                 >
                   Congrats
@@ -130,7 +130,7 @@ class Overview extends React.PureComponent {
                   style={{
                     fontSize: '0.93333rem',
                     lineHeight: '1.25rem',
-                    paddingTop: '10px'
+                    paddingTop: '10px',
                   }}
                 >
                   Let’s Get Started
@@ -151,7 +151,12 @@ class Overview extends React.PureComponent {
             Click here!
           </Button>
           <Modal show={this.state.showModal}>
-            <CardCommon content="Modal is controlled by state" onConfirm={() => {this.setState({showModal: false})}} />
+            <CardCommon
+              content="Modal is controlled by state"
+              onConfirm={() => {
+                this.setState({ showModal: false });
+              }}
+            />
           </Modal>
         </Section>
       </ScrollView>
@@ -166,11 +171,18 @@ const AVATAR = [
   { gender: 'male', size: 'small', round: true, outline: true },
   { gender: 'female', size: 'medium', round: true, badge: 10 },
   { gender: 'male', size: 'large', round: true },
-  { gender: 'female', size: 'xlarge', round: true, badge: 100 }
+  { gender: 'female', size: 'xlarge', round: true, badge: 100 },
 ];
 
 const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
 
-const NATRUE = ['default', 'primary', 'success', 'info', 'alarm', 'warning'];
+const NATRUE = [
+  'default',
+  'primary',
+  'success',
+  'info',
+  'alarm',
+  'warning',
+];
 
 const SIZE = ['xlarge', 'large', 'medium', 'small', 'xsmall'];

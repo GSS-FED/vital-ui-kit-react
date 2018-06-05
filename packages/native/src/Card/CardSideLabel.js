@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 
 export type P = {
   color: string,
-}
+};
 
 const CardSideLabel: ComponentType<P> = styled.View`
   position: absolute;

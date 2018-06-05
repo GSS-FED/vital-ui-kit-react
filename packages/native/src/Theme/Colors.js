@@ -1,4 +1,3 @@
-
 const colors = {
   purple: '#6C29A7',
   white: '#fff',

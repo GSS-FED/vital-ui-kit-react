@@ -11,7 +11,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -28,7 +28,7 @@ storiesOf('Components | ProgressBar', module)
           size={select(
             'size',
             { small: 'small', medium: 'medium', large: 'large' },
-            'medium'
+            'medium',
           )}
           alarm={boolean('alarm', false)}
           warning={boolean('warning', false)}
@@ -36,6 +36,6 @@ storiesOf('Components | ProgressBar', module)
           showStatus={boolean('showStatus', true)}
           textLabel={text('textLabel', 'File uploading')}
         />
-      ))
-    )
+      )),
+    ),
   );

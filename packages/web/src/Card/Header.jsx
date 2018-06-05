@@ -66,9 +66,7 @@ const Header = ({
   if (image) {
     return (
       <RootWithImage image={image} {...props}>
-        <h4 style={titleStyle}>
-          {title}
-        </h4>
+        <h4 style={titleStyle}>{title}</h4>
         {children}
       </RootWithImage>
     );
@@ -76,11 +74,7 @@ const Header = ({
 
   return (
     <Root {...props}>
-      {title && (
-      <Cell style={titleStyle}>
-        {title}
-      </Cell>
-)}
+      {title && <Cell style={titleStyle}>{title}</Cell>}
       {badge && (
         <BadgeCell>
           <Badge label={badge} />
@@ -95,7 +89,7 @@ Header.defaultProps = {
   title: null,
   image: null,
   badge: null,
-  titleStyle: null
+  titleStyle: null,
 };
 
 export default Header;

@@ -101,27 +101,29 @@ storiesOf('Components | Card', module)
     withInfo(`info`)(
       withNotes('')(() => (
         <Card width="300px">
-          <Card.Container style={{ 'textAlign': 'center' }}>
+          <Card.Container style={{ textAlign: 'center' }}>
             <Icon name="thumbs-up" size="90" color="#0e86fe" />
             <div
               style={{
-                'fontSize': '1.25rem',
-                'lineHeight': '1.5rem',
+                fontSize: '1.25rem',
+                lineHeight: '1.5rem',
                 overflow: 'hidden',
-                'whiteSpace': 'nowrap',
-                'textOverflow': 'ellipsis',
-                'paddingTop': '1.25rem',
+                whiteSpace: 'nowrap',
+                textOverflow: 'ellipsis',
+                paddingTop: '1.25rem',
                 width: '100%',
                 color: '#456297',
-              }}>
+              }}
+            >
               Congrats
             </div>
             <div
               style={{
-                'fontSize': '0.93333rem',
-                'lineHeight': '1.25rem',
-                'paddingTop': '10px',
-              }}>
+                fontSize: '0.93333rem',
+                lineHeight: '1.25rem',
+                paddingTop: '10px',
+              }}
+            >
               Let’s Get Started
             </div>
           </Card.Container>

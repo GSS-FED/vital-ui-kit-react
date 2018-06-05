@@ -10,7 +10,9 @@ import styled from 'styled-components';
 import { trunTo } from '../utils/math';
 
 const inverseOrNot = ({ inverse, theme }) => `
-  background-color: ${inverse ? theme.badge.inverseBg : theme.badge.bg};
+  background-color: ${
+    inverse ? theme.badge.inverseBg : theme.badge.bg
+  };
   color: ${inverse ? theme.badge.inverseColor : theme.badge.color};
 `;
 
@@ -49,7 +51,7 @@ const Badge = ({ label, trunc, inverse, ...props }: Props) => (
 
 Badge.defaultProps = {
   trunc: true,
-  inverse: false
+  inverse: false,
 };
 
 export default Badge;

@@ -20,7 +20,7 @@ type State = {
   grab: number,
   limit: number,
   startX: number,
-  value: number
+  value: number,
 };
 
 type Props = {
@@ -36,7 +36,7 @@ type Props = {
   trackLabel?: boolean,
   onChange: (number, SyntheticEvent<HTMLElement>) => mixed,
   onChangeStart?: (SyntheticEvent<HTMLElement>) => mixed,
-  onChangeComplete?: (SyntheticEvent<HTMLElement>) => mixed
+  onChangeComplete?: (SyntheticEvent<HTMLElement>) => mixed,
 };
 
 /**
@@ -74,14 +74,14 @@ class Slider extends React.Component<Props, State> {
     grab: 0,
     // cache the mouse down postion x
     startX: 0,
-    value: this.props.value || 0
+    value: this.props.value || 0,
   };
 
-  slider: HTMLElement;
+  slider: ?HTMLElement;
 
-  track: HTMLElement;
+  track: ?HTMLElement;
 
-  handle: HTMLElement;
+  handle: ?HTMLElement;
 
   // delay timeout of the button calling function
   start = 700;
@@ -103,7 +103,7 @@ class Slider extends React.Component<Props, State> {
     this.setState(prevState => ({
       limit: trackWidth - handleWith,
       grab: -handleWith / 2,
-      position: this.getPositionFromValue(prevState.value)
+      position: this.getPositionFromValue(prevState.value),
     }));
   };
 
@@ -112,7 +112,7 @@ class Slider extends React.Component<Props, State> {
     if (this.props.onChangeStart) this.props.onChangeStart(e);
     this.setState({
       active: true,
-      startX: e.clientX
+      startX: e.clientX,
     });
     // $FlowFixMe
     document.addEventListener('mousemove', this.handleDrag);
@@ -128,9 +128,8 @@ class Slider extends React.Component<Props, State> {
     const value =
       this.props.step *
       Math.round(
-        percentage *
-          (this.props.max - this.props.min) /
-          this.props.step
+        (percentage * (this.props.max - this.props.min)) /
+          this.props.step,
       );
     this.setState({ value });
     if (this.props.onChange) this.props.onChange(value, e);
@@ -147,7 +146,7 @@ class Slider extends React.Component<Props, State> {
     if (this.props.onChangeComplete) this.props.onChangeComplete(e);
     this.setState(prevState => ({
       active: false,
-      position: this.getPositionFromValue(prevState.value)
+      position: this.getPositionFromValue(prevState.value),
     }));
     // $FlowFixMe
     document.removeEventListener('mousemove', this.handleDrag);
@@ -174,8 +173,8 @@ class Slider extends React.Component<Props, State> {
       value: this.clamp(
         prevState.value + this.props.step,
         this.props.max,
-        this.props.min
-      )
+        this.props.min,
+      ),
     }));
   };
 
@@ -184,8 +183,8 @@ class Slider extends React.Component<Props, State> {
       value: this.clamp(
         prevState.value - this.props.step,
         this.props.max,
-        this.props.min
-      )
+        this.props.min,
+      ),
     }));
   };
 
@@ -208,9 +207,8 @@ class Slider extends React.Component<Props, State> {
     const value =
       this.props.step *
       Math.round(
-        percentage *
-          (this.props.max - this.props.min) /
-          this.props.step
+        (percentage * (this.props.max - this.props.min)) /
+          this.props.step,
       );
     return value;
   };
@@ -228,11 +226,11 @@ class Slider extends React.Component<Props, State> {
           clearTimeout(this.timeout);
           this.start = 700;
         },
-        style: { marginRight: '12px', flex: '0 0 auto' }
+        style: { marginRight: '12px', flex: '0 0 auto' },
       };
       if (this.props.decreaseButton) {
         return React.cloneElement(this.props.decreaseButton, {
-          ...buttonProps
+          ...buttonProps,
         });
       }
       return (
@@ -254,11 +252,11 @@ class Slider extends React.Component<Props, State> {
           clearTimeout(this.timeout);
           this.start = 700;
         },
-        style: { marginLeft: '12px', flex: '0 0 auto' }
+        style: { marginLeft: '12px', flex: '0 0 auto' },
       };
       if (this.props.increaseButton) {
         return React.cloneElement(this.props.increaseButton, {
-          ...buttonProps
+          ...buttonProps,
         });
       }
       return (
@@ -315,7 +313,7 @@ class Slider extends React.Component<Props, State> {
                 this.handle = s;
               }}
               style={{
-                left: `${position}px`
+                left: `${position}px`,
               }}
               active={this.state.active}
               onMouseDown={this.handleStart}

@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -20,14 +20,21 @@ import { Box } from '../../src';
 
 const ColorBox = styled(Box)`
   background-clip: content-box, padding-box;
-  background-image: linear-gradient(to bottom, rgba(240, 255, 40, 1) 0%, rgba(240, 255, 40, 1) 100%), linear-gradient(to bottom, rgba(240, 40, 40, 1) 0%, rgba(240, 40, 40, 1) 100%);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(240, 255, 40, 1) 0%,
+      rgba(240, 255, 40, 1) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(240, 40, 40, 1) 0%,
+      rgba(240, 40, 40, 1) 100%
+    );
 `;
 
 storiesOf('Components | Box', module).add(
   'Basic',
   withInfo(`info`)(() => (
-    <ColorBox padding="20px">
-      This is a box!
-    </ColorBox>
-  ))
+    <ColorBox padding="20px">This is a box!</ColorBox>
+  )),
 );

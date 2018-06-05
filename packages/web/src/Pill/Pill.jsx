@@ -21,9 +21,9 @@ const textWidth = props => {
 };
 
 const Root = styled.div`
-  background-color: ${({ theme, selected }) =>  theme.pill.bg(selected)};
-  color: ${({ selected, theme }) =>
-    theme.pill.color(selected)};
+  background-color: ${({ theme, selected }) =>
+    theme.pill.bg(selected)};
+  color: ${({ selected, theme }) => theme.pill.color(selected)};
   font-size: 1rem;
   position: relative;
   z-index: 5;
@@ -43,16 +43,16 @@ const Root = styled.div`
   ${({ selected, theme }) =>
     !selected &&
     css`
-    &:hover {
-      background-color: ${theme.pill.hover.bg};
-      color: ${theme.pill.hover.color};
-    }
+      &:hover {
+        background-color: ${theme.pill.hover.bg};
+        color: ${theme.pill.hover.color};
+      }
 
-    &:active {
-      background-color: ${theme.pill.active.bg};
-      color: ${theme.pill.active.color};
-    }
-  `};
+      &:active {
+        background-color: ${theme.pill.active.bg};
+        color: ${theme.pill.active.color};
+      }
+    `};
 `;
 
 const Text = styled.span`
@@ -83,7 +83,7 @@ type Props = {
   /** Vertical display */
   vertical?: boolean,
   /** Call when pill selected */
-  onSelect: (id: string | number) => {}
+  onSelect: (id: string | number) => {},
 };
 
 /**
@@ -105,7 +105,7 @@ class Pill extends Component<Props> {
     badge: null,
     current: false,
     vertical: false,
-  }
+  };
 
   static Group = PillsGroup;
 
