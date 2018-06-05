@@ -5,5 +5,12 @@
   "useWorkspaces": true,
   "publishConfig": {
     "access": "public"
+  },
+  "changelog": {
+    "repo": "GSS-FED/vital-ui-kit-react",
+    "labels": {
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix"
+    }
   }
 }
