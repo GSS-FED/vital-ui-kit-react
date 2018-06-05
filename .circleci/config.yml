@@ -30,10 +30,10 @@ jobs:
             - dependency-cache-
 
       - run:
-        name: Install Dependencies
-        command: |
-          yarn config set cache-folder .yarn-cache
-          yarn install --pure-lockfile
+          name: Install Dependencies
+          command: |
+            yarn config set cache-folder .yarn-cache
+            yarn install --pure-lockfile
       - run: yarn cache dir
       - save_cache:
           key: yarn-cache-{{ checksum "yarn.lock" }}
