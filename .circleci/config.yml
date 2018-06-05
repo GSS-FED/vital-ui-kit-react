@@ -31,7 +31,7 @@ jobs:
 
       - run:
         name: Install Dependencies
-          command: |
+          command:|
             yarn config set cache-folder .yarn-cache
             yarn install --pure-lockfile
       - run: yarn cache dir
