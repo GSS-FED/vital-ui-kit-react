@@ -7,5 +7,5 @@ export default {
   },
   large: {
     handlerSize: '28px',
-  }
+  },
 };

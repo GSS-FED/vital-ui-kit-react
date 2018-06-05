@@ -18,8 +18,11 @@
   <br>
 </p>
 
+[![CircleCI](https://circleci.com/gh/GSS-FED/vital-ui-kit-react/tree/master.svg?style=shield)](https://circleci.com/gh/GSS-FED/vital-ui-kit-react/tree/master)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FGSS-FED%2Fvital-ui-kit-react?ref=badge_shield)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 
 ## Intro
 [Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [Vital Cloud Services Family](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:

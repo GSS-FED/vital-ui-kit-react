@@ -9,22 +9,21 @@ const Root = styled.TouchableOpacity`
   height: ${props => props.height || 'auto'};
   justify-content: center;
   align-items: center;
-  background-color: ${props =>
-    props.active ? props.theme.tintColor : '#fff'};
+  background-color: ${props => (props.active ? props.theme.tintColor : '#fff')};
   border-radius: 50;
   border-width: ${props => (props.active ? 0 : 0.5)};
   border-color: #fff;
 `;
 
 const Text = styled.Text`
-  color: ${props => (props.active ? '#fff' : props.theme.tintColor )};
+  color: ${props => (props.active ? '#fff' : props.theme.tintColor)};
   font-size: 16;
 `;
 
 export type ButtonProps = {
   title: string,
   active?: boolean,
-  onPress: () => void
+  onPress: () => void,
 };
 
 const Button = ({ title, active, onPress, ...props }: ButtonProps) => (

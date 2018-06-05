@@ -17,7 +17,7 @@ const Box = styled.View`
   border-radius: 3;
   background: white;
   margin-right: 17;
-  ${boxShadow(0, 4, 5, '#000', 0.17)}
+  ${boxShadow(0, 4, 5, '#000', 0.17)};
 `;
 
 const Check = styled(Icon)`
@@ -39,7 +39,7 @@ class Checkbox extends React.Component<CheckboxProps, CheckboxState> {
   static defaultProps = {
     checked: false,
     size: 16,
-  }
+  };
   state = {
     checked: this.props.checked,
   };
@@ -57,14 +57,16 @@ class Checkbox extends React.Component<CheckboxProps, CheckboxState> {
     if (this.props.onChange) {
       this.props.onChange(this.state.checked);
     }
-  }
+  };
 
   render() {
     return (
       <TouchableOpacity onPress={this.onToggle}>
         <Root checked={this.state.checked}>
           <Box size={this.props.size}>
-            {this.state.checked && <Check color="#999" name="md-checkmark" size={this.props.size} />}
+            {this.state.checked && (
+              <Check color="#999" name="md-checkmark" size={this.props.size} />
+            )}
           </Box>
         </Root>
       </TouchableOpacity>

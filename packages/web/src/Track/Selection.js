@@ -21,7 +21,7 @@ const Root = styled.div`
         props,
         props.disabled
           ? props.theme.disabledBackground
-          : props.theme.background
+          : props.theme.background,
       )}
     ${borderRightRadius(0)};
 `;
@@ -35,7 +35,7 @@ type Props = {
   /** state warning */
   warning?: boolean,
   /** state success */
-  success?: boolean
+  success?: boolean,
 };
 
 const Selection = ({
@@ -44,7 +44,7 @@ const Selection = ({
   width,
   alarm,
   warning,
-  success
+  success,
 }: Props) => (
   <Root
     size={size}
@@ -61,7 +61,7 @@ Selection.defaultProps = {
   disabled: false,
   alarm: false,
   warning: false,
-  success: false
+  success: false,
 };
 
 export default Selection;

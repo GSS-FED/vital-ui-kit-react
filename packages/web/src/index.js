@@ -23,18 +23,18 @@ import {
   MultipleInput,
   FieldInput,
   TextArea,
-  StatelessTextArea
+  StatelessTextArea,
 } from './Form';
-import Select from "./Select";
-import Modal from "./Modal";
+import Select from './Select';
+import Modal from './Modal';
 import { List, ListContent, ListItem } from './List';
 import { Pill } from './Pill';
 import Slider from './Slider';
-import Tooltip from "./Tooltip";
-import ProgressBar from "./ProgressBar";
+import Tooltip from './Tooltip';
+import ProgressBar from './ProgressBar';
 import { Table, TableCaption, TableColumn, TableHeader } from './Table';
-import Pagination from "./Pagination";
-import Menu from "./Menu";
+import Pagination from './Pagination';
+import Menu from './Menu';
 import Tabs from './Tabs';
 import Layout from './Layout';
 import utils from './utils';
@@ -82,5 +82,5 @@ export {
   Tabs,
   Layout,
   utils,
-  colorPaletteGenerator
+  colorPaletteGenerator,
 };

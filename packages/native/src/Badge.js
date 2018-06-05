@@ -21,7 +21,7 @@ export type BadgeProps = {
   label: string | number,
   bg?: string,
   color?: string,
-}
+};
 
 const Badge = ({ label, bg, color, ...props }: BadgeProps) => (
   <Root bg={bg} {...props}>

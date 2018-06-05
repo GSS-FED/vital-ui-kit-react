@@ -1,9 +1,10 @@
 {
-  "extends": ["@gssfed", "plugin:prettier/recommended", "plugin:flowtype/recommended"],
+  "extends": ["@gssfed", "prettier", "plugin:flowtype/recommended"],
   "plugins": [
     "react",
     "flowtype",
-    "eslint-plugin-import"
+    "eslint-plugin-import",
+    "prettier"
   ],
   "parser": "babel-eslint",
   "globals": {

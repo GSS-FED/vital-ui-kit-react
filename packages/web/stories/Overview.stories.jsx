@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/no-array-index-key */
 
 import React from 'react';
 import styled from 'styled-components';

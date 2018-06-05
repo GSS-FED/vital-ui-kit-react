@@ -5,34 +5,35 @@ import fs from 'fs';
 
 const Root = styled.div``;
 
-
-
 class GettingStarted extends React.PureComponent {
   state = {
-      innerHeight: 0,
-    }
+    innerHeight: 0,
+  };
 
   Ref = React.createRef();
 
   componentDidMount() {
-    console.log({a: this.Ref.current});
+    console.log({ a: this.Ref.current });
     this.calcHeight();
   }
 
   calcHeight = () => {
     this.setState({
-      innerHeight: window.innerHeight - this.Ref.current.offsetTop
-    })
-  }
+      innerHeight: window.innerHeight - this.Ref.current.offsetTop,
+    });
+  };
 
   render() {
-    const README = fs.readFileSync(`${__dirname}/../../../../README.md`, "utf8");
+    const README = fs.readFileSync(
+      `${__dirname}/../../../../README.md`,
+      'utf8',
+    );
     return (
       <Root
         innerRef={this.Ref}
         style={{
           height: this.state.innerHeight,
-          overflow: 'scroll'
+          overflow: 'scroll',
         }}
         className="markdown-body"
       >

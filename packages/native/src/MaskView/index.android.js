@@ -21,7 +21,7 @@ const LinearCoverLeft = styled(LinearGradient)`
 `;
 
 const AnimatedLinearCoverLeft = Animated.createAnimatedComponent(
-  LinearGradient
+  LinearGradient,
 );
 
 type Props = {

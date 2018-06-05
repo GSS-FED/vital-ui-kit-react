@@ -36,7 +36,10 @@ class Nav extends React.PureComponent {
           <List.Item title={<TitleWrapper>File Managment</TitleWrapper>}>
             <List.Item title={<TitleWrapper>Hardware</TitleWrapper>} />
             <List.Item title={<TitleWrapper>Software</TitleWrapper>} />
-            <List.Item title={<TitleWrapper>Stationery</TitleWrapper>} badge="2" />
+            <List.Item
+              title={<TitleWrapper>Stationery</TitleWrapper>}
+              badge="2"
+            />
           </List.Item>
           <List.Item title={<TitleWrapper>Integrated Delivery</TitleWrapper>} />
           <List.Item title={<TitleWrapper>Register Operation</TitleWrapper>} />

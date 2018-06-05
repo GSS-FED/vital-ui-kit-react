@@ -31,7 +31,6 @@ export const grey700 = '#555555';
 export const grey800 = '#333333';
 export const grey900 = '#0D0D0D';
 
-
 // default color
 export const white = '#ffffff';
 export const primary = primary500;
@@ -57,5 +56,5 @@ export const bp = {
   padPortrait: ' 768px',
   phoneLand: ' 667px',
   phoneMiddle: ' 480px',
-  phonePortrait: ' 320px'
+  phonePortrait: ' 320px',
 };

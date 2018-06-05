@@ -3,7 +3,7 @@ import {
   ThemeProvider,
   Layout,
   colorPaletteGenerator,
-  defaultTheme
+  defaultTheme,
 } from '@gssfed/vital-ui-kit-react';
 
 import Nav from './components/Layout/Nav';
@@ -15,11 +15,13 @@ class App extends PureComponent {
     newColor: '#0E86FE',
   };
 
-
   render() {
     return (
       <ThemeProvider
-        theme={{...defaultTheme, ...colorPaletteGenerator(this.state.newColor)}}
+        theme={{
+          ...defaultTheme,
+          ...colorPaletteGenerator(this.state.newColor),
+        }}
       >
         <Layout>
           <Layout.Header>
@@ -27,9 +29,8 @@ class App extends PureComponent {
               onChangeColor={color => {
                 this.setState({
                   newColor: color,
-                })
-              }
-              }
+                });
+              }}
             />
           </Layout.Header>
           <Layout.Sidebar style={{ overflow: 'scroll' }}>

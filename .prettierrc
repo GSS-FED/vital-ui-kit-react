@@ -4,5 +4,6 @@
   "semi": true,
   "bracketSpacing": true,
   "printWidth": 80,
-  "parser": "flow"
+  "parser": "flow",
+  "jsxBracketSameLine": false
 }

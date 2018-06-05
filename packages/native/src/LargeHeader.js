@@ -72,11 +72,7 @@ class LargeHeader extends React.Component<LargeHeaderProps, LargeHeaderState> {
             },
           ]}
         >
-          {this.props.avatar && (
-            <AvatarView>
-              {this.props.avatar}
-            </AvatarView>
-          )}
+          {this.props.avatar && <AvatarView>{this.props.avatar}</AvatarView>}
           <Animated.Text
             onLayout={e => {
               if (this.offset === 0 && this.state.titleWidth === 0) {

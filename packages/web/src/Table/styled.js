@@ -6,8 +6,7 @@ export const StyledTable = styled.table`
   text-align: ${props => props.textAlign || 'left'};
 
   thead {
-    border-bottom: ${props =>
-      props.hasHorizontalBorder && props.theme.border};
+    border-bottom: ${props => props.hasHorizontalBorder && props.theme.border};
 
     ${props =>
       props.isResponsive &&
@@ -31,8 +30,7 @@ export const StyledTable = styled.table`
   th {
     color: ${props => props.theme.table.color};
     padding: 0.6667rem 1.3333rem;
-    border-right: ${props =>
-      props.hasVerticalBorder && props.theme.border};
+    border-right: ${props => props.hasVerticalBorder && props.theme.border};
 
     &:last-child {
       border: 0;
@@ -99,8 +97,7 @@ export const StyledTable = styled.table`
   }
 
   tr {
-    border-bottom: ${props =>
-      props.hasHorizontalBorder && props.theme.border};
+    border-bottom: ${props => props.hasHorizontalBorder && props.theme.border};
 
     &:last-child {
       border: 0;
@@ -110,8 +107,7 @@ export const StyledTable = styled.table`
   td {
     padding: 0.6667rem 1.3333rem;
     color: #456297;
-    border-right: ${props =>
-      props.hasVerticalBorder && props.theme.border};
+    border-right: ${props => props.hasVerticalBorder && props.theme.border};
     &:last-child {
       border: 0;
     }

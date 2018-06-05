@@ -11,26 +11,33 @@ export type Space = {
   paddingTop?: string,
   paddingLeft?: string,
   paddingRight?: string,
-  paddingBottom?: string
+  paddingBottom?: string,
 };
 
-type FlexAlignType = "flex-start" | "flex-end" | "center" | "stretch" | "baseline";
+type FlexAlignType =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'stretch'
+  | 'baseline';
 
 export type Flex = {
   flex?: number,
-  alignContent?: "flex-start" | "flex-end" | "center" | "stretch" | "space-between" | "space-around",
-  flexDirection?:
-    | 'row'
-    | 'row-reverse'
-    | 'column'
-    | 'column-reverse',
+  alignContent?:
+    | 'flex-start'
+    | 'flex-end'
+    | 'center'
+    | 'stretch'
+    | 'space-between'
+    | 'space-around',
+  flexDirection?: 'row' | 'row-reverse' | 'column' | 'column-reverse',
   justifyContent?:
     | 'flex-start'
     | 'flex-end'
     | 'center'
     | 'space-between'
     | 'space-around',
-  alignItems?: FlexAlignType
+  alignItems?: FlexAlignType,
 };
 
 export const space = (props: Space) => ({
@@ -46,12 +53,12 @@ export const space = (props: Space) => ({
   paddingTop: props.paddingTop || '',
   paddingLeft: props.paddingLeft || '',
   paddingRight: props.paddingRight || '',
-  paddingBottom: props.paddingBottom || ''
+  paddingBottom: props.paddingBottom || '',
 });
 
 export const flex = (props: Flex) => ({
   flex: props.flex || '',
   flexDirection: props.flexDirection || '',
   justifyContent: props.justifyContent || '',
-  alignItems: props.alignItems || ''
+  alignItems: props.alignItems || '',
 });

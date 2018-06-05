@@ -5,12 +5,10 @@ import { Pill, Tabs } from '@gssfed/vital-ui-kit-react';
 import Overview from '../Overview';
 import Form from '../Form';
 
-
-const Top = styled.div`
-`;
+const Top = styled.div``;
 
 class Main extends React.PureComponent {
-  state = {  }
+  state = {};
   render() {
     return (
       <Top>
@@ -29,16 +27,8 @@ class Main extends React.PureComponent {
               </Tabs.Panel>
             }
           />
-          <Tabs.Tab
-            label="Form"
-            badge={1}
-            panel={<Form />}
-          />
-          <Tabs.Tab
-            label="Components"
-            badge={100}
-            panel="yoyo"
-          />
+          <Tabs.Tab label="Form" badge={1} panel={<Form />} />
+          <Tabs.Tab label="Components" badge={100} panel="yoyo" />
         </Tabs>
       </Top>
     );

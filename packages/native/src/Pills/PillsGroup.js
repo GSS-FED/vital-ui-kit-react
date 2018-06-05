@@ -12,9 +12,15 @@ export type PillsGroupProps = {
   children: React.ReactNode,
 };
 
-const PillsGroup = ({ marginBetween = 6, children, ...props }: PillsGroupProps) => (
+const PillsGroup = ({
+  marginBetween = 6,
+  children,
+  ...props
+}: PillsGroupProps) => (
   <Root marginBetween={marginBetween} {...props}>
-    {React.Children.map(children, child => React.cloneElement(child, { style: { marginRight: marginBetween } }))}
+    {React.Children.map(children, child =>
+      React.cloneElement(child, { style: { marginRight: marginBetween } }),
+    )}
   </Root>
 );
 

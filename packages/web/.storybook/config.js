@@ -5,7 +5,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import { ThemeProvider } from '../src/base';
 
-import '../src/base/global.css'
+import '../src/base/global.css';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
@@ -26,8 +26,8 @@ setDefaults({
         ...stylesheet.button.topRight,
         top: 'unset',
         bottom: '0',
-      }
-    }
+      },
+    },
   }),
 });
 
@@ -38,7 +38,6 @@ setOptions({
   sortStoriesByKind: true,
   sidebarAnimations: false,
 });
-
 
 addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
 // automatically import all files ending in *.stories.js

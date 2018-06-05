@@ -14,7 +14,7 @@ export type Space = {
   paddingTop?: string,
   paddingLeft?: string,
   paddingRight?: string,
-  paddingBottom?: string
+  paddingBottom?: string,
 };
 
 export const space = (props: Space) => ({
@@ -30,19 +30,19 @@ export const space = (props: Space) => ({
   paddingTop: props.paddingTop || '',
   paddingLeft: props.paddingLeft || '',
   paddingRight: props.paddingRight || '',
-  paddingBottom: props.paddingBottom || ''
+  paddingBottom: props.paddingBottom || '',
 });
 
 type StatusProps = {
   alarm: boolean,
   warning: boolean,
   success: boolean,
-  theme: Object
-}
+  theme: Object,
+};
 
 export const stateColor = (
   { alarm, warning, success, theme }: StatusProps,
-  defaultColor?: string
+  defaultColor?: string,
 ) => {
   if (alarm) return theme.alarm;
   if (warning) return theme.warning;
@@ -55,7 +55,7 @@ export const transitionBase = (
   type: string = 'all',
   duration: string = '120ms',
   timing: string = 'ease-out',
-  delay: string = ''
+  delay: string = '',
 ) => `transition: ${type} ${duration} ${timing} ${delay}`;
 
 export const borderBottomRadius = (size: number) => `

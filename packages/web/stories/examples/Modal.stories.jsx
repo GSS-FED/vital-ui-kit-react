@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -21,21 +21,19 @@ import { Modal, Card, Button } from '../../src';
 const items = [
   {
     text: 'Dashboard',
-    current: true
+    current: true,
   },
   { text: 'Projects', badge: '23' },
   { text: 'Issues', badge: '99+' },
   { text: 'Reports', badge: '6' },
-  { text: 'User Center' }
+  { text: 'User Center' },
 ];
 
 storiesOf('Components | Modal', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
-    withInfo(`info`)(
-      withNotes('This is Modal')(() => <ModalExample />)
-    )
+    withInfo(`info`)(withNotes('This is Modal')(() => <ModalExample />)),
   );
 
 class ModalExample extends Component {
@@ -44,10 +42,7 @@ class ModalExample extends Component {
   render() {
     return (
       <Fragment>
-        <Button
-          subtle
-          onClick={() => this.setState({ showModal: true })}
-        >
+        <Button subtle onClick={() => this.setState({ showModal: true })}>
           Show
         </Button>
         <Modal show={this.state.showModal}>

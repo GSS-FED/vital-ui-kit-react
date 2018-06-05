@@ -12,9 +12,11 @@ const AVATAR_SIZE = 37;
 const Root = styled.View`
   height: ${props => props.size};
   width: ${props => props.size};
-  ${props => props.shadow && `
+  ${props =>
+    props.shadow &&
+    `
     ${boxShadow(-14, 8, 35, '#000', 0.34)}
-  `}
+  `};
 `;
 
 const Image = styled.Image`
@@ -29,11 +31,22 @@ export type AvatarProps = {
   shadow: boolean,
   wrapperStyle?: ViewStyle,
   imageStyle?: ImageStyle,
-}
+};
 
-const Avatar = ({ size = AVATAR_SIZE, src = null, shadow = false, wrapperStyle, imageStyle, ...props }: AvatarProps) => (
+const Avatar = ({
+  size = AVATAR_SIZE,
+  src = null,
+  shadow = false,
+  wrapperStyle,
+  imageStyle,
+  ...props
+}: AvatarProps) => (
   <Root shadow={shadow} size={size} style={wrapperStyle} {...props}>
-    <Image source={src ? { uri: src } : require('../assets/avatar-alien.png')} size={size} style={imageStyle} />
+    <Image
+      source={src ? { uri: src } : require('../assets/avatar-alien.png')}
+      size={size}
+      style={imageStyle}
+    />
   </Root>
 );
 

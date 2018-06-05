@@ -7,5 +7,5 @@ export default {
   },
   large: {
     trackHeight: '12px',
-  }
+  },
 };

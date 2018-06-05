@@ -6,16 +6,16 @@ import axios from 'axios';
 
 type State = {
   data?: any,
-}
+};
 
 type Props = {
   url: string,
-  children: (any) => React.Element<any>,
-}
+  children: any => React.Element<any>,
+};
 
 class LoadData extends React.Component<Props, State> {
   state = {
-    data: null
+    data: null,
   };
 
   componentDidMount() {

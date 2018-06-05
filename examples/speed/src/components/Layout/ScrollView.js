@@ -2,30 +2,30 @@
 
 import * as React from 'react';
 
-type P ={
+type P = {
   children: React.ReactNode,
-}
+};
 
 type S = {
   innerHeight: number,
-}
+};
 
 class ScrollView extends React.PureComponent<P, S> {
   state = {
     innerHeight: 0,
-   }
+  };
 
-   Ref = React.createRef();
+  Ref = React.createRef();
 
-   componentDidMount() {
+  componentDidMount() {
     this.calcHeight();
   }
 
   calcHeight = () => {
     this.setState({
-      innerHeight: window.innerHeight - this.Ref.current.offsetTop
-    })
-  }
+      innerHeight: window.innerHeight - this.Ref.current.offsetTop,
+    });
+  };
 
   render() {
     return (
@@ -33,7 +33,7 @@ class ScrollView extends React.PureComponent<P, S> {
         ref={this.Ref}
         style={{
           height: this.state.innerHeight,
-          overflow: 'scroll'
+          overflow: 'scroll',
         }}
       >
         {this.props.children}

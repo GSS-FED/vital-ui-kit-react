@@ -58,9 +58,9 @@ const MenuWrapper = styled.div`
 class Header extends PureComponent {
   state = {};
 
-  changeHandler = (value) => {
-    this.props.onChangeColor(value.color)
-  }
+  changeHandler = value => {
+    this.props.onChangeColor(value.color);
+  };
 
   render() {
     return (
