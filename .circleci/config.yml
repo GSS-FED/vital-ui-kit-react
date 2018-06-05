@@ -16,32 +16,32 @@ jobs:
 
     # working_directory: ~/repo
 
-  steps:
-    - checkout
+    steps:
+      - checkout
 
-    # Download and cache dependencies
-    - restore_cache:
-        keys:
-          - yarn-cache-{{ checksum "yarn.lock" }}
-          - yarn-cache-
-    - restore_cache:
-        keys:
-          - dependency-cache-{{ checksum "yarn.lock" }}
-          - dependency-cache-
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - yarn-cache-{{ checksum "yarn.lock" }}
+            - yarn-cache-
+      - restore_cache:
+          keys:
+            - dependency-cache-{{ checksum "yarn.lock" }}
+            - dependency-cache-
 
-    - run:
-      name: Install Dependencies
-        command: |
-          yarn config set cache-folder .yarn-cache
-          yarn install --pure-lockfile
-    - run: yarn cache dir
-    - save_cache:
-        key: yarn-cache-{{ checksum "yarn.lock" }}
-        paths:
-          - .yarn-cache
-    - save_cache:
-        key: dependency-cache-{{ checksum "yarn.lock" }}
-        paths:
-          - node_modules
+      - run:
+        name: Install Dependencies
+          command: |
+            yarn config set cache-folder .yarn-cache
+            yarn install --pure-lockfile
+      - run: yarn cache dir
+      - save_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - .yarn-cache
+      - save_cache:
+          key: dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
 
-    - test: yarn run test:web
+      - test: yarn run test:web
