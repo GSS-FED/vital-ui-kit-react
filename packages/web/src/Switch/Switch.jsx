@@ -107,7 +107,7 @@ const TextOn = styled(Text)`
 `;
 
 type State = {
-  checked: boolean
+  checked: boolean,
 };
 
 type Props = {
@@ -117,7 +117,7 @@ type Props = {
   iconBtn?: string,
   iconLabelFront?: string,
   iconLabelBack?: string,
-  theme: Object
+  theme: Object,
 };
 
 /**
@@ -140,7 +140,7 @@ class Switch extends Component<Props, State> {
   };
 
   state = {
-    checked: this.props.defaultChecked || false
+    checked: this.props.defaultChecked || false,
   };
 
   onCheck = () => {
@@ -155,7 +155,7 @@ class Switch extends Component<Props, State> {
       iconBtn,
       iconLabelFront,
       iconLabelBack,
-      theme
+      theme,
     } = this.props;
     return (
       <Root onClick={this.onCheck}>
@@ -172,14 +172,13 @@ class Switch extends Component<Props, State> {
           )}
           {iconLabelBack && (
             <TextOff checked={this.state.checked}>
-              <Icon name={iconLabelBack} color={theme.form.switch.icon} />
+              <Icon
+                name={iconLabelBack}
+                color={theme.form.switch.icon}
+              />
             </TextOff>
           )}
-          <Btn
-            icon={iconBtn}
-            isRound={isRound}
-            disabled={disabled}
-          >
+          <Btn icon={iconBtn} isRound={isRound} disabled={disabled}>
             {iconBtn && (
               <Icon
                 color={

@@ -120,7 +120,8 @@ export default (theme: Object) => ({
   },
   pill: {
     bg: (selected: boolean) => (selected ? '#2A4880' : 'transparent'),
-    color: (selected: boolean) => (selected ? theme.white : '#456296'),
+    color: (selected: boolean) =>
+      selected ? theme.white : '#456296',
     hover: {
       bg: '#d8e2f5',
       color: '#456296',
@@ -155,7 +156,9 @@ export default (theme: Object) => ({
     },
   },
   tab: {
-    bg: `linear-gradient(to left, ${theme.info}, ${theme.primary500})`,
+    bg: `linear-gradient(to left, ${theme.info}, ${
+      theme.primary500
+    })`,
     panel: {
       bg: theme.white,
       color: theme.secondary600,

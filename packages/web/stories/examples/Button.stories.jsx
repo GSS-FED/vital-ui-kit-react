@@ -14,7 +14,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
@@ -46,9 +46,9 @@ storiesOf('Components | Button', module)
               success: 'Success',
               info: 'Info',
               alarm: 'Alarm',
-              warning: 'Warning'
+              warning: 'Warning',
             },
-            'default'
+            'default',
           )}
           size={select(
             'Size',
@@ -57,15 +57,15 @@ storiesOf('Components | Button', module)
               small: 'small',
               medium: 'medium',
               large: 'large',
-              xlarge: 'xlarge'
+              xlarge: 'xlarge',
             },
-            'medium'
+            'medium',
           )}
         >
           {text('Label', 'Default Button')}
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Flat',
@@ -81,15 +81,15 @@ storiesOf('Components | Button', module)
               success: 'Success',
               info: 'Info',
               alarm: 'Alarm',
-              warning: 'Warning'
+              warning: 'Warning',
             },
-            'default'
+            'default',
           )}
         >
           {text('Label', 'Flat Button')}
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Light',
@@ -105,15 +105,15 @@ storiesOf('Components | Button', module)
               success: 'Success',
               info: 'Info',
               alarm: 'Alarm',
-              warning: 'Warning'
+              warning: 'Warning',
             },
-            'default'
+            'default',
           )}
         >
           {text('Label', 'Light Button')}
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Disable',
@@ -122,8 +122,8 @@ storiesOf('Components | Button', module)
         <Button disabled={boolean('Disabled', true)}>
           {text('Label', 'Disable Button')}
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Link',
@@ -136,18 +136,16 @@ storiesOf('Components | Button', module)
         >
           {text('Label', 'Link Button')}
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Subtle',
     withInfo('subtle style')(
       withNotes('')(() => (
-        <Button subtle>
-          {text('Label', 'Subtle Button')}
-        </Button>
-      ))
-    )
+        <Button subtle>{text('Label', 'Subtle Button')}</Button>
+      )),
+    ),
   )
   .add(
     'Circular style',
@@ -156,37 +154,20 @@ storiesOf('Components | Button', module)
         <Button circle={boolean('circle', true)}>
           <Icon name="plus" color="#3b5998" />
         </Button>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
         <ButtonGroup>
-          <Button>
-            {text('Label', 'Button')}
-          </Button>
-          <Button>
-            {text('Label', 'Button')}
-          </Button>
-          <Button>
-            {text('Label', 'Button')}
-          </Button>
+          <Button>{text('Label', 'Button')}</Button>
+          <Button>{text('Label', 'Button')}</Button>
+          <Button>{text('Label', 'Button')}</Button>
         </ButtonGroup>
-      ))
-    )
+      )),
+    ),
   );
 // .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-// .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
-
-// storiesOf('Label', module)
-//   .addDecorator(withKnobs)
-//   .add(
-//     'Input Label',
-//     withInfo(`info`)(
-//       withNotes('This is label')(() => (
-//         <Label>Hello {text('Label', 'Eric')}</Label>
-//       )),
-//     ),
-//   );
+// .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>); // storiesOf('Label', module) //   .addDecorator(withKnobs) //   .add( //     'Input Label', //     withInfo(`info`)( //       withNotes('This is label')(() => ( //         <Label>Hello {text('Label', 'Eric')}</Label> //       )), //     ), //   );

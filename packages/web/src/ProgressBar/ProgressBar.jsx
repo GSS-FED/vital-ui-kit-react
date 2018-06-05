@@ -33,7 +33,8 @@ const StatusWrapper = styled.div`
 const Status = styled.div`
   min-width: 10px;
   white-space: nowrap;
-  color: ${props => stateColor(props, props.theme.progressBar.defaultColor)};
+  color: ${props =>
+    stateColor(props, props.theme.progressBar.defaultColor)};
 `;
 
 const Label = styled(Status)`
@@ -41,7 +42,7 @@ const Label = styled(Status)`
 `;
 
 type State = {
-  width: number
+  width: number,
 };
 
 type Props = {
@@ -58,7 +59,7 @@ type Props = {
   /** state warning */
   warning?: boolean,
   /** state success */
-  success?: boolean
+  success?: boolean,
 };
 
 /**
@@ -83,7 +84,7 @@ class ProgressBar extends React.Component<Props, State> {
   };
 
   state = {
-    width: 0
+    width: 0,
   };
 
   componentDidMount() {
@@ -101,8 +102,8 @@ class ProgressBar extends React.Component<Props, State> {
   getPositionFromValue = () => {
     this.setState({
       width: Math.round(
-        this.props.value / 100 * this.node.offsetWidth
-      )
+        (this.props.value / 100) * this.node.offsetWidth,
+      ),
     });
   };
 
@@ -123,7 +124,7 @@ class ProgressBar extends React.Component<Props, State> {
       textLabel,
       size,
       value,
-      showStatus
+      showStatus,
     } = this.props;
     return (
       <Root>

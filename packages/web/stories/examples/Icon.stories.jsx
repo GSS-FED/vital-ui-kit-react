@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -47,28 +47,32 @@ storiesOf('Components | Icon', module)
           {value => (
             <Display>
               {defaultIcon.icons
-              .filter(icon => {
-                if (value === "") {
-                  return true;
-                }
-                return icon.properties.name.indexOf(value) > -1;
-              })
-              .map(icon => (
-                <Tooltip
-                  key={icon.icon.defaultCode}
-                  placement="bottom"
-                  overlay={icon.properties.name}
-                  trigger={['hover']}
-                  mouseLeaveDelay={0}
-                >
-                  <Wrapper>
-                    <Icon name={icon.icon.tags[0]} size={32} color="#2A487F" />
-                  </Wrapper>
-                </Tooltip>
-              ))}
+                .filter(icon => {
+                  if (value === '') {
+                    return true;
+                  }
+                  return icon.properties.name.indexOf(value) > -1;
+                })
+                .map(icon => (
+                  <Tooltip
+                    key={icon.icon.defaultCode}
+                    placement="bottom"
+                    overlay={icon.properties.name}
+                    trigger={['hover']}
+                    mouseLeaveDelay={0}
+                  >
+                    <Wrapper>
+                      <Icon
+                        name={icon.icon.tags[0]}
+                        size={32}
+                        color="#2A487F"
+                      />
+                    </Wrapper>
+                  </Tooltip>
+                ))}
             </Display>
           )}
         </Filter>
-      ))
-    )
+      )),
+    ),
   );

@@ -19,7 +19,12 @@ import { RadioGroup } from '../../src';
 
 const items = [
   { name: 'color', value: 'red', label: 'Red' },
-  { name: 'color', value: 'blue', label: 'Blue', defaultChecked: true },
+  {
+    name: 'color',
+    value: 'blue',
+    label: 'Blue',
+    defaultChecked: true,
+  },
   { name: 'color', value: 'yellow', label: 'Yellow' },
   { name: 'color', value: 'green', label: 'Green' },
 ];
@@ -29,9 +34,7 @@ storiesOf('Components | Radio', module)
   .add(
     'Basic',
     withInfo(`info`)(
-      withNotes('This is radio')(() => (
-        <RadioGroup items={items} />
-      )),
+      withNotes('This is radio')(() => <RadioGroup items={items} />),
     ),
   )
   .add(

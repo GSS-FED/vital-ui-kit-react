@@ -7,7 +7,9 @@ export { default as Input } from './Input/Input';
 export { default as StatelessInput } from './Input/StatelessInput';
 
 export { default as TextArea } from './TextArea/TextArea';
-export { default as StatelessTextArea } from './TextArea/StatelessTextArea';
+export {
+  default as StatelessTextArea,
+} from './TextArea/StatelessTextArea';
 
 export { default as MultipleInput } from './MultipleInput';
 export { default as FieldInput } from './FieldInput';

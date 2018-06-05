@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -21,16 +21,26 @@ import { Layout } from '../../src';
 storiesOf('Components | Layout', module).add(
   'Basic',
   withInfo(`info`)(() => (
-    <Layout style={{ height: '100vh'}}>
-      <Layout.Header style={{background: 'blue' }}>Header</Layout.Header>
-      <Layout.Sidebar style={{background: 'red' }}>sidebar</Layout.Sidebar>
+    <Layout style={{ height: '100vh' }}>
+      <Layout.Header style={{ background: 'blue' }}>
+        Header
+      </Layout.Header>
+      <Layout.Sidebar style={{ background: 'red' }}>
+        sidebar
+      </Layout.Sidebar>
       <Layout.Content style={{ background: 'yellow' }}>
         <Layout>
-          <Layout.Header style={{background: 'blue' }}>Header</Layout.Header>
-          <Layout.Sidebar style={{background: 'red' }}>sidebar</Layout.Sidebar>
-          <Layout.Content style={{ background: 'pink' }}>content</Layout.Content>
+          <Layout.Header style={{ background: 'blue' }}>
+            Header
+          </Layout.Header>
+          <Layout.Sidebar style={{ background: 'red' }}>
+            sidebar
+          </Layout.Sidebar>
+          <Layout.Content style={{ background: 'pink' }}>
+            content
+          </Layout.Content>
         </Layout>
       </Layout.Content>
     </Layout>
-  ))
+  )),
 );

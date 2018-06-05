@@ -16,10 +16,8 @@ type Props = {
   children: TabItem,
 };
 
-const TabList = ({ children, ...props}: Props) => (
-  <Root {...props}>
-    {children}
-  </Root>
-)
+const TabList = ({ children, ...props }: Props) => (
+  <Root {...props}>{children}</Root>
+);
 
 export default TabList;

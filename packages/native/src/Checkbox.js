@@ -65,7 +65,11 @@ class Checkbox extends React.Component<CheckboxProps, CheckboxState> {
         <Root checked={this.state.checked}>
           <Box size={this.props.size}>
             {this.state.checked && (
-              <Check color="#999" name="md-checkmark" size={this.props.size} />
+              <Check
+                color="#999"
+                name="md-checkmark"
+                size={this.props.size}
+              />
             )}
           </Box>
         </Root>

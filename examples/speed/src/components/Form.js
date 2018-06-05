@@ -43,7 +43,9 @@ class Form extends PureComponent {
                 <Hint text="Username is available" success />
               )}
             {touched.username &&
-              !values.username && <Hint text="Username is required" alarm />}
+              !values.username && (
+                <Hint text="Username is required" alarm />
+              )}
           </FieldInput>
           <FieldInput required label="Fullname">
             <MultipleInput>

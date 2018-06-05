@@ -33,7 +33,9 @@ storiesOf('Components | Modal', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
-    withInfo(`info`)(withNotes('This is Modal')(() => <ModalExample />)),
+    withInfo(`info`)(
+      withNotes('This is Modal')(() => <ModalExample />),
+    ),
   );
 
 class ModalExample extends Component {
@@ -42,7 +44,10 @@ class ModalExample extends Component {
   render() {
     return (
       <Fragment>
-        <Button subtle onClick={() => this.setState({ showModal: true })}>
+        <Button
+          subtle
+          onClick={() => this.setState({ showModal: true })}
+        >
           Show
         </Button>
         <Modal show={this.state.showModal}>

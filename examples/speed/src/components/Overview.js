@@ -176,6 +176,13 @@ const AVATAR = [
 
 const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
 
-const NATRUE = ['default', 'primary', 'success', 'info', 'alarm', 'warning'];
+const NATRUE = [
+  'default',
+  'primary',
+  'success',
+  'info',
+  'alarm',
+  'warning',
+];
 
 const SIZE = ['xlarge', 'large', 'medium', 'small', 'xsmall'];

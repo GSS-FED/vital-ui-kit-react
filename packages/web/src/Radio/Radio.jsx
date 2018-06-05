@@ -14,8 +14,7 @@ const Root = styled.label`
   position: relative;
   margin: 0 5px 10px 0;
   word-break: break-word;
-  color: ${({ isDisabled, theme }) =>
-    theme.radio.color(isDisabled)};
+  color: ${({ isDisabled, theme }) => theme.radio.color(isDisabled)};
   line-height: 1.3333rem;
   font-size: 1rem;
   cursor: ${props => (props.isDisabled ? 'not-allowed' : 'pointer')};
@@ -82,7 +81,7 @@ type Props = {
   value: string,
   defaultChecked?: boolean,
   isDisabled?: boolean,
-  onChange: () => void
+  onChange: () => void,
 };
 
 const Radio = ({
@@ -104,15 +103,13 @@ const Radio = ({
       onChange={onChange}
       {...props}
     />
-    <Label isDisabled={isDisabled}>
-      {label}
-    </Label>
+    <Label isDisabled={isDisabled}>{label}</Label>
   </Root>
 );
 
 Radio.defaultProps = {
   defaultChecked: false,
-  isDisabled: false
+  isDisabled: false,
 };
 
 export default Radio;

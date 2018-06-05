@@ -43,7 +43,9 @@ const Avatar = ({
 }: AvatarProps) => (
   <Root shadow={shadow} size={size} style={wrapperStyle} {...props}>
     <Image
-      source={src ? { uri: src } : require('../assets/avatar-alien.png')}
+      source={
+        src ? { uri: src } : require('../assets/avatar-alien.png')
+      }
       size={size}
       style={imageStyle}
     />

@@ -11,17 +11,16 @@ import { transitionBase } from '../utils';
 const Root = styled.div`
   position: fixed;
   z-index: 10000;
-  ${transitionBase}
+  ${transitionBase};
 `;
 
 type Props = {
   children: React.Node,
   windowWidth: number,
-  windowHeight: number
+  windowHeight: number,
 };
 
 class ModalWrapper extends React.Component<Props> {
-
   componentDidMount() {
     this.getWidth();
   }
@@ -42,7 +41,7 @@ class ModalWrapper extends React.Component<Props> {
         2}px`,
       modalLeft: `${(nextProps.windowWidth -
         this.modal.firstChild.offsetWidth) /
-        2}px`
+        2}px`,
     };
   }
 

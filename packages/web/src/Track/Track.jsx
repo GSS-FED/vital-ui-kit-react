@@ -41,7 +41,7 @@ type Props = {
   onMouseUp?: (e: SyntheticMouseEvent<HTMLElement>) => {},
   onTouchStart?: (e: SyntheticMouseEvent<HTMLElement>) => {},
   onTouchEnd?: (e: SyntheticMouseEvent<HTMLElement>) => {},
-  trackRef?: (s: HTMLElement) => {}
+  trackRef?: (s: HTMLElement) => {},
 };
 
 const Track = ({
@@ -55,7 +55,7 @@ const Track = ({
   trackRef,
   alarm,
   warning,
-  success
+  success,
 }: Props) => (
   <Root
     alarm={alarm}
@@ -86,7 +86,7 @@ Track.defaultProps = {
   onMouseUp: () => {},
   onTouchEnd: () => {},
   onTouchStart: () => {},
-  trackRef: () => {}
+  trackRef: () => {},
 };
 
 Track.Selection = Selection;

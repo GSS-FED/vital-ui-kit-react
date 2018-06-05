@@ -17,13 +17,18 @@ export type ListSpacerState = {
   flatListHeight: Animated.Value,
 };
 
-class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
+class ListSpacer extends React.PureComponent<
+  ListSpacerProps,
+  ListSpacerState,
+> {
   static defaultProps = {
     duration: DURATION,
   };
   state = {
     // screenHeight: Dimensions.get('window').height,
-    flatListHeight: new Animated.Value(Dimensions.get('window').height),
+    flatListHeight: new Animated.Value(
+      Dimensions.get('window').height,
+    ),
   };
 
   _keyboardDidShowListener: any;
@@ -47,7 +52,8 @@ class ListSpacer extends React.PureComponent<ListSpacerProps, ListSpacerState> {
 
   _keyBoardDidShow = e => {
     Animated.timing(this.state.flatListHeight, {
-      toValue: Dimensions.get('window').height - e.endCoordinates.height,
+      toValue:
+        Dimensions.get('window').height - e.endCoordinates.height,
       duration: this.props.duration,
     }).start();
   };

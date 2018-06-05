@@ -12,7 +12,7 @@ import Header from './TableHeader';
 
 type State = {
   headers: Array<string>,
-  columnProps: Array<Object>
+  columnProps: Array<Object>,
 };
 
 type Props = {
@@ -25,7 +25,7 @@ type Props = {
   isStriped?: boolean,
   hasHightlight?: boolean,
   isResponsive?: boolean,
-  renderHeader?: (props: State) => React.Element<HTMLElement>
+  renderHeader?: (props: State) => React.Element<HTMLElement>,
 };
 
 /**
@@ -42,12 +42,12 @@ class Table extends React.Component<Props, State> {
     hasHorizontalBorder: false,
     hasVerticalBorder: false,
     isStriped: false,
-    renderHeader: () => {}
+    renderHeader: () => {},
   };
 
   state = {
     headers: Object.keys(this.props.data[0]),
-    columnProps: []
+    columnProps: [],
   };
 
   componentDidMount() {
@@ -62,18 +62,14 @@ class Table extends React.Component<Props, State> {
       typeof this.props.caption === 'string' ||
       this.props.caption instanceof String
     ) {
-      return (
-        <Caption>
-          {this.props.caption}
-        </Caption>
-);
+      return <Caption>{this.props.caption}</Caption>;
     }
     return this.props.caption;
   };
 
   parseData = () => {
     this.setState({
-      headers: this.getHeaders()
+      headers: this.getHeaders(),
     });
   };
 
@@ -90,18 +86,18 @@ class Table extends React.Component<Props, State> {
           return child.props;
         }
         return null;
-      }
+      },
     );
 
     this.setState({
-      columnProps
+      columnProps,
     });
   };
 
   renderHeader = () => {
     const props = {
       columnProps: this.state.columnProps,
-      headers: this.state.headers
+      headers: this.state.headers,
     };
     return this.props.renderHeader ? (
       this.props.renderHeader(props)
@@ -132,7 +128,7 @@ class Table extends React.Component<Props, State> {
                 {this.state.headers.map((header, index) => {
                   if (datamap.has(header)) {
                     const props = this.state.columnProps.find(
-                      column => header === column.field
+                      column => header === column.field,
                     );
                     return (
                       <td key={`${index}${header}`} {...props}>

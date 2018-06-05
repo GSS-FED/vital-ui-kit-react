@@ -4,11 +4,11 @@
 type Props = {
   field: string,
   title?: string,
-  className?: string
+  className?: string,
 };
 
 function TableColumn(props: Props) {
-  return null
-};
+  return null;
+}
 
 export default TableColumn;

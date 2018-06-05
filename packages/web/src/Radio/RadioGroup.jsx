@@ -15,10 +15,10 @@ type Props = {
     name: string,
     value: string,
     label: string,
-    defaultChecked?: boolean
+    defaultChecked?: boolean,
   }>,
   onRadioChange: () => void,
-  isDisabled?: boolean
+  isDisabled?: boolean,
 };
 
 /**
@@ -48,7 +48,7 @@ const RadioGroup = ({
 );
 
 RadioGroup.defaultProps = {
-  isDisabled: false
+  isDisabled: false,
 };
 
 export default RadioGroup;

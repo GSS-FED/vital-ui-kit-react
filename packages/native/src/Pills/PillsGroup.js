@@ -19,7 +19,9 @@ const PillsGroup = ({
 }: PillsGroupProps) => (
   <Root marginBetween={marginBetween} {...props}>
     {React.Children.map(children, child =>
-      React.cloneElement(child, { style: { marginRight: marginBetween } }),
+      React.cloneElement(child, {
+        style: { marginRight: marginBetween },
+      }),
     )}
   </Root>
 );

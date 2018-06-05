@@ -10,19 +10,22 @@ import defeaultComponentsTheme from './theme/components';
 type Props = {
   theme?: any,
   icon?: any,
-  children: Node
+  children: Node,
 };
 
 class ThemeProvider extends React.Component<Props> {
   static defaultProps = {
     theme: {},
-    icon: {}
+    icon: {},
   };
 
   render() {
     const { theme, icon, children } = this.props;
-    const combinedTheme = { ...defaultTheme, ...theme }
-    const combinedWithComponentTheme = {...combinedTheme, ...defeaultComponentsTheme(combinedTheme)};
+    const combinedTheme = { ...defaultTheme, ...theme };
+    const combinedWithComponentTheme = {
+      ...combinedTheme,
+      ...defeaultComponentsTheme(combinedTheme),
+    };
     return (
       <Provider theme={combinedWithComponentTheme}>
         <IconProvider icon={{ ...defaultIcon, ...icon }}>

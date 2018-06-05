@@ -25,11 +25,11 @@ type Props = {
   /** Spell check attr */
   spellCheck?: boolean,
   /** when input changes */
-  onChange?: (event: SyntheticInputEvent<any>) => {}
+  onChange?: (event: SyntheticInputEvent<any>) => {},
 };
 
 type State = {
-  value: string
+  value: string,
 };
 
 export default class Input extends React.Component<Props, State> {
@@ -48,7 +48,7 @@ export default class Input extends React.Component<Props, State> {
   };
 
   state = {
-    value: this.props.value || ''
+    value: this.props.value || '',
   };
 
   handleChange = (e: SyntheticInputEvent<any>) => {

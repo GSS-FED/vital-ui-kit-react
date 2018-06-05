@@ -21,13 +21,11 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.Node
+  children: React.Node,
 };
 
 const Footer = ({ children, ...props }: Props) => (
-  <Root {...props}>
-    {children}
-  </Root>
+  <Root {...props}>{children}</Root>
 );
 
 export default Footer;

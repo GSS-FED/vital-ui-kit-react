@@ -37,7 +37,13 @@ const Card = ({
   shadow = false,
   ...props
 }: Props) => (
-  <Root width={width} height={height} bg={bg} {...props} shadow={shadow}>
+  <Root
+    width={width}
+    height={height}
+    bg={bg}
+    {...props}
+    shadow={shadow}
+  >
     {children}
   </Root>
 );

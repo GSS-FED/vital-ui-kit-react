@@ -49,12 +49,12 @@ const Placeholder = styled(Selector)`
 type Props = {
   placeholder?: string,
   fillToContainer?: boolean,
-  items: Array<ItemType>
+  items: Array<ItemType>,
 };
 
 type State = {
   isOpen: boolean,
-  selectedItem: ?ItemType
+  selectedItem: ?ItemType,
 };
 
 /**
@@ -65,12 +65,12 @@ type State = {
 class Select extends React.Component<Props, State> {
   static defaultProps = {
     fillToContainer: true,
-    placeholder: ''
+    placeholder: '',
   };
 
   state = {
     isOpen: false,
-    selectedItem: null
+    selectedItem: null,
   };
 
   onSelect = (item: ItemType) => {
@@ -90,11 +90,7 @@ class Select extends React.Component<Props, State> {
 
   renderSelect = () => {
     if (!this.state.selectedItem) {
-      return (
-        <Placeholder>
-          {this.props.placeholder}
-        </Placeholder>
-);
+      return <Placeholder>{this.props.placeholder}</Placeholder>;
     }
     return (
       <Selector>

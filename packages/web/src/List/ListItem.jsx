@@ -60,11 +60,11 @@ type Props = {
   /** @private */
   dispatchClose: (level: number) => mixed,
   /** @private */
-  border: boolean
+  border: boolean,
 };
 
 type State = {
-  open: boolean
+  open: boolean,
 };
 
 class ListItem extends React.Component<Props, State> {
@@ -74,11 +74,11 @@ class ListItem extends React.Component<Props, State> {
     isChildren: false,
     open: false,
     badge: null,
-    onClick: null
+    onClick: null,
   };
 
   state = {
-    open: this.props.open || false
+    open: this.props.open || false,
   };
 
   componentDidMount() {
@@ -109,13 +109,13 @@ class ListItem extends React.Component<Props, State> {
       from: { height: this.state.open ? this.child.clientHeight : 0 },
       to: { height: this.state.open ? 0 : this.child.clientHeight },
       duration: 200,
-      ease: this.state.open ? easing.easeIn : easing.easeOut
+      ease: this.state.open ? easing.easeIn : easing.easeOut,
     }).start({
       update: stylerBall.set,
       complete: () => {
         this.setState(
           prevState => ({
-            open: !prevState.open
+            open: !prevState.open,
           }),
           () => {
             setTimeout(() => {
@@ -124,9 +124,9 @@ class ListItem extends React.Component<Props, State> {
               }
               this.child.style.height = '';
             }, 50);
-          }
+          },
         );
-      }
+      },
     });
   };
 
@@ -151,7 +151,7 @@ class ListItem extends React.Component<Props, State> {
       level,
       themed,
       badge,
-      border
+      border,
     } = this.props;
 
     return (
@@ -164,9 +164,7 @@ class ListItem extends React.Component<Props, State> {
           border={border}
           themed={themed}
         >
-          <Title>
-            {title}
-          </Title>
+          <Title>{title}</Title>
           {badge && this.renderBadge()}
           {(children || hasLink) && (
             <Icon

@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -35,8 +35,6 @@ const ColorBox = styled(Box)`
 storiesOf('Components | Box', module).add(
   'Basic',
   withInfo(`info`)(() => (
-    <ColorBox padding="20px">
-This is a box!
-    </ColorBox>
-  ))
+    <ColorBox padding="20px">This is a box!</ColorBox>
+  )),
 );

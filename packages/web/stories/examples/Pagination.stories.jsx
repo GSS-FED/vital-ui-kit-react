@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -21,12 +21,12 @@ import { Pagination } from '../../src';
 const items = [
   {
     text: 'Dashboard',
-    current: true
+    current: true,
   },
   { text: 'Projects', badge: '23' },
   { text: 'Issues', badge: '99+' },
   { text: 'Reports', badge: '6' },
-  { text: 'User Center' }
+  { text: 'User Center' },
 ];
 
 storiesOf('Components | Pagination', module)
@@ -35,10 +35,7 @@ storiesOf('Components | Pagination', module)
     'Basic',
     withInfo(`info`)(
       withNotes('This is Pagination')(() => (
-        <Pagination
-          pageSize={5}
-          current={3}
-        />
-      ))
-    )
-  )
+        <Pagination pageSize={5} current={3} />
+      )),
+    ),
+  );

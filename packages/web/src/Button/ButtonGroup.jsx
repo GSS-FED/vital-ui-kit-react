@@ -39,6 +39,6 @@ const ButtonGroup = ({
 ButtonGroup.defaultProps = {
   marginHorizontal: '5px',
   style: null,
-}
+};
 
 export default ButtonGroup;

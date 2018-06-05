@@ -35,7 +35,9 @@ const ButtonElement = styled.button`
   ${({ subtle, selected, theme, nature }) =>
     subtle &&
     css`
-      background: ${selected ? theme.button.subtle.bg : 'transparent'};
+      background: ${selected
+        ? theme.button.subtle.bg
+        : 'transparent'};
       color: ${nature === 'default'
         ? theme.button.subtle.color
         : natureColor(theme)[nature]};

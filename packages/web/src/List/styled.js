@@ -21,7 +21,9 @@ const linkStyle = ({ hasLink, hasChildren, theme }) => {
 const levelStyle = ({ level, themed, theme }) => {
   if (level < 1) {
     return css`
-      background: ${themed === 'dark' ? theme.secondary900 : theme.white};
+      background: ${themed === 'dark'
+        ? theme.secondary900
+        : theme.white};
       color: ${themed === 'dark' ? theme.white : theme.secondary700};
     `;
   }
@@ -63,7 +65,8 @@ const TitleWrapper = styled.div`
     border && collapse ? theme.borderColor : 'none'};
   border-bottom: ${({ border, theme }) =>
     border ? theme.borderColor : 'none'};
-  border-top: ${({ border, theme }) => (border ? theme.borderColor : 'none')};
+  border-top: ${({ border, theme }) =>
+    border ? theme.borderColor : 'none'};
   ${props => linkStyle(props)};
   ${props => levelStyle(props)};
 `;

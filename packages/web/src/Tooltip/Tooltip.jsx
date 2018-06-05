@@ -57,7 +57,7 @@ type Props = {
   popupAlign?: Object,
   popupClassName?: string,
   /** whether destroy popup when hide */
-  destroyPopupOnHide?: boolean
+  destroyPopupOnHide?: boolean,
 };
 
 const Tooltip = ({
@@ -72,13 +72,13 @@ const Tooltip = ({
   popupAlign,
   popupClassName,
   destroyPopupOnHide,
-  placement
+  placement,
 }: Props) => {
   const TooltipBase = () => [
     <TooltipArrow className="rc-tooltip-arrow" key="arrow" />,
     <TooltipContent key="content" {...popupStyle}>
       {overlay}
-    </TooltipContent>
+    </TooltipContent>,
   ];
 
   return (
@@ -106,11 +106,11 @@ Tooltip.defaultProps = {
   mouseEnterDelay: 0,
   mouseLeaveDelay: 0,
   popupStyle: {},
-  popupTransitionName: "",
+  popupTransitionName: '',
   zIndex: null,
   popupAlign: null,
-  popupClassName: "vital-popup",
+  popupClassName: 'vital-popup',
   destroyPopupOnHide: false,
-}
+};
 
 export default Tooltip;

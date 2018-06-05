@@ -13,7 +13,7 @@ const Root = styled.div`
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  border-left: ${({ border, theme}) =>
+  border-left: ${({ border, theme }) =>
     border ? theme.borderColor : 'none'};
   height: 100%;
 
@@ -29,21 +29,19 @@ const MenuButton = styled(Button)`
 
 type Props = {
   children: React.Node,
-  border?: boolean
+  border?: boolean,
 };
 
 class MenuItem extends React.Component<Props> {
   static defaultProps = {
-    border: false
+    border: false,
   };
 
   render() {
     const { border, children, ...props } = this.props;
     return (
       <Root border={border} {...props}>
-        <MenuButton subtle>
-          {children}
-        </MenuButton>
+        <MenuButton subtle>{children}</MenuButton>
       </Root>
     );
   }

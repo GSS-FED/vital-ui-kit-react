@@ -61,7 +61,7 @@ const IconWrapper = styled.div`
 `;
 
 type State = {
-  isChecked: boolean
+  isChecked: boolean,
 };
 
 type Props = {
@@ -78,9 +78,9 @@ type Props = {
   /** Value of the checkbox, html value attribute */
   value: number | string,
   /** Function trigger when checkbox value changes */
-  onChange: ({name: string, value: string | number}) => {},
+  onChange: ({ name: string, value: string | number }) => {},
   /** Theme */
-  theme: Object
+  theme: Object,
 };
 
 function iconColor(isRound, isDisabled, theme) {
@@ -124,15 +124,15 @@ class Checkbox extends Component<Props, State> {
   static Group = CheckboxGroup;
 
   state = {
-    isChecked: this.props.initiallyChecked || false
+    isChecked: this.props.initiallyChecked || false,
   };
 
   onChange = () => {
     const { isDisabled, onChange, name, value } = this.props;
     if (isDisabled) return;
-    if (onChange) onChange({name, value});
+    if (onChange) onChange({ name, value });
     this.setState(prevState => ({
-      isChecked: !prevState.isChecked
+      isChecked: !prevState.isChecked,
     }));
   };
 
@@ -144,7 +144,7 @@ class Checkbox extends Component<Props, State> {
       value,
       isDisabled,
       isRound,
-      theme
+      theme,
     } = this.props;
     return (
       <Root {...this.props}>

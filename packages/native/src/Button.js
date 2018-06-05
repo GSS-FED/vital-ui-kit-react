@@ -9,7 +9,8 @@ const Root = styled.TouchableOpacity`
   height: ${props => props.height || 'auto'};
   justify-content: center;
   align-items: center;
-  background-color: ${props => (props.active ? props.theme.tintColor : '#fff')};
+  background-color: ${props =>
+    props.active ? props.theme.tintColor : '#fff'};
   border-radius: 50;
   border-width: ${props => (props.active ? 0 : 0.5)};
   border-color: #fff;
@@ -26,7 +27,12 @@ export type ButtonProps = {
   onPress: () => void,
 };
 
-const Button = ({ title, active, onPress, ...props }: ButtonProps) => (
+const Button = ({
+  title,
+  active,
+  onPress,
+  ...props
+}: ButtonProps) => (
   <Root active={active} onPress={onPress} {...props}>
     <Text active={active}>{title}</Text>
   </Root>

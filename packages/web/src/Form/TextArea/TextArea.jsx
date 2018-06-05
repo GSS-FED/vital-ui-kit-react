@@ -25,11 +25,11 @@ type Props = {
   /** id for text area */
   id?: string,
   /** when input changes */
-  onChange?: (event: any) => {}
+  onChange?: (event: any) => {},
 };
 
 type State = {
-  value: string
+  value: string,
 };
 
 export default class TextArea extends React.Component<Props, State> {
@@ -48,9 +48,8 @@ export default class TextArea extends React.Component<Props, State> {
     onChange: null,
   };
 
-
   state = {
-    value: this.props.value || ''
+    value: this.props.value || '',
   };
 
   handleChange = (e: SyntheticInputEvent<any>) => {

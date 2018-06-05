@@ -17,34 +17,58 @@ class Nav extends React.PureComponent {
             badge="99+"
             open
           >
-            <List.Item title={<TitleWrapper>Appointments</TitleWrapper>} />
+            <List.Item
+              title={<TitleWrapper>Appointments</TitleWrapper>}
+            />
             <List.Item
               title={<TitleWrapper>Requisitions</TitleWrapper>}
               badge="10"
               open
             >
-              <List.Item title={<TitleWrapper>Hardware</TitleWrapper>} />
-              <List.Item title={<TitleWrapper>Software</TitleWrapper>} />
+              <List.Item
+                title={<TitleWrapper>Hardware</TitleWrapper>}
+              />
+              <List.Item
+                title={<TitleWrapper>Software</TitleWrapper>}
+              />
               <List.Item
                 title={<TitleWrapper>Stationery</TitleWrapper>}
                 badge="2"
               />
             </List.Item>
           </List.Item>
-          <List.Item title={<TitleWrapper>Sending Operation</TitleWrapper>} />
-          <List.Item title={<TitleWrapper>Form Operation</TitleWrapper>} />
-          <List.Item title={<TitleWrapper>File Managment</TitleWrapper>}>
-            <List.Item title={<TitleWrapper>Hardware</TitleWrapper>} />
-            <List.Item title={<TitleWrapper>Software</TitleWrapper>} />
+          <List.Item
+            title={<TitleWrapper>Sending Operation</TitleWrapper>}
+          />
+          <List.Item
+            title={<TitleWrapper>Form Operation</TitleWrapper>}
+          />
+          <List.Item
+            title={<TitleWrapper>File Managment</TitleWrapper>}
+          >
+            <List.Item
+              title={<TitleWrapper>Hardware</TitleWrapper>}
+            />
+            <List.Item
+              title={<TitleWrapper>Software</TitleWrapper>}
+            />
             <List.Item
               title={<TitleWrapper>Stationery</TitleWrapper>}
               badge="2"
             />
           </List.Item>
-          <List.Item title={<TitleWrapper>Integrated Delivery</TitleWrapper>} />
-          <List.Item title={<TitleWrapper>Register Operation</TitleWrapper>} />
-          <List.Item title={<TitleWrapper>Remove Operation</TitleWrapper>} />
-          <List.Item title={<TitleWrapper>Maintainance</TitleWrapper>} />
+          <List.Item
+            title={<TitleWrapper>Integrated Delivery</TitleWrapper>}
+          />
+          <List.Item
+            title={<TitleWrapper>Register Operation</TitleWrapper>}
+          />
+          <List.Item
+            title={<TitleWrapper>Remove Operation</TitleWrapper>}
+          />
+          <List.Item
+            title={<TitleWrapper>Maintainance</TitleWrapper>}
+          />
           <List.Item title={<TitleWrapper>Setting</TitleWrapper>} />
         </List>
       </div>

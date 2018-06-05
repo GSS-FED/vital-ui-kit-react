@@ -51,13 +51,13 @@ const LabelCell = styled.div`
   ${props =>
     props.addon &&
     css`
-    width: 1%;
-    white-space: nowrap;
-  `};
+      width: 1%;
+      white-space: nowrap;
+    `};
 `;
 
 type Props = {
-  children: React.Node
+  children: React.Node,
 };
 
 /**

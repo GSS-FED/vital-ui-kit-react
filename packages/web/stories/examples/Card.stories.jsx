@@ -11,7 +11,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -35,8 +35,8 @@ storiesOf('Components | Card', module)
             <Card.FooterButton primary>Confirm</Card.FooterButton>
           </Card.Footer>
         </Card>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'With Flat Button',
@@ -54,8 +54,8 @@ storiesOf('Components | Card', module)
             </ButtonGroup>
           </Card.Footer>
         </Card>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'With Link Button',
@@ -73,8 +73,8 @@ storiesOf('Components | Card', module)
             </ButtonGroup>
           </Card.Footer>
         </Card>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'Hero Image',
@@ -93,8 +93,8 @@ storiesOf('Components | Card', module)
             <Card.FooterButton primary>Confirm</Card.FooterButton>
           </Card.Footer>
         </Card>
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'With Icon',
@@ -112,7 +112,7 @@ storiesOf('Components | Card', module)
                 textOverflow: 'ellipsis',
                 paddingTop: '1.25rem',
                 width: '100%',
-                color: '#456297'
+                color: '#456297',
               }}
             >
               Congrats
@@ -121,7 +121,7 @@ storiesOf('Components | Card', module)
               style={{
                 fontSize: '0.93333rem',
                 lineHeight: '1.25rem',
-                paddingTop: '10px'
+                paddingTop: '10px',
               }}
             >
               Let’s Get Started
@@ -131,6 +131,6 @@ storiesOf('Components | Card', module)
             <Card.FooterButton primary>Confirm</Card.FooterButton>
           </Card.Footer>
         </Card>
-      ))
-    )
+      )),
+    ),
   );

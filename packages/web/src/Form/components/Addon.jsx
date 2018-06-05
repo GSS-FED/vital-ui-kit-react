@@ -20,13 +20,9 @@ const Root = styled.div`
 `;
 
 type Props = {
-  children: React.Node
+  children: React.Node,
 };
 
-const Addon = ({ children }: Props) => (
-  <Root>
-    {children}
-  </Root>
-);
+const Addon = ({ children }: Props) => <Root>{children}</Root>;
 
 export default Addon;

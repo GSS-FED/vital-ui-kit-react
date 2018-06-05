@@ -11,17 +11,17 @@ import defaultIcon from './selection.json';
 
 function getIcon(iconName, iconPaths) {
   const icon = iconPaths.icons.find(
-    i => i.icon.tags.indexOf(iconName) > -1
+    i => i.icon.tags.indexOf(iconName) > -1,
   );
   if (icon) {
     return {
       path: icon.icon.paths.join(' '),
-      width: icon.icon.width
+      width: icon.icon.width,
     };
   }
   // eslint-disable-next-line
   console.warn(
-    `Could not find the name of the Icon: ${iconName}. Please check your icons file tags.`
+    `Could not find the name of the Icon: ${iconName}. Please check your icons file tags.`,
   );
   return null;
 }
@@ -31,7 +31,7 @@ type Props = {
   size?: number,
   color?: string,
   icon?: any,
-  onClick?: () => mixed
+  onClick?: () => mixed,
 };
 
 /**
@@ -75,7 +75,7 @@ Icon.defaultProps = {
   size: 16,
   icon: defaultIcon,
   color: 'currentColor',
-  onClick: () => {}
+  onClick: () => {},
 };
 
 export default withIcon(Icon);

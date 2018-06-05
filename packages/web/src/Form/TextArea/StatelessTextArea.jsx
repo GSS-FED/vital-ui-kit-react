@@ -25,7 +25,7 @@ type Props = {
   maxLength?: number,
   alarm?: boolean,
   disabled?: boolean,
-  warning?: boolean
+  warning?: boolean,
 };
 
 class StatelessTextArea extends React.Component<Props> {
@@ -41,7 +41,7 @@ class StatelessTextArea extends React.Component<Props> {
     maxLength: null,
     alarm: false,
     warning: false,
-    onChange: null
+    onChange: null,
   };
 
   focus = () => {
@@ -61,7 +61,7 @@ class StatelessTextArea extends React.Component<Props> {
       placeholder,
       value,
       onChange,
-      id
+      id,
     } = this.props;
     return (
       <Area

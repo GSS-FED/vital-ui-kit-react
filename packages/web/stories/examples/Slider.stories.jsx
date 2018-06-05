@@ -12,7 +12,7 @@ import {
   text,
   boolean,
   number,
-  select
+  select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
@@ -21,12 +21,12 @@ import { Slider, Button, Select } from '../../src';
 const items = [
   {
     text: 'Dashboard',
-    current: true
+    current: true,
   },
   { text: 'Projects', badge: '23' },
   { text: 'Issues', badge: '99+' },
   { text: 'Reports', badge: '6' },
-  { text: 'User Center' }
+  { text: 'User Center' },
 ];
 
 storiesOf('Components | Slider', module)
@@ -41,9 +41,9 @@ storiesOf('Components | Slider', module)
             {
               small: 'small',
               medium: 'medium',
-              large: 'large'
+              large: 'large',
             },
-            'medium'
+            'medium',
           )}
           disabled={boolean('disabled', false)}
           hasButton={boolean('hasButton', false)}
@@ -52,8 +52,8 @@ storiesOf('Components | Slider', module)
           min={number('min', 0)}
           step={number('step', 10)}
         />
-      ))
-    )
+      )),
+    ),
   )
   .add(
     'with Custom Button',
@@ -64,9 +64,17 @@ storiesOf('Components | Slider', module)
           max={100}
           min={0}
           step={10}
-          decreaseButton={<Button size="small" circle flat>-</Button>}
-          increaseButton={<Button size="small" circle flat>+</Button>}
+          decreaseButton={
+            <Button size="small" circle flat>
+              -
+            </Button>
+          }
+          increaseButton={
+            <Button size="small" circle flat>
+              +
+            </Button>
+          }
         />
-      ))
-    )
+      )),
+    ),
   );

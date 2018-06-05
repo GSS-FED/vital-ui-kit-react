@@ -8,7 +8,7 @@ import type { ItemType } from './type';
 
 type Props = {
   items: Array<ItemType>,
-  onClick: (Item: ItemType) => any
+  onClick: (Item: ItemType) => any,
 };
 
 const Root = styled.ul`
@@ -33,7 +33,11 @@ const Root = styled.ul`
 const Droplist = ({ items, onClick }: Props) => (
   <Root>
     {items.map((item, i) => (
-      <DroplistItem key={item.id || i} onClick={onClick} item={item} />
+      <DroplistItem
+        key={item.id || i}
+        onClick={onClick}
+        item={item}
+      />
     ))}
   </Root>
 );

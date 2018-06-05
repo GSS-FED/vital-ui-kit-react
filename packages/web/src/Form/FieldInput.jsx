@@ -34,7 +34,7 @@ type Props = {
   align: 'left' | 'right',
   inline?: boolean,
   required?: boolean,
-  children: React.Node
+  children: React.Node,
 };
 
 /**
@@ -63,7 +63,7 @@ const FieldInput = ({
 
 FieldInput.defaultProps = {
   inline: false,
-  required: false
+  required: false,
 };
 
 export default FieldInput;

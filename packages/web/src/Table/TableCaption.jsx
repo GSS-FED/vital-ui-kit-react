@@ -9,7 +9,7 @@ const Root = styled.caption`
 
 type Props = {
   children: Node,
-  className?: string
+  className?: string,
 };
 
 class Caption extends Component<Props> {

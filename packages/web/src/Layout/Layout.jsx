@@ -40,7 +40,7 @@ Sidebar.displayName = 'Sidebar';
 Content.displayName = 'Content';
 
 type Props = {
-  children: React.Node
+  children: React.Node,
 };
 
 /**
@@ -65,24 +65,18 @@ class Layout extends React.Component<Props> {
     const { children, ...props } = this.props;
     const childrenArray = React.Children.map(
       this.props.children,
-      child => child
+      child => child,
     );
     const header = childrenArray.filter(
-      child => child.type.displayName === 'Header'
+      child => child.type.displayName === 'Header',
     );
     const main = childrenArray.filter(
-      child => child.type.displayName !== 'Header'
+      child => child.type.displayName !== 'Header',
     );
     return (
       <Root {...props}>
-        {header && (
-          <Header>
-            {header}
-          </Header>
-        )}
-        <Main>
-          {main}
-        </Main>
+        {header && <Header>{header}</Header>}
+        <Main>{main}</Main>
       </Root>
     );
   }

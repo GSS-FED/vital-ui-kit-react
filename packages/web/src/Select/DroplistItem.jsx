@@ -24,7 +24,7 @@ const Item = styled.div`
 
 type Props = {
   item: ItemType,
-  onClick: (item: ItemType) => void
+  onClick: (item: ItemType) => void,
 };
 
 const DroplistItem = ({ item, onClick }: Props) => (

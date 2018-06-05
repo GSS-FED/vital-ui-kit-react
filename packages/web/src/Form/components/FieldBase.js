@@ -13,7 +13,8 @@ const fieldBase = ({ theme }: any) => css`
   border: 1px solid ${theme.form.borderColor};
   border-radius: 4px;
   color: ${theme.form.color};
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
 

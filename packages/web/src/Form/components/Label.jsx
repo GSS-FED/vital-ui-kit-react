@@ -52,7 +52,7 @@ type Props = {
   /** label display inline */
   inline?: boolean,
   /** align `left` or `right` */
-  align?: 'left' | 'right'
+  align?: 'left' | 'right',
 };
 
 const Label = ({ text, required, inline, align }: Props) => (
@@ -64,7 +64,7 @@ const Label = ({ text, required, inline, align }: Props) => (
 Label.defaultProps = {
   required: false,
   align: 'left',
-  inline: false
+  inline: false,
 };
 
 export default Label;

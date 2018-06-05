@@ -12,12 +12,12 @@ import ModalWrapper from './ModalWrapper';
 
 type Props = {
   show?: boolean,
-  children: Node
+  children: Node,
 };
 
 type State = {
   windowWidth: number,
-  windowHeight: number
+  windowHeight: number,
 };
 
 const OverLay = styled.div`
@@ -34,12 +34,12 @@ const OverLay = styled.div`
 
 class Modal extends React.Component<Props, State> {
   static defaultProps = {
-    show: false
+    show: false,
   };
 
   state = {
     windowWidth: 0,
-    windowHeight: 0
+    windowHeight: 0,
   };
 
   componentDidMount() {
@@ -57,7 +57,7 @@ class Modal extends React.Component<Props, State> {
   handleUpdate = () => {
     this.setState({
       windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      windowHeight: window.innerHeight,
     });
   };
 
@@ -80,7 +80,7 @@ class Modal extends React.Component<Props, State> {
         </ModalWrapper>
       </div>,
       // $FlowFixMe
-      document.body
+      document.body,
     );
   }
 }

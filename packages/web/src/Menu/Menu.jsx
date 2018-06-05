@@ -16,12 +16,12 @@ const Root = styled.div`
 
 type Props = {
   border?: boolean,
-  children: React.Node
+  children: React.Node,
 };
 
 class Menu extends React.Component<Props> {
   static defaultProps = {
-    border: true
+    border: true,
   };
 
   static Item = MenuItem;
@@ -33,8 +33,8 @@ class Menu extends React.Component<Props> {
         {React.Children.map(children, child =>
           React.cloneElement(child, {
             border,
-            ...props
-          })
+            ...props,
+          }),
         )}
       </Root>
     );

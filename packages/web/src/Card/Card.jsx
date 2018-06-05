@@ -33,7 +33,7 @@ type Props = {
   children: React.Node,
   width?: string,
   height?: string,
-  shadow?: boolean
+  shadow?: boolean,
 };
 
 /**
@@ -66,7 +66,7 @@ const Card = ({
 Card.defaultProps = {
   width: 'auto',
   height: 'auto',
-  shadow: false
+  shadow: false,
 };
 
 Card.Header = Header;

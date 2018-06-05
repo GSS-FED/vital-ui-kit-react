@@ -20,11 +20,11 @@ type Props = {
   /** Customize Icon */
   icon?: string | React.Node,
   /** Collapse mode, show one item one time */
-  collapse?: boolean
+  collapse?: boolean,
 };
 
 type State = {
-  open: boolean
+  open: boolean,
 };
 
 class List extends React.Component<Props, State> {
@@ -33,14 +33,13 @@ class List extends React.Component<Props, State> {
     border: false,
     icon: null,
     collapse: false,
-  }
+  };
 
   static Item = ListItem;
 
   static Content = ListContent;
 
   nodes: Map<number, ListItem> = new Map();
-
 
   setNodes = (i: number, el: ListItem) => {
     this.nodes.set(i, el);
@@ -63,8 +62,8 @@ class List extends React.Component<Props, State> {
         themed: this.props.themed,
         collapse: this.props.collapse,
         border: this.props.border,
-        dispatchClose: this.dispatchClose
-      })
+        dispatchClose: this.dispatchClose,
+      }),
     );
 
   render() {
