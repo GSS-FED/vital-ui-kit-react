@@ -1,0 +1,29 @@
+{
+  "name": "@gssfed/react-table",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/ --out-dir dist/"
+  },
+  "author": "Eric Yip (https://github.com/ericyip)",
+  "license": "MIT",
+  "devDependencies": {
+    "react-virtualized": "^9.19.1"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "react-virtualized": "^9",
+    "styled-components": ">=2 || >=3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSS-FED/vital-ui-kit-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
+  },
+  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme"
+}
