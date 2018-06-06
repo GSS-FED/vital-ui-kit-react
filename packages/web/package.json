@@ -26,8 +26,6 @@
     "web"
   ],
   "dependencies": {
-    "@gssfed/playground": "^0.0.1",
-    "@gssfed/react-table": "^0.0.1",
     "polished": "^1.9.2",
     "popmotion": "^8.1.22",
     "prop-types": "^15.6.1",
