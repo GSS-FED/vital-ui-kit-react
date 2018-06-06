@@ -32,5 +32,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "dependencies": {
+    "@gssfed/playground": "^0.0.1",
+    "@gssfed/react-table": "^0.0.1"
   }
 }

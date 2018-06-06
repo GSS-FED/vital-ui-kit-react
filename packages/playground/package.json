@@ -1,0 +1,34 @@
+{
+  "name": "@gssfed/playground",
+  "version": "0.0.1",
+  "description": "gssfed playground",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest",
+    "start": "start-storybook -p 6006"
+  },
+  "author": "Eric Yip (https://github.com/ericyip)",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/react": "3.4.6",
+    "babel-plugin-styled-components": "1.5.1"
+  },
+  "dependencies": {
+    "@gssfed/react-table": "^0.0.1",
+    "@gssfed/vital-ui-kit-react": "latest",
+    "faker": "^4.1.0",
+    "styled-components": "3.3.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.md?$": "markdown-loader-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}
