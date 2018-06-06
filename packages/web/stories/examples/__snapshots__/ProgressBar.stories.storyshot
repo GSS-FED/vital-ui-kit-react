@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | ProgressBar Basic 1`] = `
+<div
+  className="sc-fYxtnH eaVKRF"
+>
+  <div
+    className="sc-tilXH iUhSa"
+    size="medium"
+  >
+    <div
+      className="sc-ktHwxA fvUfYY sc-hEsumM feHGBt"
+    >
+      File uploading
+    </div>
+    <div
+      className="sc-hEsumM feHGBt"
+    >
+      60
+      %
+    </div>
+  </div>
+  <div
+    className="sc-jnlKLf kcXCRc"
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    size="medium"
+  >
+    <div
+      className="sc-gGBfsJ iFAJbJ"
+      disabled={false}
+      size="medium"
+      width={0}
+    />
+  </div>
+</div>
+`;

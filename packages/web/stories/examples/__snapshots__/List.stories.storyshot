@@ -1,0 +1,389 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | List Basic 1`] = `
+<div
+  className="sc-iQNlJl grrNXu"
+>
+  <ul
+    className="sc-fAjcbJ kSZqmA"
+    icon={null}
+  >
+    <li
+      className="sc-caSCKo kgbcsn"
+    >
+      <div
+        className="sc-gisBJw ASUEH"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kjoXOD gtxJOV"
+        >
+          Level 1
+        </div>
+        <div
+          className="sc-kgAjT caAtIp sc-kjoXOD gtxJOV"
+        >
+          <span
+            className="sc-gqjmRU fJwGbl"
+          >
+            99+
+          </span>
+        </div>
+        <svg
+          className="sc-cHGsZl fwaSvt"
+          height={10}
+          onClick={[Function]}
+          open={false}
+          viewBox="0 0 1024 1024"
+          width={10}
+        >
+          <path
+            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <ul
+        className="sc-TOsTZ kOmPiq"
+      >
+        <li
+          className="sc-caSCKo kgbcsn"
+        >
+          <div
+            className="sc-gisBJw iSKlcV"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kjoXOD gtxJOV"
+            >
+              Level 2
+            </div>
+            <svg
+              className="sc-cHGsZl fwaSvt"
+              height={10}
+              onClick={[Function]}
+              open={false}
+              viewBox="0 0 1024 1024"
+              width={10}
+            >
+              <path
+                d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <ul
+            className="sc-TOsTZ kOmPiq"
+          >
+            <li
+              className="sc-caSCKo kgbcsn"
+            >
+              <div
+                className="sc-gisBJw ctnlJr"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-kjoXOD gtxJOV"
+                >
+                  Level 3
+                </div>
+                <svg
+                  className="sc-cHGsZl fwaSvt"
+                  height={10}
+                  onClick={[Function]}
+                  open={false}
+                  viewBox="0 0 1024 1024"
+                  width={10}
+                >
+                  <path
+                    d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <ul
+                className="sc-TOsTZ kOmPiq"
+              >
+                <li
+                  className="sc-caSCKo kgbcsn"
+                >
+                  <div
+                    className="sc-gisBJw hqxKyS"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="sc-kjoXOD gtxJOV"
+                    >
+                      Level 4
+                    </div>
+                    <svg
+                      className="sc-cHGsZl fwaSvt"
+                      height={10}
+                      onClick={[Function]}
+                      open={false}
+                      viewBox="0 0 1024 1024"
+                      width={10}
+                    >
+                      <path
+                        d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    className="sc-TOsTZ kOmPiq"
+                  >
+                    <li
+                      className="sc-caSCKo kgbcsn"
+                    >
+                      <div
+                        className="sc-gisBJw jaejea"
+                        onClick={[Function]}
+                      >
+                        <div
+                          className="sc-kjoXOD gtxJOV"
+                        >
+                          Level 5
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  className="sc-caSCKo kgbcsn"
+                >
+                  <div
+                    className="sc-gisBJw hqxKyS"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="sc-kjoXOD gtxJOV"
+                    >
+                      Level 4
+                    </div>
+                    <svg
+                      className="sc-cHGsZl fwaSvt"
+                      height={10}
+                      onClick={[Function]}
+                      open={false}
+                      viewBox="0 0 694.8571428571428 1024"
+                      width={10}
+                    >
+                      <path
+                        d="M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li
+                  className="sc-caSCKo kgbcsn"
+                >
+                  <div
+                    className="sc-gisBJw hqxKyS"
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="sc-kjoXOD gtxJOV"
+                    >
+                      Level 4 link with badge
+                    </div>
+                    <div
+                      className="sc-kgAjT caAtIp sc-kjoXOD gtxJOV"
+                    >
+                      <span
+                        className="sc-gqjmRU fJwGbl"
+                      >
+                        1
+                      </span>
+                    </div>
+                    <svg
+                      className="sc-cHGsZl fwaSvt"
+                      height={10}
+                      onClick={[Function]}
+                      open={false}
+                      viewBox="0 0 694.8571428571428 1024"
+                      width={10}
+                    >
+                      <path
+                        d="M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="sc-caSCKo kgbcsn"
+            >
+              <div
+                className="sc-gisBJw dkKNqT"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-kjoXOD gtxJOV"
+                >
+                  Level 3
+                </div>
+              </div>
+            </li>
+            <li
+              className="sc-caSCKo kgbcsn"
+            >
+              <div
+                className="sc-gisBJw ctnlJr"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-kjoXOD gtxJOV"
+                >
+                  Level 3 has Content
+                </div>
+                <svg
+                  className="sc-cHGsZl fwaSvt"
+                  height={10}
+                  onClick={[Function]}
+                  open={false}
+                  viewBox="0 0 1024 1024"
+                  width={10}
+                >
+                  <path
+                    d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <ul
+                className="sc-TOsTZ kOmPiq"
+              >
+                <div
+                  className="sc-cJSrbW iLhBFO"
+                >
+                  Vero sint molestiae sit consequuntur aut aliquam. Aut porro maiores est rerum sed quasi fugiat culpa fuga. Voluptatem quasi excepturi earum. Repellendus qui deleniti aut blanditiis exercitationem eum dolorem libero debitis.
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li
+      className="sc-caSCKo kgbcsn"
+    >
+      <div
+        className="sc-gisBJw bJqqNP"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kjoXOD gtxJOV"
+        >
+          Level 1
+        </div>
+        <div
+          className="sc-kgAjT khffuP sc-kjoXOD gtxJOV"
+        >
+          <span
+            className="sc-gqjmRU fJwGbl"
+          >
+            10
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components | List Tree/ Accordion 1`] = `
+<div
+  className="sc-iQNlJl grrNXu"
+>
+  <ul
+    className="sc-fAjcbJ gnaULz"
+    icon={null}
+  >
+    <li
+      className="sc-caSCKo kgbcsn"
+    >
+      <div
+        className="sc-gisBJw ktlQqE"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kjoXOD gtxJOV"
+        >
+          Collaspe 1
+        </div>
+        <svg
+          className="sc-cHGsZl fwaSvt"
+          height={10}
+          onClick={[Function]}
+          open={false}
+          viewBox="0 0 1024 1024"
+          width={10}
+        >
+          <path
+            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <ul
+        className="sc-TOsTZ kOmPiq"
+      >
+        <div
+          className="sc-cJSrbW iLhBFO"
+        >
+          Quo voluptates numquam nulla libero vel facere quibusdam sunt. Hic sed delectus et ipsum iste. Eos eligendi quibusdam. Possimus quisquam minima velit maxime officia consequatur et magni. Necessitatibus quos sed alias architecto est pariatur. Et vero aperiam quaerat. Ut numquam quaerat et aut neque ratione velit et dolor. Ipsam repellendus saepe quas et iste debitis molestias recusandae ipsum. Praesentium cumque est velit delectus non atque ullam. Non quis voluptate doloribus voluptatum assumenda. Illum est incidunt a eius voluptatum laudantium repellat. Ipsum eos non molestias qui ab quasi pariatur. Ipsum ea perferendis dolorem nihil et dolor. Expedita officia accusantium incidunt illum illum consequuntur velit.
+        </div>
+      </ul>
+    </li>
+    <li
+      className="sc-caSCKo kgbcsn"
+    >
+      <div
+        className="sc-gisBJw ktlQqE"
+        onClick={[Function]}
+      >
+        <div
+          className="sc-kjoXOD gtxJOV"
+        >
+          Collaspe 2
+        </div>
+        <div
+          className="sc-kgAjT caAtIp sc-kjoXOD gtxJOV"
+        >
+          <span
+            className="sc-gqjmRU fJwGbl"
+          >
+            1
+          </span>
+        </div>
+        <svg
+          className="sc-cHGsZl fwaSvt"
+          height={10}
+          onClick={[Function]}
+          open={false}
+          viewBox="0 0 1024 1024"
+          width={10}
+        >
+          <path
+            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <ul
+        className="sc-TOsTZ kOmPiq"
+      >
+        <div
+          className="sc-cJSrbW iLhBFO"
+        >
+          Nostrum tempora ipsum et in. Numquam praesentium voluptas itaque ratione iste quisquam harum. Voluptatibus sit rerum. Vitae consequatur eaque aliquid porro perspiciatis culpa et sit. Iste illo eum cum. Et ea beatae dolorum tempore possimus iste quia nobis beatae. Aut voluptatibus illo possimus inventore laudantium nobis aperiam. Aut aut vel officiis laborum nihil dolor. Aut velit eligendi at at sed esse inventore. Perspiciatis ipsum debitis in voluptatem error cumque iure earum nostrum. Quo recusandae dolores esse. Ipsam voluptas aut et nisi iste qui minima mollitia alias.
+        </div>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;

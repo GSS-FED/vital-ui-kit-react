@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Slider Basic 1`] = `
+<div
+  aria-valuemax={100}
+  aria-valuemin={0}
+  aria-valuenow={0}
+  className="sc-hqyNC eOCCnP"
+  disabled={false}
+>
+  <div
+    className="sc-jbKcbu dGxDFm"
+    disabled={false}
+    size="medium"
+  >
+    <div
+      className="sc-jnlKLf kcXCRc"
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      size="medium"
+    >
+      <div
+        className="sc-gGBfsJ iFAJbJ"
+        disabled={false}
+        size="medium"
+        width={0}
+      />
+    </div>
+    <div
+      className="sc-dNLxif nlwYw"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      size="medium"
+      style={
+        Object {
+          "left": "0px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Slider with Custom Button 1`] = `
+<div
+  aria-valuemax={100}
+  aria-valuemin={0}
+  aria-valuenow={50}
+  className="sc-hqyNC eOCCnP"
+  disabled={false}
+>
+  <button
+    className="sc-ifAKCX kbGYGA"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    selected={false}
+    size="small"
+    style={
+      Object {
+        "flex": "0 0 auto",
+        "marginRight": "12px",
+      }
+    }
+  >
+    -
+  </button>
+  <div
+    className="sc-jbKcbu dGxDFm"
+    disabled={false}
+    size="medium"
+  >
+    <div
+      className="sc-jnlKLf kcXCRc"
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      size="medium"
+    >
+      <div
+        className="sc-gGBfsJ iFAJbJ"
+        disabled={false}
+        size="medium"
+        width={0}
+      />
+    </div>
+    <div
+      className="sc-dNLxif nlwYw"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      size="medium"
+      style={
+        Object {
+          "left": "0px",
+        }
+      }
+    />
+  </div>
+  <button
+    className="sc-ifAKCX kbGYGA"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    selected={false}
+    size="small"
+    style={
+      Object {
+        "flex": "0 0 auto",
+        "marginLeft": "12px",
+      }
+    }
+  >
+    +
+  </button>
+</div>
+`;

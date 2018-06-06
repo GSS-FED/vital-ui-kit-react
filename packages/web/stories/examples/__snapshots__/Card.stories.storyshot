@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Card Default Full Button type 1`] = `
+<div
+  className="sc-kGXeez bXHEXa"
+  height="220px"
+  width="300px"
+>
+  <div
+    className="sc-VigVT ezSxxb"
+  >
+    <div
+      className="sc-fjdhpX dNDeVp"
+      style={null}
+    >
+      Title
+    </div>
+    <div
+      className="sc-jzJRlG qvPgq sc-fjdhpX dNDeVp"
+    >
+      <span
+        className="sc-gqjmRU fJwGbl"
+      >
+        99+
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-cSHVUG gekZmC"
+  >
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+  </div>
+  <div
+    className="sc-kAzzGY beUSyZ"
+  >
+    <div
+      className="sc-chPdSV fyCuVJ"
+    >
+      <button
+        className="sc-kgoBCf gCTJev"
+      >
+        Cancel
+      </button>
+    </div>
+    <div
+      className="sc-chPdSV fyCuVJ"
+    >
+      <button
+        className="sc-kgoBCf dvVnpo"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Card Hero Image 1`] = `
+<div
+  className="sc-kGXeez fJJIyi"
+  height="400px"
+  width="300px"
+>
+  <div
+    className="sc-jTzLTM EUIFR sc-VigVT ezSxxb"
+  >
+    <h4
+      style={null}
+    >
+      Title
+    </h4>
+  </div>
+  <div
+    className="sc-cSHVUG gekZmC"
+  >
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+  </div>
+  <div
+    className="sc-kAzzGY beUSyZ"
+  >
+    <div
+      className="sc-chPdSV fyCuVJ"
+    >
+      <button
+        className="sc-kgoBCf gCTJev"
+      >
+        Cancel
+      </button>
+    </div>
+    <div
+      className="sc-chPdSV fyCuVJ"
+    >
+      <button
+        className="sc-kgoBCf dvVnpo"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Card With Flat Button 1`] = `
+<div
+  className="sc-kGXeez bXHEXa"
+  height="220px"
+  width="300px"
+>
+  <div
+    className="sc-VigVT ezSxxb"
+  >
+    <div
+      className="sc-fjdhpX dNDeVp"
+      style={null}
+    >
+      Title
+    </div>
+  </div>
+  <div
+    className="sc-cSHVUG gekZmC"
+  >
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+  </div>
+  <div
+    className="sc-kAzzGY beUSyZ"
+  >
+    <div
+      className="sc-bxivhb HBikN"
+      style={
+        Object {
+          "padding": 10,
+        }
+      }
+    >
+      <button
+        className="sc-ifAKCX lgHGEf"
+        onClick={[Function]}
+        selected={false}
+        size="medium"
+        style={null}
+      >
+        Cancel
+      </button>
+      <button
+        className="sc-ifAKCX Uiqxi"
+        onClick={[Function]}
+        selected={false}
+        size="medium"
+        style={null}
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Card With Icon 1`] = `
+<div
+  className="sc-kGXeez joxBBS"
+  height="auto"
+  width="300px"
+>
+  <div
+    className="sc-cSHVUG gekZmC"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    <svg
+      height="90"
+      onClick={[Function]}
+      viewBox="0 0 914.2857142857142 1024"
+      width="90"
+    >
+      <path
+        d="M146.286 768c0-20-16.571-36.571-36.571-36.571-20.571 0-36.571 16.571-36.571 36.571 0 20.571 16 36.571 36.571 36.571 20 0 36.571-16 36.571-36.571zM237.714 475.429v365.714c0 20-16.571 36.571-36.571 36.571h-164.571c-20 0-36.571-16.571-36.571-36.571v-365.714c0-20 16.571-36.571 36.571-36.571h164.571c20 0 36.571 16.571 36.571 36.571zM914.286 475.429c0 30.286-12 62.857-31.429 85.143 6.286 18.286 8.571 35.429 8.571 43.429 1.143 28.571-7.429 55.429-24.571 78.286 6.286 21.143 6.286 44 0 66.857-5.714 21.143-16.571 40-30.857 53.714 3.429 42.857-6.286 77.714-28 103.429-24.571 29.143-62.286 44-112.571 44.571h-73.714c-81.714 0-158.857-26.857-220.571-48-36-12.571-70.286-24.571-90.286-25.143-19.429-0.571-36.571-16.571-36.571-36.571v-366.286c0-18.857 16-34.857 34.857-36.571 21.143-1.714 76-69.714 101.143-102.857 20.571-26.286 40-50.857 57.714-68.571 22.286-22.286 28.571-56.571 35.429-89.714 6.286-33.714 13.143-69.143 37.714-93.143 6.857-6.857 16-10.857 25.714-10.857 128 0 128 102.286 128 146.286 0 46.857-16.571 80-32 109.714-6.286 12.571-12 18.286-16.571 36.571h158.286c59.429 0 109.714 50.286 109.714 109.714z"
+        fill="#0e86fe"
+      />
+    </svg>
+    <div
+      style={
+        Object {
+          "color": "#456297",
+          "fontSize": "1.25rem",
+          "lineHeight": "1.5rem",
+          "overflow": "hidden",
+          "paddingTop": "1.25rem",
+          "textOverflow": "ellipsis",
+          "whiteSpace": "nowrap",
+          "width": "100%",
+        }
+      }
+    >
+      Congrats
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": "0.93333rem",
+          "lineHeight": "1.25rem",
+          "paddingTop": "10px",
+        }
+      }
+    >
+      Let’s Get Started
+    </div>
+  </div>
+  <div
+    className="sc-kAzzGY beUSyZ"
+  >
+    <div
+      className="sc-chPdSV fyCuVJ"
+    >
+      <button
+        className="sc-kgoBCf dvVnpo"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Card With Link Button 1`] = `
+<div
+  className="sc-kGXeez bXHEXa"
+  height="220px"
+  width="300px"
+>
+  <div
+    className="sc-VigVT ezSxxb"
+  >
+    <div
+      className="sc-fjdhpX dNDeVp"
+      style={null}
+    >
+      Title
+    </div>
+  </div>
+  <div
+    className="sc-cSHVUG gekZmC"
+  >
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+  </div>
+  <div
+    className="sc-kAzzGY beUSyZ"
+  >
+    <div
+      className="sc-bxivhb HBikN"
+      style={
+        Object {
+          "padding": 10,
+        }
+      }
+    >
+      <button
+        className="sc-ifAKCX ejdaYI"
+        onClick={[Function]}
+        selected={false}
+        size="medium"
+        style={null}
+      >
+        Cancel
+      </button>
+      <button
+        className="sc-ifAKCX qlycK"
+        onClick={[Function]}
+        selected={false}
+        size="medium"
+        style={null}
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
