@@ -39,7 +39,7 @@
     "storybook:native": "cd packages/native && yarn run storybook",
     "dev:ios": "cd packages/native && yarn run ios",
     "test:web": "cd packages/web && jest",
-    "flow-typed": "rm -rf flow-typed && flow-typed install",
+    "flow-typed": "rm -rf flow-typed && flow-typed install -s",
     "flow": "flow check",
     "format": "prettier --write '**/**.{js,jsx}'",
     "lint": "eslint packages/**; exit 0",
