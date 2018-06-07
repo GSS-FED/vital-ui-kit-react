@@ -12,3 +12,4 @@ storybook-static
 bit.json
 yarn-error.log
 bundle-stats.html
+__mocks__
