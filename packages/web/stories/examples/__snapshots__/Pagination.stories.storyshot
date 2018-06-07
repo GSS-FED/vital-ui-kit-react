@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Pagination Basic 1`] = `
+<ul
+  className="sc-iELTvK kPrTIV"
+>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      First
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      <svg
+        height="12"
+        onClick={[Function]}
+        style={
+          Object {
+            "marginRight": "5px",
+          }
+        }
+        viewBox="0 0 768 1024"
+        width="12"
+      >
+        <path
+          d="M669.143 172l-303.429 303.429 303.429 303.429c14.286 14.286 14.286 37.143 0 51.429l-94.857 94.857c-14.286 14.286-37.143 14.286-51.429 0l-424-424c-14.286-14.286-14.286-37.143 0-51.429l424-424c14.286-14.286 37.143-14.286 51.429 0l94.857 94.857c14.286 14.286 14.286 37.143 0 51.429z"
+          fill="currentColor"
+        />
+      </svg>
+      Prev
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      1
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      2
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX fymSEW"
+      onClick={[Function]}
+      selected={true}
+      size="medium"
+      style={null}
+    >
+      3
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      4
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      5
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      Next
+      <svg
+        height="12"
+        onClick={[Function]}
+        style={
+          Object {
+            "marginLeft": "5px",
+          }
+        }
+        viewBox="0 0 694.8571428571428 1024"
+        width="12"
+      >
+        <path
+          d="M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+  </li>
+  <li
+    className="sc-jwKygS vacNf"
+  >
+    <button
+      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      onClick={[Function]}
+      selected={false}
+      size="medium"
+      style={null}
+    >
+      Last
+    </button>
+  </li>
+</ul>
+`;

@@ -1,0 +1,763 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Form Full Example 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-gipzik twobj"
+  >
+    <span
+      className="sc-brqgnP eOaOlS"
+      required={true}
+    >
+      Username
+    </span>
+    <div
+      className="sc-cMljjf hwFcyK"
+    >
+      <input
+        autoFocus={false}
+        className="sc-jAaTju knvECT"
+        defaultValue={null}
+        disabled={false}
+        icon={null}
+        onChange={null}
+        placeholder="Enter your username"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="sc-gipzik twobj"
+  >
+    <span
+      className="sc-brqgnP eOaOlS"
+      required={true}
+    >
+      Fullname
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="First Name"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="Last Name"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik twobj"
+  >
+    <span
+      className="sc-brqgnP eOaOlS"
+      required={true}
+    >
+      Birthday
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="Month"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="Day"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="Year"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik twobj"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Website
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG gnaOzQ"
+      >
+        <div
+          className="sc-jWBwVP pgJhm"
+        >
+          http://
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the left"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Comment
+    </span>
+    <textarea
+      autoFocus={false}
+      className="sc-gPEVay icsnmY"
+      disabled={false}
+      id={null}
+      maxLength={null}
+      onChange={null}
+      placeholder="Comment here"
+      rows={3}
+      spellCheck={false}
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Hint 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Username
+    </span>
+    <div
+      className="sc-cMljjf hwFcyK"
+    >
+      <input
+        autoFocus={false}
+        className="sc-jAaTju knvECT"
+        defaultValue={null}
+        disabled={false}
+        icon={null}
+        onChange={null}
+        placeholder={null}
+        spellCheck={false}
+        type="text"
+        value="dramsign"
+      />
+    </div>
+    <div
+      className="sc-cvbbAY eJUdcQ"
+    >
+      Username is available
+    </div>
+    <div
+      className="sc-cvbbAY gcRjjQ"
+    >
+      Example: James Allen
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Input with Label 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-gipzik twobj"
+  >
+    <span
+      className="sc-brqgnP eOaOlS"
+      required={true}
+    >
+      Username
+    </span>
+    <div
+      className="sc-cMljjf hwFcyK"
+    >
+      <input
+        autoFocus={false}
+        className="sc-jAaTju knvECT"
+        defaultValue={null}
+        disabled={false}
+        icon={null}
+        onChange={null}
+        placeholder="Enter your username"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Multiple & Addon 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Weight
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the right"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG gnaOzQ"
+      >
+        <div
+          className="sc-jWBwVP pgJhm"
+        >
+          kg
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Price
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG gnaOzQ"
+      >
+        <div
+          className="sc-jWBwVP pgJhm"
+        >
+          <svg
+            height={16}
+            onClick={[Function]}
+            viewBox="0 0 583.4605714285714 1024"
+            width={16}
+          >
+            <path
+              d="M558.857 677.143c0 116.571-83.429 208.571-204.571 228.571v100c0 10.286-8 18.286-18.286 18.286h-77.143c-9.714 0-18.286-8-18.286-18.286v-100c-133.714-18.857-206.857-98.857-209.714-102.286-5.714-6.857-6.286-16.571-1.143-23.429l58.857-77.143c2.857-4 8-6.286 13.143-6.857s10.286 1.143 13.714 5.143c1.143 0.571 81.143 77.143 182.286 77.143 56 0 116.571-29.714 116.571-94.286 0-54.857-67.429-81.714-144.571-112.571-102.857-40.571-230.857-92-230.857-235.429 0-105.143 82.286-192 201.714-214.857v-102.857c0-10.286 8.571-18.286 18.286-18.286h77.143c10.286 0 18.286 8 18.286 18.286v100.571c116 13.143 177.714 76 180 78.286 5.714 6.286 6.857 14.857 2.857 21.714l-46.286 83.429c-2.857 5.143-7.429 8.571-13.143 9.143-5.714 1.143-10.857-0.571-15.429-4-0.571-0.571-69.714-61.714-155.429-61.714-72.571 0-122.857 36-122.857 88 0 60.571 69.714 87.429 150.857 118.857 105.143 40.571 224 86.857 224 224.571z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG gnaOzQ"
+      >
+        <div
+          className="sc-jWBwVP pgJhm"
+        >
+          .00
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <button
+          className="sc-ifAKCX Uiqxi"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Multiple & Button 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <button
+          className="sc-ifAKCX lgHGEf"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          A
+        </button>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <button
+          className="sc-ifAKCX lgHGEf"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          B
+        </button>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <button
+          className="sc-ifAKCX lgHGEf"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          C
+        </button>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-gipzik OLXUC"
+  >
+    <span
+      className="sc-brqgnP jXbsSQ"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="sc-iRbamj cjHrfq"
+    >
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <div
+          className="sc-cMljjf hwFcyK"
+        >
+          <input
+            autoFocus={false}
+            className="sc-jAaTju knvECT"
+            defaultValue={null}
+            disabled={false}
+            icon={null}
+            onChange={null}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-jlyJG iLgAEE"
+      >
+        <button
+          className="sc-ifAKCX Uiqxi"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input Basic 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-cMljjf hwFcyK"
+  >
+    <input
+      autoFocus={false}
+      className="sc-jAaTju knvECT"
+      defaultValue="default"
+      disabled={false}
+      icon={null}
+      placeholder="Uncontrolled Input"
+      spellCheck={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-cMljjf hwFcyK"
+  >
+    <input
+      autoFocus={false}
+      className="sc-jAaTju knvECT"
+      defaultValue={null}
+      disabled={false}
+      icon={null}
+      onChange={null}
+      placeholder="Controlled Input"
+      spellCheck={false}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input With Icon 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-cMljjf hwFcyK"
+  >
+    <input
+      autoFocus={false}
+      className="sc-jAaTju jnPaQg"
+      defaultValue=""
+      disabled={false}
+      icon="search"
+      placeholder="Right side icon"
+      spellCheck={false}
+      type="text"
+    />
+    <svg
+      className="sc-jDwBTQ ZtEja"
+      height={16}
+      iconPosition="right"
+      onClick={[Function]}
+      viewBox="0 0 950.8571428571428 1024"
+      width={16}
+    >
+      <path
+        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <br />
+  <div
+    className="sc-cMljjf hwFcyK"
+  >
+    <input
+      autoFocus={false}
+      className="sc-jAaTju itJGzT"
+      defaultValue=""
+      disabled={false}
+      icon="search"
+      placeholder="Left side icon"
+      spellCheck={false}
+      type="text"
+    />
+    <svg
+      className="sc-jDwBTQ gblsWu"
+      height={16}
+      iconPosition="left"
+      onClick={[Function]}
+      viewBox="0 0 950.8571428571428 1024"
+      width={16}
+    >
+      <path
+        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Select Basic 1`] = `
+<div
+  className="sc-eTuwsz brFWKa"
+>
+  <div
+    className="sc-hzDkRC eBXbor"
+  >
+    <div
+      className="sc-jhAzac bQmBEe"
+      onClick={[Function]}
+      placeholder="Select One"
+    >
+      <span
+        className="sc-fMiknA hfhIin sc-fBuWsC eeihxG"
+      >
+        Select One
+      </span>
+      <svg
+        height="15"
+        onClick={[Function]}
+        style={
+          Object {
+            "float": "right",
+          }
+        }
+        viewBox="0 0 585.1428571428571 1024"
+        width="15"
+      >
+        <path
+          d="M585.143 402.286c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/TextArea Basic 1`] = `
+<textarea
+  autoFocus={false}
+  className="sc-gPEVay icsnmY"
+  disabled={false}
+  id={null}
+  maxLength={null}
+  onChange={null}
+  placeholder="Uncontrolled Input"
+  rows={3}
+  spellCheck={false}
+  value=""
+/>
+`;
+
+exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
+<textarea
+  autoFocus={false}
+  className="sc-gPEVay icsnmY"
+  disabled={false}
+  id={null}
+  maxLength={null}
+  onChange={null}
+  placeholder="Controlled Input"
+  rows={3}
+  spellCheck={false}
+  value=""
+/>
+`;
