@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 type P = {
-  children: (value: string) => React.ReactNode,
+  children: (value: string) => React.Node,
 };
 
 type S = {
@@ -46,7 +46,7 @@ class Filter extends React.PureComponent<P, S> {
       });
   }
 
-  onInputChange = e => {
+  onInputChange = (e: any) => {
     e.persist();
     const { value } = e.target;
     this.setState({ filterValue: value });

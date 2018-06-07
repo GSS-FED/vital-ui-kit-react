@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
   },
-  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme"
+  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme",
+  "dependencies": {
+    "classnames": "^2.2.5"
+  }
 }

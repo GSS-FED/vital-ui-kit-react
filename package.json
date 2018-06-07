@@ -36,7 +36,7 @@
     "build-storybook:web": "cd packages/playground && build-storybook",
     "storybook:native": "cd packages/native && yarn run storybook",
     "dev:ios": "cd packages/native && yarn run ios",
-    "test:web": "cd packages/web && jest",
+    "test:web": "cd packages/playground && jest",
     "flow-typed": "rm -rf flow-typed && flow-typed install",
     "flow": "flow check",
     "format": "prettier --write '**/**.{js,jsx}'",
