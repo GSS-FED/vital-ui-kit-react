@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Radio Basic 1`] = `
+<div
+  className="sc-jKJlTe loXQau"
+>
+  <label
+    className="sc-kpOJdX jBKWFx"
+  >
+    <input
+      className="sc-dxgOiQ jmFqJO"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="red"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Red
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX jBKWFx"
+  >
+    <input
+      className="sc-dxgOiQ jmFqJO"
+      defaultChecked={true}
+      name="color"
+      type="radio"
+      value="blue"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Blue
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX jBKWFx"
+  >
+    <input
+      className="sc-dxgOiQ jmFqJO"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="yellow"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Yellow
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX jBKWFx"
+  >
+    <input
+      className="sc-dxgOiQ jmFqJO"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="green"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Green
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components | Radio Disable 1`] = `
+<div
+  className="sc-jKJlTe loXQau"
+>
+  <label
+    className="sc-kpOJdX gLBToj"
+  >
+    <input
+      className="sc-dxgOiQ gjojUU"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="red"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Red
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX gLBToj"
+  >
+    <input
+      className="sc-dxgOiQ gjojUU"
+      defaultChecked={true}
+      name="color"
+      type="radio"
+      value="blue"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Blue
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX gLBToj"
+  >
+    <input
+      className="sc-dxgOiQ gjojUU"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="yellow"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Yellow
+    </span>
+  </label>
+  <label
+    className="sc-kpOJdX gLBToj"
+  >
+    <input
+      className="sc-dxgOiQ gjojUU"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="green"
+    />
+    <span
+      className="sc-ckVGcZ gjEeVT"
+    >
+      Green
+    </span>
+  </label>
+</div>
+`;
