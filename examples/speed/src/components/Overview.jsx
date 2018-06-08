@@ -41,9 +41,11 @@ const Section = ({ title, children }) => (
 );
 
 class Overview extends React.PureComponent {
+  
   state = {
     showModal: false,
   };
+
   render() {
     return (
       <ScrollView>

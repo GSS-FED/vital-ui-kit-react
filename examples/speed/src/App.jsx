@@ -1,3 +1,5 @@
+// @flow
+
 import React, { PureComponent } from 'react';
 import {
   ThemeProvider,
@@ -10,9 +12,13 @@ import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';
 
-class App extends PureComponent {
+type State = {
+  newColor: string
+}
+
+class App extends PureComponent<void, State> {
   state = {
-    newColor: '#0E86FE',
+    newColor: defaultTheme.primary,
   };
 
   render() {
