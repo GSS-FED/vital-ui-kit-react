@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-native",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
