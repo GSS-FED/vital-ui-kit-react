@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Switch } from '@gssfed/vital-ui-kit-react';
+import { Switch } from '../../../web/src';
 
 storiesOf('Components | Switch', module)
   .addDecorator(withKnobs)

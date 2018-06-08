@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pill } from '@gssfed/vital-ui-kit-react';
+import { Pill } from '../../../web/src';
 
 storiesOf('Components | Pill', module)
   .addDecorator(withKnobs)

@@ -15,15 +15,13 @@
     "babel-plugin-styled-components": "1.5.1"
   },
   "dependencies": {
-    "@gssfed/react-table": "^0.0.1",
-    "@gssfed/vital-ui-kit-react": "latest",
     "faker": "^4.1.0",
     "styled-components": "3.3.2"
   },
   "jest": {
     "transformIgnorePatterns": [
-        "/node_modules/(?!@gssfed/vital-ui-kit-react).+\\.js$"
-      ],
+      "/node_modules/(?!@gssfed/vital-ui-kit-react).+\\.js$"
+    ],
     "transform": {
       "^.+\\.jsx$": "babel-jest",
       "^.+\\.js$": "babel-jest",

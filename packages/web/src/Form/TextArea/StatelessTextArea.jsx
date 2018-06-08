@@ -17,7 +17,7 @@ type Props = {
   resize?: boolean,
   disabled?: boolean,
   placeholder?: string,
-  value?: string,
+  defaultValue?: string,
   onChange?: (e: any) => mixed,
   id?: string,
   spellCheck?: boolean,
@@ -34,7 +34,7 @@ class StatelessTextArea extends React.Component<Props> {
     resize: false,
     disabled: false,
     placeholder: null,
-    value: '',
+    defaultValue: '',
     id: null,
     spellCheck: false,
     autoFocus: false,
@@ -59,7 +59,7 @@ class StatelessTextArea extends React.Component<Props> {
       autoFocus,
       maxLength,
       placeholder,
-      value,
+      defaultValue,
       onChange,
       id,
     } = this.props;
@@ -72,7 +72,7 @@ class StatelessTextArea extends React.Component<Props> {
         autoFocus={autoFocus}
         maxLength={maxLength}
         placeholder={placeholder}
-        value={value}
+        defaultValue={defaultValue}
         onChange={onChange}
         id={id}
         ref={input => {

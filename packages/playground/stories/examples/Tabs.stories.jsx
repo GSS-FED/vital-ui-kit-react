@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Tabs, Badge } from '@gssfed/vital-ui-kit-react';
+import { Tabs, Badge } from '../../../web/src';
 
 storiesOf('Components | Tab', module)
   .addDecorator(withKnobs)

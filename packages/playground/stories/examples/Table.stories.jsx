@@ -23,7 +23,7 @@ import {
   TableCaption as Caption,
   TableColumn as Column,
   TableHeader as Header,
-} from '@gssfed/vital-ui-kit-react';
+} from '../../../web/src';
 
 const sample = [
   {

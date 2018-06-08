@@ -1,12 +1,18 @@
 /** @flow */
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import type { RowRendererParams } from './types';
 
 const Row = styled.div`
   :hover {
     background-color: #eef2fc;
   }
+
+  ${({ isOdd }) =>
+    isOdd &&
+    css`
+      background-color: #f7f9fd;
+    `};
 `;
 
 /**
@@ -26,6 +32,12 @@ export default function defaultRowRenderer({
   style,
 }: RowRendererParams) {
   const a11yProps = {};
+  const rowStyle = () => {
+    if (index < 0) {
+      return { isHeader: true };
+    }
+    return index % 2 === 0 ? { isEven: true } : { isOdd: true };
+  };
 
   if (
     onRowClick ||
@@ -61,6 +73,7 @@ export default function defaultRowRenderer({
 
   return (
     <Row
+      {...rowStyle()}
       {...a11yProps}
       className={className}
       key={key}

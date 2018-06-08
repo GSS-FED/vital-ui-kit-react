@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Box } from '@gssfed/vital-ui-kit-react';
+import { Box } from '../../../web/src';
 
 const ColorBox = styled(Box)`
   background-clip: content-box, padding-box;

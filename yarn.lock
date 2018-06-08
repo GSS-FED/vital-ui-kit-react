@@ -526,18 +526,6 @@
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-"@gssfed/vital-ui-kit-react@latest":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.5.0.tgz#b710e4a77c3fb55c9235a07ad3925fc096ad7c06"
-  dependencies:
-    polished "^1.9.2"
-    popmotion "^8.1.22"
-    prop-types "^15.6.1"
-    rc-trigger "^2.3.4"
-    react-click-outside "^3.0.1"
-    react-priority-navigation "^0.0.8-rc2"
-    resize-observer-polyfill "^1.5.0"
-
 "@storybook/addon-actions@3.4.6":
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.4.6.tgz#70ca84a4754ea2969640428890d9a3c9369261f6"
@@ -9757,7 +9745,7 @@ safe-resolve@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/safe-resolve/-/safe-resolve-1.0.0.tgz#fe34f8d29d7a3becfd249d0aa8a799b5c3cf6559"
 
-"safer-buffer@>= 2.1.2 < 3":
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 

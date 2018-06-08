@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Layout } from '@gssfed/vital-ui-kit-react';
+import { Layout } from '../../../web/src';
 
 storiesOf('Components | Layout', module).add(
   'Basic',

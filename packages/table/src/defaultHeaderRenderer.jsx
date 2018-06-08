@@ -12,8 +12,6 @@ export default function defaultHeaderRenderer({
   sortBy,
   sortDirection,
 }: HeaderRendererParams) {
-  console.log(label);
-  
   const showSortIndicator = sortBy === dataKey;
   const children = [
     <span

@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { ProgressBar } from '@gssfed/vital-ui-kit-react';
+import { ProgressBar } from '../../../web/src';
 
 storiesOf('Components | ProgressBar', module)
   .addDecorator(withKnobs)

@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, ButtonGroup, Button, Icon } from '@gssfed/vital-ui-kit-react';
+import { Card, ButtonGroup, Button, Icon } from '../../../web/src';
 import heroImage from '../../../../assets/card-header-pic.png';
 
 const content =

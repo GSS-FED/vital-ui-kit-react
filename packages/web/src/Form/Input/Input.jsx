@@ -38,7 +38,7 @@ export default class Input extends React.Component<Props, State> {
     placeholder: null,
     icon: null,
     iconPosition: 'right',
-    defaultValue: null,
+    value: '',
     disabled: false,
     alarm: false,
     warning: false,
@@ -65,10 +65,9 @@ export default class Input extends React.Component<Props, State> {
   render() {
     return (
       <StatelessInput
-        defaultValue={this.props.value}
+        {...this.props}
         onChange={this.handleChange}
         value={this.state.value}
-        {...this.props}
         ref={input => {
           this.input = input;
         }}

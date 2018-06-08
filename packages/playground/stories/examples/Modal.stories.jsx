@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Modal, Card, Button } from '@gssfed/vital-ui-kit-react';
+import { Modal, Card, Button } from '../../../web/src';
 
 const items = [
   {

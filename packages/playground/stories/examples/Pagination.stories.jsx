@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pagination } from '@gssfed/vital-ui-kit-react';
+import { Pagination } from '../../../web/src';
 
 const items = [
   {

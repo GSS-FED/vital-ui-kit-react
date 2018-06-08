@@ -39,6 +39,9 @@
     "react-dom": "^16",
     "styled-components": ">=2 || >=3"
   },
+  "devDependencies": {
+    
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"

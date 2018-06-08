@@ -29,7 +29,7 @@ import {
   Icon,
   Button,
   Select,
-} from '@gssfed/vital-ui-kit-react';
+} from '../../../web/src';
 
 const FormWrapper = styled.div`
   max-width: 500px;
@@ -207,6 +207,7 @@ storiesOf('Components | Form/Input', module)
       withNotes('This is basic input style')(() => (
         <FormWrapper>
           <Input
+            value="123"
             placeholder={text('Placeholder', 'Controlled Input')}
             isDisabled={boolean('Disabled', false)}
             isAlarm={boolean('Alarm', false)}

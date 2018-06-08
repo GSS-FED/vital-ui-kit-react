@@ -19,7 +19,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon, ButtonGroup } from '@gssfed/vital-ui-kit-react';
+import { Button, Icon, ButtonGroup } from '../../../web/src';
 
 injectGlobal`
   #root {

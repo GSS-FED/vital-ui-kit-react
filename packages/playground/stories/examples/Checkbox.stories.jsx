@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Checkbox, CheckboxGroup } from '@gssfed/vital-ui-kit-react';
+import { Checkbox, CheckboxGroup } from '../../../web/src';
 
 storiesOf('Components | Checkbox', module)
   .addDecorator(withKnobs)

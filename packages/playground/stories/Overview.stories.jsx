@@ -17,7 +17,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Avatar, Card, Button, ButtonGroup, Icon } from '@gssfed/vital-ui-kit-react';
+import { Avatar, Card, Button, ButtonGroup, Icon } from '../../web/src';
 import Section from './Container/Section';
 
 const AVATAR = [
