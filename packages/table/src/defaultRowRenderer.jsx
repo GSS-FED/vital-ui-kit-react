@@ -4,8 +4,15 @@ import styled, { css } from 'styled-components';
 import type { RowRendererParams } from './types';
 
 const Row = styled.div`
+  color: #456296;
+  border-bottom: 1px solid #D8e3f6;
+
   :hover {
     background-color: #eef2fc;
+  }
+
+  div[role='gridcell'] {
+    padding-left: 20px;
   }
 
   ${({ isOdd }) =>

@@ -16,6 +16,8 @@ class Column extends React.Component<ColumnProps> {
     ...BaseColumn.defaultProps,
     headerRenderer: defaultHeaderRenderer,
   };
+
+  static HeaderRenderer = defaultHeaderRenderer;
   
   static propTypes = BaseColumn.propTypes; 
 

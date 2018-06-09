@@ -36,7 +36,6 @@ storiesOf('Table', module)
       <div>
         <Table
           hasHorizontalBorder
-          headerHeight={20}
           width={500}
           height={300}
           rowCount={list.length}
@@ -60,32 +59,37 @@ storiesOf('Table', module)
   .add(
     'AutoResize',
     withInfo()(() => (
-      <AutoSizer>
-        {({ width, height }) => {
-          console.log(height, width)
-          return (
-          <Table
-            hasHorizontalBorder
-            headerHeight={20}
-            width={width}
-            height={height}
-            rowCount={list.length}
-            rowHeight={30}
-            rowGetter={({ index }) => list[index]}
-          >
-          <Column dataKey="name" label="Name" width={500 / 3} />
-          <Column
-            dataKey="location"
-            label="Location"
-            width={500 / 3}
-          />
-          <Column
-            dataKey="description"
-            label="Description"
-            width={500 / 3}
-          />
-          </Table>
-        )}}
-      </AutoSizer>
+      <div
+        style={{
+          width: '100%',
+          height: '300px',
+        }}
+      >
+        <AutoSizer>
+          {({ width, height }) => {
+            return (
+              <Table
+                hasHorizontalBorder
+                width={width}
+                height={height}
+                rowCount={list.length}
+                rowGetter={({ index }) => list[index]}
+              >
+                <Column dataKey="name" label="Name" width={width / 3} />
+                <Column
+                  dataKey="location"
+                  label="Location"
+                  width={width / 3}
+                />
+                <Column
+                  dataKey="description"
+                  label="Description"
+                  width={width / 3}
+                />
+              </Table>
+            );
+          }}
+        </AutoSizer>
+      </div>
     )),
   );

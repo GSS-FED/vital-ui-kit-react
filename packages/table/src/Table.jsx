@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import {
   type TableProps,
   Table as BaseTable,
-  AutoSizer,
   // $FlowFixMe
 } from 'react-virtualized';
 import './style.css';
@@ -34,49 +33,27 @@ class Table extends React.Component<Props> {
     hasHorizontalBorder: false,
     rowHeight: 40,
     striped: true,
+    headerHeight: 40,
   };
 
   static HeaderRowRenderer = defaultHeaderRowRenderer;
+  
+  static RowRenderer = defaultRowRenderer;
 
   render() {
     const {
       hasHorizontalBorder,
       hasVerticalBorder,
-      headerStyle,
-      rowStyle,
-      style,
-      rowHeight,
       striped,
       ...props
     } = this.props;
 
     return (
-      <AutoSizer>
-        {({ width }) => (
-        <StyledTable
-          rowHeight={rowHeight}
-          style={{
-            ...style,
-          }}
-          headerStyle={{
-            ...headerStyle,
-            // borderBottom: hasHorizontalBorder
-            //   ? '1px solid #D8E3F6'
-            //   : 'none',
-          }}
-          rowStyle={{
-            ...rowStyle,
-            borderBottom: hasHorizontalBorder
-              ? '1px solid #D8E3F6'
-              : 'none',
-          }}
-          {...props}
-        >
-          {this.props.children}
-        </StyledTable>
-
-        )}
-      </AutoSizer>
+      <StyledTable
+        {...props}
+      >
+        {this.props.children}
+      </StyledTable>
     );
   }
 }
