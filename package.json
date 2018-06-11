@@ -94,7 +94,7 @@
     "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-react": "7.9.1",
     "eslint-watch": "3.1.5",
-    "flow-bin": "0.73.0",
+    "flow-bin": "0.74.0",
     "flow-copy-source": "2.0.0",
     "jest": "23.1.0",
     "jest-styled-components": "5.0.1",
