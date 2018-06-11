@@ -22,7 +22,7 @@
 .ReactVirtualized__Table__Grid {
 }
 
-.ReactVirtualized__Table__headerRow {
+.ReactVirtualized__Table__headerRow, .ReactVirtualized__Table__headerRow > .ReactVirtualized__Grid__innerScrollContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

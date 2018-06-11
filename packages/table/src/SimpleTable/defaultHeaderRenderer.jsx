@@ -1,7 +1,7 @@
 /** @flow */
 import * as React from 'react';
 import styled from 'styled-components';
-import SortIndicator from './SortIndicator';
+import SortIndicator from '../SortIndicator';
 import type { HeaderRendererParams } from './types';
 
 const Header = styled.span`

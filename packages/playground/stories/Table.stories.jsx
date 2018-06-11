@@ -17,8 +17,8 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 import faker from 'faker';
-import { Table, Column } from '../../table/src';
-import { AutoSizer } from 'react-virtualized';
+import { Table, Column, Table2, defaultCellRenderer } from '../../table/src'; 
+import { AutoSizer, MultiGrid } from 'react-virtualized';
 
 // Table data as an array of objects
 const list = new Array(100).fill(true).map(() => ({
@@ -34,25 +34,26 @@ storiesOf('Table', module)
     'Basic',
     withInfo()(() => (
       <div>
-        <Table
+        <Table2
           hasHorizontalBorder
           width={500}
           height={300}
           rowCount={list.length}
-          rowGetter={({ index }) => list[index]}
+          // rowGetter={({ index }) => list[index]}
+          cellRenderer={defaultCellRenderer(list)}
         >
-          <Column dataKey="name" label="Name" width={500 / 3} />
+          <Column dataKey="name" label="Name" width={200} fixed />
           <Column
             dataKey="location"
             label="Location"
-            width={500 / 3}
+            width={100}
           />
           <Column
             dataKey="description"
             label="Description"
-            width={500 / 3}
+            width={300}
           />
-        </Table>
+        </Table2>
       </div>
     )),
   )
@@ -66,30 +67,65 @@ storiesOf('Table', module)
         }}
       >
         <AutoSizer>
-          {({ width, height }) => {
-            return (
-              <Table
-                hasHorizontalBorder
-                width={width}
-                height={height}
-                rowCount={list.length}
-                rowGetter={({ index }) => list[index]}
-              >
-                <Column dataKey="name" label="Name" width={width / 3} />
-                <Column
-                  dataKey="location"
-                  label="Location"
-                  width={width / 3}
-                />
-                <Column
-                  dataKey="description"
-                  label="Description"
-                  width={width / 3}
-                />
-              </Table>
-            );
-          }}
+          {({ width, height }) => (
+            <Table
+              hasHorizontalBorder
+              width={width}
+              height={height}
+              rowCount={list.length}
+              rowGetter={({ index }) => list[index]}
+            >
+              <Column dataKey="name" label="Name" width={width / 3} />
+              <Column
+                dataKey="location"
+                label="Location"
+                width={width / 3}
+              />
+              <Column
+                dataKey="description"
+                label="Description"
+                width={width / 3}
+              />
+            </Table>
+          )}
         </AutoSizer>
       </div>
     )),
+  )
+  .add(
+    'Multi',
+    withInfo()(() => (
+      <div
+        style={{
+          width: '100%',
+          height: '300px',
+        }}
+      >
+        <MultiGrid
+          fixedColumnCount={2}
+          fixedRowCount={1}
+          scrollToColumn={0}
+          scrollToRow={0}
+          cellRenderer={_cellRenderer}
+          columnWidth={75}
+          columnCount={50}
+          enableFixedColumnScroll
+          enableFixedRowScroll
+          height={300}
+          rowHeight={40}
+          rowCount={100}
+          width={500}
+          hideTopRightGridScrollbar
+          hideBottomLeftGridScrollbar
+        />
+      </div>
+    )),
   );
+
+function _cellRenderer({ columnIndex, key, rowIndex, style, columns }) {
+  return (
+    <div key={key} style={style}>
+      {list[rowIndex][columns[columnIndex].props.dataKey]}
+    </div>
+  );
+}

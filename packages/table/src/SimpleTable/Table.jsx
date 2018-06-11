@@ -7,7 +7,7 @@ import {
   Table as BaseTable,
   // $FlowFixMe
 } from 'react-virtualized';
-import './style.css';
+import '../style.css';
 import defaultRowRenderer from './defaultRowRenderer';
 import defaultHeaderRowRenderer from './defaultHeaderRowRenderer';
 
@@ -16,8 +16,6 @@ BaseTable.propTypes.children = () => {};
 const StyledTable: React.ComponentType<TableProps> = styled(
   BaseTable,
 )`
-  color: ;
-  font-size: 15px;
 `;
 
 type Props = TableProps & {
