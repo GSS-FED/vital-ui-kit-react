@@ -1,13 +1,19 @@
+// @flow
+
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { List } from '@gssfed/vital-ui-kit-react';
+import { List, defaultTheme } from '@gssfed/vital-ui-kit-react';
 
 const TitleWrapper = styled.div`
   padding-top: 5px;
   padding-bottom: 5px;
 `;
 
-class Nav extends React.PureComponent {
+type Props = {
+  theme: typeof defaultTheme
+}
+
+class Nav extends React.PureComponent<Props> {
   render() {
     return (
       <div style={{ background: this.props.theme.secondary900, height: '100%' }}>

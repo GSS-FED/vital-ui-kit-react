@@ -1,3 +1,7 @@
+// @flow
+/* eslint-disable react/no-array-index-key  */
+/* eslint-disable no-use-before-define  */
+/* eslint-disable no-unused-vars  */
 import * as React from 'react';
 import styled from 'styled-components';
 import {
@@ -33,17 +37,27 @@ const Vertical = styled.div`
   margin-bottom: 10px;
 `;
 
-const Section = ({ title, children }) => (
+type SectionProps = {
+  title: string,
+  children: React.Node,
+}
+
+const Section = ({ title, children }: SectionProps) => (
   <SectionWrapper>
     <SectionTitle>{title}</SectionTitle>
     {children}
   </SectionWrapper>
 );
 
-class Overview extends React.PureComponent {
+type OverviewState = {
+  showModal: boolean,
+}
+
+class Overview extends React.PureComponent<void, OverviewState> {
   state = {
     showModal: false,
   };
+
   render() {
     return (
       <ScrollView>

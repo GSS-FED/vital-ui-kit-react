@@ -1,3 +1,5 @@
+// @flow
+
 import * as React from 'react';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
@@ -5,7 +7,11 @@ import fs from 'fs';
 
 const Root = styled.div``;
 
-class GettingStarted extends React.PureComponent {
+type State = {
+  innerHeight: number,
+}
+
+class GettingStarted extends React.PureComponent<void, State> {
   state = {
     innerHeight: 0,
   };
@@ -13,14 +19,15 @@ class GettingStarted extends React.PureComponent {
   Ref = React.createRef();
 
   componentDidMount() {
-    console.log({ a: this.Ref.current });
     this.calcHeight();
   }
 
   calcHeight = () => {
-    this.setState({
-      innerHeight: window.innerHeight - this.Ref.current.offsetTop,
-    });
+    if (this.Ref && this.Ref.current) {
+      this.setState({
+        innerHeight: window.innerHeight - this.Ref.current.offsetTop,
+      });
+    }
   };
 
   render() {

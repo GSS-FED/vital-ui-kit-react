@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-
 import React, { PureComponent } from 'react';
 import { withFormik } from 'formik';
 import {
@@ -16,6 +15,7 @@ import {
 
 class Form extends PureComponent {
   state = {};
+
   render() {
     // eslint-disable-rule: no-unused-vars
     const {
