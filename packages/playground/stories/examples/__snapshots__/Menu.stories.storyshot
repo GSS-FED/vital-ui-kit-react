@@ -1,21 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Menu Basic 1`] = `
+.c3 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #456297;
+  border: 1px solid transparent;
+}
+
+.c3:hover {
+  background: #D8E3F6;
+}
+
+.c3:active {
+  background: #C4D2EB;
+}
+
+.c3:hover {
+  background: #D8E3F6;
+}
+
+.c3[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  border-left: #D8E3F6;
+  height: 100%;
+}
+
+.c1:first-child {
+  border-left: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0;
+}
+
+.c0 {
+  display: inline-block;
+  height: 100%;
+}
+
+.c4 {
+  margin-right: 10px;
+}
+
 <div
-  className="sc-jwKygS mlfdc"
+  className="c0"
 >
   <div
-    className="sc-iELTvK fElxmD"
+    className="c1"
   >
     <button
-      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-gqjmRU jcagjt"
+        className="c4"
         height={16}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -30,17 +105,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-iELTvK fElxmD"
+    className="c1"
   >
     <button
-      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-gqjmRU jcagjt"
+        className="c4"
         height={16}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -55,17 +130,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-iELTvK fElxmD"
+    className="c1"
   >
     <button
-      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-gqjmRU jcagjt"
+        className="c4"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -80,17 +155,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-iELTvK fElxmD"
+    className="c1"
   >
     <button
-      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-gqjmRU jcagjt"
+        className="c4"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"

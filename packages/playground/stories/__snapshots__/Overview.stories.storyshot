@@ -1,25 +1,1957 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Getting Started Overview 1`] = `
+.c7 {
+  position: absolute;
+  background-color: #EB5000;
+  color: #ffffff;
+  vertical-align: middle;
+  height: 9px;
+  line-height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  right: calc(9px / -2);
+  top: 0;
+  left: 70%;
+  right: auto;
+}
+
+.c7:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - (3px / 2));
+  left: calc(50% - (3px / 2));
+  background: #fff;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+}
+
+.c10 {
+  position: absolute;
+  background-color: #EB5000;
+  color: #ffffff;
+  vertical-align: middle;
+  height: 17px;
+  line-height: 17px;
+  padding: 0 5px;
+  border-radius: 0.75rem;
+  font-size: 0.725rem;
+  left: 70%;
+  right: auto;
+  top: 0;
+}
+
+.c3 {
+  position: relative;
+  display: inline-block;
+}
+
+.c4 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
+.c5 {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
+.c6 {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
+.c8 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
+.c9 {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
+.c11 > button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.c11 > button {
+  display: inline-block;
+}
+
+.c40 > button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.c40 > button {
+  display: inline-block;
+}
+
+.c12 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+}
+
+.c12:hover {
+  background: #D8E3F6;
+}
+
+.c12:active {
+  background: #C4D2EB;
+}
+
+.c12:hover {
+  background: transparent;
+  color: #41a0fe;
+}
+
+.c12[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c13 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+  color: #456297;
+}
+
+.c13:hover {
+  background: #D8E3F6;
+}
+
+.c13:active {
+  background: #C4D2EB;
+}
+
+.c13:hover {
+  background: transparent;
+  color: #41a0fe;
+}
+
+.c13:hover {
+  color: #5b7ab4;
+}
+
+.c13[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c14 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+}
+
+.c14:hover {
+  background: #D8E3F6;
+}
+
+.c14:active {
+  background: #C4D2EB;
+}
+
+.c14:hover {
+  background: transparent;
+  color: #41a0fe;
+}
+
+.c14:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c14[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c15 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+  color: #456297;
+}
+
+.c15:hover {
+  background: #D8E3F6;
+}
+
+.c15:active {
+  background: #C4D2EB;
+}
+
+.c15:hover {
+  background: transparent;
+  color: #41a0fe;
+}
+
+.c15:hover {
+  color: #5b7ab4;
+}
+
+.c15:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c15[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c16 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c16:hover {
+  background: #D8E3F6;
+}
+
+.c16:active {
+  background: #C4D2EB;
+}
+
+.c16[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c17 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c17:hover {
+  background: #D8E3F6;
+}
+
+.c17:active {
+  background: #C4D2EB;
+}
+
+.c17[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c18 {
+  position: relative;
+  background: #F7F9FE;
+  color: #2BCD86;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c18:hover {
+  background: #D8E3F6;
+}
+
+.c18:active {
+  background: #C4D2EB;
+}
+
+.c18[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c19 {
+  position: relative;
+  background: #F7F9FE;
+  color: #00C3FF;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c19:hover {
+  background: #D8E3F6;
+}
+
+.c19:active {
+  background: #C4D2EB;
+}
+
+.c19[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c20 {
+  position: relative;
+  background: #F7F9FE;
+  color: #EB5000;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c20:hover {
+  background: #D8E3F6;
+}
+
+.c20:active {
+  background: #C4D2EB;
+}
+
+.c20[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c21 {
+  position: relative;
+  background: #F7F9FE;
+  color: #FFB400;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c21:hover {
+  background: #D8E3F6;
+}
+
+.c21:active {
+  background: #C4D2EB;
+}
+
+.c21[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c22 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c22:hover {
+  background: #D8E3F6;
+}
+
+.c22:active {
+  background: #C4D2EB;
+}
+
+.c22:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c22:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c22[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c23 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c23:hover {
+  background: #D8E3F6;
+}
+
+.c23:active {
+  background: #C4D2EB;
+}
+
+.c23:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c23:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c23[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c24 {
+  position: relative;
+  background: #F7F9FE;
+  color: #2BCD86;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #2BCD86;
+  color: #ffffff;
+  border-color: #2BCD86;
+}
+
+.c24:hover {
+  background: #D8E3F6;
+}
+
+.c24:active {
+  background: #C4D2EB;
+}
+
+.c24:hover {
+  background: #51da9e;
+  border-color: #51da9e;
+}
+
+.c24:active {
+  background: #209a65;
+  border-color: #209a65;
+}
+
+.c24[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c25 {
+  position: relative;
+  background: #F7F9FE;
+  color: #00C3FF;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #00C3FF;
+  color: #ffffff;
+  border-color: #00C3FF;
+}
+
+.c25:hover {
+  background: #D8E3F6;
+}
+
+.c25:active {
+  background: #C4D2EB;
+}
+
+.c25:hover {
+  background: #33cfff;
+  border-color: #33cfff;
+}
+
+.c25:active {
+  background: #0094c2;
+  border-color: #0094c2;
+}
+
+.c25[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c26 {
+  position: relative;
+  background: #F7F9FE;
+  color: #EB5000;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EB5000;
+  color: #ffffff;
+  border-color: #EB5000;
+}
+
+.c26:hover {
+  background: #D8E3F6;
+}
+
+.c26:active {
+  background: #C4D2EB;
+}
+
+.c26:hover {
+  background: #ff6b1f;
+  border-color: #ff6b1f;
+}
+
+.c26:active {
+  background: #ae3b00;
+  border-color: #ae3b00;
+}
+
+.c26[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c27 {
+  position: relative;
+  background: #F7F9FE;
+  color: #FFB400;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #FFB400;
+  color: #ffffff;
+  border-color: #FFB400;
+}
+
+.c27:hover {
+  background: #D8E3F6;
+}
+
+.c27:active {
+  background: #C4D2EB;
+}
+
+.c27:hover {
+  background: #ffc333;
+  border-color: #ffc333;
+}
+
+.c27:active {
+  background: #c28900;
+  border-color: #c28900;
+}
+
+.c27[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c28 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #456297;
+  border: 1px solid transparent;
+}
+
+.c28:hover {
+  background: #D8E3F6;
+}
+
+.c28:active {
+  background: #C4D2EB;
+}
+
+.c28:hover {
+  background: #D8E3F6;
+}
+
+.c28[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c29 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+}
+
+.c29:hover {
+  background: #D8E3F6;
+}
+
+.c29:active {
+  background: #C4D2EB;
+}
+
+.c29:hover {
+  background: #D8E3F6;
+}
+
+.c29[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c30 {
+  position: relative;
+  background: #F7F9FE;
+  color: #2BCD86;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #2BCD86;
+  border: 1px solid transparent;
+}
+
+.c30:hover {
+  background: #D8E3F6;
+}
+
+.c30:active {
+  background: #C4D2EB;
+}
+
+.c30:hover {
+  background: #D8E3F6;
+}
+
+.c30[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c31 {
+  position: relative;
+  background: #F7F9FE;
+  color: #00C3FF;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #00C3FF;
+  border: 1px solid transparent;
+}
+
+.c31:hover {
+  background: #D8E3F6;
+}
+
+.c31:active {
+  background: #C4D2EB;
+}
+
+.c31:hover {
+  background: #D8E3F6;
+}
+
+.c31[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c32 {
+  position: relative;
+  background: #F7F9FE;
+  color: #EB5000;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #EB5000;
+  border: 1px solid transparent;
+}
+
+.c32:hover {
+  background: #D8E3F6;
+}
+
+.c32:active {
+  background: #C4D2EB;
+}
+
+.c32:hover {
+  background: #D8E3F6;
+}
+
+.c32[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c33 {
+  position: relative;
+  background: #F7F9FE;
+  color: #FFB400;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #FFB400;
+  border: 1px solid transparent;
+}
+
+.c33:hover {
+  background: #D8E3F6;
+}
+
+.c33:active {
+  background: #C4D2EB;
+}
+
+.c33:hover {
+  background: #D8E3F6;
+}
+
+.c33[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c34 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #456297;
+}
+
+.c34:hover {
+  background: #D8E3F6;
+}
+
+.c34:active {
+  background: #C4D2EB;
+}
+
+.c34:hover {
+  background: #D8E3F6;
+}
+
+.c34[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c35 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #0E86FE;
+}
+
+.c35:hover {
+  background: #D8E3F6;
+}
+
+.c35:active {
+  background: #C4D2EB;
+}
+
+.c35:hover {
+  background: #D8E3F6;
+}
+
+.c35[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c36 {
+  position: relative;
+  background: #F7F9FE;
+  color: #2BCD86;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #2BCD86;
+}
+
+.c36:hover {
+  background: #D8E3F6;
+}
+
+.c36:active {
+  background: #C4D2EB;
+}
+
+.c36:hover {
+  background: #D8E3F6;
+}
+
+.c36[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c37 {
+  position: relative;
+  background: #F7F9FE;
+  color: #00C3FF;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #00C3FF;
+}
+
+.c37:hover {
+  background: #D8E3F6;
+}
+
+.c37:active {
+  background: #C4D2EB;
+}
+
+.c37:hover {
+  background: #D8E3F6;
+}
+
+.c37[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c38 {
+  position: relative;
+  background: #F7F9FE;
+  color: #EB5000;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #EB5000;
+}
+
+.c38:hover {
+  background: #D8E3F6;
+}
+
+.c38:active {
+  background: #C4D2EB;
+}
+
+.c38:hover {
+  background: #D8E3F6;
+}
+
+.c38[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c39 {
+  position: relative;
+  background: #F7F9FE;
+  color: #FFB400;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #FFB400;
+}
+
+.c39:hover {
+  background: #D8E3F6;
+}
+
+.c39:active {
+  background: #C4D2EB;
+}
+
+.c39:hover {
+  background: #D8E3F6;
+}
+
+.c39[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c41 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  padding: calc(0.8rem - 1px) 1.333rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.8rem - 1px) 1.333rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c41:hover {
+  background: #D8E3F6;
+}
+
+.c41:active {
+  background: #C4D2EB;
+}
+
+.c41:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c41:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c41[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c42 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: calc(0.666rem - 1px) 1.2rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.666rem - 1px) 1.2rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c42:hover {
+  background: #D8E3F6;
+}
+
+.c42:active {
+  background: #C4D2EB;
+}
+
+.c42:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c42:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c42[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c43 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 0.866rem;
+  border-radius: 3px;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c43:hover {
+  background: #D8E3F6;
+}
+
+.c43:active {
+  background: #C4D2EB;
+}
+
+.c43:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c43:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c43[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c44 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  padding: calc(0.2rem - 1px) 0.533rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.2rem - 1px) 0.533rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c44:hover {
+  background: #D8E3F6;
+}
+
+.c44:active {
+  background: #C4D2EB;
+}
+
+.c44:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c44:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c44[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c45 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  padding: calc(0.2rem - 1px) 0.533rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.2rem - 1px) 0.533rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c45:hover {
+  background: #D8E3F6;
+}
+
+.c45:active {
+  background: #C4D2EB;
+}
+
+.c45:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c45:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c45[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c46 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 0.866rem;
+  border-radius: 3px;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c46:hover {
+  background: #D8E3F6;
+}
+
+.c46:active {
+  background: #C4D2EB;
+}
+
+.c46:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c46:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c46[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c47 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: calc(0.666rem - 1px) 1.2rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.666rem - 1px) 1.2rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c47:hover {
+  background: #D8E3F6;
+}
+
+.c47:active {
+  background: #C4D2EB;
+}
+
+.c47:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c47:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c47[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c48 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  padding: calc(0.8rem - 1px) 1.333rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.8rem - 1px) 1.333rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c48:hover {
+  background: #D8E3F6;
+}
+
+.c48:active {
+  background: #C4D2EB;
+}
+
+.c48:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c48:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c48[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c0 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.c51 {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #456297;
+  font-size: 0.93333rem;
+  overflow-x: hidden;
+}
+
+.c52 {
+  table-layout: fixed;
+  display: table;
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  border-top: 1px solid #D8E3F6;
+  min-height: 50px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.c53 {
+  position: relative;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c53:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #D8E3F6;
+}
+
+.c54 {
+  padding: 0 10px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  line-height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #0E86FE;
+}
+
+.c54:hover {
+  background-color: #D8E3F6;
+}
+
+.c50 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-break: break-word;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: none;
+  width: 300px;
+  height: auto;
+  border: 1px solid #D8E3F6;
+}
+
+.c1 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.c2 {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.c49 {
+  margin-bottom: 10px;
+}
+
 <div>
   <div
-    className="Box__Container-eQuqcE lcVbRk"
+    className="c0"
     style={null}
   >
     <div
-      className="sc-bdVaJa hzOrlj"
+      className="c1"
     >
       Avatar
     </div>
     <div
-      className="sc-bwzfXH hGsVpv"
+      className="c2"
     >
       <div
-        className="sc-bwzfXH byurlq"
+        className="c3"
         style={null}
       >
         <img
-          className="sc-htpNat fQIwtq"
+          className="c4"
           size="xsmall"
           src="test-file-stub"
           style={null}
@@ -27,14 +1959,14 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-bwzfXH hGsVpv"
+      className="c2"
     >
       <div
-        className="sc-bwzfXH byurlq"
+        className="c3"
         style={null}
       >
         <img
-          className="sc-htpNat isRSBx"
+          className="c5"
           size="small"
           src="test-file-stub"
           style={null}
@@ -42,20 +1974,20 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-bwzfXH hGsVpv"
+      className="c2"
     >
       <div
-        className="sc-bwzfXH byurlq"
+        className="c3"
         style={null}
       >
         <img
-          className="sc-htpNat iWPofg"
+          className="c6"
           size="medium"
           src="test-file-stub"
           style={null}
         />
         <span
-          className="sc-bdVaJa iVvZdE"
+          className="c7"
           label={10}
           size="medium"
           style={null}
@@ -63,14 +1995,14 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-bwzfXH hGsVpv"
+      className="c2"
     >
       <div
-        className="sc-bwzfXH byurlq"
+        className="c3"
         style={null}
       >
         <img
-          className="sc-htpNat cbQvwV"
+          className="c8"
           size="large"
           src="test-file-stub"
           style={null}
@@ -78,20 +2010,20 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-bwzfXH hGsVpv"
+      className="c2"
     >
       <div
-        className="sc-bwzfXH byurlq"
+        className="c3"
         style={null}
       >
         <img
-          className="sc-htpNat eJDQyF"
+          className="c9"
           size="xlarge"
           src="test-file-stub"
           style={null}
         />
         <span
-          className="sc-bdVaJa dRAmdu"
+          className="c10"
           label={100}
           size="xlarge"
           style={null}
@@ -102,16 +2034,16 @@ exports[`Storyshots Getting Started Overview 1`] = `
     </div>
   </div>
   <div
-    className="Box__Container-eQuqcE lcVbRk"
+    className="c0"
     style={null}
   >
     <div
-      className="sc-bdVaJa hzOrlj"
+      className="c1"
     >
       Button
     </div>
     <div
-      className="sc-bxivhb kOLvtg"
+      className="c11"
       style={
         Object {
           "paddingBottom": "20px",
@@ -119,7 +2051,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="sc-ifAKCX ejdaYI"
+        className="c12"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -128,7 +2060,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Link
       </button>
       <button
-        className="sc-ifAKCX imDogB"
+        className="c13"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -137,7 +2069,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Dark Link
       </button>
       <button
-        className="sc-ifAKCX fYniCN"
+        className="c14"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -146,7 +2078,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Link underline
       </button>
       <button
-        className="sc-ifAKCX hzJWbI"
+        className="c15"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -156,7 +2088,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb kOLvtg"
+      className="c11"
       style={
         Object {
           "paddingBottom": "20px",
@@ -164,7 +2096,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="sc-ifAKCX lgHGEf"
+        className="c16"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -173,7 +2105,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         default
       </button>
       <button
-        className="sc-ifAKCX lhGjii"
+        className="c17"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -182,7 +2114,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="sc-ifAKCX iPkHqN"
+        className="c18"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -191,7 +2123,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="sc-ifAKCX eIGihw"
+        className="c19"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -200,7 +2132,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="sc-ifAKCX iELRE"
+        className="c20"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -209,7 +2141,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="sc-ifAKCX fKqxXE"
+        className="c21"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -219,7 +2151,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb kOLvtg"
+      className="c11"
       style={
         Object {
           "paddingBottom": "20px",
@@ -227,7 +2159,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="sc-ifAKCX hEkazX"
+        className="c22"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -236,7 +2168,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         flat
       </button>
       <button
-        className="sc-ifAKCX Uiqxi"
+        className="c23"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -245,7 +2177,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="sc-ifAKCX gebpmz"
+        className="c24"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -254,7 +2186,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="sc-ifAKCX kUQwhE"
+        className="c25"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -263,7 +2195,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="sc-ifAKCX NzZsO"
+        className="c26"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -272,7 +2204,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="sc-ifAKCX bXYPbR"
+        className="c27"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -282,7 +2214,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb kOLvtg"
+      className="c11"
       style={
         Object {
           "paddingBottom": "20px",
@@ -290,7 +2222,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="sc-ifAKCX iisouQ"
+        className="c28"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -299,7 +2231,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         subtle
       </button>
       <button
-        className="sc-ifAKCX fsAjIL"
+        className="c29"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -308,7 +2240,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="sc-ifAKCX kShjdX"
+        className="c30"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -317,7 +2249,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="sc-ifAKCX gWuGCB"
+        className="c31"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -326,7 +2258,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="sc-ifAKCX dOoQtn"
+        className="c32"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -335,7 +2267,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="sc-ifAKCX fRpNHb"
+        className="c33"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -345,7 +2277,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb kOLvtg"
+      className="c11"
       style={
         Object {
           "paddingBottom": "20px",
@@ -353,7 +2285,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="sc-ifAKCX hYuTIy"
+        className="c34"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -362,7 +2294,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         light
       </button>
       <button
-        className="sc-ifAKCX byouKm"
+        className="c35"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -371,7 +2303,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="sc-ifAKCX lfJPzl"
+        className="c36"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -380,7 +2312,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="sc-ifAKCX lluSss"
+        className="c37"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -389,7 +2321,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="sc-ifAKCX ihHHJR"
+        className="c38"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -398,7 +2330,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="sc-ifAKCX nZUPu"
+        className="c39"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -408,11 +2340,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb HBikN"
+      className="c40"
       style={null}
     >
       <button
-        className="sc-ifAKCX bbykOi"
+        className="c41"
         onClick={[Function]}
         selected={false}
         size="xlarge"
@@ -421,7 +2353,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         xlarge
       </button>
       <button
-        className="sc-ifAKCX fDcGsE"
+        className="c42"
         onClick={[Function]}
         selected={false}
         size="large"
@@ -430,7 +2362,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         large
       </button>
       <button
-        className="sc-ifAKCX Uiqxi"
+        className="c23"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -439,7 +2371,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         medium
       </button>
       <button
-        className="sc-ifAKCX czxfbJ"
+        className="c43"
         onClick={[Function]}
         selected={false}
         size="small"
@@ -448,7 +2380,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         small
       </button>
       <button
-        className="sc-ifAKCX fwyBVM"
+        className="c44"
         onClick={[Function]}
         selected={false}
         size="xsmall"
@@ -458,11 +2390,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </button>
     </div>
     <div
-      className="sc-bxivhb HBikN"
+      className="c40"
       style={null}
     >
       <button
-        className="sc-ifAKCX irkfhF"
+        className="c45"
         onClick={[Function]}
         selected={false}
         size="xsmall"
@@ -471,7 +2403,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         xsmall
       </button>
       <button
-        className="sc-ifAKCX gWWmCd"
+        className="c46"
         onClick={[Function]}
         selected={false}
         size="small"
@@ -480,7 +2412,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         small
       </button>
       <button
-        className="sc-ifAKCX hEkazX"
+        className="c22"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -489,7 +2421,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         medium
       </button>
       <button
-        className="sc-ifAKCX gnlFHj"
+        className="c47"
         onClick={[Function]}
         selected={false}
         size="large"
@@ -498,7 +2430,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         large
       </button>
       <button
-        className="sc-ifAKCX iFGyvD"
+        className="c48"
         onClick={[Function]}
         selected={false}
         size="xlarge"
@@ -509,24 +2441,24 @@ exports[`Storyshots Getting Started Overview 1`] = `
     </div>
   </div>
   <div
-    className="Box__Container-eQuqcE lcVbRk"
+    className="c0"
     style={null}
   >
     <div
-      className="sc-bdVaJa hzOrlj"
+      className="c1"
     >
       Card
     </div>
     <div
-      className="sc-htpNat fzoRZM"
+      className="c49"
     >
       <div
-        className="sc-kGXeez joxBBS"
+        className="c50"
         height="auto"
         width="300px"
       >
         <div
-          className="sc-cSHVUG gekZmC"
+          className="c51"
           style={
             Object {
               "textAlign": "center",
@@ -573,13 +2505,13 @@ exports[`Storyshots Getting Started Overview 1`] = `
           </div>
         </div>
         <div
-          className="sc-kAzzGY beUSyZ"
+          className="c52"
         >
           <div
-            className="sc-chPdSV fyCuVJ"
+            className="c53"
           >
             <button
-              className="sc-kgoBCf dvVnpo"
+              className="c54"
             >
               Confirm
             </button>
@@ -592,6 +2524,23 @@ exports[`Storyshots Getting Started Overview 1`] = `
 `;
 
 exports[`Storyshots Getting Started Theme 1`] = `
+.c0 {
+  text-align: center;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.c2 {
+  width: 40px;
+  height: 40px;
+}
+
 <div
   style={
     Object {
@@ -615,7 +2564,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
     }
   >
     <div
-      className="sc-bxivhb EYjjH"
+      className="c0"
     >
       <input
         onChange={[Function]}
@@ -623,10 +2572,10 @@ exports[`Storyshots Getting Started Theme 1`] = `
         value="#0E86FE"
       />
       <div
-        className="sc-ifAKCX kBKxBl"
+        className="c1"
       >
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#d9ecff",
@@ -634,7 +2583,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#a6d3ff",
@@ -642,7 +2591,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#74b9fe",
@@ -650,7 +2599,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#41a0fe",
@@ -658,7 +2607,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#0E86FE",
@@ -666,7 +2615,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#016dd8",
@@ -674,7 +2623,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#0153a5",
@@ -682,7 +2631,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#003a73",
@@ -690,7 +2639,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#002040",
@@ -699,10 +2648,10 @@ exports[`Storyshots Getting Started Theme 1`] = `
         />
       </div>
       <div
-        className="sc-ifAKCX kBKxBl"
+        className="c1"
       >
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#f7fbfe",
@@ -710,7 +2659,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#eef5fc",
@@ -718,7 +2667,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#d8e7f6",
@@ -726,7 +2675,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#c4d8eb",
@@ -734,7 +2683,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#95b5d4",
@@ -742,7 +2691,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#7193b6",
@@ -750,7 +2699,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#456e97",
@@ -758,7 +2707,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#2a557f",
@@ -766,7 +2715,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-EHOje eqkFSA"
+          className="c2"
           style={
             Object {
               "background": "#1e4368",

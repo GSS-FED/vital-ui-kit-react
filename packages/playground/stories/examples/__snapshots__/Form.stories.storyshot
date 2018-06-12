@@ -1,24 +1,281 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Form Full Example 1`] = `
+.c9 {
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  height: 1.93267rem;
+  color: #7189B6;
+  text-align: center;
+  background-color: #EEF2FC;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  z-index: 5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: #EB5000;
+  margin: -0.133rem 0.533rem 0 0;
+  vertical-align: middle;
+  height: 0.266rem;
+  width: 0.266rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.666rem;
+  top: 0.666rem;
+}
+
+.c7 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c11 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c11::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c11::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c11:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c11::placeholder {
+  color: #95ACD4;
+}
+
+.c11:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c11:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c5 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c6 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c6 > * {
+  width: calc(100% + 2px);
+}
+
+.c6:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c6:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c6:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c6:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c8 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.c8 > * {
+  width: calc(100% + 2px);
+}
+
+.c8:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c8:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c8:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c8:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c10 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c10 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-gipzik twobj"
+    className="c1"
   >
     <span
-      className="sc-brqgnP eOaOlS"
+      className="c2"
       required={true}
     >
       Username
     </span>
     <div
-      className="sc-cMljjf hwFcyK"
+      className="c3"
     >
       <input
         autoFocus={false}
-        className="sc-jAaTju knvECT"
+        className="c4"
         defaultValue=""
         disabled={false}
         icon={null}
@@ -31,26 +288,26 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik twobj"
+    className="c1"
   >
     <span
-      className="sc-brqgnP eOaOlS"
+      className="c2"
       required={true}
     >
       Fullname
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c5"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -63,14 +320,14 @@ exports[`Storyshots Components | Form Full Example 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -85,26 +342,26 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik twobj"
+    className="c1"
   >
     <span
-      className="sc-brqgnP eOaOlS"
+      className="c2"
       required={true}
     >
       Birthday
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c5"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -117,14 +374,14 @@ exports[`Storyshots Components | Form Full Example 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -137,14 +394,14 @@ exports[`Storyshots Components | Form Full Example 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -159,35 +416,35 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik twobj"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c7"
       required={false}
     >
       Website
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c5"
     >
       <div
-        className="sc-jlyJG gnaOzQ"
+        className="c8"
       >
         <div
-          className="sc-jWBwVP pgJhm"
+          className="c9"
         >
           http://
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c6"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c3"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c4"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -202,17 +459,17 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik OLXUC"
+    className="c10"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c7"
       required={false}
     >
       Comment
     </span>
     <textarea
       autoFocus={false}
-      className="sc-gPEVay icsnmY"
+      className="c11"
       defaultValue=""
       disabled={false}
       id={null}
@@ -228,24 +485,131 @@ exports[`Storyshots Components | Form Full Example 1`] = `
 `;
 
 exports[`Storyshots Components | Form Hint 1`] = `
+.c5 {
+  display: block !important;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.42857;
+  padding-left: 1px;
+  white-space: normal;
+  color: #2BCD86;
+}
+
+.c6 {
+  display: block !important;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.42857;
+  padding-left: 1px;
+  white-space: normal;
+  color: #95ACD4;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Username
     </span>
     <div
-      className="sc-cMljjf hwFcyK"
+      className="c3"
     >
       <input
         autoFocus={false}
-        className="sc-jAaTju knvECT"
+        className="c4"
         defaultValue=""
         disabled={false}
         icon={null}
@@ -257,12 +621,12 @@ exports[`Storyshots Components | Form Hint 1`] = `
       />
     </div>
     <div
-      className="sc-cvbbAY eJUdcQ"
+      className="c5"
     >
       Username is available
     </div>
     <div
-      className="sc-cvbbAY gcRjjQ"
+      className="c6"
     >
       Example: James Allen
     </div>
@@ -271,24 +635,112 @@ exports[`Storyshots Components | Form Hint 1`] = `
 `;
 
 exports[`Storyshots Components | Form Input with Label 1`] = `
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: #EB5000;
+  margin: -0.133rem 0.533rem 0 0;
+  vertical-align: middle;
+  height: 0.266rem;
+  width: 0.266rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.666rem;
+  top: 0.666rem;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-gipzik twobj"
+    className="c1"
   >
     <span
-      className="sc-brqgnP eOaOlS"
+      className="c2"
       required={true}
     >
       Username
     </span>
     <div
-      className="sc-cMljjf hwFcyK"
+      className="c3"
     >
       <input
         autoFocus={false}
-        className="sc-jAaTju knvECT"
+        className="c4"
         defaultValue=""
         disabled={false}
         icon={null}
@@ -304,30 +756,260 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
 `;
 
 exports[`Storyshots Components | Form Multiple & Addon 1`] = `
+.c9 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c9:hover {
+  background: #D8E3F6;
+}
+
+.c9:active {
+  background: #C4D2EB;
+}
+
+.c9:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c9:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c9[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c8 {
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  height: 1.93267rem;
+  color: #7189B6;
+  text-align: center;
+  background-color: #EEF2FC;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  z-index: 5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c6::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c6:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c6::placeholder {
+  color: #95ACD4;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c6:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c4 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c4 > * {
+  width: calc(100% + 2px);
+}
+
+.c4:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c4:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c4:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c7 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.c7 > * {
+  width: calc(100% + 2px);
+}
+
+.c7:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c7:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c7:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c7:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Weight
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c3"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c5"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c6"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -340,10 +1022,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG gnaOzQ"
+        className="c7"
       >
         <div
-          className="sc-jWBwVP pgJhm"
+          className="c8"
         >
           kg
         </div>
@@ -351,22 +1033,22 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Price
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c3"
     >
       <div
-        className="sc-jlyJG gnaOzQ"
+        className="c7"
       >
         <div
-          className="sc-jWBwVP pgJhm"
+          className="c8"
         >
           <svg
             height={16}
@@ -382,14 +1064,14 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c5"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c6"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -402,10 +1084,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG gnaOzQ"
+        className="c7"
       >
         <div
-          className="sc-jWBwVP pgJhm"
+          className="c8"
         >
           .00
         </div>
@@ -413,26 +1095,26 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c3"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c5"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c6"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -445,10 +1127,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <button
-          className="sc-ifAKCX Uiqxi"
+          className="c9"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -463,26 +1145,244 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
 `;
 
 exports[`Storyshots Components | Form Multiple & Button 1`] = `
+.c5 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover {
+  background: #D8E3F6;
+}
+
+.c5:active {
+  background: #C4D2EB;
+}
+
+.c5[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c8 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c8:hover {
+  background: #D8E3F6;
+}
+
+.c8:active {
+  background: #C4D2EB;
+}
+
+.c8:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c8:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c8[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c7 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c7::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c7:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c7::placeholder {
+  color: #95ACD4;
+}
+
+.c7:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c7:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c4 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c4 > * {
+  width: calc(100% + 2px);
+}
+
+.c4:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c4:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c4:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c3"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <button
-          className="sc-ifAKCX lgHGEf"
+          className="c5"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -492,10 +1392,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         </button>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <button
-          className="sc-ifAKCX lgHGEf"
+          className="c5"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -505,10 +1405,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         </button>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <button
-          className="sc-ifAKCX lgHGEf"
+          className="c5"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -518,14 +1418,14 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         </button>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c6"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c7"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -540,26 +1440,26 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
     </div>
   </div>
   <div
-    className="sc-gipzik OLXUC"
+    className="c1"
   >
     <span
-      className="sc-brqgnP jXbsSQ"
+      className="c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="sc-iRbamj cjHrfq"
+      className="c3"
     >
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <div
-          className="sc-cMljjf hwFcyK"
+          className="c6"
         >
           <input
             autoFocus={false}
-            className="sc-jAaTju knvECT"
+            className="c7"
             defaultValue=""
             disabled={false}
             icon={null}
@@ -572,10 +1472,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         </div>
       </div>
       <div
-        className="sc-jlyJG iLgAEE"
+        className="c4"
       >
         <button
-          className="sc-ifAKCX Uiqxi"
+          className="c8"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -590,15 +1490,73 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
 `;
 
 exports[`Storyshots Components | Form/Input Basic 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-cMljjf hwFcyK"
+    className="c1"
   >
     <input
       autoFocus={false}
-      className="sc-jAaTju knvECT"
+      className="c2"
       defaultValue="default"
       disabled={false}
       icon={null}
@@ -611,15 +1569,73 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
 `;
 
 exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-cMljjf hwFcyK"
+    className="c1"
   >
     <input
       autoFocus={false}
-      className="sc-jAaTju knvECT"
+      className="c2"
       defaultValue=""
       disabled={false}
       icon={null}
@@ -634,15 +1650,150 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
 `;
 
 exports[`Storyshots Components | Form/Input With Icon 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  padding-right: 2.2em;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  padding-left: 2.2em;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  right: 0;
+  cursor: pointer;
+}
+
+.c3:hover {
+  color: #C4D2EB;
+}
+
+.c5 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  left: 0;
+  color: #C3D1EB;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-cMljjf hwFcyK"
+    className="c1"
   >
     <input
       autoFocus={false}
-      className="sc-jAaTju jnPaQg"
+      className="c2"
       defaultValue=""
       disabled={false}
       icon="search"
@@ -651,7 +1802,7 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
       type="text"
     />
     <svg
-      className="sc-jDwBTQ ZtEja"
+      className="c3"
       height={16}
       iconPosition="right"
       onClick={[Function]}
@@ -666,11 +1817,11 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   </div>
   <br />
   <div
-    className="sc-cMljjf hwFcyK"
+    className="c1"
   >
     <input
       autoFocus={false}
-      className="sc-jAaTju itJGzT"
+      className="c4"
       defaultValue=""
       disabled={false}
       icon="search"
@@ -679,7 +1830,7 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
       type="text"
     />
     <svg
-      className="sc-jDwBTQ gblsWu"
+      className="c5"
       height={16}
       iconPosition="left"
       onClick={[Function]}
@@ -696,19 +1847,59 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
 `;
 
 exports[`Storyshots Components | Form/Select Basic 1`] = `
+.c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1;
+  height: 1.93267rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #456297;
+  border: 1px solid #C4D2EB;
+  z-index: 5;
+  outline: 0;
+  text-align: left;
+}
+
+.c3 {
+  color: color:#95ACD4;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
 <div
-  className="sc-gzVnrw WqWzD"
+  className="c0"
 >
   <div
-    className="sc-hzDkRC eBXbor"
+    className="c1"
   >
     <div
-      className="sc-jhAzac bQmBEe"
+      className="c2"
       onClick={[Function]}
       placeholder="Select One"
     >
       <span
-        className="sc-fMiknA hfhIin sc-fBuWsC eeihxG"
+        className="c3 "
       >
         Select One
       </span>
@@ -734,9 +1925,58 @@ exports[`Storyshots Components | Form/Select Basic 1`] = `
 `;
 
 exports[`Storyshots Components | Form/TextArea Basic 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c0:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::placeholder {
+  color: #95ACD4;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c0:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
 <textarea
   autoFocus={false}
-  className="sc-gPEVay icsnmY"
+  className="c0"
   defaultValue=""
   disabled={false}
   id={null}
@@ -749,9 +1989,58 @@ exports[`Storyshots Components | Form/TextArea Basic 1`] = `
 `;
 
 exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c0:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::placeholder {
+  color: #95ACD4;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c0:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
 <textarea
   autoFocus={false}
-  className="sc-gPEVay icsnmY"
+  className="c0"
   defaultValue=""
   disabled={false}
   id={null}

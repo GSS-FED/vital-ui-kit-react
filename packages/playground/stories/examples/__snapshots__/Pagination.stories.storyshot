@@ -1,14 +1,120 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Pagination Basic 1`] = `
+.c3 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #456297;
+  border: 1px solid transparent;
+}
+
+.c3:hover {
+  background: #D8E3F6;
+}
+
+.c3:active {
+  background: #C4D2EB;
+}
+
+.c3:hover {
+  background: #D8E3F6;
+}
+
+.c3[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c4 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #C4D2EB;
+  color: #456297;
+  border: 1px solid transparent;
+}
+
+.c4:hover {
+  background: #D8E3F6;
+}
+
+.c4:active {
+  background: #C4D2EB;
+}
+
+.c4:hover {
+  background: #D8E3F6;
+}
+
+.c4[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c0 {
+  font-size: 0;
+}
+
+.c2 {
+  font-size: 0.875rem;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.875rem;
+}
+
 <ul
-  className="sc-cIShpX dinQuX"
+  className="c0"
 >
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -18,10 +124,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -47,10 +153,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -60,10 +166,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -73,10 +179,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX fymSEW"
+      className="c2 c4"
       onClick={[Function]}
       selected={true}
       size="medium"
@@ -86,10 +192,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -99,10 +205,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -112,10 +218,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -141,10 +247,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-feJyhm geVpXi"
+    className="c1"
   >
     <button
-      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
+      className="c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"

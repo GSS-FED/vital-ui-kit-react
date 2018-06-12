@@ -20,9 +20,7 @@
       "**/react-native-*",
       "**/react-native-*/**",
       "**/react-native-vector-icons",
-      "**/react-native-vector-icons/**",
-      "**/styled-components",
-      "**/styled-components/**"
+      "**/react-native-vector-icons/**"
     ]
   },
   "scripts": {

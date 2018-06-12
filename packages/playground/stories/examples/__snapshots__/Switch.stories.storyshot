@@ -1,22 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Switch Basic 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+}
+
 <div
-  className="sc-eNQAEJ fAbPPh"
+  className=""
   onClick={[Function]}
 >
   <input
     checked={false}
-    className="sc-hMqMXs ipZWfr"
+    className="c0"
     disabled={false}
     type="checkbox"
   />
   <label
-    className="sc-kEYyzF faijeD"
+    className="c1"
     disabled={false}
   >
     <div
-      className="sc-kkGfuU cidhEQ"
+      className="c2"
       disabled={false}
       icon={null}
     />
@@ -25,22 +79,85 @@ exports[`Storyshots Components | Switch Basic 1`] = `
 `;
 
 exports[`Storyshots Components | Switch with Icon Button 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.2rem;
+  color: #C4D2EB;
+}
+
 <div
-  className="sc-eNQAEJ fAbPPh"
+  className=""
   onClick={[Function]}
 >
   <input
     checked={false}
-    className="sc-hMqMXs ipZWfr"
+    className="c0"
     disabled={false}
     type="checkbox"
   />
   <label
-    className="sc-kEYyzF faijeD"
+    className="c1"
     disabled={false}
   >
     <div
-      className="sc-kkGfuU jHgDJq"
+      className="c2"
       disabled={false}
       icon="wifi"
     >
@@ -61,23 +178,102 @@ exports[`Storyshots Components | Switch with Icon Button 1`] = `
 `;
 
 exports[`Storyshots Components | Switch with Icon Label 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c5 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+}
+
+.c3 {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  font-size: 13px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #C4D2EB;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.c4 {
+  display: block;
+}
+
+.c2 {
+  display: none;
+  left: -20px;
+}
+
 <div
-  className="sc-eNQAEJ fAbPPh"
+  className=""
   onClick={[Function]}
 >
   <input
     checked={false}
-    className="sc-hMqMXs ipZWfr"
+    className="c0"
     disabled={false}
     type="checkbox"
   />
   <label
-    className="sc-kEYyzF faijeD"
+    className="c1"
     disabled={false}
   >
     <div
       checked={false}
-      className="sc-eHgmQL kXwoSs sc-iAyFgw jrhtEm"
+      className="c2 c3"
     >
       <svg
         height={16}
@@ -93,7 +289,7 @@ exports[`Storyshots Components | Switch with Icon Label 1`] = `
     </div>
     <div
       checked={false}
-      className="sc-hSdWYo dlRJny sc-iAyFgw jrhtEm"
+      className="c4 c3"
     >
       <svg
         height={16}
@@ -108,7 +304,7 @@ exports[`Storyshots Components | Switch with Icon Label 1`] = `
       </svg>
     </div>
     <div
-      className="sc-kkGfuU cidhEQ"
+      className="c5"
       disabled={false}
       icon={null}
     />

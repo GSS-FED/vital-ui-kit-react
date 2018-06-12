@@ -1,12 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Button ButtonGroup 1`] = `
+.c0 > button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.c0 > button {
+  display: inline-block;
+}
+
+.c1 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1:hover {
+  background: #D8E3F6;
+}
+
+.c1:active {
+  background: #C4D2EB;
+}
+
+.c1[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <div
-  className="sc-bxivhb HBikN"
+  className="c0"
   style={null}
 >
   <button
-    className="sc-ifAKCX lgHGEf"
+    className="c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -15,7 +62,7 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
     Button
   </button>
   <button
-    className="sc-ifAKCX lgHGEf"
+    className="c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -24,7 +71,7 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
     Button
   </button>
   <button
-    className="sc-ifAKCX lgHGEf"
+    className="c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -36,8 +83,64 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
 `;
 
 exports[`Storyshots Components | Button Circular style 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 100%;
+  width: 2.066rem;
+  line-height: 2.066rem;
+  height: 2.066rem;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX gcTbGz"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -58,8 +161,47 @@ exports[`Storyshots Components | Button Circular style 1`] = `
 `;
 
 exports[`Storyshots Components | Button Default 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX lgHGEf"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -70,8 +212,47 @@ exports[`Storyshots Components | Button Default 1`] = `
 `;
 
 exports[`Storyshots Components | Button Disable 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX lgHGEf"
+  className="c0"
   disabled={true}
   onClick={[Function]}
   selected={false}
@@ -83,8 +264,60 @@ exports[`Storyshots Components | Button Disable 1`] = `
 `;
 
 exports[`Storyshots Components | Button Flat 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c0:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX hEkazX"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -95,8 +328,53 @@ exports[`Storyshots Components | Button Flat 1`] = `
 `;
 
 exports[`Storyshots Components | Button Light 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #ffffff;
+  color: #456297;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX hYuTIy"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -107,8 +385,55 @@ exports[`Storyshots Components | Button Light 1`] = `
 `;
 
 exports[`Storyshots Components | Button Link 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #0E86FE;
+  border: 1px solid transparent;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0:hover {
+  background: transparent;
+  color: #41a0fe;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX ejdaYI"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -119,8 +444,54 @@ exports[`Storyshots Components | Button Link 1`] = `
 `;
 
 exports[`Storyshots Components | Button Subtle 1`] = `
+.c0 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: transparent;
+  color: #456297;
+  border: 1px solid transparent;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0:active {
+  background: #C4D2EB;
+}
+
+.c0:hover {
+  background: #D8E3F6;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 <button
-  className="sc-ifAKCX iisouQ"
+  className="c0"
   onClick={[Function]}
   selected={false}
   size="medium"

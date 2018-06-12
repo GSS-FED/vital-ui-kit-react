@@ -4,7 +4,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Box } from '@gssfed/vital-ui-kit-react';
+import { Box } from '../../../web/src';
 
 const SectionTitle = styled.div`
   font-size: 32px;

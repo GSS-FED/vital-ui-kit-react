@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest",
+    "test": "NODE_ENV='test' jest",
     "start": "start-storybook -p 6006"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
@@ -15,13 +15,9 @@
     "babel-plugin-styled-components": "1.5.1"
   },
   "dependencies": {
-    "faker": "^4.1.0",
-    "styled-components": "3.3.2"
+    "faker": "^4.1.0"
   },
   "jest": {
-    "transformIgnorePatterns": [
-      "/node_modules/(?!@gssfed/vital-ui-kit-react).+\\.js$"
-    ],
     "transform": {
       "^.+\\.jsx$": "babel-jest",
       "^.+\\.js$": "babel-jest",

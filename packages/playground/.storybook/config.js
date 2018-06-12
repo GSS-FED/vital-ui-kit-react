@@ -12,6 +12,12 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+injectGlobal`
+  #root {
+    padding: 20px;
+  }
+`;
+
 setOptions({
   hierarchySeparator: /\//,
   hierarchyRootSeparator: /\|/,

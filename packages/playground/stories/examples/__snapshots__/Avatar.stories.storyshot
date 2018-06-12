@@ -1,18 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Avatar Basic 1`] = `
+.c2 {
+  position: absolute;
+  background-color: #EB5000;
+  color: #ffffff;
+  vertical-align: middle;
+  height: 9px;
+  line-height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  right: calc(9px / -2);
+  top: calc(9px / -2);
+  left: auto;
+  right: NaN;
+}
+
+.c2:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - (3px / 2));
+  left: calc(50% - (3px / 2));
+  background: #fff;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+}
+
 <div
-  className="sc-bwzfXH byurlq"
+  className="c0"
   style={null}
 >
   <img
-    className="sc-htpNat EiuKF"
+    className="c1"
     size="medium"
     src="test-file-stub"
     style={null}
   />
   <span
-    className="sc-bdVaJa bmEHVK"
+    className="c2"
     label="99+"
     size="medium"
     style={null}

@@ -1,11 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Icon Basic 1`] = `
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  padding-right: 2.2em;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c5 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  right: 0;
+  cursor: pointer;
+}
+
+.c5:hover {
+  color: #C4D2EB;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c7 {
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.c7:hover {
+  background: #c4d2eb;
+}
+
 <div
-  className="sc-htoDjs dXmIuO"
+  className="c0"
 >
   <div
-    className="FieldInput__Root-ilozUy jzmpJk"
+    className="c1"
     style={
       Object {
         "width": "60%",
@@ -13,15 +140,15 @@ exports[`Storyshots Components | Icon Basic 1`] = `
     }
   >
     <span
-      className="Label__LabelElement-MhWzF iTdmbL"
+      className="c2"
       required={false}
     />
     <div
-      className="StatelessInput__Root-jKcbbQ cBxxRP"
+      className="c3"
     >
       <input
         autoFocus={false}
-        className="StatelessInput__InputElement-kmxlHk cdkBZe"
+        className="c4"
         defaultValue=""
         disabled={false}
         icon="search"
@@ -32,7 +159,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
         value=""
       />
       <svg
-        className="StatelessInput__InputIcon-daYAIb eIjyCt"
+        className="c5"
         height={16}
         iconPosition="right"
         onClick={[Function]}
@@ -47,10 +174,10 @@ exports[`Storyshots Components | Icon Basic 1`] = `
     </div>
   </div>
   <div
-    className="sc-dnqmqq gDJiAR"
+    className="c6"
   >
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -67,7 +194,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -84,7 +211,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -101,7 +228,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -118,7 +245,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -135,7 +262,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -152,7 +279,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -169,7 +296,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -186,7 +313,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -203,7 +330,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -220,7 +347,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -237,7 +364,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -254,7 +381,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -271,7 +398,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -288,7 +415,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -305,7 +432,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -322,7 +449,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -339,7 +466,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -356,7 +483,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -373,7 +500,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -390,7 +517,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -407,7 +534,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -424,7 +551,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -441,7 +568,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -458,7 +585,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -475,7 +602,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -492,7 +619,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -509,7 +636,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -526,7 +653,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -543,7 +670,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -560,7 +687,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -577,7 +704,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -594,7 +721,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -611,7 +738,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -628,7 +755,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -645,7 +772,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -662,7 +789,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -679,7 +806,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -696,7 +823,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -713,7 +840,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -730,7 +857,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -747,7 +874,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -764,7 +891,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -781,7 +908,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -798,7 +925,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -815,7 +942,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -832,7 +959,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -849,7 +976,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -866,7 +993,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -883,7 +1010,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -900,7 +1027,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -917,7 +1044,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -934,7 +1061,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -951,7 +1078,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -968,7 +1095,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -985,7 +1112,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1002,7 +1129,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1019,7 +1146,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1036,7 +1163,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1053,7 +1180,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1070,7 +1197,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1087,7 +1214,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1104,7 +1231,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1121,7 +1248,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1138,7 +1265,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1155,7 +1282,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1172,7 +1299,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1189,7 +1316,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1206,7 +1333,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1223,7 +1350,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1240,7 +1367,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1257,7 +1384,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1274,7 +1401,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1291,7 +1418,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1308,7 +1435,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1325,7 +1452,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1342,7 +1469,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1359,7 +1486,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1376,7 +1503,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1393,7 +1520,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1410,7 +1537,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1427,7 +1554,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1444,7 +1571,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1461,7 +1588,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1478,7 +1605,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1495,7 +1622,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1512,7 +1639,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1529,7 +1656,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1546,7 +1673,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1563,7 +1690,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1580,7 +1707,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1597,7 +1724,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1614,7 +1741,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1631,7 +1758,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1648,7 +1775,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1665,7 +1792,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1682,7 +1809,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1699,7 +1826,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1716,7 +1843,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1733,7 +1860,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1750,7 +1877,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1767,7 +1894,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1784,7 +1911,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1801,7 +1928,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1818,7 +1945,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1835,7 +1962,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1852,7 +1979,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1869,7 +1996,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1886,7 +2013,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1903,7 +2030,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1920,7 +2047,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1937,7 +2064,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1954,7 +2081,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1971,7 +2098,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -1988,7 +2115,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2005,7 +2132,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2022,7 +2149,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2039,7 +2166,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2056,7 +2183,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2073,7 +2200,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2090,7 +2217,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2107,7 +2234,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2124,7 +2251,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2141,7 +2268,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2158,7 +2285,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2175,7 +2302,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2192,7 +2319,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2209,7 +2336,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2226,7 +2353,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2243,7 +2370,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2260,7 +2387,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2277,7 +2404,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2294,7 +2421,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2311,7 +2438,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2328,7 +2455,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2345,7 +2472,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2362,7 +2489,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2379,7 +2506,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2396,7 +2523,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2413,7 +2540,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2430,7 +2557,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2447,7 +2574,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2464,7 +2591,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2481,7 +2608,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2498,7 +2625,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2515,7 +2642,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2532,7 +2659,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2549,7 +2676,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2566,7 +2693,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2583,7 +2710,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2600,7 +2727,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2617,7 +2744,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2634,7 +2761,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2651,7 +2778,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2668,7 +2795,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2685,7 +2812,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2702,7 +2829,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2719,7 +2846,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2736,7 +2863,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2753,7 +2880,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2770,7 +2897,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2787,7 +2914,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2804,7 +2931,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2821,7 +2948,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2838,7 +2965,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2855,7 +2982,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2872,7 +2999,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2889,7 +3016,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2906,7 +3033,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2923,7 +3050,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2940,7 +3067,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2957,7 +3084,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2974,7 +3101,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -2991,7 +3118,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3008,7 +3135,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3025,7 +3152,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3042,7 +3169,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3059,7 +3186,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3076,7 +3203,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3093,7 +3220,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3110,7 +3237,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3127,7 +3254,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3144,7 +3271,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3161,7 +3288,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3178,7 +3305,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3195,7 +3322,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3212,7 +3339,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3229,7 +3356,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3246,7 +3373,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3263,7 +3390,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3280,7 +3407,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3297,7 +3424,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3314,7 +3441,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3331,7 +3458,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3348,7 +3475,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3365,7 +3492,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3382,7 +3509,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3399,7 +3526,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3416,7 +3543,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3433,7 +3560,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3450,7 +3577,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3467,7 +3594,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3484,7 +3611,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3501,7 +3628,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3518,7 +3645,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3535,7 +3662,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3552,7 +3679,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3569,7 +3696,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3586,7 +3713,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3603,7 +3730,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3620,7 +3747,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3637,7 +3764,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3654,7 +3781,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3671,7 +3798,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3688,7 +3815,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3705,7 +3832,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3722,7 +3849,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3739,7 +3866,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3756,7 +3883,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3773,7 +3900,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3790,7 +3917,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3807,7 +3934,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3824,7 +3951,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3841,7 +3968,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3858,7 +3985,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3875,7 +4002,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3892,7 +4019,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3909,7 +4036,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3926,7 +4053,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3943,7 +4070,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3960,7 +4087,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3977,7 +4104,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -3994,7 +4121,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4011,7 +4138,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4028,7 +4155,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4045,7 +4172,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4062,7 +4189,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4079,7 +4206,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4096,7 +4223,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4113,7 +4240,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4130,7 +4257,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4147,7 +4274,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4164,7 +4291,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4181,7 +4308,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4198,7 +4325,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4215,7 +4342,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4232,7 +4359,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4249,7 +4376,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4266,7 +4393,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4283,7 +4410,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4300,7 +4427,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4317,7 +4444,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4334,7 +4461,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4351,7 +4478,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4368,7 +4495,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4385,7 +4512,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4402,7 +4529,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4419,7 +4546,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4436,7 +4563,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4453,7 +4580,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4470,7 +4597,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4487,7 +4614,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4504,7 +4631,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4521,7 +4648,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4538,7 +4665,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4555,7 +4682,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4572,7 +4699,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4589,7 +4716,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4606,7 +4733,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4623,7 +4750,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4640,7 +4767,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4657,7 +4784,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4674,7 +4801,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4691,7 +4818,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4708,7 +4835,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4725,7 +4852,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4742,7 +4869,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4759,7 +4886,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4776,7 +4903,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4793,7 +4920,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4810,7 +4937,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4827,7 +4954,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4844,7 +4971,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4861,7 +4988,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4878,7 +5005,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4895,7 +5022,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4912,7 +5039,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4929,7 +5056,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4946,7 +5073,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4963,7 +5090,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4980,7 +5107,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -4997,7 +5124,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5014,7 +5141,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5031,7 +5158,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5048,7 +5175,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5065,7 +5192,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5082,7 +5209,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5099,7 +5226,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5116,7 +5243,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5133,7 +5260,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5150,7 +5277,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5167,7 +5294,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5184,7 +5311,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5201,7 +5328,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5218,7 +5345,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5235,7 +5362,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5252,7 +5379,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5269,7 +5396,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5286,7 +5413,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5303,7 +5430,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5320,7 +5447,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5337,7 +5464,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5354,7 +5481,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5371,7 +5498,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5388,7 +5515,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5405,7 +5532,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5422,7 +5549,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5439,7 +5566,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5456,7 +5583,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5473,7 +5600,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5490,7 +5617,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5507,7 +5634,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5524,7 +5651,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5541,7 +5668,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5558,7 +5685,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5575,7 +5702,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5592,7 +5719,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5609,7 +5736,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5626,7 +5753,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5643,7 +5770,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5660,7 +5787,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5677,7 +5804,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5694,7 +5821,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5711,7 +5838,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5728,7 +5855,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5745,7 +5872,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5762,7 +5889,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5779,7 +5906,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5796,7 +5923,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5813,7 +5940,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5830,7 +5957,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5847,7 +5974,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5864,7 +5991,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5881,7 +6008,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5898,7 +6025,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5915,7 +6042,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5932,7 +6059,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5949,7 +6076,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5966,7 +6093,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -5983,7 +6110,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6000,7 +6127,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6017,7 +6144,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6034,7 +6161,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6051,7 +6178,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6068,7 +6195,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6085,7 +6212,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6102,7 +6229,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6119,7 +6246,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6136,7 +6263,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6153,7 +6280,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6170,7 +6297,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6187,7 +6314,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6204,7 +6331,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6221,7 +6348,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6238,7 +6365,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6255,7 +6382,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6272,7 +6399,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6289,7 +6416,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6306,7 +6433,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6323,7 +6450,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6340,7 +6467,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6357,7 +6484,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6374,7 +6501,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6391,7 +6518,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6408,7 +6535,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6425,7 +6552,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6442,7 +6569,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6459,7 +6586,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6476,7 +6603,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6493,7 +6620,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6510,7 +6637,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6527,7 +6654,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6544,7 +6671,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6561,7 +6688,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6578,7 +6705,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6595,7 +6722,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6612,7 +6739,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6629,7 +6756,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6646,7 +6773,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6663,7 +6790,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6680,7 +6807,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6697,7 +6824,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6714,7 +6841,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6731,7 +6858,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6748,7 +6875,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6765,7 +6892,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6782,7 +6909,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6799,7 +6926,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6816,7 +6943,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6833,7 +6960,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6850,7 +6977,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6867,7 +6994,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6884,7 +7011,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6901,7 +7028,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6918,7 +7045,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6935,7 +7062,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6952,7 +7079,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6969,7 +7096,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -6986,7 +7113,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7003,7 +7130,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7020,7 +7147,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7037,7 +7164,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7054,7 +7181,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7071,7 +7198,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7088,7 +7215,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7105,7 +7232,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7122,7 +7249,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7139,7 +7266,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7156,7 +7283,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7173,7 +7300,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7190,7 +7317,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7207,7 +7334,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7224,7 +7351,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7241,7 +7368,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7258,7 +7385,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7275,7 +7402,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7292,7 +7419,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7309,7 +7436,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7326,7 +7453,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7343,7 +7470,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7360,7 +7487,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7377,7 +7504,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7394,7 +7521,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7411,7 +7538,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7428,7 +7555,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7445,7 +7572,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7462,7 +7589,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7479,7 +7606,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7496,7 +7623,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7513,7 +7640,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7530,7 +7657,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7547,7 +7674,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7564,7 +7691,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7581,7 +7708,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7598,7 +7725,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7615,7 +7742,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7632,7 +7759,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7649,7 +7776,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7666,7 +7793,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7683,7 +7810,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7700,7 +7827,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7717,7 +7844,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7734,7 +7861,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7751,7 +7878,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7768,7 +7895,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7785,7 +7912,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7802,7 +7929,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7819,7 +7946,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7836,7 +7963,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7853,7 +7980,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7870,7 +7997,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7887,7 +8014,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7904,7 +8031,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7921,7 +8048,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7938,7 +8065,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7955,7 +8082,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7972,7 +8099,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -7989,7 +8116,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8006,7 +8133,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8023,7 +8150,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8040,7 +8167,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8057,7 +8184,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8074,7 +8201,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8091,7 +8218,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8108,7 +8235,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8125,7 +8252,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8142,7 +8269,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8159,7 +8286,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8176,7 +8303,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8193,7 +8320,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8210,7 +8337,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8227,7 +8354,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8244,7 +8371,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8261,7 +8388,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8278,7 +8405,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8295,7 +8422,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8312,7 +8439,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8329,7 +8456,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8346,7 +8473,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8363,7 +8490,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8380,7 +8507,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8397,7 +8524,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8414,7 +8541,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8431,7 +8558,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8448,7 +8575,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8465,7 +8592,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8482,7 +8609,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8499,7 +8626,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8516,7 +8643,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8533,7 +8660,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8550,7 +8677,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8567,7 +8694,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8584,7 +8711,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8601,7 +8728,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8618,7 +8745,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8635,7 +8762,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8652,7 +8779,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8669,7 +8796,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8686,7 +8813,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8703,7 +8830,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8720,7 +8847,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8737,7 +8864,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8754,7 +8881,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8771,7 +8898,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8788,7 +8915,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8805,7 +8932,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8822,7 +8949,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8839,7 +8966,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8856,7 +8983,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8873,7 +9000,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8890,7 +9017,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8907,7 +9034,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8924,7 +9051,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8941,7 +9068,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8958,7 +9085,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8975,7 +9102,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -8992,7 +9119,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9009,7 +9136,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9026,7 +9153,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9043,7 +9170,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9060,7 +9187,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9077,7 +9204,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9094,7 +9221,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9111,7 +9238,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9128,7 +9255,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9145,7 +9272,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9162,7 +9289,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9179,7 +9306,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9196,7 +9323,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9213,7 +9340,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9230,7 +9357,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9247,7 +9374,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9264,7 +9391,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9281,7 +9408,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9298,7 +9425,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9315,7 +9442,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9332,7 +9459,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9349,7 +9476,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9366,7 +9493,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9383,7 +9510,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9400,7 +9527,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9417,7 +9544,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9434,7 +9561,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9451,7 +9578,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9468,7 +9595,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9485,7 +9612,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9502,7 +9629,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9519,7 +9646,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9536,7 +9663,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9553,7 +9680,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9570,7 +9697,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9587,7 +9714,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9604,7 +9731,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9621,7 +9748,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9638,7 +9765,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9655,7 +9782,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9672,7 +9799,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9689,7 +9816,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9706,7 +9833,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9723,7 +9850,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9740,7 +9867,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9757,7 +9884,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9774,7 +9901,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9791,7 +9918,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9808,7 +9935,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9825,7 +9952,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9842,7 +9969,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9859,7 +9986,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9876,7 +10003,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9893,7 +10020,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9910,7 +10037,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9927,7 +10054,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9944,7 +10071,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9961,7 +10088,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9978,7 +10105,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -9995,7 +10122,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10012,7 +10139,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10029,7 +10156,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10046,7 +10173,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10063,7 +10190,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10080,7 +10207,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10097,7 +10224,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10114,7 +10241,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10131,7 +10258,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10148,7 +10275,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10165,7 +10292,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10182,7 +10309,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10199,7 +10326,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10216,7 +10343,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10233,7 +10360,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10250,7 +10377,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10267,7 +10394,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10284,7 +10411,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10301,7 +10428,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10318,7 +10445,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10335,7 +10462,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10352,7 +10479,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10369,7 +10496,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10386,7 +10513,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10403,7 +10530,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10420,7 +10547,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10437,7 +10564,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10454,7 +10581,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10471,7 +10598,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10488,7 +10615,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10505,7 +10632,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10522,7 +10649,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10539,7 +10666,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10556,7 +10683,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10573,7 +10700,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10590,7 +10717,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10607,7 +10734,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10624,7 +10751,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10641,7 +10768,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10658,7 +10785,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10675,7 +10802,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10692,7 +10819,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10709,7 +10836,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10726,7 +10853,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10743,7 +10870,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10760,7 +10887,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10777,7 +10904,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10794,7 +10921,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10811,7 +10938,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10828,7 +10955,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10845,7 +10972,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10862,7 +10989,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10879,7 +11006,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10896,7 +11023,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10913,7 +11040,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10930,7 +11057,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10947,7 +11074,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10964,7 +11091,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10981,7 +11108,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -10998,7 +11125,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11015,7 +11142,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11032,7 +11159,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11049,7 +11176,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11066,7 +11193,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11083,7 +11210,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11100,7 +11227,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11117,7 +11244,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11134,7 +11261,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11151,7 +11278,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11168,7 +11295,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11185,7 +11312,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11202,7 +11329,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11219,7 +11346,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11236,7 +11363,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11253,7 +11380,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11270,7 +11397,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11287,7 +11414,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11304,7 +11431,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11321,7 +11448,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11338,7 +11465,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11355,7 +11482,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11372,7 +11499,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11389,7 +11516,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11406,7 +11533,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11423,7 +11550,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11440,7 +11567,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11457,7 +11584,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11474,7 +11601,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11491,7 +11618,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11508,7 +11635,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >
@@ -11525,7 +11652,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       </svg>
     </div>
     <div
-      className="sc-iwsKbI gMIEVG"
+      className="c7"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
     >

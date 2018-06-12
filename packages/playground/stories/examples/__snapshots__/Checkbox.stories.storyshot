@@ -1,15 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components | Checkbox Checkbox 1`] = `
+.c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456297;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
 <label
-  className="sc-bZQynM emjIID"
+  className="c0"
   label="Label"
 >
   <span
-    className="sc-htoDjs kMcWdn"
+    className="c1"
   >
     <div
-      className="sc-iwsKbI jBnJBr"
+      className="c2"
     >
       <svg
         height="12"
@@ -25,11 +72,11 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
     </div>
   </span>
   <span
-    className="sc-gzVnrw kqlmMC"
+    className="c3"
   >
     <input
       checked={false}
-      className="sc-dnqmqq jRkzfi"
+      className="c4"
       defaultChecked={false}
       disabled={false}
       onChange={[Function]}
@@ -41,18 +88,65 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
 `;
 
 exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
+.c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456297;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
 <div
-  className="sc-EHOje jvzENE"
+  className=""
 >
   <label
-    className="sc-bZQynM emjIID"
+    className="c0"
     label="Label"
   >
     <span
-      className="sc-htoDjs kMcWdn"
+      className="c1"
     >
       <div
-        className="sc-iwsKbI jBnJBr"
+        className="c2"
       >
         <svg
           height="12"
@@ -68,11 +162,11 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
-      className="sc-gzVnrw kqlmMC"
+      className="c3"
     >
       <input
         checked={false}
-        className="sc-dnqmqq jRkzfi"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}
@@ -82,14 +176,14 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
     </span>
   </label>
   <label
-    className="sc-bZQynM emjIID"
+    className="c0"
     label="Label"
   >
     <span
-      className="sc-htoDjs kMcWdn"
+      className="c1"
     >
       <div
-        className="sc-iwsKbI jBnJBr"
+        className="c2"
       >
         <svg
           height="12"
@@ -105,11 +199,11 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
-      className="sc-gzVnrw kqlmMC"
+      className="c3"
     >
       <input
         checked={false}
-        className="sc-dnqmqq jRkzfi"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}
@@ -119,14 +213,14 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
     </span>
   </label>
   <label
-    className="sc-bZQynM emjIID"
+    className="c0"
     label="Label"
   >
     <span
-      className="sc-htoDjs kMcWdn"
+      className="c1"
     >
       <div
-        className="sc-iwsKbI jBnJBr"
+        className="c2"
       >
         <svg
           height="12"
@@ -142,11 +236,11 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
-      className="sc-gzVnrw kqlmMC"
+      className="c3"
     >
       <input
         checked={false}
-        className="sc-dnqmqq jRkzfi"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}

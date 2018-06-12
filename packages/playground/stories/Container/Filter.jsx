@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
-import { FieldInput, Input } from '@gssfed/vital-ui-kit-react';
+import { FieldInput, Input } from '../../../web/src';
 
 const Wrapper = styled.div`
   display: flex;
