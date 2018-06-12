@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components | Form Full Example 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-gipzik twobj"
@@ -19,10 +19,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
       <input
         autoFocus={false}
         className="sc-jAaTju knvECT"
-        defaultValue={null}
+        defaultValue=""
         disabled={false}
         icon={null}
-        onChange={null}
+        onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
         type="text"
@@ -51,10 +51,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="First Name"
             spellCheck={false}
             type="text"
@@ -71,10 +71,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="Last Name"
             spellCheck={false}
             type="text"
@@ -105,10 +105,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="Month"
             spellCheck={false}
             type="text"
@@ -125,10 +125,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="Day"
             spellCheck={false}
             type="text"
@@ -145,10 +145,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="Year"
             spellCheck={false}
             type="text"
@@ -188,10 +188,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the left"
             spellCheck={false}
             type="text"
@@ -213,10 +213,11 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     <textarea
       autoFocus={false}
       className="sc-gPEVay icsnmY"
+      defaultValue=""
       disabled={false}
       id={null}
       maxLength={null}
-      onChange={null}
+      onChange={[Function]}
       placeholder="Comment here"
       rows={3}
       spellCheck={false}
@@ -228,7 +229,7 @@ exports[`Storyshots Components | Form Full Example 1`] = `
 
 exports[`Storyshots Components | Form Hint 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-gipzik OLXUC"
@@ -245,10 +246,10 @@ exports[`Storyshots Components | Form Hint 1`] = `
       <input
         autoFocus={false}
         className="sc-jAaTju knvECT"
-        defaultValue={null}
+        defaultValue=""
         disabled={false}
         icon={null}
-        onChange={null}
+        onChange={[Function]}
         placeholder={null}
         spellCheck={false}
         type="text"
@@ -271,7 +272,7 @@ exports[`Storyshots Components | Form Hint 1`] = `
 
 exports[`Storyshots Components | Form Input with Label 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-gipzik twobj"
@@ -288,10 +289,10 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
       <input
         autoFocus={false}
         className="sc-jAaTju knvECT"
-        defaultValue={null}
+        defaultValue=""
         disabled={false}
         icon={null}
-        onChange={null}
+        onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
         type="text"
@@ -304,7 +305,7 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
 
 exports[`Storyshots Components | Form Multiple & Addon 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-gipzik OLXUC"
@@ -327,10 +328,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the right"
             spellCheck={false}
             type="text"
@@ -389,10 +390,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
             type="text"
@@ -432,10 +433,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
             type="text"
@@ -463,7 +464,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
 
 exports[`Storyshots Components | Form Multiple & Button 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-gipzik OLXUC"
@@ -525,10 +526,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
             type="text"
@@ -559,10 +560,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
           <input
             autoFocus={false}
             className="sc-jAaTju knvECT"
-            defaultValue={null}
+            defaultValue=""
             disabled={false}
             icon={null}
-            onChange={null}
+            onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
             type="text"
@@ -590,7 +591,7 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
 
 exports[`Storyshots Components | Form/Input Basic 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-cMljjf hwFcyK"
@@ -611,7 +612,7 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
 
 exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-cMljjf hwFcyK"
@@ -619,14 +620,14 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
     <input
       autoFocus={false}
       className="sc-jAaTju knvECT"
-      defaultValue={null}
+      defaultValue=""
       disabled={false}
       icon={null}
-      onChange={null}
+      onChange={[Function]}
       placeholder="Controlled Input"
       spellCheck={false}
       type="text"
-      value=""
+      value="123"
     />
   </div>
 </div>
@@ -634,7 +635,7 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
 
 exports[`Storyshots Components | Form/Input With Icon 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-cMljjf hwFcyK"
@@ -696,7 +697,7 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
 
 exports[`Storyshots Components | Form/Select Basic 1`] = `
 <div
-  className="sc-eTuwsz brFWKa"
+  className="sc-gzVnrw WqWzD"
 >
   <div
     className="sc-hzDkRC eBXbor"
@@ -736,6 +737,7 @@ exports[`Storyshots Components | Form/TextArea Basic 1`] = `
 <textarea
   autoFocus={false}
   className="sc-gPEVay icsnmY"
+  defaultValue=""
   disabled={false}
   id={null}
   maxLength={null}
@@ -743,7 +745,6 @@ exports[`Storyshots Components | Form/TextArea Basic 1`] = `
   placeholder="Uncontrolled Input"
   rows={3}
   spellCheck={false}
-  value=""
 />
 `;
 
@@ -751,10 +752,11 @@ exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
 <textarea
   autoFocus={false}
   className="sc-gPEVay icsnmY"
+  defaultValue=""
   disabled={false}
   id={null}
   maxLength={null}
-  onChange={null}
+  onChange={[Function]}
   placeholder="Controlled Input"
   rows={3}
   spellCheck={false}

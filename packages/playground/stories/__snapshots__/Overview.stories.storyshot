@@ -3,16 +3,16 @@
 exports[`Storyshots Getting Started Overview 1`] = `
 <div>
   <div
-    className="sc-gZMcBi jzJGwU"
+    className="Box__Container-eQuqcE lcVbRk"
     style={null}
   >
     <div
-      className="sc-kIPQKe gpZGmH"
+      className="sc-bdVaJa hzOrlj"
     >
       Avatar
     </div>
     <div
-      className="sc-eXEjpC hzGOeU"
+      className="sc-bwzfXH hGsVpv"
     >
       <div
         className="sc-bwzfXH byurlq"
@@ -27,7 +27,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-eXEjpC hzGOeU"
+      className="sc-bwzfXH hGsVpv"
     >
       <div
         className="sc-bwzfXH byurlq"
@@ -42,7 +42,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-eXEjpC hzGOeU"
+      className="sc-bwzfXH hGsVpv"
     >
       <div
         className="sc-bwzfXH byurlq"
@@ -63,7 +63,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-eXEjpC hzGOeU"
+      className="sc-bwzfXH hGsVpv"
     >
       <div
         className="sc-bwzfXH byurlq"
@@ -78,7 +78,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       </div>
     </div>
     <div
-      className="sc-eXEjpC hzGOeU"
+      className="sc-bwzfXH hGsVpv"
     >
       <div
         className="sc-bwzfXH byurlq"
@@ -102,11 +102,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
     </div>
   </div>
   <div
-    className="sc-gZMcBi jzJGwU"
+    className="Box__Container-eQuqcE lcVbRk"
     style={null}
   >
     <div
-      className="sc-kIPQKe gpZGmH"
+      className="sc-bdVaJa hzOrlj"
     >
       Button
     </div>
@@ -509,16 +509,16 @@ exports[`Storyshots Getting Started Overview 1`] = `
     </div>
   </div>
   <div
-    className="sc-gZMcBi jzJGwU"
+    className="Box__Container-eQuqcE lcVbRk"
     style={null}
   >
     <div
-      className="sc-kIPQKe gpZGmH"
+      className="sc-bdVaJa hzOrlj"
     >
       Card
     </div>
     <div
-      className="sc-ibxdXY ffoYIj"
+      className="sc-htpNat fzoRZM"
     >
       <div
         className="sc-kGXeez joxBBS"
@@ -615,7 +615,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
     }
   >
     <div
-      className="sc-RefOD ZRwGj"
+      className="sc-bxivhb EYjjH"
     >
       <input
         onChange={[Function]}
@@ -623,10 +623,10 @@ exports[`Storyshots Getting Started Theme 1`] = `
         value="#0E86FE"
       />
       <div
-        className="sc-iQKALj iwKnDK"
+        className="sc-ifAKCX kBKxBl"
       >
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#d9ecff",
@@ -634,7 +634,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#a6d3ff",
@@ -642,7 +642,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#74b9fe",
@@ -650,7 +650,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#41a0fe",
@@ -658,7 +658,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#0E86FE",
@@ -666,7 +666,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#016dd8",
@@ -674,7 +674,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#0153a5",
@@ -682,7 +682,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#003a73",
@@ -690,7 +690,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#002040",
@@ -699,10 +699,10 @@ exports[`Storyshots Getting Started Theme 1`] = `
         />
       </div>
       <div
-        className="sc-iQKALj iwKnDK"
+        className="sc-ifAKCX kBKxBl"
       >
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#f7fbfe",
@@ -710,7 +710,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#eef5fc",
@@ -718,7 +718,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#d8e7f6",
@@ -726,7 +726,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#c4d8eb",
@@ -734,7 +734,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#95b5d4",
@@ -742,7 +742,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#7193b6",
@@ -750,7 +750,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#456e97",
@@ -758,7 +758,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#2a557f",
@@ -766,7 +766,7 @@ exports[`Storyshots Getting Started Theme 1`] = `
           }
         />
         <div
-          className="sc-bwCtUz gEZuWG"
+          className="sc-EHOje eqkFSA"
           style={
             Object {
               "background": "#1e4368",

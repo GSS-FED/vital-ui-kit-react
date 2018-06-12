@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components | List Basic 1`] = `
 <div
-  className="sc-iQNlJl grrNXu"
+  className="sc-gZMcBi ipCphy"
 >
   <ul
     className="sc-fAjcbJ kSZqmA"
@@ -297,7 +297,7 @@ exports[`Storyshots Components | List Basic 1`] = `
 
 exports[`Storyshots Components | List Tree/ Accordion 1`] = `
 <div
-  className="sc-iQNlJl grrNXu"
+  className="sc-gZMcBi ipCphy"
 >
   <ul
     className="sc-fAjcbJ gnaULz"

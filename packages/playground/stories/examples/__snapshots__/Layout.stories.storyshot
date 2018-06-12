@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components | Layout Basic 1`] = `
 <div
-  className="sc-iyvyFf eMDJkr"
+  className="sc-gxMtzJ ixqzSw"
   style={
     Object {
       "height": "100vh",
@@ -10,10 +10,10 @@ exports[`Storyshots Components | Layout Basic 1`] = `
   }
 >
   <div
-    className="sc-hwwEjo bqENij"
+    className="sc-dfVpRl bcRMMX"
   >
     <div
-      className="sc-hwwEjo bqENij"
+      className="sc-dfVpRl bcRMMX"
       style={
         Object {
           "background": "blue",
@@ -24,10 +24,10 @@ exports[`Storyshots Components | Layout Basic 1`] = `
     </div>
   </div>
   <div
-    className="sc-kPVwWT fOgNbJ"
+    className="sc-gzOgki hVMCzc"
   >
     <div
-      className="sc-kfGgVZ kEFULu"
+      className="sc-iyvyFf bqqxtt"
       style={
         Object {
           "background": "red",
@@ -37,7 +37,7 @@ exports[`Storyshots Components | Layout Basic 1`] = `
       sidebar
     </div>
     <div
-      className="sc-esjQYD harIzw"
+      className="sc-hwwEjo jNlEWD"
       style={
         Object {
           "background": "yellow",
@@ -45,13 +45,13 @@ exports[`Storyshots Components | Layout Basic 1`] = `
       }
     >
       <div
-        className="sc-iyvyFf eMDJkr"
+        className="sc-gxMtzJ ixqzSw"
       >
         <div
-          className="sc-hwwEjo bqENij"
+          className="sc-dfVpRl bcRMMX"
         >
           <div
-            className="sc-hwwEjo bqENij"
+            className="sc-dfVpRl bcRMMX"
             style={
               Object {
                 "background": "blue",
@@ -62,10 +62,10 @@ exports[`Storyshots Components | Layout Basic 1`] = `
           </div>
         </div>
         <div
-          className="sc-kPVwWT fOgNbJ"
+          className="sc-gzOgki hVMCzc"
         >
           <div
-            className="sc-kfGgVZ kEFULu"
+            className="sc-iyvyFf bqqxtt"
             style={
               Object {
                 "background": "red",
@@ -75,7 +75,7 @@ exports[`Storyshots Components | Layout Basic 1`] = `
             sidebar
           </div>
           <div
-            className="sc-esjQYD harIzw"
+            className="sc-hwwEjo jNlEWD"
             style={
               Object {
                 "background": "pink",

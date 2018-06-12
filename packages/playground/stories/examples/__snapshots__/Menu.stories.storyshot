@@ -2,20 +2,20 @@
 
 exports[`Storyshots Components | Menu Basic 1`] = `
 <div
-  className="sc-bYSBpT ieiJAw"
+  className="sc-jwKygS mlfdc"
 >
   <div
-    className="sc-btzYZH cjzamm"
+    className="sc-iELTvK fElxmD"
   >
     <button
-      className="sc-lhVmIH KlvIU sc-ifAKCX iisouQ"
+      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-bsbRJL lcATwD"
+        className="sc-gqjmRU jcagjt"
         height={16}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -30,17 +30,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-btzYZH cjzamm"
+    className="sc-iELTvK fElxmD"
   >
     <button
-      className="sc-lhVmIH KlvIU sc-ifAKCX iisouQ"
+      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-bsbRJL lcATwD"
+        className="sc-gqjmRU jcagjt"
         height={16}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -55,17 +55,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-btzYZH cjzamm"
+    className="sc-iELTvK fElxmD"
   >
     <button
-      className="sc-lhVmIH KlvIU sc-ifAKCX iisouQ"
+      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-bsbRJL lcATwD"
+        className="sc-gqjmRU jcagjt"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -80,17 +80,17 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="sc-btzYZH cjzamm"
+    className="sc-iELTvK fElxmD"
   >
     <button
-      className="sc-lhVmIH KlvIU sc-ifAKCX iisouQ"
+      className="sc-cmTdod cLrwEN sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
       style={null}
     >
       <svg
-        className="sc-bsbRJL lcATwD"
+        className="sc-gqjmRU jcagjt"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"

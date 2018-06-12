@@ -2,13 +2,13 @@
 
 exports[`Storyshots Components | Pagination Basic 1`] = `
 <ul
-  className="sc-iELTvK kPrTIV"
+  className="sc-cIShpX dinQuX"
 >
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -18,10 +18,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -47,10 +47,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -60,10 +60,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -73,10 +73,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX fymSEW"
+      className="sc-kafWEX kbSmkn sc-ifAKCX fymSEW"
       onClick={[Function]}
       selected={true}
       size="medium"
@@ -86,10 +86,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -99,10 +99,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -112,10 +112,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
@@ -141,10 +141,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     </button>
   </li>
   <li
-    className="sc-jwKygS vacNf"
+    className="sc-feJyhm geVpXi"
   >
     <button
-      className="sc-cmTdod dSAgOC sc-ifAKCX iisouQ"
+      className="sc-kafWEX kbSmkn sc-ifAKCX iisouQ"
       onClick={[Function]}
       selected={false}
       size="medium"
