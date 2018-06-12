@@ -66,9 +66,9 @@ export default class TextArea extends React.Component<Props, State> {
   render() {
     return (
       <StatelessTextArea
+        {...this.props}
         value={this.state.value}
         onChange={this.handleChange}
-        {...this.props}
         ref={input => {
           this.input = input;
         }}

@@ -59,8 +59,6 @@ type Props = {
   type?: string,
   /** Html attr */
   placeholder?: string,
-  /** value of input */
-  value: string,
   /** Icon name */
   icon?: string,
   /** `left` or `right` */
@@ -101,7 +99,6 @@ class StatelessInput extends React.Component<Props> {
 
   render() {
     const {
-      value,
       defaultValue,
       type,
       placeholder,
@@ -116,7 +113,6 @@ class StatelessInput extends React.Component<Props> {
     return (
       <Root>
         <InputElement
-          value={value}
           defaultValue={defaultValue}
           type={type}
           placeholder={placeholder}

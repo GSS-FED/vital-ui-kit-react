@@ -15,5 +15,6 @@ flow/*
 [lints]
 
 [options]
+module.system=haste
 
 [strict]

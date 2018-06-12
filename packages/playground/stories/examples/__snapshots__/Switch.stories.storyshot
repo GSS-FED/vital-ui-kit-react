@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Switch Basic 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+}
+
+<div
+  className=""
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <div
+      className="c2"
+      disabled={false}
+      icon={null}
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components | Switch with Icon Button 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.2rem;
+  color: #C4D2EB;
+}
+
+<div
+  className=""
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <div
+      className="c2"
+      disabled={false}
+      icon="wifi"
+    >
+      <svg
+        height="17"
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width="17"
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#C4D2EB"
+        />
+      </svg>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components | Switch with Icon Label 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c5 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+}
+
+.c3 {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  font-size: 13px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #C4D2EB;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.c4 {
+  display: block;
+}
+
+.c2 {
+  display: none;
+  left: -20px;
+}
+
+<div
+  className=""
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <div
+      checked={false}
+      className="c2 c3"
+    >
+      <svg
+        height={16}
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width={16}
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#ffffff"
+        />
+      </svg>
+    </div>
+    <div
+      checked={false}
+      className="c4 c3"
+    >
+      <svg
+        height={16}
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width={16}
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#C4D2EB"
+        />
+      </svg>
+    </div>
+    <div
+      className="c5"
+      disabled={false}
+      icon={null}
+    />
+  </label>
+</div>
+`;

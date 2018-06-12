@@ -5,7 +5,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "playground"
     ],
     "nohoist": [
       "**/react-native",
@@ -19,9 +20,7 @@
       "**/react-native-*",
       "**/react-native-*/**",
       "**/react-native-vector-icons",
-      "**/react-native-vector-icons/**",
-      "**/styled-components",
-      "**/styled-components/**"
+      "**/react-native-vector-icons/**"
     ]
   },
   "scripts": {
@@ -34,11 +33,11 @@
     "build": "npm-run-all clean:build --parallel build:esm build:cjs build:flow",
     "clean:build": "rm -rf packages/web/dist",
     "prebuild:web": "yarn clean:build",
-    "storybook:web": "cd packages/web && start-storybook -p 6006",
-    "build-storybook:web": "cd packages/web && build-storybook",
+    "storybook:web": "cd packages/playground && start-storybook -p 6006",
+    "build-storybook:web": "cd packages/playground && build-storybook",
     "storybook:native": "cd packages/native && yarn run storybook",
     "dev:ios": "cd packages/native && yarn run ios",
-    "test:web": "cd packages/web && jest",
+    "test:web": "cd packages/playground && jest",
     "flow-typed": "rm -rf flow-typed && flow-typed install -s",
     "flow": "flow check",
     "format": "prettier --write '**/**.{js,jsx}'",

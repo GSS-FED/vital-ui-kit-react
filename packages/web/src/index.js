@@ -37,7 +37,6 @@ import { Pill } from './Pill';
 import Slider from './Slider';
 import Tooltip from './Tooltip';
 import ProgressBar from './ProgressBar';
-import { Table, TableCaption, TableColumn, TableHeader } from './Table';
 import Pagination from './Pagination';
 import Menu from './Menu';
 import Tabs from './Tabs';
@@ -74,10 +73,6 @@ export {
   Slider,
   Tooltip,
   ProgressBar,
-  Table,
-  TableCaption,
-  TableColumn,
-  TableHeader,
   Pagination,
   ThemeProvider,
   defaultTheme,

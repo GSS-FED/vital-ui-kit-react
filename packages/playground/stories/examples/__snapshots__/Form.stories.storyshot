@@ -1,0 +1,2054 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Form Full Example 1`] = `
+.c9 {
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  height: 1.93267rem;
+  color: #7189B6;
+  text-align: center;
+  background-color: #EEF2FC;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  z-index: 5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: #EB5000;
+  margin: -0.133rem 0.533rem 0 0;
+  vertical-align: middle;
+  height: 0.266rem;
+  width: 0.266rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.666rem;
+  top: 0.666rem;
+}
+
+.c7 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c11 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c11::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c11::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c11:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c11::placeholder {
+  color: #95ACD4;
+}
+
+.c11:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c11:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c5 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c6 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c6 > * {
+  width: calc(100% + 2px);
+}
+
+.c6:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c6:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c6:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c6:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c8 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.c8 > * {
+  width: calc(100% + 2px);
+}
+
+.c8:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c8:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c8:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c8:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c10 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c10 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={true}
+    >
+      Username
+    </span>
+    <div
+      className="c3"
+    >
+      <input
+        autoFocus={false}
+        className="c4"
+        defaultValue=""
+        disabled={false}
+        icon={null}
+        onChange={[Function]}
+        placeholder="Enter your username"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={true}
+    >
+      Fullname
+    </span>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="First Name"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="Last Name"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={true}
+    >
+      Birthday
+    </span>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="Month"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="Day"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="Year"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c7"
+      required={false}
+    >
+      Website
+    </span>
+    <div
+      className="c5"
+    >
+      <div
+        className="c8"
+      >
+        <div
+          className="c9"
+        >
+          http://
+        </div>
+      </div>
+      <div
+        className="c6"
+      >
+        <div
+          className="c3"
+        >
+          <input
+            autoFocus={false}
+            className="c4"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the left"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c10"
+  >
+    <span
+      className="c7"
+      required={false}
+    >
+      Comment
+    </span>
+    <textarea
+      autoFocus={false}
+      className="c11"
+      defaultValue=""
+      disabled={false}
+      id={null}
+      maxLength={null}
+      onChange={[Function]}
+      placeholder="Comment here"
+      rows={3}
+      spellCheck={false}
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Hint 1`] = `
+.c5 {
+  display: block !important;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.42857;
+  padding-left: 1px;
+  white-space: normal;
+  color: #2BCD86;
+}
+
+.c6 {
+  display: block !important;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1.42857;
+  padding-left: 1px;
+  white-space: normal;
+  color: #95ACD4;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Username
+    </span>
+    <div
+      className="c3"
+    >
+      <input
+        autoFocus={false}
+        className="c4"
+        defaultValue=""
+        disabled={false}
+        icon={null}
+        onChange={[Function]}
+        placeholder={null}
+        spellCheck={false}
+        type="text"
+        value="dramsign"
+      />
+    </div>
+    <div
+      className="c5"
+    >
+      Username is available
+    </div>
+    <div
+      className="c6"
+    >
+      Example: James Allen
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Input with Label 1`] = `
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c2:before {
+  content: '';
+  display: inline-block;
+  background-color: #EB5000;
+  margin: -0.133rem 0.533rem 0 0;
+  vertical-align: middle;
+  height: 0.266rem;
+  width: 0.266rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.666rem;
+  top: 0.666rem;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={true}
+    >
+      Username
+    </span>
+    <div
+      className="c3"
+    >
+      <input
+        autoFocus={false}
+        className="c4"
+        defaultValue=""
+        disabled={false}
+        icon={null}
+        onChange={[Function]}
+        placeholder="Enter your username"
+        spellCheck={false}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Multiple & Addon 1`] = `
+.c9 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c9:hover {
+  background: #D8E3F6;
+}
+
+.c9:active {
+  background: #C4D2EB;
+}
+
+.c9:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c9:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c9[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c8 {
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  height: 1.93267rem;
+  color: #7189B6;
+  text-align: center;
+  background-color: #EEF2FC;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  z-index: 5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c5 {
+  position: relative;
+}
+
+.c6 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c6::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c6:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c6::placeholder {
+  color: #95ACD4;
+}
+
+.c6:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c6:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c4 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c4 > * {
+  width: calc(100% + 2px);
+}
+
+.c4:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c4:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c4:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c7 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}
+
+.c7 > * {
+  width: calc(100% + 2px);
+}
+
+.c7:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c7:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c7:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c7:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Weight
+    </span>
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            autoFocus={false}
+            className="c6"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the right"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          kg
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Price
+    </span>
+    <div
+      className="c3"
+    >
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          <svg
+            height={16}
+            onClick={[Function]}
+            viewBox="0 0 583.4605714285714 1024"
+            width={16}
+          >
+            <path
+              d="M558.857 677.143c0 116.571-83.429 208.571-204.571 228.571v100c0 10.286-8 18.286-18.286 18.286h-77.143c-9.714 0-18.286-8-18.286-18.286v-100c-133.714-18.857-206.857-98.857-209.714-102.286-5.714-6.857-6.286-16.571-1.143-23.429l58.857-77.143c2.857-4 8-6.286 13.143-6.857s10.286 1.143 13.714 5.143c1.143 0.571 81.143 77.143 182.286 77.143 56 0 116.571-29.714 116.571-94.286 0-54.857-67.429-81.714-144.571-112.571-102.857-40.571-230.857-92-230.857-235.429 0-105.143 82.286-192 201.714-214.857v-102.857c0-10.286 8.571-18.286 18.286-18.286h77.143c10.286 0 18.286 8 18.286 18.286v100.571c116 13.143 177.714 76 180 78.286 5.714 6.286 6.857 14.857 2.857 21.714l-46.286 83.429c-2.857 5.143-7.429 8.571-13.143 9.143-5.714 1.143-10.857-0.571-15.429-4-0.571-0.571-69.714-61.714-155.429-61.714-72.571 0-122.857 36-122.857 88 0 60.571 69.714 87.429 150.857 118.857 105.143 40.571 224 86.857 224 224.571z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            autoFocus={false}
+            className="c6"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          .00
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          <input
+            autoFocus={false}
+            className="c6"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <button
+          className="c9"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form Multiple & Button 1`] = `
+.c5 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:hover {
+  background: #D8E3F6;
+}
+
+.c5:active {
+  background: #C4D2EB;
+}
+
+.c5[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c8 {
+  position: relative;
+  background: #F7F9FE;
+  color: #0E86FE;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #0E86FE;
+  color: #ffffff;
+  border-color: #0E86FE;
+}
+
+.c8:hover {
+  background: #D8E3F6;
+}
+
+.c8:active {
+  background: #C4D2EB;
+}
+
+.c8:hover {
+  background: #41a0fe;
+  border-color: #41a0fe;
+}
+
+.c8:active {
+  background: #0167ce;
+  border-color: #0167ce;
+}
+
+.c8[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c7 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c7::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c7:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c7::placeholder {
+  color: #95ACD4;
+}
+
+.c7:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c7:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.c4 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.c4 > * {
+  width: calc(100% + 2px);
+}
+
+.c4:not(:first-child) > * {
+  margin-left: -1px;
+  margin-right: 0;
+}
+
+.c4:last-child * {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c4:first-child * {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.c4:not(:first-child):not(:last-child) * {
+  border-radius: 0;
+}
+
+.c1 {
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+  width: 100%;
+}
+
+.c1 > span {
+  display: table-cell;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 1%;
+  min-width: 8rem;
+  padding-right: 1.2rem;
+  line-height: 1;
+  vertical-align: top;
+  padding-top: calc(0.46633rem + 2px);
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <button
+          className="c5"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          A
+        </button>
+      </div>
+      <div
+        className="c4"
+      >
+        <button
+          className="c5"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          B
+        </button>
+      </div>
+      <div
+        className="c4"
+      >
+        <button
+          className="c5"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          C
+        </button>
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c6"
+        >
+          <input
+            autoFocus={false}
+            className="c7"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c1"
+  >
+    <span
+      className="c2"
+      required={false}
+    >
+      Button
+    </span>
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+      >
+        <div
+          className="c6"
+        >
+          <input
+            autoFocus={false}
+            className="c7"
+            defaultValue=""
+            disabled={false}
+            icon={null}
+            onChange={[Function]}
+            placeholder="LabelAddon on the both"
+            spellCheck={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="c4"
+      >
+        <button
+          className="c8"
+          onClick={[Function]}
+          selected={false}
+          size="medium"
+          style={null}
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input Basic 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      autoFocus={false}
+      className="c2"
+      defaultValue="default"
+      disabled={false}
+      icon={null}
+      placeholder="Uncontrolled Input"
+      spellCheck={false}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      autoFocus={false}
+      className="c2"
+      defaultValue=""
+      disabled={false}
+      icon={null}
+      onChange={[Function]}
+      placeholder="Controlled Input"
+      spellCheck={false}
+      type="text"
+      value="123"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Input With Icon 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  padding-right: 2.2em;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c2::placeholder {
+  color: #95ACD4;
+}
+
+.c2:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c2:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  padding-left: 2.2em;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c3 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  right: 0;
+  cursor: pointer;
+}
+
+.c3:hover {
+  color: #C4D2EB;
+}
+
+.c5 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  left: 0;
+  color: #C3D1EB;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      autoFocus={false}
+      className="c2"
+      defaultValue=""
+      disabled={false}
+      icon="search"
+      placeholder="Right side icon"
+      spellCheck={false}
+      type="text"
+    />
+    <svg
+      className="c3"
+      height={16}
+      iconPosition="right"
+      onClick={[Function]}
+      viewBox="0 0 950.8571428571428 1024"
+      width={16}
+    >
+      <path
+        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+  <br />
+  <div
+    className="c1"
+  >
+    <input
+      autoFocus={false}
+      className="c4"
+      defaultValue=""
+      disabled={false}
+      icon="search"
+      placeholder="Left side icon"
+      spellCheck={false}
+      type="text"
+    />
+    <svg
+      className="c5"
+      height={16}
+      iconPosition="left"
+      onClick={[Function]}
+      viewBox="0 0 950.8571428571428 1024"
+      width={16}
+    >
+      <path
+        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
+        fill="currentColor"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/Select Basic 1`] = `
+.c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.c2 {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1;
+  height: 1.93267rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #456297;
+  border: 1px solid #C4D2EB;
+  z-index: 5;
+  outline: 0;
+  text-align: left;
+}
+
+.c3 {
+  color: color:#95ACD4;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      onClick={[Function]}
+      placeholder="Select One"
+    >
+      <span
+        className="c3 "
+      >
+        Select One
+      </span>
+      <svg
+        height="15"
+        onClick={[Function]}
+        style={
+          Object {
+            "float": "right",
+          }
+        }
+        viewBox="0 0 585.1428571428571 1024"
+        width="15"
+      >
+        <path
+          d="M585.143 402.286c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Form/TextArea Basic 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c0:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::placeholder {
+  color: #95ACD4;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c0:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+<textarea
+  autoFocus={false}
+  className="c0"
+  defaultValue=""
+  disabled={false}
+  id={null}
+  maxLength={null}
+  onChange={null}
+  placeholder="Uncontrolled Input"
+  rows={3}
+  spellCheck={false}
+/>
+`;
+
+exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.46633rem 0.8rem;
+  font-size: 1rem;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  color: #456297;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  height: auto;
+  resize: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c0:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c0::placeholder {
+  color: #95ACD4;
+}
+
+.c0:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c0:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+<textarea
+  autoFocus={false}
+  className="c0"
+  defaultValue=""
+  disabled={false}
+  id={null}
+  maxLength={null}
+  onChange={[Function]}
+  placeholder="Controlled Input"
+  rows={3}
+  spellCheck={false}
+  value=""
+/>
+`;

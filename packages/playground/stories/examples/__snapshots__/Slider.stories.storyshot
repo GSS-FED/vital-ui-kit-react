@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Slider Basic 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-width: 200px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 26px;
+}
+
+.c4 {
+  top: 0;
+  position: absolute;
+  border-radius: 100%;
+  border-color: #C4D2EB;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
+  text-indent: -3333px;
+  overflow: hidden;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  outline: 0;
+  border-style: solid;
+  border-width: 1px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.c4:hover {
+  border-color: #0E86FE;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(196,210,235,0.3);
+}
+
+.c3 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  left: 0;
+  height: 10px;
+  top: 0;
+  width: 0px;
+  pointer-events: none;
+  background-color: #0E86FE;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.c2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 0;
+  height: 10px;
+  margin-top: -4px;
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  border-color: #95ACD4;
+  width: 100%;
+  background-color: #D8E3F6;
+  cursor: pointer;
+}
+
+<div
+  aria-valuemax={100}
+  aria-valuemin={0}
+  aria-valuenow={0}
+  className="c0"
+  disabled={false}
+>
+  <div
+    className="c1"
+    disabled={false}
+    size="medium"
+  >
+    <div
+      className="c2"
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      size="medium"
+    >
+      <div
+        className="c3"
+        disabled={false}
+        size="medium"
+        width={0}
+      />
+    </div>
+    <div
+      className="c4"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      size="medium"
+      style={
+        Object {
+          "left": "0px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components | Slider with Custom Button 1`] = `
+.c1 {
+  position: relative;
+  background: #F7F9FE;
+  color: #456297;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E3F6;
+  font-size: 0.866rem;
+  border-radius: 3px;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  padding: calc(0.4rem - 1px) 0.8rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background: #EEF2FC;
+  color: #456297;
+  border-color: #EEF2FC;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 100%;
+  width: 2.066rem;
+  line-height: 2.066rem;
+  height: 2.066rem;
+}
+
+.c1:hover {
+  background: #D8E3F6;
+}
+
+.c1:active {
+  background: #C4D2EB;
+}
+
+.c1:hover {
+  background: #D8E3F6;
+  border-color: #D8E3F6;
+}
+
+.c1:active {
+  background: #95ACD4;
+  border-color: #95ACD4;
+}
+
+.c1[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background-color: #F7F9FE;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-width: 200px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 26px;
+}
+
+.c5 {
+  top: 0;
+  position: absolute;
+  border-radius: 100%;
+  border-color: #C4D2EB;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
+  text-indent: -3333px;
+  overflow: hidden;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  outline: 0;
+  border-style: solid;
+  border-width: 1px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.c5:hover {
+  border-color: #0E86FE;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(196,210,235,0.3);
+}
+
+.c4 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  left: 0;
+  height: 10px;
+  top: 0;
+  width: 0px;
+  pointer-events: none;
+  background-color: #0E86FE;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.c3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 0;
+  height: 10px;
+  margin-top: -4px;
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  border-color: #95ACD4;
+  width: 100%;
+  background-color: #D8E3F6;
+  cursor: pointer;
+}
+
+<div
+  aria-valuemax={100}
+  aria-valuemin={0}
+  aria-valuenow={50}
+  className="c0"
+  disabled={false}
+>
+  <button
+    className="c1"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    selected={false}
+    size="small"
+    style={
+      Object {
+        "flex": "0 0 auto",
+        "marginRight": "12px",
+      }
+    }
+  >
+    -
+  </button>
+  <div
+    className="c2"
+    disabled={false}
+    size="medium"
+  >
+    <div
+      className="c3"
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      size="medium"
+    >
+      <div
+        className="c4"
+        disabled={false}
+        size="medium"
+        width={0}
+      />
+    </div>
+    <div
+      className="c5"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      size="medium"
+      style={
+        Object {
+          "left": "0px",
+        }
+      }
+    />
+  </div>
+  <button
+    className="c1"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    selected={false}
+    size="small"
+    style={
+      Object {
+        "flex": "0 0 auto",
+        "marginLeft": "12px",
+      }
+    }
+  >
+    +
+  </button>
+</div>
+`;

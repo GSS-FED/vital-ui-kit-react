@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components | Checkbox Checkbox 1`] = `
+.c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456297;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+<label
+  className="c0"
+  label="Label"
+>
+  <span
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <svg
+        height="12"
+        onClick={[Function]}
+        viewBox="0 0 1024 1024"
+        width="12"
+      >
+        <path
+          d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+          fill="#0E86FE"
+        />
+      </svg>
+    </div>
+  </span>
+  <span
+    className="c3"
+  >
+    <input
+      checked={false}
+      className="c4"
+      defaultChecked={false}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    Label
+  </span>
+</label>
+`;
+
+exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
+.c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456297;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+<div
+  className=""
+>
+  <label
+    className="c0"
+    label="Label"
+  >
+    <span
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <svg
+          height="12"
+          onClick={[Function]}
+          viewBox="0 0 1024 1024"
+          width="12"
+        >
+          <path
+            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+            fill="#0E86FE"
+          />
+        </svg>
+      </div>
+    </span>
+    <span
+      className="c3"
+    >
+      <input
+        checked={false}
+        className="c4"
+        defaultChecked={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      Label
+    </span>
+  </label>
+  <label
+    className="c0"
+    label="Label"
+  >
+    <span
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <svg
+          height="12"
+          onClick={[Function]}
+          viewBox="0 0 1024 1024"
+          width="12"
+        >
+          <path
+            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+            fill="#0E86FE"
+          />
+        </svg>
+      </div>
+    </span>
+    <span
+      className="c3"
+    >
+      <input
+        checked={false}
+        className="c4"
+        defaultChecked={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      Label
+    </span>
+  </label>
+  <label
+    className="c0"
+    label="Label"
+  >
+    <span
+      className="c1"
+    >
+      <div
+        className="c2"
+      >
+        <svg
+          height="12"
+          onClick={[Function]}
+          viewBox="0 0 1024 1024"
+          width="12"
+        >
+          <path
+            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+            fill="#0E86FE"
+          />
+        </svg>
+      </div>
+    </span>
+    <span
+      className="c3"
+    >
+      <input
+        checked={false}
+        className="c4"
+        defaultChecked={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      Label
+    </span>
+  </label>
+</div>
+`;
