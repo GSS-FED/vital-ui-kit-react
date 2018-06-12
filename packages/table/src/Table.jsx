@@ -68,6 +68,9 @@ type Props = {
   /** Optional inline style to attach to inner Grid element. */
   gridStyle?: CSSStyleDeclaration,
 
+  hasHorizontalBorder?: boolean,
+  hasVerticalBorder?: boolean,
+
   /** Optional CSS class to apply to all column headers */
   headerClassName?: string,
 
@@ -157,7 +160,6 @@ type Props = {
   }) => void,
 
   /** See Grid#overscanIndicesGetter */
-  // TODO:
   overscanIndicesGetter?: () => mixed,
 
   /**
@@ -229,6 +231,8 @@ type Props = {
   /** Vertical offset. */
   scrollTop?: number,
 
+  striped?: boolean,
+
   /**
    * Sort function to be called if a sortable header is clicked.
    * Should implement the following interface: ({
@@ -285,6 +289,9 @@ export default class Table extends React.PureComponent<Props, State> {
     overscanRowCount: 10,
     rowRenderer: defaultRowRenderer,
     headerRowRenderer: defaultHeaderRowRenderer,
+    hasVerticalBorder: false,
+    hasHorizontalBorder: false,
+    striped: false,
     rowStyle: {},
     scrollToAlignment: 'auto',
     scrollToIndex: -1,
@@ -503,6 +510,8 @@ export default class Table extends React.PureComponent<Props, State> {
       sort,
       sortBy,
       sortDirection,
+      hasHorizontalBorder,
+      hasVerticalBorder,
     } = this.props;
 
     const {
@@ -592,6 +601,8 @@ export default class Table extends React.PureComponent<Props, State> {
     // See PR https://github.com/bvaughn/react-virtualized/pull/942
     return (
       <HeaderCell
+        hasHorizontalBorder={hasHorizontalBorder}
+        hasVerticalBorder={hasVerticalBorder}
         aria-label={headerAriaLabel}
         aria-sort={headerAriaSort}
         className={classNames}
@@ -623,6 +634,7 @@ export default class Table extends React.PureComponent<Props, State> {
     rowStyleObject,
     rowClass,
   }) => {
+    const { hasHorizontalBorder, hasVerticalBorder, striped } = this.props;
     if (rowIndex === 0) {
       const column = columns[columnIndex];
       return this._createHeader({
@@ -642,77 +654,12 @@ export default class Table extends React.PureComponent<Props, State> {
       columns,
       rowStyleObject,
       rowClass,
+      hasHorizontalBorder,
+      hasVerticalBorder,
+      striped,
       onHover: this._onHoverCell,
       hoveredColumnIndex: this.state.hoveredColumnIndex,
       hoveredRowIndex: this.state.hoveredRowIndex,
-    });
-  };
-
-  _createRow: CellRenderer = ({
-    rowIndex: index,
-    isScrolling,
-    key,
-    parent,
-    style,
-  }) => {
-    const {
-      children,
-      onRowClick,
-      onRowDoubleClick,
-      onRowRightClick,
-      onRowMouseOver,
-      onRowMouseOut,
-      rowClassName,
-      rowGetter,
-      rowRenderer,
-      rowStyle,
-    } = this.props;
-
-    const { scrollbarWidth } = this.state;
-
-    const rowClass =
-      typeof rowClassName === 'function'
-        ? rowClassName({ index })
-        : rowClassName;
-    const rowStyleObject =
-      typeof rowStyle === 'function' ? rowStyle({ index }) : rowStyle;
-    const rowData = rowGetter({ index });
-
-    const columns = React.Children.toArray(children).map(
-      (column, columnIndex) =>
-        this._createColumn({
-          column,
-          columnIndex,
-          isScrolling,
-          parent,
-          rowData,
-          rowIndex: index,
-          scrollbarWidth,
-        }),
-    );
-
-    const className = cn('ReactVirtualized__Table__row', rowClass);
-    const flattenedStyle = {
-      ...style,
-      ...rowStyleObject,
-      height: this._getRowHeight(index),
-      overflow: 'hidden',
-      paddingRight: scrollbarWidth,
-    };
-
-    return rowRenderer({
-      className,
-      columns,
-      index,
-      isScrolling,
-      key,
-      onRowClick,
-      onRowDoubleClick,
-      onRowRightClick,
-      onRowMouseOver,
-      onRowMouseOut,
-      rowData,
-      style: flattenedStyle,
     });
   };
 

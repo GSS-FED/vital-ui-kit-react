@@ -48,6 +48,7 @@ storiesOf('Table', module)
         <AutoSizer>
           {({ width, height }) => (
             <SimpleTable
+              hasVerticalBorder
               hasHorizontalBorder
               width={width}
               height={height}
@@ -82,6 +83,7 @@ storiesOf('Table', module)
         <AutoSizer>
           {({ width, height }) => (
             <Table
+              hasVerticalBorder
               hasHorizontalBorder
               width={width}
               height={height}

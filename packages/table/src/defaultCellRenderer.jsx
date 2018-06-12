@@ -5,10 +5,22 @@ import styled, { css } from 'styled-components';
 
 const Cell = styled.div`
   color: #456296;
-  border-bottom: 1px solid #d8e3f6;
   padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
+
+  ${({ hasHorizontalBorder }) =>
+    hasHorizontalBorder &&
+    css`
+      border-bottom: 1px solid #d8e3f6;
+    `};
+
+  ${({ hasVerticalBorder }) =>
+    hasVerticalBorder &&
+    css`
+      border-right: 1px solid #d8e3f6;
+    `};
 
   ${({ isEven }) =>
     isEven &&
@@ -43,6 +55,9 @@ type Props = {
   hoveredRowIndex: number,
   rowStyleObject: CSSStyleDeclaration,
   rowClass: string,
+  hasHorizontalBorder: boolean,
+  hasVerticalBorder: boolean,
+  striped: boolean,
 };
 
 const defaultCellRenderer = (data: Object[]) => ({
@@ -56,20 +71,30 @@ const defaultCellRenderer = (data: Object[]) => ({
   hoveredRowIndex,
   rowStyleObject,
   rowClass,
-}: Props) => (
-  <Cell
-    className={rowClass}
-    onMouseOver={() => onHover({ rowIndex, columnIndex })}
-    isEven={rowIndex % 2 === 0}
-    hoveredColumn={hoveredColumnIndex === columnIndex}
-    hoveredRow={hoveredRowIndex === rowIndex}
-    key={key}
-    style={{
-      ...rowStyleObject,
-      ...style,
-    }}
-  >
-    <Span>{data[rowIndex][columns[columnIndex].props.dataKey]}</Span>
-  </Cell>
-);
+  hasHorizontalBorder,
+  hasVerticalBorder,
+  striped,
+}: Props) => {
+  const isEven = rowIndex % 2 === 0 && striped;
+  return (
+    <Cell
+      hasHorizontalBorder={hasHorizontalBorder}
+      hasVerticalBorder={hasVerticalBorder}
+      className={rowClass}
+      onMouseOver={() => onHover({ rowIndex, columnIndex })}
+      isEven={isEven}
+      hoveredColumn={hoveredColumnIndex === columnIndex}
+      hoveredRow={hoveredRowIndex === rowIndex}
+      key={key}
+      style={{
+        ...rowStyleObject,
+        ...style,
+      }}
+    >
+      <Span>
+        {data[rowIndex][columns[columnIndex].props.dataKey]}
+      </Span>
+    </Cell>
+  );
+};
 export default defaultCellRenderer;

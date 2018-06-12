@@ -6,6 +6,7 @@ import type { HeaderRendererParams } from './types';
 
 const HeaderLabel = styled.span`
   padding-left: 20px;
+  padding-right: 20px;
 `;
 
 /**
