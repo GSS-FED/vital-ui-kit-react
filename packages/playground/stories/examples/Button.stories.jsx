@@ -21,15 +21,6 @@ import { Welcome } from '@storybook/react/demo';
 
 import { Button, Icon, ButtonGroup } from '../../../web/src';
 
-injectGlobal`
-  #root {
-    padding: 20px;
-  }
-`;
-
-// storiesOf('Welcome', module).add('to Storybook', () => (
-//   <Welcome showApp={linkTo('Button')} />
-// ));
 
 storiesOf('Components | Button', module)
   .addDecorator(withKnobs)

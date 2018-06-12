@@ -23,7 +23,7 @@ type Props = TableProps & {
   striped?: boolean,
 };
 
-class Table extends React.Component<Props> {
+class SimpleTable extends React.Component<Props> {
   static defaultProps = {
     ...BaseTable.defaultProps,
     rowRenderer: defaultRowRenderer,
@@ -56,4 +56,4 @@ class Table extends React.Component<Props> {
   }
 }
 
-export default Table;
+export default SimpleTable;

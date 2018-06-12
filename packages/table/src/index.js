@@ -1,12 +1,12 @@
-import Table from './SimpleTable/Table';
-import Table2 from './Table-2';
+import SimpleTable from './SimpleTable/SimpleTable';
+import Table from './Table';
 import defaultCellRenderer from './defaultCellRenderer';
 import Column from './SimpleTable/Column';
 
 export {
-  Table,
+  SimpleTable,
   Column,
-  Table2,
+  Table,
   defaultCellRenderer
 }
  

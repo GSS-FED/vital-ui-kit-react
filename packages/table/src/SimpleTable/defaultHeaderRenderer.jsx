@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SortIndicator from '../SortIndicator';
 import type { HeaderRendererParams } from './types';
 
-const Header = styled.span`
+const HeaderLabel = styled.span`
   padding-left: 20px;
 `;
 
@@ -19,13 +19,13 @@ export default function defaultHeaderRenderer({
 }: HeaderRendererParams) {
   const showSortIndicator = sortBy === dataKey;
   const children = [
-    <Header
+    <HeaderLabel
       className="ReactVirtualized__Table__headerTruncatedText"
       key="label"
       title={label}
     >
       {label}
-    </Header>,
+    </HeaderLabel>,
   ];
 
   if (showSortIndicator) {

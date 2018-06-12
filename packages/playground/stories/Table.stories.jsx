@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable no-use-before-define */
 
 import React, { Component } from 'react';
 import styled from 'styled-components';
@@ -17,8 +18,13 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 import faker from 'faker';
-import { Table, Column, Table2, defaultCellRenderer } from '../../table/src'; 
-import { AutoSizer, MultiGrid } from 'react-virtualized';
+import {
+  SimpleTable,
+  Column,
+  Table,
+  defaultCellRenderer,
+} from '../../table/src';
+import { AutoSizer, SortDirection } from 'react-virtualized';
 
 // Table data as an array of objects
 const list = new Array(100).fill(true).map(() => ({
@@ -31,33 +37,6 @@ storiesOf('Table', module)
   .addDecorator(withKnobs)
   // .addDecorator(centered)
   .add(
-    'Basic',
-    withInfo()(() => (
-      <div>
-        <Table2
-          hasHorizontalBorder
-          width={500}
-          height={300}
-          rowCount={list.length}
-          // rowGetter={({ index }) => list[index]}
-          cellRenderer={defaultCellRenderer(list)}
-        >
-          <Column dataKey="name" label="Name" width={200} fixed />
-          <Column
-            dataKey="location"
-            label="Location"
-            width={100}
-          />
-          <Column
-            dataKey="description"
-            label="Description"
-            width={300}
-          />
-        </Table2>
-      </div>
-    )),
-  )
-  .add(
     'AutoResize',
     withInfo()(() => (
       <div
@@ -68,7 +47,7 @@ storiesOf('Table', module)
       >
         <AutoSizer>
           {({ width, height }) => (
-            <Table
+            <SimpleTable
               hasHorizontalBorder
               width={width}
               height={height}
@@ -86,46 +65,50 @@ storiesOf('Table', module)
                 label="Description"
                 width={width / 3}
               />
-            </Table>
+            </SimpleTable>
           )}
         </AutoSizer>
       </div>
     )),
   )
   .add(
-    'Multi',
+    'Fixed column',
     withInfo()(() => (
-      <div
-        style={{
-          width: '100%',
-          height: '300px',
+      <div style={{
+        width: '500px',
+        height: '400px',
         }}
       >
-        <MultiGrid
-          fixedColumnCount={2}
-          fixedRowCount={1}
-          scrollToColumn={0}
-          scrollToRow={0}
-          cellRenderer={_cellRenderer}
-          columnWidth={75}
-          columnCount={50}
-          enableFixedColumnScroll
-          enableFixedRowScroll
-          height={300}
-          rowHeight={40}
-          rowCount={100}
-          width={500}
-          hideTopRightGridScrollbar
-          hideBottomLeftGridScrollbar
-        />
+        <AutoSizer>
+          {({ width, height }) => (
+            <Table
+              hasHorizontalBorder
+              width={width}
+              height={height}
+              rowCount={list.length}
+              sort={sort}
+              cellRenderer={defaultCellRenderer(list)}
+            >
+              <Column dataKey="name" label="Name" width={200} fixed />
+              <Column
+                dataKey="location"
+                label="Location"
+                width={100}
+              />
+              <Column
+                dataKey="description"
+                label="Description"
+                width={300}
+              />
+            </Table>
+          )}
+        </AutoSizer>
       </div>
     )),
   );
 
-function _cellRenderer({ columnIndex, key, rowIndex, style, columns }) {
-  return (
-    <div key={key} style={style}>
-      {list[rowIndex][columns[columnIndex].props.dataKey]}
-    </div>
-  );
+function sort({ sortBy, sortDirection }) {
+  console.log('====================================');
+  console.log(sortBy, sortDirection);
+  console.log('====================================');
 }

@@ -7,7 +7,13 @@ import * as React from 'react';
 import cn from 'classnames';
 // import Column from './Column';
 import { findDOMNode } from 'react-dom';
-import { Grid, MultiGrid } from 'react-virtualized';
+import { MultiGrid } from 'react-virtualized';
+import type {
+  Alignment,
+  CellPosition,
+  ScrollParams,
+  RenderedSection,
+} from 'react-virtualized';
 
 import defaultRowRenderer from './SimpleTable/defaultRowRenderer';
 import defaultHeaderRowRenderer from './SimpleTable/defaultHeaderRowRenderer';
@@ -16,13 +22,12 @@ import SortDirection from './SortDirection';
 import accessibilityOverscanIndicesGetter from './accessibilityOverscanIndicesGetter';
 import { HeaderCell } from './styled';
 
-type CellPosition = { columnIndex: number, rowIndex: number };
-
 export type CellRendererParams = {
+  columns: any[],
   columnIndex: number,
   isScrolling: boolean,
   isVisible: boolean,
-  key: string, 
+  key: string,
   parent: Object,
   rowIndex: number,
   style: Object,
@@ -216,7 +221,7 @@ type Props = {
     | (({ index: number }) => CSSStyleDeclaration),
 
   /** See Grid#scrollToAlignment */
-  scrollToAlignment: 'auto' | 'end' | 'start' | 'center',
+  scrollToAlignment: Alignment,
 
   /** Row index to ensure visible (by forcefully scrolling if necessary) */
   scrollToIndex: number,
@@ -292,12 +297,12 @@ export default class Table extends React.PureComponent<Props, State> {
 
     this.state = {
       scrollbarWidth: 0,
-      hoveredColumnIndex: null,
-      hoveredRowIndex: null,
+      hoveredColumnIndex: undefined,
+      hoveredRowIndex: undefined,
     };
   }
 
-  Grid: Grid;
+  Grid: MultiGrid;
 
   _cachedColumnStyles: any[];
 
@@ -307,8 +312,14 @@ export default class Table extends React.PureComponent<Props, State> {
     }
   }
 
-  /** See Grid#getOffsetForCell */
-  getOffsetForRow({ alignment, index }) {
+  /** TODO: See Grid#getOffsetForCell */
+  getOffsetForRow({
+    alignment,
+    index,
+  }: {
+    alignment?: Alignment,
+    index?: number,
+  }) {
     if (this.Grid) {
       const { scrollTop } = this.Grid.getOffsetForCell({
         alignment,
@@ -354,7 +365,7 @@ export default class Table extends React.PureComponent<Props, State> {
   }
 
   /** See Grid#recomputeGridSize */
-  recomputeRowHeights(index = 0) {
+  recomputeRowHeights(index: number = 0) {
     if (this.Grid) {
       this.Grid.recomputeGridSize({
         rowIndex: index,
@@ -362,15 +373,15 @@ export default class Table extends React.PureComponent<Props, State> {
     }
   }
 
-  /** See Grid#scrollToPosition */
-  scrollToPosition(scrollTop = 0) {
+  /** TODO: See Grid#scrollToPosition */
+  scrollToPosition(scrollTop: number = 0) {
     if (this.Grid) {
       this.Grid.scrollToPosition({ scrollTop });
     }
   }
 
-  /** See Grid#scrollToCell */
-  scrollToRow(index = 0) {
+  /** TODO: See Grid#scrollToCell */
+  scrollToRow(index: number = 0) {
     if (this.Grid) {
       this.Grid.scrollToCell({
         columnIndex: 0,
@@ -389,13 +400,11 @@ export default class Table extends React.PureComponent<Props, State> {
 
   render() {
     const {
-      children,
       className,
       disableHeader,
       gridClassName,
       gridStyle,
       headerHeight,
-      headerRowRenderer,
       height,
       id,
       noRowsRenderer,
@@ -425,6 +434,9 @@ export default class Table extends React.PureComponent<Props, State> {
     // Precompute and cache column styles before rendering rows and columns to speed things up
     this._cachedColumnStyles = [];
     const columns = this._getHeaderColumns();
+    const fixedColumnCount = columns.filter(
+      column => column.props.fixed === true,
+    ).length;
     // Note that we specify :rowCount, :scrollbarWidth, :sortBy, and :sortDirection as properties on Grid even though these have nothing to do with Grid.
     // This is done because Grid is a pure component and won't update unless its properties or state has changed.
     // Any property that should trigger a re-render of Grid then is specified here to avoid a stale display.
@@ -443,17 +455,19 @@ export default class Table extends React.PureComponent<Props, State> {
             gridClassName,
           )}
           cellRenderer={props =>
-            this._createGrid({ columns, ...props })
+            this._createGrid({
+              columns,
+              ...props,
+              rowClass,
+              rowStyleObject,
+            })
           }
           columnWidth={({ index }) => columns[index].props.width}
           columnCount={columns.length}
           enableFixedColumnScroll
           enableFixedRowScroll
           fixedRowCount={1}
-          fixedColumnCount={
-            columns.filter(column => column.props.fixed === true)
-              .length
-          }
+          fixedColumnCount={fixedColumnCount}
           height={availableRowsHeight}
           id={undefined}
           noContentRenderer={noRowsRenderer}
@@ -473,61 +487,15 @@ export default class Table extends React.PureComponent<Props, State> {
     );
   }
 
-  _createColumn = ({
+  _createHeader({
     column,
-    columnIndex,
-    isScrolling,
-    parent,
-    rowData,
-    rowIndex,
-  }) => {
-    const {
-      cellDataGetter,
-      cellRenderer,
-      className,
-      columnData,
-      dataKey,
-      id,
-    } = column.props;
-
-    const cellData = cellDataGetter({ columnData, dataKey, rowData });
-    const renderedCell = cellRenderer({
-      cellData,
-      columnData,
-      columnIndex,
-      dataKey,
-      isScrolling,
-      parent,
-      rowData,
-      rowIndex,
-    });
-
-    const style = this._cachedColumnStyles[columnIndex];
-
-    const title =
-      typeof renderedCell === 'string' ? renderedCell : null;
-
-    // Avoid using object-spread syntax with multiple objects here,
-    // Since it results in an extra method call to 'babel-runtime/helpers/extends'
-    // See PR https://github.com/bvaughn/react-virtualized/pull/942
-    return (
-      <div
-        aria-describedby={id}
-        className={cn(
-          'ReactVirtualized__Table__rowColumn',
-          className,
-        )}
-        key={`Row${  rowIndex  }-` + `Col${  columnIndex}`}
-        role="gridcell"
-        style={style}
-        title={title}
-      >
-        {renderedCell}
-      </div>
-    );
-  };
-
-  _createHeader({ column, index }) {
+    index,
+    style,
+  }: {
+    column: React$Element<any>,
+    index: number,
+    style: CSSStyleDeclaration,
+  }) {
     const {
       headerClassName,
       headerStyle,
@@ -536,6 +504,7 @@ export default class Table extends React.PureComponent<Props, State> {
       sortBy,
       sortDirection,
     } = this.props;
+
     const {
       columnData,
       dataKey,
@@ -555,10 +524,6 @@ export default class Table extends React.PureComponent<Props, State> {
         ReactVirtualized__Table__sortableHeaderColumn: sortEnabled,
       },
     );
-    const style = this._getFlexStyleForColumn(column, {
-      ...headerStyle,
-      ...column.props.headerStyle,
-    });
 
     const renderedHeader = headerRenderer({
       columnData,
@@ -569,11 +534,11 @@ export default class Table extends React.PureComponent<Props, State> {
       sortDirection,
     });
 
-    let headerOnClick,
-      headerOnKeyDown,
-      headerTabIndex,
-      headerAriaSort,
-      headerAriaLabel;
+    let headerOnClick;
+    let headerOnKeyDown;
+    let headerTabIndex;
+    let headerAriaSort;
+    let headerAriaLabel;
 
     if (sortEnabled || onHeaderClick) {
       // If this is a sortable header, clicking it should update the table data's sorting.
@@ -581,6 +546,7 @@ export default class Table extends React.PureComponent<Props, State> {
 
       // If this is the firstTime sort of this column, use the column default sort order.
       // Otherwise, invert the direction of the sort.
+      // eslint-disable-next-line
       const newSortDirection = isFirstTimeSort
         ? defaultSortDirection
         : sortDirection === SortDirection.DESC
@@ -588,15 +554,17 @@ export default class Table extends React.PureComponent<Props, State> {
           : SortDirection.DESC;
 
       const onClick = event => {
-        sortEnabled &&
+        if (sortEnabled && sort) {
           sort({
             defaultSortDirection,
             event,
             sortBy: dataKey,
             sortDirection: newSortDirection,
           });
-        onHeaderClick &&
+        }
+        if (onHeaderClick) {
           onHeaderClick({ columnData, dataKey, event });
+        }
       };
 
       const onKeyDown = event => {
@@ -623,20 +591,23 @@ export default class Table extends React.PureComponent<Props, State> {
     // Since it results in an extra method call to 'babel-runtime/helpers/extends'
     // See PR https://github.com/bvaughn/react-virtualized/pull/942
     return (
-      <div
+      <HeaderCell
         aria-label={headerAriaLabel}
         aria-sort={headerAriaSort}
         className={classNames}
         id={id}
-        key={`Header-Col${  index}`}
+        key={`Header-Col${index}`}
         onClick={headerOnClick}
         onKeyDown={headerOnKeyDown}
         role="columnheader"
-        style={style}
+        style={{
+          ...headerStyle,
+          ...style,
+        }}
         tabIndex={headerTabIndex}
       >
         {renderedHeader}
-      </div>
+      </HeaderCell>
     );
   }
 
@@ -649,15 +620,16 @@ export default class Table extends React.PureComponent<Props, State> {
     style,
     columnIndex,
     isVisible,
+    rowStyleObject,
+    rowClass,
   }) => {
     if (rowIndex === 0) {
-      const { label } = columns[columnIndex].props;
-      
-      return (
-        <HeaderCell key={key} style={style}>
-          {label}
-        </HeaderCell>
-      );
+      const column = columns[columnIndex];
+      return this._createHeader({
+        column,
+        index: columnIndex,
+        style,
+      });
     }
     return this.props.cellRenderer({
       isVisible,
@@ -668,6 +640,8 @@ export default class Table extends React.PureComponent<Props, State> {
       parent,
       isScrolling,
       columns,
+      rowStyleObject,
+      rowClass,
       onHover: this._onHoverCell,
       hoveredColumnIndex: this.state.hoveredColumnIndex,
       hoveredRowIndex: this.state.hoveredRowIndex,
@@ -742,12 +716,12 @@ export default class Table extends React.PureComponent<Props, State> {
     });
   };
 
-  _onHoverCell = ({ rowIndex, columnIndex }) => {
+  _onHoverCell = ({ rowIndex, columnIndex }: CellPosition) => {
     this.setState({
       hoveredColumnIndex: columnIndex,
-      hoveredRowIndex: rowIndex, 
-    })
-  }
+      hoveredRowIndex: rowIndex,
+    });
+  };
 
   _getHeaderColumns = () => {
     const { children, disableHeader } = this.props;
@@ -757,7 +731,7 @@ export default class Table extends React.PureComponent<Props, State> {
     return items;
   };
 
-  _getRowHeight(rowIndex) {
+  _getRowHeight(rowIndex: number) {
     const { rowHeight } = this.props;
 
     return typeof rowHeight === 'function'
@@ -765,10 +739,15 @@ export default class Table extends React.PureComponent<Props, State> {
       : rowHeight;
   }
 
-  _onScroll = ({ clientHeight, scrollHeight, scrollTop }) => {
+  _onScroll = ({
+    clientHeight,
+    scrollHeight,
+    scrollTop,
+  }: ScrollParams) => {
     const { onScroll } = this.props;
-
-    onScroll({ clientHeight, scrollHeight, scrollTop });
+    if (onScroll) {
+      onScroll({ clientHeight, scrollHeight, scrollTop });
+    }
   };
 
   _onSectionRendered = ({
@@ -776,29 +755,34 @@ export default class Table extends React.PureComponent<Props, State> {
     rowOverscanStopIndex,
     rowStartIndex,
     rowStopIndex,
-  }) => {
+  }: RenderedSection) => {
     const { onRowsRendered } = this.props;
-
-    onRowsRendered({
-      overscanStartIndex: rowOverscanStartIndex,
-      overscanStopIndex: rowOverscanStopIndex,
-      startIndex: rowStartIndex,
-      stopIndex: rowStopIndex,
-    });
+    if (onRowsRendered) {
+      onRowsRendered({
+        overscanStartIndex: rowOverscanStartIndex,
+        overscanStopIndex: rowOverscanStopIndex,
+        startIndex: rowStartIndex,
+        stopIndex: rowStopIndex,
+      });
+    }
   };
 
-  _setRef = ref => {
+  _setRef = (ref: ?HTMLElement) => {
     this.Grid = ref;
   };
 
   _setScrollbarWidth() {
     if (this.Grid) {
+      // eslint-disable-next-line
       const Grid = findDOMNode(this.Grid);
-      const clientWidth = Grid.clientWidth || 0;
-      const offsetWidth = Grid.offsetWidth || 0;
-      const scrollbarWidth = offsetWidth - clientWidth;
-
-      this.setState({ scrollbarWidth });
+      if (Grid) {
+        // $FlowFixMe
+        const clientWidth: number = Grid.clientWidth || 0;
+        // $FlowFixMe
+        const offsetWidth: number = Grid.offsetWidth || 0;
+        const scrollbarWidth = offsetWidth - clientWidth;
+        this.setState({ scrollbarWidth });
+      }
     }
   }
 }

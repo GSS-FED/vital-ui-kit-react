@@ -23,7 +23,29 @@ const Cell = styled.div`
     `};
 `;
 
-const defaultCellRenderer = data => ({
+const Span = styled.span`
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+`;
+
+type Props = {
+  columnIndex: number,
+  key: string,
+  rowIndex: number,
+  style: CSSStyleDeclaration,
+  columns: React$Element<any>[],
+  onHover: (props: {
+    rowIndex: number,
+    columnIndex: number,
+  }) => mixed,
+  hoveredColumnIndex: number,
+  hoveredRowIndex: number,
+  rowStyleObject: CSSStyleDeclaration,
+  rowClass: string,
+};
+
+const defaultCellRenderer = (data: Object[]) => ({
   columnIndex,
   key,
   rowIndex,
@@ -32,16 +54,22 @@ const defaultCellRenderer = data => ({
   onHover,
   hoveredColumnIndex,
   hoveredRowIndex,
-}) => (
+  rowStyleObject,
+  rowClass,
+}: Props) => (
   <Cell
+    className={rowClass}
     onMouseOver={() => onHover({ rowIndex, columnIndex })}
     isEven={rowIndex % 2 === 0}
     hoveredColumn={hoveredColumnIndex === columnIndex}
     hoveredRow={hoveredRowIndex === rowIndex}
     key={key}
-    style={style}
+    style={{
+      ...rowStyleObject,
+      ...style,
+    }}
   >
-    {data[rowIndex][columns[columnIndex].props.dataKey]}
+    <Span>{data[rowIndex][columns[columnIndex].props.dataKey]}</Span>
   </Cell>
 );
 export default defaultCellRenderer;
