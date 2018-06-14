@@ -63,7 +63,9 @@
   "devDependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "typescript": "^2.7.1"
+    "typescript": "^2.7.1",
+    "react-router-dom": "^4.3.1",
+    "react-redux": "^5.0.7"
   },
   "peerDependencies": {
     "typescript": "2.x"

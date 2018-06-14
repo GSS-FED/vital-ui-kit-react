@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 import '@gssfed/vital-ui-kit-react/dist/base/global.css';
 import './index.css';
@@ -18,7 +17,7 @@ ReactDOM.render(
       </ThemeProvider>
     </Provider>
   </Router>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
