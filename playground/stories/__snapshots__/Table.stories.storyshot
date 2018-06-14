@@ -4,7 +4,7 @@ exports[`Storyshots Table AutoResize 1`] = `
 .c0 {
   color: #456297;
   font-weight: 500;
-  border-bottom: 1px solid #D8e3f6;
+  border-bottom: 1px solid #d8e3f6;
 }
 
 .c1 {
