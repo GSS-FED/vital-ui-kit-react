@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Vital UI Kit for React!",
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
@@ -26,20 +26,20 @@
     "web"
   ],
   "dependencies": {
+    "classnames": "^2.2.5",
     "polished": "^1.9.2",
     "popmotion": "^8.1.22",
     "prop-types": "^15.6.1",
     "rc-trigger": "^2.3.4",
     "react-click-outside": "^3.0.1",
     "react-priority-navigation": "^0.0.8-rc2",
-    "resize-observer-polyfill": "^1.5.0",
-    "classnames": "^2.2.5"
+    "resize-observer-polyfill": "^1.5.0"
   },
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": ">=2 || >=3",
-    "react-virtualized": "^9.13.0"
+    "react-virtualized": "^9.13.0",
+    "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
     "react-virtualized": "^9.19.1"

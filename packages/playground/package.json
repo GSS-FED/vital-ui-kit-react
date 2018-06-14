@@ -1,6 +1,6 @@
 {
   "name": "@gssfed/playground",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gssfed playground",
   "private": true,
   "main": "index.js",
