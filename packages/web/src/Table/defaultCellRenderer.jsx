@@ -48,13 +48,11 @@ const defaultCellRenderer = (data: Object[]) => ({
     hoveredRow={hoveredRow}
     key={key}
     style={{
-        ...rowStyleObject,
-        ...style,
-      }}
+      ...rowStyleObject,
+      ...style,
+    }}
   >
-    <Span>
-      {data[rowIndex][columns[columnIndex].props.dataKey]}
-    </Span>
+    <Span>{data[rowIndex][columns[columnIndex].props.dataKey]}</Span>
   </Cell>
-  );
+);
 export default defaultCellRenderer;

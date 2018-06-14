@@ -40,7 +40,7 @@ const Vertical = styled.div`
 type SectionProps = {
   title: string,
   children: React.Node,
-}
+};
 
 const Section = ({ title, children }: SectionProps) => (
   <SectionWrapper>
@@ -51,7 +51,7 @@ const Section = ({ title, children }: SectionProps) => (
 
 type OverviewState = {
   showModal: boolean,
-}
+};
 
 class Overview extends React.PureComponent<void, OverviewState> {
   state = {

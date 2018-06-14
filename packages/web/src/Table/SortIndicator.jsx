@@ -5,8 +5,8 @@ import * as React from 'react';
 import SortDirection from './SortDirection';
 
 type Props = {
-  sortDirection: SortDirection.ASC | SortDirection.DESC
-}
+  sortDirection: SortDirection.ASC | SortDirection.DESC,
+};
 
 /**
  * Displayed beside a header to indicate that a Table is currently sorted by this column.
@@ -40,4 +40,3 @@ export default function SortIndicator({ sortDirection }: Props) {
 }
 
 SortIndicator.defaultProps = SortDirection.ASC;
-

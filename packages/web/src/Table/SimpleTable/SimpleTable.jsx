@@ -15,8 +15,7 @@ BaseTable.propTypes.children = () => {};
 
 const StyledTable: React.ComponentType<TableProps> = styled(
   BaseTable,
-)`
-`;
+)``;
 
 type Props = TableProps & {
   hasHorizontalBorder?: boolean,
@@ -35,7 +34,7 @@ class SimpleTable extends React.Component<Props> {
   };
 
   static HeaderRowRenderer = defaultHeaderRowRenderer;
-  
+
   static RowRenderer = defaultRowRenderer;
 
   render() {
@@ -47,11 +46,7 @@ class SimpleTable extends React.Component<Props> {
     } = this.props;
 
     return (
-      <StyledTable
-        {...props}
-      >
-        {this.props.children}
-      </StyledTable>
+      <StyledTable {...props}>{this.props.children}</StyledTable>
     );
   }
 }

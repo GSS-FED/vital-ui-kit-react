@@ -20,7 +20,7 @@ export default function defaultHeaderRenderer({
       title={label}
       key="label"
     >
-      { label }
+      {label}
     </HeaderLabel>,
   ];
 

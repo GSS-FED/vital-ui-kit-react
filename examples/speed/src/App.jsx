@@ -13,8 +13,8 @@ import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';
 
 type State = {
-  newColor: string
-}
+  newColor: string,
+};
 
 class App extends PureComponent<void, State> {
   state = {

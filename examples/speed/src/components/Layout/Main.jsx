@@ -22,11 +22,11 @@ class Main extends React.PureComponent {
           <Tabs.Tab
             label="Overview"
             badge={5}
-            panel={(
+            panel={
               <Tabs.Panel>
                 <Overview />
               </Tabs.Panel>
-          )}
+            }
           />
           <Tabs.Tab label="Form" badge={1} panel={<Form />} />
           <Tabs.Tab label="Components" badge={100} panel="yoyo" />

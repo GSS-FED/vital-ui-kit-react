@@ -22,7 +22,7 @@ const commonPlugins = [
     preferConst: true,
   }),
   resolve({
-    extensions: [ '.mjs', '.js', '.jsx', '.json' ],
+    extensions: ['.mjs', '.js', '.jsx', '.json'],
   }),
   flow({ pretty: true }),
   postcss({ modules: true }),

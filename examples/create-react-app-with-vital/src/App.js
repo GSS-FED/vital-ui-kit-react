@@ -15,10 +15,13 @@ class App extends React.Component {
           <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
-          <h1 className="App-title">Welcome to React with Vital UI Kit</h1>
+          <h1 className="App-title">
+            Welcome to React with Vital UI Kit
+          </h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+          To get started, edit <code>src/App.tsx</code> and save to
+          reload.
         </p>
         <Box marginTop="50px">
           Click{' '}
