@@ -39,10 +39,10 @@
     "react": "^16",
     "react-dom": "^16",
     "styled-components": ">=2 || >=3",
-    "react-virtualized": "^9"
+    "react-virtualized": "^9.13.0"
   },
   "devDependencies": {
-    
+    "react-virtualized": "^9.19.1"
   },
   "license": "MIT",
   "bugs": {
