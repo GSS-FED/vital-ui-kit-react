@@ -4,7 +4,7 @@ import initStoryshots, {
   multiSnapshotWithOptions,
 } from '@storybook/addon-storyshots';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
-import { addSerializer } from 'jest-specific-snapshot'
+import { addSerializer } from 'jest-specific-snapshot';
 import { Table, SimpleTable } from '../../packages/web/src';
 
 /**
@@ -24,10 +24,10 @@ addSerializer(styleSheetSerializer);
 
 initStoryshots({
   test: multiSnapshotWithOptions({
-    createNodeMock: (element) => {
-      if (element.type === Table || SimpleTable ) {
-        return document.createElement('div')
+    createNodeMock: element => {
+      if (element.type === Table || SimpleTable) {
+        return document.createElement('div');
       }
     },
-  })
+  }),
 });

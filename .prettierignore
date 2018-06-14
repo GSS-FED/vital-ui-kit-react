@@ -7,3 +7,5 @@ package-lock.json
 package.json
 .git/
 build/
+packages/react-scripts-ts
+packages/react-scripts

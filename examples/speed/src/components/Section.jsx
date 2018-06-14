@@ -16,7 +16,7 @@ const SectionTitle = styled.div`
 type Props = {
   title: string,
   children: Node,
-}
+};
 
 const Section = ({ title, children }: Props) => (
   <SectionWrapper>

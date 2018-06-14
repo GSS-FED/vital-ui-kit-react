@@ -93,11 +93,7 @@ storiesOf('Table', module)
               sort={sort}
               cellRenderer={defaultCellRenderer(list)}
             >
-              <Column
-                dataKey="checkbox"
-                width={50}
-                fixed
-              />
+              <Column dataKey="checkbox" width={50} fixed />
               <Column dataKey="name" label="Name" width={200} fixed />
               <Column
                 dataKey="location"

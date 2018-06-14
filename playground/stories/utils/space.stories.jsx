@@ -18,7 +18,6 @@ import { withNotes } from '@storybook/addon-notes';
 import { utils } from '../../../packages/web/src';
 import md from './space.md';
 
-
 const Container = styled.div`
   ${utils.space};
 `;

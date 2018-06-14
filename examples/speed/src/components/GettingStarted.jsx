@@ -9,7 +9,7 @@ const Root = styled.div``;
 
 type State = {
   innerHeight: number,
-}
+};
 
 class GettingStarted extends React.PureComponent<void, State> {
   state = {

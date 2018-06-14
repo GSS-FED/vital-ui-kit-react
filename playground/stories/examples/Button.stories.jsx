@@ -21,7 +21,6 @@ import { Welcome } from '@storybook/react/demo';
 
 import { Button, Icon, ButtonGroup } from '../../../packages/web/src';
 
-
 storiesOf('Components | Button', module)
   .addDecorator(withKnobs)
   .add(

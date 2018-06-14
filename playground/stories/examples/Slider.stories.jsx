@@ -64,16 +64,16 @@ storiesOf('Components | Slider', module)
           max={100}
           min={0}
           step={10}
-          decreaseButton={(
+          decreaseButton={
             <Button size="small" circle flat>
               -
             </Button>
-)}
-          increaseButton={(
+          }
+          increaseButton={
             <Button size="small" circle flat>
               +
             </Button>
-)}
+          }
         />
       )),
     ),

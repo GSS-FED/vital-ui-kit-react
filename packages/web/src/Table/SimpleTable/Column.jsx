@@ -8,7 +8,9 @@ import {
   // $FlowFixMe
 } from 'react-virtualized';
 import defaultHeaderRenderer from './defaultHeaderRenderer';
-import defaultCheckboxRenderer, { type CheckboxRenderer } from '../defaultCheckboxRenderer';
+import defaultCheckboxRenderer, {
+  type CheckboxRenderer,
+} from '../defaultCheckboxRenderer';
 
 const StyledColumn = styled(BaseColumn)``;
 

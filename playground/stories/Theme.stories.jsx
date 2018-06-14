@@ -61,7 +61,10 @@ class ColorPalette extends Component {
             .filter(x => x !== 'primary')
             .filter(y => y.includes('primary'))
             .map(colorKey => (
-              <ColorRect key={colorKey} style={{ background: colorList[colorKey] }} />
+              <ColorRect
+                key={colorKey}
+                style={{ background: colorList[colorKey] }}
+              />
             ))}
         </ColorPaletteWrapper>
         <ColorPaletteWrapper>
@@ -69,7 +72,10 @@ class ColorPalette extends Component {
             .filter(x => x !== 'secondary')
             .filter(y => y.includes('secondary'))
             .map(colorKey => (
-              <ColorRect key={colorKey} style={{ background: colorList[colorKey] }} />
+              <ColorRect
+                key={colorKey}
+                style={{ background: colorList[colorKey] }}
+              />
             ))}
         </ColorPaletteWrapper>
       </Root>
@@ -91,6 +97,8 @@ storiesOf('Getting Started', module)
 
       **defaultComponentsTheme**
     `)(
-      withNotes('Theming with Vital UI Kit components')(() => <ColorPalette />),
+      withNotes('Theming with Vital UI Kit components')(() => (
+        <ColorPalette />
+      )),
     ),
   );

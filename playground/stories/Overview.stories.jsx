@@ -17,7 +17,13 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Avatar, Card, Button, ButtonGroup, Icon } from '../../packages/web/src';
+import {
+  Avatar,
+  Card,
+  Button,
+  ButtonGroup,
+  Icon,
+} from '../../packages/web/src';
 import Section from './Container/Section';
 
 const AVATAR = [

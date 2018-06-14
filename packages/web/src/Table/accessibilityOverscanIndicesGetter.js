@@ -58,7 +58,10 @@ export default function defaultOverscanIndicesGetter({
     };
   } else {
     return {
-      overscanStartIndex: Math.max(0, startIndex - overscanCellsCount),
+      overscanStartIndex: Math.max(
+        0,
+        startIndex - overscanCellsCount,
+      ),
       overscanStopIndex: Math.min(cellCount - 1, stopIndex + 1),
     };
   }

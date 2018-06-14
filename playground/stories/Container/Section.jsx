@@ -11,7 +11,13 @@ const SectionTitle = styled.div`
   padding-bottom: 10px;
 `;
 
-const Section = ({ title, children }: { title: string, children: React.Node }) => (
+const Section = ({
+  title,
+  children,
+}: {
+  title: string,
+  children: React.Node,
+}) => (
   <Box paddingTop="20px" paddingBottom="30px">
     <SectionTitle>{title}</SectionTitle>
     {children}

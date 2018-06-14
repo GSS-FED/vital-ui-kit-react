@@ -224,7 +224,8 @@ type Props = {
   }) => React$Element<any>,
 
   /** Optional custom inline style to attach to table rows. */
-  rowStyle?: | CSSStyleDeclaration
+  rowStyle?:
+    | CSSStyleDeclaration
     | (({ index: number }) => CSSStyleDeclaration),
 
   /** See Grid#scrollToAlignment */

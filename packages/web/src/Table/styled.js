@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 
-
 // ----- Header ----- //
 export const HeaderLabel = styled.span`
   padding-left: 20px;

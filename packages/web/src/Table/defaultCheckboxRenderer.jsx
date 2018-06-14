@@ -5,12 +5,17 @@ import * as React from 'react';
 import { Checkbox } from '../Checkbox';
 
 export type CheckboxRendererProps = {
-  handleCheckboxChange: ({ rowIndex: number, checked: boolean }) => mixed,
+  handleCheckboxChange: ({
+    rowIndex: number,
+    checked: boolean,
+  }) => mixed,
   rowIndex: number,
   selectedIndex: number[],
-}
+};
 
-export type CheckboxRenderer = (props: CheckboxRendererProps) => React$Element<any>;
+export type CheckboxRenderer = (
+  props: CheckboxRendererProps,
+) => React$Element<any>;
 
 const defaultCheckboxRenderer: CheckboxRenderer = ({
   handleCheckboxChange,
@@ -20,9 +25,7 @@ const defaultCheckboxRenderer: CheckboxRenderer = ({
   const checked = selectedIndex.indexOf(rowIndex) >= 0;
   return (
     <Checkbox
-      onChange={() =>
-        handleCheckboxChange({ rowIndex, checked })
-      }
+      onChange={() => handleCheckboxChange({ rowIndex, checked })}
       checked={checked}
     />
   );

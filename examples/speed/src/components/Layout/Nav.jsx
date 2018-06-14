@@ -10,13 +10,18 @@ const TitleWrapper = styled.div`
 `;
 
 type Props = {
-  theme: typeof defaultTheme
-}
+  theme: typeof defaultTheme,
+};
 
 class Nav extends React.PureComponent<Props> {
   render() {
     return (
-      <div style={{ background: this.props.theme.secondary900, height: '100%' }}>
+      <div
+        style={{
+          background: this.props.theme.secondary900,
+          height: '100%',
+        }}
+      >
         <List themed="dark">
           <List.Item
             title={<TitleWrapper>Doc Inbox</TitleWrapper>}

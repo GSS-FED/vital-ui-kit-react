@@ -1,4 +1,9 @@
-import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import {
+  createStore,
+  combineReducers,
+  applyMiddleware,
+  compose,
+} from 'redux';
 
 const initialState = {};
 
@@ -15,12 +20,15 @@ const AppReducer = (state = initialState, action) => {
 const middleware = [];
 const enhancers = [];
 
-const composedEnhancrs = compose(applyMiddleware(...middleware), ...enhancers);
+const composedEnhancrs = compose(
+  applyMiddleware(...middleware),
+  ...enhancers,
+);
 
 export default createStore(
   combineReducers({
     app: AppReducer,
   }),
   initialState,
-  composedEnhancrs
+  composedEnhancrs,
 );

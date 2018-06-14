@@ -7,16 +7,24 @@ module.exports = (baseConfig, env, defaultConfig) => {
   defaultConfig.module.rules.forEach(rule => {
     if ('.jsx'.match(rule.test)) {
       if (rule.include) {
-        rule.include.push(path.resolve(__dirname, '../../packages/web/src'))
+        rule.include.push(
+          path.resolve(__dirname, '../../packages/web/src'),
+        );
       }
       if (rule.exclude) {
-        rule.exclude.push(path.resolve(__dirname, '../../packages/web/node_modules'))
-      }      
+        rule.exclude.push(
+          path.resolve(__dirname, '../../packages/web/node_modules'),
+        );
+      }
     }
     defaultConfig.resolve.alias = {
       ...defaultConfig.resolve.alias,
-      'styled-components': path.resolve(appFolder, 'node_modules', 'styled-components'),
-    }
+      'styled-components': path.resolve(
+        appFolder,
+        'node_modules',
+        'styled-components',
+      ),
+    };
   });
 
   return defaultConfig;
