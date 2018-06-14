@@ -16,6 +16,7 @@
     <strong>Look for css version? &raquo;</strong>
   </a>
   <br>
+  <br>
   <a href="https://circleci.com/gh/GSS-FED/vital-ui-kit-react/tree/master">
     <img src="https://circleci.com/gh/GSS-FED/vital-ui-kit-react/tree/master.svg?style=shield" alt="CircleCI"/>
   </a>
