@@ -23,8 +23,9 @@ import {
   Column,
   Table,
   defaultCellRenderer,
-} from '../../table/src';
+} from '../../web/src';
 import { AutoSizer, SortDirection } from 'react-virtualized';
+import { CheckBoxExample } from './examples/Checkbox.stories';
 
 // Table data as an array of objects
 const list = new Array(100).fill(true).map(() => ({
@@ -75,9 +76,10 @@ storiesOf('Table', module)
   .add(
     'Fixed column',
     withInfo()(() => (
-      <div style={{
-        width: '500px',
-        height: '400px',
+      <div
+        style={{
+          width: '500px',
+          height: '400px',
         }}
       >
         <AutoSizer>
@@ -91,6 +93,11 @@ storiesOf('Table', module)
               sort={sort}
               cellRenderer={defaultCellRenderer(list)}
             >
+              <Column
+                dataKey="checkbox"
+                width={50}
+                fixed
+              />
               <Column dataKey="name" label="Name" width={200} fixed />
               <Column
                 dataKey="location"

@@ -1,13 +1,7 @@
 /** @flow */
 import * as React from 'react';
-import styled from 'styled-components';
 import SortIndicator from '../SortIndicator';
 import type { HeaderRendererParams } from './types';
-
-const HeaderLabel = styled.span`
-  padding-left: 20px;
-  padding-right: 20px;
-`;
 
 /**
  * Default table header renderer.
@@ -20,13 +14,9 @@ export default function defaultHeaderRenderer({
 }: HeaderRendererParams) {
   const showSortIndicator = sortBy === dataKey;
   const children = [
-    <HeaderLabel
-      className="ReactVirtualized__Table__headerTruncatedText"
-      key="label"
-      title={label}
-    >
-      {label}
-    </HeaderLabel>,
+    <React.Fragment>
+      { label }
+    </React.Fragment>,
   ];
 
   if (showSortIndicator) {

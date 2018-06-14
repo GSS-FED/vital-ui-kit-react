@@ -1,11 +1,11 @@
 /** @flow */
 /* eslint-disable react/require-default-props */
 /* eslint-disable no-underscore-dangle */
+/* eslint-disable jsx-a11y/mouse-events-have-key-events  */
 
 import * as React from 'react';
 
 import cn from 'classnames';
-// import Column from './Column';
 import { findDOMNode } from 'react-dom';
 import { MultiGrid } from 'react-virtualized';
 import type {
@@ -20,7 +20,7 @@ import defaultHeaderRowRenderer from './SimpleTable/defaultHeaderRowRenderer';
 import defaultCellRenderer from './defaultCellRenderer';
 import SortDirection from './SortDirection';
 import accessibilityOverscanIndicesGetter from './accessibilityOverscanIndicesGetter';
-import { HeaderCell } from './styled';
+import { HeaderCell, CheckboxCell, HeaderLabel } from './styled';
 
 export type CellRendererParams = {
   columns: any[],
@@ -31,6 +31,8 @@ export type CellRendererParams = {
   parent: Object,
   rowIndex: number,
   style: Object,
+  rowClass?: string,
+  rowStyleObject?: CSSStyleDeclaration,
 };
 
 export type CellRenderer = (
@@ -47,6 +49,7 @@ type Props = {
   autoHeight?: boolean,
 
   cellRenderer: CellRenderer,
+
   /** One or more Columns describing the data displayed in this row */
   children: React.Node,
 
@@ -269,6 +272,7 @@ type State = {
   scrollbarWidth: number,
   hoveredColumnIndex?: number,
   hoveredRowIndex?: number,
+  selectedIndex: number[],
 };
 
 /**
@@ -306,6 +310,7 @@ export default class Table extends React.PureComponent<Props, State> {
       scrollbarWidth: 0,
       hoveredColumnIndex: undefined,
       hoveredRowIndex: undefined,
+      selectedIndex: [],
     };
   }
 
@@ -396,6 +401,29 @@ export default class Table extends React.PureComponent<Props, State> {
       });
     }
   }
+
+  handleCheckboxChange = ({
+    rowIndex,
+    checked,
+  }: {
+    rowIndex: number,
+    checked: boolean,
+  }) => {
+    if (rowIndex === 0) {
+      this.setState({
+        selectedIndex: checked
+          ? []
+          : [...Array(this.props.rowCount).keys()],
+      });
+    } else {
+      this.setState(prevState => ({
+        selectedIndex: checked
+          ? prevState.selectedIndex.filter(x => x !== rowIndex)
+          : [...prevState.selectedIndex, rowIndex],
+      }));
+    }
+    this.forceUpdateGrid();
+  };
 
   componentDidMount() {
     this._setScrollbarWidth();
@@ -519,11 +547,13 @@ export default class Table extends React.PureComponent<Props, State> {
       dataKey,
       defaultSortDirection,
       disableSort,
+      checkboxRenderer,
       headerRenderer,
       id,
       label,
     } = column.props;
-    const sortEnabled = !disableSort && sort;
+    const sortEnabled =
+      !disableSort && sort && dataKey !== 'checkbox';
 
     const classNames = cn(
       'ReactVirtualized__Table__headerColumn',
@@ -534,14 +564,21 @@ export default class Table extends React.PureComponent<Props, State> {
       },
     );
 
-    const renderedHeader = headerRenderer({
-      columnData,
-      dataKey,
-      disableSort,
-      label,
-      sortBy,
-      sortDirection,
-    });
+    const renderedHeader =
+      dataKey === 'checkbox'
+        ? checkboxRenderer({
+            handleCheckboxChange: this.handleCheckboxChange,
+            rowIndex: index,
+            selectedIndex: this.state.selectedIndex,
+          })
+        : headerRenderer({
+            columnData,
+            dataKey,
+            disableSort,
+            label,
+            sortBy,
+            sortDirection,
+          });
 
     let headerOnClick;
     let headerOnKeyDown;
@@ -617,7 +654,13 @@ export default class Table extends React.PureComponent<Props, State> {
         }}
         tabIndex={headerTabIndex}
       >
-        {renderedHeader}
+        <HeaderLabel
+          className="ReactVirtualized__Table__headerTruncatedText"
+          key="label"
+          title={label}
+        >
+          {renderedHeader}
+        </HeaderLabel>
       </HeaderCell>
     );
   }
@@ -634,7 +677,11 @@ export default class Table extends React.PureComponent<Props, State> {
     rowStyleObject,
     rowClass,
   }) => {
-    const { hasHorizontalBorder, hasVerticalBorder, striped } = this.props;
+    const {
+      hasHorizontalBorder,
+      hasVerticalBorder,
+      striped,
+    } = this.props;
     if (rowIndex === 0) {
       const column = columns[columnIndex];
       return this._createHeader({
@@ -643,7 +690,9 @@ export default class Table extends React.PureComponent<Props, State> {
         style,
       });
     }
-    return this.props.cellRenderer({
+
+    const isEven = rowIndex % 2 === 0 && striped;
+    const cellProps = {
       isVisible,
       key,
       style,
@@ -657,10 +706,36 @@ export default class Table extends React.PureComponent<Props, State> {
       hasHorizontalBorder,
       hasVerticalBorder,
       striped,
+      isEven,
+      hoveredColumn:
+        this.state.hoveredColumnIndex === columnIndex - 1,
+      hoveredRow: this.state.hoveredRowIndex === rowIndex - 1,
       onHover: this._onHoverCell,
-      hoveredColumnIndex: this.state.hoveredColumnIndex,
-      hoveredRowIndex: this.state.hoveredRowIndex,
-    });
+    };
+    const hasCheckbox =
+      columns.length > 0 && columns[0].props.dataKey === 'checkbox';
+    if (hasCheckbox && columnIndex === 0) {
+      const checkbox = columns[columnIndex].props.checkboxRenderer({
+        rowIndex,
+        selectedIndex: this.state.selectedIndex,
+        handleCheckboxChange: this.handleCheckboxChange,
+      });
+      return (
+        <CheckboxCell
+          isEven={isEven}
+          {...cellProps}
+          onMouseOver={() =>
+            cellProps.onHover({
+              rowIndex: rowIndex - 1,
+              columnIndex,
+            })
+          }
+        >
+          {checkbox}
+        </CheckboxCell>
+      );
+    }
+    return this.props.cellRenderer(cellProps);
   };
 
   _onHoverCell = ({ rowIndex, columnIndex }: CellPosition) => {
