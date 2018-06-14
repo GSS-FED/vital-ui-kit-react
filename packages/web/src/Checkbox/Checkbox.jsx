@@ -61,12 +61,14 @@ const IconWrapper = styled.div`
 `;
 
 type State = {
-  isChecked: boolean,
+  checked: boolean,
 };
 
-type Props = {
+export type Props = {
   /** Checkbox is checked at start if true */
-  initiallyChecked?: boolean,
+  defaultChecked?: boolean,
+  /** is Checked ? */
+  checked: boolean,
   /** Disabled checkbox */
   isDisabled?: boolean,
   /** Round style */
@@ -78,7 +80,7 @@ type Props = {
   /** Value of the checkbox, html value attribute */
   value: number | string,
   /** Function trigger when checkbox value changes */
-  onChange: ({ name: string, value: string | number }) => {},
+  onChange: (props: any) => {},
   /** Theme */
   theme: Object,
 };
@@ -115,31 +117,52 @@ function iconColor(isRound, isDisabled, theme) {
 
 class Checkbox extends Component<Props, State> {
   static defaultProps = {
-    isChecked: false,
-    initiallyChecked: false,
+    defaultChecked: false,
     isDisabled: false,
     isRound: false,
+    onChange: () => {},
   };
 
   static Group = CheckboxGroup;
 
   state = {
-    isChecked: this.props.initiallyChecked || false,
+    checked:
+      'checked' in this.props
+        ? this.props.checked
+        : this.props.defaultChecked || false,
   };
 
-  onChange = () => {
-    const { isDisabled, onChange, name, value } = this.props;
+  static getDerivedStateFromProps(props) {
+    if ('checked' in props) {
+      return {
+        checked: props.checked,
+      };
+    }
+    return null;
+  }
+
+  handleChange = e => {
+    const { isDisabled, ...props } = this.props;
     if (isDisabled) return;
-    if (onChange) onChange({ name, value });
-    this.setState(prevState => ({
-      isChecked: !prevState.isChecked,
-    }));
+    this.props.onChange({
+      target: {
+        ...props,
+        checked: e.target.checked,
+      },
+      stopPopagation() {
+        e.stopPopagation();
+      },
+      preventDefault() {
+        e.preventDefault();
+      },
+      nativeEvent: e.nativeEvent,
+    });
   };
 
   render() {
     const {
       label,
-      initiallyChecked,
+      defaultChecked,
       name,
       value,
       isDisabled,
@@ -149,12 +172,12 @@ class Checkbox extends Component<Props, State> {
     return (
       <Root {...this.props}>
         <Box
-          isChecked={this.state.isChecked}
+          isChecked={this.state.checked}
           isDisabled={isDisabled}
           isRound={isRound}
         >
           <IconWrapper
-            isChecked={this.state.isChecked}
+            isChecked={this.state.checked}
             isDisabled={isDisabled}
           >
             <Icon
@@ -164,18 +187,15 @@ class Checkbox extends Component<Props, State> {
             />
           </IconWrapper>
         </Box>
-        <Label
-          isChecked={this.state.isChecked}
-          isDisabled={isDisabled}
-        >
+        <Label isChecked={this.state.checked} isDisabled={isDisabled}>
           <Input
             type="checkbox"
             disabled={isDisabled}
-            checked={this.state.isChecked}
-            defaultChecked={initiallyChecked}
+            checked={this.state.checked}
+            defaultChecked={defaultChecked}
             name={name}
             value={value}
-            onChange={this.onChange}
+            // onChange={() => this.handleChange}
           />
           {label}
         </Label>

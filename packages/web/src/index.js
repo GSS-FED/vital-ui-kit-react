@@ -39,6 +39,7 @@ import Tooltip from './Tooltip';
 import ProgressBar from './ProgressBar';
 import Pagination from './Pagination';
 import Menu from './Menu';
+import { Table, SimpleTable, defaultCellRenderer, Column } from './Table';
 import Tabs from './Tabs';
 import Layout from './Layout';
 import utils from './utils';
@@ -79,6 +80,10 @@ export {
   withIcon,
   Modal,
   Menu,
+  Table,
+  SimpleTable,
+  Column,
+  defaultCellRenderer,
   Tabs,
   Layout,
   utils,

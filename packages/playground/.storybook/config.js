@@ -4,9 +4,9 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
+import { ThemeProvider } from '../../web/src';
 
-import '@gssfed/vital-ui-kit-react/dist/base/global.css';
+import '../../web/dist/base/global.css';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

@@ -1,13 +1,8 @@
 /** @flow */
 import * as React from 'react';
-import styled from 'styled-components';
 import SortIndicator from '../SortIndicator';
 import type { HeaderRendererParams } from './types';
-
-const HeaderLabel = styled.span`
-  padding-left: 20px;
-  padding-right: 20px;
-`;
+import { HeaderLabel } from '../styled';
 
 /**
  * Default table header renderer.
@@ -22,10 +17,10 @@ export default function defaultHeaderRenderer({
   const children = [
     <HeaderLabel
       className="ReactVirtualized__Table__headerTruncatedText"
-      key="label"
       title={label}
+      key="label"
     >
-      {label}
+      { label }
     </HeaderLabel>,
   ];
 

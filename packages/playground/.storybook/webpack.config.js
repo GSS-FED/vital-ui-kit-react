@@ -7,11 +7,9 @@ module.exports = (baseConfig, env, defaultConfig) => {
   defaultConfig.module.rules.forEach(rule => {
     if ('.jsx'.match(rule.test)) {
       if (rule.include) {
-        rule.include.push(path.resolve(__dirname, '../../table/src'))
         rule.include.push(path.resolve(__dirname, '../../web/src'))
       }
       if (rule.exclude) {
-        rule.exclude.push(path.resolve(__dirname, '../../table/node_modules'))
         rule.exclude.push(path.resolve(__dirname, '../../web/node_modules'))
       }      
     }
