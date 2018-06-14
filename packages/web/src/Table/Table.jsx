@@ -7,12 +7,14 @@ import * as React from 'react';
 
 import cn from 'classnames';
 import { findDOMNode } from 'react-dom';
+// $FlowFixMe
 import { MultiGrid } from 'react-virtualized';
 import type {
   Alignment,
   CellPosition,
   ScrollParams,
   RenderedSection,
+  // $FlowFixMe
 } from 'react-virtualized';
 
 import defaultRowRenderer from './SimpleTable/defaultRowRenderer';
@@ -566,10 +568,13 @@ export default class Table extends React.PureComponent<Props, State> {
 
     const renderedHeader =
       dataKey === 'checkbox'
-        ? checkboxRenderer({
-            handleCheckboxChange: this.handleCheckboxChange,
-            rowIndex: index,
-            selectedIndex: this.state.selectedIndex,
+        ? this._checkboxWrapper({
+            label,
+            checkbox: checkboxRenderer({
+              handleCheckboxChange: this.handleCheckboxChange,
+              rowIndex: index,
+              selectedIndex: this.state.selectedIndex,
+            }),
           })
         : headerRenderer({
             columnData,
@@ -654,16 +659,26 @@ export default class Table extends React.PureComponent<Props, State> {
         }}
         tabIndex={headerTabIndex}
       >
-        <HeaderLabel
-          className="ReactVirtualized__Table__headerTruncatedText"
-          key="label"
-          title={label}
-        >
-          {renderedHeader}
-        </HeaderLabel>
+        {renderedHeader}
       </HeaderCell>
     );
   }
+
+  _checkboxWrapper = ({
+    label,
+    checkbox,
+  }: {
+    label: string,
+    checkbox: React$Element<any>,
+  }) => (
+    <HeaderLabel
+      className="ReactVirtualized__Table__headerTruncatedText"
+      key="label"
+      title={label}
+    >
+      {checkbox}
+    </HeaderLabel>
+  );
 
   _createGrid: CellRenderer = ({
     columns,

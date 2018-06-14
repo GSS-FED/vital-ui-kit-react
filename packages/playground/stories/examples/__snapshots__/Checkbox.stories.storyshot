@@ -49,8 +49,11 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
 }
 
 <label
+  checked={false}
   className="c0"
+  defaultChecked={false}
   label="Label"
+  onChange={[Function]}
 >
   <span
     className="c1"
@@ -79,7 +82,6 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
       className="c4"
       defaultChecked={false}
       disabled={false}
-      onChange={[Function]}
       type="checkbox"
     />
     Label
@@ -139,8 +141,11 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
   className=""
 >
   <label
+    checked={false}
     className="c0"
+    defaultChecked={false}
     label="Label"
+    onChange={[Function]}
   >
     <span
       className="c1"
@@ -169,15 +174,17 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         className="c4"
         defaultChecked={false}
         disabled={false}
-        onChange={[Function]}
         type="checkbox"
       />
       Label
     </span>
   </label>
   <label
+    checked={false}
     className="c0"
+    defaultChecked={false}
     label="Label"
+    onChange={[Function]}
   >
     <span
       className="c1"
@@ -206,15 +213,17 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         className="c4"
         defaultChecked={false}
         disabled={false}
-        onChange={[Function]}
         type="checkbox"
       />
       Label
     </span>
   </label>
   <label
+    checked={false}
     className="c0"
+    defaultChecked={false}
     label="Label"
+    onChange={[Function]}
   >
     <span
       className="c1"
@@ -243,7 +252,6 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         className="c4"
         defaultChecked={false}
         disabled={false}
-        onChange={[Function]}
         type="checkbox"
       />
       Label

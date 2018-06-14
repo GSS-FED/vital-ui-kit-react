@@ -17,6 +17,7 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
+import { AutoSizer, SortDirection } from 'react-virtualized';
 import faker from 'faker';
 import {
   SimpleTable,
@@ -24,7 +25,6 @@ import {
   Table,
   defaultCellRenderer,
 } from '../../web/src';
-import { AutoSizer, SortDirection } from 'react-virtualized';
 import { CheckBoxExample } from './examples/Checkbox.stories';
 
 // Table data as an array of objects
