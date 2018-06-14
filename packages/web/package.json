@@ -42,7 +42,7 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "react-virtualized": "^9.19.1"
+    "react-virtualized": "9.19.1"
   },
   "license": "MIT",
   "bugs": {
