@@ -4,7 +4,7 @@
  * MIT license
  */
 
-import React, { Component } from 'react';
+import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { rgba } from 'polished';
 
@@ -33,15 +33,15 @@ const Box = styled.span`
   width: 1.066rem;
   height: 1.066rem;
   border: ${({ theme }) => `1px solid ${theme.checkbox.borderColor}`};
-  border-radius: ${props => (props.isRound ? '50%' : '2px')};
-  background-color: ${({ isChecked, isRound, theme }) =>
-    theme.checkbox.bg(isChecked && isRound)};
+  border-radius: ${props => (props.round ? '50%' : '2px')};
+  background-color: ${({ checked, round, theme }) =>
+    theme.checkbox.bg(checked && round)};
   transition: ${({ theme }) => theme.defaultTransition};
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
 
-  border-color: ${({ isChecked, theme }) =>
-    isChecked ? theme.checkbox.checkedBorderColor : ''};
+  border-color: ${({ checked, theme }) =>
+    checked ? theme.checkbox.checkedBorderColor : ''};
 `;
 
 const Input = styled.input`
@@ -53,9 +53,8 @@ const IconWrapper = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-  opacity: ${({ isChecked }) => (isChecked ? 1 : 0)};
-  transform: ${({ isChecked }) =>
-    isChecked ? 'scale(1)' : 'scale(0)'};
+  opacity: ${({ checked }) => (checked ? 1 : 0)};
+  transform: ${({ checked }) => (checked ? 'scale(1)' : 'scale(0)')};
   pointer-events: none;
   transition: all 120ms ease-out;
 `;
@@ -65,31 +64,33 @@ type State = {
 };
 
 export type Props = {
-  /** Checkbox is checked at start if true */
-  defaultChecked?: boolean,
-  /** is Checked ? */
+  /** Boolean checked value of the checkbox */
   checked: boolean,
+  /** Inital Check value */
+  defaultChecked?: boolean,
   /** Disabled checkbox */
-  isDisabled?: boolean,
+  disabled?: boolean,
   /** Round style */
-  isRound?: boolean,
+  round?: boolean,
+  /** Custom checkbox Icon */
+  icon?: React.Node,
   /** Label text after the checkbox */
   label: string,
   /** Html name attribute */
   name: string,
-  /** Value of the checkbox, html value attribute */
-  value: number | string,
   /** Function trigger when checkbox value changes */
   onChange: (props: any) => {},
   /** Theme */
   theme: Object,
+  /** Value of the checkbox, html value attribute */
+  value: number | string,
 };
 
-function iconColor(isRound, isDisabled, theme) {
-  if (isDisabled) {
+function iconColor(round, disabled, theme) {
+  if (disabled) {
     return theme.checkbox.icon.disabledColor;
   }
-  if (isRound) {
+  if (round) {
     return theme.checkbox.icon.roundColor;
   }
   return theme.checkbox.icon.color;
@@ -101,26 +102,26 @@ function iconColor(isRound, isDisabled, theme) {
  * @example
  * <Checkbox.Group>
  *  <Checkbox
- *    isRound
+ *    round
  *    label="checkbox 1"
  *  />
  *  <Checkbox
- *    isRound
+ *    round
  *    label="checkbox 2"
  *  />
  *  <Checkbox
- *    isRound
+ *    round
  *    label="checkbox 3"
  *  />
  * </Checkbox.Group>
  */
 
-class Checkbox extends Component<Props, State> {
+class Checkbox extends React.Component<Props, State> {
   static defaultProps = {
     defaultChecked: false,
-    isDisabled: false,
-    isRound: false,
-    onChange: () => {},
+    disabled: false,
+    round: false,
+    icon: undefined,
   };
 
   static Group = CheckboxGroup;
@@ -142,8 +143,8 @@ class Checkbox extends Component<Props, State> {
   }
 
   handleChange = e => {
-    const { isDisabled, ...props } = this.props;
-    if (isDisabled) return;
+    const { disabled, ...props } = this.props;
+    if (disabled) return;
     this.props.onChange({
       target: {
         ...props,
@@ -161,41 +162,47 @@ class Checkbox extends Component<Props, State> {
 
   render() {
     const {
-      label,
       defaultChecked,
+      disabled,
+      icon,
+      label,
       name,
-      value,
-      isDisabled,
-      isRound,
+      round,
       theme,
+      value,
     } = this.props;
+
+    const customIcon = icon && typeof icon !== 'string';
+
     return (
       <Root {...this.props}>
         <Box
-          isChecked={this.state.checked}
-          isDisabled={isDisabled}
-          isRound={isRound}
+          checked={this.state.checked}
+          disabled={disabled}
+          round={round}
         >
           <IconWrapper
-            isChecked={this.state.checked}
-            isDisabled={isDisabled}
+            checked={this.state.checked}
+            disabled={disabled}
           >
-            <Icon
-              name="check"
-              size="12"
-              color={iconColor(isRound, isDisabled, theme)}
-            />
+            {customIcon || (
+              <Icon
+                name={icon || 'check'}
+                size="12"
+                color={iconColor(round, disabled, theme)}
+              />
+            )}
           </IconWrapper>
         </Box>
-        <Label isChecked={this.state.checked} isDisabled={isDisabled}>
+        <Label checked={this.state.checked} disabled={disabled}>
           <Input
             type="checkbox"
-            disabled={isDisabled}
+            disabled={disabled}
             checked={this.state.checked}
             defaultChecked={defaultChecked}
             name={name}
             value={value}
-            // onChange={() => this.handleChange}
+            onChange={() => this.handleChange}
           />
           {label}
         </Label>

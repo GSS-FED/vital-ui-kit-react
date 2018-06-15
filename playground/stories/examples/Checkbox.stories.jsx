@@ -30,11 +30,11 @@ export class CheckBoxExample extends React.Component {
   };
 
   render() {
-    const { label, isRound, isDisabled } = this.props;
+    const { label, round, disabled } = this.props;
     return (
       <Checkbox
-        isRound={isRound}
-        isDisabled={isDisabled}
+        round={round}
+        disabled={disabled}
         checked={this.state.checked}
         label={label}
         onChange={this.handleChange}
@@ -46,13 +46,25 @@ export class CheckBoxExample extends React.Component {
 storiesOf('Components | Checkbox', module)
   .addDecorator(withKnobs)
   .add(
-    'Checkbox',
+    'Basic',
     withInfo()(
       withNotes('This is checkbox')(() => (
         <CheckBoxExample
-          isRound={boolean('Round', false)}
-          isDisabled={boolean('Disable', false)}
+          round={boolean('round', false)}
+          disabled={boolean('disable', false)}
           label={text('Label', 'Label')}
+        />
+      )),
+    ),
+  )
+  .add(
+    'Custom Icon',
+    withInfo()(
+      withNotes('This is checkbox')(() => (
+        <Checkbox
+          defaultChecked
+          label="Custom Icon"
+          icon="star"
         />
       )),
     ),
@@ -63,18 +75,18 @@ storiesOf('Components | Checkbox', module)
       withNotes('This is checkboxgroup')(() => (
         <CheckboxGroup>
           <CheckBoxExample
-            isRound={boolean('Round', false)}
-            isDisabled={boolean('Disable', false)}
+            round={boolean('round', false)}
+            disabled={boolean('disable', false)}
             label={text('Label', 'Label')}
           />
           <CheckBoxExample
-            isRound={boolean('Round', false)}
-            isDisabled={boolean('Disable', false)}
+            round={boolean('round', false)}
+            disabled={boolean('disable', false)}
             label={text('Label', 'Label')}
           />
           <CheckBoxExample
-            isRound={boolean('Round', false)}
-            isDisabled={boolean('Disable', false)}
+            round={boolean('Round', false)}
+            disabled={boolean('disable', false)}
             label={text('Label', 'Label')}
           />
         </CheckboxGroup>
