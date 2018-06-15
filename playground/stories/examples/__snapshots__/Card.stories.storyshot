@@ -602,20 +602,18 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
       }
     >
       <button
-        className="c6"
+        className="Vital_Button c6"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Cancel
       </button>
       <button
-        className="c7"
+        className="Vital_Button c7"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Confirm
       </button>
@@ -986,20 +984,18 @@ exports[`Storyshots Components | Card With Link Button 1`] = `
       }
     >
       <button
-        className="c6"
+        className="Vital_Button c6"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Cancel
       </button>
       <button
-        className="c7"
+        className="Vital_Button c7"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Confirm
       </button>

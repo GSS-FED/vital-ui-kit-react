@@ -83,11 +83,10 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       <svg
         className="c4"
@@ -108,11 +107,10 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       <svg
         className="c4"
@@ -133,11 +131,10 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       <svg
         className="c4"
@@ -158,11 +155,10 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       <svg
         className="c4"

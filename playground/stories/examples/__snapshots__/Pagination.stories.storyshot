@@ -114,11 +114,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       First
     </button>
@@ -127,11 +126,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       <svg
         height="12"
@@ -156,11 +154,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       1
     </button>
@@ -169,11 +166,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       2
     </button>
@@ -182,11 +178,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c4"
+      className="Vital_Button c2 c4"
       onClick={[Function]}
       selected={true}
       size="medium"
-      style={null}
     >
       3
     </button>
@@ -195,11 +190,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       4
     </button>
@@ -208,11 +202,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       5
     </button>
@@ -221,11 +214,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       Next
       <svg
@@ -250,11 +242,10 @@ exports[`Storyshots Components | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="c2 c3"
+      className="Vital_Button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
-      style={null}
     >
       Last
     </button>

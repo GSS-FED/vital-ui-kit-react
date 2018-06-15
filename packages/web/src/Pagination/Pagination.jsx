@@ -6,9 +6,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import Icon from '@vital-ui/react-icon';
 
 import { Button as ButtonBase } from '../Button';
-import Icon from '../Icon';
 
 const Root = styled.ul`
   font-size: 0;

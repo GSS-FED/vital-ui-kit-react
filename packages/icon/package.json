@@ -1,0 +1,23 @@
+{
+  "name": "@vital-ui/react-icon",
+  "version": "0.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:build": "rm -rf dist",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
+    "build:flow": "flow-copy-source src dist",
+    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "react": "^16.4.1"
+  }
+}

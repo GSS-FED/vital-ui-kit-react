@@ -17,7 +17,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Icon, Tooltip } from '../../../packages/web/src';
 
-import defaultIcon from '../../../packages/web/src/Icon/selection.json';
+import { defaultIcon } from '../../../packages/icon/src';
 import Filter from '../Container/Filter';
 
 const Display = styled.div`

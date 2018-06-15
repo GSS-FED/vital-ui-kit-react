@@ -6,7 +6,7 @@
 
 import React, { Component } from 'react';
 import styled, { withTheme, css } from 'styled-components';
-import Icon from '../Icon';
+import Icon from '@vital-ui/react-icon';
 
 const Root = styled.div``;
 

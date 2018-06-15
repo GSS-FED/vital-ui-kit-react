@@ -7,9 +7,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import ClickOutside from 'react-click-outside';
+import Icon from '@vital-ui/react-icon';
 
 import Droplist from './Droplist';
-import Icon from '../Icon';
 
 import type { ItemType } from './type';
 
