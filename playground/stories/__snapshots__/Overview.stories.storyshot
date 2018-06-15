@@ -2051,38 +2051,34 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="c12"
+        className="Vital_Button c12"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Link
       </button>
       <button
-        className="c13"
+        className="Vital_Button c13"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Dark Link
       </button>
       <button
-        className="c14"
+        className="Vital_Button c14"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Link underline
       </button>
       <button
-        className="c15"
+        className="Vital_Button c15"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         Dark Link underline
       </button>
@@ -2096,56 +2092,50 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="c16"
+        className="Vital_Button c16"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         default
       </button>
       <button
-        className="c17"
+        className="Vital_Button c17"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         primary
       </button>
       <button
-        className="c18"
+        className="Vital_Button c18"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         success
       </button>
       <button
-        className="c19"
+        className="Vital_Button c19"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         info
       </button>
       <button
-        className="c20"
+        className="Vital_Button c20"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         alarm
       </button>
       <button
-        className="c21"
+        className="Vital_Button c21"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         warning
       </button>
@@ -2159,56 +2149,50 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="c22"
+        className="Vital_Button c22"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         flat
       </button>
       <button
-        className="c23"
+        className="Vital_Button c23"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         primary
       </button>
       <button
-        className="c24"
+        className="Vital_Button c24"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         success
       </button>
       <button
-        className="c25"
+        className="Vital_Button c25"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         info
       </button>
       <button
-        className="c26"
+        className="Vital_Button c26"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         alarm
       </button>
       <button
-        className="c27"
+        className="Vital_Button c27"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         warning
       </button>
@@ -2222,56 +2206,50 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="c28"
+        className="Vital_Button c28"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         subtle
       </button>
       <button
-        className="c29"
+        className="Vital_Button c29"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         primary
       </button>
       <button
-        className="c30"
+        className="Vital_Button c30"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         success
       </button>
       <button
-        className="c31"
+        className="Vital_Button c31"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         info
       </button>
       <button
-        className="c32"
+        className="Vital_Button c32"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         alarm
       </button>
       <button
-        className="c33"
+        className="Vital_Button c33"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         warning
       </button>
@@ -2285,156 +2263,138 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="c34"
+        className="Vital_Button c34"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         light
       </button>
       <button
-        className="c35"
+        className="Vital_Button c35"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         primary
       </button>
       <button
-        className="c36"
+        className="Vital_Button c36"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         success
       </button>
       <button
-        className="c37"
+        className="Vital_Button c37"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         info
       </button>
       <button
-        className="c38"
+        className="Vital_Button c38"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         alarm
       </button>
       <button
-        className="c39"
+        className="Vital_Button c39"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         warning
       </button>
     </div>
     <div
       className="c40"
-      style={null}
     >
       <button
-        className="c41"
+        className="Vital_Button c41"
         onClick={[Function]}
         selected={false}
         size="xlarge"
-        style={null}
       >
         xlarge
       </button>
       <button
-        className="c42"
+        className="Vital_Button c42"
         onClick={[Function]}
         selected={false}
         size="large"
-        style={null}
       >
         large
       </button>
       <button
-        className="c23"
+        className="Vital_Button c23"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         medium
       </button>
       <button
-        className="c43"
+        className="Vital_Button c43"
         onClick={[Function]}
         selected={false}
         size="small"
-        style={null}
       >
         small
       </button>
       <button
-        className="c44"
+        className="Vital_Button c44"
         onClick={[Function]}
         selected={false}
         size="xsmall"
-        style={null}
       >
         xsmall
       </button>
     </div>
     <div
       className="c40"
-      style={null}
     >
       <button
-        className="c45"
+        className="Vital_Button c45"
         onClick={[Function]}
         selected={false}
         size="xsmall"
-        style={null}
       >
         xsmall
       </button>
       <button
-        className="c46"
+        className="Vital_Button c46"
         onClick={[Function]}
         selected={false}
         size="small"
-        style={null}
       >
         small
       </button>
       <button
-        className="c22"
+        className="Vital_Button c22"
         onClick={[Function]}
         selected={false}
         size="medium"
-        style={null}
       >
         medium
       </button>
       <button
-        className="c47"
+        className="Vital_Button c47"
         onClick={[Function]}
         selected={false}
         size="large"
-        style={null}
       >
         large
       </button>
       <button
-        className="c48"
+        className="Vital_Button c48"
         onClick={[Function]}
         selected={false}
         size="xlarge"
-        style={null}
       >
         xlarge
       </button>

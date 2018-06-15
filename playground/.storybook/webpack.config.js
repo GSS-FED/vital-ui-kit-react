@@ -9,11 +9,15 @@ module.exports = (baseConfig, env, defaultConfig) => {
       if (rule.include) {
         rule.include.push(
           path.resolve(__dirname, '../../packages/web/src'),
+          path.resolve(__dirname, '../../packages/icon'),
+          path.resolve(__dirname, '../../packages/theme'),
         );
       }
       if (rule.exclude) {
         rule.exclude.push(
           path.resolve(__dirname, '../../packages/web/node_modules'),
+          path.resolve(__dirname, '../../packages/icon/node_modules'),
+          path.resolve(__dirname, '../../packages/theme/node_modules'),
         );
       }
     }

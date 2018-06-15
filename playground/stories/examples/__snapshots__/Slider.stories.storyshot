@@ -276,7 +276,7 @@ exports[`Storyshots Components | Slider with Custom Button 1`] = `
   disabled={false}
 >
   <button
-    className="c1"
+    className="Vital_Button c1"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
@@ -325,7 +325,7 @@ exports[`Storyshots Components | Slider with Custom Button 1`] = `
     />
   </div>
   <button
-    className="c1"
+    className="Vital_Button c1"
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}

@@ -12,12 +12,12 @@ import {
   defaultTheme,
   colorPaletteGenerator,
   defaultComponentsTheme,
-} from './base';
+} from '@vital-ui/react-theme';
 import { CheckboxGroup, Checkbox } from './Checkbox';
 import Box from './Box';
 import Badge from './Badge';
 import Card from './Card';
-import Icon, { withIcon } from './Icon';
+import Icon, { withIcon, defaultIcon, IconContext } from '@vital-ui/react-icon';
 import { Radio, RadioGroup } from './Radio';
 import Switch from './Switch';
 import {
@@ -49,6 +49,7 @@ import {
 import Tabs from './Tabs';
 import Layout from './Layout';
 import utils from './utils';
+import VitalProvider from './VitalProvider';
 
 export {
   Avatar,
@@ -95,5 +96,8 @@ export {
   utils,
   colorPaletteGenerator,
   defaultComponentsTheme,
-  defaultVariables
+  defaultVariables,
+  IconContext,
+  defaultIcon,
+  VitalProvider
 };

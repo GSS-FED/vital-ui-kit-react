@@ -7,9 +7,10 @@
 import * as React from 'react';
 import cn from 'classnames';
 import { withTheme } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
+
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
-import { defaultTheme } from '../base';
 
 type Nature =
   | 'default'

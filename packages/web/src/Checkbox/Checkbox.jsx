@@ -7,9 +7,9 @@
 import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { rgba } from 'polished';
+import Icon from '@vital-ui/react-icon';
 
 import CheckboxGroup from './CheckboxGroup';
-import Icon from '../Icon';
 
 const Root = styled.label`
   font-size: 15px;

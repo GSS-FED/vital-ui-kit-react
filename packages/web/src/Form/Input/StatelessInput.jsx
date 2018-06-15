@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
+import Icon from '@vital-ui/react-icon';
 
 import baseStyle from '../components/FieldBase';
-import Icon from '../../Icon';
 
 const iconPositionStyle = ({ iconPosition, theme }) => {
   if (iconPosition === 'left') {

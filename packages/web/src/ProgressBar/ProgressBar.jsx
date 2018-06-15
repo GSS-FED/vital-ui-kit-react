@@ -6,6 +6,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+// $FlowFixMe
 import ResizeObserver from 'resize-observer-polyfill';
 
 import Track from '../Track';

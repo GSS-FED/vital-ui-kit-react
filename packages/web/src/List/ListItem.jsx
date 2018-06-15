@@ -7,10 +7,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { tween, styler, easing } from 'popmotion';
+import IconBase from '@vital-ui/react-icon';
 
 import { TitleWrapper, List, Title } from './styled';
 import Badge from '../Badge';
-import IconBase from '../Icon';
 import SubListItem from './SubListItem';
 
 const ICON_SIZE = 10;

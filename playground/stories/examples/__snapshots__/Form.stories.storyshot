@@ -1130,11 +1130,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         className="c4"
       >
         <button
-          className="c9"
+          className="Vital_Button c9"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           Search
         </button>
@@ -1382,11 +1381,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="Vital_Button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           A
         </button>
@@ -1395,11 +1393,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="Vital_Button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           B
         </button>
@@ -1408,11 +1405,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="Vital_Button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           C
         </button>
@@ -1475,11 +1471,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c8"
+          className="Vital_Button c8"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           Search
         </button>
