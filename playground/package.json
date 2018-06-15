@@ -16,7 +16,7 @@
     "babel-plugin-styled-components": "1.5.1"
   },
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "4.1.0"
   },
   "jest": {
     "transform": {
