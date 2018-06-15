@@ -4,7 +4,7 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import { ThemeProvider } from '../../packages/web/src';
+import { ThemeProvider, colorPaletteGenerator, defaultTheme } from '../../packages/web/src';
 
 import '../../packages/web/dist/base/global.css';
 

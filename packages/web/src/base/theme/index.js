@@ -1,3 +1,3 @@
-import * as defaultTheme from './theme';
+import * as defaultVariables from './variables';
 
-export default defaultTheme;
+export default defaultVariables;

@@ -2,10 +2,11 @@
 # yarn lockfile v1
 
 
-"@gssfed/vital-ui-kit-react@*":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.5.0.tgz#b710e4a77c3fb55c9235a07ad3925fc096ad7c06"
+"@gssfed/vital-ui-kit-react@latest":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@gssfed/vital-ui-kit-react/-/vital-ui-kit-react-0.5.2.tgz#4ed6f78b6beb7f4d970e50ab7bd66761f6f46064"
   dependencies:
+    classnames "^2.2.5"
     polished "^1.9.2"
     popmotion "^8.1.22"
     prop-types "^15.6.1"
