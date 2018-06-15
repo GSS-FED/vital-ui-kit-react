@@ -5,10 +5,11 @@
  */
 
 import * as React from 'react';
+import cn from 'classnames';
 import { withTheme } from 'styled-components';
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
-import defaultTheme from '../base/theme';
+import { defaultTheme } from '../base';
 
 type Nature =
   | 'default'
@@ -21,6 +22,8 @@ type Nature =
 type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
 type Props = {
+  /** Vital_Button */
+  className?: string,
   /** The content of the button */
   children?: React.Node,
   /** on click event */
@@ -37,7 +40,6 @@ type Props = {
   link?: boolean,
   /** Button size */
   size?: Size,
-  theme: Object,
   /** Circle button */
   circle?: boolean,
   /** Selected state */
@@ -77,19 +79,32 @@ class Button extends React.Component<Props> {
     subtle: false,
     selected: false,
     onClick: () => {},
-    style: null,
+    style: undefined,
+    className: '',
   };
 
   static Group = ButtonGroup;
 
   render() {
-    const { children, onClick, ...props } = this.props;
+    const {
+      children,
+      className,
+      style,
+      onClick,
+      ...props
+    } = this.props;
     return (
-      <ButtonElement onClick={onClick} {...props}>
+      <ButtonElement
+        className={cn('Vital_Button', className)}
+        style={style}
+        onClick={onClick}
+        {...props}
+      >
         {children}
       </ButtonElement>
     );
   }
 }
 
+// $FlowFixMe https://github.com/styled-components/styled-components/issues/1785
 export default withTheme(Button);

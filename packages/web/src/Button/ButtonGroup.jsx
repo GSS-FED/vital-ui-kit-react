@@ -31,14 +31,14 @@ const ButtonGroup = ({
   marginHorizontal,
   ...props
 }: Props) => (
-  <Root {...props} marginHorizontal={marginHorizontal}>
+  <Root marginHorizontal={marginHorizontal} {...props}>
     {children}
   </Root>
 );
 
 ButtonGroup.defaultProps = {
   marginHorizontal: '5px',
-  style: null,
+  style: undefined,
 };
 
 export default ButtonGroup;

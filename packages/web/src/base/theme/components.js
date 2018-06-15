@@ -1,7 +1,7 @@
 // @flow
 
 import { rgba, lighten } from 'polished';
-import * as defaultTheme from './theme';
+import * as defaultTheme from './variables';
 
 // component theme
 export default (theme: typeof defaultTheme) => ({

@@ -8,6 +8,7 @@ import Avatar from './Avatar';
 import { ButtonGroup, Button } from './Button';
 import {
   ThemeProvider,
+  defaultVariables,
   defaultTheme,
   colorPaletteGenerator,
   defaultComponentsTheme,
@@ -94,4 +95,5 @@ export {
   utils,
   colorPaletteGenerator,
   defaultComponentsTheme,
+  defaultVariables
 };

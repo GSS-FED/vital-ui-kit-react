@@ -3,7 +3,7 @@
   "version": "0.2.6",
   "private": true,
   "dependencies": {
-    "@gssfed/vital-ui-kit-react": "*",
+    "@gssfed/vital-ui-kit-react": "latest",
     "formik": "^0.11.11",
     "rc-color-picker": "^1.2.6",
     "react": "^16.4.0",
