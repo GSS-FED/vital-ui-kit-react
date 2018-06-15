@@ -1,6 +1,7 @@
 [ignore]
 .*/storybook-static/*
-./packages/native/.*
+./packages/react-scripts/.*
+./packages/react-scripts-ts/.*
 .*/examples/.*
 /*/stories/.*
 .*/www/.*
