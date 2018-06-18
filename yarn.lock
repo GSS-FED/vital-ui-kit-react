@@ -160,28 +160,11 @@
     react-addons-create-fragment "^15.5.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-knobs@3.4.7":
+"@storybook/addon-knobs@3.4.7", "@storybook/addon-knobs@^3.4.6":
   version "3.4.7"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.4.7.tgz#9e8f7827e3743ec76d773dd65a3857d538d0aa02"
   dependencies:
     "@storybook/components" "3.4.7"
-    babel-runtime "^6.26.0"
-    deep-equal "^1.0.1"
-    global "^4.3.2"
-    insert-css "^2.0.0"
-    lodash.debounce "^4.0.8"
-    moment "^2.21.0"
-    prop-types "^15.6.1"
-    react-color "^2.14.0"
-    react-datetime "^2.14.0"
-    react-textarea-autosize "^5.2.1"
-    util-deprecate "^1.0.2"
-
-"@storybook/addon-knobs@^3.3.3":
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.4.6.tgz#900586a218e12540256884af7a0ba1f684f1f436"
-  dependencies:
-    "@storybook/components" "3.4.6"
     babel-runtime "^6.26.0"
     deep-equal "^1.0.1"
     global "^4.3.2"
@@ -251,14 +234,6 @@
 "@storybook/client-logger@3.4.7":
   version "3.4.7"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-3.4.7.tgz#577a3dae3f46d95e3dcc1cdb6e8726d5d6324619"
-
-"@storybook/components@3.4.6":
-  version "3.4.6"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.4.6.tgz#34bddcfa21bddc59ef57a052d157285fab7ba003"
-  dependencies:
-    glamor "^2.20.40"
-    glamorous "^4.12.1"
-    prop-types "^15.6.1"
 
 "@storybook/components@3.4.7":
   version "3.4.7"
@@ -423,22 +398,6 @@
 "@types/node@*":
   version "10.3.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.1.tgz#51092fbacaed768a122a293814474fbf6e5e8b6d"
-
-"@types/radium@^0.18.22":
-  version "0.18.24"
-  resolved "https://registry.yarnpkg.com/@types/radium/-/radium-0.18.24.tgz#0fdaa26b376c4064b3bdd71af0a74f0908ddb663"
-  dependencies:
-    "@types/react" "*"
-
-"@types/ramda@0.25.12":
-  version "0.25.12"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.12.tgz#49f22f7611ae381473bc9b992776a1471e899a5a"
-
-"@types/react@*":
-  version "16.3.16"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.16.tgz#78fc44a90b45701f50c8a7008f733680ba51fc86"
-  dependencies:
-    csstype "^2.2.0"
 
 "@types/tinycolor2@^1.4.0":
   version "1.4.0"
@@ -7640,7 +7599,7 @@ quick-lru@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
 
-radium@^0.19.0, radium@^0.19.4:
+radium@^0.19.0:
   version "0.19.6"
   resolved "https://registry.yarnpkg.com/radium/-/radium-0.19.6.tgz#b86721d08dbd303b061a4ae2ebb06cc6e335ae72"
   dependencies:
@@ -7649,9 +7608,9 @@ radium@^0.19.0, radium@^0.19.4:
     inline-style-prefixer "^2.0.5"
     prop-types "^15.5.8"
 
-ramda@^0.24.1:
-  version "0.24.1"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.24.1.tgz#c3b7755197f35b8dc3502228262c4c91ddb6b857"
+ramda@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
 
 randomatic@^3.0.0:
   version "3.0.0"
@@ -8929,16 +8888,14 @@ stealthy-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
 
-storybook-host@4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/storybook-host/-/storybook-host-4.1.5.tgz#d0e71eeba05744a4a72c9c53a0cab3d9efca9a88"
+storybook-host@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/storybook-host/-/storybook-host-5.0.0.tgz#1a226de560b084954c03cb0ecf2699c91c5ac819"
   dependencies:
-    "@storybook/addon-knobs" "^3.3.3"
-    "@types/radium" "^0.18.22"
-    "@types/ramda" "0.25.12"
+    "@storybook/addon-knobs" "^3.4.6"
     "@types/tinycolor2" "^1.4.0"
-    radium "^0.19.4"
-    ramda "^0.24.1"
+    glamor "^2.20.40"
+    ramda "^0.25.0"
     tinycolor2 "^1.4.1"
 
 stream-browserify@^2.0.1:
