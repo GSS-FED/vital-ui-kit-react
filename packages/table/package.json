@@ -1,0 +1,23 @@
+{
+  "name": "@vital-ui/react-table",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:build": "rm -rf dist",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
+    "build:flow": "flow-copy-source src dist",
+    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+  },
+  "author": "",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "react-virtualized": "^9.13.0",
+    "styled-components": "3",
+    "classnames": "^2.2.5",
+    "@vital-ui/react-checkbox": "0.0.1"
+  },
+  "license": "ISC"
+}
