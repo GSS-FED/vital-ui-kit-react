@@ -19,7 +19,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon, ButtonGroup } from '../../../packages/web/src';
+import { Button, Icon} from '@vital-ui/react';
 
 storiesOf('Components | Button', module)
   .addDecorator(withKnobs)
@@ -151,11 +151,11 @@ storiesOf('Components | Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <ButtonGroup>
+        <Button.ButtonGroup>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
-        </ButtonGroup>
+        </Button.ButtonGroup>
       )),
     ),
   );

@@ -7,9 +7,9 @@
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 import Icon from '@vital-ui/react-icon';
+import Tooltip from '@vital-ui/react-tooltip';
 
 import { Root, Wrapper, Handler, Button } from './styled';
-import Tooltip from '@vital-ui/react-tooltip';
 import Track from '../../../track';
 
 import constants from './constants';

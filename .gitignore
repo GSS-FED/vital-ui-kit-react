@@ -9,3 +9,4 @@ esm
 .cache/
 coverage/
 .changelog/
+cjs

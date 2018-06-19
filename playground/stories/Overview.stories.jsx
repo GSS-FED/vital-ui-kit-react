@@ -23,7 +23,7 @@ import {
   Button,
   ButtonGroup,
   Icon,
-} from '../../packages/web/src';
+} from '@vital-ui/react';
 import Section from './Container/Section';
 
 const AVATAR = [

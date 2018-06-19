@@ -15,7 +15,7 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { utils } from '../../../packages/web/src';
+import * as utils from '../../../packages/utils/src';
 import md from './space.md';
 
 const Container = styled.div`

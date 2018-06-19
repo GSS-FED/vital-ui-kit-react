@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Slider, Button, Select } from '../../../packages/web/src';
+import { Slider, Select, Button } from '@vital-ui/react';
 
 const items = [
   {
