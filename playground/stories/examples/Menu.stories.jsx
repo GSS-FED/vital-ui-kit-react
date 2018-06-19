@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import {Icon, Menu} from '@vital-ui/react';
+import { Icon, Menu } from '@vital-ui/react';
 
 const MenuIcon = styled(Icon)`
   margin-right: 10px;

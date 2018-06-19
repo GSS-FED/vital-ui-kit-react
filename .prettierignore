@@ -9,3 +9,5 @@ package.json
 build/
 packages/react-scripts-ts
 packages/react-scripts
+esm/
+cjs/

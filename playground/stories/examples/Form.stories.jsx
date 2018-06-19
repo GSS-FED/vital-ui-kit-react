@@ -28,7 +28,7 @@ import {
   Addon,
   Select,
   Button,
-  Icon
+  Icon,
 } from '@vital-ui/react';
 
 const FormWrapper = styled.div`

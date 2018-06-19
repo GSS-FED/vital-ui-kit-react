@@ -17,7 +17,10 @@ module.exports = (baseConfig, env, defaultConfig) => {
         rule.exclude.push(
           path.resolve(__dirname, '../../packages/web/node_modules'),
           path.resolve(__dirname, '../../packages/icon/node_modules'),
-          path.resolve(__dirname, '../../packages/theme/node_modules'),
+          path.resolve(
+            __dirname,
+            '../../packages/theme/node_modules',
+          ),
         );
       }
     }

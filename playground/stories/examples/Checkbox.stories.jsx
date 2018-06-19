@@ -61,11 +61,7 @@ storiesOf('Components | Checkbox', module)
     'Custom Icon',
     withInfo()(
       withNotes('This is checkbox')(() => (
-        <Checkbox
-          defaultChecked
-          label="Custom Icon"
-          icon="star"
-        />
+        <Checkbox defaultChecked label="Custom Icon" icon="star" />
       )),
     ),
   )

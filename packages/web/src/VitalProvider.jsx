@@ -2,7 +2,10 @@
 
 import React, { type Node } from 'react';
 import { ThemeProvider as Provider } from 'styled-components';
-import { defaultVariables, defaultComponentsTheme } from '@vital-ui/react-theme';
+import {
+  defaultVariables,
+  defaultComponentsTheme,
+} from '@vital-ui/react-theme';
 import { IconContext, defaultIcon } from '@vital-ui/react-icon';
 
 type Props = {

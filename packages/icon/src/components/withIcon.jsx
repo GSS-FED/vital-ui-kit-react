@@ -10,8 +10,8 @@ function withIcon(Component: ComponentType<*>) {
       <IconContext.Consumer>
         {icon => <Component {...props} icon={icon} />}
       </IconContext.Consumer>
-    )
-  }
+    );
+  };
 }
 
 export default withIcon;
