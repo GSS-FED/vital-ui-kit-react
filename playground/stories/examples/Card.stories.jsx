@@ -15,12 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import {
-  Card,
-  ButtonGroup,
-  Button,
-  Icon,
-} from '../../../packages/web/src';
+import { Card, Button, ButtonGroup, Icon } from '@vital-ui/react';
 import heroImage from '../../../assets/card-header-pic.png';
 
 const content =
@@ -51,12 +46,12 @@ storiesOf('Components | Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <ButtonGroup style={{ padding: 10 }}>
+            <Button.ButtonGroup style={{ padding: 10 }}>
               <Button>Cancel</Button>
               <Button flat nature="primary">
                 Confirm
               </Button>
-            </ButtonGroup>
+            </Button.ButtonGroup>
           </Card.Footer>
         </Card>
       )),
@@ -70,12 +65,12 @@ storiesOf('Components | Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <ButtonGroup style={{ padding: 10 }}>
+            <Button.ButtonGroup style={{ padding: 10 }}>
               <Button link>Cancel</Button>
               <Button link nature="primary">
                 Confirm
               </Button>
-            </ButtonGroup>
+            </Button.ButtonGroup>
           </Card.Footer>
         </Card>
       )),

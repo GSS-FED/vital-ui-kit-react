@@ -26,10 +26,10 @@ import {
   MultipleInput,
   Hint,
   Addon,
-  Icon,
-  Button,
   Select,
-} from '../../../packages/web/src';
+  Button,
+  Icon
+} from '@vital-ui/react';
 
 const FormWrapper = styled.div`
   max-width: 500px;

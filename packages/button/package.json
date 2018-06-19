@@ -2,8 +2,8 @@
   "name": "@vital-ui/react-button",
   "version": "0.7.0",
   "description": "",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rm -rf dist",
@@ -22,5 +22,8 @@
     "@vital-ui/react-theme": "^0.7.0",
     "classnames": "^2.2.5",
     "polished": "^1.9.2"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.74.0"
   }
 }

@@ -24,7 +24,7 @@ import {
   Column,
   Table,
   defaultCellRenderer,
-} from '../../packages/web/src';
+} from '@vital-ui/react';
 import { CheckBoxExample } from './examples/Checkbox.stories';
 
 // Table data as an array of objects

@@ -8,7 +8,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import Icon from '@vital-ui/react-icon';
 
-import { Button as ButtonBase } from '@vital-ui/react-button';
+import ButtonBase from '@vital-ui/react-button';
 
 const Root = styled.ul`
   font-size: 0;

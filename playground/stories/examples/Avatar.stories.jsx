@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Avatar } from '../../../packages/web/src';
+import { Avatar } from '@vital-ui/react';
 
 storiesOf('Components | Avatar', module)
   .addDecorator(withKnobs)

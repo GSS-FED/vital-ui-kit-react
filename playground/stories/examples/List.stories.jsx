@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { List } from '../../../packages/web/src';
+import { List } from '@vital-ui/react';
 
 const Display = styled.div`
   padding: 20px;

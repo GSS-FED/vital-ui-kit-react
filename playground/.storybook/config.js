@@ -6,7 +6,7 @@ import { setOptions } from '@storybook/addon-options';
 
 import { VitalProvider } from '../../packages/web/src';
 
-import '../../packages/theme/dist/global.css';
+import '@vital-ui/react-theme/src/global.css';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

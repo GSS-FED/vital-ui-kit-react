@@ -2,8 +2,8 @@
   "name": "@vital-ui/react-list",
   "version": "0.7.0",
   "description": "",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rm -rf dist",
@@ -23,5 +23,8 @@
     "@vital-ui/react-icon": "^0.0.1",
     "@vital-ui/react-utils": "^0.7.0",
     "popmotion": "8.1.22"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.74.0"
   }
 }

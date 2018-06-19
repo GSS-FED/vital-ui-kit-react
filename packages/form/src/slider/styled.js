@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Button as ButtonBase } from '../Button';
+import ButtonBase from '@vital-ui/react-button';
 import constants from './constants';
 
 const Root = styled.div`
