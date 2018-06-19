@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { borderRightRadius, stateColor } from '@vital-ui/react-utils';
 
 import constants from './constants';
-import { borderRightRadius, stateColor } from '../utils/src';
 
 const Root = styled.div`
   position: absolute;

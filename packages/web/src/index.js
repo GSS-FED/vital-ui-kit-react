@@ -18,8 +18,7 @@ import Icon, {
 } from '@vital-ui/react-icon';
 
 import Avatar from '@vital-ui/react-avatar';
-import { ButtonGroup, Button } from '@vital-ui/react-button';
-import Box from '@vital-ui/react-utils';
+import Button, { ButtonGroup } from '@vital-ui/react-button';
 import Badge from '@vital-ui/react-badge';
 import Card from '@vital-ui/react-card';
 import {
@@ -37,7 +36,7 @@ import {
   Switch,
   Select,
   Slider,
-  CheckboxGroup, 
+  CheckboxGroup,
   Checkbox,
 } from '@vital-ui/react-form';
 import Modal from '@vital-ui/react-modal';
@@ -56,6 +55,8 @@ import Tabs from '@vital-ui/react-tabs';
 import Layout from '@vital-ui/react-layout';
 import * as utils from '@vital-ui/react-utils';
 import VitalProvider from './VitalProvider';
+
+const { Box } = utils;
 
 export {
   Avatar,
