@@ -2,9 +2,9 @@
   "name": "@vital-ui/react",
   "version": "0.6.0-rc2",
   "description": "Vital UI Kit for React!",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/index.js",
-  "style": "./dist/base/global.css",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "style": "./dist/global.css",
   "scripts": {
     "test": "NODE_ENV=test jest",
     "start": "start-storybook -p 6006"
@@ -30,7 +30,6 @@
     "@vital-ui/react-theme": "^0.0.1",
     "@vital-ui/react-avatar": "^0.0.1",
     "@vital-ui/react-button": "^0.0.1",
-    "@vital-ui/react-checkbox": "^0.0.1",
     "@vital-ui/react-badge": "^0.0.1",
     "@vital-ui/react-card": "^0.0.1",
     "@vital-ui/react-form": "^0.0.1",

@@ -2,7 +2,8 @@
   "name": "@vital-ui/react-pagination",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rm -rf dist",
@@ -14,9 +15,11 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "3",
-    "@vital-ui/react-icon": "0.0.2",
-    "@vital-ui/react-button": "0.0.1"
+    "styled-components": "3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vital-ui/react-button": "0.0.1",
+    "@vital-ui/react-icon": "0.0.2"
+  }
 }
