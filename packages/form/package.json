@@ -1,0 +1,24 @@
+{
+  "name": "@vital-ui/react-form",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean:build": "rm -rf dist",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
+    "build:flow": "flow-copy-source src dist",
+    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+  },
+  "author": "",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "3",
+    "@vital-ui/react-icon": "0.0.2",
+    "@vital-ui/react-tooltip": "0.0.1",
+    "react-click-outside": "3",
+    "resize-observer-polyfill": "1.5.0"
+  },
+  "license": "ISC"
+}

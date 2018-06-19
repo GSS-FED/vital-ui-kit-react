@@ -1,7 +1,6 @@
 {
   "lerna": "2.9.1",
   "npmClient": "yarn",
-  "version": "independent",
   "useWorkspaces": true,
   "publishConfig": {
     "access": "public"
