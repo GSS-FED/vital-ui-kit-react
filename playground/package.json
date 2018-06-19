@@ -16,6 +16,7 @@
     "babel-plugin-styled-components": "1.5.1"
   },
   "dependencies": {
+    "@vital-ui/react": "^0.7.0",
     "faker": "4.1.0"
   },
   "jest": {

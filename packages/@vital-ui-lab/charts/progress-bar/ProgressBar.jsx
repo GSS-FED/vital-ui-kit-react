@@ -6,10 +6,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-// $FlowFixMe
 import ResizeObserver from 'resize-observer-polyfill';
 
-import Track from '../../../track';
+import Track from '../../../form/src/slider/track';
 import { stateColor } from '../../../utils';
 
 const Root = styled.div`

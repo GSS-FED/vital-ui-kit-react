@@ -10,7 +10,7 @@ import Icon from '@vital-ui/react-icon';
 import Tooltip from '@vital-ui/react-tooltip';
 
 import { Root, Wrapper, Handler, Button } from './styled';
-import Track from '../../../track';
+import Track from './track';
 
 import constants from './constants';
 
