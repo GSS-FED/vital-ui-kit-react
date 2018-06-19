@@ -8,6 +8,13 @@
     }]
   ],
   "env": {
+    "cjs": {
+      "presets": ["flow", "react", ["env", {"modules": "commonjs"}]],
+      "plugins": [
+        "babel-plugin-transform-object-rest-spread",
+        "babel-plugin-transform-class-properties"
+      ]
+    },
     "development": {
       "plugins": [["babel-plugin-styled-components", {
         "displayName": true

@@ -2,7 +2,8 @@
   "name": "@vital-ui/react-form",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rm -rf dist",
@@ -14,11 +15,15 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "3",
+    "styled-components": "3"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "polish": "0.2.3",
+    "react-click-outside": "3",
+    "resize-observer-polyfill": "1.5.0",
     "@vital-ui/react-icon": "0.0.2",
     "@vital-ui/react-tooltip": "0.0.1",
-    "react-click-outside": "3",
-    "resize-observer-polyfill": "1.5.0"
-  },
-  "license": "ISC"
+    "@vital-ui/react-utils": "^0.0.1"
+  }
 }

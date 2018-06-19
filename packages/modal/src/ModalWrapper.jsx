@@ -6,7 +6,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import { transitionBase } from '../utils';
+import { transitionBase } from '@vital-ui/react-utils';
 
 const Root = styled.div`
   position: fixed;

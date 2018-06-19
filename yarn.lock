@@ -419,6 +419,10 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.4.0.tgz#77792ebbbe8a1c9b291cb949fafeb7de121c4c6a"
 
+"@vital-ui/react-icon@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-icon/-/react-icon-0.0.1.tgz#b3259d838c2c7b9ce85a382a34d62431987061c8"
+
 "@vue/component-compiler-utils@^1.0.0":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-1.3.1.tgz#686f0b913d59590ae327b2a1cb4b6d9b931bbe0e"
@@ -2302,6 +2306,10 @@ classnames@^2.2.3, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+
 clean-css@4.1.x:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.11.tgz#2ecdf145aba38f54740f26cefd0ff3e03e125d6a"
@@ -4171,7 +4179,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framesync@^3.1.8, framesync@^3.1.9:
+framesync@^3.0.2, framesync@^3.1.7, framesync@^3.1.8, framesync@^3.1.9:
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/framesync/-/framesync-3.1.9.tgz#f65f815c711cf876f343b1f63da6e18b1384172f"
 
@@ -7063,9 +7071,21 @@ pngjs@^3.0.0, pngjs@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.3.3.tgz#85173703bde3edac8998757b96e5821d0966a21b"
 
+polish@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/polish/-/polish-0.2.3.tgz#4a95296b5501dd10d3b25b8e6ed8339ef4deb147"
+
 polished@1.9.2, polished@^1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.2.tgz#d705cac66f3a3ed1bd38aad863e2c1e269baf6b6"
+
+popmotion@8.1.22:
+  version "8.1.22"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-8.1.22.tgz#71857484546ae5b7335b0704423a3a761de1fe67"
+  dependencies:
+    framesync "^3.1.7"
+    style-value-types "^1.0.4"
+    stylefire "^1.2.9"
 
 popmotion@^8.1.22:
   version "8.2.3"
@@ -7676,6 +7696,17 @@ rc-animate@2.x:
     css-animation "^1.3.2"
     prop-types "15.x"
 
+rc-trigger@2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-2.5.3.tgz#aa3d9a9b20c51d05f6f35d36fa41074f70f6cd64"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.6"
+    prop-types "15.x"
+    rc-align "^2.4.0"
+    rc-animate "2.x"
+    rc-util "^4.4.0"
+
 rc-trigger@^2.3.4:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-2.5.1.tgz#a64e06d9bff05d23e7d18c558048ce75a51d6ac9"
@@ -7712,7 +7743,7 @@ react-addons-create-fragment@^15.5.3:
     loose-envify "^1.3.1"
     object-assign "^4.1.0"
 
-react-click-outside@^3.0.1:
+react-click-outside@3, react-click-outside@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/react-click-outside/-/react-click-outside-3.0.1.tgz#6e77e84d2f17afaaac26dbad743cbbf909f5e24c"
   dependencies:
@@ -7837,6 +7868,14 @@ react-modal@^3.3.2:
 react-onclickoutside@^6.5.0:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz#6a5b5b8b4eae6b776259712c89c8a2b36b17be93"
+
+react-priority-navigation@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.1.0.tgz#20185ccbabbbc3dafba65f73547bc222ffab4d90"
+  dependencies:
+    rc-trigger "^2.3.4"
+    resize-observer-polyfill "^1.5.0"
+    uniqid "^4.1.1"
 
 react-priority-navigation@^0.0.8-rc2:
   version "0.0.8-rc2"
@@ -8268,7 +8307,7 @@ reserved-words@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/reserved-words/-/reserved-words-0.1.2.tgz#00a0940f98cd501aeaaac316411d9adc52b31ab1"
 
-resize-observer-polyfill@^1.5.0:
+resize-observer-polyfill@1.5.0, resize-observer-polyfill@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
 
@@ -9078,7 +9117,7 @@ style-loader@^0.20.3:
     loader-utils "^1.1.0"
     schema-utils "^0.4.5"
 
-style-value-types@^1.0.6, style-value-types@^1.0.8:
+style-value-types@^1.0.4, style-value-types@^1.0.6, style-value-types@^1.0.8:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/style-value-types/-/style-value-types-1.0.10.tgz#e46a11922f7b9efe265fb22bfd3b5429611bc016"
 
@@ -9096,6 +9135,13 @@ styled-components@3.3.2, styled-components@^3.3.2:
     stylis "^3.5.0"
     stylis-rule-sheet "^0.0.10"
     supports-color "^3.2.3"
+
+stylefire@^1.2.9:
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/stylefire/-/stylefire-1.2.15.tgz#ee681669a1cce9205c973293723ae1b3ede1372f"
+  dependencies:
+    framesync "^3.0.2"
+    style-value-types "^1.0.4"
 
 stylefire@^2.0.2:
   version "2.0.2"

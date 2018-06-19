@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-import Checkbox from '@vital-ui/react-checkbox';
+import { Checkbox } from '@vital-ui/react-form';
 
 export type CheckboxRendererProps = {
   handleCheckboxChange: ({

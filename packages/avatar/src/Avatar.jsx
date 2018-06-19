@@ -9,12 +9,12 @@ import styled from 'styled-components';
 
 import AvatarBadge from './AvatarBadge';
 import { avatarSizes } from './constants';
-import DEFAULT_AVATAR from './assets/default-avatar.svg';
-import DEFAULT_AVATAR_OUTLINE from './assets/default-avatar-o.svg';
-import DEFAULT_AVATAR_M from './assets/default-avatar-m.svg';
-import DEFAULT_AVATAR_F from './assets/default-avatar-f.svg';
-import DEFAULT_AVATAR_M_O from './assets/default-avatar-m-o.svg';
-import DEFAULT_AVATAR_F_O from './assets/default-avatar-f-o.svg';
+import DEFAULT_AVATAR from '../assets/default-avatar.svg';
+import DEFAULT_AVATAR_OUTLINE from '../assets/default-avatar-o.svg';
+import DEFAULT_AVATAR_M from '../assets/default-avatar-m.svg';
+import DEFAULT_AVATAR_F from '../assets/default-avatar-f.svg';
+import DEFAULT_AVATAR_M_O from '../assets/default-avatar-m-o.svg';
+import DEFAULT_AVATAR_F_O from '../assets/default-avatar-f-o.svg';
 
 const Root = styled.div`
   position: relative;

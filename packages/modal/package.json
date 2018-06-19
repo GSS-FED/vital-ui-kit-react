@@ -2,7 +2,8 @@
   "name": "@vital-ui/react-modal",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean:build": "rm -rf dist",
@@ -16,5 +17,8 @@
     "react-dom": "^16",
     "styled-components": "3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vital-ui/react-utils": "^0.0.1"
+  }
 }
