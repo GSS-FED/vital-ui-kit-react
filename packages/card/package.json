@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-card",
-  "version": "0.0.1",
+  "version": "0.7.0",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -20,6 +20,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-badge": "^0.0.1"
+    "@vital-ui/react-badge": "^0.7.0"
   }
 }

@@ -9,9 +9,12 @@
   "publish": {
     "access": "public"
   },
-  "version": "0.6.0",
+  "version": "0.7.0",
   "command": {
     "exec": {
+      "ignore": "@gssfed/playground"
+    },
+    "publish": {
       "ignore": "@gssfed/playground"
     }
   },
@@ -24,6 +27,8 @@
       "breaking change": ":boom: Breaking Change"
     },
     "cacheDir": ".changelog",
-    "ignoreCommitters": ["renovate"]
+    "ignoreCommitters": [
+      "renovate"
+    ]
   }
 }
