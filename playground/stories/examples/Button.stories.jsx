@@ -19,7 +19,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon} from '@vital-ui/react';
+import { Button, Icon } from '@vital-ui/react';
 
 storiesOf('Components | Button', module)
   .addDecorator(withKnobs)
