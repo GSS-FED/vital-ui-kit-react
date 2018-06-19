@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.0.1",
+  "version": "0.7.0",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -19,11 +19,11 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@vital-ui/react-icon": "^0.7.0",
+    "@vital-ui/react-tooltip": "^0.7.0",
+    "@vital-ui/react-utils": "^0.7.0",
     "polish": "0.2.3",
     "react-click-outside": "3",
-    "resize-observer-polyfill": "1.5.0",
-    "@vital-ui/react-icon": "0.0.2",
-    "@vital-ui/react-tooltip": "0.0.1",
-    "@vital-ui/react-utils": "^0.0.1"
+    "resize-observer-polyfill": "1.5.0"
   }
 }

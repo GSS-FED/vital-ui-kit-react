@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-icon",
-  "version": "0.0.2",
+  "version": "0.7.0",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -19,7 +19,5 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0"
-  },
-  "dependencies": {
   }
 }
