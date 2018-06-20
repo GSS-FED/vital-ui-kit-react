@@ -5,7 +5,7 @@ import 'rc-color-picker/assets/index.css';
 import ColorPicker from 'rc-color-picker';
 
 // eslint-disable-next-line
-import uwillx from '../../../../../assets/uwillx.png';
+import uwillx from './uwillx.png';
 
 const MenuIcon = styled(Icon)`
   margin-right: 10px;
