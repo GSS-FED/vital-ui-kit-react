@@ -4,6 +4,9 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
+  "sideEffects": [
+    "./selection.json"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
