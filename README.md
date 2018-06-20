@@ -34,10 +34,10 @@
 ## Intro
 [Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [Vital Cloud Services Family](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
 
-- Themeable, build with styled-components 💅
-- Composing simple components allows hight flexibility
+- Themeable, build with styled-components. 💅
+- Comound style components allows hight flexibility.
 - Consistent development environment, by encapsulating internal UI style.
-- Easy to use, provide detailed API
+- Easy to use, provide detailed API.
 
 ## Demo
 
@@ -66,24 +66,27 @@ An example of Offical Document contains all Vital UI Kit components
 ### Installation
 ```bash
 # yarn
-yarn add @gssfed/vital-ui-kit-react
+yarn add @vital-ui/react
 
 # npm
-npm i --save @gssfed/vital-ui-kit-react
+npm i --save @vital-ui/react
+
+## or isntall individually packages
+yarn add @vital-ui/react-avatar
 ```
 
 ```js
-// ThemeProvider contains default theme and icon, you can override it.
-import { Button, ThemeProvider } from '@gssfed/vital-ui-kit-react'
+// VitalProvider contains default theme and icon, you can override it.
+import { VitalProvider } from '@vital-ui/react'
 // recommend importing the global style.
-import '@gssfed/vital-ui-kit-react/dist/base/global.css'
+import '@vital-ui/react/src/global.css'
 
 /* ... */
 render() {
   return (
-    <ThemeProvider theme={YOUR_CUSTOM_THEME} icon={ICON}>
+    <VitalProvider theme={YOUR_CUSTOM_THEME} icon={ICON}>
       <Button>Vital 💜 React!</Button>
-    </ThemeProvider>
+    </VitalProvider>
   )
 }
 ```
@@ -96,5 +99,5 @@ Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-
 
 - docs
 - layout
-- Table(page, checkbox, input, header)
+- Table(expand content)
 - Calendar

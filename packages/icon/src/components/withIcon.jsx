@@ -8,7 +8,7 @@ function withIcon(Component: ComponentType<*>) {
   return function IconComponent(props: any) {
     return (
       <IconContext.Consumer>
-        {icon => <Component {...props} icon={icon} />}
+        {value => <Component {...props} icon={value.icon} />}
       </IconContext.Consumer>
     );
   };
