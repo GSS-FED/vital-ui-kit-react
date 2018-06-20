@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Getting Started Overview 1`] = `
+.c0 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
 .c7 {
   position: absolute;
   background-color: #EB5000;
@@ -1820,11 +1825,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
   background-color: #F7F9FE;
   cursor: not-allowed;
   pointer-events: none;
-}
-
-.c0 {
-  padding-top: 20px;
-  padding-bottom: 30px;
 }
 
 .c51 {

@@ -41,7 +41,7 @@ import {
 } from '@vital-ui/react-form';
 import Modal from '@vital-ui/react-modal';
 import { List, ListContent, ListItem } from '@vital-ui/react-list';
-import { Pill } from '@vital-ui/react-pill';
+import Pill from '@vital-ui/react-pill';
 import Tooltip from '@vital-ui/react-tooltip';
 import Pagination from '@vital-ui/react-pagination';
 import Menu from '@vital-ui/react-menu';

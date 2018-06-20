@@ -59,7 +59,7 @@ storiesOf('Getting Started', module).add(
         ))}
       </Section>
       <Section title="Button">
-        <Button.Group
+        <ButtonGroup
           marginHorizontal="10px"
           style={{ paddingBottom: '20px' }}
         >
@@ -73,7 +73,7 @@ storiesOf('Getting Started', module).add(
           <Button link underline dark>
             Dark Link underline
           </Button>
-        </Button.Group>
+        </ButtonGroup>
         {BUTTON_STYLE.map((button, i) => (
           <ButtonGroup
             key={i}
