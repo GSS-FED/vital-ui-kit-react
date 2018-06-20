@@ -1,5 +1,7 @@
+// @flow
 /* eslint-disable react/no-array-index-key */
 import * as React from 'react';
+import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import Addon from './components/Addon';
 
@@ -57,7 +59,9 @@ const LabelCell = styled.div`
 `;
 
 type Props = {
-  children: React.Node,
+  children: React.Node[],
+  style?: CSSStyleDeclaration,
+  className?: string,
 };
 
 /**
@@ -70,8 +74,11 @@ type Props = {
  *  ...
  * </MultipleInput>
  */
-const MultipleInput = ({ children }: Props) => (
-  <Root>
+const MultipleInput = ({ style, className, children }: Props) => (
+  <Root
+    style={style}
+    className={cn('vital__multipleInput', className)}
+  >
     {children.map((child, i) => (
       <LabelCell addon={child.type === Addon} key={i}>
         {child}
@@ -79,5 +86,10 @@ const MultipleInput = ({ children }: Props) => (
     ))}
   </Root>
 );
+
+MultipleInput.defaultProps = {
+  style: undefined,
+  className: '',
+};
 
 export default MultipleInput;

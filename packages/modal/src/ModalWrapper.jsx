@@ -25,7 +25,7 @@ class ModalWrapper extends React.Component<Props> {
     this.getWidth();
   }
 
-  model: ?HTMLDivElement;
+  model: HTMLElement;
 
   componentDidUpdate(prevProps: Props, prevState, snapshot) {
     if (snapshot !== null && this.modal) {

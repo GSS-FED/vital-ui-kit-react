@@ -5,9 +5,11 @@
  */
 
 import React, { type Node, Component } from 'react';
+import cn from 'classnames';
 import styled, { css } from 'styled-components';
-
+import { defaultTheme } from '@vital-ui/react-theme';
 import Badge from '@vital-ui/react-badge';
+
 import PillsGroup from './PillsGroup';
 
 const textWidth = props => {
@@ -55,6 +57,10 @@ const Root = styled.div`
     `};
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Text = styled.span`
   display: inline-block;
   vertical-align: middle;
@@ -84,6 +90,9 @@ type Props = {
   vertical?: boolean,
   /** Call when pill selected */
   onSelect: (id: string | number) => {},
+  style?: CSSStyleDeclaration,
+  /** default: `vital__pill */
+  className?: string,
 };
 
 /**
@@ -105,6 +114,8 @@ class Pill extends Component<Props> {
     badge: null,
     current: false,
     vertical: false,
+    style: undefined,
+    className: '',
   };
 
   static Group = PillsGroup;
@@ -120,10 +131,14 @@ class Pill extends Component<Props> {
       badge,
       id,
       label,
+      style,
+      className,
       ...props
     } = this.props;
     return (
       <Root
+        className={cn('vital__pill', className)}
+        style={style}
         vertical={vertical}
         selected={current === id}
         onClick={this.handleSelect}

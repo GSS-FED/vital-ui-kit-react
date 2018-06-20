@@ -8,6 +8,8 @@ import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { rgba } from 'polished';
 import Icon from '@vital-ui/react-icon';
+import { defaultTheme } from '@vital-ui/react-theme';
+import cn from 'classnames';
 
 import CheckboxGroup from './CheckboxGroup';
 
@@ -81,12 +83,15 @@ export type Props = {
   /** Function trigger when checkbox value changes */
   onChange: (props: any) => {},
   /** Theme */
-  theme: Object,
+  theme?: Object,
   /** Value of the checkbox, html value attribute */
   value: number | string,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__checkbox` */
+  className?: string,
 };
 
-function iconColor(round, disabled, theme) {
+function iconColor(round, disabled, theme = defaultTheme) {
   if (disabled) {
     return theme.checkbox.icon.disabledColor;
   }
@@ -122,6 +127,9 @@ class Checkbox extends React.Component<Props, State> {
     disabled: false,
     round: false,
     icon: undefined,
+    theme: defaultTheme,
+    style: undefined,
+    className: '',
   };
 
   static Group = CheckboxGroup;
@@ -133,7 +141,7 @@ class Checkbox extends React.Component<Props, State> {
         : this.props.defaultChecked || false,
   };
 
-  static getDerivedStateFromProps(props) {
+  static getDerivedStateFromProps(props: Props) {
     if ('checked' in props) {
       return {
         checked: props.checked,
@@ -142,7 +150,7 @@ class Checkbox extends React.Component<Props, State> {
     return null;
   }
 
-  handleChange = e => {
+  handleChange = (e: SyntheticInputEvent<HTMLInputElement>) => {
     const { disabled, ...props } = this.props;
     if (disabled) return;
     this.props.onChange({
@@ -170,12 +178,19 @@ class Checkbox extends React.Component<Props, State> {
       round,
       theme,
       value,
+      style,
+      className,
+      ...props
     } = this.props;
 
     const customIcon = icon && typeof icon !== 'string';
 
     return (
-      <Root {...this.props}>
+      <Root
+        style={style}
+        className={cn('vital__checkbox', className)}
+        {...props}
+      >
         <Box
           checked={this.state.checked}
           disabled={disabled}

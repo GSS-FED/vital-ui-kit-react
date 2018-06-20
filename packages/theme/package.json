@@ -4,17 +4,15 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean:build": "rm -rf dist",
-    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
-    "build:flow": "flow-copy-source src dist",
-    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "6.26.0",
     "flow-bin": "^0.74.0",
     "react": "^16.4.1",
     "styled-components": "^3.3.2"
@@ -24,6 +22,7 @@
     "styled-components": "3"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "polished": "^1.9.2"
   }
 }

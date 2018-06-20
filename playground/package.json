@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vital-ui/react": "^0.7.0",
+    "classnames": "^2.2.6",
     "faker": "4.1.0"
   },
   "jest": {

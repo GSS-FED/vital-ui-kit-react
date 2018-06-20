@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import baseStyle from '../components/FieldBase';
 
@@ -10,6 +11,10 @@ const Area = styled.textarea`
   height: auto;
   resize: ${props => (props.resize ? 'auto' : 'none')};
 `;
+
+Area.defaultProps = {
+  theme: defaultTheme,
+};
 
 // TODO: Auto expand
 type Props = {
@@ -26,6 +31,8 @@ type Props = {
   alarm?: boolean,
   disabled?: boolean,
   warning?: boolean,
+  style?: CSSStyleDeclaration,
+  className?: string,
 };
 
 class StatelessTextArea extends React.Component<Props> {
@@ -42,6 +49,8 @@ class StatelessTextArea extends React.Component<Props> {
     alarm: false,
     warning: false,
     onChange: null,
+    style: undefined,
+    className: '',
   };
 
   focus = () => {
@@ -62,9 +71,13 @@ class StatelessTextArea extends React.Component<Props> {
       defaultValue,
       onChange,
       id,
+      style,
+      className,
     } = this.props;
     return (
       <Area
+        className={className}
+        style={style}
         rows={minRows}
         resize={resize}
         disabled={disabled}

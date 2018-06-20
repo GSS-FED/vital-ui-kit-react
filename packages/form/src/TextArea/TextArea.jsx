@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react';
+import cn from 'classnames';
 import StatelessTextArea from './StatelessTextArea';
 
 type Props = {
@@ -26,6 +27,9 @@ type Props = {
   id?: string,
   /** when input changes */
   onChange?: (event: any) => {},
+  style?: CSSStyleDeclaration,
+  /** default: `vital__textarea` */
+  className?: string,
 };
 
 type State = {
@@ -46,6 +50,8 @@ export default class TextArea extends React.Component<Props, State> {
     alarm: false,
     warning: false,
     onChange: null,
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -67,6 +73,8 @@ export default class TextArea extends React.Component<Props, State> {
     return (
       <StatelessTextArea
         {...this.props}
+        style={this.props.style}
+        className={cn('vital__textarea', this.props.className)}
         value={this.state.value}
         onChange={this.handleChange}
         ref={input => {

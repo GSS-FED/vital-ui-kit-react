@@ -6,7 +6,9 @@
 
 import React, { Component } from 'react';
 import styled, { withTheme, css } from 'styled-components';
+import cn from 'classnames';
 import Icon from '@vital-ui/react-icon';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const Root = styled.div``;
 
@@ -42,6 +44,10 @@ const Input = styled.input`
   }
 `;
 
+Input.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Label = styled.label`
   box-sizing: border-box;
   position: relative;
@@ -55,6 +61,10 @@ const Label = styled.label`
     ${({ theme }) => theme.form.switch.label.shadowColor};
   cursor: pointer;
 `;
+
+Label.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Btn = styled.div`
   width: 22px;
@@ -82,6 +92,10 @@ const Btn = styled.div`
     `};
 `;
 
+Btn.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Text = styled.div`
   position: absolute;
   top: 3px;
@@ -96,6 +110,10 @@ const Text = styled.div`
   opacity: 1;
   pointer-events: none;
 `;
+
+Text.defaultProps = {
+  theme: defaultTheme,
+};
 
 const TextOff = styled(Text)`
   display: ${props => (props.checked ? 'none' : 'block')};
@@ -118,6 +136,8 @@ type Props = {
   iconLabelFront?: string,
   iconLabelBack?: string,
   theme: Object,
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
 /**
@@ -137,6 +157,8 @@ class Switch extends Component<Props, State> {
     iconBtn: null,
     iconLabelFront: null,
     iconLabelBack: null,
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -156,9 +178,15 @@ class Switch extends Component<Props, State> {
       iconLabelFront,
       iconLabelBack,
       theme,
+      style,
+      className,
     } = this.props;
     return (
-      <Root onClick={this.onCheck}>
+      <Root
+        style={style}
+        className={cn('vital__switch', className)}
+        onClick={this.onCheck}
+      >
         <Input
           type="checkbox"
           checked={this.state.checked}

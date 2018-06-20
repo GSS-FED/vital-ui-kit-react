@@ -3,6 +3,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Badge from '@vital-ui/react-badge';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const Root = styled.div`
   position: relative;
@@ -16,6 +18,8 @@ const Root = styled.div`
   width: 100%;
 `;
 
+const Title = styled.div``;
+
 const RootWithImage = styled(Root)`
   min-height: 183px;
   background-position: center center;
@@ -26,7 +30,7 @@ const RootWithImage = styled(Root)`
   color: ${({ theme }) => theme.white};
   background-image: url(${({ image }) => image});
 
-  > h4 {
+  > ${Title} {
     position: absolute;
     bottom: 0;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -52,7 +56,15 @@ type Props = {
   image?: string,
   title?: string,
   badge?: string,
+  style?: CSSStyleDeclaration,
+  /** default: vital__card-header */
+  className?: string,
   titleStyle?: CSSStyleDeclaration,
+  /** default: `vital__card-header-title` */
+  titleClassName?: string,
+  badgeStyle?: CSSStyleDeclaration,
+  /** default: `vital__card-header-badge` */
+  badgeClassName?: string,
 };
 
 const Header = ({
@@ -60,13 +72,28 @@ const Header = ({
   image,
   title,
   badge,
+  titleClassName,
   titleStyle,
+  style,
+  className,
+  badgeClassName,
+  badgeStyle,
   ...props
 }: Props) => {
   if (image) {
     return (
-      <RootWithImage image={image} {...props}>
-        <h4 style={titleStyle}>{title}</h4>
+      <RootWithImage
+        className={cn('vital__card-header', className)}
+        style={style}
+        image={image}
+        {...props}
+      >
+        <Title
+          className={cn('vital__card-header-title', titleClassName)}
+          style={titleStyle}
+        >
+          {title}
+        </Title>
         {children}
       </RootWithImage>
     );
@@ -77,7 +104,11 @@ const Header = ({
       {title && <Cell style={titleStyle}>{title}</Cell>}
       {badge && (
         <BadgeCell>
-          <Badge label={badge} />
+          <Badge
+            style={badgeStyle}
+            className={cn('vital__card-header-badge', badgeClassName)}
+            label={badge}
+          />
         </BadgeCell>
       )}
       {children}
@@ -89,7 +120,20 @@ Header.defaultProps = {
   title: null,
   image: null,
   badge: null,
-  titleStyle: null,
+  titleClassName: '',
+  titleStyle: undefined,
+  style: undefined,
+  className: '',
+  badgeStyle: undefined,
+  badgeClassName: '',
+};
+
+// styled
+RootWithImage.defaultProps = {
+  theme: defaultTheme,
+};
+Root.defaultProps = {
+  theme: defaultTheme,
 };
 
 export default Header;

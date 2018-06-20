@@ -1,6 +1,8 @@
 // @flow
 
 import * as React from 'react';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 import styled, { css } from 'styled-components';
 
 const LabelElement = styled.span`
@@ -44,6 +46,10 @@ const LabelElement = styled.span`
     `};
 `;
 
+LabelElement.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   /** text of the label */
   text: string,
@@ -53,10 +59,26 @@ type Props = {
   inline?: boolean,
   /** align `left` or `right` */
   align?: 'left' | 'right',
+  /** default: `vital__label` */
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
-const Label = ({ text, required, inline, align }: Props) => (
-  <LabelElement inline={inline} align={align} required={required}>
+const Label = ({
+  style,
+  className,
+  text,
+  required,
+  inline,
+  align,
+}: Props) => (
+  <LabelElement
+    style={style}
+    className={cn('vital__label', className)}
+    inline={inline}
+    align={align}
+    required={required}
+  >
     {text}
   </LabelElement>
 );
@@ -65,6 +87,8 @@ Label.defaultProps = {
   required: false,
   align: 'left',
   inline: false,
+  style: undefined,
+  className: '',
 };
 
 export default Label;

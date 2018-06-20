@@ -7,6 +7,7 @@
 import React, { type Node } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import ModalWrapper from './ModalWrapper';
 
@@ -31,6 +32,10 @@ const OverLay = styled.div`
   opacity: 0.5;
   backdrop-filter: blur(5px);
 `;
+
+OverLay.defaultProps = {
+  theme: defaultTheme,
+};
 
 class Modal extends React.Component<Props, State> {
   static defaultProps = {
@@ -70,7 +75,7 @@ class Modal extends React.Component<Props, State> {
       return null;
     }
     return ReactDOM.createPortal(
-      <div className="VitalModal">
+      <div className="vital__modal">
         <OverLay />
         <ModalWrapper
           windowWidth={this.state.windowWidth}

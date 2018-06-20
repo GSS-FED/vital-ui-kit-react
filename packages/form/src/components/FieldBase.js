@@ -1,7 +1,10 @@
 // @flow
 import { css } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
-const fieldBase = ({ theme }: any) => css`
+const fieldBase = ({
+  theme = defaultTheme,
+}: typeof defaultTheme) => css`
   position: relative;
   display: block;
   width: 100%;

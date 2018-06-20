@@ -5,9 +5,12 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
 
 import withIcon from './components/withIcon';
 import defaultIcon from './selection.json';
+
+const Svg = styled.svg``;
 
 function getIcon(iconName, iconPaths) {
   const icon = iconPaths.icons.find(
@@ -59,7 +62,7 @@ const Icon = ({
     return null;
   }
   return (
-    <svg
+    <Svg
       width={size}
       height={size}
       viewBox={`0 0 ${iconInfo.width || 1024} 1024`}
@@ -67,7 +70,7 @@ const Icon = ({
       {...props}
     >
       {iconInfo.path && <path d={iconInfo.path} fill={color} />}
-    </svg>
+    </Svg>
   );
 };
 

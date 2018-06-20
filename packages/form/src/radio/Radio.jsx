@@ -7,6 +7,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { transitionBase } from '@vital-ui/react-utils';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const Root = styled.label`
   display: inline-block;
@@ -27,6 +29,10 @@ const Root = styled.label`
     }
   }
 `;
+
+Root.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Input = styled.input`
   vertical-align: middle;
@@ -71,6 +77,10 @@ const Input = styled.input`
   }
 `;
 
+Input.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Label = styled.span`
   padding-left: 4px;
 `;
@@ -82,6 +92,12 @@ type Props = {
   defaultChecked?: boolean,
   isDisabled?: boolean,
   onChange: () => void,
+  /** default: `vital__radio` */
+  className?: string,
+  style?: CSSStyleDeclaration,
+  /** default: `vtail_radio-input` */
+  inputClassName?: string,
+  inputStyle?: CSSStyleDeclaration,
 };
 
 const Radio = ({
@@ -91,10 +107,20 @@ const Radio = ({
   defaultChecked,
   name,
   onChange,
+  style,
+  className,
+  inputClassName,
+  inputStyle,
   ...props
 }: Props) => (
-  <Root isDisabled={isDisabled}>
+  <Root
+    style={style}
+    className={cn('vital__radio')}
+    isDisabled={isDisabled}
+  >
     <Input
+      className={cn('vital__radio-input', inputClassName)}
+      style={inputStyle}
       isDisabled={isDisabled}
       type="radio"
       defaultChecked={defaultChecked}
@@ -110,6 +136,10 @@ const Radio = ({
 Radio.defaultProps = {
   defaultChecked: false,
   isDisabled: false,
+  style: undefined,
+  className: '',
+  inputStyle: undefined,
+  inputClassName: '',
 };
 
 export default Radio;

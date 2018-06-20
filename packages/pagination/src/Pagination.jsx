@@ -36,7 +36,7 @@ function Item({
 }) {
   return (
     <ListWrapper {...props}>
-      <Button subtle selected={selected} onChange={onChange}>
+      <Button subtle selected={selected} onClick={onChange}>
         {children}
       </Button>
     </ListWrapper>
@@ -69,8 +69,8 @@ type Props = {
 
 const Pagination = ({ pageSize, current, onChange }: Props) => (
   <Root>
-    <Item>First</Item>
-    <Item>
+    <Item onChange={onChange}>First</Item>
+    <Item onChange={onChange}>
       <Icon
         style={{ marginRight: '5px' }}
         name="chevron-left"
@@ -80,6 +80,7 @@ const Pagination = ({ pageSize, current, onChange }: Props) => (
     </Item>
     {[...Array(pageSize).keys()].map(size => (
       <Item
+        onChange={onChange}
         selected={size + 1 === current}
         key={size}
         onClick={onChange}
@@ -87,7 +88,7 @@ const Pagination = ({ pageSize, current, onChange }: Props) => (
         {size + 1}
       </Item>
     ))}
-    <Item>
+    <Item onChange={onChange}>
       Next
       <Icon
         style={{ marginLeft: '5px' }}
@@ -95,7 +96,7 @@ const Pagination = ({ pageSize, current, onChange }: Props) => (
         size="12"
       />
     </Item>
-    <Item>Last</Item>
+    <Item onChange={onChange}>Last</Item>
   </Root>
 );
 

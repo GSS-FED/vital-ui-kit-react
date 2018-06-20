@@ -12,16 +12,18 @@ type Props = {
   ...Space,
   children: React.Node,
   style?: CSSStyleDeclaration,
+  className?: string,
 };
 
-const Box = ({ children, style, ...props }: Props) => (
-  <Container style={style} {...props}>
+const Box = ({ className, children, style, ...props }: Props) => (
+  <Container className={className} style={style} {...props}>
     {children}
   </Container>
 );
 
 Box.defaultProps = {
-  style: null,
+  style: undefined,
+  className: '',
 };
 
 export default Box;

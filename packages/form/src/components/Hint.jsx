@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import { stateColor } from '@vital-ui/react-utils';
 
@@ -15,15 +17,35 @@ const Root = styled.div`
   color: ${props => stateColor(props, props.theme.form.hint.color)};
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   text: string,
   alarm?: boolean,
   warning?: boolean,
   success?: boolean,
+  /** default vital__hint */
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
-const Hint = ({ text, alarm, warning, success }: Props) => (
-  <Root alarm={alarm} warning={warning} success={success}>
+const Hint = ({
+  className,
+  style,
+  text,
+  alarm,
+  warning,
+  success,
+}: Props) => (
+  <Root
+    style={style}
+    className={cn('vital__hint', className)}
+    alarm={alarm}
+    warning={warning}
+    success={success}
+  >
     {text}
   </Root>
 );
@@ -32,6 +54,8 @@ Hint.defaultProps = {
   alarm: false,
   warning: false,
   success: false,
+  style: undefined,
+  className: '',
 };
 
 export default Hint;

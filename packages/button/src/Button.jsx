@@ -6,8 +6,6 @@
 
 import * as React from 'react';
 import cn from 'classnames';
-import { withTheme } from 'styled-components';
-import { defaultTheme } from '@vital-ui/react-theme';
 
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
@@ -23,7 +21,7 @@ type Nature =
 type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
 type Props = {
-  /** Vital_Button */
+  /** `vital_button` */
   className?: string,
   /** The content of the button */
   children?: React.Node,
@@ -71,7 +69,6 @@ class Button extends React.Component<Props> {
   static defaultProps = {
     children: '',
     nature: 'default',
-    theme: defaultTheme,
     size: 'medium',
     circle: false,
     light: false,
@@ -96,7 +93,7 @@ class Button extends React.Component<Props> {
     } = this.props;
     return (
       <ButtonElement
-        className={cn('Vital_Button', className)}
+        className={cn('vital__button', className)}
         style={style}
         onClick={onClick}
         {...props}
@@ -107,5 +104,4 @@ class Button extends React.Component<Props> {
   }
 }
 
-// $FlowFixMe https://github.com/styled-components/styled-components/issues/1785
-export default withTheme(Button);
+export default Button;

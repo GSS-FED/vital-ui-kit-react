@@ -6,11 +6,13 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
 import { tween, styler, easing } from 'popmotion';
 import IconBase from '@vital-ui/react-icon';
+import Badge from '@vital-ui/react-badge';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import { TitleWrapper, List, Title } from './styled';
-import Badge from '@vital-ui/react-badge';
 import SubListItem from './SubListItem';
 
 const ICON_SIZE = 10;
@@ -27,11 +29,19 @@ const Icon = styled(IconBase)`
   transform-origin: center center;
 `;
 
+Icon.defaultProps = {
+  theme: defaultTheme,
+};
+
 const InnerWrapper = styled.ul`
   will-change: height;
   background-color: ${({ theme }) => theme.list.item.bg};
   overflow: hidden;
 `;
+
+InnerWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const BadgeWrapper = styled(Title)`
   text-align: right;
@@ -51,6 +61,9 @@ type Props = {
   badge?: Node,
   /** `onClick`, **it will not override the default expand event** */
   onClick?: () => mixed,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__ListItem` */
+  className?: string,
   /** @private Light or Dark theme */
   themed: 'light' | 'dark',
   /** @private  Check if it is a children */
@@ -75,6 +88,8 @@ class ListItem extends React.Component<Props, State> {
     open: false,
     badge: null,
     onClick: null,
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -133,7 +148,7 @@ class ListItem extends React.Component<Props, State> {
   iconHandler = () =>
     this.props.children ? 'chevron-down' : 'chevron-right';
 
-  child: ?HTMLElement;
+  child: HTMLElement;
 
   renderBadge = () => (
     <BadgeWrapper
@@ -152,10 +167,15 @@ class ListItem extends React.Component<Props, State> {
       themed,
       badge,
       border,
+      style,
+      className,
     } = this.props;
 
     return (
-      <List>
+      <List
+        style={style}
+        className={cn('vital__ListItem', className)}
+      >
         <TitleWrapper
           hasChildren={!!children}
           hasLink={hasLink}

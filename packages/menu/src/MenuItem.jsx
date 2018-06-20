@@ -6,6 +6,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import Button from '@vital-ui/react-button';
 
@@ -22,6 +24,10 @@ const Root = styled.div`
   }
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 const MenuButton = styled(Button)`
   display: flex;
   border-radius: 0;
@@ -30,17 +36,33 @@ const MenuButton = styled(Button)`
 type Props = {
   children: React.Node,
   border?: boolean,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__menu-item` */
+  className?: string,
 };
 
 class MenuItem extends React.Component<Props> {
   static defaultProps = {
     border: false,
+    style: undefined,
+    className: '',
   };
 
   render() {
-    const { border, children, ...props } = this.props;
+    const {
+      style,
+      className,
+      border,
+      children,
+      ...props
+    } = this.props;
     return (
-      <Root border={border} {...props}>
+      <Root
+        border={border}
+        style={style}
+        className={cn('vital__menu-item', className)}
+        {...props}
+      >
         <MenuButton subtle>{children}</MenuButton>
       </Root>
     );

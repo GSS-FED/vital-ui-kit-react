@@ -1,10 +1,10 @@
 // @flow
 
 import { rgba, lighten } from 'polished';
-import * as defaultTheme from './variables';
+import * as defaultVariables from './variables';
 
 // component theme
-export default (theme: typeof defaultTheme) => ({
+export default (theme: typeof defaultVariables) => ({
   borderColor: theme.secondary300,
   labelColor: theme.secondary600,
   border: `1px solid ${theme.secondary300}`,

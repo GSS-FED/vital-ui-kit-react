@@ -2,8 +2,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import DroplistItem from './DroplistItem';
+import { defaultTheme } from '@vital-ui/react-theme';
 
+import DroplistItem from './DroplistItem';
 import type { ItemType } from './type';
 
 type Props = {
@@ -29,6 +30,10 @@ const Root = styled.ul`
   border: 1px solid ${({ theme }) => theme.form.borderColor};
   border-radius: 4px;
 `;
+
+Root.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Droplist = ({ items, onClick }: Props) => (
   <Root>

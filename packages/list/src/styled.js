@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 import { borderTopRadius } from '@vital-ui/react-utils';
 
 const linkStyle = ({ hasLink, hasChildren, theme }) => {
@@ -70,6 +71,10 @@ const TitleWrapper = styled.div`
   ${props => linkStyle(props)};
   ${props => levelStyle(props)};
 `;
+
+TitleWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Title = styled.div`
   display: table-cell;

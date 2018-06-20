@@ -6,6 +6,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import Selection from './Selection';
 import constants from './constants';
@@ -26,6 +27,10 @@ const Root = styled.div`
     alarm ? theme.track.alarmbg : theme.track.bg};
   ${props => props.onMouseDown && 'cursor: pointer'};
 `;
+
+Root.defaultProps = {
+  theme: defaultTheme,
+};
 
 type Props = {
   disabled: boolean,

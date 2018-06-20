@@ -6,6 +6,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 import ClickOutside from 'react-click-outside';
 import Icon from '@vital-ui/react-icon';
 
@@ -40,11 +41,19 @@ const SelectButton = styled.div`
   text-align: left;
 `;
 
+SelectButton.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Selector = styled.span``;
 
 const Placeholder = styled(Selector)`
   color: ${({ theme }) => theme.form.placeholder};
 `;
+
+Placeholder.defaultProps = {
+  theme: defaultTheme,
+};
 
 type Props = {
   placeholder?: string,

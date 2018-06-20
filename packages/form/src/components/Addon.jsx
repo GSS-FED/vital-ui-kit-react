@@ -1,6 +1,8 @@
 // @flow
 
 import * as React from 'react';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 import styled from 'styled-components';
 
 const Root = styled.div`
@@ -19,10 +21,26 @@ const Root = styled.div`
   box-sizing: border-box;
 `;
 
-type Props = {
-  children: React.Node,
+Root.defaultProps = {
+  theme: defaultTheme,
 };
 
-const Addon = ({ children }: Props) => <Root>{children}</Root>;
+type Props = {
+  children: React.Node,
+  className?: string,
+  /** default: `vital__addon` */
+  style?: CSSStyleDeclaration,
+};
+
+const Addon = ({ children, style, className }: Props) => (
+  <Root style={style} className={cn('vital__addon', className)}>
+    {children}
+  </Root>
+);
+
+Addon.defaultProps = {
+  style: undefined,
+  className: '',
+};
 
 export default Addon;

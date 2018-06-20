@@ -10,6 +10,7 @@ import {
 } from './style';
 import { trunTo } from './math';
 import Box from './box';
+import withDeprecationWarnings from './withDeprecationWarnings';
 
 export {
   stateColor,
@@ -21,4 +22,5 @@ export {
   borderRightRadius,
   trunTo,
   Box,
+  withDeprecationWarnings,
 };

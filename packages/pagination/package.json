@@ -20,7 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "@vital-ui/react-button": "^0.7.1",
-    "@vital-ui/react-icon": "^0.7.1"
+    "@vital-ui/react-icon": "^0.7.1",
+    "classnames": "^2.2.6"
   },
   "devDependencies": {
     "flow-bin": "^0.74.0"

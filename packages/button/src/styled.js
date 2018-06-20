@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import { size as SIZE, natureColor } from './constant';
 
@@ -143,5 +144,9 @@ const ButtonElement = styled.button`
     pointer-events: none;
   }
 `;
+
+ButtonElement.defaultProps = {
+  theme: defaultTheme,
+};
 
 export default ButtonElement;

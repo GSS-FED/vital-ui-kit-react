@@ -19,7 +19,7 @@ export { default as Select } from './select';
 export { Checkbox, CheckboxGroup } from './checkbox';
 export { default as Switch } from './switch';
 export { default as Slider } from './slider';
-// TODO: Form html tag
+
 /**
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license

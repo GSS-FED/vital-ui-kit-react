@@ -5,6 +5,7 @@
  */
 
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const ListContent = styled.div`
   display: block;
@@ -16,5 +17,9 @@ const ListContent = styled.div`
   padding: 0.928rem 2.856rem 0.928rem 1.428rem;
   line-height: 1.866rem;
 `;
+
+ListContent.defaultProps = {
+  theme: defaultTheme,
+};
 
 export default ListContent;

@@ -5,6 +5,7 @@
  */
 
 import * as React from 'react';
+import cn from 'classnames';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
@@ -17,19 +18,34 @@ const Root = styled.div`
 type Props = {
   border?: boolean,
   children: React.Node,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__menu` */
+  className?: string,
 };
 
 class Menu extends React.Component<Props> {
   static defaultProps = {
     border: true,
+    style: undefined,
+    className: '',
   };
 
   static Item = MenuItem;
 
   render() {
-    const { children, border, ...props } = this.props;
+    const {
+      children,
+      border,
+      className,
+      style,
+      ...props
+    } = this.props;
     return (
-      <Root {...props}>
+      <Root
+        className={cn('vital__menu', className)}
+        style={style}
+        {...props}
+      >
         {React.Children.map(children, child =>
           React.cloneElement(child, {
             border,

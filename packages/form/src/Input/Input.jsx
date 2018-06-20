@@ -26,6 +26,8 @@ type Props = {
   spellCheck?: boolean,
   /** when input changes */
   onChange?: (event: SyntheticInputEvent<any>) => {},
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
 type State = {
@@ -45,6 +47,8 @@ export default class Input extends React.Component<Props, State> {
     autoFocus: false,
     spellCheck: false,
     onChange: null,
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -63,9 +67,12 @@ export default class Input extends React.Component<Props, State> {
   input: any;
 
   render() {
+    const { className, style, iconPosition, ...props } = this.props;
     return (
       <StatelessInput
-        {...this.props}
+        className={className}
+        style={style}
+        {...props}
         onChange={this.handleChange}
         value={this.state.value}
         ref={input => {

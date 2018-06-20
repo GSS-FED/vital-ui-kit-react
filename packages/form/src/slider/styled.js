@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import ButtonBase from '@vital-ui/react-button';
+import { defaultTheme } from '@vital-ui/react-theme';
 import constants from './constants';
 
 const Root = styled.div`
@@ -54,5 +55,9 @@ const Button = styled(ButtonBase)`
   display: flex;
   justify-content: center;
 `;
+
+Handler.defaultProps = {
+  theme: defaultTheme
+}
 
 export { Root, Wrapper, Handler, Button };

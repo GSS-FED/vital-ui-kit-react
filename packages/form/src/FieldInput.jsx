@@ -1,7 +1,8 @@
 // @flow
 
 import * as React from 'react';
-import styled from 'styled-components';
+import cn from 'classnames';
+import styled, { css } from 'styled-components';
 
 import Label from './components/Label';
 
@@ -13,8 +14,8 @@ const Root = styled.div`
 
   ${props =>
     props.inline &&
-    `
-    > span {
+    css`
+      > span {
         display: table-cell;
         overflow: hidden;
         white-space: nowrap;
@@ -26,7 +27,7 @@ const Root = styled.div`
         vertical-align: top;
         padding-top: calc(0.46633rem + 2px);
       }
-  `};
+    `};
 `;
 
 type Props = {
@@ -35,6 +36,8 @@ type Props = {
   inline?: boolean,
   required?: boolean,
   children: React.Node,
+  style?: CSSStyleDeclaration,
+  className?: string,
 };
 
 /**
@@ -53,9 +56,16 @@ const FieldInput = ({
   inline,
   required,
   children,
+  style,
+  className,
   ...props
 }: Props) => (
-  <Root inline={inline} {...props}>
+  <Root
+    style={style}
+    className={cn('vital__fieldInput', className)}
+    inline={inline}
+    {...props}
+  >
     <Label text={label} required={required} align={align} />
     {children}
   </Root>
@@ -64,6 +74,8 @@ const FieldInput = ({
 FieldInput.defaultProps = {
   inline: false,
   required: false,
+  style: undefined,
+  className: '',
 };
 
 export default FieldInput;

@@ -6,6 +6,8 @@
 
 import * as React from 'react';
 import styled, { css } from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import Badge from '@vital-ui/react-badge';
 
@@ -35,6 +37,10 @@ const Root = styled.div`
     `};
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Span = styled.span`
   vertical-align: middle;
   display: inline-block;
@@ -54,12 +60,17 @@ type Props = {
   panel: React.Node,
   index: number,
   onTabChange: (panel: React.Node, index: number) => {},
+  style?: CSSStyleDeclaration,
+  /** default: `vital__tab-item` */
+  className?: string,
 };
 
 class TabItem extends React.Component<Props> {
   static defaultProps = {
     current: false,
     badge: null,
+    style: undefined,
+    className: '',
   };
 
   render() {
@@ -70,10 +81,14 @@ class TabItem extends React.Component<Props> {
       label,
       badge,
       panel,
+      style,
+      className,
       ...props
     } = this.props;
     return (
       <Root
+        className={cn('vital__tab-item', className)}
+        style={style}
         current={current}
         onClick={() => onTabChange(panel, index)}
         {...props}

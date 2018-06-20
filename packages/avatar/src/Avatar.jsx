@@ -6,6 +6,8 @@
 
 import React, { type Node } from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
+import cn from 'classnames';
 
 import AvatarBadge from './AvatarBadge';
 import { avatarSizes } from './constants';
@@ -30,19 +32,33 @@ const Image = styled.img`
   box-sizing: border-box;
 `;
 
+Image.defaultProps = {
+  theme: defaultTheme,
+};
+
 type SizeType = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 type Gender = 'male' | 'female';
 
 type Props = {
+  /** Image src html attr of the avatar. */
   src?: string,
+  /** Circle style. */
   round?: boolean,
+  /** Avatar size, default is `medium`, `xlarge`, `large`, `medium`, `small`, `xsmall` */
   size?: SizeType,
+  /** Value for the right top badge */
   badge?: string,
   gender?: Gender,
   outline?: boolean,
   containerStyle?: CSSStyleDeclaration,
   imageStyle?: CSSStyleDeclaration,
   badgeStyle?: CSSStyleDeclaration,
+  /** Default is `vital__avatar` */
+  containerClassName?: string,
+  /** Default is `vital__avatar-image` */
+  imageClassName?: string,
+  /** Default is `vital__avatar-badge` */
+  badgeClassName?: string,
 };
 
 /**
@@ -68,6 +84,9 @@ const Avatar = ({
   containerStyle,
   imageStyle,
   badgeStyle,
+  containerClassName,
+  imageClassName,
+  badgeClassName,
   ...props
 }: Props) => {
   const renderBadge = (): ?Node => {
@@ -77,6 +96,7 @@ const Avatar = ({
 
     return (
       <AvatarBadge
+        className={cn('vital__avatar-badge', badgeClassName)}
         label={badge}
         size={size}
         round={round}
@@ -106,8 +126,13 @@ const Avatar = ({
   };
 
   return (
-    <Root style={containerStyle} {...props}>
+    <Root
+      style={containerStyle}
+      className={cn('vital__avatar', containerClassName)}
+      {...props}
+    >
       <Image
+        className={cn('vital__avatar-image', imageClassName)}
         src={renderDefaultAvatar()}
         size={size}
         round={round}
@@ -126,9 +151,12 @@ Avatar.defaultProps = {
   round: false,
   size: 'medium',
   outline: false,
-  imageStyle: null,
-  containerStyle: null,
-  badgeStyle: null,
+  imageStyle: undefined,
+  containerStyle: undefined,
+  badgeStyle: undefined,
+  containerClassName: '',
+  imageClassName: '',
+  badgeClassName: '',
 };
 
 export default Avatar;

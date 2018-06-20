@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 import { borderRightRadius, stateColor } from '@vital-ui/react-utils';
 
 import constants from './constants';
@@ -25,6 +26,10 @@ const Root = styled.div`
       )}
     ${borderRightRadius(0)};
 `;
+
+Root.defaultProps = {
+  theme: defaultTheme,
+};
 
 type Props = {
   size?: 'small' | 'medium' | 'large',

@@ -6,6 +6,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 import TabItem from './TabItem';
 import TabList from './TabList';
@@ -18,11 +20,18 @@ const Root = styled.div`
   padding: 8px 0 0 12px;
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   children: TabList,
   defaultActiveIndex?: number,
-  beforeTabChange?: (index: number) => {},
-  afterTabChange?: (index: number) => {},
+  beforeTabChange?: (index: number) => void,
+  afterTabChange?: (index: number) => void,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__tabs` */
+  className?: string,
 };
 
 type State = {
@@ -34,6 +43,8 @@ class Tabs extends React.Component<Props, State> {
     defaultActiveIndex: 0,
     beforeTabChange: () => {},
     afterTabChange: () => {},
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -59,11 +70,21 @@ class Tabs extends React.Component<Props, State> {
   };
 
   render() {
-    const { children, defaultActiveIndex, ...props } = this.props;
+    const {
+      children,
+      defaultActiveIndex,
+      style,
+      className,
+      ...props
+    } = this.props;
     let activePanel = null;
     return (
       <React.Fragment>
-        <Root {...props}>
+        <Root
+          style={style}
+          className={cn('vital__tabs', className)}
+          {...props}
+        >
           <TabList>
             {React.Children.map(this.props.children, (child, i) => {
               if (child.type === TabItem) {

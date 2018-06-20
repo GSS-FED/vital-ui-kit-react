@@ -5,6 +5,7 @@
  */
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
 
 import TabItem from './TabItem';
 
@@ -14,10 +15,24 @@ const Root = styled.ul`
 
 type Props = {
   children: TabItem[],
+  style?: CSSStyleDeclaration,
+  /** default: `vital-tab-list` */
+  className?: string,
 };
 
-const TabList = ({ children, ...props }: Props) => (
-  <Root {...props}>{children}</Root>
+const TabList = ({ style, className, children, ...props }: Props) => (
+  <Root
+    className={cn('vital__tab-list', className)}
+    style={style}
+    {...props}
+  >
+    {children}
+  </Root>
 );
+
+TabList.defaultProps = {
+  style: undefined,
+  className: '',
+};
 
 export default TabList;

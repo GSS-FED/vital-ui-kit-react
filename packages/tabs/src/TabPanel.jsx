@@ -6,6 +6,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const Root = styled.div`
   display: block;
@@ -15,13 +17,32 @@ const Root = styled.div`
   padding: 10px;
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   children: React.Node,
+  style?: CSSStyleDeclaration,
+  className?: string,
 };
 
 class TabPanel extends React.Component<Props> {
+  static defaultProps = {
+    style: undefined,
+    className: '',
+  };
+
   render() {
-    return <Root>{this.props.children}</Root>;
+    const { className, style } = this.props;
+    return (
+      <Root
+        className={cn('vital__tab-panel', className)}
+        style={style}
+      >
+        {this.props.children}
+      </Root>
+    );
   }
 }
 

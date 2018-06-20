@@ -5,6 +5,7 @@
  */
 
 import * as React from 'react';
+import cn from 'classnames';
 import styled from 'styled-components';
 import Radio from './Radio';
 
@@ -19,6 +20,9 @@ type Props = {
   }>,
   onRadioChange: () => void,
   isDisabled?: boolean,
+  /** default: `vital__radio-group` */
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
 /**
@@ -32,9 +36,11 @@ const RadioGroup = ({
   isDisabled,
   items,
   onRadioChange,
+  style,
+  className,
   ...props
 }: Props) => (
-  <Root>
+  <Root style={style} className={cn('vital__radio-group', className)}>
     {items.map(item => (
       <Radio
         isDisabled={isDisabled}
@@ -49,6 +55,8 @@ const RadioGroup = ({
 
 RadioGroup.defaultProps = {
   isDisabled: false,
+  style: undefined,
+  className: '',
 };
 
 export default RadioGroup;

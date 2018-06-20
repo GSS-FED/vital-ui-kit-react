@@ -7,6 +7,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import PriorityNav from 'react-priority-navigation';
+import cn from 'classnames';
 
 const Root = styled.div`
   position: relative;
@@ -20,6 +21,8 @@ type Props = {
   vertical?: boolean,
   /** The default active, match with pill's id */
   default?: string | number | void,
+  style?: CSSStyleDeclaration,
+  className?: string,
 };
 
 type State = {
@@ -31,6 +34,8 @@ class PillsGroup extends React.Component<Props, State> {
     default: null,
     vertical: false,
     current: null,
+    style: undefined,
+    className: '',
   };
 
   state = {
@@ -53,12 +58,24 @@ class PillsGroup extends React.Component<Props, State> {
     );
 
   render() {
-    const { vertical } = this.props;
+    const { vertical, style, className } = this.props;
     if (vertical) {
-      return <Root>{this.renderChildren()}</Root>;
+      return (
+        <Root
+          className={cn('vital__pill-group', className)}
+          style={style}
+        >
+          {this.renderChildren()}
+        </Root>
+      );
     }
     return (
-      <PriorityNav vertical={vertical} current={this.state.current}>
+      <PriorityNav
+        className={cn('vital__pill-group', className)}
+        style={style}
+        vertical={vertical}
+        current={this.state.current}
+      >
         {this.renderChildren()}
       </PriorityNav>
     );

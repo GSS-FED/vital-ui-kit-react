@@ -5,6 +5,8 @@
  */
 
 import * as React from 'react';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 import styled from 'styled-components';
 
 const Root = styled.div`
@@ -20,12 +22,26 @@ const Root = styled.div`
   box-sizing: border-box;
 `;
 
-type Props = {
-  children: React.Node,
+Root.defaultProps = {
+  theme: defaultTheme,
 };
 
-const Footer = ({ children, ...props }: Props) => (
-  <Root {...props}>{children}</Root>
+type Props = {
+  children: React.Node,
+  style?: CSSStyleDeclaration,
+  /** default is `vital__card-footer` */
+  className?: string,
+};
+
+const Footer = ({ children, style, className, ...props }: Props) => (
+  <Root style={style} className={cn('vital__card-footer')} {...props}>
+    {children}
+  </Root>
 );
+
+Footer.defaultProps = {
+  style: undefined,
+  className: '',
+};
 
 export default Footer;

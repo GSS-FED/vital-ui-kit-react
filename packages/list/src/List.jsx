@@ -5,7 +5,7 @@
  */
 
 import * as React from 'react';
-
+import cn from 'classnames';
 import { ListWrapper } from './styled';
 import ListItem from './ListItem';
 import ListContent from './ListContent';
@@ -21,6 +21,9 @@ type Props = {
   icon?: string | React.Node,
   /** Collapse mode, show one item one time */
   collapse?: boolean,
+  style?: CSSStyleDeclaration,
+  /** default: `vital__list` */
+  className?: string,
 };
 
 type State = {
@@ -33,6 +36,8 @@ class List extends React.Component<Props, State> {
     border: false,
     icon: null,
     collapse: false,
+    style: undefined,
+    className: '',
   };
 
   static Item = ListItem;
@@ -72,10 +77,14 @@ class List extends React.Component<Props, State> {
       border,
       collapse,
       children,
+      style,
+      className,
       ...props
     } = this.props;
     return (
       <ListWrapper
+        style={style}
+        className={cn('vital__list', className)}
         {...props}
         themed={themed}
         border={border}

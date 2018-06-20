@@ -1,12 +1,25 @@
 // @flow
 
 import * as React from 'react';
+import cn from 'classnames';
 import styled, { css } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 import Icon from '@vital-ui/react-icon';
 
 import baseStyle from '../components/FieldBase';
 
-const iconPositionStyle = ({ iconPosition, theme }) => {
+type IconPosition = 'left' | 'right';
+
+type iconProps = {
+  iconPosition?: IconPosition,
+  name?: string,
+  theme?: typeof defaultTheme,
+};
+
+const iconPositionStyle = ({
+  iconPosition,
+  theme = defaultTheme,
+}: iconProps) => {
   if (iconPosition === 'left') {
     return css`
       left: 0;
@@ -23,12 +36,16 @@ const iconPositionStyle = ({ iconPosition, theme }) => {
   `;
 };
 
-const inputPaddingStyle = props => {
-  if (props.icon) {
+const inputPaddingStyle = (props: iconProps) => {
+  if (props.name) {
     if (props.iconPosition === 'right') {
-      return `padding-right: 2.2em;`;
+      return css`
+        padding-right: 2.2em;
+      `;
     }
-    return `padding-left: 2.2em;`;
+    return css`
+      padding-left: 2.2em;
+    `;
   }
   return null;
 };
@@ -44,6 +61,12 @@ const InputElement = styled.input`
   ${inputPaddingStyle};
 `;
 
+InputElement.defaultProps = {
+  theme: defaultTheme,
+  name: null,
+  iconPosition: 'right',
+};
+
 const InputIcon = styled(Icon)`
   position: absolute;
   top: calc(50% - 0.5em);
@@ -51,8 +74,14 @@ const InputIcon = styled(Icon)`
   text-align: center;
   z-index: 7;
   color: ${({ theme }) => theme.form.inputIcon.color};
-  ${props => iconPositionStyle(props)};
+  ${iconPositionStyle};
 `;
+
+InputIcon.defaultProps = {
+  theme: defaultTheme,
+  name: null,
+  iconPosition: 'right',
+};
 
 type Props = {
   /** Html attr */
@@ -75,6 +104,9 @@ type Props = {
   autoFocus?: boolean,
   /** Spell check attr */
   spellCheck?: boolean,
+  /** default: `vital__input` */
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
 class StatelessInput extends React.Component<Props> {
@@ -83,12 +115,14 @@ class StatelessInput extends React.Component<Props> {
     placeholder: null,
     icon: null,
     iconPosition: 'right',
-    defaultValue: '',
+    defaultValue: undefined,
     disabled: false,
     alarm: false,
     warning: false,
     autoFocus: false,
     spellCheck: false,
+    style: undefined,
+    className: '',
   };
 
   focus = () => {
@@ -109,10 +143,14 @@ class StatelessInput extends React.Component<Props> {
       spellCheck,
       icon,
       iconPosition = 'right',
+      style,
+      className,
     } = this.props;
     return (
       <Root>
         <InputElement
+          style={style}
+          className={cn('vital__input', className)}
           defaultValue={defaultValue}
           type={type}
           placeholder={placeholder}

@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
+
 import type { ItemType } from './type';
 
 const Root = styled.li``;
@@ -21,6 +23,10 @@ const Item = styled.div`
     background-color: ${({ theme }) => theme.select.item.hoverBg};
   }
 `;
+
+Item.defaultProps = {
+  theme: defaultTheme,
+};
 
 type Props = {
   item: ItemType,

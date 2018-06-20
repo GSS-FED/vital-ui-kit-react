@@ -6,6 +6,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import cn from 'classnames';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const ButtonWrapper = styled.div`
   position: relative;
@@ -54,22 +56,58 @@ const Button = styled.button`
 type Props = {
   children: React.Node,
   primary?: boolean,
-  onClick: () => {},
+  onClick: () => void,
+  /** default: `vital__card-footer-button-wapper` */
+  wrapperStyle?: CSSStyleDeclaration,
+  wrapperClassName?: string,
+  /** default `vital__card-footer-button` */
+  buttonStyle?: CSSStyleDeclaration,
+  buttonClassName?: string,
 };
 
 const FooterButton = ({
   children,
   primary,
   onClick,
+  wrapperStyle,
+  wrapperClassName,
+  buttonClassName,
+  buttonStyle,
   ...props
 }: Props) => (
-  <ButtonWrapper {...props} onClick={onClick}>
-    <Button primary={primary}>{children}</Button>
+  <ButtonWrapper
+    style={wrapperStyle}
+    className={cn(
+      'vital__card-footer-button-wapper',
+      wrapperClassName,
+    )}
+    onClick={onClick}
+    {...props}
+  >
+    <Button
+      style={buttonStyle}
+      className={cn('vital__card-footer-button', buttonClassName)}
+      primary={primary}
+    >
+      {children}
+    </Button>
   </ButtonWrapper>
 );
 
+ButtonWrapper.defaultProps = {
+  theme: defaultTheme,
+};
+
+Button.defaultProps = {
+  theme: defaultTheme,
+};
+
 FooterButton.defaultProps = {
   primary: false,
+  wrapperClassName: '',
+  wrapperStyle: undefined,
+  buttonClassName: '',
+  buttonStyle: undefined,
 };
 
 export default FooterButton;

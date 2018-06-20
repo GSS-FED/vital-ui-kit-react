@@ -20,5 +20,8 @@
   "license": "ISC",
   "devDependencies": {
     "flow-bin": "^0.74.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
   }
 }

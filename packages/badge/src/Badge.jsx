@@ -6,8 +6,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-
+import { defaultTheme } from '@vital-ui/react-theme';
 import { trunTo } from '@vital-ui/react-utils';
+import cn from 'classnames';
 
 const inverseOrNot = ({ inverse, theme }) => `
   background-color: ${
@@ -26,6 +27,10 @@ const Root = styled.span`
   ${inverseOrNot};
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   /** Text on the badge */
   label: string | number,
@@ -33,6 +38,9 @@ type Props = {
   trunc?: boolean,
   /** nIverse style */
   inverse?: boolean,
+  /** className, default is 'vital__badge' */
+  className?: string,
+  style?: CSSStyleDeclaration,
 };
 
 /**
@@ -43,8 +51,20 @@ type Props = {
  * <Badge label="99+" />
  */
 
-const Badge = ({ label, trunc, inverse, ...props }: Props) => (
-  <Root inverse={inverse} {...props}>
+const Badge = ({
+  label,
+  trunc,
+  inverse,
+  className,
+  style,
+  ...props
+}: Props) => (
+  <Root
+    inverse={inverse}
+    className={cn('vital__badge', className)}
+    style={style}
+    {...props}
+  >
     {trunc ? trunTo(label) : label}
   </Root>
 );
@@ -52,6 +72,8 @@ const Badge = ({ label, trunc, inverse, ...props }: Props) => (
 Badge.defaultProps = {
   trunc: true,
   inverse: false,
+  className: '',
+  style: undefined,
 };
 
 export default Badge;

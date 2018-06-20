@@ -3,7 +3,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { trunTo } from '@vital-ui/react-utils';
-
+import { defaultTheme } from '@vital-ui/react-theme';
 import { badgeSizes } from './constants';
 
 const badgeTransformStyle = ({ size, round, label }) => {
@@ -52,15 +52,32 @@ const Root = styled.span`
   ${props => badgeTransformStyle(props)};
 `;
 
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 type Props = {
   label: string,
   size?: string,
   round?: boolean,
   style?: CSSStyleDeclaration,
+  className?: string,
 };
 
-const AvatarBadge = ({ label, size, round, style }: Props) => (
-  <Root label={label} size={size} round={round} style={style}>
+const AvatarBadge = ({
+  label,
+  size,
+  round,
+  style,
+  className,
+}: Props) => (
+  <Root
+    label={label}
+    size={size}
+    round={round}
+    style={style}
+    className={className}
+  >
     {size === 'xlarge' ? trunTo(label) : null}
   </Root>
 );
@@ -69,6 +86,7 @@ AvatarBadge.defaultProps = {
   round: false,
   size: 'medium',
   style: null,
+  className: null,
 };
 
 export default AvatarBadge;
