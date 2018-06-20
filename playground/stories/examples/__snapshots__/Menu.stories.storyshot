@@ -77,19 +77,19 @@ exports[`Storyshots Components | Menu Basic 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__menu c0"
 >
   <div
-    className="c1"
+    className="vital__menu-item c1"
   >
     <button
-      className="Vital_Button c2 c3"
+      className="vital__button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
     >
       <svg
-        className="c4"
+        className="c4 "
         height={16}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -104,16 +104,16 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="vital__menu-item c1"
   >
     <button
-      className="Vital_Button c2 c3"
+      className="vital__button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
     >
       <svg
-        className="c4"
+        className="c4 "
         height={16}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -128,16 +128,16 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="vital__menu-item c1"
   >
     <button
-      className="Vital_Button c2 c3"
+      className="vital__button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
     >
       <svg
-        className="c4"
+        className="c4 "
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -152,16 +152,16 @@ exports[`Storyshots Components | Menu Basic 1`] = `
     </button>
   </div>
   <div
-    className="c1"
+    className="vital__menu-item c1"
   >
     <button
-      className="Vital_Button c2 c3"
+      className="vital__button c2 c3"
       onClick={[Function]}
       selected={false}
       size="medium"
     >
       <svg
-        className="c4"
+        className="c4 "
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"

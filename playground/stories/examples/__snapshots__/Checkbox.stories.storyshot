@@ -50,10 +50,7 @@ exports[`Storyshots Components | Checkbox Basic 1`] = `
 
 <label
   checked={false}
-  className="c0"
-  defaultChecked={false}
-  disabled={false}
-  label="Label"
+  className="vital__checkbox c0"
   onChange={[Function]}
 >
   <span
@@ -67,6 +64,7 @@ exports[`Storyshots Components | Checkbox Basic 1`] = `
       disabled={false}
     >
       <svg
+        className=""
         height="12"
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -146,14 +144,11 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
 }
 
 <div
-  className=""
+  className="vital__checkbox-group "
 >
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    disabled={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
@@ -167,6 +162,7 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -197,10 +193,7 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
   </label>
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    disabled={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
@@ -214,6 +207,7 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -244,10 +238,7 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
   </label>
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    disabled={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
@@ -261,6 +252,7 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -342,11 +334,7 @@ exports[`Storyshots Components | Checkbox Custom Icon 1`] = `
 }
 
 <label
-  className="c0"
-  defaultChecked={true}
-  disabled={false}
-  icon="star"
-  label="Custom Icon"
+  className="vital__checkbox c0"
 >
   <span
     checked={true}
@@ -359,6 +347,7 @@ exports[`Storyshots Components | Checkbox Custom Icon 1`] = `
       disabled={false}
     >
       <svg
+        className=""
         height="12"
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"

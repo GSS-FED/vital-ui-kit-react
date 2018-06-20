@@ -56,7 +56,7 @@ exports[`Storyshots Components | Switch Basic 1`] = `
 }
 
 <div
-  className=""
+  className="vital__switch "
   onClick={[Function]}
 >
   <input
@@ -143,7 +143,7 @@ exports[`Storyshots Components | Switch with Icon Button 1`] = `
 }
 
 <div
-  className=""
+  className="vital__switch "
   onClick={[Function]}
 >
   <input
@@ -162,6 +162,7 @@ exports[`Storyshots Components | Switch with Icon Button 1`] = `
       icon="wifi"
     >
       <svg
+        className=""
         height="17"
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -258,7 +259,7 @@ exports[`Storyshots Components | Switch with Icon Label 1`] = `
 }
 
 <div
-  className=""
+  className="vital__switch "
   onClick={[Function]}
 >
   <input
@@ -276,6 +277,7 @@ exports[`Storyshots Components | Switch with Icon Label 1`] = `
       className="c2 c3"
     >
       <svg
+        className=""
         height={16}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -292,6 +294,7 @@ exports[`Storyshots Components | Switch with Icon Label 1`] = `
       className="c4 c3"
     >
       <svg
+        className=""
         height={16}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"

@@ -1936,7 +1936,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
 <div>
   <div
     className="c0"
-    style={null}
   >
     <div
       className="c1"
@@ -1947,14 +1946,12 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c2"
     >
       <div
-        className="c3"
-        style={null}
+        className="vital__avatar c3"
       >
         <img
-          className="c4"
+          className="vital__avatar-image c4"
           size="xsmall"
           src="test-file-stub"
-          style={null}
         />
       </div>
     </div>
@@ -1962,14 +1959,12 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c2"
     >
       <div
-        className="c3"
-        style={null}
+        className="vital__avatar c3"
       >
         <img
-          className="c5"
+          className="vital__avatar-image c5"
           size="small"
           src="test-file-stub"
-          style={null}
         />
       </div>
     </div>
@@ -1977,17 +1972,15 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c2"
     >
       <div
-        className="c3"
-        style={null}
+        className="vital__avatar c3"
       >
         <img
-          className="c6"
+          className="vital__avatar-image c6"
           size="medium"
           src="test-file-stub"
-          style={null}
         />
         <span
-          className="c7"
+          className="vital__avatar-badge c7"
           label={10}
           size="medium"
           style={null}
@@ -1998,14 +1991,12 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c2"
     >
       <div
-        className="c3"
-        style={null}
+        className="vital__avatar c3"
       >
         <img
-          className="c8"
+          className="vital__avatar-image c8"
           size="large"
           src="test-file-stub"
-          style={null}
         />
       </div>
     </div>
@@ -2013,17 +2004,15 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c2"
     >
       <div
-        className="c3"
-        style={null}
+        className="vital__avatar c3"
       >
         <img
-          className="c9"
+          className="vital__avatar-image c9"
           size="xlarge"
           src="test-file-stub"
-          style={null}
         />
         <span
-          className="c10"
+          className="vital__avatar-badge c10"
           label={100}
           size="xlarge"
           style={null}
@@ -2035,7 +2024,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
   </div>
   <div
     className="c0"
-    style={null}
   >
     <div
       className="c1"
@@ -2051,7 +2039,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="Vital_Button c12"
+        className="vital__button c12"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2059,7 +2047,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Link
       </button>
       <button
-        className="Vital_Button c13"
+        className="vital__button c13"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2067,7 +2055,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Dark Link
       </button>
       <button
-        className="Vital_Button c14"
+        className="vital__button c14"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2075,7 +2063,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         Link underline
       </button>
       <button
-        className="Vital_Button c15"
+        className="vital__button c15"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2092,7 +2080,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="Vital_Button c16"
+        className="vital__button c16"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2100,7 +2088,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         default
       </button>
       <button
-        className="Vital_Button c17"
+        className="vital__button c17"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2108,7 +2096,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="Vital_Button c18"
+        className="vital__button c18"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2116,7 +2104,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="Vital_Button c19"
+        className="vital__button c19"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2124,7 +2112,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="Vital_Button c20"
+        className="vital__button c20"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2132,7 +2120,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="Vital_Button c21"
+        className="vital__button c21"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2149,7 +2137,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="Vital_Button c22"
+        className="vital__button c22"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2157,7 +2145,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         flat
       </button>
       <button
-        className="Vital_Button c23"
+        className="vital__button c23"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2165,7 +2153,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="Vital_Button c24"
+        className="vital__button c24"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2173,7 +2161,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="Vital_Button c25"
+        className="vital__button c25"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2181,7 +2169,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="Vital_Button c26"
+        className="vital__button c26"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2189,7 +2177,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="Vital_Button c27"
+        className="vital__button c27"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2206,7 +2194,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="Vital_Button c28"
+        className="vital__button c28"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2214,7 +2202,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         subtle
       </button>
       <button
-        className="Vital_Button c29"
+        className="vital__button c29"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2222,7 +2210,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="Vital_Button c30"
+        className="vital__button c30"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2230,7 +2218,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="Vital_Button c31"
+        className="vital__button c31"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2238,7 +2226,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="Vital_Button c32"
+        className="vital__button c32"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2246,7 +2234,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="Vital_Button c33"
+        className="vital__button c33"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2263,7 +2251,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       }
     >
       <button
-        className="Vital_Button c34"
+        className="vital__button c34"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2271,7 +2259,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         light
       </button>
       <button
-        className="Vital_Button c35"
+        className="vital__button c35"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2279,7 +2267,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         primary
       </button>
       <button
-        className="Vital_Button c36"
+        className="vital__button c36"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2287,7 +2275,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         success
       </button>
       <button
-        className="Vital_Button c37"
+        className="vital__button c37"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2295,7 +2283,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         info
       </button>
       <button
-        className="Vital_Button c38"
+        className="vital__button c38"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2303,7 +2291,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         alarm
       </button>
       <button
-        className="Vital_Button c39"
+        className="vital__button c39"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2315,7 +2303,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c40"
     >
       <button
-        className="Vital_Button c41"
+        className="vital__button c41"
         onClick={[Function]}
         selected={false}
         size="xlarge"
@@ -2323,7 +2311,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         xlarge
       </button>
       <button
-        className="Vital_Button c42"
+        className="vital__button c42"
         onClick={[Function]}
         selected={false}
         size="large"
@@ -2331,7 +2319,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         large
       </button>
       <button
-        className="Vital_Button c23"
+        className="vital__button c23"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2339,7 +2327,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         medium
       </button>
       <button
-        className="Vital_Button c43"
+        className="vital__button c43"
         onClick={[Function]}
         selected={false}
         size="small"
@@ -2347,7 +2335,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         small
       </button>
       <button
-        className="Vital_Button c44"
+        className="vital__button c44"
         onClick={[Function]}
         selected={false}
         size="xsmall"
@@ -2359,7 +2347,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c40"
     >
       <button
-        className="Vital_Button c45"
+        className="vital__button c45"
         onClick={[Function]}
         selected={false}
         size="xsmall"
@@ -2367,7 +2355,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         xsmall
       </button>
       <button
-        className="Vital_Button c46"
+        className="vital__button c46"
         onClick={[Function]}
         selected={false}
         size="small"
@@ -2375,7 +2363,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         small
       </button>
       <button
-        className="Vital_Button c22"
+        className="vital__button c22"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -2383,7 +2371,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         medium
       </button>
       <button
-        className="Vital_Button c47"
+        className="vital__button c47"
         onClick={[Function]}
         selected={false}
         size="large"
@@ -2391,7 +2379,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
         large
       </button>
       <button
-        className="Vital_Button c48"
+        className="vital__button c48"
         onClick={[Function]}
         selected={false}
         size="xlarge"
@@ -2402,7 +2390,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
   </div>
   <div
     className="c0"
-    style={null}
   >
     <div
       className="c1"
@@ -2413,12 +2400,12 @@ exports[`Storyshots Getting Started Overview 1`] = `
       className="c49"
     >
       <div
-        className="c50"
+        className="vital__card c50"
         height="auto"
         width="300px"
       >
         <div
-          className="c51"
+          className="vital__card-content c51"
           style={
             Object {
               "textAlign": "center",
@@ -2426,6 +2413,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
           }
         >
           <svg
+            className=""
             height="90"
             onClick={[Function]}
             viewBox="0 0 914.2857142857142 1024"
@@ -2465,13 +2453,13 @@ exports[`Storyshots Getting Started Overview 1`] = `
           </div>
         </div>
         <div
-          className="c52"
+          className="vital__card-footer c52"
         >
           <div
-            className="c53"
+            className="vital__card-footer-button-wapper c53"
           >
             <button
-              className="c54"
+              className="vital__card-footer-button c54"
             >
               Confirm
             </button>

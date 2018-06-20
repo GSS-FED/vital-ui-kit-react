@@ -44,17 +44,15 @@ exports[`Storyshots Components | Avatar Basic 1`] = `
 }
 
 <div
-  className="c0"
-  style={null}
+  className="vital__avatar c0"
 >
   <img
-    className="c1"
+    className="vital__avatar-image c1"
     size="medium"
     src="test-file-stub"
-    style={null}
   />
   <span
-    className="c2"
+    className="vital__avatar-badge c2"
     label="99+"
     size="medium"
     style={null}

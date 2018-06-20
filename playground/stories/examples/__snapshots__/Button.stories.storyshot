@@ -52,7 +52,7 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
   className="c0"
 >
   <button
-    className="Vital_Button c1"
+    className="vital__button c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -60,7 +60,7 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
     Button
   </button>
   <button
-    className="Vital_Button c1"
+    className="vital__button c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -68,7 +68,7 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
     Button
   </button>
   <button
-    className="Vital_Button c1"
+    className="vital__button c1"
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -136,12 +136,13 @@ exports[`Storyshots Components | Button Circular style 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
 >
   <svg
+    className=""
     height={16}
     onClick={[Function]}
     viewBox="0 0 804.5714285714286 1024"
@@ -196,7 +197,7 @@ exports[`Storyshots Components | Button Default 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -246,7 +247,7 @@ exports[`Storyshots Components | Button Disable 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   disabled={true}
   onClick={[Function]}
   selected={false}
@@ -310,7 +311,7 @@ exports[`Storyshots Components | Button Flat 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -366,7 +367,7 @@ exports[`Storyshots Components | Button Light 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -424,7 +425,7 @@ exports[`Storyshots Components | Button Link 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -481,7 +482,7 @@ exports[`Storyshots Components | Button Subtle 1`] = `
 }
 
 <button
-  className="Vital_Button c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"

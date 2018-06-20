@@ -76,13 +76,13 @@ Array [
 }
 
 <div
-    className="c0"
+    className="vital__tabs c0"
   >
     <ul
-      className="c1"
+      className="vital__tab-list c1"
     >
       <div
-        className="c2"
+        className="vital__tab-item c2"
         onClick={[Function]}
       >
         <span
@@ -91,13 +91,13 @@ Array [
           tab1
         </span>
         <span
-          className="c4 c5"
+          className="vital__badge c4 c5"
         >
           10
         </span>
       </div>
       <div
-        className="c6"
+        className="vital__tab-item c6"
         onClick={[Function]}
       >
         <span
@@ -106,13 +106,13 @@ Array [
           tab2
         </span>
         <span
-          className="c4 c7"
+          className="vital__badge c4 c7"
         >
           99+
         </span>
       </div>
       <div
-        className="c6"
+        className="vital__tab-item c6"
         onClick={[Function]}
       >
         <span
@@ -122,7 +122,7 @@ Array [
         </span>
       </div>
       <div
-        className="c6"
+        className="vital__tab-item c6"
         onClick={[Function]}
       >
         <span
@@ -143,7 +143,7 @@ Array [
 
 <div>
     <div
-      className="c0"
+      className="vital__tab-panel c0"
     >
       <p>
         Eius sunt quidem aut omnis harum. Maiores repellendus eligendi saepe. Ea qui ratione quisquam. Ipsa quae sit incidunt tempora qui vel error labore voluptates. Omnis ut mollitia dolor in dolore. Soluta dolor incidunt ipsam aspernatur in et consequuntur voluptatum nobis. Animi est quod harum commodi. Et quis dignissimos molestiae provident. Blanditiis et natus ut quia voluptatem. Labore voluptatum tempore architecto. Est qui illo ipsam iusto ipsam voluptatem dolor omnis ut. Provident perferendis aperiam. Quidem autem eius tempora maxime quo reiciendis tenetur. Ab voluptas incidunt quam et asperiores veniam qui sint.

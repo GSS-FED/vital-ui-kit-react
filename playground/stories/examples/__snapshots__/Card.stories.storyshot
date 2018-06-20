@@ -152,7 +152,7 @@ exports[`Storyshots Components | Card Default Full Button type 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__card c0"
   height="220px"
   width="300px"
 >
@@ -161,7 +161,6 @@ exports[`Storyshots Components | Card Default Full Button type 1`] = `
   >
     <div
       className="c2"
-      style={null}
     >
       Title
     </div>
@@ -169,34 +168,34 @@ exports[`Storyshots Components | Card Default Full Button type 1`] = `
       className="c3 c2"
     >
       <span
-        className="c4"
+        className="vital__badge vital__card-header-badge c4"
       >
         99+
       </span>
     </div>
   </div>
   <div
-    className="c5"
+    className="vital__card-content c5"
   >
     Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
   </div>
   <div
-    className="c6"
+    className="vital__card-footer c6"
   >
     <div
-      className="c7"
+      className="vital__card-footer-button-wapper c7"
     >
       <button
-        className="c8"
+        className="vital__card-footer-button c8"
       >
         Cancel
       </button>
     </div>
     <div
-      className="c7"
+      className="vital__card-footer-button-wapper c7"
     >
       <button
-        className="c9"
+        className="vital__card-footer-button c9"
       >
         Confirm
       </button>
@@ -229,7 +228,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   background-image: url(test-file-stub);
 }
 
-.c1 > h4 {
+.c1 > .c3 {
   position: absolute;
   bottom: 0;
   text-shadow: 0 2px 6px rgba(0,0,0,0.5);
@@ -239,7 +238,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   margin-bottom: 1.424em;
 }
 
-.c3 {
+.c4 {
   position: relative;
   padding: 0.75rem 1.25rem;
   -webkit-box-flex: 1;
@@ -251,7 +250,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   overflow-x: hidden;
 }
 
-.c4 {
+.c5 {
   table-layout: fixed;
   display: table;
   width: 100%;
@@ -267,14 +266,14 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   box-sizing: border-box;
 }
 
-.c5 {
+.c6 {
   position: relative;
   height: 50px;
   display: table-cell;
   vertical-align: middle;
 }
 
-.c5:not(:last-child):after {
+.c6:not(:last-child):after {
   content: '';
   position: absolute;
   top: 0;
@@ -284,7 +283,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   background: #D8E3F6;
 }
 
-.c7 {
+.c8 {
   padding: 0 10px;
   margin: 0;
   border: 0;
@@ -306,11 +305,11 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   color: #0E86FE;
 }
 
-.c7:hover {
+.c8:hover {
   background-color: #D8E3F6;
 }
 
-.c6 {
+.c7 {
   padding: 0 10px;
   margin: 0;
   border: 0;
@@ -332,7 +331,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
   color: #456297;
 }
 
-.c6:hover {
+.c7:hover {
   background-color: #D8E3F6;
 }
 
@@ -358,44 +357,44 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__card c0"
   height="400px"
   width="300px"
 >
   <div
-    className="c1 c2"
-  >
-    <h4
-      style={null}
-    >
-      Title
-    </h4>
-  </div>
-  <div
-    className="c3"
-  >
-    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
-    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
-    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
-    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
-  </div>
-  <div
-    className="c4"
+    className="vital__card-header c1 c2"
   >
     <div
-      className="c5"
+      className="vital__card-header-title c3 "
+    >
+      Title
+    </div>
+  </div>
+  <div
+    className="vital__card-content c4"
+  >
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+    Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
+  </div>
+  <div
+    className="vital__card-footer c5"
+  >
+    <div
+      className="vital__card-footer-button-wapper c6"
     >
       <button
-        className="c6"
+        className="vital__card-footer-button c7"
       >
         Cancel
       </button>
     </div>
     <div
-      className="c5"
+      className="vital__card-footer-button-wapper c6"
     >
       <button
-        className="c7"
+        className="vital__card-footer-button c8"
       >
         Confirm
       </button>
@@ -571,7 +570,7 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__card c0"
   height="220px"
   width="300px"
 >
@@ -580,18 +579,17 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
   >
     <div
       className="c2"
-      style={null}
     >
       Title
     </div>
   </div>
   <div
-    className="c3"
+    className="vital__card-content c3"
   >
     Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
   </div>
   <div
-    className="c4"
+    className="vital__card-footer c4"
   >
     <div
       className="c5"
@@ -602,7 +600,7 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
       }
     >
       <button
-        className="Vital_Button c6"
+        className="vital__button c6"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -610,7 +608,7 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
         Cancel
       </button>
       <button
-        className="Vital_Button c7"
+        className="vital__button c7"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -716,12 +714,12 @@ exports[`Storyshots Components | Card With Icon 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__card c0"
   height="auto"
   width="300px"
 >
   <div
-    className="c1"
+    className="vital__card-content c1"
     style={
       Object {
         "textAlign": "center",
@@ -729,6 +727,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
     }
   >
     <svg
+      className=""
       height="90"
       onClick={[Function]}
       viewBox="0 0 914.2857142857142 1024"
@@ -768,13 +767,13 @@ exports[`Storyshots Components | Card With Icon 1`] = `
     </div>
   </div>
   <div
-    className="c2"
+    className="vital__card-footer c2"
   >
     <div
-      className="c3"
+      className="vital__card-footer-button-wapper c3"
     >
       <button
-        className="c4"
+        className="vital__card-footer-button c4"
       >
         Confirm
       </button>
@@ -953,7 +952,7 @@ exports[`Storyshots Components | Card With Link Button 1`] = `
 }
 
 <div
-  className="c0"
+  className="vital__card c0"
   height="220px"
   width="300px"
 >
@@ -962,18 +961,17 @@ exports[`Storyshots Components | Card With Link Button 1`] = `
   >
     <div
       className="c2"
-      style={null}
     >
       Title
     </div>
   </div>
   <div
-    className="c3"
+    className="vital__card-content c3"
   >
     Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.
   </div>
   <div
-    className="c4"
+    className="vital__card-footer c4"
   >
     <div
       className="c5"
@@ -984,7 +982,7 @@ exports[`Storyshots Components | Card With Link Button 1`] = `
       }
     >
       <button
-        className="Vital_Button c6"
+        className="vital__button c6"
         onClick={[Function]}
         selected={false}
         size="medium"
@@ -992,7 +990,7 @@ exports[`Storyshots Components | Card With Link Button 1`] = `
         Cancel
       </button>
       <button
-        className="Vital_Button c7"
+        className="vital__button c7"
         onClick={[Function]}
         selected={false}
         size="medium"

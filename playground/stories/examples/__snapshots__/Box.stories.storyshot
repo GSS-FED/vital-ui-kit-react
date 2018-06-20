@@ -12,7 +12,6 @@ exports[`Storyshots Components | Box Basic 1`] = `
 
 <div
   className="c0 c1"
-  style={null}
 >
   This is a box!
 </div>

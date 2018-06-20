@@ -73,13 +73,13 @@ exports[`Storyshots Components | Radio Basic 1`] = `
 }
 
 <div
-  className=""
+  className="vital__radio-group "
 >
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
@@ -92,10 +92,10 @@ exports[`Storyshots Components | Radio Basic 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={true}
       name="color"
       type="radio"
@@ -108,10 +108,10 @@ exports[`Storyshots Components | Radio Basic 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
@@ -124,10 +124,10 @@ exports[`Storyshots Components | Radio Basic 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
@@ -215,13 +215,13 @@ exports[`Storyshots Components | Radio Disable 1`] = `
 }
 
 <div
-  className=""
+  className="vital__radio-group "
 >
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
@@ -234,10 +234,10 @@ exports[`Storyshots Components | Radio Disable 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={true}
       name="color"
       type="radio"
@@ -250,10 +250,10 @@ exports[`Storyshots Components | Radio Disable 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
@@ -266,10 +266,10 @@ exports[`Storyshots Components | Radio Disable 1`] = `
     </span>
   </label>
   <label
-    className="c0"
+    className="vital__radio c0"
   >
     <input
-      className="c1"
+      className="vital__radio-input c1"
       defaultChecked={false}
       name="color"
       type="radio"
