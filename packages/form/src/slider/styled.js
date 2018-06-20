@@ -57,7 +57,7 @@ const Button = styled(ButtonBase)`
 `;
 
 Handler.defaultProps = {
-  theme: defaultTheme
-}
+  theme: defaultTheme,
+};
 
 export { Root, Wrapper, Handler, Button };
