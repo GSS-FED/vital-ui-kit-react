@@ -12,11 +12,11 @@
   "license": "MIT",
   "devDependencies": {
     "@storybook/react": "3.4.7",
-    "styled-components": "3.3.2",
-    "babel-plugin-styled-components": "1.5.1"
+    "babel-plugin-styled-components": "1.5.1",
+    "styled-components": "3.3.2"
   },
   "dependencies": {
-    "@vital-ui/react": "^0.7.0",
+    "@vital-ui/react": "^0.8.0",
     "classnames": "^2.2.6",
     "faker": "4.1.0"
   },
