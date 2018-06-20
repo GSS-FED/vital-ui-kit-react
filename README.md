@@ -35,7 +35,7 @@
 [Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [Vital Cloud Services Family](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
 
 - Themeable, build with styled-components. 💅
-- Comound style components allows hight flexibility.
+- Compound style components allows hight flexibility.
 - Consistent development environment, by encapsulating internal UI style.
 - Easy to use, provide detailed API.
 
