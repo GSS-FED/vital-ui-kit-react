@@ -5565,6 +5565,12 @@ jest-specific-snapshot@^0.5.0:
   dependencies:
     jest-snapshot ">=20.0.3"
 
+jest-specific-snapshot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/jest-specific-snapshot/-/jest-specific-snapshot-1.0.0.tgz#157c79e2534a6fea820fd475f5d17740c8f90833"
+  dependencies:
+    jest-snapshot ">=20.0.3"
+
 jest-styled-components@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-5.0.1.tgz#386c5a161a0f5e783444d624bfc18c6d228d1277"
