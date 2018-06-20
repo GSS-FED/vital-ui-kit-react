@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-avatar",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-utils": "^0.7.0"
+    "@vital-ui/react-utils": "^0.7.1"
   },
   "devDependencies": {
     "flow-bin": "^0.74.0"
