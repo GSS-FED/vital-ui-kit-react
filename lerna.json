@@ -9,7 +9,7 @@
   "publish": {
     "access": "public"
   },
-  "version": "0.7.1",
+  "version": "0.8.0",
   "command": {
     "exec": {
       "ignore": "@gssfed/playground"
@@ -23,7 +23,7 @@
     "labels": {
       "enhancement": ":rocket: Enhancement",
       "bug": ":bug: Bug Fix",
-      "internal": ":internal: Internal",
+      "internal": ":house: Internal",
       "breaking change": ":boom: Breaking Change"
     },
     "cacheDir": ".changelog",

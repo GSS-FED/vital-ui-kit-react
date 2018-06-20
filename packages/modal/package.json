@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-modal",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -15,8 +15,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-utils": "^0.7.1",
-    "@vital-ui/react-theme": "^0.7.1",
+    "@vital-ui/react-theme": "^0.8.0",
+    "@vital-ui/react-utils": "^0.8.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
