@@ -1,0 +1,32 @@
+{
+  "name": "@vital-ui/react-form",
+  "version": "0.7.1",
+  "description": "",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Yip (https://github.com/ericyip)",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "3"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@vital-ui/react-button": "^0.7.1",
+    "@vital-ui/react-icon": "^0.7.1",
+    "@vital-ui/react-tooltip": "^0.7.1",
+    "@vital-ui/react-utils": "^0.7.1",
+    "@vital-ui/react-theme": "^0.7.1",
+    "classnames": "^2.2.6",
+    "polish": "0.2.3",
+    "react-click-outside": "3",
+    "resize-observer-polyfill": "1.5.0",
+    "polished": "1.9.2"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.74.0"
+  }
+}

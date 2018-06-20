@@ -15,9 +15,8 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { Icon, Tooltip } from '../../../packages/web/src';
+import { Tooltip, Icon, defaultIcon } from '@vital-ui/react';
 
-import defaultIcon from '../../../packages/web/src/Icon/selection.json';
 import Filter from '../Container/Filter';
 
 const Display = styled.div`

@@ -48,11 +48,10 @@ exports[`Storyshots Components | Modal Basic 1`] = `
 }
 
 <button
-  className="c0"
+  className="vital__button c0"
   onClick={[Function]}
   selected={false}
   size="medium"
-  style={null}
 >
   Show
 </button>

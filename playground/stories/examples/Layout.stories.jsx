@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Layout } from '../../../packages/web/src';
+import { Layout } from '@vital-ui/react';
 
 storiesOf('Components | Layout', module).add(
   'Basic',

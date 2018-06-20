@@ -32,7 +32,6 @@ exports[`Storyshots Components | Icon Basic 1`] = `
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
-  padding-right: 2.2em;
 }
 
 .c4::-webkit-input-placeholder {
@@ -132,7 +131,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
     style={
       Object {
         "width": "60%",
@@ -140,7 +139,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
     }
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     />
     <div
@@ -149,9 +148,9 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       <input
         autoFocus={false}
         className="c4"
-        defaultValue=""
         disabled={false}
         icon="search"
+        name={null}
         onChange={[Function]}
         placeholder={null}
         spellCheck={false}
@@ -159,9 +158,8 @@ exports[`Storyshots Components | Icon Basic 1`] = `
         value=""
       />
       <svg
-        className="c5"
+        className="c5 "
         height={16}
-        iconPosition="right"
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
         width={16}
@@ -182,6 +180,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -199,6 +198,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -216,6 +216,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -233,6 +234,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 634.88 1024"
@@ -250,6 +252,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -267,6 +270,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -284,6 +288,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -301,6 +306,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -318,6 +324,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -335,6 +342,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -352,6 +360,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -369,6 +378,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -386,6 +396,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -403,6 +414,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -420,6 +432,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -437,6 +450,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -454,6 +468,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -471,6 +486,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -488,6 +504,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -505,6 +522,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -522,6 +540,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -539,6 +558,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -556,6 +576,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -573,6 +594,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -590,6 +612,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -607,6 +630,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -624,6 +648,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -641,6 +666,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -658,6 +684,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -675,6 +702,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -692,6 +720,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -709,6 +738,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -726,6 +756,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -743,6 +774,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -760,6 +792,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -777,6 +810,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -794,6 +828,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -811,6 +846,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -828,6 +864,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -845,6 +882,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -862,6 +900,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -879,6 +918,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -896,6 +936,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -913,6 +954,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -930,6 +972,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -947,6 +990,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 865.7188571428571 1024"
@@ -964,6 +1008,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1085.1474285714285 1024"
@@ -981,6 +1026,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 952.5394285714285 1024"
@@ -998,6 +1044,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -1015,6 +1062,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -1032,6 +1080,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -1049,6 +1098,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -1066,6 +1116,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -1083,6 +1134,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -1100,6 +1152,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1029.7051428571428 1024"
@@ -1117,6 +1170,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 878.2994285714285 1024"
@@ -1134,6 +1188,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1151,6 +1206,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1168,6 +1224,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1185,6 +1242,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1202,6 +1260,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1219,6 +1278,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1236,6 +1296,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1253,6 +1314,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1270,6 +1332,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -1287,6 +1350,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 865.7188571428571 1024"
@@ -1304,6 +1368,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -1321,6 +1386,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1338,6 +1404,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -1355,6 +1422,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024.5851428571427 1024"
@@ -1372,6 +1440,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 954.2948571428572 1024"
@@ -1389,6 +1458,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 954.8799999999999 1024"
@@ -1406,6 +1476,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1423,6 +1494,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -1440,6 +1512,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1457,6 +1530,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1017.1245714285715 1024"
@@ -1474,6 +1548,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 808.5942857142857 1024"
@@ -1491,6 +1566,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1508,6 +1584,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1525,6 +1602,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 884.5897142857142 1024"
@@ -1542,6 +1620,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1559,6 +1638,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -1576,6 +1656,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 878.8845714285713 1024"
@@ -1593,6 +1674,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 768 1024"
@@ -1610,6 +1692,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 694.8571428571428 1024"
@@ -1627,6 +1710,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1644,6 +1728,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1661,6 +1746,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1678,6 +1764,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1695,6 +1782,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1712,6 +1800,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1729,6 +1818,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1746,6 +1836,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1763,6 +1854,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1780,6 +1872,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1797,6 +1890,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 914.2857142857142 1024"
@@ -1814,6 +1908,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 841.1428571428571 1024"
@@ -1831,6 +1926,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -1848,6 +1944,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -1865,6 +1962,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1882,6 +1980,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1899,6 +1998,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1916,6 +2016,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1933,6 +2034,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -1950,6 +2052,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -1967,6 +2070,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -1984,6 +2088,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2001,6 +2106,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2018,6 +2124,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2035,6 +2142,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 822.272 1024"
@@ -2052,6 +2160,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2069,6 +2178,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2086,6 +2196,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2103,6 +2214,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2120,6 +2232,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2137,6 +2250,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2154,6 +2268,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -2171,6 +2286,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2188,6 +2304,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2205,6 +2322,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1073.7371428571428 1024"
@@ -2222,6 +2340,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -2239,6 +2358,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2256,6 +2376,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -2273,6 +2394,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2290,6 +2412,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2307,6 +2430,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2324,6 +2448,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 961.6822857142856 1024"
@@ -2341,6 +2466,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -2358,6 +2484,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2375,6 +2502,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2392,6 +2520,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2409,6 +2538,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 475.4285714285714 1024"
@@ -2426,6 +2556,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2443,6 +2574,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 896 1024"
@@ -2460,6 +2592,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2477,6 +2610,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -2494,6 +2628,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2511,6 +2646,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2528,6 +2664,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2545,6 +2682,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2562,6 +2700,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2579,6 +2718,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.1291428571428 1024"
@@ -2596,6 +2736,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -2613,6 +2754,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -2630,6 +2772,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -2647,6 +2790,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2664,6 +2808,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2681,6 +2826,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 602.2582857142856 1024"
@@ -2698,6 +2844,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2715,6 +2862,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -2732,6 +2880,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -2749,6 +2898,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 805.1565714285713 1024"
@@ -2766,6 +2916,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2783,6 +2934,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2800,6 +2952,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2817,6 +2970,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2834,6 +2988,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2851,6 +3006,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -2868,6 +3024,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2885,6 +3042,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2902,6 +3060,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2919,6 +3078,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2936,6 +3096,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2953,6 +3114,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2970,6 +3132,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -2987,6 +3150,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 961.6822857142856 1024"
@@ -3004,6 +3168,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3021,6 +3186,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3038,6 +3204,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3055,6 +3222,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3072,6 +3240,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -3089,6 +3258,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -3106,6 +3276,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -3123,6 +3294,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -3140,6 +3312,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1021.7325714285713 1024"
@@ -3157,6 +3330,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3174,6 +3348,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3191,6 +3366,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3208,6 +3384,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3225,6 +3402,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3242,6 +3420,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3259,6 +3438,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1032.5577142857144 1024"
@@ -3276,6 +3456,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3293,6 +3474,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3310,6 +3492,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -3327,6 +3510,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 966.2902857142857 1024"
@@ -3344,6 +3528,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -3361,6 +3546,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3378,6 +3564,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3395,6 +3582,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3412,6 +3600,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -3429,6 +3618,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -3446,6 +3636,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3463,6 +3654,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3480,6 +3672,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 402.2857142857143 1024"
@@ -3497,6 +3690,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 329.1428571428571 1024"
@@ -3514,6 +3708,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -3531,6 +3726,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3548,6 +3744,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3565,6 +3762,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3582,6 +3780,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3599,6 +3798,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3616,6 +3816,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3633,6 +3834,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1034.8251428571427 1024"
@@ -3650,6 +3852,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3667,6 +3870,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3684,6 +3888,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3701,6 +3906,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 512.5851428571428 1024"
@@ -3718,6 +3924,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3735,6 +3942,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -3752,6 +3960,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3769,6 +3978,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -3786,6 +3996,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3803,6 +4014,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -3820,6 +4032,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -3837,6 +4050,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3854,6 +4068,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3871,6 +4086,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3888,6 +4104,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -3905,6 +4122,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -3922,6 +4140,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3939,6 +4158,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -3956,6 +4176,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3973,6 +4194,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -3990,6 +4212,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1133.7142857142856 1024"
@@ -4007,6 +4230,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -4024,6 +4248,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4041,6 +4266,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 987.4285714285713 1024"
@@ -4058,6 +4284,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4075,6 +4302,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4092,6 +4320,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 603.4285714285714 1024"
@@ -4109,6 +4338,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 566.8571428571428 1024"
@@ -4126,6 +4356,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4143,6 +4374,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4160,6 +4392,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 384 1024"
@@ -4177,6 +4410,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 347.4285714285714 1024"
@@ -4194,6 +4428,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4211,6 +4446,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4228,6 +4464,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4245,6 +4482,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4262,6 +4500,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4279,6 +4518,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -4296,6 +4536,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4313,6 +4554,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4330,6 +4572,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4347,6 +4590,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -4364,6 +4608,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4381,6 +4626,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -4398,6 +4644,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4415,6 +4662,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4432,6 +4680,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1090.8525714285713 1024"
@@ -4449,6 +4698,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4466,6 +4716,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4483,6 +4734,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4500,6 +4752,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4517,6 +4770,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4534,6 +4788,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -4551,6 +4806,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -4568,6 +4824,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 956.5622857142856 1024"
@@ -4585,6 +4842,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4602,6 +4860,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1020.5622857142856 1024"
@@ -4619,6 +4878,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4636,6 +4896,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 805.1565714285713 1024"
@@ -4653,6 +4914,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 952.5394285714285 1024"
@@ -4670,6 +4932,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -4687,6 +4950,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4704,6 +4968,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 365.71428571428567 1024"
@@ -4721,6 +4986,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 365.71428571428567 1024"
@@ -4738,6 +5004,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 879.3965714285714 1024"
@@ -4755,6 +5022,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 880.5668571428571 1024"
@@ -4772,6 +5040,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -4789,6 +5058,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4806,6 +5076,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -4823,6 +5094,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -4840,6 +5112,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -4857,6 +5130,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -4874,6 +5148,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 799.4514285714286 1024"
@@ -4891,6 +5166,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 967.4605714285714 1024"
@@ -4908,6 +5184,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1013.1748571428571 1024"
@@ -4925,6 +5202,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4942,6 +5220,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4959,6 +5238,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4976,6 +5256,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -4993,6 +5274,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -5010,6 +5292,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5027,6 +5310,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5044,6 +5328,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -5061,6 +5346,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5078,6 +5364,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -5095,6 +5382,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 219.42857142857142 1024"
@@ -5112,6 +5400,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5129,6 +5418,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5146,6 +5436,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5163,6 +5454,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5180,6 +5472,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -5197,6 +5490,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 586.8251428571429 1024"
@@ -5214,6 +5508,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 586.8251428571429 1024"
@@ -5231,6 +5526,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5248,6 +5544,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5265,6 +5562,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5282,6 +5580,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5299,6 +5598,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5316,6 +5616,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5333,6 +5634,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5350,6 +5652,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5367,6 +5670,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 580.0228571428571 1024"
@@ -5384,6 +5688,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 582.8754285714285 1024"
@@ -5401,6 +5706,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 583.4605714285714 1024"
@@ -5418,6 +5724,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 513.1702857142857 1024"
@@ -5435,6 +5742,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 586.8251428571429 1024"
@@ -5452,6 +5760,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -5469,6 +5778,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5486,6 +5796,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 760.0274285714286 1024"
@@ -5503,6 +5814,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5520,6 +5832,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5537,6 +5850,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 965.7051428571427 1024"
@@ -5554,6 +5868,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 965.7051428571427 1024"
@@ -5571,6 +5886,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1040.6034285714286 1024"
@@ -5588,6 +5904,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1040.6034285714286 1024"
@@ -5605,6 +5922,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 865.7188571428571 1024"
@@ -5622,6 +5940,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 865.7188571428571 1024"
@@ -5639,6 +5958,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 914.2857142857142 1024"
@@ -5656,6 +5976,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 914.2857142857142 1024"
@@ -5673,6 +5994,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5690,6 +6012,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5707,6 +6030,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -5724,6 +6048,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5741,6 +6066,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5758,6 +6084,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -5775,6 +6102,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5792,6 +6120,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5809,6 +6138,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5826,6 +6156,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5843,6 +6174,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 809.1062857142856 1024"
@@ -5860,6 +6192,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5877,6 +6210,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 623.9817142857142 1024"
@@ -5894,6 +6228,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -5911,6 +6246,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -5928,6 +6264,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -5945,6 +6282,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1060.5714285714284 1024"
@@ -5962,6 +6300,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 987.4285714285713 1024"
@@ -5979,6 +6318,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 796.0137142857142 1024"
@@ -5996,6 +6336,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -6013,6 +6354,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -6030,6 +6372,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 915.4559999999999 1024"
@@ -6047,6 +6390,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6064,6 +6408,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6081,6 +6426,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 742.2537142857142 1024"
@@ -6098,6 +6444,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6115,6 +6462,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -6132,6 +6480,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -6149,6 +6498,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6166,6 +6516,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6183,6 +6534,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 843.4102857142857 1024"
@@ -6200,6 +6552,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6217,6 +6570,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -6234,6 +6588,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1118.8662857142856 1024"
@@ -6251,6 +6606,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1039.433142857143 1024"
@@ -6268,6 +6624,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6285,6 +6642,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 801.1337142857142 1024"
@@ -6302,6 +6660,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -6319,6 +6678,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6336,6 +6696,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6353,6 +6714,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6370,6 +6732,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6387,6 +6750,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 930.8891428571428 1024"
@@ -6404,6 +6768,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6421,6 +6786,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -6438,6 +6804,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -6455,6 +6822,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1243.4285714285713 1024"
@@ -6472,6 +6840,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -6489,6 +6858,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6506,6 +6876,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6523,6 +6894,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6540,6 +6912,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -6557,6 +6930,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -6574,6 +6948,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6591,6 +6966,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 860.0137142857142 1024"
@@ -6608,6 +6984,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6625,6 +7002,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6642,6 +7020,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6659,6 +7038,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -6676,6 +7056,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6693,6 +7074,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -6710,6 +7092,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6727,6 +7110,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1164.5805714285714 1024"
@@ -6744,6 +7128,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6761,6 +7146,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6778,6 +7164,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6795,6 +7182,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6812,6 +7200,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -6829,6 +7218,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -6846,6 +7236,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -6863,6 +7254,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 438.85714285714283 1024"
@@ -6880,6 +7272,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -6897,6 +7290,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1243.4285714285713 1024"
@@ -6914,6 +7308,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -6931,6 +7326,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6948,6 +7344,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -6965,6 +7362,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -6982,6 +7380,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1026.2674285714286 1024"
@@ -6999,6 +7398,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7016,6 +7416,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7033,6 +7434,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7050,6 +7452,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7067,6 +7470,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -7084,6 +7488,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7101,6 +7506,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7118,6 +7524,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7135,6 +7542,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7152,6 +7560,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7169,6 +7578,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7186,6 +7596,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7203,6 +7614,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7220,6 +7632,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7237,6 +7650,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7254,6 +7668,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7271,6 +7686,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7288,6 +7704,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7305,6 +7722,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7322,6 +7740,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7339,6 +7758,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7356,6 +7776,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1019.9771428571428 1024"
@@ -7373,6 +7794,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7390,6 +7812,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7407,6 +7830,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7424,6 +7848,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7441,6 +7866,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -7458,6 +7884,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7475,6 +7902,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7492,6 +7920,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1025.1702857142857 1024"
@@ -7509,6 +7938,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024.5851428571427 1024"
@@ -7526,6 +7956,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7543,6 +7974,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7560,6 +7992,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7577,6 +8010,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 744.0091428571428 1024"
@@ -7594,6 +8028,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7611,6 +8046,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7628,6 +8064,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -7645,6 +8082,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7662,6 +8100,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7679,6 +8118,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7696,6 +8136,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7713,6 +8154,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1030.8754285714285 1024"
@@ -7730,6 +8172,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7747,6 +8190,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -7764,6 +8208,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 875.4468571428571 1024"
@@ -7781,6 +8226,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7798,6 +8244,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7815,6 +8262,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -7832,6 +8280,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 878.2994285714285 1024"
@@ -7849,6 +8298,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1038.848 1024"
@@ -7866,6 +8316,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7883,6 +8334,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7900,6 +8352,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7917,6 +8370,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7934,6 +8388,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7951,6 +8406,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -7968,6 +8424,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -7985,6 +8442,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8002,6 +8460,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -8019,6 +8478,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8036,6 +8496,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8053,6 +8514,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1042.2857142857142 1024"
@@ -8070,6 +8532,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1022.8297142857142 1024"
@@ -8087,6 +8550,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -8104,6 +8568,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8121,6 +8586,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 987.4285714285713 1024"
@@ -8138,6 +8604,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8155,6 +8622,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -8172,6 +8640,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8189,6 +8658,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8206,6 +8676,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8223,6 +8694,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -8240,6 +8712,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8257,6 +8730,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8274,6 +8748,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -8291,6 +8766,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8308,6 +8784,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 786.2857142857142 1024"
@@ -8325,6 +8802,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8342,6 +8820,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8359,6 +8838,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8376,6 +8856,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -8393,6 +8874,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8410,6 +8892,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8427,6 +8910,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8444,6 +8928,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8461,6 +8946,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8478,6 +8964,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8495,6 +8982,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -8512,6 +9000,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -8529,6 +9018,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8546,6 +9036,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8563,6 +9054,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -8580,6 +9072,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1333.174857142857 1024"
@@ -8597,6 +9090,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -8614,6 +9108,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -8631,6 +9126,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 645.12 1024"
@@ -8648,6 +9144,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8665,6 +9162,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -8682,6 +9180,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 791.4057142857142 1024"
@@ -8699,6 +9198,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -8716,6 +9216,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -8733,6 +9234,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1085.7325714285714 1024"
@@ -8750,6 +9252,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1146.8799999999999 1024"
@@ -8767,6 +9270,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8784,6 +9288,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 645.12 1024"
@@ -8801,6 +9306,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1080.5394285714285 1024"
@@ -8818,6 +9324,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -8835,6 +9342,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 658.2857142857142 1024"
@@ -8852,6 +9360,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8869,6 +9378,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -8886,6 +9396,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8903,6 +9414,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -8920,6 +9432,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8937,6 +9450,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1165.165714285714 1024"
@@ -8954,6 +9468,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -8971,6 +9486,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -8988,6 +9504,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9005,6 +9522,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9022,6 +9540,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9039,6 +9558,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9056,6 +9576,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1311.9634285714285 1024"
@@ -9073,6 +9594,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1570.304 1024"
@@ -9090,6 +9612,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9107,6 +9630,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9124,6 +9648,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9141,6 +9666,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9158,6 +9684,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9175,6 +9702,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9192,6 +9720,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 661.1382857142856 1024"
@@ -9209,6 +9738,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 512 1024"
@@ -9226,6 +9756,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -9243,6 +9774,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9260,6 +9792,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9277,6 +9810,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9294,6 +9828,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9311,6 +9846,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9328,6 +9864,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9345,6 +9882,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1243.4285714285713 1024"
@@ -9362,6 +9900,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9379,6 +9918,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9396,6 +9936,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9413,6 +9954,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9430,6 +9972,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9447,6 +9990,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9464,6 +10008,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 932.5714285714286 1024"
@@ -9481,6 +10026,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9498,6 +10044,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -9515,6 +10062,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -9532,6 +10080,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -9549,6 +10098,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9566,6 +10116,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1127.424 1024"
@@ -9583,6 +10134,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9600,6 +10152,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9617,6 +10170,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -9634,6 +10188,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9651,6 +10206,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9668,6 +10224,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -9685,6 +10242,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -9702,6 +10260,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 982.8205714285714 1024"
@@ -9719,6 +10278,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -9736,6 +10296,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9753,6 +10314,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1079.4422857142856 1024"
@@ -9770,6 +10332,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 976.6034285714286 1024"
@@ -9787,6 +10350,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9804,6 +10368,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9821,6 +10386,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -9838,6 +10404,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9855,6 +10422,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 814.8845714285713 1024"
@@ -9872,6 +10440,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1019.9771428571428 1024"
@@ -9889,6 +10458,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -9906,6 +10476,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -9923,6 +10494,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -9940,6 +10512,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -9957,6 +10530,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -9974,6 +10548,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -9991,6 +10566,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10008,6 +10584,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -10025,6 +10602,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10042,6 +10620,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10059,6 +10638,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10076,6 +10656,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -10093,6 +10674,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1029.12 1024"
@@ -10110,6 +10692,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10127,6 +10710,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10144,6 +10728,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10161,6 +10746,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10178,6 +10764,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10195,6 +10782,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 984.576 1024"
@@ -10212,6 +10800,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10229,6 +10818,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -10246,6 +10836,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10263,6 +10854,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10280,6 +10872,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10297,6 +10890,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10314,6 +10908,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10331,6 +10926,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10348,6 +10944,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10365,6 +10962,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10382,6 +10980,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10399,6 +10998,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -10416,6 +11016,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10433,6 +11034,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10450,6 +11052,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -10467,6 +11070,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10484,6 +11088,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10501,6 +11106,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10518,6 +11124,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10535,6 +11142,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1092.022857142857 1024"
@@ -10552,6 +11160,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10569,6 +11178,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 878.8845714285713 1024"
@@ -10586,6 +11196,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10603,6 +11214,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 809.1794285714286 1024"
@@ -10620,6 +11232,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1313.1337142857142 1024"
@@ -10637,6 +11250,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 804.5714285714286 1024"
@@ -10654,6 +11268,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1243.4285714285713 1024"
@@ -10671,6 +11286,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1028.608 1024"
@@ -10688,6 +11304,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10705,6 +11322,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10722,6 +11340,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10739,6 +11358,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.1291428571428 1024"
@@ -10756,6 +11376,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 948.0045714285714 1024"
@@ -10773,6 +11394,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10790,6 +11412,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 730.2582857142856 1024"
@@ -10807,6 +11430,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10824,6 +11448,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10841,6 +11466,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -10858,6 +11484,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10875,6 +11502,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10892,6 +11520,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10909,6 +11538,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -10926,6 +11556,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -10943,6 +11574,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -10960,6 +11592,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 898.8525714285713 1024"
@@ -10977,6 +11610,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -10994,6 +11628,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11011,6 +11646,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11028,6 +11664,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 878.2994285714285 1024"
@@ -11045,6 +11682,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -11062,6 +11700,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -11079,6 +11718,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -11096,6 +11736,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -11113,6 +11754,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11130,6 +11772,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11147,6 +11790,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -11164,6 +11808,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -11181,6 +11826,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -11198,6 +11844,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -11215,6 +11862,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1027.4377142857143 1024"
@@ -11232,6 +11880,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1316.5714285714284 1024"
@@ -11249,6 +11898,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11266,6 +11916,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -11283,6 +11934,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -11300,6 +11952,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -11317,6 +11970,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -11334,6 +11988,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 585.1428571428571 1024"
@@ -11351,6 +12006,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1097.142857142857 1024"
@@ -11368,6 +12024,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11385,6 +12042,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 868.5714285714286 1024"
@@ -11402,6 +12060,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11419,6 +12078,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11436,6 +12096,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1170.2857142857142 1024"
@@ -11453,6 +12114,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11470,6 +12132,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11487,6 +12150,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11504,6 +12168,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1025.1702857142857 1024"
@@ -11521,6 +12186,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -11538,6 +12204,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -11555,6 +12222,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1260.544 1024"
@@ -11572,6 +12240,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 983.9908571428571 1024"
@@ -11589,6 +12258,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -11606,6 +12276,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -11623,6 +12294,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11640,6 +12312,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -11657,6 +12330,7 @@ exports[`Storyshots Components | Icon Basic 1`] = `
       onMouseLeave={[Function]}
     >
       <svg
+        className=""
         height={32}
         onClick={[Function]}
         viewBox="0 0 1093.12 1024"

@@ -3,7 +3,6 @@
   "plugins": [
     "react",
     "flowtype",
-    "eslint-plugin-import",
     "prettier"
   ],
   "parser": "babel-eslint",
@@ -19,15 +18,6 @@
     "react/jsx-one-expression-per-line": 0
   },
   "settings": {
-    "import/resolver": {
-      "babel-plugin-root-import": {},
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    }
   },
   "env": {
     "jest": true

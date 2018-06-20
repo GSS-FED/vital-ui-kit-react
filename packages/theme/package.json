@@ -1,0 +1,28 @@
+{
+  "name": "@vital-ui/react-theme",
+  "version": "0.7.1",
+  "description": "",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Yip (https://github.com/ericyip)",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.74.0",
+    "react": "^16.4.1",
+    "styled-components": "^3.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "styled-components": "3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "polished": "^1.9.2"
+  }
+}

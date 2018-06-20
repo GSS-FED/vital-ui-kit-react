@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Checkbox Checkbox 1`] = `
+exports[`Storyshots Components | Checkbox Basic 1`] = `
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -50,18 +50,21 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
 
 <label
   checked={false}
-  className="c0"
-  defaultChecked={false}
-  label="Label"
+  className="vital__checkbox c0"
   onChange={[Function]}
 >
   <span
+    checked={false}
     className="c1"
+    disabled={false}
   >
     <div
+      checked={false}
       className="c2"
+      disabled={false}
     >
       <svg
+        className=""
         height="12"
         onClick={[Function]}
         viewBox="0 0 1024 1024"
@@ -75,13 +78,16 @@ exports[`Storyshots Components | Checkbox Checkbox 1`] = `
     </div>
   </span>
   <span
+    checked={false}
     className="c3"
+    disabled={false}
   >
     <input
       checked={false}
       className="c4"
       defaultChecked={false}
       disabled={false}
+      onChange={[Function]}
       type="checkbox"
     />
     Label
@@ -138,22 +144,25 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
 }
 
 <div
-  className=""
+  className="vital__checkbox-group "
 >
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
+      checked={false}
       className="c1"
+      disabled={false}
     >
       <div
+        checked={false}
         className="c2"
+        disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -167,13 +176,16 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
+      checked={false}
       className="c3"
+      disabled={false}
     >
       <input
         checked={false}
         className="c4"
         defaultChecked={false}
         disabled={false}
+        onChange={[Function]}
         type="checkbox"
       />
       Label
@@ -181,18 +193,21 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
   </label>
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
+      checked={false}
       className="c1"
+      disabled={false}
     >
       <div
+        checked={false}
         className="c2"
+        disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -206,13 +221,16 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
+      checked={false}
       className="c3"
+      disabled={false}
     >
       <input
         checked={false}
         className="c4"
         defaultChecked={false}
         disabled={false}
+        onChange={[Function]}
         type="checkbox"
       />
       Label
@@ -220,18 +238,21 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
   </label>
   <label
     checked={false}
-    className="c0"
-    defaultChecked={false}
-    label="Label"
+    className="vital__checkbox c0"
     onChange={[Function]}
   >
     <span
+      checked={false}
       className="c1"
+      disabled={false}
     >
       <div
+        checked={false}
         className="c2"
+        disabled={false}
       >
         <svg
+          className=""
           height="12"
           onClick={[Function]}
           viewBox="0 0 1024 1024"
@@ -245,17 +266,114 @@ exports[`Storyshots Components | Checkbox CheckboxGroup 1`] = `
       </div>
     </span>
     <span
+      checked={false}
       className="c3"
+      disabled={false}
     >
       <input
         checked={false}
         className="c4"
         defaultChecked={false}
         disabled={false}
+        onChange={[Function]}
         type="checkbox"
       />
       Label
     </span>
   </label>
 </div>
+`;
+
+exports[`Storyshots Components | Checkbox Custom Icon 1`] = `
+.c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456297;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+  border-color: #95ACD4;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+<label
+  className="vital__checkbox c0"
+>
+  <span
+    checked={true}
+    className="c1"
+    disabled={false}
+  >
+    <div
+      checked={true}
+      className="c2"
+      disabled={false}
+    >
+      <svg
+        className=""
+        height="12"
+        onClick={[Function]}
+        viewBox="0 0 950.8571428571428 1024"
+        width="12"
+      >
+        <path
+          d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"
+          fill="#0E86FE"
+        />
+      </svg>
+    </div>
+  </span>
+  <span
+    checked={true}
+    className="c3"
+    disabled={false}
+  >
+    <input
+      checked={true}
+      className="c4"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    Custom Icon
+  </span>
+</label>
 `;

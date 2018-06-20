@@ -1,15 +1,17 @@
 {
-  "name": "@gssfed/vital-ui-kit-react",
-  "version": "0.5.2",
+  "name": "@vital-ui/react",
+  "version": "0.7.1",
   "description": "Vital UI Kit for React!",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/index.js",
-  "style": "./dist/base/global.css",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "style": "./dist/global.css",
   "scripts": {
     "test": "NODE_ENV=test jest",
     "start": "start-storybook -p 6006"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "*.css"
+  ],
   "contributors": [
     "Eric Yip (https://github.com/ericyip)",
     "Laura Lee (https://github.com/l443018)"
@@ -26,6 +28,23 @@
     "web"
   ],
   "dependencies": {
+    "@vital-ui/react-avatar": "^0.7.1",
+    "@vital-ui/react-badge": "^0.7.1",
+    "@vital-ui/react-button": "^0.7.1",
+    "@vital-ui/react-card": "^0.7.1",
+    "@vital-ui/react-form": "^0.7.1",
+    "@vital-ui/react-icon": "^0.7.1",
+    "@vital-ui/react-layout": "^0.7.1",
+    "@vital-ui/react-list": "^0.7.1",
+    "@vital-ui/react-menu": "^0.7.1",
+    "@vital-ui/react-modal": "^0.7.1",
+    "@vital-ui/react-pagination": "^0.7.1",
+    "@vital-ui/react-pill": "^0.7.1",
+    "@vital-ui/react-table": "^0.7.1",
+    "@vital-ui/react-tabs": "^0.7.1",
+    "@vital-ui/react-theme": "^0.7.1",
+    "@vital-ui/react-tooltip": "^0.7.1",
+    "@vital-ui/react-utils": "^0.7.1",
     "classnames": "^2.2.5",
     "polished": "^1.9.2",
     "popmotion": "^8.1.22",
@@ -42,6 +61,7 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
+    "flow-bin": "^0.74.0",
     "react-virtualized": "9.19.1"
   },
   "license": "MIT",

@@ -262,10 +262,10 @@ exports[`Storyshots Components | Form Full Example 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={true}
     >
       Username
@@ -276,9 +276,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
       <input
         autoFocus={false}
         className="c4"
-        defaultValue=""
         disabled={false}
         icon={null}
+        name={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -288,16 +288,16 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={true}
     >
       Fullname
     </span>
     <div
-      className="c5"
+      className="vital__multipleInput c5"
     >
       <div
         className="c6"
@@ -308,9 +308,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="First Name"
             spellCheck={false}
@@ -328,9 +328,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="Last Name"
             spellCheck={false}
@@ -342,16 +342,16 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={true}
     >
       Birthday
     </span>
     <div
-      className="c5"
+      className="vital__multipleInput c5"
     >
       <div
         className="c6"
@@ -362,9 +362,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="Month"
             spellCheck={false}
@@ -382,9 +382,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="Day"
             spellCheck={false}
@@ -402,9 +402,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="Year"
             spellCheck={false}
@@ -416,22 +416,22 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c7"
+      className="vital__label c7"
       required={false}
     >
       Website
     </span>
     <div
-      className="c5"
+      className="vital__multipleInput c5"
     >
       <div
         className="c8"
       >
         <div
-          className="c9"
+          className="vital__addon c9"
         >
           http://
         </div>
@@ -445,9 +445,9 @@ exports[`Storyshots Components | Form Full Example 1`] = `
           <input
             autoFocus={false}
             className="c4"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the left"
             spellCheck={false}
@@ -459,17 +459,17 @@ exports[`Storyshots Components | Form Full Example 1`] = `
     </div>
   </div>
   <div
-    className="c10"
+    className="vital__fieldInput c10"
   >
     <span
-      className="c7"
+      className="vital__label c7"
       required={false}
     >
       Comment
     </span>
     <textarea
       autoFocus={false}
-      className="c11"
+      className="vital__textarea c11"
       defaultValue=""
       disabled={false}
       id={null}
@@ -596,10 +596,10 @@ exports[`Storyshots Components | Form Hint 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Username
@@ -610,9 +610,9 @@ exports[`Storyshots Components | Form Hint 1`] = `
       <input
         autoFocus={false}
         className="c4"
-        defaultValue=""
         disabled={false}
         icon={null}
+        name={null}
         onChange={[Function]}
         placeholder={null}
         spellCheck={false}
@@ -621,12 +621,12 @@ exports[`Storyshots Components | Form Hint 1`] = `
       />
     </div>
     <div
-      className="c5"
+      className="vital__hint c5"
     >
       Username is available
     </div>
     <div
-      className="c6"
+      className="vital__hint c6"
     >
       Example: James Allen
     </div>
@@ -727,10 +727,10 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={true}
     >
       Username
@@ -741,9 +741,9 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
       <input
         autoFocus={false}
         className="c4"
-        defaultValue=""
         disabled={false}
         icon={null}
+        name={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -990,16 +990,16 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Weight
     </span>
     <div
-      className="c3"
+      className="vital__multipleInput c3"
     >
       <div
         className="c4"
@@ -1010,9 +1010,9 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="c6"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the right"
             spellCheck={false}
@@ -1025,7 +1025,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         className="c7"
       >
         <div
-          className="c8"
+          className="vital__addon c8"
         >
           kg
         </div>
@@ -1033,24 +1033,25 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Price
     </span>
     <div
-      className="c3"
+      className="vital__multipleInput c3"
     >
       <div
         className="c7"
       >
         <div
-          className="c8"
+          className="vital__addon c8"
         >
           <svg
+            className=""
             height={16}
             onClick={[Function]}
             viewBox="0 0 583.4605714285714 1024"
@@ -1072,9 +1073,9 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="c6"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1087,7 +1088,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         className="c7"
       >
         <div
-          className="c8"
+          className="vital__addon c8"
         >
           .00
         </div>
@@ -1095,16 +1096,16 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="c3"
+      className="vital__multipleInput c3"
     >
       <div
         className="c4"
@@ -1115,9 +1116,9 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           <input
             autoFocus={false}
             className="c6"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1130,11 +1131,10 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         className="c4"
       >
         <button
-          className="c9"
+          className="vital__button c9"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           Search
         </button>
@@ -1367,26 +1367,25 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="c3"
+      className="vital__multipleInput c3"
     >
       <div
         className="c4"
       >
         <button
-          className="c5"
+          className="vital__button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           A
         </button>
@@ -1395,11 +1394,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="vital__button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           B
         </button>
@@ -1408,11 +1406,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c5"
+          className="vital__button c5"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           C
         </button>
@@ -1426,9 +1423,9 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
           <input
             autoFocus={false}
             className="c7"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1440,16 +1437,16 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
     </div>
   </div>
   <div
-    className="c1"
+    className="vital__fieldInput c1"
   >
     <span
-      className="c2"
+      className="vital__label c2"
       required={false}
     >
       Button
     </span>
     <div
-      className="c3"
+      className="vital__multipleInput c3"
     >
       <div
         className="c4"
@@ -1460,9 +1457,9 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
           <input
             autoFocus={false}
             className="c7"
-            defaultValue=""
             disabled={false}
             icon={null}
+            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1475,11 +1472,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
         className="c4"
       >
         <button
-          className="c8"
+          className="vital__button c8"
           onClick={[Function]}
           selected={false}
           size="medium"
-          style={null}
         >
           Search
         </button>
@@ -1560,6 +1556,7 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
       defaultValue="default"
       disabled={false}
       icon={null}
+      name={null}
       placeholder="Uncontrolled Input"
       spellCheck={false}
       type="text"
@@ -1636,9 +1633,9 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
     <input
       autoFocus={false}
       className="c2"
-      defaultValue=""
       disabled={false}
       icon={null}
+      name={null}
       onChange={[Function]}
       placeholder="Controlled Input"
       spellCheck={false}
@@ -1672,7 +1669,6 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
-  padding-right: 2.2em;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1704,56 +1700,6 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   background-color: #EEF2FC;
 }
 
-.c4 {
-  vertical-align: middle;
-  height: 1.93267rem;
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
-  line-height: 1;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: 1px solid #C4D2EB;
-  border-radius: 4px;
-  color: #456297;
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  outline: 0;
-  z-index: 5;
-  padding-left: 2.2em;
-}
-
-.c4::-webkit-input-placeholder {
-  color: #95ACD4;
-}
-
-.c4::-moz-placeholder {
-  color: #95ACD4;
-}
-
-.c4:-ms-input-placeholder {
-  color: #95ACD4;
-}
-
-.c4::placeholder {
-  color: #95ACD4;
-}
-
-.c4:focus {
-  outline: 0;
-  border: 1px solid #0E86FE;
-  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
-  z-index: 7;
-}
-
-.c4:disabled {
-  pointer-events: none;
-  border-color: #C4D2EB;
-  background-color: #EEF2FC;
-}
-
 .c3 {
   position: absolute;
   top: calc(50% - 0.5em);
@@ -1769,7 +1715,7 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   color: #C4D2EB;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   top: calc(50% - 0.5em);
   width: 2.2em;
@@ -1794,17 +1740,16 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
     <input
       autoFocus={false}
       className="c2"
-      defaultValue=""
       disabled={false}
       icon="search"
+      name={null}
       placeholder="Right side icon"
       spellCheck={false}
       type="text"
     />
     <svg
-      className="c3"
+      className="c3 "
       height={16}
-      iconPosition="right"
       onClick={[Function]}
       viewBox="0 0 950.8571428571428 1024"
       width={16}
@@ -1821,18 +1766,17 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="c4"
-      defaultValue=""
+      className="c2"
       disabled={false}
       icon="search"
+      name={null}
       placeholder="Left side icon"
       spellCheck={false}
       type="text"
     />
     <svg
-      className="c5"
+      className="c4 "
       height={16}
-      iconPosition="left"
       onClick={[Function]}
       viewBox="0 0 950.8571428571428 1024"
       width={16}
@@ -1904,6 +1848,7 @@ exports[`Storyshots Components | Form/Select Basic 1`] = `
         Select One
       </span>
       <svg
+        className=""
         height="15"
         onClick={[Function]}
         style={
@@ -2040,7 +1985,7 @@ exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
 
 <textarea
   autoFocus={false}
-  className="c0"
+  className="vital__textarea c0"
   defaultValue=""
   disabled={false}
   id={null}

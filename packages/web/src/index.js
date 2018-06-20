@@ -4,21 +4,23 @@
  * MIT license
  */
 
-import Avatar from './Avatar';
-import { ButtonGroup, Button } from './Button';
 import {
   ThemeProvider,
+  defaultVariables,
   defaultTheme,
   colorPaletteGenerator,
   defaultComponentsTheme,
-} from './base';
-import { CheckboxGroup, Checkbox } from './Checkbox';
-import Box from './Box';
-import Badge from './Badge';
-import Card from './Card';
-import Icon, { withIcon } from './Icon';
-import { Radio, RadioGroup } from './Radio';
-import Switch from './Switch';
+} from '@vital-ui/react-theme';
+import Icon, {
+  withIcon,
+  defaultIcon,
+  IconContext,
+} from '@vital-ui/react-icon';
+
+import Avatar from '@vital-ui/react-avatar';
+import Button, { ButtonGroup } from '@vital-ui/react-button';
+import Badge from '@vital-ui/react-badge';
+import Card from '@vital-ui/react-card';
 import {
   Input,
   StatelessInput,
@@ -29,25 +31,32 @@ import {
   FieldInput,
   TextArea,
   StatelessTextArea,
-} from './Form';
-import Select from './Select';
-import Modal from './Modal';
-import { List, ListContent, ListItem } from './List';
-import { Pill } from './Pill';
-import Slider from './Slider';
-import Tooltip from './Tooltip';
-import ProgressBar from './ProgressBar';
-import Pagination from './Pagination';
-import Menu from './Menu';
+  Radio,
+  RadioGroup,
+  Switch,
+  Select,
+  Slider,
+  CheckboxGroup,
+  Checkbox,
+} from '@vital-ui/react-form';
+import Modal from '@vital-ui/react-modal';
+import { List, ListContent, ListItem } from '@vital-ui/react-list';
+import Pill from '@vital-ui/react-pill';
+import Tooltip from '@vital-ui/react-tooltip';
+import Pagination from '@vital-ui/react-pagination';
+import Menu from '@vital-ui/react-menu';
 import {
   Table,
   SimpleTable,
   defaultCellRenderer,
   Column,
-} from './Table';
-import Tabs from './Tabs';
-import Layout from './Layout';
-import utils from './utils';
+} from '@vital-ui/react-table';
+import Tabs from '@vital-ui/react-tabs';
+import Layout from '@vital-ui/react-layout';
+import * as utils from '@vital-ui/react-utils';
+import VitalProvider from './VitalProvider';
+
+const { Box } = utils;
 
 export {
   Avatar,
@@ -78,7 +87,6 @@ export {
   Pill,
   Slider,
   Tooltip,
-  ProgressBar,
   Pagination,
   ThemeProvider,
   defaultTheme,
@@ -94,4 +102,8 @@ export {
   utils,
   colorPaletteGenerator,
   defaultComponentsTheme,
+  defaultVariables,
+  IconContext,
+  defaultIcon,
+  VitalProvider,
 };

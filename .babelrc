@@ -2,12 +2,16 @@
   "presets": ["flow", "react", ["env", {"modules": false}]],
   "plugins": [
     "babel-plugin-transform-object-rest-spread",
-    "babel-plugin-transform-class-properties",
-    ["babel-plugin-root-import", {
-      "rootPathSuffix": "./"
-    }]
+    "babel-plugin-transform-class-properties"
   ],
   "env": {
+    "cjs": {
+      "presets": ["flow", "react", ["env", {"modules": "commonjs"}]],
+      "plugins": [
+        "babel-plugin-transform-object-rest-spread",
+        "babel-plugin-transform-class-properties"
+      ]
+    },
     "development": {
       "plugins": [["babel-plugin-styled-components", {
         "displayName": true

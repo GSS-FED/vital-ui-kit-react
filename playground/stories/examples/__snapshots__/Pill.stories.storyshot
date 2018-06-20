@@ -107,7 +107,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="c3"
+        className="vital__pill vital__pill-group c3"
         offset={0}
         onClick={[Function]}
         onSelect={[Function]}
@@ -119,7 +119,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
           Dashboard
         </span>
         <span
-          className="c5 c6"
+          className="vital__badge c5 c6"
         >
           23
         </span>
@@ -129,7 +129,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="c7"
+        className="vital__pill vital__pill-group c7"
         offset={0}
         onClick={[Function]}
         onSelect={[Function]}
@@ -141,7 +141,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
           Projects
         </span>
         <span
-          className="c5 c6"
+          className="vital__badge c5 c6"
         >
           99+
         </span>
@@ -151,7 +151,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="c7"
+        className="vital__pill vital__pill-group c7"
         offset={0}
         onClick={[Function]}
         onSelect={[Function]}
@@ -163,7 +163,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
           Issues
         </span>
         <span
-          className="c5 c6"
+          className="vital__badge c5 c6"
         >
           6
         </span>
@@ -173,7 +173,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="c7"
+        className="vital__pill vital__pill-group c7"
         offset={0}
         onClick={[Function]}
         onSelect={[Function]}
@@ -190,7 +190,7 @@ exports[`Storyshots Components | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="c7"
+        className="vital__pill vital__pill-group c7"
         offset={0}
         onClick={[Function]}
         onSelect={[Function]}

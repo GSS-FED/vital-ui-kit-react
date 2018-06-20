@@ -5,7 +5,8 @@ node_modules/
 dist
 bundle-stats.html
 yarn-error.log
-esm
+esm/
 .cache/
 coverage/
 .changelog/
+cjs/

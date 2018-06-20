@@ -1,10 +1,22 @@
 {
   "lerna": "2.9.1",
+  "packages": [
+    "packages/*",
+    "playground/"
+  ],
   "npmClient": "yarn",
-  "version": "independent",
   "useWorkspaces": true,
-  "publishConfig": {
+  "publish": {
     "access": "public"
+  },
+  "version": "0.7.1",
+  "command": {
+    "exec": {
+      "ignore": "@gssfed/playground"
+    },
+    "publish": {
+      "ignore": "@gssfed/playground"
+    }
   },
   "changelog": {
     "repo": "GSS-FED/vital-ui-kit-react",
@@ -15,6 +27,8 @@
       "breaking change": ":boom: Breaking Change"
     },
     "cacheDir": ".changelog",
-    "ignoreCommitters": ["renovate"]
+    "ignoreCommitters": [
+      "renovate"
+    ]
   }
 }

@@ -4,9 +4,9 @@ import React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import { ThemeProvider } from '../../packages/web/src';
+import { VitalProvider } from '../../packages/web/src';
 
-import '../../packages/web/dist/base/global.css';
+import '@vital-ui/react-theme/src/global.css';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
@@ -46,7 +46,7 @@ setOptions({
   sidebarAnimations: false,
 });
 
-addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
+addDecorator(story => <VitalProvider>{story()}</VitalProvider>);
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.jsx$/);
 configure(loadStories, module);
