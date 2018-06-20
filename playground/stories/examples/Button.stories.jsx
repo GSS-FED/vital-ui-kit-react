@@ -151,11 +151,11 @@ storiesOf('Components | Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <Button.ButtonGroup>
+        <Button.Group>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
-        </Button.ButtonGroup>
+        </Button.Group>
       )),
     ),
   );

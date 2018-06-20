@@ -46,12 +46,12 @@ storiesOf('Components | Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <Button.ButtonGroup style={{ padding: 10 }}>
+            <Button.Group style={{ padding: 10 }}>
               <Button>Cancel</Button>
               <Button flat nature="primary">
                 Confirm
               </Button>
-            </Button.ButtonGroup>
+            </Button.Group>
           </Card.Footer>
         </Card>
       )),
@@ -65,12 +65,12 @@ storiesOf('Components | Card', module)
           <Card.Header title="Title" />
           <Card.Container>{content}</Card.Container>
           <Card.Footer>
-            <Button.ButtonGroup style={{ padding: 10 }}>
+            <Button.Group style={{ padding: 10 }}>
               <Button link>Cancel</Button>
               <Button link nature="primary">
                 Confirm
               </Button>
-            </Button.ButtonGroup>
+            </Button.Group>
           </Card.Footer>
         </Card>
       )),
