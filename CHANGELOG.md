@@ -1,4 +1,12 @@
 # Changelog
+## 0.8.1 (2018-06-21)
+#### :bug: Bug Fix
+* `icon`
+  * [#192](https://github.com/GSS-FED/vital-ui-kit-react/pull/192) Fix icon provider in order to work without it ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.8.0 (2018-06-20)
 
 #### :boom: Breaking Change
