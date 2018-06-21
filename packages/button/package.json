@@ -20,6 +20,6 @@
     "polished": "^1.9.2"
   },
   "devDependencies": {
-    "flow-bin": "^0.74.0"
+    "flow-bin": "0.74.0"
   }
 }
