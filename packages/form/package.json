@@ -27,6 +27,6 @@
     "resize-observer-polyfill": "1.5.0"
   },
   "devDependencies": {
-    "flow-bin": "^0.74.0"
+    "flow-bin": "0.74.0"
   }
 }

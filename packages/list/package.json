@@ -23,6 +23,6 @@
     "popmotion": "8.1.22"
   },
   "devDependencies": {
-    "flow-bin": "^0.74.0"
+    "flow-bin": "0.74.0"
   }
 }
