@@ -88,7 +88,7 @@ Card.defaultProps = {
 Card.Header = Header;
 Card.Container = withDeprecationWarnings(Content, {
   message:
-    'Card.Cotainer will be deprecated next patch. Use Card.Content instead.',
+    'Card.Container will be deprecated next patch. Use Card.Content instead.',
 });
 Card.Content = Content;
 Card.Footer = Footer;
