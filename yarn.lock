@@ -106,19 +106,19 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@gssfed/eslint-config-base@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config-base/-/eslint-config-base-0.0.1.tgz#95bfff75f0fb2a03afe7e20337bae97dc774d1e1"
+"@gssfed/eslint-config-base@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config-base/-/eslint-config-base-0.0.3.tgz#a288d67b3fdc2866daab29dfc83c488aa9d54940"
   dependencies:
     eslint-restricted-globals "^0.1.1"
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-"@gssfed/eslint-config@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config/-/eslint-config-0.0.3.tgz#ccaa205c472def2fa299e304170e71ec2aeadcd3"
+"@gssfed/eslint-config@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@gssfed/eslint-config/-/eslint-config-0.0.4.tgz#6924f83270a37a6cc874b1a4d0a70b5e1896f33f"
   dependencies:
-    "@gssfed/eslint-config-base" "^0.0.1"
+    "@gssfed/eslint-config-base" "^0.0.3"
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
