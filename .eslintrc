@@ -1,5 +1,11 @@
 {
-  "extends": ["@gssfed", "prettier", "plugin:flowtype/recommended"],
+  "extends": [
+    "@gssfed",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react"
+  ],
   "plugins": [
     "react",
     "flowtype",
