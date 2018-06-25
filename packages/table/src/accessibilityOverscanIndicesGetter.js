@@ -46,23 +46,20 @@ export default function defaultOverscanIndicesGetter({
   // Make sure we render at least 1 cell extra before and after (except near boundaries)
   // This is necessary in order to support keyboard navigation (TAB/SHIFT+TAB) in some cases
   // For more info see issues #625
-  overscanCellsCount = Math.max(1, overscanCellsCount);
-
   if (scrollDirection === SCROLL_DIRECTION_FORWARD) {
     return {
       overscanStartIndex: Math.max(0, startIndex - 1),
       overscanStopIndex: Math.min(
         cellCount - 1,
-        stopIndex + overscanCellsCount,
+        stopIndex + Math.max(1, overscanCellsCount),
       ),
-    };
-  } else {
-    return {
-      overscanStartIndex: Math.max(
-        0,
-        startIndex - overscanCellsCount,
-      ),
-      overscanStopIndex: Math.min(cellCount - 1, stopIndex + 1),
     };
   }
+  return {
+    overscanStartIndex: Math.max(
+      0,
+      startIndex - overscanCellsCount,
+    ),
+    overscanStopIndex: Math.min(cellCount - 1, stopIndex + 1),
+  };
 }

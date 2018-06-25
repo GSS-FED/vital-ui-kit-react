@@ -51,5 +51,9 @@ jobs:
             - node_modules
 
       - run:
+          name: Lint check
+          command: yarn run lint
+          
+      - run:
           name: Test storyshots
           command: yarn run test:web
