@@ -69,7 +69,7 @@ workflows:
   test_and_lint:
     jobs:
       - checkout_code
-      - lint:
+      - lint_check:
           requires:
             - checkout_code
       - test:
