@@ -71,14 +71,14 @@ yarn add @vital-ui/react
 # npm
 npm i --save @vital-ui/react
 
-## or isntall individually packages
+## or install individual packages
 yarn add @vital-ui/react-avatar
 ```
 
 ```js
 // VitalProvider contains default theme and icon, you can override it.
 import { VitalProvider } from '@vital-ui/react'
-// recommend importing the global style.
+// recommend importing the global reset style.
 import '@vital-ui/react/src/global.css'
 
 /* ... */
