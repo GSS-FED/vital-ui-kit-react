@@ -39,15 +39,14 @@ jobs:
 
   lint_check: 
     <<: *container_config
-    steps:
-      run: yarn run lint
+    run: yarn run lint
   
   test: 
     <<: *container_config
-    steps:
-      run: 
-        name: Test storyshots
-        command: yarn run test:web
+    run: 
+      name: Test storyshots
+      command: yarn run test:web
+      
 
 workflows:
   version: 2
