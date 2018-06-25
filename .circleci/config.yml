@@ -5,12 +5,23 @@ references:
   container_config: &container_config
     docker:
       - image: circleci/node:8.11.3@sha256:38bca14e7fa26f30d477991460c118c320dd18899030b8220fe709c46a3f98e7
+  workspace_root: &workspace_root
+    /tmp/workspace
 
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
+  restore_repo: &restore_repo
+    restore_cache:
+      keys:
+        - v1-repo-{{ .Branch }}-{{ .Revision }}
+        - v1-repo-{{ .Branch }}
+        - v1-repo
 jobs:
   checkout_code:
     <<: *container_config
     steps:
-      - checkout
+      - *restore_repo
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -39,13 +50,17 @@ jobs:
 
   lint_check: 
     <<: *container_config
-    run: yarn run lint
+    steps:
+      - *attach_workspace 
+      run: yarn run lint
   
   test: 
     <<: *container_config
-    run: 
-      name: Test storyshots
-      command: yarn run test:web
+    steps:
+      - *attach_workspace
+      run: 
+        name: Test storyshots
+        command: yarn run test:web
       
 
 workflows:
