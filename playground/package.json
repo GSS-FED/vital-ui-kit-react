@@ -13,7 +13,7 @@
   "devDependencies": {
     "@storybook/react": "3.4.7",
     "babel-plugin-styled-components": "1.5.1",
-    "styled-components": "3.3.2"
+    "styled-components": "3.3.3"
   },
   "dependencies": {
     "@vital-ui/react": "^0.8.0",
