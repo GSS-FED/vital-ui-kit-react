@@ -8,7 +8,29 @@
 ## File structure
 Vital UI Kit React is a monorepo, we use [Lerna](https://github.com/lerna/lerna) for package management.
 
-**packages** divided `web` and `native`.
+**packages**
+
+```
+@vital-ui/react-avatar
+@vital-ui/react-badge
+@vital-ui/react-button
+@vital-ui/react-card
+@vital-ui/react-form
+@vital-ui/react-icon
+@vital-ui/react-layout
+@vital-ui/react-list
+@vital-ui/react-menu
+@vital-ui/react-modal
+@vital-ui/react-pagination
+@vital-ui/react-pill
+@vital-ui/react-table
+@vital-ui/react-tabs
+@vital-ui/react-theme
+@vital-ui/react-tooltip
+@vital-ui/react-utils
+// this one contains all packages
+@vital-ui/react
+```
 
 ## Workflow
 
@@ -16,7 +38,7 @@ After cloning UI Kit, please do yarn to install the dependencies, using `yarn ru
 
 ### Developing with Storybook
 After install the dependencies
-- `yarn run storybook:web` will run storybook in development mode.
+- `yarn run storybook` will run `playground` storybook in development mode.
 
 ### Build and Publish
 
