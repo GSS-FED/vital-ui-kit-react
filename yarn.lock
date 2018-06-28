@@ -7351,7 +7351,11 @@ polish@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/polish/-/polish-0.2.3.tgz#4a95296b5501dd10d3b25b8e6ed8339ef4deb147"
 
-polished@1.9.2, polished@^1.9.2:
+polished@1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.3.tgz#d61b8a0c4624efe31e2583ff24a358932b6b75e1"
+
+polished@^1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/polished/-/polished-1.9.2.tgz#d705cac66f3a3ed1bd38aad863e2c1e269baf6b6"
 
