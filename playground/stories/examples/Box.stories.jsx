@@ -32,9 +32,9 @@ const ColorBox = styled(Box)`
     );
 `;
 
-storiesOf('Components | Box', module).add(
+storiesOf('utils | Box', module).add(
   'Basic',
-  withInfo(`info`)(() => (
+  withInfo(`Basic box div`)(() => (
     <ColorBox padding="20px">This is a box!</ColorBox>
   )),
 );

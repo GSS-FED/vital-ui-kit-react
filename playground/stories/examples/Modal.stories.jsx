@@ -29,7 +29,7 @@ const items = [
   { text: 'User Center' },
 ];
 
-storiesOf('Components | Modal', module)
+storiesOf('Packages | Modal', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

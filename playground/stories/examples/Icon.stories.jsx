@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   }
 `;
 
-storiesOf('Components | Icon', module)
+storiesOf('Packages | Icon', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

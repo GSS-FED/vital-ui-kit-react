@@ -17,7 +17,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Avatar } from '@vital-ui/react';
 
-storiesOf('Components | Avatar', module)
+storiesOf('Packages | Avatar', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

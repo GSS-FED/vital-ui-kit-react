@@ -22,7 +22,7 @@ const Display = styled.div`
   padding: 20px;
 `;
 
-storiesOf('Components | List', module)
+storiesOf('Packages | List', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

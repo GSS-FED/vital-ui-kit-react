@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/jsx-wrap-multilines */
 
 import React from 'react';
 import styled from 'styled-components';
@@ -18,7 +19,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Tabs, Badge } from '@vital-ui/react';
 
-storiesOf('Components | Tab', module)
+storiesOf('Packages | Tab', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

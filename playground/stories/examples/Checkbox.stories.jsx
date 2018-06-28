@@ -43,7 +43,7 @@ export class CheckBoxExample extends React.Component {
   }
 }
 
-storiesOf('Components | Checkbox', module)
+storiesOf('Packages | Form/Checkbox', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -67,8 +67,8 @@ storiesOf('Components | Checkbox', module)
   )
   .add(
     'CheckboxGroup',
-    withInfo(`info`)(
-      withNotes('This is checkboxgroup')(() => (
+    withInfo()(
+      withNotes('Checkgroup')(() => (
         <CheckboxGroup>
           <CheckBoxExample
             round={boolean('round', false)}

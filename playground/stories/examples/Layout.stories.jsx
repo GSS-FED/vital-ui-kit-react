@@ -18,7 +18,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Layout } from '@vital-ui/react';
 
-storiesOf('Components | Layout', module).add(
+storiesOf('Packages | Layout', module).add(
   'Basic',
   withInfo(`info`)(() => (
     <Layout style={{ height: '100vh' }}>

@@ -22,7 +22,7 @@ const MenuIcon = styled(Icon)`
   margin-right: 10px;
 `;
 
-storiesOf('Components | Menu', module)
+storiesOf('Packages | Menu', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

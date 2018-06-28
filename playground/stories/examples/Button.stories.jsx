@@ -21,7 +21,7 @@ import { Welcome } from '@storybook/react/demo';
 
 import { Button, Icon } from '@vital-ui/react';
 
-storiesOf('Components | Button', module)
+storiesOf('Packages | Button', module)
   .addDecorator(withKnobs)
   .add(
     'Default',

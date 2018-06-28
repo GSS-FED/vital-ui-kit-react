@@ -21,7 +21,7 @@ import heroImage from '../../../assets/card-header-pic.png';
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';
 
-storiesOf('Components | Card', module)
+storiesOf('Packages | Card', module)
   .addDecorator(withKnobs)
   .add(
     'Default Full Button type',

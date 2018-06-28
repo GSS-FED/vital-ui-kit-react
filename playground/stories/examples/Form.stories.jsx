@@ -29,6 +29,9 @@ import {
   Select,
   Button,
   Icon,
+  Switch,
+  Checkbox,
+  CheckboxGroup,
 } from '@vital-ui/react';
 
 const FormWrapper = styled.div`
@@ -48,7 +51,7 @@ const groupItem = [
   { items: [{ content: 'yoyo', value: 'yoyo' }] },
 ];
 
-storiesOf('Components | Form', module)
+storiesOf('Packages | Form', module)
   .addDecorator(withKnobs)
   .add(
     'Full Example',
@@ -79,6 +82,34 @@ storiesOf('Components | Form', module)
           </FieldInput>
           <FieldInput label="Comment" inline>
             <TextArea placeholder="Comment here" minRows={3} />
+          </FieldInput>
+          <FieldInput label="Send Email" inline>
+            <Switch
+              isDisabled={boolean('Switch Disabled', false)}
+              isRound={boolean('Switch Round', false)}
+            />
+          </FieldInput>
+          <FieldInput label="Interested in" inline>
+            <CheckboxGroup
+              style={{ paddingTop: 'calc(0.46633rem + 2px)' }}
+            >
+              <Checkbox
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="React"
+              />
+              <Checkbox
+                defaultChecked
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="CSS"
+              />
+              <Checkbox
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="Vital"
+              />
+            </CheckboxGroup>
           </FieldInput>
         </FormWrapper>
       )),
@@ -181,7 +212,7 @@ storiesOf('Components | Form', module)
     ),
   );
 
-storiesOf('Components | Form/Input', module)
+storiesOf('Packages | Form/Input', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -237,7 +268,7 @@ storiesOf('Components | Form/Input', module)
     ),
   );
 
-storiesOf('Components | Form/TextArea', module)
+storiesOf('Packages | Form/TextArea', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -269,7 +300,7 @@ storiesOf('Components | Form/TextArea', module)
     ),
   );
 
-storiesOf('Components | Form/Select', module)
+storiesOf('Packages | Form/Select', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -278,6 +309,47 @@ storiesOf('Components | Form/Select', module)
         <FormWrapper>
           <Select placeholder="Select One" items={items} />
         </FormWrapper>
+      )),
+    ),
+  );
+
+storiesOf('Packages | Form/Switch', module)
+  .addDecorator(withKnobs)
+  .add(
+    'Basic',
+    withInfo()(
+      withNotes()(() => (
+        <Switch
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
+      )),
+    ),
+  )
+  .add(
+    'with Icon Button',
+    withInfo()(
+      withNotes()(() => (
+        <Switch
+          iconBtn="wifi"
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
+      )),
+    ),
+  )
+  .add(
+    'with Icon Label',
+    withInfo(`
+      Check out icon package for the name.
+    `)(
+      withNotes()(() => (
+        <Switch
+          iconLabelFront="wifi"
+          iconLabelBack="wifi"
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
       )),
     ),
   );

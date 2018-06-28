@@ -38,7 +38,15 @@ After cloning UI Kit, please do yarn to install the dependencies, using `yarn ru
 
 ### Developing with Storybook
 After install the dependencies
-- `yarn run storybook` will run `playground` storybook in development mode.
+- `yarn run storybook` will run `playground` storybook, and all packages will be watched.
+- All stories are located in `playground/stories`.
+
+#### Add new package
+- Create a package like others.
+- Add it to playground, run `lerna add @vital-ui/your-new-package --scope @gssfed/playground`
+
+### Test
+- `yarn run test:web`
 
 ### Build and Publish
 

@@ -29,7 +29,7 @@ const items = [
   { name: 'color', value: 'green', label: 'Green' },
 ];
 
-storiesOf('Components | Radio', module)
+storiesOf('Packages | Radio', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
