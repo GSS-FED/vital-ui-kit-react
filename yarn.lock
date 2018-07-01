@@ -8672,9 +8672,9 @@ rollup-plugin-auto-external@1.2.0:
     read-pkg "^3.0.0"
     safe-resolve "^1.0.0"
 
-rollup-plugin-babel@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-3.0.4.tgz#41b3e762fe64450dd61da3105a2cf7ad76be4edc"
+rollup-plugin-babel@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-3.0.7.tgz#5b13611f1ab8922497e9d15197ae5d8a23fe3b1e"
   dependencies:
     rollup-pluginutils "^1.5.0"
 
