@@ -283,3 +283,287 @@ exports[`Storyshots Components | Radio Disable 1`] = `
   </label>
 </div>
 `;
+
+exports[`Storyshots Packages | Radio Basic 1`] = `
+.c0 {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 5px 10px 0;
+  word-break: break-word;
+  color: #456297;
+  line-height: 1.3333rem;
+  font-size: 1rem;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.c0:hover input {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  border-color: #0E86FE;
+}
+
+.c1 {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  box-sizing: content-box;
+  margin: -2px 0 0 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #C4D2EB;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  cursor: pointer;
+}
+
+.c1:checked {
+  border-color: #0E86FE;
+}
+
+.c1:checked:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background: #0E86FE;
+}
+
+.c1:after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: calc((15px - 9px) / 2);
+  left: calc((15px - 9px) / 2);
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+.c2 {
+  padding-left: 4px;
+}
+
+<div
+  className="vital__radio-group "
+>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="red"
+    />
+    <span
+      className="c2"
+    >
+      Red
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={true}
+      name="color"
+      type="radio"
+      value="blue"
+    />
+    <span
+      className="c2"
+    >
+      Blue
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="yellow"
+    />
+    <span
+      className="c2"
+    >
+      Yellow
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="green"
+    />
+    <span
+      className="c2"
+    >
+      Green
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Packages | Radio Disable 1`] = `
+.c0 {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 5px 10px 0;
+  word-break: break-word;
+  color: #95ACD4;
+  line-height: 1.3333rem;
+  font-size: 1rem;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c0:hover input {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  border-color: #0E86FE;
+}
+
+.c1 {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  box-sizing: content-box;
+  margin: -2px 0 0 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #C4D2EB;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  cursor: pointer;
+}
+
+.c1:checked {
+  border-color: #C4D2EB;
+}
+
+.c1:checked:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background: #95ACD4;
+}
+
+.c1:after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: calc((15px - 9px) / 2);
+  left: calc((15px - 9px) / 2);
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+.c2 {
+  padding-left: 4px;
+}
+
+<div
+  className="vital__radio-group "
+>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="red"
+    />
+    <span
+      className="c2"
+    >
+      Red
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={true}
+      name="color"
+      type="radio"
+      value="blue"
+    />
+    <span
+      className="c2"
+    >
+      Blue
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="yellow"
+    />
+    <span
+      className="c2"
+    >
+      Yellow
+    </span>
+  </label>
+  <label
+    className="vital__radio c0"
+  >
+    <input
+      className="vital__radio-input c1"
+      defaultChecked={false}
+      name="color"
+      type="radio"
+      value="green"
+    />
+    <span
+      className="c2"
+    >
+      Green
+    </span>
+  </label>
+</div>
+`;

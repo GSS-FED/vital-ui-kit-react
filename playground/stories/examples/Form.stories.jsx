@@ -17,6 +17,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 
 import {
+  SelectNew,
   Label,
   Input,
   StatelessInput,
@@ -39,16 +40,10 @@ const FormWrapper = styled.div`
   padding: 40px;
 `;
 
-const items = [
-  { content: 'All Files', value: 'all' },
-  { content: 'PDF', value: 'pdf' },
-  { content: 'PPT', value: 'ppt' },
-];
-
 const groupItem = [
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { value: 'red' },
+  { value: 'blue' },
+  { value: 'grey' },
 ];
 
 storiesOf('Packages | Form', module)
@@ -255,13 +250,12 @@ storiesOf('Packages | Form/Input', module)
         <FormWrapper>
           <StatelessInput
             placeholder="Right side icon"
-            icon="search"
+            rightIcon="search"
           />
           <br />
           <StatelessInput
             placeholder="Left side icon"
-            icon="search"
-            iconPosition="left"
+            leftIcon="search"
           />
         </FormWrapper>
       )),
@@ -300,25 +294,12 @@ storiesOf('Packages | Form/TextArea', module)
     ),
   );
 
-storiesOf('Packages | Form/Select', module)
-  .addDecorator(withKnobs)
-  .add(
-    'Basic',
-    withInfo(``)(
-      withNotes(`Uncontrolled component`)(() => (
-        <FormWrapper>
-          <Select placeholder="Select One" items={items} />
-        </FormWrapper>
-      )),
-    ),
-  );
-
 storiesOf('Packages | Form/Switch', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
-    withInfo()(
-      withNotes()(() => (
+    withInfo(``)(
+      withNotes('')(() => (
         <Switch
           isDisabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
@@ -328,8 +309,8 @@ storiesOf('Packages | Form/Switch', module)
   )
   .add(
     'with Icon Button',
-    withInfo()(
-      withNotes()(() => (
+    withInfo(``)(
+      withNotes('')(() => (
         <Switch
           iconBtn="wifi"
           isDisabled={boolean('Disabled', false)}
@@ -343,7 +324,7 @@ storiesOf('Packages | Form/Switch', module)
     withInfo(`
       Check out icon package for the name.
     `)(
-      withNotes()(() => (
+      withNotes('')(() => (
         <Switch
           iconLabelFront="wifi"
           iconLabelBack="wifi"
