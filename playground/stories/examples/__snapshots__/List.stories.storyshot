@@ -1,726 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | List Basic 1`] = `
-.c6 {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.75rem;
-  font-size: 0.725rem;
-  background-color: #00C3FF;
-  color: #ffffff;
-}
-
-.c1 {
-  list-style: none;
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.c2 {
-  border-radius: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  background: #ffffff;
-  color: #456297;
-}
-
-.c3:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c9 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: calc(0.75rem + 16px);
-  color: #456297;
-  background: #F7F9FE;
-}
-
-.c9:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: calc(0.75rem + 32px);
-  color: #456297;
-  background: #EEF2FC;
-}
-
-.c10:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: calc(0.75rem + 48px);
-  color: #456297;
-  background: #D8E3F6;
-}
-
-.c11:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c12 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  padding-left: calc(0.75rem + 64px);
-  color: #456297;
-  background: #C4D2EB;
-}
-
-.c13 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  padding-left: calc(0.75rem + 32px);
-  color: #456297;
-  background: #EEF2FC;
-}
-
-.c15 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  background: #ffffff;
-  color: #456297;
-}
-
-.c4 {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.c7 {
-  position: absolute;
-  right: 15px;
-  top: calc(50% - 5px);
-  pointer-events: none;
-  color: inherit;
-  -webkit-transform: rotateZ(0deg);
-  -ms-transform: rotateZ(0deg);
-  transform: rotateZ(0deg);
-  -webkit-transition: all 0.05s ease-in;
-  transition: all 0.05s ease-in;
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-}
-
-.c8 {
-  will-change: height;
-  background-color: #f7f9fd;
-  overflow: hidden;
-}
-
-.c5 {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.c16 {
-  text-align: right;
-  padding-right: 0;
-}
-
-.c14 {
-  display: block;
-  font-size: 1.2rem;
-  border-left: none;
-  border-right: none;
-  padding: 0.928rem 2.856rem 0.928rem 1.428rem;
-  line-height: 1.866rem;
-}
-
-.c0 {
-  padding: 20px;
-}
-
-<div
-  className="c0"
->
-  <ul
-    className="vital__list c1"
-    icon={null}
-  >
-    <li
-      className="vital__ListItem c2"
-    >
-      <div
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="c4"
-        >
-          Level 1
-        </div>
-        <div
-          className="c5 c4"
-        >
-          <span
-            className="vital__badge c6"
-          >
-            99+
-          </span>
-        </div>
-        <svg
-          className="c7 "
-          height={10}
-          onClick={[Function]}
-          open={false}
-          viewBox="0 0 1024 1024"
-          width={10}
-        >
-          <path
-            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
-      <ul
-        className="c8"
-      >
-        <li
-          className="vital__ListItem c2"
-        >
-          <div
-            className="c9"
-            onClick={[Function]}
-          >
-            <div
-              className="c4"
-            >
-              Level 2
-            </div>
-            <svg
-              className="c7 "
-              height={10}
-              onClick={[Function]}
-              open={false}
-              viewBox="0 0 1024 1024"
-              width={10}
-            >
-              <path
-                d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-          <ul
-            className="c8"
-          >
-            <li
-              className="vital__ListItem c2"
-            >
-              <div
-                className="c10"
-                onClick={[Function]}
-              >
-                <div
-                  className="c4"
-                >
-                  Level 3
-                </div>
-                <svg
-                  className="c7 "
-                  height={10}
-                  onClick={[Function]}
-                  open={false}
-                  viewBox="0 0 1024 1024"
-                  width={10}
-                >
-                  <path
-                    d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <ul
-                className="c8"
-              >
-                <li
-                  className="vital__ListItem c2"
-                >
-                  <div
-                    className="c11"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="c4"
-                    >
-                      Level 4
-                    </div>
-                    <svg
-                      className="c7 "
-                      height={10}
-                      onClick={[Function]}
-                      open={false}
-                      viewBox="0 0 1024 1024"
-                      width={10}
-                    >
-                      <path
-                        d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </div>
-                  <ul
-                    className="c8"
-                  >
-                    <li
-                      className="vital__ListItem c2"
-                    >
-                      <div
-                        className="c12"
-                        onClick={[Function]}
-                      >
-                        <div
-                          className="c4"
-                        >
-                          Level 5
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  className="vital__ListItem c2"
-                >
-                  <div
-                    className="c11"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="c4"
-                    >
-                      Level 4
-                    </div>
-                    <svg
-                      className="c7 "
-                      height={10}
-                      onClick={[Function]}
-                      open={false}
-                      viewBox="0 0 694.8571428571428 1024"
-                      width={10}
-                    >
-                      <path
-                        d="M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </div>
-                </li>
-                <li
-                  className="vital__ListItem c2"
-                >
-                  <div
-                    className="c11"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="c4"
-                    >
-                      Level 4 link with badge
-                    </div>
-                    <div
-                      className="c5 c4"
-                    >
-                      <span
-                        className="vital__badge c6"
-                      >
-                        1
-                      </span>
-                    </div>
-                    <svg
-                      className="c7 "
-                      height={10}
-                      onClick={[Function]}
-                      open={false}
-                      viewBox="0 0 694.8571428571428 1024"
-                      width={10}
-                    >
-                      <path
-                        d="M632.571 501.143l-424 424c-14.286 14.286-37.143 14.286-51.429 0l-94.857-94.857c-14.286-14.286-14.286-37.143 0-51.429l303.429-303.429-303.429-303.429c-14.286-14.286-14.286-37.143 0-51.429l94.857-94.857c14.286-14.286 37.143-14.286 51.429 0l424 424c14.286 14.286 14.286 37.143 0 51.429z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li
-              className="vital__ListItem c2"
-            >
-              <div
-                className="c13"
-                onClick={[Function]}
-              >
-                <div
-                  className="c4"
-                >
-                  Level 3
-                </div>
-              </div>
-            </li>
-            <li
-              className="vital__ListItem c2"
-            >
-              <div
-                className="c10"
-                onClick={[Function]}
-              >
-                <div
-                  className="c4"
-                >
-                  Level 3 has Content
-                </div>
-                <svg
-                  className="c7 "
-                  height={10}
-                  onClick={[Function]}
-                  open={false}
-                  viewBox="0 0 1024 1024"
-                  width={10}
-                >
-                  <path
-                    d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <ul
-                className="c8"
-              >
-                <div
-                  className="c14"
-                >
-                  Vero sint molestiae sit consequuntur aut aliquam. Aut porro maiores est rerum sed quasi fugiat culpa fuga. Voluptatem quasi excepturi earum. Repellendus qui deleniti aut blanditiis exercitationem eum dolorem libero debitis.
-                </div>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li
-      className="vital__ListItem c2"
-    >
-      <div
-        className="c15"
-        onClick={[Function]}
-      >
-        <div
-          className="c4"
-        >
-          Level 1
-        </div>
-        <div
-          className="c16 c4"
-        >
-          <span
-            className="vital__badge c6"
-          >
-            10
-          </span>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots Components | List Tree/ Accordion 1`] = `
-.c9 {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.75rem;
-  font-size: 0.725rem;
-  background-color: #00C3FF;
-  color: #ffffff;
-}
-
-.c1 {
-  list-style: none;
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow: hidden;
-  border-radius: 4px;
-}
-
-.c2 {
-  border-radius: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: #D8E3F6;
-  border-top: #D8E3F6;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  background: #ffffff;
-  color: #456297;
-}
-
-.c3:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.c5 {
-  position: absolute;
-  right: 15px;
-  top: calc(50% - 5px);
-  pointer-events: none;
-  color: inherit;
-  -webkit-transform: rotateZ(0deg);
-  -ms-transform: rotateZ(0deg);
-  transform: rotateZ(0deg);
-  -webkit-transition: all 0.05s ease-in;
-  transition: all 0.05s ease-in;
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-}
-
-.c6 {
-  will-change: height;
-  background-color: #f7f9fd;
-  overflow: hidden;
-}
-
-.c8 {
-  text-align: right;
-  padding-right: 20px;
-}
-
-.c7 {
-  display: block;
-  font-size: 1.2rem;
-  border-left: none;
-  border-right: none;
-  padding: 0.928rem 2.856rem 0.928rem 1.428rem;
-  line-height: 1.866rem;
-}
-
-.c0 {
-  padding: 20px;
-}
-
-<div
-  className="c0"
->
-  <ul
-    className="vital__list c1"
-    icon={null}
-  >
-    <li
-      className="vital__ListItem c2"
-    >
-      <div
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="c4"
-        >
-          Collaspe 1
-        </div>
-        <svg
-          className="c5 "
-          height={10}
-          onClick={[Function]}
-          open={false}
-          viewBox="0 0 1024 1024"
-          width={10}
-        >
-          <path
-            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
-      <ul
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          Quo voluptates numquam nulla libero vel facere quibusdam sunt. Hic sed delectus et ipsum iste. Eos eligendi quibusdam. Possimus quisquam minima velit maxime officia consequatur et magni. Necessitatibus quos sed alias architecto est pariatur. Et vero aperiam quaerat. Ut numquam quaerat et aut neque ratione velit et dolor. Ipsam repellendus saepe quas et iste debitis molestias recusandae ipsum. Praesentium cumque est velit delectus non atque ullam. Non quis voluptate doloribus voluptatum assumenda. Illum est incidunt a eius voluptatum laudantium repellat. Ipsum eos non molestias qui ab quasi pariatur. Ipsum ea perferendis dolorem nihil et dolor. Expedita officia accusantium incidunt illum illum consequuntur velit.
-        </div>
-      </ul>
-    </li>
-    <li
-      className="vital__ListItem c2"
-    >
-      <div
-        className="c3"
-        onClick={[Function]}
-      >
-        <div
-          className="c4"
-        >
-          Collaspe 2
-        </div>
-        <div
-          className="c8 c4"
-        >
-          <span
-            className="vital__badge c9"
-          >
-            1
-          </span>
-        </div>
-        <svg
-          className="c5 "
-          height={10}
-          onClick={[Function]}
-          open={false}
-          viewBox="0 0 1024 1024"
-          width={10}
-        >
-          <path
-            d="M961.714 461.714l-424 423.429c-14.286 14.286-37.143 14.286-51.429 0l-424-423.429c-14.286-14.286-14.286-37.714 0-52l94.857-94.286c14.286-14.286 37.143-14.286 51.429 0l303.429 303.429 303.429-303.429c14.286-14.286 37.143-14.286 51.429 0l94.857 94.286c14.286 14.286 14.286 37.714 0 52z"
-            fill="currentColor"
-          />
-        </svg>
-      </div>
-      <ul
-        className="c6"
-      >
-        <div
-          className="c7"
-        >
-          Nostrum tempora ipsum et in. Numquam praesentium voluptas itaque ratione iste quisquam harum. Voluptatibus sit rerum. Vitae consequatur eaque aliquid porro perspiciatis culpa et sit. Iste illo eum cum. Et ea beatae dolorum tempore possimus iste quia nobis beatae. Aut voluptatibus illo possimus inventore laudantium nobis aperiam. Aut aut vel officiis laborum nihil dolor. Aut velit eligendi at at sed esse inventore. Perspiciatis ipsum debitis in voluptatem error cumque iure earum nostrum. Quo recusandae dolores esse. Ipsam voluptas aut et nisi iste qui minima mollitia alias.
-        </div>
-      </ul>
-    </li>
-  </ul>
-</div>
-`;
-
 exports[`Storyshots Packages | List Basic 1`] = `
+.c8 {
+  cursor: pointer;
+}
+
 .c6 {
   display: inline-block;
   vertical-align: middle;
@@ -771,7 +55,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   text-decoration: none;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -791,35 +75,6 @@ exports[`Storyshots Packages | List Basic 1`] = `
   padding-left: calc(0.75rem + 16px);
   color: #456297;
   background: #F7F9FE;
-}
-
-.c9:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: calc(0.75rem + 32px);
-  color: #456297;
-  background: #EEF2FC;
 }
 
 .c10:hover {
@@ -846,9 +101,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  padding-left: calc(0.75rem + 48px);
+  padding-left: calc(0.75rem + 32px);
   color: #456297;
-  background: #D8E3F6;
+  background: #EEF2FC;
 }
 
 .c11:hover {
@@ -870,12 +125,41 @@ exports[`Storyshots Packages | List Basic 1`] = `
   border: none;
   border-bottom: none;
   border-top: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: calc(0.75rem + 48px);
+  color: #456297;
+  background: #D8E3F6;
+}
+
+.c12:hover {
+  background-color: #D8E3F6;
+  color: #419FFE;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13 {
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-bottom: -1px;
+  padding: 0.75rem 1.3rem;
+  font-size: 1.125rem;
+  word-break: break-word;
+  border: none;
+  border-bottom: none;
+  border-top: none;
   padding-left: calc(0.75rem + 64px);
   color: #456297;
   background: #C4D2EB;
 }
 
-.c13 {
+.c14 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -892,7 +176,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   background: #EEF2FC;
 }
 
-.c15 {
+.c16 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -929,7 +213,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   transform-origin: center center;
 }
 
-.c8 {
+.c9 {
   will-change: height;
   background-color: #f7f9fd;
   overflow: hidden;
@@ -940,12 +224,12 @@ exports[`Storyshots Packages | List Basic 1`] = `
   padding-right: 20px;
 }
 
-.c16 {
+.c17 {
   text-align: right;
   padding-right: 0;
 }
 
-.c14 {
+.c15 {
   display: block;
   font-size: 1.2rem;
   border-left: none;
@@ -987,7 +271,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
           </span>
         </div>
         <svg
-          className="c7 "
+          className="c7 c8"
           height={10}
           onClick={[Function]}
           open={false}
@@ -1001,13 +285,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
         </svg>
       </div>
       <ul
-        className="c8"
+        className="c9"
       >
         <li
           className="vital__ListItem c2"
         >
           <div
-            className="c9"
+            className="c10"
             onClick={[Function]}
           >
             <div
@@ -1016,7 +300,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
               Level 2
             </div>
             <svg
-              className="c7 "
+              className="c7 c8"
               height={10}
               onClick={[Function]}
               open={false}
@@ -1030,13 +314,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
             </svg>
           </div>
           <ul
-            className="c8"
+            className="c9"
           >
             <li
               className="vital__ListItem c2"
             >
               <div
-                className="c10"
+                className="c11"
                 onClick={[Function]}
               >
                 <div
@@ -1045,7 +329,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   Level 3
                 </div>
                 <svg
-                  className="c7 "
+                  className="c7 c8"
                   height={10}
                   onClick={[Function]}
                   open={false}
@@ -1059,13 +343,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
                 </svg>
               </div>
               <ul
-                className="c8"
+                className="c9"
               >
                 <li
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c11"
+                    className="c12"
                     onClick={[Function]}
                   >
                     <div
@@ -1074,7 +358,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       Level 4
                     </div>
                     <svg
-                      className="c7 "
+                      className="c7 c8"
                       height={10}
                       onClick={[Function]}
                       open={false}
@@ -1088,13 +372,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
                     </svg>
                   </div>
                   <ul
-                    className="c8"
+                    className="c9"
                   >
                     <li
                       className="vital__ListItem c2"
                     >
                       <div
-                        className="c12"
+                        className="c13"
                         onClick={[Function]}
                       >
                         <div
@@ -1110,7 +394,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c11"
+                    className="c12"
                     onClick={[Function]}
                   >
                     <div
@@ -1119,7 +403,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       Level 4
                     </div>
                     <svg
-                      className="c7 "
+                      className="c7 c8"
                       height={10}
                       onClick={[Function]}
                       open={false}
@@ -1137,7 +421,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c11"
+                    className="c12"
                     onClick={[Function]}
                   >
                     <div
@@ -1155,7 +439,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       </span>
                     </div>
                     <svg
-                      className="c7 "
+                      className="c7 c8"
                       height={10}
                       onClick={[Function]}
                       open={false}
@@ -1175,7 +459,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
               className="vital__ListItem c2"
             >
               <div
-                className="c13"
+                className="c14"
                 onClick={[Function]}
               >
                 <div
@@ -1189,7 +473,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
               className="vital__ListItem c2"
             >
               <div
-                className="c10"
+                className="c11"
                 onClick={[Function]}
               >
                 <div
@@ -1198,7 +482,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   Level 3 has Content
                 </div>
                 <svg
-                  className="c7 "
+                  className="c7 c8"
                   height={10}
                   onClick={[Function]}
                   open={false}
@@ -1212,10 +496,10 @@ exports[`Storyshots Packages | List Basic 1`] = `
                 </svg>
               </div>
               <ul
-                className="c8"
+                className="c9"
               >
                 <div
-                  className="c14"
+                  className="c15"
                 >
                   Vero sint molestiae sit consequuntur aut aliquam. Aut porro maiores est rerum sed quasi fugiat culpa fuga. Voluptatem quasi excepturi earum. Repellendus qui deleniti aut blanditiis exercitationem eum dolorem libero debitis.
                 </div>
@@ -1229,7 +513,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
       className="vital__ListItem c2"
     >
       <div
-        className="c15"
+        className="c16"
         onClick={[Function]}
       >
         <div
@@ -1238,7 +522,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
           Level 1
         </div>
         <div
-          className="c16 c4"
+          className="c17 c4"
         >
           <span
             className="vital__badge c6"
@@ -1253,7 +537,11 @@ exports[`Storyshots Packages | List Basic 1`] = `
 `;
 
 exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
-.c9 {
+.c6 {
+  cursor: pointer;
+}
+
+.c10 {
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
@@ -1324,18 +612,18 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
   transform-origin: center center;
 }
 
-.c6 {
+.c7 {
   will-change: height;
   background-color: #f7f9fd;
   overflow: hidden;
 }
 
-.c8 {
+.c9 {
   text-align: right;
   padding-right: 20px;
 }
 
-.c7 {
+.c8 {
   display: block;
   font-size: 1.2rem;
   border-left: none;
@@ -1368,7 +656,7 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
           Collaspe 1
         </div>
         <svg
-          className="c5 "
+          className="c5 c6"
           height={10}
           onClick={[Function]}
           open={false}
@@ -1382,10 +670,10 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
         </svg>
       </div>
       <ul
-        className="c6"
+        className="c7"
       >
         <div
-          className="c7"
+          className="c8"
         >
           Quo voluptates numquam nulla libero vel facere quibusdam sunt. Hic sed delectus et ipsum iste. Eos eligendi quibusdam. Possimus quisquam minima velit maxime officia consequatur et magni. Necessitatibus quos sed alias architecto est pariatur. Et vero aperiam quaerat. Ut numquam quaerat et aut neque ratione velit et dolor. Ipsam repellendus saepe quas et iste debitis molestias recusandae ipsum. Praesentium cumque est velit delectus non atque ullam. Non quis voluptate doloribus voluptatum assumenda. Illum est incidunt a eius voluptatum laudantium repellat. Ipsum eos non molestias qui ab quasi pariatur. Ipsum ea perferendis dolorem nihil et dolor. Expedita officia accusantium incidunt illum illum consequuntur velit.
         </div>
@@ -1404,16 +692,16 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
           Collaspe 2
         </div>
         <div
-          className="c8 c4"
+          className="c9 c4"
         >
           <span
-            className="vital__badge c9"
+            className="vital__badge c10"
           >
             1
           </span>
         </div>
         <svg
-          className="c5 "
+          className="c5 c6"
           height={10}
           onClick={[Function]}
           open={false}
@@ -1427,10 +715,10 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
         </svg>
       </div>
       <ul
-        className="c6"
+        className="c7"
       >
         <div
-          className="c7"
+          className="c8"
         >
           Nostrum tempora ipsum et in. Numquam praesentium voluptas itaque ratione iste quisquam harum. Voluptatibus sit rerum. Vitae consequatur eaque aliquid porro perspiciatis culpa et sit. Iste illo eum cum. Et ea beatae dolorum tempore possimus iste quia nobis beatae. Aut voluptatibus illo possimus inventore laudantium nobis aperiam. Aut aut vel officiis laborum nihil dolor. Aut velit eligendi at at sed esse inventore. Perspiciatis ipsum debitis in voluptatem error cumque iure earum nostrum. Quo recusandae dolores esse. Ipsam voluptas aut et nisi iste qui minima mollitia alias.
         </div>

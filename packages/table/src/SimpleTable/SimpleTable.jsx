@@ -10,7 +10,9 @@ import '../style.css';
 import defaultRowRenderer from './defaultRowRenderer';
 import defaultHeaderRowRenderer from './defaultHeaderRowRenderer';
 
-// BaseTable.propTypes.children = () => {};
+/* eslint-disable react/forbid-foreign-prop-types */
+BaseTable.propTypes.children = () => {};
+/* eslint-enable */
 
 const StyledTable: React.ComponentType<TableProps> = styled(
   BaseTable,

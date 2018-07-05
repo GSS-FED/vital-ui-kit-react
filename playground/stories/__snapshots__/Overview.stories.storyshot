@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Getting Started Overview 1`] = `
+.c52 {
+  cursor: pointer;
+}
+
 .c0 {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -1839,7 +1843,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   overflow-x: hidden;
 }
 
-.c52 {
+.c53 {
   table-layout: fixed;
   display: table;
   width: 100%;
@@ -1855,14 +1859,14 @@ exports[`Storyshots Getting Started Overview 1`] = `
   box-sizing: border-box;
 }
 
-.c53 {
+.c54 {
   position: relative;
   height: 50px;
   display: table-cell;
   vertical-align: middle;
 }
 
-.c53:not(:last-child):after {
+.c54:not(:last-child):after {
   content: '';
   position: absolute;
   top: 0;
@@ -1872,7 +1876,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   background: #D8E3F6;
 }
 
-.c54 {
+.c55 {
   padding: 0 10px;
   margin: 0;
   border: 0;
@@ -1894,7 +1898,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   color: #0E86FE;
 }
 
-.c54:hover {
+.c55:hover {
   background-color: #D8E3F6;
 }
 
@@ -2413,7 +2417,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
           }
         >
           <svg
-            className=""
+            className="c52"
             height="90"
             onClick={[Function]}
             viewBox="0 0 914.2857142857142 1024"
@@ -2453,13 +2457,13 @@ exports[`Storyshots Getting Started Overview 1`] = `
           </div>
         </div>
         <div
-          className="vital__card-footer c52"
+          className="vital__card-footer c53"
         >
           <div
-            className="vital__card-footer-button-wapper c53"
+            className="vital__card-footer-button-wapper c54"
           >
             <button
-              className="vital__card-footer-button c54"
+              className="vital__card-footer-button c55"
             >
               Confirm
             </button>

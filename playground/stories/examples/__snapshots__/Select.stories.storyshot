@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c3 {
+  position: relative;
+  border-radius: inherit;
+}
+
+.c4 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
+  padding-left: 2.2em;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c4:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c4::placeholder {
+  color: #95ACD4;
+}
+
+.c4:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c4:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
+.c5 {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 2.2em;
+  text-align: center;
+  z-index: 7;
+  color: #456296;
+  left: 0;
+  color: #C3D1EB;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <div
+      className="vital__fieldInput c1"
+    >
+      <span
+        className="vital__label c2"
+        required={false}
+      />
+      <div
+        className="c3"
+      >
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls={null}
+          aria-labelledby="downshift-1-label"
+          autoComplete="off"
+          autoFocus={false}
+          className="c4"
+          disabled={false}
+          id="downshift-1-input"
+          name={null}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder={null}
+          spellCheck={false}
+          type="text"
+          value=""
+        />
+        <svg
+          className="c5 "
+          height={16}
+          onClick={null}
+          viewBox="0 0 950.8571428571428 1024"
+          width={16}
+        >
+          <path
+            d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Packages | Form/Select Dropdown 1`] = `
+.c5 {
+  cursor: pointer;
+}
+
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c3 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #456297;
+  border: 1px solid #C4D2EB;
+  z-index: 5;
+  outline: 0;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <div
+      className="vital__fieldInput c1"
+    >
+      <span
+        className="vital__label c2"
+        required={false}
+      />
+      <div
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="c3"
+        data-toggle={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        type="button"
+      >
+        <span
+          className="c4"
+        >
+          Select an item
+        </span>
+        <svg
+          className="c5"
+          height={15}
+          onClick={[Function]}
+          viewBox="0 0 585.1428571428571 1024"
+          width={15}
+        >
+          <path
+            d="M585.143 402.286c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Packages | Form/Select Tag 1`] = `
+.c2 {
+  position: relative;
+  font-size: 0.866rem;
+  color: #7189B6;
+  line-height: 1.8;
+  display: inline-block;
+  text-align: left;
+}
+
+.c1 {
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+  width: 100%;
+}
+
+.c4 {
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
+  border: 0;
+  outline: 0;
+  height: 1.93267rem;
+  width: 100px;
+  border-radius: inherit;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.c0 {
+  max-width: 500px;
+  padding: 40px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-2-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <div
+      className="vital__fieldInput c1"
+    >
+      <span
+        className="vital__label c2"
+        required={false}
+      />
+      <div
+        className="c3"
+        onClick={[Function]}
+      >
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls={null}
+          aria-labelledby="downshift-2-label"
+          autoComplete="off"
+          className="c4"
+          id="downshift-2-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
