@@ -5,138 +5,103 @@
  */
 
 import * as React from 'react';
-import styled from 'styled-components';
-import { defaultTheme } from '@vital-ui/react-theme';
-import ClickOutside from 'react-click-outside';
-import Icon from '@vital-ui/react-icon';
+import Downshift, {
+  type ControllerStateAndHelpers,
+  type DownshiftProps,
+} from 'downshift';
 
-import Droplist from './Droplist';
-
-import type { ItemType } from './type';
-
-const Root = styled.div`
-  user-select: none;
-  position: relative;
-`;
-const SelectButton = styled.div`
-  width: 100%;
-  position: relative;
-  display: ${props =>
-    props.fillToContainer ? 'block' : 'inline-block'};
-  margin: 0;
-  padding: calc(0.533rem - 1px) 1.066rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  line-height: 1;
-  height: 1.93267rem;
-  box-sizing: border-box;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  color: ${({ theme }) => theme.select.button.color};
-  border: 1px solid ${({ theme }) => theme.form.borderColor};
-  z-index: 5;
-  outline: 0;
-  text-align: left;
-`;
-
-SelectButton.defaultProps = {
-  theme: defaultTheme,
-};
-
-const Selector = styled.span``;
-
-const Placeholder = styled(Selector)`
-  color: ${({ theme }) => theme.form.placeholder};
-`;
-
-Placeholder.defaultProps = {
-  theme: defaultTheme,
-};
+import FieldInput from '../FieldInput';
+import InputBase, {
+  Props as InputProps,
+} from '../input/StatelessInput';
+import { DropdownBase, DropdownItem } from './Dropdown';
+import { withContext, Context } from './context';
+import { SelectButton, SelectButtonText } from './styled';
 
 type Props = {
-  placeholder?: string,
-  fillToContainer?: boolean,
-  items: Array<ItemType>,
+  children: React.Node,
+  label?: React.Node,
+  shouldRenderItem?: (item, value) => boolean,
+} & DownshiftProps;
+
+const Input = (props: InputProps) => (
+  <InputBase
+    {...props}
+    rightIcon={props.value ? props.rightIcon || null : null}
+  />
+);
+
+const Button = ({
+  text,
+  children,
+  ...props
+}: {
+  text?: string,
+  children?: React.Node,
+}) => (
+  <SelectButton {...props}>
+    {text && <SelectButtonText>{text}</SelectButtonText>}
+    {children}
+  </SelectButton>
+);
+
+Button.defaultProps = {
+  text: undefined,
+  children: null
 };
 
-type State = {
-  isOpen: boolean,
-  selectedItem: ?ItemType,
-};
+const Dropdown = withContext(
+  DropdownBase,
+  ({ getMenuProps, isOpen, inputValue, shouldRenderItem }) => ({
+    getMenuProps,
+    isOpen,
+    inputValue,
+    shouldRenderItem,
+  }),
+);
 
-/**
- * @render react
- * @name Select
- * @description select element
- */
-class Select extends React.Component<Props, State> {
+class Select extends React.Component<Props> {
   static defaultProps = {
-    fillToContainer: true,
-    placeholder: '',
+    shouldRenderItem: () => true,
   };
 
-  state = {
-    isOpen: false,
-    selectedItem: null,
-  };
+  static Input = withContext(
+    Input,
+    ({ getInputProps, clearSelection }) => ({
+      ...getInputProps(),
+      onRightIconClick: clearSelection,
+    }),
+  );
 
-  onSelect = (item: ItemType) => {
-    this.setState({ selectedItem: item });
-    this.onToggle(false);
-  };
+  static Dropdown = Dropdown;
 
-  onToggle = (value: boolean) => {
-    this.setState({ isOpen: value });
-  };
+  static DropdownItem = DropdownItem;
 
-  handleClickOutside() {
-    this.onToggle(false);
-  }
+  static Context = Context;
 
-  wrapperNode: ?HTMLElement;
-
-  renderSelect = () => {
-    if (!this.state.selectedItem) {
-      return <Placeholder>{this.props.placeholder}</Placeholder>;
-    }
-    return (
-      <Selector>
-        {this.state.selectedItem.label ||
-          this.state.selectedItem.content}
-      </Selector>
-    );
-  };
+  static Button = withContext(Button, ({ getToggleButtonProps }) =>
+    getToggleButtonProps(),
+  );
 
   render() {
+    const { children, label, ...props } = this.props;
     return (
-      <Root
-        innerRef={ref => {
-          this.wrapperNode = ref;
-        }}
-      >
-        <SelectButton
-          onClick={() => this.onToggle(!this.state.isOpen)}
-          fillToContainer={this.props.fillToContainer}
-          {...this.props}
-        >
-          {this.renderSelect()}
-          <Icon
-            style={{ float: 'right' }}
-            name="caret-down"
-            size="15"
-          />
-        </SelectButton>
-        {this.state.isOpen && (
-          <Droplist
-            onClick={this.onSelect}
-            items={this.props.items}
-          />
+      <Downshift {...props}>
+        {(options: ControllerStateAndHelpers) => (
+          <div>
+            <Context.Provider value={{ ...props, ...options }}>
+              <FieldInput
+                label={label}
+                labelProps={options.getLabelProps()}
+              >
+                {children}
+              </FieldInput>
+            </Context.Provider>
+          </div>
         )}
-      </Root>
+      </Downshift>
     );
   }
 }
 
-export default ClickOutside(Select);
+export default Select;

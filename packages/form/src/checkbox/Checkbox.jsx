@@ -158,9 +158,6 @@ class Checkbox extends React.Component<Props, State> {
         ...props,
         checked: e.target.checked,
       },
-      stopPopagation() {
-        e.stopPopagation();
-      },
       preventDefault() {
         e.preventDefault();
       },

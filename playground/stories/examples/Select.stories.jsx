@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/no-multi-comp */
+/* eslint-disable react/no-array-index-key */
 
 import * as React from 'react';
 import styled from 'styled-components';
@@ -23,6 +24,8 @@ import {
   Input,
   Select,
   Icon,
+  MultipleSelect,
+  Tag,
 } from '@vital-ui/react';
 
 const FormWrapper = styled.div`
@@ -55,13 +58,17 @@ class SelectExample extends React.Component {
         shouldRenderItem={(item, value) => item.value.includes(value)}
       >
         <Select.Input leftIcon="search" rightIcon="times-circle" />
-        <Select.Menu>
+        <Select.Dropdown>
           {items.map((item, i) => (
-            <Select.Item key={item.content} item={item} index={i}>
+            <Select.DropdownItem
+              key={item.content}
+              item={item}
+              index={i}
+            >
               {item.value}
-            </Select.Item>
+            </Select.DropdownItem>
           ))}
-        </Select.Menu>
+        </Select.Dropdown>
       </Select>
     );
   }
@@ -85,46 +92,76 @@ class DropdownExample extends React.Component {
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
       >
-        <Select.Button>
-          {this.state.selectedItem.value || 'Select an item'}
+        <Select.Button
+          text={this.state.selectedItem.content || 'Select an item'}
+        >
           <Icon
             name="caret-down"
             size={15}
-            style={{ float: 'right' }}
           />
         </Select.Button>
-        <Select.Menu>
+        <Select.Dropdown>
           {items.map((item, i) => (
-            <Select.Item key={item.content} item={item} index={i}>
+            <Select.DropdownItem
+              key={item.content}
+              item={item}
+              index={i}
+            >
               {item.content}
-            </Select.Item>
+            </Select.DropdownItem>
           ))}
-        </Select.Menu>
+        </Select.Dropdown>
       </Select>
     );
   }
 }
 
 class TagExample extends React.Component {
-  state = {};
+  state = {
+    selectedItem: [],
+  };
+
+  onChangeItem = selectedItem => {
+    this.setState({ selectedItem });
+  };
+
+  onDeleteItem = item => {
+    this.setState(prevState => ({
+      selectedItem: prevState.selectedItem.filter(
+        x => x.content !== item.content,
+      ),
+    }));
+  };
 
   render() {
     return (
-      <Select
-        selectedItem={this.state.selectedItem}
-        itemToString={item => (item ? item.value : '')}
+      <MultipleSelect
+        itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
-        shouldRenderItem={(item, value) => item.value.includes(value)}
+        values={this.state.selectedItem}
+        shouldRenderItem={(item, value) =>
+          item.content.includes(value)
+        }
+        selection={this.state.selectedItem.map((item, i) => (
+          <Tag key={i} onCloseClick={() => this.onDeleteItem(item)}>
+            {item.content}
+          </Tag>
+        ))}
       >
-        <Select.Tags />
-        <Select.Menu>
-          {items.map((item, i) => (
-            <Select.Item key={item.content} item={item} index={i}>
-              {item.value}
-            </Select.Item>
-          ))}
-        </Select.Menu>
-      </Select>
+        <MultipleSelect.Dropdown>
+          {items
+            .filter(item => !this.state.selectedItem.includes(item))
+            .map((item, i) => (
+              <MultipleSelect.DropdownItem
+                key={item.content}
+                item={item}
+                index={i}
+              >
+                {item.content}
+              </MultipleSelect.DropdownItem>
+            ))}
+        </MultipleSelect.Dropdown>
+      </MultipleSelect>
     );
   }
 }
@@ -160,4 +197,4 @@ storiesOf('Packages | Form/Select', module)
         </FormWrapper>
       )),
     ),
-  )
+  );
