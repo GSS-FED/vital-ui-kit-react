@@ -1,4 +1,28 @@
 # Changelog
+## 0.8.2 (2018-07-05)
+
+#### :rocket: Enhancement
+* `@vital-ui-lab/chart`, `form`, `icon`, `table`, `web`
+  * [#219](https://github.com/GSS-FED/vital-ui-kit-react/pull/219) Form Select integrate with downshift ([@ericyip](https://github.com/ericyip))
+
+#### :bug: Bug Fix
+* `form`, `web`
+  * [#220](https://github.com/GSS-FED/vital-ui-kit-react/pull/220) Fix export name MultiSelect ([@ericyip](https://github.com/ericyip))
+
+#### :house: Internal
+* `table`
+  * [#203](https://github.com/GSS-FED/vital-ui-kit-react/pull/203) Lint check setup ([@ericyip](https://github.com/ericyip))
+* Other
+  * [#200](https://github.com/GSS-FED/vital-ui-kit-react/pull/200) Turn off some eslint rules might conflict with Prettier ([@cjies](https://github.com/cjies))
+
+#### :boom: Breaking Change
+* `@vital-ui-lab/chart`, `form`, `icon`, `table`, `web`
+  * [#219](https://github.com/GSS-FED/vital-ui-kit-react/pull/219) Form Select integrate with downshift ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 3
+- CJies ([@cjies](https://github.com/cjies))
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+- Timo Aho ([@Zeukkari](https://github.com/Zeukkari))
 ## 0.8.1 (2018-06-21)
 #### :bug: Bug Fix
 * `icon`
