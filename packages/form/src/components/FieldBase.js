@@ -26,8 +26,7 @@ export const fieldInputBase = ({ theme = defaultTheme }) => css`
 const fieldBase = ({
   theme = defaultTheme,
 }: typeof defaultTheme) => css`
-  ${fieldWrapperBase}
-  ${fieldInputBase}
+  ${fieldWrapperBase} ${fieldInputBase}
 
   &::placeholder {
     color: ${theme.form.placeholder.color};

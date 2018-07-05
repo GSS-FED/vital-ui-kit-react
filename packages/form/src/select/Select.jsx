@@ -47,7 +47,7 @@ const Button = ({
 
 Button.defaultProps = {
   text: undefined,
-  children: null
+  children: null,
 };
 
 const Dropdown = withContext(

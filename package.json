@@ -96,6 +96,7 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
+      "yarn run format",
       "git add"
     ]
   },

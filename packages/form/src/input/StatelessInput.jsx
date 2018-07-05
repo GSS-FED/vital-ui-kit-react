@@ -132,12 +132,22 @@ class StatelessInput extends React.Component<Props> {
 
   input: any;
 
-  renderIcon = (position: IconPosition, icon: IconProps, onClick: () => void) => {
+  renderIcon = (
+    position: IconPosition,
+    icon: IconProps,
+    onClick: () => void,
+  ) => {
     if (ReactIs.isElement(icon)) {
       return icon;
     }
     if (typeof icon === 'string') {
-      return <InputIcon iconPosition={position} name={icon} onClick={onClick}/>;
+      return (
+        <InputIcon
+          iconPosition={position}
+          name={icon}
+          onClick={onClick}
+        />
+      );
     }
     return null;
   };
@@ -158,7 +168,7 @@ class StatelessInput extends React.Component<Props> {
       className,
       icon,
       iconPosition,
-      onRightIconClick
+      onRightIconClick,
     } = this.props;
     return (
       <Root>
@@ -187,7 +197,8 @@ class StatelessInput extends React.Component<Props> {
           />
         )}
         {leftIcon && this.renderIcon('left', leftIcon, null)}
-        {rightIcon && this.renderIcon('right', rightIcon, onRightIconClick)}
+        {rightIcon &&
+          this.renderIcon('right', rightIcon, onRightIconClick)}
       </Root>
     );
   }

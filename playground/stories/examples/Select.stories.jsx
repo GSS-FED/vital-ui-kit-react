@@ -95,10 +95,7 @@ class DropdownExample extends React.Component {
         <Select.Button
           text={this.state.selectedItem.content || 'Select an item'}
         >
-          <Icon
-            name="caret-down"
-            size={15}
-          />
+          <Icon name="caret-down" size={15} />
         </Select.Button>
         <Select.Dropdown>
           {items.map((item, i) => (
