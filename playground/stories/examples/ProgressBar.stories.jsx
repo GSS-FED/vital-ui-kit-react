@@ -17,7 +17,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 // import ProgressBar from '../../../packages/@vital-ui-lab/charts/progress-bar';
 
-// storiesOf('Components | ProgressBar', module)
+// storiesOf('Packages | ProgressBar', module)
 //   .addDecorator(withKnobs)
 //   .add(
 //     'Basic',

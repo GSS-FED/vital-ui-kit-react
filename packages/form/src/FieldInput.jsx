@@ -6,6 +6,8 @@ import styled, { css } from 'styled-components';
 
 import Label from './components/Label';
 
+import type { RefObject } from '../../../typings';
+
 const Root = styled.div`
   display: ${props => (props.inline ? 'table' : 'block')};
   margin-bottom: ${props => (props.inline ? '1.866rem' : '1.333rem')};
@@ -30,6 +32,8 @@ const Root = styled.div`
     `};
 `;
 
+type Ref = ?(instance: any) => void | RefObject<any>;
+
 type Props = {
   label: string,
   align: 'left' | 'right',
@@ -38,6 +42,10 @@ type Props = {
   children: React.Node,
   style?: CSSStyleDeclaration,
   className?: string,
+  labelProps?: any,
+  containerProps?: any,
+  ref: Ref,
+  labelRef: Ref,
 };
 
 /**
@@ -50,32 +58,49 @@ type Props = {
  * </FieldInput>
  */
 
-const FieldInput = ({
-  label,
-  align,
-  inline,
-  required,
-  children,
-  style,
-  className,
-  ...props
-}: Props) => (
-  <Root
-    style={style}
-    className={cn('vital__fieldInput', className)}
-    inline={inline}
-    {...props}
-  >
-    <Label text={label} required={required} align={align} />
-    {children}
-  </Root>
-);
+class FieldInput extends React.Component<Props> {
+  static defaultProps = {
+    inline: false,
+    required: false,
+    style: undefined,
+    className: '',
+    labelProps: undefined,
+    containerProps: undefined,
+  };
 
-FieldInput.defaultProps = {
-  inline: false,
-  required: false,
-  style: undefined,
-  className: '',
-};
+  render() {
+    const {
+      label,
+      align,
+      inline,
+      required,
+      children,
+      style,
+      className,
+      labelProps,
+      ref,
+      labelRef,
+      containerProps,
+    } = this.props;
+    return (
+      <Root
+        style={style}
+        className={cn('vital__fieldInput', className)}
+        inline={inline}
+        innerRef={ref}
+        {...containerProps}
+      >
+        <Label
+          innerRef={labelRef}
+          text={label}
+          required={required}
+          align={align}
+          {...labelProps}
+        />
+        {children}
+      </Root>
+    );
+  }
+}
 
 export default FieldInput;

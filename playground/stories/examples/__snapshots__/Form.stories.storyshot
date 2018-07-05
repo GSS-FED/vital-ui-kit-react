@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Form Full Example 1`] = `
+exports[`Storyshots Packages | Form Full Example 1`] = `
+.c18 {
+  cursor: pointer;
+}
+
 .c9 {
   padding: 0.46633rem 0.8rem;
   font-size: 1rem;
@@ -51,6 +55,7 @@ exports[`Storyshots Components | Form Full Example 1`] = `
 
 .c3 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c4 {
@@ -59,18 +64,18 @@ exports[`Storyshots Components | Form Full Example 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c4::-webkit-input-placeholder {
@@ -106,18 +111,18 @@ exports[`Storyshots Components | Form Full Example 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
   height: auto;
   resize: none;
 }
@@ -251,6 +256,137 @@ exports[`Storyshots Components | Form Full Example 1`] = `
   line-height: 1;
   vertical-align: top;
   padding-top: calc(0.46633rem + 2px);
+}
+
+.c15 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c15:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c19 {
+  color: #456297;
+}
+
+.c16 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c21 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C4D2EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+  border-color: #95ACD4;
+}
+
+.c20 {
+  display: none;
+}
+
+.c17 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+.c22 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+}
+
+.c12 {
+  display: none;
+}
+
+.c12:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c12:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c12:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c12:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c13 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c14 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
 }
 
 .c0 {
@@ -481,10 +617,189 @@ exports[`Storyshots Components | Form Full Example 1`] = `
       value=""
     />
   </div>
+  <div
+    className="vital__fieldInput c10"
+  >
+    <span
+      className="vital__label c7"
+      required={false}
+    >
+      Send Email
+    </span>
+    <div
+      className="vital__switch "
+      onClick={[Function]}
+    >
+      <input
+        checked={false}
+        className="c12"
+        disabled={false}
+        type="checkbox"
+      />
+      <label
+        className="c13"
+        disabled={false}
+      >
+        <div
+          className="c14"
+          disabled={false}
+          icon={null}
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    className="vital__fieldInput c10"
+  >
+    <span
+      className="vital__label c7"
+      required={false}
+    >
+      Interested in
+    </span>
+    <div
+      className="vital__checkbox-group "
+      style={
+        Object {
+          "paddingTop": "calc(0.46633rem + 2px)",
+        }
+      }
+    >
+      <label
+        className="vital__checkbox c15"
+      >
+        <span
+          checked={false}
+          className="c16"
+          disabled={false}
+        >
+          <div
+            checked={false}
+            className="c17"
+            disabled={false}
+          >
+            <svg
+              className="c18"
+              height="12"
+              onClick={[Function]}
+              viewBox="0 0 1024 1024"
+              width="12"
+            >
+              <path
+                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+                fill="#0E86FE"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          checked={false}
+          className="c19"
+          disabled={false}
+        >
+          <input
+            checked={false}
+            className="c20"
+            defaultChecked={false}
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          React
+        </span>
+      </label>
+      <label
+        className="vital__checkbox c15"
+      >
+        <span
+          checked={true}
+          className="c21"
+          disabled={false}
+        >
+          <div
+            checked={true}
+            className="c22"
+            disabled={false}
+          >
+            <svg
+              className="c18"
+              height="12"
+              onClick={[Function]}
+              viewBox="0 0 1024 1024"
+              width="12"
+            >
+              <path
+                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+                fill="#0E86FE"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          checked={true}
+          className="c19"
+          disabled={false}
+        >
+          <input
+            checked={true}
+            className="c20"
+            defaultChecked={true}
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          CSS
+        </span>
+      </label>
+      <label
+        className="vital__checkbox c15"
+      >
+        <span
+          checked={false}
+          className="c16"
+          disabled={false}
+        >
+          <div
+            checked={false}
+            className="c17"
+            disabled={false}
+          >
+            <svg
+              className="c18"
+              height="12"
+              onClick={[Function]}
+              viewBox="0 0 1024 1024"
+              width="12"
+            >
+              <path
+                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
+                fill="#0E86FE"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          checked={false}
+          className="c19"
+          disabled={false}
+        >
+          <input
+            checked={false}
+            className="c20"
+            defaultChecked={false}
+            disabled={false}
+            onChange={[Function]}
+            type="checkbox"
+          />
+          Vital
+        </span>
+      </label>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots Components | Form Hint 1`] = `
+exports[`Storyshots Packages | Form Hint 1`] = `
 .c5 {
   display: block !important;
   padding-top: 0.4rem;
@@ -516,6 +831,7 @@ exports[`Storyshots Components | Form Hint 1`] = `
 
 .c3 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c4 {
@@ -524,18 +840,18 @@ exports[`Storyshots Components | Form Hint 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c4::-webkit-input-placeholder {
@@ -634,7 +950,7 @@ exports[`Storyshots Components | Form Hint 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form Input with Label 1`] = `
+exports[`Storyshots Packages | Form Input with Label 1`] = `
 .c2 {
   position: relative;
   font-size: 0.866rem;
@@ -660,6 +976,7 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
 
 .c3 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c4 {
@@ -668,18 +985,18 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c4::-webkit-input-placeholder {
@@ -755,8 +1072,12 @@ exports[`Storyshots Components | Form Input with Label 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form Multiple & Addon 1`] = `
+exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 .c9 {
+  cursor: pointer;
+}
+
+.c10 {
   position: relative;
   background: #F7F9FE;
   color: #0E86FE;
@@ -782,25 +1103,25 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
   border-color: #0E86FE;
 }
 
-.c9:hover {
+.c10:hover {
   background: #D8E3F6;
 }
 
-.c9:active {
+.c10:active {
   background: #C4D2EB;
 }
 
-.c9:hover {
+.c10:hover {
   background: #41a0fe;
   border-color: #41a0fe;
 }
 
-.c9:active {
+.c10:active {
   background: #0167ce;
   border-color: #0167ce;
 }
 
-.c9[disabled] {
+.c10[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
   background-color: #F7F9FE;
@@ -835,6 +1156,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
 
 .c5 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c6 {
@@ -843,18 +1165,18 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c6::-webkit-input-placeholder {
@@ -1051,7 +1373,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
           className="vital__addon c8"
         >
           <svg
-            className=""
+            className="c9"
             height={16}
             onClick={[Function]}
             viewBox="0 0 583.4605714285714 1024"
@@ -1131,7 +1453,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
         className="c4"
       >
         <button
-          className="vital__button c9"
+          className="vital__button c10"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1144,7 +1466,7 @@ exports[`Storyshots Components | Form Multiple & Addon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form Multiple & Button 1`] = `
+exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 .c5 {
   position: relative;
   background: #F7F9FE;
@@ -1247,6 +1569,7 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
 
 .c6 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c7 {
@@ -1255,18 +1578,18 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c7::-webkit-input-placeholder {
@@ -1485,9 +1808,10 @@ exports[`Storyshots Components | Form Multiple & Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form/Input Basic 1`] = `
+exports[`Storyshots Packages | Form/Input Basic 1`] = `
 .c1 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c2 {
@@ -1496,18 +1820,18 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1555,7 +1879,6 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
       className="c2"
       defaultValue="default"
       disabled={false}
-      icon={null}
       name={null}
       placeholder="Uncontrolled Input"
       spellCheck={false}
@@ -1565,9 +1888,10 @@ exports[`Storyshots Components | Form/Input Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
+exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
 .c1 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c2 {
@@ -1576,18 +1900,18 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1646,9 +1970,14 @@ exports[`Storyshots Components | Form/Input Controlled Input 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form/Input With Icon 1`] = `
+exports[`Storyshots Packages | Form/Input With Icon 1`] = `
+.c4 {
+  cursor: pointer;
+}
+
 .c1 {
   position: relative;
+  border-radius: inherit;
 }
 
 .c2 {
@@ -1657,18 +1986,19 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
+  padding-right: 2.2em;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1700,6 +2030,56 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   background-color: #EEF2FC;
 }
 
+.c5 {
+  vertical-align: middle;
+  height: 1.93267rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #C4D2EB;
+  border-radius: 4px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  outline: 0;
+  z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
+  padding-left: 2.2em;
+}
+
+.c5::-webkit-input-placeholder {
+  color: #95ACD4;
+}
+
+.c5::-moz-placeholder {
+  color: #95ACD4;
+}
+
+.c5:-ms-input-placeholder {
+  color: #95ACD4;
+}
+
+.c5::placeholder {
+  color: #95ACD4;
+}
+
+.c5:focus {
+  outline: 0;
+  border: 1px solid #0E86FE;
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+  z-index: 7;
+}
+
+.c5:disabled {
+  pointer-events: none;
+  border-color: #C4D2EB;
+  background-color: #EEF2FC;
+}
+
 .c3 {
   position: absolute;
   top: calc(50% - 0.5em);
@@ -1715,7 +2095,7 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   color: #C4D2EB;
 }
 
-.c4 {
+.c6 {
   position: absolute;
   top: calc(50% - 0.5em);
   width: 2.2em;
@@ -1741,14 +2121,13 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
       autoFocus={false}
       className="c2"
       disabled={false}
-      icon="search"
       name={null}
       placeholder="Right side icon"
       spellCheck={false}
       type="text"
     />
     <svg
-      className="c3 "
+      className="c3 c4"
       height={16}
       onClick={[Function]}
       viewBox="0 0 950.8571428571428 1024"
@@ -1766,18 +2145,17 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="c2"
+      className="c5"
       disabled={false}
-      icon="search"
       name={null}
       placeholder="Left side icon"
       spellCheck={false}
       type="text"
     />
     <svg
-      className="c4 "
+      className="c6 "
       height={16}
-      onClick={[Function]}
+      onClick={null}
       viewBox="0 0 950.8571428571428 1024"
       width={16}
     >
@@ -1790,102 +2168,346 @@ exports[`Storyshots Components | Form/Input With Icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Form/Select Basic 1`] = `
+exports[`Storyshots Packages | Form/Switch Basic 1`] = `
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
 .c1 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  box-sizing: border-box;
   position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
 }
 
 .c2 {
-  width: 100%;
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: calc(0.533rem - 1px) 1.066rem;
+  width: 22px;
+  height: 22px;
   border-radius: 4px;
-  font-size: 1rem;
-  line-height: 1;
-  height: 1.93267rem;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
   box-sizing: border-box;
-  vertical-align: middle;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  color: #456297;
   border: 1px solid #C4D2EB;
-  z-index: 5;
-  outline: 0;
-  text-align: left;
-}
-
-.c3 {
-  color: color:#95ACD4;
-}
-
-.c0 {
-  max-width: 500px;
-  padding: 40px;
 }
 
 <div
-  className="c0"
+  className="vital__switch "
+  onClick={[Function]}
 >
-  <div
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
     className="c1"
+    disabled={false}
   >
     <div
       className="c2"
-      onClick={[Function]}
-      placeholder="Select One"
-    >
-      <span
-        className="c3 "
-      >
-        Select One
-      </span>
-      <svg
-        className=""
-        height="15"
-        onClick={[Function]}
-        style={
-          Object {
-            "float": "right",
-          }
-        }
-        viewBox="0 0 585.1428571428571 1024"
-        width="15"
-      >
-        <path
-          d="M585.143 402.286c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"
-          fill="currentColor"
-        />
-      </svg>
-    </div>
-  </div>
+      disabled={false}
+      icon={null}
+    />
+  </label>
 </div>
 `;
 
-exports[`Storyshots Components | Form/TextArea Basic 1`] = `
+exports[`Storyshots Packages | Form/Switch with Icon Button 1`] = `
+.c3 {
+  cursor: pointer;
+}
+
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c2 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.2rem;
+  color: #C4D2EB;
+}
+
+<div
+  className="vital__switch "
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <div
+      className="c2"
+      disabled={false}
+      icon="wifi"
+    >
+      <svg
+        className="c3"
+        height="17"
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width="17"
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#C4D2EB"
+        />
+      </svg>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
+.c4 {
+  cursor: pointer;
+}
+
+.c0 {
+  display: none;
+}
+
+.c0:checked + label {
+  background-color: #0E86FE;
+  box-shadow: 0 0 0 1px #0E86FE;
+}
+
+.c0:checked + label div {
+  -webkit-transform: translate3d(30px,0,0);
+  -ms-transform: translate3d(30px,0,0);
+  transform: translate3d(30px,0,0);
+  border-color: #0E86FE;
+  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
+}
+
+.c0:disabled + label {
+  background-color: #EEF2FC;
+  cursor: not-allowed;
+  point-events: none;
+}
+
+.c0:disabled + label div {
+  background-color: #EEF2FC;
+  box-shadow: none;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #EEF2FC;
+  padding: 1px;
+  box-shadow: 0 0 0 1px #C4D2EB;
+  cursor: pointer;
+}
+
+.c6 {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: block;
+  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  box-sizing: border-box;
+  border: 1px solid #C4D2EB;
+}
+
+.c3 {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  font-size: 13px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #C4D2EB;
+  text-align: center;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.c5 {
+  display: block;
+}
+
+.c2 {
+  display: none;
+  left: -20px;
+}
+
+<div
+  className="vital__switch "
+  onClick={[Function]}
+>
+  <input
+    checked={false}
+    className="c0"
+    disabled={false}
+    type="checkbox"
+  />
+  <label
+    className="c1"
+    disabled={false}
+  >
+    <div
+      checked={false}
+      className="c2 c3"
+    >
+      <svg
+        className="c4"
+        height={16}
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width={16}
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#ffffff"
+        />
+      </svg>
+    </div>
+    <div
+      checked={false}
+      className="c5 c3"
+    >
+      <svg
+        className="c4"
+        height={16}
+        onClick={[Function]}
+        viewBox="0 0 1170.2857142857142 1024"
+        width={16}
+      >
+        <path
+          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
+          fill="#C4D2EB"
+        />
+      </svg>
+    </div>
+    <div
+      className="c6"
+      disabled={false}
+      icon={null}
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Packages | Form/TextArea Basic 1`] = `
 .c0 {
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
   height: auto;
   resize: none;
 }
@@ -1933,23 +2555,23 @@ exports[`Storyshots Components | Form/TextArea Basic 1`] = `
 />
 `;
 
-exports[`Storyshots Components | Form/TextArea Controlled TextArea 1`] = `
+exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
 .c0 {
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #C4D2EB;
   border-radius: 4px;
-  color: #456297;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: #456297;
   height: auto;
   resize: none;
 }

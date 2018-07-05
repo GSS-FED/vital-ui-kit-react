@@ -29,7 +29,7 @@ const items = [
   { text: 'User Center' },
 ];
 
-storiesOf('Components | Modal', module)
+storiesOf('Packages | Modal', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -53,7 +53,7 @@ class ModalExample extends Component {
         <Modal show={this.state.showModal}>
           <Card width="300px" height="220px">
             <Card.Header badge="99+" title="This is a Card" />
-            <Card.Container>Welcome to Vital UI Kit!</Card.Container>
+            <Card.Content>Welcome to Vital UI Kit!</Card.Content>
             <Card.Footer>
               <Card.FooterButton
                 onClick={() => this.setState({ showModal: false })}

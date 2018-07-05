@@ -2,24 +2,31 @@
 import { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-const fieldBase = ({
-  theme = defaultTheme,
-}: typeof defaultTheme) => css`
+export const fieldWrapperBase = ({ theme = defaultTheme }) => css`
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.46633rem 0.8rem;
-  font-size: 1rem;
   line-height: 1;
   box-sizing: border-box;
   background-color: ${theme.white};
   border: 1px solid ${theme.form.borderColor};
   border-radius: 4px;
-  color: ${theme.form.color};
   transition: border-color ease-in-out 0.15s,
     box-shadow ease-in-out 0.15s;
   outline: 0;
   z-index: 5;
+`;
+
+export const fieldInputBase = ({ theme = defaultTheme }) => css`
+  font-size: 1rem;
+  padding: 0.46633rem 0.8rem;
+  color: ${theme.form.color};
+`;
+
+const fieldBase = ({
+  theme = defaultTheme,
+}: typeof defaultTheme) => css`
+  ${fieldWrapperBase} ${fieldInputBase}
 
   &::placeholder {
     color: ${theme.form.placeholder.color};

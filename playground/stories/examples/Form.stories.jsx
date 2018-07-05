@@ -17,6 +17,7 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 
 import {
+  SelectNew,
   Label,
   Input,
   StatelessInput,
@@ -29,6 +30,9 @@ import {
   Select,
   Button,
   Icon,
+  Switch,
+  Checkbox,
+  CheckboxGroup,
 } from '@vital-ui/react';
 
 const FormWrapper = styled.div`
@@ -36,19 +40,13 @@ const FormWrapper = styled.div`
   padding: 40px;
 `;
 
-const items = [
-  { content: 'All Files', value: 'all' },
-  { content: 'PDF', value: 'pdf' },
-  { content: 'PPT', value: 'ppt' },
-];
-
 const groupItem = [
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
-  { items: [{ content: 'yoyo', value: 'yoyo' }] },
+  { value: 'red' },
+  { value: 'blue' },
+  { value: 'grey' },
 ];
 
-storiesOf('Components | Form', module)
+storiesOf('Packages | Form', module)
   .addDecorator(withKnobs)
   .add(
     'Full Example',
@@ -79,6 +77,34 @@ storiesOf('Components | Form', module)
           </FieldInput>
           <FieldInput label="Comment" inline>
             <TextArea placeholder="Comment here" minRows={3} />
+          </FieldInput>
+          <FieldInput label="Send Email" inline>
+            <Switch
+              isDisabled={boolean('Switch Disabled', false)}
+              isRound={boolean('Switch Round', false)}
+            />
+          </FieldInput>
+          <FieldInput label="Interested in" inline>
+            <CheckboxGroup
+              style={{ paddingTop: 'calc(0.46633rem + 2px)' }}
+            >
+              <Checkbox
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="React"
+              />
+              <Checkbox
+                defaultChecked
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="CSS"
+              />
+              <Checkbox
+                round={boolean('round', false)}
+                disabled={boolean('disable', false)}
+                label="Vital"
+              />
+            </CheckboxGroup>
           </FieldInput>
         </FormWrapper>
       )),
@@ -181,7 +207,7 @@ storiesOf('Components | Form', module)
     ),
   );
 
-storiesOf('Components | Form/Input', module)
+storiesOf('Packages | Form/Input', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -224,20 +250,19 @@ storiesOf('Components | Form/Input', module)
         <FormWrapper>
           <StatelessInput
             placeholder="Right side icon"
-            icon="search"
+            rightIcon="search"
           />
           <br />
           <StatelessInput
             placeholder="Left side icon"
-            icon="search"
-            iconPosition="left"
+            leftIcon="search"
           />
         </FormWrapper>
       )),
     ),
   );
 
-storiesOf('Components | Form/TextArea', module)
+storiesOf('Packages | Form/TextArea', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
@@ -269,15 +294,43 @@ storiesOf('Components | Form/TextArea', module)
     ),
   );
 
-storiesOf('Components | Form/Select', module)
+storiesOf('Packages | Form/Switch', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
     withInfo(``)(
-      withNotes(`Uncontrolled component`)(() => (
-        <FormWrapper>
-          <Select placeholder="Select One" items={items} />
-        </FormWrapper>
+      withNotes('')(() => (
+        <Switch
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
+      )),
+    ),
+  )
+  .add(
+    'with Icon Button',
+    withInfo(``)(
+      withNotes('')(() => (
+        <Switch
+          iconBtn="wifi"
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
+      )),
+    ),
+  )
+  .add(
+    'with Icon Label',
+    withInfo(`
+      Check out icon package for the name.
+    `)(
+      withNotes('')(() => (
+        <Switch
+          iconLabelFront="wifi"
+          iconLabelBack="wifi"
+          isDisabled={boolean('Disabled', false)}
+          isRound={boolean('Round', false)}
+        />
       )),
     ),
   );

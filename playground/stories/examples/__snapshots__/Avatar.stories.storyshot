@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Avatar Basic 1`] = `
+exports[`Storyshots Packages | Avatar Basic 1`] = `
 .c2 {
   position: absolute;
   background-color: #EB5000;

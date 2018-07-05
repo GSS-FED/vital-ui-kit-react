@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Pill Basic 1`] = `
+exports[`Storyshots Packages | Pill Basic 1`] = `
 .c6 {
   display: inline-block;
   vertical-align: middle;

@@ -29,7 +29,7 @@ const items = [
   { text: 'User Center' },
 ];
 
-storiesOf('Components | Pagination', module)
+storiesOf('Packages | Pagination', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

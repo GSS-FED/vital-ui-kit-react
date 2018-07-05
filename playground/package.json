@@ -11,11 +11,25 @@
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
+    "@storybook/addon-actions": "3.4.7",
+    "@storybook/addon-centered": "3.4.7",
+    "@storybook/addon-info": "3.4.7",
+    "@storybook/addon-knobs": "3.4.7",
+    "@storybook/addon-links": "3.4.7",
+    "@storybook/addon-notes": "3.4.7",
+    "@storybook/addon-options": "3.4.7",
+    "@storybook/addon-storyshots": "3.4.7",
+    "@storybook/addons": "3.4.7",
     "@storybook/react": "3.4.7",
     "babel-plugin-styled-components": "1.5.1",
-    "styled-components": "3.3.3"
+    "markdown-loader-jest": "0.1.1"
   },
   "dependencies": {
+    "axios": "0.18.0",
+    "react": "16.4.1",
+    "react-dom": "16.4.1",
+    "rxjs": "6.2.1",
+    "styled-components": "3.3.3",
     "@vital-ui/react": "^0.8.0",
     "classnames": "2.2.6",
     "faker": "4.1.0"

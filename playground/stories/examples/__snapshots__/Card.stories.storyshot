@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Card Default Full Button type 1`] = `
+exports[`Storyshots Packages | Card Default Full Button type 1`] = `
 .c4 {
   display: inline-block;
   vertical-align: middle;
@@ -204,7 +204,7 @@ exports[`Storyshots Components | Card Default Full Button type 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Card Hero Image 1`] = `
+exports[`Storyshots Packages | Card Hero Image 1`] = `
 .c2 {
   position: relative;
   box-sizing: border-box;
@@ -403,7 +403,7 @@ exports[`Storyshots Components | Card Hero Image 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Card With Flat Button 1`] = `
+exports[`Storyshots Packages | Card With Flat Button 1`] = `
 .c5 > button:not(:last-child) {
   margin-right: 5px;
 }
@@ -620,7 +620,11 @@ exports[`Storyshots Components | Card With Flat Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Card With Icon 1`] = `
+exports[`Storyshots Packages | Card With Icon 1`] = `
+.c2 {
+  cursor: pointer;
+}
+
 .c1 {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -633,7 +637,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
   overflow-x: hidden;
 }
 
-.c2 {
+.c3 {
   table-layout: fixed;
   display: table;
   width: 100%;
@@ -649,14 +653,14 @@ exports[`Storyshots Components | Card With Icon 1`] = `
   box-sizing: border-box;
 }
 
-.c3 {
+.c4 {
   position: relative;
   height: 50px;
   display: table-cell;
   vertical-align: middle;
 }
 
-.c3:not(:last-child):after {
+.c4:not(:last-child):after {
   content: '';
   position: absolute;
   top: 0;
@@ -666,7 +670,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
   background: #D8E3F6;
 }
 
-.c4 {
+.c5 {
   padding: 0 10px;
   margin: 0;
   border: 0;
@@ -688,7 +692,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
   color: #0E86FE;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #D8E3F6;
 }
 
@@ -727,7 +731,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
     }
   >
     <svg
-      className=""
+      className="c2"
       height="90"
       onClick={[Function]}
       viewBox="0 0 914.2857142857142 1024"
@@ -767,13 +771,13 @@ exports[`Storyshots Components | Card With Icon 1`] = `
     </div>
   </div>
   <div
-    className="vital__card-footer c2"
+    className="vital__card-footer c3"
   >
     <div
-      className="vital__card-footer-button-wapper c3"
+      className="vital__card-footer-button-wapper c4"
     >
       <button
-        className="vital__card-footer-button c4"
+        className="vital__card-footer-button c5"
       >
         Confirm
       </button>
@@ -782,7 +786,7 @@ exports[`Storyshots Components | Card With Icon 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Card With Link Button 1`] = `
+exports[`Storyshots Packages | Card With Link Button 1`] = `
 .c5 > button:not(:last-child) {
   margin-right: 5px;
 }

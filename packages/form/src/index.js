@@ -3,19 +3,19 @@ export { default as Addon } from './components/Addon';
 export { default as Label } from './components/Label';
 export { default as FieldBase } from './components/FieldBase';
 
-export { default as Input } from './Input/Input';
-export { default as StatelessInput } from './Input/StatelessInput';
+export { default as Input } from './input/Input';
+export { default as StatelessInput } from './input/StatelessInput';
 
-export { default as TextArea } from './TextArea/TextArea';
+export { default as TextArea } from './textarea/TextArea';
 export {
   default as StatelessTextArea,
-} from './TextArea/StatelessTextArea';
+} from './textarea/StatelessTextArea';
 
 export { default as MultipleInput } from './MultipleInput';
 export { default as FieldInput } from './FieldInput';
 
 export { Radio, RadioGroup } from './radio';
-export { default as Select } from './select';
+export { Select, MultipleSelect, Tag } from './select';
 export { Checkbox, CheckboxGroup } from './checkbox';
 export { default as Switch } from './switch';
 export { default as Slider } from './slider';

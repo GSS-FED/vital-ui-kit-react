@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Tab Basic 1`] = `
+exports[`Storyshots Packages | Tab Basic 1`] = `
 Array [
   .c5 {
   display: inline-block;

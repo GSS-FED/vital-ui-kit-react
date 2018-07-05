@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Menu Basic 1`] = `
+exports[`Storyshots Packages | Menu Basic 1`] = `
+.c5 {
+  cursor: pointer;
+}
+
 .c3 {
   position: relative;
   background: #F7F9FE;
@@ -89,7 +93,7 @@ exports[`Storyshots Components | Menu Basic 1`] = `
       size="medium"
     >
       <svg
-        className="c4 "
+        className="c4 c5"
         height={16}
         onClick={[Function]}
         viewBox="0 0 731.4285714285713 1024"
@@ -113,7 +117,7 @@ exports[`Storyshots Components | Menu Basic 1`] = `
       size="medium"
     >
       <svg
-        className="c4 "
+        className="c4 c5"
         height={16}
         onClick={[Function]}
         viewBox="0 0 950.8571428571428 1024"
@@ -137,7 +141,7 @@ exports[`Storyshots Components | Menu Basic 1`] = `
       size="medium"
     >
       <svg
-        className="c4 "
+        className="c4 c5"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"
@@ -161,7 +165,7 @@ exports[`Storyshots Components | Menu Basic 1`] = `
       size="medium"
     >
       <svg
-        className="c4 "
+        className="c4 c5"
         height={16}
         onClick={[Function]}
         viewBox="0 0 877.7142857142857 1024"

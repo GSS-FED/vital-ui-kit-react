@@ -5,12 +5,18 @@
  */
 
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import withIcon from './components/withIcon';
 import defaultIcon from './selection.json';
 
-const Svg = styled.svg``;
+const Svg = styled.svg`
+  ${({ onClick }) =>
+    onClick &&
+    css`
+      cursor: pointer;
+    `};
+`;
 
 function getIcon(iconName, iconPaths) {
   const icon = iconPaths.icons.find(

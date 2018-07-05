@@ -111,7 +111,7 @@ storiesOf('Getting Started', module).add(
       <Section title="Card">
         <Vertical>
           <Card width="300px">
-            <Card.Container style={{ textAlign: 'center' }}>
+            <Card.Content style={{ textAlign: 'center' }}>
               <Icon name="thumbs-up" size="90" color="#0e86fe" />
               <div
                 style={{
@@ -136,7 +136,7 @@ storiesOf('Getting Started', module).add(
               >
                 Let’s Get Started
               </div>
-            </Card.Container>
+            </Card.Content>
             <Card.Footer>
               <Card.FooterButton primary>Confirm</Card.FooterButton>
             </Card.Footer>

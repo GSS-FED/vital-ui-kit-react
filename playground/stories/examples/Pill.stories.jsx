@@ -17,7 +17,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Pill } from '@vital-ui/react';
 
-storiesOf('Components | Pill', module)
+storiesOf('Packages | Pill', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',

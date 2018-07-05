@@ -5,13 +5,14 @@ import styled from 'styled-components';
 import {
   type TableProps,
   Table as BaseTable,
-  // $FlowFixMe
 } from 'react-virtualized';
 import '../style.css';
 import defaultRowRenderer from './defaultRowRenderer';
 import defaultHeaderRowRenderer from './defaultHeaderRowRenderer';
 
+/* eslint-disable react/forbid-foreign-prop-types */
 BaseTable.propTypes.children = () => {};
+/* eslint-enable */
 
 const StyledTable: React.ComponentType<TableProps> = styled(
   BaseTable,

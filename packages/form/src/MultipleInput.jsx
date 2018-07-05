@@ -59,7 +59,7 @@ const LabelCell = styled.div`
 `;
 
 type Props = {
-  children: React.Node[],
+  children: React$Element<*>[],
   style?: CSSStyleDeclaration,
   className?: string,
 };
@@ -80,7 +80,7 @@ const MultipleInput = ({ style, className, children }: Props) => (
     className={cn('vital__multipleInput', className)}
   >
     {children.map((child, i) => (
-      <LabelCell addon={child.type === Addon} key={i}>
+      <LabelCell addon={child.type === Addon} key={`addon-${i}`}>
         {child}
       </LabelCell>
     ))}

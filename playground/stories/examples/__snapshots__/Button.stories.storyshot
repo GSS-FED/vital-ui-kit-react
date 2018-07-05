@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Button ButtonGroup 1`] = `
+exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 .c0 > button:not(:last-child) {
   margin-right: 5px;
 }
@@ -78,7 +78,11 @@ exports[`Storyshots Components | Button ButtonGroup 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components | Button Circular style 1`] = `
+exports[`Storyshots Packages | Button Circular style 1`] = `
+.c1 {
+  cursor: pointer;
+}
+
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -142,7 +146,7 @@ exports[`Storyshots Components | Button Circular style 1`] = `
   size="medium"
 >
   <svg
-    className=""
+    className="c1"
     height={16}
     onClick={[Function]}
     viewBox="0 0 804.5714285714286 1024"
@@ -156,7 +160,7 @@ exports[`Storyshots Components | Button Circular style 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Default 1`] = `
+exports[`Storyshots Packages | Button Default 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -206,7 +210,7 @@ exports[`Storyshots Components | Button Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Disable 1`] = `
+exports[`Storyshots Packages | Button Disable 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -257,7 +261,7 @@ exports[`Storyshots Components | Button Disable 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Flat 1`] = `
+exports[`Storyshots Packages | Button Flat 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -320,7 +324,7 @@ exports[`Storyshots Components | Button Flat 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Light 1`] = `
+exports[`Storyshots Packages | Button Light 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -376,7 +380,7 @@ exports[`Storyshots Components | Button Light 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Link 1`] = `
+exports[`Storyshots Packages | Button Link 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;
@@ -434,7 +438,7 @@ exports[`Storyshots Components | Button Link 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components | Button Subtle 1`] = `
+exports[`Storyshots Packages | Button Subtle 1`] = `
 .c0 {
   position: relative;
   background: #F7F9FE;

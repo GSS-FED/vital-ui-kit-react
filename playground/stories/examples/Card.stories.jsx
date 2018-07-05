@@ -21,7 +21,7 @@ import heroImage from '../../../assets/card-header-pic.png';
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';
 
-storiesOf('Components | Card', module)
+storiesOf('Packages | Card', module)
   .addDecorator(withKnobs)
   .add(
     'Default Full Button type',
@@ -29,7 +29,7 @@ storiesOf('Components | Card', module)
       withNotes('Insert actions in Footer')(() => (
         <Card width="300px" height="220px">
           <Card.Header badge="99+" title="Title" />
-          <Card.Container>{content}</Card.Container>
+          <Card.Content>{content}</Card.Content>
           <Card.Footer>
             <Card.FooterButton>Cancel</Card.FooterButton>
             <Card.FooterButton primary>Confirm</Card.FooterButton>
@@ -44,7 +44,7 @@ storiesOf('Components | Card', module)
       withNotes('This is Card')(() => (
         <Card width="300px" height="220px">
           <Card.Header title="Title" />
-          <Card.Container>{content}</Card.Container>
+          <Card.Content>{content}</Card.Content>
           <Card.Footer>
             <Button.Group style={{ padding: 10 }}>
               <Button>Cancel</Button>
@@ -63,7 +63,7 @@ storiesOf('Components | Card', module)
       withNotes('')(() => (
         <Card width="300px" height="220px">
           <Card.Header title="Title" />
-          <Card.Container>{content}</Card.Container>
+          <Card.Content>{content}</Card.Content>
           <Card.Footer>
             <Button.Group style={{ padding: 10 }}>
               <Button link>Cancel</Button>
@@ -82,12 +82,12 @@ storiesOf('Components | Card', module)
       withNotes('')(() => (
         <Card width="300px" height="400px">
           <Card.Header image={heroImage} title="Title" />
-          <Card.Container>
+          <Card.Content>
             {content}
             {content}
             {content}
             {content}
-          </Card.Container>
+          </Card.Content>
           <Card.Footer>
             <Card.FooterButton>Cancel</Card.FooterButton>
             <Card.FooterButton primary>Confirm</Card.FooterButton>
@@ -101,7 +101,7 @@ storiesOf('Components | Card', module)
     withInfo(`info`)(
       withNotes('')(() => (
         <Card width="300px">
-          <Card.Container style={{ textAlign: 'center' }}>
+          <Card.Content style={{ textAlign: 'center' }}>
             <Icon name="thumbs-up" size="90" color="#0e86fe" />
             <div
               style={{
@@ -126,7 +126,7 @@ storiesOf('Components | Card', module)
             >
               Let’s Get Started
             </div>
-          </Card.Container>
+          </Card.Content>
           <Card.Footer>
             <Card.FooterButton primary>Confirm</Card.FooterButton>
           </Card.Footer>

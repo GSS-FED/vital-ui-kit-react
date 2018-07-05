@@ -1,118 +1,157 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components | Table Basic 1`] = `
-<table
-  className="sc-cIShpX enLian"
+exports[`Storyshots Packages | Table AutoResize 1`] = `
+.c0 {
+  color: #456297;
+  font-weight: 500;
+  border-bottom: 1px solid #d8e3f6;
+}
+
+.c1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+<div
+  style={
+    Object {
+      "height": "300px",
+      "width": "100%",
+    }
+  }
 >
-  <caption
-    className="sc-kafWEX cxisQv"
+  <div
+    style={
+      Object {
+        "height": 0,
+        "overflow": "visible",
+        "width": 0,
+      }
+    }
   >
-    Caption
-  </caption>
-  <thead
-    className="sc-feJyhm fRrBax"
-  >
-    <table>
-      <colgroup
-        role="presentation"
-      />
-      <tbody>
-        <tr>
-          <th
-            className="test"
+    <div
+      className="ReactVirtualized__Table "
+      role="grid"
+      style={Object {}}
+    >
+      <div
+        className="ReactVirtualized__Table__headerRow c0"
+        role="row"
+        style={
+          Object {
+            "height": 40,
+            "overflow": "hidden",
+            "paddingRight": 0,
+            "width": 0,
+          }
+        }
+      >
+        <div
+          className="ReactVirtualized__Table__headerColumn"
+          role="columnheader"
+          style={
+            Object {
+              "WebkitFlex": "0 1 0px",
+              "flex": "0 1 0px",
+              "msFlex": "0 1 0px",
+            }
+          }
+        >
+          <span
+            className="ReactVirtualized__Table__headerTruncatedText c1"
+            title="Name"
           >
             Name
-          </th>
-          <th
-            className="test2"
+          </span>
+        </div>
+        <div
+          className="ReactVirtualized__Table__headerColumn"
+          role="columnheader"
+          style={
+            Object {
+              "WebkitFlex": "0 1 0px",
+              "flex": "0 1 0px",
+              "msFlex": "0 1 0px",
+            }
+          }
+        >
+          <span
+            className="ReactVirtualized__Table__headerTruncatedText c1"
+            title="Location"
           >
-            Age
-          </th>
-          <th>
-            gender
-          </th>
-          <th>
-            Job
-          </th>
-          <th>
-            test
-          </th>
-        </tr>
-      </tbody>
-    </table>
-  </thead>
-  <tbody>
-    <tr>
-      <td
-        className="test"
-        field="name"
-        title="Name"
-      >
-        Jennifer
-      </td>
-      <td
-        className="test2"
-        field="age"
-        title="Age"
-      >
-        30
-      </td>
-      <td>
-        Female
-      </td>
-      <td>
-        Front-end
-      </td>
-      <td>
-        2
-      </td>
-    </tr>
-    <tr>
-      <td
-        className="test"
-        field="name"
-        title="Name"
-      >
-        Oliver
-      </td>
-      <td
-        className="test2"
-        field="age"
-        title="Age"
-      >
-        18
-      </td>
-      <td>
-        Female
-      </td>
-      <td />
-      <td />
-    </tr>
-    <tr>
-      <td
-        className="test"
-        field="name"
-        title="Name"
-      >
-        Jordan
-      </td>
-      <td
-        className="test2"
-        field="age"
-        title="Age"
-      >
-        53
-      </td>
-      <td>
-        Male
-      </td>
-      <td />
-      <td>
-        haha
-      </td>
-    </tr>
-  </tbody>
-</table>
+            Location
+          </span>
+        </div>
+        <div
+          className="ReactVirtualized__Table__headerColumn"
+          role="columnheader"
+          style={
+            Object {
+              "WebkitFlex": "0 1 0px",
+              "flex": "0 1 0px",
+              "msFlex": "0 1 0px",
+            }
+          }
+        >
+          <span
+            className="ReactVirtualized__Table__headerTruncatedText c1"
+            title="Description"
+          >
+            Description
+          </span>
+        </div>
+      </div>
+      <div
+        aria-label="grid"
+        aria-readonly={true}
+        className="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+        onScroll={[Function]}
+        role="rowgroup"
+        style={
+          Object {
+            "WebkitOverflowScrolling": "touch",
+            "boxSizing": "border-box",
+            "direction": "ltr",
+            "height": -40,
+            "overflowX": "hidden",
+            "overflowY": "auto",
+            "position": "relative",
+            "width": 0,
+            "willChange": "transform",
+          }
+        }
+        tabIndex={0}
+      />
+    </div>
+  </div>
+</div>
 `;
 
-exports[`Storyshots Components | Table fetch from external data 1`] = `null`;
+exports[`Storyshots Packages | Table Fixed column 1`] = `
+<div
+  style={
+    Object {
+      "height": "400px",
+      "width": "500px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "height": 0,
+        "overflow": "visible",
+        "width": 0,
+      }
+    }
+  >
+    <div
+      className="ReactVirtualized__Table"
+      role="grid"
+      style={Object {}}
+    />
+  </div>
+</div>
+`;

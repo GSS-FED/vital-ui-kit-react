@@ -25,7 +25,7 @@ import {
   Table,
   defaultCellRenderer,
 } from '@vital-ui/react';
-import { CheckBoxExample } from './examples/Checkbox.stories';
+import { CheckBoxExample } from './Checkbox.stories';
 
 // Table data as an array of objects
 const list = new Array(100).fill(true).map(() => ({
@@ -34,7 +34,7 @@ const list = new Array(100).fill(true).map(() => ({
   location: faker.address.city(),
 }));
 
-storiesOf('Table', module)
+storiesOf('Packages | Table', module)
   .addDecorator(withKnobs)
   // .addDecorator(centered)
   .add(
