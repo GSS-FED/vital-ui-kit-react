@@ -15,7 +15,7 @@ export { default as MultipleInput } from './MultipleInput';
 export { default as FieldInput } from './FieldInput';
 
 export { Radio, RadioGroup } from './radio';
-export { Select, MultipleSelect, Tag } from './select';
+export { Select, MultiSelect, Tag } from './select';
 export { Checkbox, CheckboxGroup } from './checkbox';
 export { default as Switch } from './switch';
 export { default as Slider } from './slider';

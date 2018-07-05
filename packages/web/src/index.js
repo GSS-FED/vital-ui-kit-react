@@ -39,7 +39,7 @@ import {
   CheckboxGroup,
   Checkbox,
   Tag,
-  MultipleSelect,
+  MultiSelect,
 } from '@vital-ui/react-form';
 import Modal from '@vital-ui/react-modal';
 import { List, ListContent, ListItem } from '@vital-ui/react-list';
@@ -108,6 +108,6 @@ export {
   IconContext,
   defaultIcon,
   VitalProvider,
-  MultipleSelect,
+  MultiSelect,
   Tag,
 };
