@@ -24,7 +24,7 @@ import {
   Input,
   Select,
   Icon,
-  MultipleSelect,
+  MultiSelect,
   Tag,
 } from '@vital-ui/react';
 
@@ -132,7 +132,7 @@ class TagExample extends React.Component {
 
   render() {
     return (
-      <MultipleSelect
+      <MultiSelect
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
         values={this.state.selectedItem}
@@ -145,20 +145,20 @@ class TagExample extends React.Component {
           </Tag>
         ))}
       >
-        <MultipleSelect.Dropdown>
+        <MultiSelect.Dropdown>
           {items
             .filter(item => !this.state.selectedItem.includes(item))
             .map((item, i) => (
-              <MultipleSelect.DropdownItem
+              <MultiSelect.DropdownItem
                 key={item.content}
                 item={item}
                 index={i}
               >
                 {item.content}
-              </MultipleSelect.DropdownItem>
+              </MultiSelect.DropdownItem>
             ))}
-        </MultipleSelect.Dropdown>
-      </MultipleSelect>
+        </MultiSelect.Dropdown>
+      </MultiSelect>
     );
   }
 }

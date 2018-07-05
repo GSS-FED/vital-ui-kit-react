@@ -48,7 +48,7 @@ type Props = {
   values: any,
 };
 
-class MultipleSelect extends React.Component<Props, State> {
+class MultiSelect extends React.Component<Props, State> {
   state = {
     input: '',
     isOpen: false,
@@ -125,4 +125,4 @@ class MultipleSelect extends React.Component<Props, State> {
   }
 }
 
-export default MultipleSelect;
+export default MultiSelect;
