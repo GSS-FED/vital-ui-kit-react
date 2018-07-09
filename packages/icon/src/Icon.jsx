@@ -40,7 +40,7 @@ type Props = {
   size?: number,
   color?: string,
   icon?: any,
-  onClick?: () => mixed,
+  onClick?: () => void,
 };
 
 /**
@@ -84,7 +84,7 @@ Icon.defaultProps = {
   size: 16,
   icon: defaultIcon,
   color: 'currentColor',
-  onClick: () => {},
+  onClick: undefined,
 };
 
 export default withIcon(Icon);
