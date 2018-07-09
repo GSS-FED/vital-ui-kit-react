@@ -28,7 +28,11 @@ storiesOf('Packages | Menu', module)
     'Basic',
     withInfo(`info`)(
       withNotes('This is Menu')(() => (
-        <Menu>
+        <Menu
+          style={{
+            height: '100px',
+          }}
+        >
           <Menu.Item>
             <MenuIcon name="user" />
             User Accounts
