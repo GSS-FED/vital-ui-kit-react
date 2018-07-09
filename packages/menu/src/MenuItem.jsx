@@ -31,6 +31,7 @@ Root.defaultProps = {
 const MenuButton = styled(Button)`
   display: flex;
   border-radius: 0;
+  height: 100%;
 `;
 
 type Props = {
