@@ -78,32 +78,6 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   background: #D8E3F6;
 }
 
-.c8 {
-  padding: 0 10px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  line-height: 50px;
-  box-sizing: border-box;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  color: #456297;
-}
-
-.c8:hover {
-  background-color: #D8E3F6;
-}
-
 .c9 {
   padding: 0 10px;
   margin: 0;
@@ -127,6 +101,32 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
 }
 
 .c9:hover {
+  background-color: #D8E3F6;
+}
+
+.c8 {
+  padding: 0 10px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  line-height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #456297;
+}
+
+.c8:hover {
   background-color: #D8E3F6;
 }
 
@@ -283,32 +283,6 @@ exports[`Storyshots Packages | Card Hero Image 1`] = `
   background: #D8E3F6;
 }
 
-.c7 {
-  padding: 0 10px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  line-height: 50px;
-  box-sizing: border-box;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  color: #456297;
-}
-
-.c7:hover {
-  background-color: #D8E3F6;
-}
-
 .c8 {
   padding: 0 10px;
   margin: 0;
@@ -332,6 +306,32 @@ exports[`Storyshots Packages | Card Hero Image 1`] = `
 }
 
 .c8:hover {
+  background-color: #D8E3F6;
+}
+
+.c7 {
+  padding: 0 10px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 120ms ease-in;
+  transition: all 120ms ease-in;
+  line-height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #456297;
+}
+
+.c7:hover {
   background-color: #D8E3F6;
 }
 
