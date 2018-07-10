@@ -12,7 +12,6 @@ exports[`Storyshots utils | Box Basic 1`] = `
 
 <div
   className="c0 c1"
-  width="100px"
 >
   This is a box!
 </div>
