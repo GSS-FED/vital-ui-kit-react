@@ -7,6 +7,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "cjs",
+    "esm",
+    "src"
+  ],
+  "sideEffects": false,
   "author": "Eric Yip (https://github.com/ericyip)",
   "peerDependencies": {
     "react": "^16",

@@ -2,14 +2,16 @@
   "presets": ["flow", "react", ["env", {"modules": false}]],
   "plugins": [
     "babel-plugin-transform-object-rest-spread",
-    "babel-plugin-transform-class-properties"
+    "babel-plugin-transform-class-properties",
+    "babel-plugin-inline-import-data-uri"
   ],
   "env": {
     "cjs": {
       "presets": ["flow", "react", ["env", {"modules": "commonjs"}]],
       "plugins": [
         "babel-plugin-transform-object-rest-spread",
-        "babel-plugin-transform-class-properties"
+        "babel-plugin-transform-class-properties",
+        "babel-plugin-inline-import-data-uri"
       ]
     },
     "development": {
