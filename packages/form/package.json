@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -19,7 +19,7 @@
     "@vital-ui/react-icon": "^0.8.2",
     "@vital-ui/react-theme": "^0.8.2",
     "@vital-ui/react-tooltip": "^0.8.2",
-    "@vital-ui/react-utils": "^0.8.2",
+    "@vital-ui/react-utils": "^0.8.3",
     "classnames": "^2.2.6",
     "downshift": "^2.0.10",
     "polish": "0.2.3",
