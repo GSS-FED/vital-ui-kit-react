@@ -23,6 +23,8 @@ type Props = {
   default?: string | number | void,
   style?: CSSStyleDeclaration,
   className?: string,
+  /** Get DropdownList item */
+  getDropdownListProps?: (items: any) => void,
 };
 
 type State = {
@@ -36,6 +38,7 @@ class PillsGroup extends React.Component<Props, State> {
     current: null,
     style: undefined,
     className: '',
+    getDropdownListProps: undefined,
   };
 
   state = {
@@ -58,7 +61,12 @@ class PillsGroup extends React.Component<Props, State> {
     );
 
   render() {
-    const { vertical, style, className } = this.props;
+    const {
+      vertical,
+      style,
+      className,
+      getDropdownListProps,
+    } = this.props;
     if (vertical) {
       return (
         <Root
@@ -75,6 +83,9 @@ class PillsGroup extends React.Component<Props, State> {
         style={style}
         vertical={vertical}
         current={this.state.current}
+        dropdownList={
+          getDropdownListProps || (item => <div>{item}</div>)
+        }
       >
         {this.renderChildren()}
       </PriorityNav>
