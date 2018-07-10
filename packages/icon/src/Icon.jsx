@@ -84,7 +84,7 @@ Icon.defaultProps = {
   size: 16,
   icon: defaultIcon,
   color: 'currentColor',
-  onClick: undefined,
+  onClick: null,
 };
 
 export default withIcon(Icon);
