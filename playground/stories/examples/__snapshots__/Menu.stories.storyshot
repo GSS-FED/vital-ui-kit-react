@@ -82,11 +82,6 @@ exports[`Storyshots Packages | Menu Basic 1`] = `
 
 <div
   className="vital__menu c0"
-  style={
-    Object {
-      "height": "100px",
-    }
-  }
 >
   <div
     className="vital__menu-item c1"
