@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { space, layout, type Space, type Layout } from '../style';
 
 const Container = styled.div`
-  ${p => p};
   ${space};
   ${layout};
 `;
