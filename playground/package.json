@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV='test' jest",
+    "test": "NODE_ENV=test jest",
     "start": "start-storybook -p 6006"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
@@ -22,7 +22,10 @@
     "@storybook/addons": "3.4.7",
     "@storybook/react": "3.4.7",
     "babel-plugin-styled-components": "1.5.1",
-    "markdown-loader-jest": "0.1.1"
+    "markdown-loader-jest": "0.1.1",
+    "jest-styled-components": "5.0.1",
+    "jest-specific-snapshot": "1.0.0",
+    "jest": "23.3.0"
   },
   "dependencies": {
     "axios": "0.18.0",

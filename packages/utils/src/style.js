@@ -32,6 +32,38 @@ export const space = (props: Space) => ({
   paddingBottom: props.paddingBottom || '',
 });
 
+export type Layout = {
+  maxWitdh?: string,
+  minWidth?: string,
+  height?: string,
+  width?: string,
+  maxHeight?: string,
+  minHeight?: string,
+  size?: string,
+  display?: string,
+  verticalAlign?: string,
+};
+
+export const layout = ({ size, ...props }) => {
+  const sizeProp = size
+    ? {
+        width: size,
+        height: size,
+      }
+    : {};
+  return {
+    maxWitdh: props.maxWitdh,
+    minWidth: props.minWidth,
+    height: props.height,
+    width: props.width,
+    maxHeight: props.maxHeight,
+    minHeight: props.minHeight,
+    display: props.display,
+    verticalAlign: props.verticalAlign,
+    ...sizeProp,
+  };
+};
+
 type StatusProps = {
   alarm: boolean,
   warning: boolean,

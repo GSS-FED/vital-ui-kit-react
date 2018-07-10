@@ -2,6 +2,7 @@
 import {
   stateColor,
   space,
+  layout,
   transitionBase,
   borderBottomRadius,
   borderLeftRadius,
@@ -22,5 +23,6 @@ export {
   borderRightRadius,
   trunTo,
   Box,
+  layout,
   withDeprecationWarnings,
 };
