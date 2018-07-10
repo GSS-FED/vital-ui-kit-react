@@ -52,7 +52,14 @@ export const layout = ({ size, ...props }) => {
       }
     : {};
   return {
-    ...props,
+    maxWitdh: props.maxWitdh,
+    minWidth: props.minWidth,
+    height: props.height,
+    width: props.width,
+    maxHeight: props.maxHeight,
+    minHeight: props.minHeight,
+    display: props.display,
+    verticalAlign: props.verticalAlign,
     ...sizeProp,
   };
 };
