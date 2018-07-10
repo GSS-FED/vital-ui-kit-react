@@ -35,6 +35,8 @@ const ColorBox = styled(Box)`
 storiesOf('utils | Box', module).add(
   'Basic',
   withInfo(`Basic box div`)(() => (
-    <ColorBox padding="20px">This is a box!</ColorBox>
+    <ColorBox padding="20px" maxWidth="200px">
+      This is a box!
+    </ColorBox>
   )),
 );
