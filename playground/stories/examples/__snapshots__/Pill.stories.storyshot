@@ -19,12 +19,16 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
 
 .c1 {
   display: inline-block;
-  background: unsert;
+  background: unset;
 }
 
 .c2 {
   display: inline-block;
-  padding: 0;
+  padding: unset;
+}
+
+.c2:first-child {
+  padding-left: 0;
 }
 
 .c3 {
@@ -103,7 +107,8 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="vital__pill c3"
+        className="vital__pill vital__pill-group c3"
+        offset={0}
         onClick={[Function]}
         onSelect={[Function]}
         selected={true}
@@ -124,7 +129,8 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="vital__pill c7"
+        className="vital__pill vital__pill-group c7"
+        offset={0}
         onClick={[Function]}
         onSelect={[Function]}
         selected={false}
@@ -145,7 +151,8 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="vital__pill c7"
+        className="vital__pill vital__pill-group c7"
+        offset={0}
         onClick={[Function]}
         onSelect={[Function]}
         selected={false}
@@ -166,7 +173,8 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="vital__pill c7"
+        className="vital__pill vital__pill-group c7"
+        offset={0}
         onClick={[Function]}
         onSelect={[Function]}
         selected={false}
@@ -182,7 +190,8 @@ exports[`Storyshots Packages | Pill Basic 1`] = `
       className="c2"
     >
       <div
-        className="vital__pill c7"
+        className="vital__pill vital__pill-group c7"
+        offset={0}
         onClick={[Function]}
         onSelect={[Function]}
         selected={false}
