@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Form Full Example 1`] = `
-.c18 {
-  cursor: pointer;
-}
-
 .c9 {
   padding: 0.46633rem 0.8rem;
   font-size: 1rem;
@@ -268,7 +264,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c19 {
+.c18 {
   color: #456297;
 }
 
@@ -287,7 +283,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   vertical-align: middle;
 }
 
-.c21 {
+.c20 {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -303,7 +299,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   border-color: #95ACD4;
 }
 
-.c20 {
+.c19 {
   display: none;
 }
 
@@ -321,7 +317,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   transition: all 120ms ease-out;
 }
 
-.c22 {
+.c21 {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -679,9 +675,9 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             disabled={false}
           >
             <svg
-              className="c18"
+              className=""
               height="12"
-              onClick={[Function]}
+              onClick={null}
               viewBox="0 0 1024 1024"
               width="12"
             >
@@ -694,12 +690,12 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         </span>
         <span
           checked={false}
-          className="c19"
+          className="c18"
           disabled={false}
         >
           <input
             checked={false}
-            className="c20"
+            className="c19"
             defaultChecked={false}
             disabled={false}
             onChange={[Function]}
@@ -713,18 +709,18 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
       >
         <span
           checked={true}
-          className="c21"
+          className="c20"
           disabled={false}
         >
           <div
             checked={true}
-            className="c22"
+            className="c21"
             disabled={false}
           >
             <svg
-              className="c18"
+              className=""
               height="12"
-              onClick={[Function]}
+              onClick={null}
               viewBox="0 0 1024 1024"
               width="12"
             >
@@ -737,12 +733,12 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         </span>
         <span
           checked={true}
-          className="c19"
+          className="c18"
           disabled={false}
         >
           <input
             checked={true}
-            className="c20"
+            className="c19"
             defaultChecked={true}
             disabled={false}
             onChange={[Function]}
@@ -765,9 +761,9 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             disabled={false}
           >
             <svg
-              className="c18"
+              className=""
               height="12"
-              onClick={[Function]}
+              onClick={null}
               viewBox="0 0 1024 1024"
               width="12"
             >
@@ -780,12 +776,12 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         </span>
         <span
           checked={false}
-          className="c19"
+          className="c18"
           disabled={false}
         >
           <input
             checked={false}
-            className="c20"
+            className="c19"
             defaultChecked={false}
             disabled={false}
             onChange={[Function]}
@@ -1074,10 +1070,6 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
 
 exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 .c9 {
-  cursor: pointer;
-}
-
-.c10 {
   position: relative;
   background: #F7F9FE;
   color: #0E86FE;
@@ -1103,25 +1095,25 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
   border-color: #0E86FE;
 }
 
-.c10:hover {
+.c9:hover {
   background: #D8E3F6;
 }
 
-.c10:active {
+.c9:active {
   background: #C4D2EB;
 }
 
-.c10:hover {
+.c9:hover {
   background: #41a0fe;
   border-color: #41a0fe;
 }
 
-.c10:active {
+.c9:active {
   background: #0167ce;
   border-color: #0167ce;
 }
 
-.c10[disabled] {
+.c9[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
   background-color: #F7F9FE;
@@ -1373,9 +1365,9 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
           className="vital__addon c8"
         >
           <svg
-            className="c9"
+            className=""
             height={16}
-            onClick={[Function]}
+            onClick={null}
             viewBox="0 0 583.4605714285714 1024"
             width={16}
           >
@@ -1453,7 +1445,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
         className="c4"
       >
         <button
-          className="vital__button c10"
+          className="vital__button c9"
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1971,10 +1963,6 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Input With Icon 1`] = `
-.c4 {
-  cursor: pointer;
-}
-
 .c1 {
   position: relative;
   border-radius: inherit;
@@ -2030,7 +2018,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   background-color: #EEF2FC;
 }
 
-.c5 {
+.c4 {
   vertical-align: middle;
   height: 1.93267rem;
   position: relative;
@@ -2051,30 +2039,30 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   padding-left: 2.2em;
 }
 
-.c5::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #95ACD4;
 }
 
-.c5::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #95ACD4;
 }
 
-.c5:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #95ACD4;
 }
 
-.c5::placeholder {
+.c4::placeholder {
   color: #95ACD4;
 }
 
-.c5:focus {
+.c4:focus {
   outline: 0;
   border: 1px solid #0E86FE;
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
   z-index: 7;
 }
 
-.c5:disabled {
+.c4:disabled {
   pointer-events: none;
   border-color: #C4D2EB;
   background-color: #EEF2FC;
@@ -2095,7 +2083,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   color: #C4D2EB;
 }
 
-.c6 {
+.c5 {
   position: absolute;
   top: calc(50% - 0.5em);
   width: 2.2em;
@@ -2127,9 +2115,9 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
       type="text"
     />
     <svg
-      className="c3 c4"
+      className="c3 "
       height={16}
-      onClick={[Function]}
+      onClick={null}
       viewBox="0 0 950.8571428571428 1024"
       width={16}
     >
@@ -2145,7 +2133,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="c5"
+      className="c4"
       disabled={false}
       name={null}
       placeholder="Left side icon"
@@ -2153,7 +2141,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
       type="text"
     />
     <svg
-      className="c6 "
+      className="c5 "
       height={16}
       onClick={null}
       viewBox="0 0 950.8571428571428 1024"
@@ -2247,10 +2235,6 @@ exports[`Storyshots Packages | Form/Switch Basic 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Switch with Icon Button 1`] = `
-.c3 {
-  cursor: pointer;
-}
-
 .c0 {
   display: none;
 }
@@ -2334,9 +2318,9 @@ exports[`Storyshots Packages | Form/Switch with Icon Button 1`] = `
       icon="wifi"
     >
       <svg
-        className="c3"
+        className=""
         height="17"
-        onClick={[Function]}
+        onClick={null}
         viewBox="0 0 1170.2857142857142 1024"
         width="17"
       >
@@ -2351,10 +2335,6 @@ exports[`Storyshots Packages | Form/Switch with Icon Button 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
-.c4 {
-  cursor: pointer;
-}
-
 .c0 {
   display: none;
 }
@@ -2396,7 +2376,7 @@ exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
   cursor: pointer;
 }
 
-.c6 {
+.c5 {
   width: 22px;
   height: 22px;
   border-radius: 4px;
@@ -2425,7 +2405,7 @@ exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   display: block;
 }
 
@@ -2453,9 +2433,9 @@ exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
       className="c2 c3"
     >
       <svg
-        className="c4"
+        className=""
         height={16}
-        onClick={[Function]}
+        onClick={null}
         viewBox="0 0 1170.2857142857142 1024"
         width={16}
       >
@@ -2467,12 +2447,12 @@ exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
     </div>
     <div
       checked={false}
-      className="c5 c3"
+      className="c4 c3"
     >
       <svg
-        className="c4"
+        className=""
         height={16}
-        onClick={[Function]}
+        onClick={null}
         viewBox="0 0 1170.2857142857142 1024"
         width={16}
       >
@@ -2483,7 +2463,7 @@ exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
       </svg>
     </div>
     <div
-      className="c6"
+      className="c5"
       disabled={false}
       icon={null}
     />

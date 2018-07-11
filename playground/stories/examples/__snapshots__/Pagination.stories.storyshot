@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Pagination Basic 1`] = `
-.c4 {
-  cursor: pointer;
-}
-
 .c3 {
   position: relative;
   background: #F7F9FE;
@@ -51,7 +47,7 @@ exports[`Storyshots Packages | Pagination Basic 1`] = `
   pointer-events: none;
 }
 
-.c5 {
+.c4 {
   position: relative;
   background: #F7F9FE;
   color: #456297;
@@ -77,19 +73,19 @@ exports[`Storyshots Packages | Pagination Basic 1`] = `
   border: 1px solid transparent;
 }
 
-.c5:hover {
+.c4:hover {
   background: #D8E3F6;
 }
 
-.c5:active {
+.c4:active {
   background: #C4D2EB;
 }
 
-.c5:hover {
+.c4:hover {
   background: #D8E3F6;
 }
 
-.c5[disabled] {
+.c4[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
   background-color: #F7F9FE;
@@ -136,9 +132,9 @@ exports[`Storyshots Packages | Pagination Basic 1`] = `
       size="medium"
     >
       <svg
-        className="c4"
+        className=""
         height="12"
-        onClick={[Function]}
+        onClick={null}
         style={
           Object {
             "marginRight": "5px",
@@ -183,7 +179,7 @@ exports[`Storyshots Packages | Pagination Basic 1`] = `
     className="c1"
   >
     <button
-      className="vital__button c2 c5"
+      className="vital__button c2 c4"
       onClick={[Function]}
       selected={true}
       size="medium"
@@ -226,9 +222,9 @@ exports[`Storyshots Packages | Pagination Basic 1`] = `
     >
       Next
       <svg
-        className="c4"
+        className=""
         height="12"
-        onClick={[Function]}
+        onClick={null}
         style={
           Object {
             "marginLeft": "5px",

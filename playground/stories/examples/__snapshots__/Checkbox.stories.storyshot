@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
-.c3 {
-  cursor: pointer;
-}
-
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -15,7 +11,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c4 {
+.c3 {
   color: #456297;
 }
 
@@ -34,7 +30,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   vertical-align: middle;
 }
 
-.c5 {
+.c4 {
   display: none;
 }
 
@@ -68,9 +64,9 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
       disabled={false}
     >
       <svg
-        className="c3"
+        className=""
         height="12"
-        onClick={[Function]}
+        onClick={null}
         viewBox="0 0 1024 1024"
         width="12"
       >
@@ -83,12 +79,12 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   </span>
   <span
     checked={false}
-    className="c4"
+    className="c3"
     disabled={false}
   >
     <input
       checked={false}
-      className="c5"
+      className="c4"
       defaultChecked={false}
       disabled={false}
       onChange={[Function]}
@@ -100,10 +96,6 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
-.c3 {
-  cursor: pointer;
-}
-
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -114,7 +106,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c4 {
+.c3 {
   color: #456297;
 }
 
@@ -133,7 +125,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   vertical-align: middle;
 }
 
-.c5 {
+.c4 {
   display: none;
 }
 
@@ -170,9 +162,9 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
-          className="c3"
+          className=""
           height="12"
-          onClick={[Function]}
+          onClick={null}
           viewBox="0 0 1024 1024"
           width="12"
         >
@@ -185,12 +177,12 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
     </span>
     <span
       checked={false}
-      className="c4"
+      className="c3"
       disabled={false}
     >
       <input
         checked={false}
-        className="c5"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}
@@ -215,9 +207,9 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
-          className="c3"
+          className=""
           height="12"
-          onClick={[Function]}
+          onClick={null}
           viewBox="0 0 1024 1024"
           width="12"
         >
@@ -230,12 +222,12 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
     </span>
     <span
       checked={false}
-      className="c4"
+      className="c3"
       disabled={false}
     >
       <input
         checked={false}
-        className="c5"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}
@@ -260,9 +252,9 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         disabled={false}
       >
         <svg
-          className="c3"
+          className=""
           height="12"
-          onClick={[Function]}
+          onClick={null}
           viewBox="0 0 1024 1024"
           width="12"
         >
@@ -275,12 +267,12 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
     </span>
     <span
       checked={false}
-      className="c4"
+      className="c3"
       disabled={false}
     >
       <input
         checked={false}
-        className="c5"
+        className="c4"
         defaultChecked={false}
         disabled={false}
         onChange={[Function]}
@@ -293,10 +285,6 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
-.c3 {
-  cursor: pointer;
-}
-
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -307,7 +295,7 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c4 {
+.c3 {
   color: #456297;
 }
 
@@ -327,7 +315,7 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   border-color: #95ACD4;
 }
 
-.c5 {
+.c4 {
   display: none;
 }
 
@@ -359,9 +347,9 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
       disabled={false}
     >
       <svg
-        className="c3"
+        className=""
         height="12"
-        onClick={[Function]}
+        onClick={null}
         viewBox="0 0 950.8571428571428 1024"
         width="12"
       >
@@ -374,12 +362,12 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   </span>
   <span
     checked={true}
-    className="c4"
+    className="c3"
     disabled={false}
   >
     <input
       checked={true}
-      className="c5"
+      className="c4"
       defaultChecked={true}
       disabled={false}
       onChange={[Function]}
