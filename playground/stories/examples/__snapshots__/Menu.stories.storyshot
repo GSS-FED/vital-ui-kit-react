@@ -65,6 +65,7 @@ exports[`Storyshots Packages | Menu Basic 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 0;
+  height: 100%;
 }
 
 .c0 {
