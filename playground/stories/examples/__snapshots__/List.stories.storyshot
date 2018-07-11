@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | List Basic 1`] = `
-.c8 {
-  cursor: pointer;
-}
-
 .c6 {
   display: inline-block;
   vertical-align: middle;
@@ -55,7 +51,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   text-decoration: none;
 }
 
-.c10 {
+.c9 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -75,6 +71,35 @@ exports[`Storyshots Packages | List Basic 1`] = `
   padding-left: calc(0.75rem + 16px);
   color: #456297;
   background: #F7F9FE;
+}
+
+.c9:hover {
+  background-color: #D8E3F6;
+  color: #419FFE;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  position: relative;
+  display: table;
+  width: 100%;
+  margin-bottom: -1px;
+  padding: 0.75rem 1.3rem;
+  font-size: 1.125rem;
+  word-break: break-word;
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: calc(0.75rem + 32px);
+  color: #456297;
+  background: #EEF2FC;
 }
 
 .c10:hover {
@@ -101,9 +126,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  padding-left: calc(0.75rem + 32px);
+  padding-left: calc(0.75rem + 48px);
   color: #456297;
-  background: #EEF2FC;
+  background: #D8E3F6;
 }
 
 .c11:hover {
@@ -125,41 +150,12 @@ exports[`Storyshots Packages | List Basic 1`] = `
   border: none;
   border-bottom: none;
   border-top: none;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  padding-left: calc(0.75rem + 48px);
-  color: #456297;
-  background: #D8E3F6;
-}
-
-.c12:hover {
-  background-color: #D8E3F6;
-  color: #419FFE;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c13 {
-  box-sizing: border-box;
-  position: relative;
-  display: table;
-  width: 100%;
-  margin-bottom: -1px;
-  padding: 0.75rem 1.3rem;
-  font-size: 1.125rem;
-  word-break: break-word;
-  border: none;
-  border-bottom: none;
-  border-top: none;
   padding-left: calc(0.75rem + 64px);
   color: #456297;
   background: #C4D2EB;
 }
 
-.c14 {
+.c13 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -176,7 +172,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   background: #EEF2FC;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   position: relative;
   display: table;
@@ -213,7 +209,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
   transform-origin: center center;
 }
 
-.c9 {
+.c8 {
   will-change: height;
   background-color: #f7f9fd;
   overflow: hidden;
@@ -224,12 +220,12 @@ exports[`Storyshots Packages | List Basic 1`] = `
   padding-right: 20px;
 }
 
-.c17 {
+.c16 {
   text-align: right;
   padding-right: 0;
 }
 
-.c15 {
+.c14 {
   display: block;
   font-size: 1.2rem;
   border-left: none;
@@ -271,9 +267,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
           </span>
         </div>
         <svg
-          className="c7 c8"
+          className="c7 "
           height={10}
-          onClick={[Function]}
+          onClick={null}
           open={false}
           viewBox="0 0 1024 1024"
           width={10}
@@ -285,13 +281,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
         </svg>
       </div>
       <ul
-        className="c9"
+        className="c8"
       >
         <li
           className="vital__ListItem c2"
         >
           <div
-            className="c10"
+            className="c9"
             onClick={[Function]}
           >
             <div
@@ -300,9 +296,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
               Level 2
             </div>
             <svg
-              className="c7 c8"
+              className="c7 "
               height={10}
-              onClick={[Function]}
+              onClick={null}
               open={false}
               viewBox="0 0 1024 1024"
               width={10}
@@ -314,13 +310,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
             </svg>
           </div>
           <ul
-            className="c9"
+            className="c8"
           >
             <li
               className="vital__ListItem c2"
             >
               <div
-                className="c11"
+                className="c10"
                 onClick={[Function]}
               >
                 <div
@@ -329,9 +325,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   Level 3
                 </div>
                 <svg
-                  className="c7 c8"
+                  className="c7 "
                   height={10}
-                  onClick={[Function]}
+                  onClick={null}
                   open={false}
                   viewBox="0 0 1024 1024"
                   width={10}
@@ -343,13 +339,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
                 </svg>
               </div>
               <ul
-                className="c9"
+                className="c8"
               >
                 <li
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c12"
+                    className="c11"
                     onClick={[Function]}
                   >
                     <div
@@ -358,9 +354,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       Level 4
                     </div>
                     <svg
-                      className="c7 c8"
+                      className="c7 "
                       height={10}
-                      onClick={[Function]}
+                      onClick={null}
                       open={false}
                       viewBox="0 0 1024 1024"
                       width={10}
@@ -372,13 +368,13 @@ exports[`Storyshots Packages | List Basic 1`] = `
                     </svg>
                   </div>
                   <ul
-                    className="c9"
+                    className="c8"
                   >
                     <li
                       className="vital__ListItem c2"
                     >
                       <div
-                        className="c13"
+                        className="c12"
                         onClick={[Function]}
                       >
                         <div
@@ -394,7 +390,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c12"
+                    className="c11"
                     onClick={[Function]}
                   >
                     <div
@@ -403,9 +399,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       Level 4
                     </div>
                     <svg
-                      className="c7 c8"
+                      className="c7 "
                       height={10}
-                      onClick={[Function]}
+                      onClick={null}
                       open={false}
                       viewBox="0 0 694.8571428571428 1024"
                       width={10}
@@ -421,7 +417,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   className="vital__ListItem c2"
                 >
                   <div
-                    className="c12"
+                    className="c11"
                     onClick={[Function]}
                   >
                     <div
@@ -439,9 +435,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
                       </span>
                     </div>
                     <svg
-                      className="c7 c8"
+                      className="c7 "
                       height={10}
-                      onClick={[Function]}
+                      onClick={null}
                       open={false}
                       viewBox="0 0 694.8571428571428 1024"
                       width={10}
@@ -459,7 +455,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
               className="vital__ListItem c2"
             >
               <div
-                className="c14"
+                className="c13"
                 onClick={[Function]}
               >
                 <div
@@ -473,7 +469,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
               className="vital__ListItem c2"
             >
               <div
-                className="c11"
+                className="c10"
                 onClick={[Function]}
               >
                 <div
@@ -482,9 +478,9 @@ exports[`Storyshots Packages | List Basic 1`] = `
                   Level 3 has Content
                 </div>
                 <svg
-                  className="c7 c8"
+                  className="c7 "
                   height={10}
-                  onClick={[Function]}
+                  onClick={null}
                   open={false}
                   viewBox="0 0 1024 1024"
                   width={10}
@@ -496,10 +492,10 @@ exports[`Storyshots Packages | List Basic 1`] = `
                 </svg>
               </div>
               <ul
-                className="c9"
+                className="c8"
               >
                 <div
-                  className="c15"
+                  className="c14"
                 >
                   Vero sint molestiae sit consequuntur aut aliquam. Aut porro maiores est rerum sed quasi fugiat culpa fuga. Voluptatem quasi excepturi earum. Repellendus qui deleniti aut blanditiis exercitationem eum dolorem libero debitis.
                 </div>
@@ -513,7 +509,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
       className="vital__ListItem c2"
     >
       <div
-        className="c16"
+        className="c15"
         onClick={[Function]}
       >
         <div
@@ -522,7 +518,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
           Level 1
         </div>
         <div
-          className="c17 c4"
+          className="c16 c4"
         >
           <span
             className="vital__badge c6"
@@ -537,11 +533,7 @@ exports[`Storyshots Packages | List Basic 1`] = `
 `;
 
 exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
-.c6 {
-  cursor: pointer;
-}
-
-.c10 {
+.c9 {
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
@@ -612,18 +604,18 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
   transform-origin: center center;
 }
 
-.c7 {
+.c6 {
   will-change: height;
   background-color: #f7f9fd;
   overflow: hidden;
 }
 
-.c9 {
+.c8 {
   text-align: right;
   padding-right: 20px;
 }
 
-.c8 {
+.c7 {
   display: block;
   font-size: 1.2rem;
   border-left: none;
@@ -656,9 +648,9 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
           Collaspe 1
         </div>
         <svg
-          className="c5 c6"
+          className="c5 "
           height={10}
-          onClick={[Function]}
+          onClick={null}
           open={false}
           viewBox="0 0 1024 1024"
           width={10}
@@ -670,10 +662,10 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
         </svg>
       </div>
       <ul
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           Quo voluptates numquam nulla libero vel facere quibusdam sunt. Hic sed delectus et ipsum iste. Eos eligendi quibusdam. Possimus quisquam minima velit maxime officia consequatur et magni. Necessitatibus quos sed alias architecto est pariatur. Et vero aperiam quaerat. Ut numquam quaerat et aut neque ratione velit et dolor. Ipsam repellendus saepe quas et iste debitis molestias recusandae ipsum. Praesentium cumque est velit delectus non atque ullam. Non quis voluptate doloribus voluptatum assumenda. Illum est incidunt a eius voluptatum laudantium repellat. Ipsum eos non molestias qui ab quasi pariatur. Ipsum ea perferendis dolorem nihil et dolor. Expedita officia accusantium incidunt illum illum consequuntur velit.
         </div>
@@ -692,18 +684,18 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
           Collaspe 2
         </div>
         <div
-          className="c9 c4"
+          className="c8 c4"
         >
           <span
-            className="vital__badge c10"
+            className="vital__badge c9"
           >
             1
           </span>
         </div>
         <svg
-          className="c5 c6"
+          className="c5 "
           height={10}
-          onClick={[Function]}
+          onClick={null}
           open={false}
           viewBox="0 0 1024 1024"
           width={10}
@@ -715,10 +707,10 @@ exports[`Storyshots Packages | List Tree/ Accordion 1`] = `
         </svg>
       </div>
       <ul
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           Nostrum tempora ipsum et in. Numquam praesentium voluptas itaque ratione iste quisquam harum. Voluptatibus sit rerum. Vitae consequatur eaque aliquid porro perspiciatis culpa et sit. Iste illo eum cum. Et ea beatae dolorum tempore possimus iste quia nobis beatae. Aut voluptatibus illo possimus inventore laudantium nobis aperiam. Aut aut vel officiis laborum nihil dolor. Aut velit eligendi at at sed esse inventore. Perspiciatis ipsum debitis in voluptatem error cumque iure earum nostrum. Quo recusandae dolores esse. Ipsam voluptas aut et nisi iste qui minima mollitia alias.
         </div>

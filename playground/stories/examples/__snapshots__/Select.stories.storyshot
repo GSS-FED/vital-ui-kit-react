@@ -146,10 +146,6 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Select Dropdown 1`] = `
-.c5 {
-  cursor: pointer;
-}
-
 .c2 {
   position: relative;
   font-size: 0.866rem;
@@ -241,9 +237,9 @@ exports[`Storyshots Packages | Form/Select Dropdown 1`] = `
           Select an item
         </span>
         <svg
-          className="c5"
+          className=""
           height={15}
-          onClick={[Function]}
+          onClick={null}
           viewBox="0 0 585.1428571428571 1024"
           width={15}
         >
