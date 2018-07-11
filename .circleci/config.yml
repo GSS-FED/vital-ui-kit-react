@@ -71,7 +71,5 @@ workflows:
   build_and_update:
     jobs:
       - build
-      - hold:
+      - update:
           type: approval
-          requires:
-          - build
