@@ -1,4 +1,30 @@
 # Changelog
+## Unreleased (2018-07-11)
+
+#### :bug: Bug Fix
+* `icon`
+  * [#230](https://github.com/GSS-FED/vital-ui-kit-react/pull/230) Fix Icon cursor bug ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
+## 0.8.3 (2018-07-11)
+
+#### :rocket: Enhancement
+* `menu`
+  * [#233](https://github.com/GSS-FED/vital-ui-kit-react/pull/233) Menu height extends ([@ericyip](https://github.com/ericyip))
+* `utils`
+  * [#232](https://github.com/GSS-FED/vital-ui-kit-react/pull/232) Layout utils ([@ericyip](https://github.com/ericyip))
+
+#### :house: Internal
+* `pill`, `web`
+  * [#231](https://github.com/GSS-FED/vital-ui-kit-react/pull/231) Upgrade ReactPriorityNav v0.2 ([@ericyip](https://github.com/ericyip))
+* `avatar`
+  * [#228](https://github.com/GSS-FED/vital-ui-kit-react/pull/228) Transform assets to data-uri on build ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.8.2 (2018-07-05)
 
 #### :rocket: Enhancement
