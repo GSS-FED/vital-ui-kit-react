@@ -57,3 +57,21 @@ jobs:
       - run:
           name: Test storyshots
           command: yarn run test:web
+  update:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.11.3@sha256:455e78086f4abad6797c6b4e486450513e77867916acd44b5a8b861d840efaee
+    steps:
+      - checkout
+      - run:
+          name: Update Snapshot
+          command: yarn run test:web -u
+workflows:
+  version: 2
+  build_and_update:
+    jobs:
+      - build
+      - hold:
+          type: approval
+          requires:
+          - build
