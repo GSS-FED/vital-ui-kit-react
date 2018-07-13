@@ -21,6 +21,6 @@
     "react-priority-navigation": "0.2.1"
   },
   "devDependencies": {
-    "flow-bin": "0.74.0"
+    "flow-bin": "0.76.0"
   }
 }
