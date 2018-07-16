@@ -71,7 +71,7 @@
     "flow-bin": "0.76.0",
     "flow-copy-source": "2.0.1",
     "husky": "1.0.0-rc.13",
-    "jest": "23.4.0",
+    "jest": "23.4.1",
     "jest-specific-snapshot": "1.0.0",
     "jest-styled-components": "5.0.1",
     "lerna": "2.11.0",
