@@ -56,7 +56,8 @@ const List = styled.li`
 const TitleWrapper = styled.div`
   box-sizing: border-box;
   position: relative;
-  display: table;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: -1px;
   padding: 0.75rem 1.3rem;
