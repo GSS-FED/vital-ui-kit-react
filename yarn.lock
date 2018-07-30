@@ -5453,7 +5453,7 @@ jest-changed-files@^23.4.2:
   dependencies:
     throat "^4.0.0"
 
-jest-cli@^23.4.1, jest-cli@^23.4.2:
+jest-cli@^23.4.2:
   version "23.4.2"
   resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-23.4.2.tgz#49d56bcfe6cf01871bfcc4a0494e08edaf2b61d0"
   dependencies:
@@ -5798,13 +5798,6 @@ jest-worker@^23.2.0:
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-23.2.0.tgz#faf706a8da36fae60eb26957257fa7b5d8ea02b9"
   dependencies:
     merge-stream "^1.0.1"
-
-jest@23.4.1:
-  version "23.4.1"
-  resolved "https://registry.yarnpkg.com/jest/-/jest-23.4.1.tgz#39550c72f3237f63ae1b434d8d122cdf6fa007b6"
-  dependencies:
-    import-local "^1.0.0"
-    jest-cli "^23.4.1"
 
 jest@23.4.2:
   version "23.4.2"
