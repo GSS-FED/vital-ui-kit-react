@@ -1,4 +1,13 @@
 # Changelog
+## 0.8.5 (2018-07-30)
+
+#### :rocket: Enhancement
+* `utils`, `web`
+  * [#253](https://github.com/GSS-FED/vital-ui-kit-react/pull/253) intergraded styled-system ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.8.4 (2018-07-30)
 
 #### :rocket: Enhancement
