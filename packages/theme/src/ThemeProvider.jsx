@@ -2,6 +2,8 @@
 
 import React, { type Node } from 'react';
 import { ThemeProvider as Provider } from 'styled-components';
+import merge from 'lodash.merge';
+
 import defaultVariables from './theme';
 import defaultComponentsTheme from './theme/components';
 
@@ -14,17 +16,20 @@ type Props = {
 class ThemeProvider extends React.Component<Props> {
   static defaultProps = {
     theme: {},
-    componentTheme: undefined,
+    componentTheme: n => n,
   };
 
   render() {
     const { theme, componentTheme, children } = this.props;
+
     const combinedTheme = { ...defaultVariables, ...theme };
-    const complieTheme = componentTheme || defaultComponentsTheme;
-    const combinedWithComponentTheme = {
-      ...combinedTheme,
-      ...complieTheme(combinedTheme),
-    };
+
+    const combinedWithComponentTheme = merge(
+      combinedTheme,
+      defaultComponentsTheme(combinedTheme),
+      componentTheme(combinedTheme),
+    );
+
     return (
       <Provider theme={combinedWithComponentTheme}>
         {children}

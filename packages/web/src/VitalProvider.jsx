@@ -15,7 +15,7 @@ class ThemeProvider extends React.Component<Props> {
   static defaultProps = {
     theme: {},
     icon: {},
-    componentTheme: undefined,
+    componentTheme: n => n,
   };
 
   render() {

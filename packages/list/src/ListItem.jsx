@@ -15,23 +15,24 @@ import { defaultTheme } from '@vital-ui/react-theme';
 import { TitleWrapper, List, Title } from './styled';
 import SubListItem from './SubListItem';
 
-const ICON_SIZE = 10;
-
 const Icon = styled(IconBase)`
-  position: absolute;
-  right: 15px;
-  top: calc(50% - ${ICON_SIZE / 2}px);
   pointer-events: none;
   color: ${({ open, theme }) => (open ? `${theme.info}` : 'inherit')};
   transform: ${props =>
     props.open ? `rotateZ(-180deg)` : `rotateZ(0deg)`};
-  transition: all 0.05s ease-in;
+  transition: transform 0.1s ease-in;
   transform-origin: center center;
 `;
 
 Icon.defaultProps = {
   theme: defaultTheme,
 };
+
+const RightWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
 const InnerWrapper = styled.ul`
   will-change: height;
@@ -59,6 +60,8 @@ type Props = {
   hasLink: boolean,
   /** Badge on right, show if exist */
   badge?: Node,
+  /** Size of the right icon */
+  iconSize?: number,
   /** `onClick`, **it will not override the default expand event** */
   onClick?: () => mixed,
   style?: CSSStyleDeclaration,
@@ -89,6 +92,7 @@ class ListItem extends React.Component<Props, State> {
     badge: null,
     onClick: null,
     style: undefined,
+    iconSize: 10,
     className: '',
   };
 
@@ -150,13 +154,21 @@ class ListItem extends React.Component<Props, State> {
 
   child: HTMLElement;
 
-  renderBadge = () => (
-    <BadgeWrapper
-      hasIconRight={this.props.children || this.props.hasLink}
-    >
-      <Badge label={this.props.badge} />
-    </BadgeWrapper>
-  );
+  renderBadge = () => {
+    if (
+      typeof this.props.badge === 'string' ||
+      typeof this.props.badge === 'number'
+    ) {
+      return (
+        <BadgeWrapper
+          hasIconRight={this.props.children || this.props.hasLink}
+        >
+          <Badge label={this.props.badge} />
+        </BadgeWrapper>
+      );
+    }
+    return this.props.badge;
+  };
 
   render() {
     const {
@@ -177,6 +189,7 @@ class ListItem extends React.Component<Props, State> {
         className={cn('vital__ListItem', className)}
       >
         <TitleWrapper
+          className="vital__ListItem-wrapper"
           hasChildren={!!children}
           hasLink={hasLink}
           onClick={this.onItemClick}
@@ -184,15 +197,17 @@ class ListItem extends React.Component<Props, State> {
           border={border}
           themed={themed}
         >
-          <Title>{title}</Title>
-          {badge && this.renderBadge()}
-          {(children || hasLink) && (
-            <Icon
-              open={this.state.open}
-              name={this.iconHandler()}
-              size={ICON_SIZE}
-            />
-          )}
+          <Title className="vital__ListItem-title">{title}</Title>
+          <RightWrapper>
+            {badge && this.renderBadge()}
+            {(children || hasLink) && (
+              <Icon
+                open={this.state.open}
+                name={this.iconHandler()}
+                size={this.props.iconSize}
+              />
+            )}
+          </RightWrapper>
         </TitleWrapper>
         {children && (
           <InnerWrapper

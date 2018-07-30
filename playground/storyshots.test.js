@@ -5,7 +5,7 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
 import { addSerializer } from 'jest-specific-snapshot';
-import { Table, SimpleTable } from '../../packages/web/src';
+import { Table, SimpleTable } from '../packages/web/src';
 
 /**
  * Mock methods of addon-info so that "Show Info" button don't go into snapshots.
@@ -28,6 +28,7 @@ initStoryshots({
       if (element.type === Table || SimpleTable) {
         return document.createElement('div');
       }
+      return element;
     },
   }),
 });
