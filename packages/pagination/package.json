@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-pagination",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -19,8 +19,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-button": "^0.8.4",
-    "@vital-ui/react-icon": "^0.8.4",
+    "@vital-ui/react-button": "^0.8.5",
+    "@vital-ui/react-icon": "^0.8.5",
     "classnames": "^2.2.6"
   },
   "devDependencies": {

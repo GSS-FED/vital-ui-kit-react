@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-table",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -20,7 +20,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-form": "^0.8.4",
+    "@vital-ui/react-form": "^0.8.5",
     "classnames": "^2.2.5"
   },
   "devDependencies": {

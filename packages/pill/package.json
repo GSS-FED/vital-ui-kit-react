@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-pill",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -15,8 +15,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-badge": "^0.8.4",
-    "@vital-ui/react-theme": "^0.8.4",
+    "@vital-ui/react-badge": "^0.8.5",
+    "@vital-ui/react-theme": "^0.8.5",
     "classnames": "^2.2.6",
     "react-priority-navigation": "0.2.1"
   },
