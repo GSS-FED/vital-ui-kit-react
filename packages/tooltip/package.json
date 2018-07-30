@@ -26,6 +26,6 @@
     "rc-trigger": "2.5.4"
   },
   "devDependencies": {
-    "flow-bin": "0.76.0"
+    "flow-bin": "0.77.0"
   }
 }
