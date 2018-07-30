@@ -3,6 +3,7 @@
 exports[`Storyshots utils | Box Basic 1`] = `
 .c1 {
   padding: 20px;
+  max-width: 200px;
 }
 
 .c0 {
