@@ -1,8 +1,6 @@
 // @flow
 import {
   stateColor,
-  space,
-  layout,
   transitionBase,
   borderBottomRadius,
   borderLeftRadius,
@@ -10,12 +8,11 @@ import {
   borderRightRadius,
 } from './style';
 import { trunTo } from './math';
-import Box from './box';
+import { Box, Flex } from './box';
 import withDeprecationWarnings from './withDeprecationWarnings';
 
 export {
   stateColor,
-  space,
   transitionBase,
   borderBottomRadius,
   borderLeftRadius,
@@ -23,6 +20,6 @@ export {
   borderRightRadius,
   trunTo,
   Box,
-  layout,
+  Flex,
   withDeprecationWarnings,
 };

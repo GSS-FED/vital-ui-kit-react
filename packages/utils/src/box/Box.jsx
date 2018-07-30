@@ -1,35 +1,71 @@
 // @flow
-import * as React from 'react';
+import {
+  space,
+  width,
+  fontSize,
+  color,
+  display,
+  height,
+  maxWidth,
+  maxHeight,
+  minHeight,
+  size,
+  position,
+  zIndex,
+  top,
+  right,
+  left,
+  bottom,
+  boxShadow,
+  backgroundImage,
+  backgroundPosition,
+  background,
+  backgroundRepeat,
+  backgroundSize,
+  opacity,
+  borders,
+  borderColor,
+  borderRadius,
+  textAlign,
+  lineHeight,
+  fontWeight,
+  letterSpacing,
+  fontFamily,
+} from 'styled-system';
 import styled from 'styled-components';
 
-import { space, layout, type Space, type Layout } from '../style';
-
-const Container = styled.div`
+const Box = styled.div`
   ${space};
-  ${layout};
+  ${width};
+  ${fontSize};
+  ${color};
+  ${height};
+  ${display};
+  ${maxWidth};
+  ${maxHeight};
+  ${minHeight};
+  ${size};
+  ${position};
+  ${zIndex};
+  ${top};
+  ${right};
+  ${left};
+  ${bottom};
+  ${boxShadow};
+  ${backgroundImage};
+  ${backgroundPosition};
+  ${background};
+  ${backgroundRepeat};
+  ${backgroundSize};
+  ${opacity};
+  ${borders};
+  ${borderColor};
+  ${borderRadius};
+  ${textAlign};
+  ${lineHeight};
+  ${fontWeight};
+  ${letterSpacing};
+  ${fontFamily};
 `;
-
-type Props = {
-  children: React.Node,
-  style?: CSSStyleDeclaration,
-  className?: string,
-};
-
-const Box = ({
-  className,
-  children,
-  style,
-  ...props
-}: Props & Space & Layout) => (
-  <Container className={className} style={style} {...props}>
-    {children}
-  </Container>
-);
-
-Box.defaultProps = {
-  /* eslint-disable react/default-props-match-prop-types */
-  style: undefined,
-  className: '',
-};
 
 export default Box;

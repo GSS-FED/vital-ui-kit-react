@@ -15,18 +15,20 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { utils } from '@vital-ui/react';
-import md from './space.md';
 
-const Container = styled.div`
-  ${utils.space};
-`;
+import { Flex } from '@vital-ui/react';
 
-storiesOf('utils | space', module)
-  .addDecorator(withKnobs)
-  .add(
-    'Basic',
-    withInfo(md)(() => (
-      <Container padding="20px">Container with space utils</Container>
-    )),
-  );
+storiesOf('utils | Flex', module).add(
+  'Basic',
+  withInfo(`Basic box div`)(() => (
+    <Flex
+      alignItems="center"
+      color="white"
+      bg="#fedfed"
+      height="300px"
+      justifyContent="center"
+    >
+      Flexbox
+    </Flex>
+  )),
+);

@@ -58,13 +58,14 @@ import Layout from '@vital-ui/react-layout';
 import * as utils from '@vital-ui/react-utils';
 import VitalProvider from './VitalProvider';
 
-const { Box } = utils;
+const { Box, Flex } = utils;
 
 export {
   Avatar,
   Button,
   ButtonGroup,
   Box,
+  Flex,
   Checkbox,
   CheckboxGroup,
   Card,
