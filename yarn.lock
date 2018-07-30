@@ -8746,13 +8746,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-auto-external@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-auto-external/-/rollup-plugin-auto-external-1.2.0.tgz#42a99517f969485a1b15b30c403e1a7d2e2e14c3"
+rollup-plugin-auto-external@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-auto-external/-/rollup-plugin-auto-external-2.0.0.tgz#98fd137d66c1cbe0f4e245b31560a72dbde896aa"
   dependencies:
     builtins "^2.0.0"
     read-pkg "^3.0.0"
     safe-resolve "^1.0.0"
+    semver "^5.5.0"
 
 rollup-plugin-babel@3.0.4:
   version "3.0.4"
