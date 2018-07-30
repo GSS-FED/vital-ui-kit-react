@@ -1,5 +1,9 @@
 # Changelog
-## Unreleased (2018-07-11)
+## 0.8.4 (2018-07-30)
+
+#### :rocket: Enhancement
+* `list`, `theme`, `web`
+  * [#250](https://github.com/GSS-FED/vital-ui-kit-react/pull/250) ListItem and theme update ([@ericyip](https://github.com/ericyip))
 
 #### :bug: Bug Fix
 * `icon`
