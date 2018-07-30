@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-button",
-  "version": "0.8.2",
+  "version": "0.8.4",
   "description": "",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -15,7 +15,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-theme": "^0.8.2",
+    "@vital-ui/react-theme": "^0.8.4",
     "classnames": "^2.2.5",
     "polished": "^1.9.2"
   },
