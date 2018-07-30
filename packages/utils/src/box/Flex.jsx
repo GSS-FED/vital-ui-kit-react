@@ -10,9 +10,9 @@ import {
   justifyContent,
   justifySelf,
 } from 'styled-system';
-import { BoxBase } from './Box';
+import Box from './Box';
 
-const Flex = styled(BoxBase)`
+const Flex = styled(Box)`
   display: flex;
   ${flex};
   ${flexBasis};

@@ -1,5 +1,4 @@
 // @flow
-import * as React from 'react';
 import {
   space,
   width,
@@ -35,7 +34,7 @@ import {
 } from 'styled-system';
 import styled from 'styled-components';
 
-export const BoxBase = styled.div`
+const Box = styled.div`
   ${space};
   ${width};
   ${fontSize};
@@ -68,28 +67,5 @@ export const BoxBase = styled.div`
   ${letterSpacing};
   ${fontFamily};
 `;
-
-type Props = {
-  children: React.Node,
-  style?: CSSStyleDeclaration,
-  className?: string,
-};
-
-const Box = ({
-  className,
-  children,
-  style,
-  ...props
-}: Props & Space & Layout) => (
-  <BoxBase className={className} style={style} {...props}>
-    {children}
-  </BoxBase>
-);
-
-Box.defaultProps = {
-  /* eslint-disable react/default-props-match-prop-types */
-  style: undefined,
-  className: '',
-};
 
 export default Box;
