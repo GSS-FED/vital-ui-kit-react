@@ -22,18 +22,20 @@
     "@storybook/addons": "3.4.7",
     "@storybook/react": "3.4.7",
     "babel-plugin-styled-components": "1.5.1",
-    "markdown-loader-jest": "0.1.1",
-    "jest": "23.4.2"
+    "jest": "23.4.2",
+    "markdown-loader-jest": "0.1.1"
   },
   "dependencies": {
+    "@vital-ui/react": "*",
     "axios": "0.18.0",
+    "classnames": "2.2.6",
+    "faker": "4.1.0",
+    "fixed-data-table-2": "^0.8.13",
     "react": "16.4.1",
     "react-dom": "16.4.1",
+    "react-virtualized": "^9.20.1",
     "rxjs": "6.2.1",
-    "styled-components": "3.3.3",
-    "@vital-ui/react": "^0.8.0",
-    "classnames": "2.2.6",
-    "faker": "4.1.0"
+    "styled-components": "3.3.3"
   },
   "jest": {
     "transform": {

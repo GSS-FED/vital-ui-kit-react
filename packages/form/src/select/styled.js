@@ -36,7 +36,7 @@ export const MenuItem = styled.div`
   clear: both;
   line-height: 1;
   color: ${({ theme }) => theme.select.item.color};
-  white-space: ${({ wrap }) => (wrap ? 'normal' : 'nowrap')};
+  white-space: ${({ isWrap }) => (isWrap ? 'normal' : 'nowrap')};
   text-decoration: none;
   cursor: pointer;
   word-break: break-word;
@@ -52,7 +52,7 @@ export const MenuItem = styled.div`
 
 MenuItem.defaultProps = {
   theme: defaultTheme,
-  wrap: true,
+  isWrap: true,
 };
 
 export const SelectButton = styled.div`

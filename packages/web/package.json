@@ -49,12 +49,10 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "react-virtualized": "^9.13.0",
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0",
-    "react-virtualized": "9.20.1"
+    "flow-bin": "0.77.0"
   },
   "license": "MIT",
   "bugs": {

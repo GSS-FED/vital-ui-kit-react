@@ -49,7 +49,10 @@ export const DropdownItem = ({
         })}
         {...props}
       >
-        <MenuItem wrap={wrap} hightlight={highlightedIndex === index}>
+        <MenuItem
+          isWrap={wrap}
+          hightlight={highlightedIndex === index}
+        >
           {children}
         </MenuItem>
       </li>
