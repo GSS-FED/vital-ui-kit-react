@@ -3,13 +3,10 @@
   "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean:build": "rm -rf dist",
-    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
-    "build:flow": "flow-copy-source src dist",
-    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+    "clean": "rm -rf dist",
+    "compile": "tsc"
   },
   "author": "",
   "peerDependencies": {
@@ -24,6 +21,6 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "typescript": "^3.0.1"
   }
 }

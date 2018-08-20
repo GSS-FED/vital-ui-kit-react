@@ -1,4 +1,4 @@
-// @flow
+
 /* eslint-disable import/no-extraneous-dependencies */
 
 import * as React from 'react';
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 type P = {
-  children: (value: string) => React.Node,
+  children: (value: string) =>  React.ReactNode,
 };
 
 type S = {

@@ -1,4 +1,4 @@
-// @flow
+
 
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
@@ -9,11 +9,7 @@ const TitleWrapper = styled.div`
   padding-bottom: 5px;
 `;
 
-type Props = {
-  theme: typeof defaultTheme,
-};
-
-class Nav extends React.PureComponent<Props> {
+class Nav extends React.PureComponent {
   render() {
     return (
       <div

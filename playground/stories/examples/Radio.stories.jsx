@@ -41,7 +41,7 @@ storiesOf('Packages | Radio', module)
     'Disable',
     withInfo(`info`)(
       withNotes('Disabled radio')(() => (
-        <RadioGroup items={items} isDisabled />
+        <RadioGroup items={items} disabled />
       )),
     ),
   );

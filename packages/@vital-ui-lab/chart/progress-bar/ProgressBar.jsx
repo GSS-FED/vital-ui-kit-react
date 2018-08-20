@@ -1,5 +1,5 @@
 /**
- * @flow
+
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */

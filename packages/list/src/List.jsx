@@ -1,5 +1,5 @@
 /**
- * @flow
+ * TODO: rework
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -12,16 +12,16 @@ import ListContent from './ListContent';
 
 type Props = {
   /** Children of ListItem */
-  children: Array<React.Node>,
+  children: Array< React.ReactNode>,
   /** Light or dark theme */
   themed?: 'light' | 'dark',
   /** Border around List and ListItem */
   border?: boolean,
   /** Customize Icon */
-  icon?: string | React.Node,
+  icon?: string |  React.ReactNode,
   /** Collapse mode, show one item one time */
   collapse?: boolean,
-  style?: CSSStyleDeclaration,
+  style?: React.CSSProperties,
   /** default: `vital__list` */
   className?: string,
 };

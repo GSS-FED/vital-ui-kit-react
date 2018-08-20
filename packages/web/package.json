@@ -3,11 +3,11 @@
   "version": "0.8.5",
   "description": "Vital UI Kit for React!",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "style": "./dist/global.css",
   "scripts": {
-    "test": "NODE_ENV=test jest",
-    "start": "start-storybook -p 6006"
+    "clean": "rm -rf dist",
+    "compile": "tsc"
   },
   "sideEffects": [
     "*.css"
@@ -52,7 +52,7 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "typescript": "^3.0.1"
   },
   "license": "MIT",
   "bugs": {

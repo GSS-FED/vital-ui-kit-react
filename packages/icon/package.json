@@ -3,12 +3,13 @@
   "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "sideEffects": [
     "./selection.json"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "compile": "tsc"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
@@ -17,7 +18,7 @@
     "styled-components": "3"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "typescript": "^3.0.1"
   },
   "dependencies": {
     "classnames": "^2.2.6"

@@ -3,19 +3,21 @@
   "version": "0.8.5",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "sideEffects": [
     "*.css"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "compile": "tsc"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
-    "flow-bin": "0.77.0",
+    "@types/lodash.merge": "^4.6.4",
     "react": "16.4.1",
-    "styled-components": "3.3.3"
+    "styled-components": "3.3.3",
+    "typescript": "^3.0.1"
   },
   "peerDependencies": {
     "react": "^16",

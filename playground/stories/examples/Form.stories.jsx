@@ -80,7 +80,7 @@ storiesOf('Packages | Form', module)
           </FieldInput>
           <FieldInput label="Send Email" inline>
             <Switch
-              isDisabled={boolean('Switch Disabled', false)}
+              disabled={boolean('Switch Disabled', false)}
               isRound={boolean('Switch Round', false)}
             />
           </FieldInput>
@@ -219,7 +219,7 @@ storiesOf('Packages | Form/Input', module)
           <StatelessInput
             placeholder={text('Placeholder', 'Uncontrolled Input')}
             defaultValue={text('Default Value', 'default')}
-            isDisabled={boolean('Disabled', false)}
+            disabled={boolean('Disabled', false)}
             isAlarm={boolean('Alarm', false)}
             isWarning={boolean('Warning', false)}
           />
@@ -235,7 +235,7 @@ storiesOf('Packages | Form/Input', module)
           <Input
             value="123"
             placeholder={text('Placeholder', 'Controlled Input')}
-            isDisabled={boolean('Disabled', false)}
+            disabled={boolean('Disabled', false)}
             isAlarm={boolean('Alarm', false)}
             isWarning={boolean('Warning', false)}
           />
@@ -301,7 +301,7 @@ storiesOf('Packages | Form/Switch', module)
     withInfo(``)(
       withNotes('')(() => (
         <Switch
-          isDisabled={boolean('Disabled', false)}
+          disabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
       )),
@@ -313,7 +313,7 @@ storiesOf('Packages | Form/Switch', module)
       withNotes('')(() => (
         <Switch
           iconBtn="wifi"
-          isDisabled={boolean('Disabled', false)}
+          disabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
       )),
@@ -328,7 +328,7 @@ storiesOf('Packages | Form/Switch', module)
         <Switch
           iconLabelFront="wifi"
           iconLabelBack="wifi"
-          isDisabled={boolean('Disabled', false)}
+          disabled={boolean('Disabled', false)}
           isRound={boolean('Round', false)}
         />
       )),
