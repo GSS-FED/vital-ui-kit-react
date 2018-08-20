@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-badge",
-  "version": "0.9-next.0",
+  "version": "0.9.0-next.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
