@@ -1,8 +1,8 @@
 {
   "name": "@vital-ui/react-badge",
-  "version": "0.8.5",
+  "version": "0.9-next.0",
   "description": "",
-  "main": "cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -16,8 +16,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-theme": "^0.8.5",
-    "@vital-ui/react-utils": "^0.8.5",
+    "@vital-ui/react-theme": "file:../theme",
+    "@vital-ui/react-utils": "file:../utils",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
