@@ -1,8 +1,8 @@
 {
   "name": "@vital-ui/react-card",
-  "version": "0.8.5",
+  "version": "0.8.6-next.0",
   "description": "",
-  "main": "cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "clean": "rm -rf dist",
@@ -17,8 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@vital-ui/react-badge": "^0.8.5",
-    "@vital-ui/react-theme": "^0.8.5",
-    "@vital-ui/react-utils": "^0.8.5",
+    "@vital-ui/react-theme": "^0.8.6-next.0",
+    "@vital-ui/react-utils": "^0.8.6-next.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
