@@ -2,7 +2,7 @@
   "name": "@vital-ui/react-icon",
   "version": "0.8.5",
   "description": "",
-  "main": "cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "sideEffects": [
     "./selection.json"

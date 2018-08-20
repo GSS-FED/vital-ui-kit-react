@@ -12,22 +12,22 @@ import ListContent from './ListContent';
 
 type Props = {
   /** Children of ListItem */
-  children: Array<React.ReactNode>,
+  children: Array<React.ReactNode>;
   /** Light or dark theme */
-  themed?: 'light' | 'dark',
+  themed?: 'light' | 'dark';
   /** Border around List and ListItem */
-  border?: boolean,
+  border?: boolean;
   /** Customize Icon */
-  icon?: string | React.ReactNode,
+  icon?: string | React.ReactNode;
   /** Collapse mode, show one item one time */
-  collapse?: boolean,
-  style?: React.CSSProperties,
+  collapse?: boolean;
+  style?: React.CSSProperties;
   /** default: `vital__list` */
-  className?: string,
+  className?: string;
 };
 
 type State = {
-  open: boolean,
+  open: boolean;
 };
 
 class List extends React.Component<Props, State> {

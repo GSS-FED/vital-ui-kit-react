@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './App.css';
-import { Box, Button } from '@gssfed/vital-ui-kit-react';
+import Button from '@vital-ui/react-button';
+import { Box } from '@vital-ui/react-utils';
+import Badge from '@vital-ui/react-badge';
 import { Link, Route } from 'react-router-dom';
 
 import logo from './icon.png';
@@ -23,17 +25,19 @@ class App extends React.Component {
           To get started, edit <code>src/App.tsx</code> and save to
           reload.
         </p>
-        <Box marginTop="50px">
+        <Box mt="50px">
           Click{' '}
           <a href="http://react.vitaluikit.com/" target="_blank">
             here
           </a>{' '}
           to learn more about Vital UI Kit React 🕹
         </Box>
-        <Box marginTop="50px">
+        <Box mt="50px">
           <Button.Group>
             <Button link>
-              <Link to="/overview">Overview</Link>
+              <Link to="/overview">
+                Overview <Badge label="999" />
+              </Link>
             </Button>
             <Button link>
               <Link to="/form">Form Example</Link>

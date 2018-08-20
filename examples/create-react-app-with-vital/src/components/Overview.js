@@ -1,13 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {
-  Avatar,
-  Button,
-  ButtonGroup,
-  Card,
-  Icon,
-  Modal,
-} from '@gssfed/vital-ui-kit-react';
+import { Icon, Avatar } from '@gssfed/vital-ui-kit-react';
+
+import Button, { ButtonGroup } from '@vital-ui/react-button';
+import Card from '@vital-ui/react-card';
+import Modal from '@vital-ui/react-modal';
 
 import CardCommon from './CardCommon';
 
@@ -107,7 +104,7 @@ class Overview extends React.PureComponent {
           </Vertical>
           <Vertical>
             <Card width="300px" style={{ margin: 'auto' }}>
-              <Card.Container style={{ textAlign: 'center' }}>
+              <Card.Content style={{ textAlign: 'center' }}>
                 <Icon name="thumbs-up" size="90" color="#0e86fe" />
                 <div
                   style={{
@@ -132,7 +129,7 @@ class Overview extends React.PureComponent {
                 >
                   Let’s Get Started
                 </div>
-              </Card.Container>
+              </Card.Content>
               <Card.Footer>
                 <Card.FooterButton primary>Confirm</Card.FooterButton>
               </Card.Footer>

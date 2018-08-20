@@ -2,7 +2,7 @@
   "name": "@vital-ui/react-chart",
   "version": "0.8.0",
   "description": "",
-  "main": "cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "compile": "tsc"
