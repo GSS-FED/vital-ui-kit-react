@@ -138,7 +138,7 @@ type Props = {
   iconBtn?: string;
   iconLabelFront?: string;
   iconLabelBack?: string;
-  theme: typeof defaultTheme;
+  theme: any;
   className?: string;
   style?: React.CSSProperties;
 };

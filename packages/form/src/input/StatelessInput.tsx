@@ -4,6 +4,7 @@ import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { withDeprecationWarnings } from '@vital-ui/react-utils';
+// @ts-ignore
 import Icon from '@vital-ui/react-icon';
 
 import baseStyle from '../components/FieldBase';
@@ -41,7 +42,12 @@ const Root = styled.div`
   border-radius: inherit;
 `;
 
-const InputElement = styled.input`
+const InputElement = styled.input<{
+  alarm: boolean;
+  warning: boolean;
+  leftIcon: boolean;
+  rightIcon: boolean;
+}>`
   vertical-align: middle;
   height: 1.93267rem;
   ${baseStyle};
@@ -51,8 +57,7 @@ const InputElement = styled.input`
 
 InputElement.defaultProps = {
   theme: defaultTheme,
-  name: null,
-  iconPosition: 'right',
+  alarm: false,
 };
 
 const InputIcon = styled(Icon)`
@@ -67,8 +72,6 @@ const InputIcon = styled(Icon)`
 
 InputIcon.defaultProps = {
   theme: defaultTheme,
-  name: null,
-  iconPosition: 'right',
 };
 
 type IconProps = string | typeof Icon;
@@ -105,9 +108,10 @@ export type Props = {
   /** will remove */
   icon?: string;
   /** `left` or `right` */
-  iconPosition?: 'left' | 'right';
+  iconPosition?: IconPosition;
   /** On Change */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  theme?: typeof defaultTheme;
 };
 
 class StatelessInput extends React.Component<Props> {
@@ -125,7 +129,7 @@ class StatelessInput extends React.Component<Props> {
     spellCheck: false,
     style: undefined,
     className: '',
-    iconPosition: 'right',
+    iconPosition: 'right' as IconPosition,
     icon: undefined,
   };
 
@@ -156,8 +160,8 @@ class StatelessInput extends React.Component<Props> {
       type,
       placeholder,
       disabled,
-      alarm,
-      warning,
+      alarm = false,
+      warning = false,
       autoFocus,
       spellCheck,
       leftIcon,
@@ -169,6 +173,7 @@ class StatelessInput extends React.Component<Props> {
       onRightIconClick,
       onChange,
       value,
+      theme = defaultTheme,
       ...props
     } = this.props;
     return (
@@ -184,11 +189,12 @@ class StatelessInput extends React.Component<Props> {
           warning={warning}
           autoFocus={autoFocus}
           spellCheck={spellCheck}
-          leftIcon={leftIcon}
-          rightIcon={rightIcon}
+          leftIcon={!!leftIcon}
+          rightIcon={!!rightIcon}
           innerRef={innerRef}
           onChange={onChange}
           value={value}
+          theme={theme}
           {...props}
         />
         {icon && (

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import ButtonBase from '@vital-ui/react-button';
+import ButtonBase, { ButtonProps } from '@vital-ui/react-button';
 import { defaultTheme } from '@vital-ui/react-theme';
 import constants from './constants';
 import { Size } from './types';

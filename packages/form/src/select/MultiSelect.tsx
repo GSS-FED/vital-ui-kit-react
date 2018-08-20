@@ -110,6 +110,7 @@ class MultiSelect<T> extends React.Component<Props<T>, State> {
     return (
       <Select<T>
         inputValue={this.state.input}
+        // @ts-ignore
         selectedItem={values}
         onOuterClick={this.handleOuterClick}
         isOpen={this.state.isOpen}

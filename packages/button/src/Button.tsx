@@ -19,7 +19,7 @@ type Nature =
 
 type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
-type Props = {
+export interface ButtonProps {
   /** `vital_button` */
   className?: string;
   /** The content of the button */
@@ -43,7 +43,7 @@ type Props = {
   /** Selected state */
   selected?: boolean;
   style?: React.CSSProperties;
-};
+}
 
 /* tslint:disable-next-line */
 const noop = () => {};
@@ -67,11 +67,11 @@ const noop = () => {};
  * </Button.Group>
  */
 
-class Button extends React.Component<Props> {
+class Button extends React.Component<ButtonProps> {
   static defaultProps = {
     children: '',
-    nature: 'default',
-    size: 'medium',
+    nature: 'default' as Nature,
+    size: 'medium' as Size,
     circle: false,
     light: false,
     flat: false,

@@ -14,6 +14,7 @@ import Icon, {
   withIcon,
   defaultIcon,
   IconContext,
+  // @ts-ignore
 } from '@vital-ui/react-icon';
 
 import Avatar from '@vital-ui/react-avatar';
@@ -46,12 +47,6 @@ import Pill from '@vital-ui/react-pill';
 import Tooltip from '@vital-ui/react-tooltip';
 import Pagination from '@vital-ui/react-pagination';
 import Menu from '@vital-ui/react-menu';
-import {
-  Table,
-  SimpleTable,
-  defaultCellRenderer,
-  Column,
-} from '@vital-ui/react-table';
 import Tabs from '@vital-ui/react-tabs';
 import Layout from '@vital-ui/react-layout';
 import * as utils from '@vital-ui/react-utils';
@@ -95,10 +90,6 @@ export {
   withIcon,
   Modal,
   Menu,
-  Table,
-  SimpleTable,
-  Column,
-  defaultCellRenderer,
   Tabs,
   Layout,
   utils,

@@ -7,7 +7,7 @@ import defaultComponentsTheme from './theme/components';
 
 type Props = {
   theme?: any;
-  children: Node;
+  children: React.ReactNode;
   componentTheme?: (props: typeof defaultVariables) => any;
 };
 

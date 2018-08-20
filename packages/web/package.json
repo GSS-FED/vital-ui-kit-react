@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "@vital-ui/react-avatar": "^0.8.6-next.0",
-    "@vital-ui/react-badge": "^0.8.5",
+    "@vital-ui/react-badge": "^0.8.6-next.0",
     "@vital-ui/react-button": "^0.8.6-next.0",
     "@vital-ui/react-card": "^0.8.6-next.0",
     "@vital-ui/react-form": "^0.8.6-next.0",
@@ -40,7 +40,6 @@
     "@vital-ui/react-modal": "^0.8.6-next.0",
     "@vital-ui/react-pagination": "^0.8.6-next.0",
     "@vital-ui/react-pill": "^0.8.6-next.0",
-    "@vital-ui/react-table": "^0.8.5",
     "@vital-ui/react-tabs": "^0.8.6-next.0",
     "@vital-ui/react-theme": "^0.8.6-next.0",
     "@vital-ui/react-tooltip": "^0.8.6-next.0",

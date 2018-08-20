@@ -26,7 +26,7 @@
     "markdown-loader-jest": "0.1.1"
   },
   "dependencies": {
-    "@vital-ui/react": "*",
+    "@vital-ui/react": "0.8.6-next.0",
     "axios": "0.18.0",
     "classnames": "2.2.6",
     "faker": "4.1.0",

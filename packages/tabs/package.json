@@ -16,7 +16,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-badge": "^0.8.5",
+    "@vital-ui/react-badge": "^0.8.6-next.0",
     "@vital-ui/react-theme": "^0.8.6-next.0",
     "classnames": "^2.2.6"
   },

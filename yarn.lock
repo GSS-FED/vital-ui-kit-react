@@ -449,12 +449,73 @@
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.2.tgz#a153495c58c8679fb512084164dc3f441ae4d1a3"
 
+"@vital-ui/react-badge@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-badge/-/react-badge-0.8.5.tgz#ed1e80336c1e70382707fdb5b930adfd8331fe02"
+  dependencies:
+    "@vital-ui/react-theme" "^0.8.5"
+    "@vital-ui/react-utils" "^0.8.5"
+    classnames "^2.2.6"
+
+"@vital-ui/react-button@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-button/-/react-button-0.8.5.tgz#092b5fd62c330f55ed556ee9f365f68f89cb574a"
+  dependencies:
+    "@vital-ui/react-theme" "^0.8.5"
+    classnames "^2.2.5"
+    polished "^1.9.2"
+
+"@vital-ui/react-form@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-form/-/react-form-0.8.5.tgz#3b8a9d4a81f8b4721b16fdda47fc14d129196fd0"
+  dependencies:
+    "@vital-ui/react-button" "^0.8.5"
+    "@vital-ui/react-icon" "^0.8.5"
+    "@vital-ui/react-theme" "^0.8.5"
+    "@vital-ui/react-tooltip" "^0.8.5"
+    "@vital-ui/react-utils" "^0.8.5"
+    classnames "^2.2.6"
+    downshift "^2.0.10"
+    polish "0.2.3"
+    polished "1.9.3"
+    react-click-outside "3"
+    react-is "^16.4.1"
+    resize-observer-polyfill "1.5.0"
+
+"@vital-ui/react-icon@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-icon/-/react-icon-0.8.5.tgz#968e1c205ec14c4d07e95a8aa6d634aa22c4f84a"
+  dependencies:
+    classnames "^2.2.6"
+
 "@vital-ui/react-table@^0.8.5":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@vital-ui/react-table/-/react-table-0.8.5.tgz#eb23c24571e7923692bafb8bd9c44bd4d4f09ede"
   dependencies:
     "@vital-ui/react-form" "^0.8.5"
     classnames "^2.2.5"
+
+"@vital-ui/react-theme@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-theme/-/react-theme-0.8.5.tgz#19e49597ad662e8f66255ba94719ea8e9a52b921"
+  dependencies:
+    classnames "^2.2.6"
+    lodash.merge "^4.6.1"
+    polished "^1.9.2"
+
+"@vital-ui/react-tooltip@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-tooltip/-/react-tooltip-0.8.5.tgz#14fdf6641e629575113b7c02fe2bd75b3e3407e8"
+  dependencies:
+    classnames "^2.2.6"
+    rc-trigger "2.5.4"
+
+"@vital-ui/react-utils@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-utils/-/react-utils-0.8.5.tgz#855ef13da12e0b2be0750188095001b060990ea6"
+  dependencies:
+    classnames "^2.2.6"
+    styled-system "^3.0.2"
 
 "@vue/component-compiler-utils@^1.0.0":
   version "1.3.1"
@@ -2899,7 +2960,7 @@ cross-env@5.2.0:
     cross-spawn "^6.0.5"
     is-windows "^1.0.0"
 
-cross-spawn@5.1.0, cross-spawn@^5.0.1:
+cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -9888,6 +9949,15 @@ trim-off-newlines@^1.0.0:
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
+
+tsc-watch@^1.0.26:
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.26.tgz#a9130775b018b46b03116840debaac6dd40fbc56"
+  dependencies:
+    chalk "^2.3.0"
+    cross-spawn "^5.1.0"
+    ps-tree "^1.1.0"
+    strip-ansi "^4.0.0"
 
 tslib@^1.8.0, tslib@^1.8.1:
   version "1.9.3"

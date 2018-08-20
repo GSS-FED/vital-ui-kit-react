@@ -80,8 +80,6 @@ const PillBadge = styled(Badge)`
 `;
 
 type Props = {
-  /** Require id for each Pills */
-  id: string | number;
   /** Content inside Pill */
   label: React.ReactNode;
   /** Show badge if it has one */
@@ -91,10 +89,11 @@ type Props = {
   /** Vertical display */
   vertical?: boolean;
   /** Call when pill selected */
-  onSelect: (id: string | number) => void;
+  onSelect: (index: number) => void;
   style?: React.CSSProperties;
   /** default: `vital__pill */
   className?: string;
+  index?: number;
 };
 
 /**
@@ -102,13 +101,13 @@ type Props = {
  * @name Pill
  * @description Group of Pills
  * @example
- *       <Pill.Group default={1}>
- *        <Pill id={1} label="Dashboard" badge="23" />
- *        <Pill id={2} label="Projects" badge="99+" />
- *        <Pill id={3} label="Issues" badge="6" />
- *        <Pill id={4} label="Reports" />
- *        <Pill id={5} label="User Center" />
- *      </Pill.Group>
+ *       <PillGroup defaultActive={0}>
+ *        <Pill label="Dashboard" badge="23" />
+ *        <Pill label="Projects" badge="99+" />
+ *        <Pill label="Issues" badge="6" />
+ *        <Pill label="Reports" />
+ *        <Pill label="User Center" />
+ *      </PillGroup>
  */
 
 class Pill extends React.Component<Props> {
@@ -120,7 +119,7 @@ class Pill extends React.Component<Props> {
   static Group = PillsGroup;
 
   handleSelect = () => {
-    this.props.onSelect(this.props.id);
+    this.props.onSelect(this.props.index!);
   };
 
   render() {
@@ -128,7 +127,7 @@ class Pill extends React.Component<Props> {
       vertical = false,
       current = false,
       badge,
-      id,
+      index,
       label,
       style,
       className,

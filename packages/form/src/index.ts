@@ -1,32 +1,24 @@
-export { default as Hint } from 'packages/form/src/components/Hint';
-export { default as Addon } from 'packages/form/src/components/Addon';
-export { default as Label } from 'packages/form/src/components/Label';
-export {
-  default as FieldBase,
-} from 'packages/form/src/components/FieldBase';
+export { default as Hint } from './components/Hint';
+export { default as Addon } from './components/Addon';
+export { default as Label } from './components/Label';
+export { default as FieldBase } from './components/FieldBase';
 
-export { default as Input } from 'packages/form/src/input/Input';
-export {
-  default as StatelessInput,
-} from 'packages/form/src/input/StatelessInput';
+export { default as Input } from './input/Input';
+export { default as StatelessInput } from './input/StatelessInput';
 
-export {
-  default as TextArea,
-} from 'packages/form/src/textarea/TextArea';
+export { default as TextArea } from './textarea/TextArea';
 export {
   default as StatelessTextArea,
-} from 'packages/form/src/textarea/StatelessTextArea';
+} from './textarea/StatelessTextArea';
 
-export {
-  default as MultipleInput,
-} from 'packages/form/src/MultipleInput';
-export { default as FieldInput } from 'packages/form/src/FieldInput';
+export { default as MultipleInput } from './MultipleInput';
+export { default as FieldInput } from './FieldInput';
 
-export { Radio, RadioGroup } from 'packages/form/src/radio';
-export { Select, MultiSelect, Tag } from 'packages/form/src/select';
-export { Checkbox, CheckboxGroup } from 'packages/form/src/checkbox';
-export { default as Switch } from 'packages/form/src/switch';
-export { default as Slider } from 'packages/form/src/slider';
+export { Radio, RadioGroup } from './radio';
+export { Select, MultiSelect, Tag } from './select';
+export { Checkbox, CheckboxGroup } from './checkbox';
+export { default as Switch } from './switch';
+export { default as Slider } from './slider';
 
 /**
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react

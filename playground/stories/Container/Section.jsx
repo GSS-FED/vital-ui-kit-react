@@ -3,7 +3,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Box } from '../../../packages/web/src';
+import { Box } from '@vital-ui/react';
 
 const SectionTitle = styled.div`
   font-size: 32px;

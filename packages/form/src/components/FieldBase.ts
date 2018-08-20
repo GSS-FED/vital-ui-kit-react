@@ -24,7 +24,9 @@ export const fieldInputBase = ({ theme = defaultTheme }) => css`
 
 const fieldBase = ({
   theme = defaultTheme,
-}: typeof defaultTheme) => css<{ alarm: boolean; warning: boolean }>`
+}: {
+  theme: typeof defaultTheme;
+}) => css<{ alarm: boolean; warning: boolean }>`
   ${fieldWrapperBase} ${fieldInputBase}
 
   &::placeholder {

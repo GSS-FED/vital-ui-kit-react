@@ -19,7 +19,7 @@ type Props = {
   /** Vertical display */
   vertical?: boolean;
   /** The default active, match with pill's id */
-  default?: string | number | void;
+  defaultActiveIndex?: number;
   style?: React.CSSProperties;
   className?: string;
   /** Get DropdownList item */
@@ -29,12 +29,12 @@ type Props = {
 };
 
 type State = {
-  current: string | number | void;
+  current: number;
 };
 
 class PillsGroup extends React.Component<Props, State> {
   static defaultProps = {
-    default: null,
+    defaultActiveIndex: null,
     vertical: false,
     current: null,
     style: undefined,
@@ -43,23 +43,24 @@ class PillsGroup extends React.Component<Props, State> {
   };
 
   state = {
-    current: this.props.default,
+    current: this.props.defaultActiveIndex || 0,
   };
 
-  onSelect = (id: string | number) => {
+  onSelect = (index: number) => {
     this.setState({
-      current: id,
+      current: index,
     });
   };
 
   renderChildren = () =>
     React.Children.map(
       this.props.children,
-      (child: React.ReactElement<any>) =>
+      (child: React.ReactElement<any>, index: number) =>
         React.cloneElement(child, {
-          current: this.state.current,
+          current: this.state.current === index,
           onSelect: this.onSelect,
           vertical: this.props.vertical,
+          index,
         }),
     );
 

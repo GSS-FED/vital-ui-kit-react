@@ -10,9 +10,8 @@
     "compile": "tsc"
   },
   "files": [
-    "cjs",
-    "esm",
-    "src"
+    "dist",
+    "assets"
   ],
   "sideEffects": false,
   "author": "Eric Yip (https://github.com/ericyip)",

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider as Provider } from '@vital-ui/react-theme';
+// @ts-ignore
 import { IconContext, defaultIcon } from '@vital-ui/react-icon';
 
 type Return = (n: any) => any;
