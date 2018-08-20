@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { List, defaultTheme } from '@gssfed/vital-ui-kit-react';

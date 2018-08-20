@@ -1,4 +1,3 @@
-
 /* eslint-disable import/no-extraneous-dependencies */
 
 import * as React from 'react';
@@ -16,7 +15,7 @@ const Section = ({
   children,
 }: {
   title: string,
-  children:  React.ReactNode,
+  children: React.ReactNode,
 }) => (
   <Box paddingTop="20px" paddingBottom="30px">
     <SectionTitle>{title}</SectionTitle>

@@ -1,4 +1,3 @@
-
 /* eslint-disable react/no-array-index-key  */
 /* eslint-disable no-use-before-define  */
 /* eslint-disable no-unused-vars  */
@@ -39,7 +38,7 @@ const Vertical = styled.div`
 
 type SectionProps = {
   title: string,
-  children:  React.ReactNode,
+  children: React.ReactNode,
 };
 
 const Section = ({ title, children }: SectionProps) => (

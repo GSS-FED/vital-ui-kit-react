@@ -133,10 +133,7 @@ class ProgressBar extends React.Component<Props, State> {
             <Label alarm={alarm} warning={warning} success={success}>
               {textLabel && textLabel}
             </Label>
-            <Status>
-              {value}
-              %
-            </Status>
+            <Status>{value}%</Status>
           </StatusWrapper>
         )}
         <Track

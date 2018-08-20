@@ -9,7 +9,7 @@ const SectionWrapper = styled.div`
 const SectionTitle = styled.div`
   font-size: 32px;
   padding-bottom: 10px;
-  `;
+`;
 
 const Section = ({ title, children }) => (
   <SectionWrapper>
