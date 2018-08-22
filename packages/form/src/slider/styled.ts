@@ -1,3 +1,5 @@
+// @ts-ignore
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import ButtonBase from '@vital-ui/react-button';
 import { defaultTheme } from '@vital-ui/react-theme';

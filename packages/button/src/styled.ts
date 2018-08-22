@@ -1,3 +1,5 @@
+// @ts-ignore
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { defaultTheme } from '@vital-ui/react-theme';

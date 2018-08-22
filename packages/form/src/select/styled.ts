@@ -1,3 +1,5 @@
+// @ts-ignore
+import { ClassAttributes, HTMLAttributes } from 'react';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 

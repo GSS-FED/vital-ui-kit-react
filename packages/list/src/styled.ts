@@ -1,3 +1,5 @@
+// @ts-ignore
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { borderTopRadius } from '@vital-ui/react-utils';

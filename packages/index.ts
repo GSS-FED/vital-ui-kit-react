@@ -9,18 +9,20 @@ import {
   defaultTheme,
   colorPaletteGenerator,
   defaultComponentsTheme,
-} from '@vital-ui/react-theme';
+} from './theme';
 import Icon, {
+// @ts-ignore
   withIcon,
-  defaultIcon,
-  IconContext,
   // @ts-ignore
+  defaultIcon,
+  // @ts-ignore
+  IconContext,
 } from '@vital-ui/react-icon';
 
-import Avatar from '@vital-ui/react-avatar';
-import Button, { ButtonGroup } from '@vital-ui/react-button';
-import Badge from '@vital-ui/react-badge';
-import Card from '@vital-ui/react-card';
+import Avatar from './avatar';
+import Button, { ButtonGroup } from './button';
+import Badge from './badge';
+import Card from './card';
 import {
   Input,
   StatelessInput,
@@ -40,16 +42,16 @@ import {
   Checkbox,
   Tag,
   MultiSelect,
-} from '@vital-ui/react-form';
-import Modal from '@vital-ui/react-modal';
-import { List, ListContent, ListItem } from '@vital-ui/react-list';
-import Pill from '@vital-ui/react-pill';
-import Tooltip from '@vital-ui/react-tooltip';
-import Pagination from '@vital-ui/react-pagination';
-import Menu from '@vital-ui/react-menu';
-import Tabs from '@vital-ui/react-tabs';
-import Layout from '@vital-ui/react-layout';
-import * as utils from '@vital-ui/react-utils';
+} from './form';
+import Modal from './modal';
+import { List, ListContent, ListItem } from './list';
+import Pill from './pill';
+import Tooltip from './tooltip';
+import Pagination from './pagination';
+import Menu from './menu';
+import Tabs from './tabs';
+import Layout from './layout';
+import * as utils from './utils';
 import VitalProvider from './VitalProvider';
 
 const { Box, Flex } = utils;
