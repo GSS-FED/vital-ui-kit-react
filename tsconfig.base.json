@@ -22,7 +22,6 @@
     "strictNullChecks": true,
     "stripInternal": true,
     "skipLibCheck": true,
-    "outDir": "build"
   },
   "exclude": ["node_modules", "dist"]
 }

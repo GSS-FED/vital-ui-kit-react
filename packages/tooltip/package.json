@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
-    "compile": "tsc"
+    "compile": "tsc && copyfiles src/*.css dist -u 1"
   },
   "author": "",
   "peerDependencies": {
@@ -23,6 +23,7 @@
     "rc-trigger": "2.5.4"
   },
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "copyfiles": "^2.0.0"
   }
 }

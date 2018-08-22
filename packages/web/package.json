@@ -7,7 +7,7 @@
   "style": "./dist/global.css",
   "scripts": {
     "clean": "rm -rf dist",
-    "compile": "tsc"
+    "compile": "tsc && copyfiles src/*.css dist -u 1"
   },
   "sideEffects": [
     "*.css"
@@ -51,7 +51,8 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "copyfiles": "^2.0.0"
   },
   "license": "MIT",
   "bugs": {

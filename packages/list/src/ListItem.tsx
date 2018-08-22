@@ -1,5 +1,4 @@
 /**
-
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -63,7 +62,7 @@ type Props = {
   /** Size of the right icon */
   iconSize?: number;
   /** `onClick`, **it will not override the default expand event** */
-  onClick?: () => mixed;
+  onClick?: () => void;
   style?: React.CSSProperties;
   /** default: `vital__ListItem` */
   className?: string;
@@ -74,7 +73,7 @@ type Props = {
   /** @private Pass down from ListGroup */
   collapse: boolean;
   /** @private */
-  dispatchClose: (level: number) => mixed;
+  dispatchClose: (level: number) => void;
   /** @private */
   border: boolean;
 };

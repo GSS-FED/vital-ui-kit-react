@@ -4,7 +4,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 
 import { size as SIZE, natureColor } from './constant';
 
-const Btn = styled.button`
+const Btn = styled.button<any>`
   position: relative;
   background: ${({ theme }) => theme.button.default.bg};
   color: ${({ theme, nature }) => natureColor(theme)[nature]};

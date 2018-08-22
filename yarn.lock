@@ -449,74 +449,6 @@
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.2.tgz#a153495c58c8679fb512084164dc3f441ae4d1a3"
 
-"@vital-ui/react-badge@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-badge/-/react-badge-0.8.5.tgz#ed1e80336c1e70382707fdb5b930adfd8331fe02"
-  dependencies:
-    "@vital-ui/react-theme" "^0.8.5"
-    "@vital-ui/react-utils" "^0.8.5"
-    classnames "^2.2.6"
-
-"@vital-ui/react-button@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-button/-/react-button-0.8.5.tgz#092b5fd62c330f55ed556ee9f365f68f89cb574a"
-  dependencies:
-    "@vital-ui/react-theme" "^0.8.5"
-    classnames "^2.2.5"
-    polished "^1.9.2"
-
-"@vital-ui/react-form@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-form/-/react-form-0.8.5.tgz#3b8a9d4a81f8b4721b16fdda47fc14d129196fd0"
-  dependencies:
-    "@vital-ui/react-button" "^0.8.5"
-    "@vital-ui/react-icon" "^0.8.5"
-    "@vital-ui/react-theme" "^0.8.5"
-    "@vital-ui/react-tooltip" "^0.8.5"
-    "@vital-ui/react-utils" "^0.8.5"
-    classnames "^2.2.6"
-    downshift "^2.0.10"
-    polish "0.2.3"
-    polished "1.9.3"
-    react-click-outside "3"
-    react-is "^16.4.1"
-    resize-observer-polyfill "1.5.0"
-
-"@vital-ui/react-icon@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-icon/-/react-icon-0.8.5.tgz#968e1c205ec14c4d07e95a8aa6d634aa22c4f84a"
-  dependencies:
-    classnames "^2.2.6"
-
-"@vital-ui/react-table@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-table/-/react-table-0.8.5.tgz#eb23c24571e7923692bafb8bd9c44bd4d4f09ede"
-  dependencies:
-    "@vital-ui/react-form" "^0.8.5"
-    classnames "^2.2.5"
-
-"@vital-ui/react-theme@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-theme/-/react-theme-0.8.5.tgz#19e49597ad662e8f66255ba94719ea8e9a52b921"
-  dependencies:
-    classnames "^2.2.6"
-    lodash.merge "^4.6.1"
-    polished "^1.9.2"
-
-"@vital-ui/react-tooltip@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-tooltip/-/react-tooltip-0.8.5.tgz#14fdf6641e629575113b7c02fe2bd75b3e3407e8"
-  dependencies:
-    classnames "^2.2.6"
-    rc-trigger "2.5.4"
-
-"@vital-ui/react-utils@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-utils/-/react-utils-0.8.5.tgz#855ef13da12e0b2be0750188095001b060990ea6"
-  dependencies:
-    classnames "^2.2.6"
-    styled-system "^3.0.2"
-
 "@vue/component-compiler-utils@^1.0.0":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-1.3.1.tgz#686f0b913d59590ae327b2a1cb4b6d9b931bbe0e"
@@ -2869,6 +2801,17 @@ copy-concurrently@^1.0.0:
 copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
+
+copyfiles@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-2.0.0.tgz#bbd78bb78e8fd6db5c67adf54249317b24560f2a"
+  dependencies:
+    glob "^7.0.5"
+    minimatch "^3.0.3"
+    mkdirp "^0.5.1"
+    noms "0.0.0"
+    through2 "^2.0.1"
+    yargs "^11.0.0"
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -6988,6 +6931,13 @@ node-pre-gyp@^0.10.0:
     semver "^5.3.0"
     tar "^4"
 
+noms@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/noms/-/noms-0.0.0.tgz#da8ebd9f3af9d6760919b27d9cdc8092a7332859"
+  dependencies:
+    inherits "^2.0.1"
+    readable-stream "~1.0.31"
+
 nopt@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-4.0.1.tgz#d0d4685afd5415193c8c7505602d0d17cd64474d"
@@ -8506,7 +8456,7 @@ read-pkg@^4.0.1:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@1.0:
+readable-stream@1.0, readable-stream@~1.0.31:
   version "1.0.34"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
   dependencies:
@@ -9838,7 +9788,7 @@ throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
 
-through2@^2.0.0, through2@^2.0.2:
+through2@^2.0.0, through2@^2.0.1, through2@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:

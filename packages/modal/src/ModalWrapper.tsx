@@ -24,7 +24,7 @@ class ModalWrapper extends React.Component<Props> {
     this.getWidth();
   }
 
-  componentDidUpdate(prevProps: Props, _: {}, snapshot: any) {
+  componentDidUpdate(__: Props, _: {}, snapshot: any) {
     if (snapshot !== null && this.modal.current) {
       this.modal.current.style.top = snapshot.modalTop;
       this.modal.current.style.left = snapshot.modalLeft;
@@ -34,9 +34,11 @@ class ModalWrapper extends React.Component<Props> {
   getSnapshotBeforeUpdate(nextProps: Props) {
     return {
       modalTop: `${(nextProps.windowHeight -
+        // @ts-ignore
         this.modal.current!.firstChild!.offsetHeight) /
         2}px`,
       modalLeft: `${(nextProps.windowWidth -
+        // @ts-ignore
         this.modal.current!.firstChild!.offsetWidth) /
         2}px`,
     };
@@ -45,9 +47,11 @@ class ModalWrapper extends React.Component<Props> {
   getWidth = () => {
     if (this.modal.current) {
       this.modal.current.style.top = `${(this.props.windowHeight -
+        // @ts-ignore
         this.modal.current!.firstChild!.offsetHeight) /
         2}px`;
       this.modal.current.style.left = `${(this.props.windowWidth -
+        // @ts-ignore
         this.modal.current!.firstChild!.offsetWidth) /
         2}px`;
     }
