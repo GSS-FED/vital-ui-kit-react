@@ -7,8 +7,6 @@ import baseStyle from '../components/FieldBase';
 const Area = styled.textarea`
   ${baseStyle};
   height: auto;
-  resize: ${({ resizeable }: { resizeable: boolean }) =>
-    resizeable ? 'auto' : 'none'};
 `;
 
 Area.defaultProps = {
@@ -78,7 +76,6 @@ class StatelessTextArea extends React.Component<Props> {
         className={className}
         style={style}
         rows={minRows}
-        resizeable={resize}
         disabled={disabled}
         spellCheck={spellCheck}
         autoFocus={autoFocus}

@@ -1,5 +1,4 @@
 /**
-
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -20,7 +19,7 @@ const SubListItem = ({
   themed,
 }: Props) => {
   const renderChildren = () =>
-    React.Children.map(children, child =>
+    React.Children.map(children, (child: any) =>
       React.cloneElement(child, {
         level,
         isChildren,

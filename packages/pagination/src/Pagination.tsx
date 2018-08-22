@@ -6,6 +6,7 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+// @ts-ignore
 import Icon from '@vital-ui/react-icon';
 
 import ButtonBase from '@vital-ui/react-button';

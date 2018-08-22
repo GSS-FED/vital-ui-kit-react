@@ -5,10 +5,16 @@
 
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
+// @ts-ignore
 import Icon from '@vital-ui/react-icon';
 import Tooltip from '@vital-ui/react-tooltip';
 
-import { Root, Wrapper, Handler, Button } from './styled';
+import {
+  SliderRoot,
+  SliderWrapper,
+  SlideHandler,
+  Button,
+} from './styled';
 import Track from './track';
 
 import constants from './constants';
@@ -302,7 +308,7 @@ class Slider extends React.Component<Props, State> {
     const position = this.getPositionFromValue(this.state.value);
 
     return (
-      <Root
+      <SliderRoot
         innerRef={this.slider}
         disabled={this.props.disabled!}
         aria-valuemin={this.props.min}
@@ -310,7 +316,7 @@ class Slider extends React.Component<Props, State> {
         aria-valuenow={this.props.value}
       >
         {this.renderDecreaseButton()}
-        <Wrapper
+        <SliderWrapper
           size={this.props.size!}
           disabled={this.props.disabled!}
         >
@@ -332,7 +338,7 @@ class Slider extends React.Component<Props, State> {
             overlay={this.state.value}
             trigger={['hover']}
           >
-            <Handler
+            <SlideHandler
               size={this.props.size!}
               innerRef={this.handle}
               style={{
@@ -341,9 +347,9 @@ class Slider extends React.Component<Props, State> {
               onMouseDown={this.handleStart}
             />
           </Tooltip>
-        </Wrapper>
+        </SliderWrapper>
         {this.renderIncreaseButton()}
-      </Root>
+      </SliderRoot>
     );
   }
 }

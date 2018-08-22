@@ -1,5 +1,4 @@
 /**
-
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -7,7 +6,7 @@
 import styled from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-const ListContent = styled.div`
+const ListContent = styled.div<any>`
   display: block;
   font-size: 1.2rem;
   border-left: ${({ border, theme }) =>

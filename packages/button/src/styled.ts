@@ -3,8 +3,20 @@ import { darken, lighten } from 'polished';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 import { size as SIZE, natureColor } from './constant';
+import { Nature, Size } from './Button';
 
-const Btn = styled.button<any>`
+const Btn = styled.button<{
+  nature: Nature;
+  size: Size;
+  subtle?: boolean;
+  selected?: boolean;
+  flat?: boolean;
+  light?: boolean;
+  link?: boolean;
+  dark?: boolean;
+  underline?: boolean;
+  circle?: boolean;
+}>`
   position: relative;
   background: ${({ theme }) => theme.button.default.bg};
   color: ${({ theme, nature }) => natureColor(theme)[nature]};

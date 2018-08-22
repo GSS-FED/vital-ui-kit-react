@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { borderTopRadius } from '@vital-ui/react-utils';
 
-const linkStyle = ({ hasLink, hasChildren, theme }) => {
+const linkStyle = ({ hasLink, hasChildren, theme }: any) => {
   if (hasLink || hasChildren) {
     return css`
       transition: all 0.2s ease;
@@ -19,7 +19,7 @@ const linkStyle = ({ hasLink, hasChildren, theme }) => {
   return null;
 };
 
-const levelStyle = ({ level, themed, theme }) => {
+const levelStyle = ({ level, themed, theme }: any) => {
   if (level < 1) {
     return css`
       background: ${themed === 'dark'
@@ -37,7 +37,7 @@ const levelStyle = ({ level, themed, theme }) => {
   `;
 };
 
-const ListWrapper = styled.ul`
+const ListRoot = styled.ul<any>`
   list-style: none;
   word-break: break-word;
   word-wrap: break-word;
@@ -45,7 +45,7 @@ const ListWrapper = styled.ul`
   border-radius: ${props => (props.collapse ? '4px' : 0)};
 `;
 
-const List = styled.li`
+const ListLi = styled.li<any>`
   border-radius: ${props => (props.collapse ? '4px' : 0)};
 
   :first-child {
@@ -53,7 +53,7 @@ const List = styled.li`
   }
 `;
 
-const TitleWrapper = styled.div`
+const ListTitleWrapper = styled.div<any>`
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -69,17 +69,17 @@ const TitleWrapper = styled.div`
     border ? theme.borderColor : 'none'};
   border-top: ${({ border, theme }) =>
     border ? theme.borderColor : 'none'};
-  ${props => linkStyle(props)};
-  ${props => levelStyle(props)};
+  ${linkStyle};
+  ${levelStyle};
 `;
 
-TitleWrapper.defaultProps = {
+ListTitleWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const Title = styled.div`
+const ListTitle = styled.div`
   display: table-cell;
   vertical-align: middle;
 `;
 
-export { ListWrapper, List, TitleWrapper, Title };
+export { ListRoot, ListLi, ListTitleWrapper, ListTitle };

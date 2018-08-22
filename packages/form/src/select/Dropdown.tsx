@@ -4,7 +4,7 @@
  */
 import * as React from 'react';
 import { ControllerStateAndHelpers } from 'downshift';
-import { MenuList, MenuItem } from './styled';
+import { _MenuList, _MenuItem } from './styled';
 import { Context } from './context';
 
 export const DropdownBase = <T extends {}>({
@@ -19,12 +19,12 @@ export const DropdownBase = <T extends {}>({
 }) => {
   if (isOpen) {
     return (
-      <MenuList {...getMenuProps({ refKey: 'innerRef' })}>
+      <_MenuList {...getMenuProps({ refKey: 'innerRef' })}>
         {React.Children.map(children, child => child).filter(
           (child: React.ReactElement<any>) =>
             shouldRenderItem(child.props.item, inputValue),
         )}
-      </MenuList>
+      </_MenuList>
     );
   }
   return null;
@@ -53,12 +53,12 @@ export const DropdownItem = ({
         })}
         {...props}
       >
-        <MenuItem
+        <_MenuItem
           isWrap={wrap}
           hightlighted={highlightedIndex === index}
         >
           {children}
-        </MenuItem>
+        </_MenuItem>
       </li>
     )}
   </Context.Consumer>

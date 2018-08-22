@@ -15,7 +15,7 @@ import InputBase, {
 } from '../input/StatelessInput';
 import { DropdownBase, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
-import { SelectButton, SelectButtonText } from './styled';
+import { _SelectButton, _SelectButtonText } from './styled';
 
 // @ts-ignore
 interface Props<T> extends DownshiftProps<T> {
@@ -35,10 +35,10 @@ const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text, children, ...props }) => (
-  <SelectButton {...props}>
-    {text && <SelectButtonText>{text}</SelectButtonText>}
+  <_SelectButton {...props}>
+    {text && <_SelectButtonText>{text}</_SelectButtonText>}
     {children}
-  </SelectButton>
+  </_SelectButton>
 );
 
 Button.defaultProps = {

@@ -6,7 +6,7 @@
 
 import * as React from 'react';
 import cn from 'classnames';
-import { ListWrapper } from './styled';
+import { ListRoot } from './styled';
 import ListItem from './ListItem';
 import ListContent from './ListContent';
 
@@ -59,9 +59,9 @@ class List extends React.Component<Props, State> {
   };
 
   renderChildren = () =>
-    React.Children.map(this.props.children, (child, i) =>
+    React.Children.map(this.props.children, (child: any, i) =>
       React.cloneElement(child, {
-        ref: node => {
+        ref: (node: any) => {
           this.setNodes(i, node);
         },
         themed: this.props.themed,
@@ -82,7 +82,7 @@ class List extends React.Component<Props, State> {
       ...props
     } = this.props;
     return (
-      <ListWrapper
+      <ListRoot
         style={style}
         className={cn('vital__list', className)}
         {...props}
@@ -91,7 +91,7 @@ class List extends React.Component<Props, State> {
         collapse={collapse}
       >
         {this.renderChildren()}
-      </ListWrapper>
+      </ListRoot>
     );
   }
 }

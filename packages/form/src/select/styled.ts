@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-export const MenuList = styled.ul`
+export const _MenuList = styled.ul`
   display: block;
   position: absolute;
   top: 100%;
@@ -26,11 +26,11 @@ export const MenuList = styled.ul`
   }
 `;
 
-MenuList.defaultProps = {
+_MenuList.defaultProps = {
   theme: defaultTheme,
 };
 
-export const MenuItem = styled.div<{
+export const _MenuItem = styled.div<{
   isWrap: boolean;
   hightlighted: boolean;
 }>`
@@ -53,12 +53,12 @@ export const MenuItem = styled.div<{
     `};
 `;
 
-MenuItem.defaultProps = {
+_MenuItem.defaultProps = {
   theme: defaultTheme,
   isWrap: true,
 };
 
-export const SelectButton = styled.div`
+export const _SelectButton = styled.div`
   width: 100%;
   position: relative;
   margin: 0;
@@ -80,11 +80,11 @@ export const SelectButton = styled.div`
   align-items: center;
 `;
 
-SelectButton.defaultProps = {
+_SelectButton.defaultProps = {
   theme: defaultTheme,
 };
 
-export const SelectButtonText = styled.span`
+export const _SelectButtonText = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;

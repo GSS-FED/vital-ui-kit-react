@@ -7,14 +7,15 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { tween, styler, easing } from 'popmotion';
+// @ts-ignore
 import IconBase from '@vital-ui/react-icon';
 import Badge from '@vital-ui/react-badge';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-import { TitleWrapper, List, Title } from './styled';
+import { ListTitleWrapper, ListLi, ListTitle } from './styled';
 import SubListItem from './SubListItem';
 
-const Icon = styled(IconBase)`
+const Icon = styled(IconBase)<any>`
   pointer-events: none;
   color: ${({ open, theme }) => (open ? `${theme.info}` : 'inherit')};
   transform: ${props =>
@@ -43,7 +44,7 @@ InnerWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const BadgeWrapper = styled(Title)`
+const BadgeWrapper = styled(ListTitle)<any>`
   text-align: right;
   padding-right: ${props => (props.hasIconRight ? '20px' : '0')};
 `;
@@ -183,11 +184,11 @@ class ListItem extends React.Component<Props, State> {
     } = this.props;
 
     return (
-      <List
+      <ListLi
         style={style}
         className={cn('vital__ListItem', className)}
       >
-        <TitleWrapper
+        <ListTitleWrapper
           className="vital__ListItem-wrapper"
           hasChildren={!!children}
           hasLink={hasLink}
@@ -196,7 +197,9 @@ class ListItem extends React.Component<Props, State> {
           border={border}
           themed={themed}
         >
-          <Title className="vital__ListItem-title">{title}</Title>
+          <ListTitle className="vital__ListItem-title">
+            {title}
+          </ListTitle>
           <RightWrapper>
             {badge && this.renderBadge()}
             {(children || hasLink) && (
@@ -207,7 +210,7 @@ class ListItem extends React.Component<Props, State> {
               />
             )}
           </RightWrapper>
-        </TitleWrapper>
+        </ListTitleWrapper>
         {children && (
           <InnerWrapper
             innerRef={s => {
@@ -216,14 +219,14 @@ class ListItem extends React.Component<Props, State> {
           >
             <SubListItem
               isChildren={!!children}
-              level={level + 1}
+              level={level! + 1}
               themed={themed}
             >
               {children}
             </SubListItem>
           </InnerWrapper>
         )}
-      </List>
+      </ListLi>
     );
   }
 }

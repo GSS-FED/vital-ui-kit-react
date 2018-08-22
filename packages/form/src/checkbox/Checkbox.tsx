@@ -6,6 +6,7 @@
 import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { rgba } from 'polished';
+// @ts-ignore
 import Icon from '@vital-ui/react-icon';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
@@ -82,7 +83,7 @@ export type Props = {
   /** Function trigger when checkbox value changes */
   onChange: (props: any) => {};
   /** Theme */
-  theme?: Object;
+  theme?: typeof defaultTheme;
   /** Value of the checkbox, html value attribute */
   value: number | string;
   style?: React.CSSProperties;

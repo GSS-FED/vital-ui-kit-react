@@ -9,7 +9,7 @@ import cn from 'classnames';
 import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
 
-type Nature =
+export type Nature =
   | 'default'
   | 'primary'
   | 'success'
@@ -17,7 +17,7 @@ type Nature =
   | 'alarm'
   | 'warning';
 
-type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
+export type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
 export interface ButtonProps {
   /** `vital_button` */
@@ -91,6 +91,8 @@ class Button extends React.Component<ButtonProps> {
       className,
       style,
       onClick,
+      nature = 'default',
+      size = 'medium',
       ...props
     } = this.props;
     return (
@@ -98,6 +100,8 @@ class Button extends React.Component<ButtonProps> {
         className={cn('vital__button', className)}
         style={style}
         onClick={onClick}
+        nature={nature}
+        size={size}
         {...props}
       >
         {children}

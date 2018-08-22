@@ -16,7 +16,7 @@ const Root = styled.div<Props>`
   top: 0;
   width: ${props => `${props.width}px`};
   pointer-events: none;
-  background-color: ${props =>
+  background-color: ${(props: any) =>
       stateColor(
         props,
         props.disabled

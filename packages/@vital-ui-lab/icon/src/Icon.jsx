@@ -36,11 +36,11 @@ function getIcon(iconName: any, iconPaths: any) {
 }
 
 type Props = {
-  name: string;
-  size?: number;
-  color?: string;
-  icon?: any;
-  onClick?: () => void;
+  name: string,
+  size?: number,
+  color?: string,
+  icon?: any,
+  onClick?: () => void,
 };
 
 /**

@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components';
-import ButtonBase, { ButtonProps } from '@vital-ui/react-button';
+import ButtonBase from '@vital-ui/react-button';
 import { defaultTheme } from '@vital-ui/react-theme';
 import constants from './constants';
 import { Size } from './types';
 
-const Root = styled.div`
+const SliderRoot = styled.div`
   display: flex;
   position: relative;
   min-width: 200px;
@@ -17,14 +17,14 @@ const Root = styled.div`
     `};
 `;
 
-const Wrapper = styled.div<{ size: Size; disabled: boolean }>`
+const SliderWrapper = styled.div<{ size: Size; disabled: boolean }>`
   display: block;
   position: relative;
   width: 100%;
   height: ${props => constants[props.size].handlerSize};
 `;
 
-const Handler = styled.div<{ size: Size }>`
+const SlideHandler = styled.div<{ size: Size }>`
   top: 0;
   position: absolute;
   border-radius: 100%;
@@ -57,8 +57,8 @@ const Button = styled(ButtonBase)`
   justify-content: center;
 `;
 
-Handler.defaultProps = {
+SlideHandler.defaultProps = {
   theme: defaultTheme,
 };
 
-export { Root, Wrapper, Handler, Button };
+export { SliderRoot, SliderWrapper, SlideHandler, Button };

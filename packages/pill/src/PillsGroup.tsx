@@ -83,6 +83,7 @@ class PillsGroup extends React.Component<Props, State> {
     }
     return (
       <PriorityNav
+        // @ts-ignore
         className={cn('vital__pill-group', className)}
         style={style}
         vertical={vertical}

@@ -6,6 +6,7 @@
 import React, { Component } from 'react';
 import styled, { withTheme, css } from 'styled-components';
 import cn from 'classnames';
+// @ts-ignore
 import Icon from '@vital-ui/react-icon';
 import { defaultTheme } from '@vital-ui/react-theme';
 
