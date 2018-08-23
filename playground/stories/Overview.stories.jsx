@@ -112,7 +112,11 @@ storiesOf('Getting Started', module).add(
         <Vertical>
           <Card width="300px">
             <Card.Content style={{ textAlign: 'center' }}>
-              <Icon.Music name="thumbs-up" fontSize="90" color="#0e86fe" />
+              <Icon.Music
+                name="thumbs-up"
+                fontSize="90"
+                color="#0e86fe"
+              />
               <div
                 style={{
                   fontSize: '1.25rem',
