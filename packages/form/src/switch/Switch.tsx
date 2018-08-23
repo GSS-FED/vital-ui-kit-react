@@ -117,10 +117,12 @@ Text.defaultProps = {
   theme: defaultTheme,
 };
 
+// @ts-ignore
 const TextOff = styled(Text)<{ checked: boolean }>`
   display: ${props => (props.checked ? 'none' : 'block')};
 `;
 
+// @ts-ignore
 const TextOn = styled(Text)<{ checked: boolean }>`
   display: ${props => (props.checked ? 'block' : 'none')};
   left: -20px;

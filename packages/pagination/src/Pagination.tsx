@@ -96,7 +96,6 @@ const Pagination = ({ pageSize, current, onClick }: Props) => (
         aria-hidden="true"
         data-prefix="fas"
         data-icon="chevron-right"
-        class="svg-inline--fa fa-chevron-right fa-w-10"
         role="img"
         viewBox="0 0 320 512"
       >

@@ -14,6 +14,7 @@ type iconProps = {
   theme?: typeof defaultTheme;
 };
 
+// @ts-ignore
 const iconPositionStyle = ({
   iconPosition,
   theme = defaultTheme,

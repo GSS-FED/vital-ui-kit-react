@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "clean": "rm -rf dist lib",
-    "copy:css": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
-    "compile": "tsc && tsc --module commonjs --outdir cjs && copy:css"
+    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
+    "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
   },
   "author": "",
   "peerDependencies": {
