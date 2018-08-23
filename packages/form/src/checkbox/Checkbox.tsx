@@ -7,7 +7,7 @@ import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { rgba } from 'polished';
 // @ts-ignore
-import Icon from '@vital-ui/react-icon';
+import { Check } from '@vital-ui/react-icon';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 
@@ -197,7 +197,7 @@ class Checkbox extends React.Component<Props, State> {
         <Box checked={this.state.checked} round={round}>
           <IconWrapper checked={this.state.checked}>
             {customIcon || (
-              <Icon
+              <Check
                 name={icon || 'check'}
                 size="12"
                 color={iconColor(round, disabled, theme)}

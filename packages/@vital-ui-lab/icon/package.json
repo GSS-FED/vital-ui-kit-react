@@ -2,14 +2,14 @@
   "name": "@vital-ui/react-icon",
   "version": "0.8.5",
   "description": "",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
   "module": "dist/index.js",
   "sideEffects": [
     "./selection.json"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
-    "compile": "tsc"
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",

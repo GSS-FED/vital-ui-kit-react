@@ -7,15 +7,13 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { tween, styler, easing } from 'popmotion';
-// @ts-ignore
-import IconBase from '@vital-ui/react-icon';
 import Badge from '@vital-ui/react-badge';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 import { ListTitleWrapper, ListLi, ListTitle } from './styled';
 import SubListItem from './SubListItem';
 
-const Icon = styled(IconBase)<any>`
+const Icon = styled('div')<any>`
   pointer-events: none;
   color: ${({ open, theme }) => (open ? `${theme.info}` : 'inherit')};
   transform: ${props =>
@@ -202,13 +200,12 @@ class ListItem extends React.Component<Props, State> {
           </ListTitle>
           <RightWrapper>
             {badge && this.renderBadge()}
-            {(children || hasLink) && (
+            {/* {(children || hasLink) && (
               <Icon
                 open={this.state.open}
-                name={this.iconHandler()}
                 size={this.props.iconSize}
               />
-            )}
+            )} */}
           </RightWrapper>
         </ListTitleWrapper>
         {children && (

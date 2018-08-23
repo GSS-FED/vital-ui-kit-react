@@ -27,11 +27,11 @@ import {
 import Section from './Container/Section';
 
 const AVATAR = [
-  { size: 'xsmall', round: true, outline: true },
-  { gender: 'male', size: 'small', round: true, outline: true },
-  { gender: 'female', size: 'medium', round: true, badge: 10 },
-  { gender: 'male', size: 'large', round: true },
-  { gender: 'female', size: 'xlarge', round: true, badge: 100 },
+  { size: 'xsmall', circle: true, outline: true },
+  { gender: 'male', size: 'small', circle: true, outline: true },
+  { gender: 'female', size: 'medium', circle: true, badge: 10 },
+  { gender: 'male', size: 'large', circle: true },
+  { gender: 'female', size: 'xlarge', circle: true, badge: 100 },
 ];
 
 const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
@@ -112,7 +112,7 @@ storiesOf('Getting Started', module).add(
         <Vertical>
           <Card width="300px">
             <Card.Content style={{ textAlign: 'center' }}>
-              <Icon name="thumbs-up" size="90" color="#0e86fe" />
+              <Icon.Music name="thumbs-up" fontSize="90" color="#0e86fe" />
               <div
                 style={{
                   fontSize: '1.25rem',

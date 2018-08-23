@@ -4,8 +4,7 @@
  */
 import * as React from 'react';
 import styled from 'styled-components';
-// @ts-ignore
-import Icon from '@vital-ui/react-icon';
+import { Close } from '@vital-ui/react-icon';
 
 const Li = styled.li`
   color: #ffffff;
@@ -44,7 +43,7 @@ export const Tag: React.SFC<Props> = ({
   <Li onClick={onClick}>
     <Content>{children}</Content>
     {onCloseClick && (
-      <Icon
+      <Close
         onClick={onCloseClick}
         name="close"
         color="#fff"

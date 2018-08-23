@@ -15,7 +15,7 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { Tooltip, Icon, defaultIcon } from '@vital-ui/react';
+import { Tooltip, Icon as IconBase } from '@vital-ui/react';
 
 import Filter from '../Container/Filter';
 
@@ -44,33 +44,166 @@ storiesOf('Packages | Icon', module)
         <Filter>
           {value => (
             <Display>
-              {defaultIcon.icons
-                .filter(icon => {
+              {icons
+                .filter(ic => {
                   if (value === '') {
                     return true;
                   }
-                  return icon.properties.name.indexOf(value) > -1;
+                  return ic.indexOf(value) > -1;
                 })
-                .map(icon => (
-                  <Tooltip
-                    key={icon.icon.defaultCode}
-                    placement="bottom"
-                    overlay={icon.properties.name}
-                    trigger={['hover']}
-                    mouseLeaveDelay={0}
-                  >
-                    <Wrapper>
-                      <Icon
-                        name={icon.icon.tags[0]}
-                        size={32}
-                        color="#2A487F"
-                      />
-                    </Wrapper>
-                  </Tooltip>
-                ))}
+                .map(icon => {
+                  const Icon = IconBase[icon];
+                  return (
+                    <Tooltip
+                      key={icon}
+                      placement="bottom"
+                      overlay={icon}
+                      trigger={['hover']}
+                      mouseLeaveDelay={0}
+                    >
+                      <Wrapper>
+                        <Icon fontSize={32} color="#2A487F" />
+                      </Wrapper>
+                    </Tooltip>
+                  );
+                })}
             </Display>
           )}
         </Filter>
       )),
     ),
   );
+
+const icons = [
+  'Archive',
+  'Backward',
+  'Bell',
+  'BirthdayCake',
+  'Book',
+  'Book1',
+  'Bookmark',
+  'BoxCheck',
+  'BoxDuplicate',
+  'BoxS',
+  'Briefcase1',
+  'Briefcase2',
+  'Browser',
+  'Bug',
+  'Building',
+  'Bus',
+  'Cachet',
+  'Calculator',
+  'CalendarBoxes',
+  'CalendarChecked',
+  'CalendarClose',
+  'CalendarEdit',
+  'CalendarEmpty',
+  'CalendarHint',
+  'CalendarMinus',
+  'CalendarPlus',
+  'Camera',
+  'Car',
+  'Cash',
+  'ChartBarchart',
+  'ChartLinechart',
+  'ChartPiechart',
+  'ChartTrend',
+  'Check',
+  'ChecklistChecked',
+  'ChecklistUnchecked',
+  'CircleCheck',
+  'CircleInfo',
+  'CircleQuestion',
+  'Clock',
+  'Close',
+  'Cloud',
+  'CloudDownload',
+  'CloudUpload',
+  'Code',
+  'Coffee',
+  'CreditCard',
+  'Diamond',
+  'DoorClosed',
+  'DoorOpened',
+  'Edit',
+  'Export',
+  'Eye',
+  'EyeBlind',
+  'EyeO',
+  'FaceId',
+  'FileCode',
+  'FileContent',
+  'FileContentDuplicate',
+  'FileDuplicate',
+  'FileEmpty',
+  'FileExcel',
+  'FileJpg',
+  'FileKeynote',
+  'FileNumbers',
+  'FilePages',
+  'FilePaper',
+  'FilePdf',
+  'FilePlus',
+  'FilePng',
+  'FilePowerpoint',
+  'FileS',
+  'FileSketch',
+  'FileUnknow',
+  'FileWord',
+  'Filter',
+  'FinderClosed',
+  'FinderOpened',
+  'FinderPlus',
+  'FirstAid',
+  'Flag',
+  'Gear',
+  'Glasses',
+  'HardDriveDownload',
+  'Heart',
+  'House',
+  'Human',
+  'IdCard',
+  'Key',
+  'Lamp',
+  'Link',
+  'Magnifier',
+  'Mail',
+  'MailRead',
+  'MessageRounded',
+  'MessageRoundedClose',
+  'MessageRoundedContent',
+  'MessageRoundedDialogue',
+  'MessageRoundedHint',
+  'MessageRoundedMore',
+  'MessageRoundedPlus',
+  'MessageRoundedSmile',
+  'MessageSquare',
+  'MessageSquareClose',
+  'MessageSquareContent',
+  'MessageSquareHint',
+  'MessageSquareMore',
+  'MessageSquarePlus',
+  'MessageSquareSmile',
+  'Moon',
+  'MoreOption',
+  'Music',
+  'Mute',
+  'News',
+  'Notification',
+  'Pen',
+  'Pin',
+  'Rocket',
+  'Scale',
+  'Setting',
+  'Share',
+  'Sofa',
+  'Spanner',
+  'StampChecked',
+  'Star',
+  'Tag',
+  'Trash',
+  'Umbrella',
+  'WaterDrop',
+  'ZoomIn',
+  'ZoomOut',
+];

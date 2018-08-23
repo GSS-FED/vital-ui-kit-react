@@ -6,8 +6,6 @@
 import React, { Component } from 'react';
 import styled, { withTheme, css } from 'styled-components';
 import cn from 'classnames';
-// @ts-ignore
-import Icon from '@vital-ui/react-icon';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 const Root = styled.div``;
@@ -136,8 +134,6 @@ type Props = {
   defaultChecked?: boolean;
   round?: boolean;
   disabled?: boolean;
-  iconBtn?: string;
-  iconLabelFront?: string;
   iconLabelBack?: string;
   theme: any;
   className?: string;
@@ -175,16 +171,7 @@ class Switch extends Component<Props, State> {
   };
 
   render() {
-    const {
-      round,
-      disabled,
-      iconBtn,
-      iconLabelFront,
-      iconLabelBack,
-      theme,
-      style,
-      className,
-    } = this.props;
+    const { round, disabled, style, className } = this.props;
     return (
       <Root
         style={style}
@@ -196,34 +183,7 @@ class Switch extends Component<Props, State> {
           checked={this.state.checked}
           disabled={disabled}
         />
-        <Label round={round} disabled={disabled}>
-          {iconLabelFront && (
-            <TextOn checked={this.state.checked}>
-              <Icon name={iconLabelFront} color={theme.white} />
-            </TextOn>
-          )}
-          {iconLabelBack && (
-            <TextOff checked={this.state.checked}>
-              <Icon
-                name={iconLabelBack}
-                color={theme.form.switch.icon}
-              />
-            </TextOff>
-          )}
-          <Btn icon={iconBtn} round={round} disabled={disabled}>
-            {iconBtn && (
-              <Icon
-                color={
-                  this.state.checked
-                    ? theme.form.switch.checked
-                    : theme.form.switch.icon
-                }
-                name={iconBtn}
-                size="17"
-              />
-            )}
-          </Btn>
-        </Label>
+        <Label round={round} disabled={disabled} />
       </Root>
     );
   }

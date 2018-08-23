@@ -45,7 +45,7 @@ storiesOf('Packages | Avatar', module)
             },
             'unknown',
           )}
-          round={boolean('round', false)}
+          circle={boolean('circle', false)}
           outline={boolean('outline', false)}
         />
       )),

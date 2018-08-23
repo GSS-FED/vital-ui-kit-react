@@ -163,7 +163,7 @@ storiesOf('Packages | Form', module)
           <FieldInput label="Price" inline>
             <MultipleInput>
               <Addon>
-                <Icon name="dollar" />
+                <Icon.Moon name="dollar" />
               </Addon>
               <Input placeholder="LabelAddon on the both" />
               <Addon>.00</Addon>

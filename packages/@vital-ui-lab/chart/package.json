@@ -2,10 +2,10 @@
   "name": "@vital-ui/react-chart",
   "version": "0.8.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "compile": "tsc"
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "peerDependencies": {

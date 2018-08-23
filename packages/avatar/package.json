@@ -2,16 +2,17 @@
   "name": "@vital-ui/react-avatar",
   "version": "0.8.6-next.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "clean": "rm -rf dist",
-    "compile": "tsc"
+    "gen:assets": "svgr -d default-avatar assets --ext tsx --icon",
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "files": [
     "dist",
-    "assets"
+    "lib"
   ],
   "sideEffects": false,
   "author": "Eric Yip (https://github.com/ericyip)",
@@ -27,6 +28,7 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "@svgr/cli": "^2.2.0",
     "typescript": "^3.0.1"
   }
 }

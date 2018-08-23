@@ -10,12 +10,7 @@ import {
   colorPaletteGenerator,
   defaultComponentsTheme,
 } from '@vital-ui/react-theme';
-import Icon, {
-  withIcon,
-  defaultIcon,
-  IconContext,
-  // @ts-ignore
-} from '@vital-ui/react-icon';
+import * as Icon from '@vital-ui/react-icon';
 
 import Avatar from '@vital-ui/react-avatar';
 import Button, { ButtonGroup } from '@vital-ui/react-button';
@@ -87,7 +82,6 @@ export {
   Pagination,
   ThemeProvider,
   defaultTheme,
-  withIcon,
   Modal,
   Menu,
   Tabs,
@@ -96,8 +90,6 @@ export {
   colorPaletteGenerator,
   defaultComponentsTheme,
   defaultVariables,
-  IconContext,
-  defaultIcon,
   VitalProvider,
   MultiSelect,
   Tag,

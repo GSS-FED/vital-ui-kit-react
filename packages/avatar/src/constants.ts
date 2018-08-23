@@ -1,9 +1,11 @@
-export type SizeType =
-  | 'xlarge'
-  | 'large'
-  | 'medium'
-  | 'small'
-  | 'xsmall';
+import DefaultAvatar from './default-avatar/DefaultAvatar';
+import DefaultAvatarF from './default-avatar/DefaultAvatarF';
+import DefaultAvatarFO from './default-avatar/DefaultAvatarFO';
+import DefaultAvatarMO from './default-avatar/DefaultAvatarMO';
+import DefaultAvatarM from './default-avatar/DefaultAvatarM';
+import DefaultAvatarO from './default-avatar/DefaultAvatarO';
+
+export type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
 
 export const avatarSizes = {
   xsmall: {
@@ -44,4 +46,13 @@ export const badgeSizes = {
   xsmall: {
     height: '5px',
   },
+};
+
+export const defaultAvatarSets = {
+  default: DefaultAvatar,
+  female: DefaultAvatarF,
+  male: DefaultAvatarM,
+  femaleOutline: DefaultAvatarFO,
+  maleOutLine: DefaultAvatarMO,
+  outline: DefaultAvatarO,
 };

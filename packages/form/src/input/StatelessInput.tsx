@@ -3,9 +3,6 @@ import * as ReactIs from 'react-is';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { withDeprecationWarnings } from '@vital-ui/react-utils';
-// @ts-ignore
-import Icon from '@vital-ui/react-icon';
 
 import baseStyle from '../components/FieldBase';
 
@@ -60,21 +57,7 @@ InputElement.defaultProps = {
   alarm: false,
 };
 
-const InputIcon = styled(Icon)`
-  position: absolute;
-  top: calc(50% - 0.5em);
-  width: 2.2em;
-  text-align: center;
-  z-index: 7;
-  color: ${({ theme }) => theme.form.inputIcon.color};
-  ${iconPositionStyle};
-`;
-
-InputIcon.defaultProps = {
-  theme: defaultTheme,
-};
-
-type IconProps = string | typeof Icon;
+type IconProps = any;
 
 export type Props = {
   /** Input ref */
@@ -133,22 +116,9 @@ class StatelessInput extends React.Component<Props> {
     icon: undefined,
   };
 
-  renderIcon = (
-    position: IconPosition,
-    icon: IconProps,
-    onClick?: () => void,
-  ) => {
+  renderIcon = (icon: IconProps, onClick?: () => void) => {
     if (ReactIs.isElement(icon)) {
       return icon;
-    }
-    if (typeof icon === 'string') {
-      return (
-        <InputIcon
-          iconPosition={position}
-          name={icon}
-          onClick={onClick}
-        />
-      );
     }
     return null;
   };
@@ -197,23 +167,11 @@ class StatelessInput extends React.Component<Props> {
           theme={theme}
           {...props}
         />
-        {icon && (
-          <WithWarningsInput
-            name={icon}
-            iconPosition={iconPosition}
-          />
-        )}
-        {leftIcon && this.renderIcon('left', leftIcon)}
-        {rightIcon &&
-          this.renderIcon('right', rightIcon, onRightIconClick)}
+        {leftIcon && this.renderIcon(leftIcon)}
+        {rightIcon && this.renderIcon(rightIcon, onRightIconClick)}
       </Root>
     );
   }
 }
-
-const WithWarningsInput = withDeprecationWarnings(InputIcon, {
-  message:
-    'Input props deprecation warning: icon and iconPosition. Please change to leftIcon and rightIcon.',
-});
 
 export default StatelessInput;

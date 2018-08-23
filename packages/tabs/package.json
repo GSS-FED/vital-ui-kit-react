@@ -2,11 +2,11 @@
   "name": "@vital-ui/react-tabs",
   "version": "0.8.6-next.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf dist",
-    "compile": "tsc"
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "peerDependencies": {

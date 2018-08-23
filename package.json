@@ -13,7 +13,7 @@
     "clean-all": "yarn cache clean && yarn run reset && yarn run clean:build",
     "bootstrap": "lerna bootstrap",
     "clean:build": "lerna exec -- rimraf dist",
-    "build": "lerna run -- compile && copyfiles src/*.css dist",
+    "build": "lerna run --stream -- compile",
     "prebuild": "yarn clean:build",
     "watch": "cross-env NODE_ENV=development lerna exec --parallel -- tsc-watch",
     "storybook": "npm-run-all --parallel watch start:storybook",
@@ -38,6 +38,7 @@
   "license": "MIT",
   "devDependencies": {
     "@gssfed/eslint-config": "0.0.4",
+    "@svgr/cli": "^2.2.0",
     "@types/classnames": "^2.2.6",
     "@types/react": "^16.4.11",
     "@types/react-dom": "^16.0.7",

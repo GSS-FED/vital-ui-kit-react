@@ -1,14 +1,11 @@
 import React from 'react';
 import { ThemeProvider as Provider } from '@vital-ui/react-theme';
-// @ts-ignore
-import { IconContext, defaultIcon } from '@vital-ui/react-icon';
 
 type Return = (n: any) => any;
 
 type Props = {
   theme?: object;
   componentTheme?: Return;
-  icon?: object;
   children: React.ReactNode;
 };
 
@@ -20,12 +17,10 @@ class ThemeProvider extends React.Component<Props> {
   };
 
   render() {
-    const { theme, icon, componentTheme, children } = this.props;
+    const { theme, componentTheme, children } = this.props;
     return (
       <Provider theme={theme} componentTheme={componentTheme}>
-        <IconContext.Provider value={{ ...defaultIcon, ...icon }}>
-          {children}
-        </IconContext.Provider>
+        {children}
       </Provider>
     );
   }

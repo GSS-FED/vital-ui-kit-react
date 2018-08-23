@@ -142,7 +142,7 @@ storiesOf('Packages | Button', module)
     withInfo('')(
       withNotes('')(() => (
         <Button circle={boolean('circle', true)}>
-          <Icon name="plus" color="#3b5998" />
+          <Icon.Star name="star" color="#3b5998" />
         </Button>
       )),
     ),

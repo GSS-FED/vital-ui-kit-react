@@ -2,14 +2,15 @@
   "name": "@vital-ui/react-tooltip",
   "version": "0.8.6-next.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "cjs/index.js",
   "module": "dist/index.js",
   "sideEffects": [
     "*.css"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
-    "compile": "tsc && copyfiles src/*.css dist -u 1"
+    "clean": "rm -rf dist lib",
+    "copy:css": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
+    "compile": "tsc && tsc --module commonjs --outdir cjs && copy:css"
   },
   "author": "",
   "peerDependencies": {
