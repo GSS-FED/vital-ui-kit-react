@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-list",
-  "version": "0.8.6-next.1",
+  "version": "0.8.6-next.2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,10 +16,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-badge": "^0.8.6-next.1",
-    "@vital-ui/react-icon": "^0.8.5",
-    "@vital-ui/react-theme": "^0.8.6-next.1",
-    "@vital-ui/react-utils": "^0.8.6-next.1",
+    "@vital-ui/react-badge": "^0.8.6-next.2",
+    "@vital-ui/react-icon": "^0.8.6-next.2",
+    "@vital-ui/react-theme": "^0.8.6-next.2",
+    "@vital-ui/react-utils": "^0.8.6-next.2",
     "classnames": "^2.2.6",
     "popmotion": "8.1.22"
   },

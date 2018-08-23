@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-theme",
-  "version": "0.8.6-next.1",
+  "version": "0.8.6-next.2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,8 +16,8 @@
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
-    "copyfiles": "^2.0.0",
     "@types/lodash.merge": "^4.6.4",
+    "copyfiles": "^2.0.0",
     "react": "16.4.1",
     "styled-components": "3.3.3",
     "typescript": "^3.0.1"
