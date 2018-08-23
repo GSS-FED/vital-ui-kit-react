@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-layout",
-  "version": "0.8.6-next.2",
+  "version": "0.8.6-next.3",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",

@@ -9,7 +9,7 @@
   "publish": {
     "access": "public"
   },
-  "version": "0.8.6-next.2",
+  "version": "0.8.6-next.3",
   "command": {
     "exec": {
       "ignore": "@gssfed/playground"
