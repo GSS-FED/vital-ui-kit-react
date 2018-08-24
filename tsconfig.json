@@ -8,7 +8,6 @@
     "target": "es5",
     "lib": ["es2015", "dom"],
     "module": "esnext",
-    "importHelpers": true,
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
