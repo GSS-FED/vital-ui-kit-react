@@ -5,7 +5,7 @@ import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import { Card } from '../../packages/card/src';
-import { Rocket } from '../../packages/icon';
+import { Rocket } from '../../packages/icon/src';
 import { Button } from '../../packages/button/src/Button';
 import { ButtonGroup } from '../../packages/button/src/ButtonGroup';
 // import heroImage from '../../assets/card-header-pic.png';
