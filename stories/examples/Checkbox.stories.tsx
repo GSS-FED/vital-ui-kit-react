@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Checkbox, CheckboxGroup } from '@vital-ui/react-form/src';
+import { Checkbox, CheckboxGroup } from '../../packages/form/src';
 
 export class CheckBoxExample extends React.Component<
   {

@@ -4,10 +4,10 @@ import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card } from '@vital-ui/react-card/src';
-import { Rocket } from '@vital-ui/react-icon';
-import { Button } from '@vital-ui/react-button/src/Button';
-import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
+import { Card } from '../../packages/card/src';
+import { Rocket } from '../../packages/icon';
+import { Button } from '../../packages/button/src/Button';
+import { ButtonGroup } from '../../packages/button/src/ButtonGroup';
 // import heroImage from '../../assets/card-header-pic.png';
 
 const content =

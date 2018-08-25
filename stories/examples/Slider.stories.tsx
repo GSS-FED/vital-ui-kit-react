@@ -17,8 +17,8 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Slider } from '@vital-ui/react-form/src/slider';
-import { Button } from '@vital-ui/react-button/src/Button';
+import { Slider } from '../../packages/form/src/slider';
+import { Button } from '../../packages/button/src/Button';
 
 const items = [
   {

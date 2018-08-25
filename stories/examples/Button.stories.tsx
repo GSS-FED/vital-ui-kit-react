@@ -13,9 +13,9 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Button } from '@vital-ui/react-button/src/Button';
-import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
-import { Star } from '@vital-ui/react-icon/src';
+import { Button } from '../../packages/button/src/Button';
+import { ButtonGroup } from '../../packages/button/src/ButtonGroup';
+import { Star } from '../../packages/icon/src';
 
 storiesOf('Packages | Button', module)
   .addDecorator(withKnobs)

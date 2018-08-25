@@ -10,8 +10,8 @@ import {
   Pen,
   Pin,
   BirthdayCake,
-} from '@vital-ui/react-icon';
-import { Box } from '@vital-ui/react-utils/src';
+} from '../../packages/icon/src';
+import { Box } from '../../packages/utils/src';
 
 storiesOf('Packages | Menu', module)
   .addDecorator(withKnobs)

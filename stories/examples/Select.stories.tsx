@@ -23,8 +23,8 @@ import {
   Select,
   MultiSelect,
   Tag,
-} from '@vital-ui/react-form/src/select';
-import { MoreOption } from '@vital-ui/react-icon';
+} from '../../packages/form/src/select';
+import { MoreOption } from '../../packages/icon/src';
 
 const FormWrapper = styled.div`
   max-width: 500px;

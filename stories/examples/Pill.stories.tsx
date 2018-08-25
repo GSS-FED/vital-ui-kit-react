@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pill, PillsGroup } from '@vital-ui/react-pill/src';
+import { Pill, PillsGroup } from '../../packages/pill/src';
 
 storiesOf('Packages | Pill', module)
   .addDecorator(withKnobs)

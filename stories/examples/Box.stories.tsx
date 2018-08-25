@@ -7,16 +7,9 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  select,
-} from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Box } from '@vital-ui/react-utils/src';
+import { Box } from '../../packages/utils/src';
 
 const ColorBox = styled(Box)`
   background-clip: content-box, padding-box;

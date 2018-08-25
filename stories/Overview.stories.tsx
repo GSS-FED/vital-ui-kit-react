@@ -18,11 +18,8 @@ import { withInfo } from '@storybook/addon-info';
 import { withNotes } from '@storybook/addon-notes';
 
 import { Music } from '../packages/icon/src';
-import {
-  Button,
-  ButtonProps,
-} from '@vital-ui/react-button/src/Button';
-import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
+import { Button, ButtonProps } from '../packages/button/src/Button';
+import { ButtonGroup } from '../packages/button/src/ButtonGroup';
 import { Card } from '../packages/card/src';
 import Section from './Container/Section';
 import { Avatar, AvatarProps } from '../packages/avatar/src/Avatar';

@@ -15,8 +15,8 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import * as IconBase from '@vital-ui/react-icon';
-import { Tooltip } from '@vital-ui/react-tooltip/src';
+import * as IconBase from '../../packages/icon/src';
+import { Tooltip } from '../../packages/tooltip/src';
 
 import Filter from '../Container/Filter';
 

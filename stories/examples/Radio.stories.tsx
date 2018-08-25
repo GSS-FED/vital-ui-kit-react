@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { RadioGroup } from '@vital-ui/react-form/src';
+import { RadioGroup } from '../../packages/form/src';
 
 const items = [
   { name: 'color', value: 'red', label: 'Red' },
