@@ -4,8 +4,7 @@ import initStoryshots, {
   multiSnapshotWithOptions,
 } from '@storybook/addon-storyshots';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
-// import { addSerializer } from 'jest-specific-snapshot';
-import { Table, SimpleTable } from '../packages/web/src';
+import { addSerializer } from 'jest-specific-snapshot';
 
 /**
  * Mock methods of addon-info so that "Show Info" button don't go into snapshots.
@@ -20,15 +19,8 @@ jest.mock('@storybook/addon-info', () => ({
  * Add custom serializer in order to work with multiSnapShot
  * https://github.com/storybooks/storybook/issues/887#issuecomment-357073807
  */
-// addSerializer(styleSheetSerializer);
+addSerializer(styleSheetSerializer);
 
 initStoryshots({
-  test: multiSnapshotWithOptions({
-    createNodeMock: element => {
-      if (element.type === Table || SimpleTable) {
-        return document.createElement('div');
-      }
-      return element;
-    },
-  }),
+  test: multiSnapshotWithOptions({}),
 });

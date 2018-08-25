@@ -19,6 +19,7 @@
     "strictNullChecks": true,
     "stripInternal": true,
     "skipLibCheck": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist", "cjs"]
 }
