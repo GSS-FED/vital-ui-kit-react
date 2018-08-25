@@ -3,13 +3,14 @@
  * MIT license
  */
 
-import React from 'react';
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 
-import AvatarBadge from './AvatarBadge';
-import { avatarSizes, Size, defaultAvatarSets } from './constants';
+import { AvatarBadge } from './AvatarBadge';
+import { avatarSizes, Size } from './constants';
+import { defaultAvatarSets } from './default-avatar';
 
 type SizeStyleProps = {
   size: Size;
@@ -50,7 +51,7 @@ const builtinTheme = {
 
 type Gender = 'male' | 'female';
 
-interface AvatarProps {
+export interface AvatarProps {
   /** Default sets of avatar */
   bulltinAvatars?: typeof defaultAvatarSets;
   /** Each Avatar size and borderRadius if circle  */
@@ -90,7 +91,7 @@ interface AvatarProps {
  *  round
  * />
  */
-class Avatar extends React.Component<AvatarProps> {
+export class Avatar extends React.Component<AvatarProps> {
   static defaultProps = {
     bulltinAvatars: defaultAvatarSets,
     builtinTheme,
@@ -219,5 +220,3 @@ class Avatar extends React.Component<AvatarProps> {
     return badge;
   };
 }
-
-export default Avatar;

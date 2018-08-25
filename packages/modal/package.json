@@ -18,7 +18,8 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.8.6-next.3",
     "@vital-ui/react-utils": "^0.8.6-next.3",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "react-resize-detector": "^3.1.1"
   },
   "devDependencies": {
     "typescript": "^3.0.1"

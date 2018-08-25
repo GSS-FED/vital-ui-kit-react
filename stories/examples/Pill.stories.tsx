@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Pill } from '@vital-ui/react';
+import { Pill, PillsGroup } from '@vital-ui/react-pill/src';
 
 storiesOf('Packages | Pill', module)
   .addDecorator(withKnobs)
@@ -23,13 +23,13 @@ storiesOf('Packages | Pill', module)
     'Basic',
     withInfo(`info`)(
       withNotes('This is pill')(() => (
-        <Pill.Group vertical={boolean('vertical', false)}>
+        <PillsGroup vertical={boolean('vertical', false)}>
           <Pill label="Dashboard" badge="23" />
           <Pill label="Projects" badge="99+" />
           <Pill label="Issues" badge="6" />
           <Pill label="Reports" />
           <Pill label="User Center" />
-        </Pill.Group>
+        </PillsGroup>
       )),
     ),
   );

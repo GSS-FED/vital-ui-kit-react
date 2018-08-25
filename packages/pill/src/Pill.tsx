@@ -7,9 +7,7 @@ import React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
-import Badge from '@vital-ui/react-badge';
-
-import PillsGroup from './PillsGroup';
+import { Badge } from '@vital-ui/react-badge';
 
 const textWidth = (props: {
   vertical: boolean;
@@ -79,7 +77,7 @@ const PillBadge = styled(Badge)`
   float: right;
 `;
 
-type Props = {
+export interface PillProps {
   /** Content inside Pill */
   label: React.ReactNode;
   /** Show badge if it has one */
@@ -89,12 +87,12 @@ type Props = {
   /** Vertical display */
   vertical?: boolean;
   /** Call when pill selected */
-  onSelect: (index: number) => void;
+  onSelect?: (index: number) => void;
   style?: React.CSSProperties;
   /** default: `vital__pill */
   className?: string;
   index?: number;
-};
+}
 
 /**
  * @render react
@@ -110,16 +108,16 @@ type Props = {
  *      </PillGroup>
  */
 
-class Pill extends React.Component<Props> {
+export class Pill extends React.Component<PillProps> {
   static defaultProps = {
     current: false,
     vertical: false,
   };
 
-  static Group = PillsGroup;
-
   handleSelect = () => {
-    this.props.onSelect(this.props.index!);
+    if (this.props.onSelect) {
+      this.props.onSelect(this.props.index!);
+    }
   };
 
   render() {
@@ -151,5 +149,3 @@ class Pill extends React.Component<Props> {
     );
   }
 }
-
-export default Pill;

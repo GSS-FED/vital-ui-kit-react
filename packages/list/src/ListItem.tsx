@@ -7,7 +7,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { tween, styler, easing } from 'popmotion';
-import Badge from '@vital-ui/react-badge';
+import { Badge } from '@vital-ui/react-badge';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 import { ListTitleWrapper, ListLi, ListTitle } from './styled';
@@ -53,11 +53,11 @@ type Props = {
   /** Expand state, will toggle open on click by default */
   open?: boolean;
   /** The title of the current ListItem */
-  title: Node;
+  title?: React.ReactNode;
   /** Whether it has link ref style */
-  hasLink: boolean;
+  hasLink?: boolean;
   /** Badge on right, show if exist */
-  badge?: Node;
+  badge?: React.ReactNode;
   /** Size of the right icon */
   iconSize?: number;
   /** `onClick`, **it will not override the default expand event** */
@@ -66,15 +66,15 @@ type Props = {
   /** default: `vital__ListItem` */
   className?: string;
   /** @private Light or Dark theme */
-  themed: 'light' | 'dark';
+  themed?: 'light' | 'dark';
   /** @private  Check if it is a children */
   level?: number;
   /** @private Pass down from ListGroup */
-  collapse: boolean;
+  collapse?: boolean;
   /** @private */
-  dispatchClose: (level: number) => void;
+  dispatchClose?: (level: number) => void;
   /** @private */
-  border: boolean;
+  border?: boolean;
 };
 
 type State = {
@@ -106,7 +106,11 @@ class ListItem extends React.Component<Props, State> {
 
   onItemClick = () => {
     if (this.child) {
-      if (!!this.props.collapse && !this.state.open) {
+      if (
+        !!this.props.collapse &&
+        !this.state.open &&
+        this.props.dispatchClose
+      ) {
         this.props.dispatchClose(this.props.level || 0);
       }
       this.startAnimation();

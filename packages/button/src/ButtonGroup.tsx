@@ -20,16 +20,16 @@ const Root = styled.div<{
   }
 `;
 
-type Props = {
+export interface ButtonGroupProps {
   vertical?: boolean;
   /** Horizontal margin between buttons */
   marginHorizontal?: string;
   /** Buttons as children */
   children: React.ReactNode;
   style?: React.CSSProperties;
-};
+}
 
-const ButtonGroup: React.SFC<Props> = ({
+export const ButtonGroup: React.SFC<ButtonGroupProps> = ({
   children,
   marginHorizontal = '5px',
   vertical = false,
@@ -43,5 +43,3 @@ const ButtonGroup: React.SFC<Props> = ({
     {children}
   </Root>
 );
-
-export default ButtonGroup;

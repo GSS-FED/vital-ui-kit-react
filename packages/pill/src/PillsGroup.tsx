@@ -14,7 +14,7 @@ const Root = styled.div`
   white-space: nowrap;
 `;
 
-type Props = {
+export interface PillGroupProps {
   children: React.ReactNode;
   /** Vertical display */
   vertical?: boolean;
@@ -26,13 +26,16 @@ type Props = {
   getDropdownListProps?: (
     items: any,
   ) => React.ReactElement<HTMLElement>;
-};
+}
 
 type State = {
   current: number;
 };
 
-class PillsGroup extends React.Component<Props, State> {
+export class PillsGroup extends React.Component<
+  PillGroupProps,
+  State
+> {
   static defaultProps = {
     defaultActiveIndex: null,
     vertical: false,
@@ -97,5 +100,3 @@ class PillsGroup extends React.Component<Props, State> {
     );
   }
 }
-
-export default PillsGroup;

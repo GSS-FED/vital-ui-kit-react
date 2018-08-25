@@ -6,7 +6,7 @@
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 import {} from '@vital-ui/react-icon';
-import Tooltip from '@vital-ui/react-tooltip';
+import { Tooltip } from '@vital-ui/react-tooltip';
 
 import {
   SliderRoot,
@@ -27,7 +27,7 @@ type State = {
   value: number;
 };
 
-type Props = {
+export interface SliderProps {
   size?: 'large' | 'medium' | 'small';
   min: number;
   max: number;
@@ -38,13 +38,13 @@ type Props = {
   decreaseButton?: React.ReactElement<any>;
   increaseButton?: React.ReactElement<any>;
   trackLabel?: boolean;
-  onChange: (
+  onChange?: (
     value: number,
     e: React.SyntheticEvent<HTMLElement>,
   ) => void;
   onChangeStart?: React.EventHandler<any>;
   onChangeComplete?: React.EventHandler<any>;
-};
+}
 
 /**
  * @render react
@@ -60,7 +60,7 @@ type Props = {
  *  step={5}
  * />
  */
-class Slider extends React.Component<Props, State> {
+export class Slider extends React.Component<SliderProps, State> {
   static defaultProps = {
     size: 'medium',
     disabled: false,
@@ -376,5 +376,3 @@ class Slider extends React.Component<Props, State> {
     );
   }
 }
-
-export default Slider;

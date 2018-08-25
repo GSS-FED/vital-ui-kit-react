@@ -24,7 +24,7 @@ Root.defaultProps = {
 };
 
 type Props = {
-  children: typeof TabList;
+  children: React.ReactNode[];
   defaultActiveIndex?: number;
   beforeTabChange?: (index: number) => void;
   afterTabChange?: (index: number) => void;
@@ -40,7 +40,7 @@ type State = {
 /* tslint:disable-next-line */
 const noop = () => {};
 
-class Tabs extends React.Component<Props, State> {
+export class Tabs extends React.Component<Props, State> {
   static Tab: typeof TabItem = TabItem;
 
   static Panel: typeof TabPanel = TabPanel;
@@ -113,5 +113,3 @@ class Tabs extends React.Component<Props, State> {
     );
   }
 }
-
-export default Tabs;

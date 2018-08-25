@@ -16,7 +16,9 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Modal, Card, Button } from '@vital-ui/react';
+import { Button } from '@vital-ui/react-button/src/Button';
+import { Card } from '@vital-ui/react-card/src';
+import { Modal } from '@vital-ui/react-modal/src/Modal';
 
 const items = [
   {

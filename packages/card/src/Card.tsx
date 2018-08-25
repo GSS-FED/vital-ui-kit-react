@@ -38,7 +38,7 @@ Root.defaultProps = {
   theme: defaultTheme,
 };
 
-interface CardProps {
+export interface CardProps {
   children: React.ReactNode;
   width?: string;
   height?: string;

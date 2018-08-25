@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Badge from '@vital-ui/react-badge';
+import { Badge } from '@vital-ui/react-badge';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 
@@ -50,7 +50,7 @@ const BadgeCell = styled(Cell)`
 `;
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   image?: string;
   title?: string;
   badge?: string;
@@ -98,7 +98,7 @@ const Header = ({
   }
 
   return (
-    <Root {...props}>
+    <Root className={cn('vital__card-header', className)} {...props}>
       {title && <Cell style={titleStyle}>{title}</Cell>}
       {badge && (
         <BadgeCell>

@@ -4,10 +4,7 @@
  */
 
 import * as React from 'react';
-import Downshift, {
-  ControllerStateAndHelpers,
-  DownshiftProps,
-} from 'downshift';
+import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
 import FieldInput from '../FieldInput';
 import InputBase, {
@@ -15,10 +12,10 @@ import InputBase, {
 } from '../input/StatelessInput';
 import { DropdownBase, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
-import { _SelectButton, _SelectButtonText } from './styled';
+import { SelectButton, SelectButtonText } from './styled';
+import { DownshiftProps } from './DownshiftTypes';
 
-// @ts-ignore
-interface Props<T> extends DownshiftProps<T> {
+export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
   label?: React.ReactNode;
   shouldRenderItem?: (item: T, value: string | null) => boolean;
@@ -35,10 +32,10 @@ const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text, children, ...props }) => (
-  <_SelectButton {...props}>
-    {text && <_SelectButtonText>{text}</_SelectButtonText>}
+  <SelectButton {...props}>
+    {text && <SelectButtonText>{text}</SelectButtonText>}
     {children}
-  </_SelectButton>
+  </SelectButton>
 );
 
 Button.defaultProps = {
@@ -56,7 +53,7 @@ const Dropdown = withContext(
   }),
 );
 
-class Select<T> extends React.Component<Props<T>> {
+export class Select<T> extends React.Component<SelectProps<T>> {
   static defaultProps = {
     shouldRenderItem: () => true,
   };
@@ -100,5 +97,3 @@ class Select<T> extends React.Component<Props<T>> {
     );
   }
 }
-
-export default Select;

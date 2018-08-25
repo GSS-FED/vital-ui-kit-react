@@ -4,7 +4,6 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "scripts": {
     "gen:assets": "svgr -d default-avatar assets --ext tsx --icon",
     "clean": "rm -rf dist lib",

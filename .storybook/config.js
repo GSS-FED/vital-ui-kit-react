@@ -12,6 +12,7 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+// tslint:disable-next-line
 injectGlobal`
   #root {
     padding: 20px;
@@ -48,5 +49,6 @@ setOptions({
 
 addDecorator(story => <VitalProvider>{story()}</VitalProvider>);
 // automatically import all files ending in *.stories.js
-const req = require.context('../stories', true, /.stories.jsx$/);
+// const req = require.context('../stories', true, /.stories.jsx$/);
+const req = require.context('../stories', true, /.stories.tsx$/);
 configure(loadStories, module);

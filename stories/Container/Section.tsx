@@ -1,9 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
-
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Box } from '@vital-ui/react';
+import { Box } from '../../packages/utils/src';
 
 const SectionTitle = styled.div`
   font-size: 32px;
@@ -14,10 +12,10 @@ const Section = ({
   title,
   children,
 }: {
-  title: string,
-  children: React.ReactNode,
+  title: string;
+  children: React.ReactNode;
 }) => (
-  <Box paddingTop="20px" paddingBottom="30px">
+  <Box pt="20px" pb="30px">
     <SectionTitle>{title}</SectionTitle>
     {children}
   </Box>

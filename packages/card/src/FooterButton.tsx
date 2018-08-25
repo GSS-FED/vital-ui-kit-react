@@ -55,7 +55,7 @@ const Button = styled.button<{ primary: boolean }>`
 type Props = {
   children: React.ReactNode;
   primary?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
   /** default: `vital__card-footer-button-wapper` */
   wrapperStyle?: React.CSSProperties;
   wrapperClassName?: string;

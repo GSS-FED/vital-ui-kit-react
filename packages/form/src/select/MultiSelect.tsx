@@ -6,7 +6,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import Select from './Select';
+import { Select, SelectProps } from './Select';
 import { withContext, Context } from './context';
 import {
   fieldWrapperBase,
@@ -41,14 +41,19 @@ type State = {
   isOpen: boolean;
 };
 
-type Props<T> = {
-  onChange: (item: T[]) => void;
-  selection: (selectedItem: T) => void;
+export interface MultiSelectProps<T> extends SelectProps<T[]> {
+  onChange?: (item: T[]) => void;
+  selection?:
+    | ((selectedItem: T) => React.ReactNode)
+    | React.ReactNode;
   children: React.ReactNode;
   values: T[];
-};
+}
 
-class MultiSelect<T> extends React.Component<Props<T>, State> {
+export class MultiSelect<T> extends React.Component<
+  MultiSelectProps<T>,
+  State
+> {
   static Dropdown: typeof Select.Dropdown = Select.Dropdown;
 
   static DropdownItem: typeof Select.DropdownItem =
@@ -69,7 +74,9 @@ class MultiSelect<T> extends React.Component<Props<T>, State> {
   //   Event Handlers
   // -------------------------------------
   handleChange = (item: T) => {
-    this.props.onChange([...this.props.values, item]);
+    if (this.props.onChange) {
+      this.props.onChange([...this.props.values, item]);
+    }
     this.setState({ input: '', isOpen: false });
   };
 
@@ -99,7 +106,8 @@ class MultiSelect<T> extends React.Component<Props<T>, State> {
     if (
       values.length &&
       !this.state.input.length &&
-      evt.keyCode === 8
+      evt.keyCode === 8 &&
+      this.props.onChange
     ) {
       this.props.onChange(values.slice(0, values.length - 1));
     }
@@ -108,13 +116,14 @@ class MultiSelect<T> extends React.Component<Props<T>, State> {
   render() {
     const { children, selection, values, ...props } = this.props;
     return (
-      <Select<T>
+      <Select<T[]>
         inputValue={this.state.input}
         // @ts-ignore
         selectedItem={values}
         onOuterClick={this.handleOuterClick}
         isOpen={this.state.isOpen}
         {...props}
+        // @ts-ignore
         onChange={this.handleChange}
       >
         <InputWrapper onClick={this.handleInputClick}>
@@ -130,5 +139,3 @@ class MultiSelect<T> extends React.Component<Props<T>, State> {
     );
   }
 }
-
-export default MultiSelect;

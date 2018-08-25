@@ -29,13 +29,13 @@ const Content = styled.span`
   text-overflow: ellipsis;
 `;
 
-type Props = {
+export interface TagProps {
   children: React.ReactNode;
   onClick?: () => void;
   onCloseClick?: () => void;
-};
+}
 
-export const Tag: React.SFC<Props> = ({
+export const Tag: React.SFC<TagProps> = ({
   children,
   onClick,
   onCloseClick,
@@ -57,5 +57,3 @@ Tag.defaultProps = {
   onClick: undefined,
   onCloseClick: undefined,
 };
-
-export default Tag;

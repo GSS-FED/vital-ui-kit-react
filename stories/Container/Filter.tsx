@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
-import { FieldInput, Input } from '@vital-ui/react';
+import { FieldInput, Input } from '@vital-ui/react-form';
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,12 +15,12 @@ const Wrapper = styled.div`
 `;
 
 type P = {
-  children: (value: string) => React.ReactNode,
+  children: (value: string) => React.ReactNode;
 };
 
 type S = {
-  filterValue: string,
-  value: string,
+  filterValue: string;
+  value: string;
 };
 
 class Filter extends React.PureComponent<P, S> {
@@ -36,7 +36,7 @@ class Filter extends React.PureComponent<P, S> {
       .asObservable()
       .pipe(
         distinctUntilChanged(),
-        debounceTime(500),
+        // debounceTime(500),
       )
       .subscribe(v => {
         this.setState({

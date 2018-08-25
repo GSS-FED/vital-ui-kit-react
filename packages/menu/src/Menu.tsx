@@ -8,7 +8,7 @@ import * as React from 'react';
 import cn from 'classnames';
 import styled from 'styled-components';
 
-import MenuItem from './MenuItem';
+import { MenuItem } from './MenuItem';
 
 const Root = styled.div`
   display: inline-block;
@@ -23,7 +23,7 @@ type Props = {
   className?: string;
 };
 
-class Menu extends React.Component<Props> {
+export class Menu extends React.Component<Props> {
   static defaultProps = {
     border: true,
     style: undefined,
@@ -57,5 +57,3 @@ class Menu extends React.Component<Props> {
     );
   }
 }
-
-export default Menu;

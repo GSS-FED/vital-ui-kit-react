@@ -9,7 +9,7 @@ type Props = {
   children: React.ReactNode;
   level: number;
   isChildren: boolean;
-  themed: 'light' | 'dark';
+  themed?: 'light' | 'dark';
 };
 
 const SubListItem = ({

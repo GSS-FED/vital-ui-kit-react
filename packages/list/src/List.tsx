@@ -10,7 +10,7 @@ import { ListRoot } from './styled';
 import ListItem from './ListItem';
 import ListContent from './ListContent';
 
-type Props = {
+interface ListProps {
   /** Children of ListItem */
   children: Array<React.ReactNode>;
   /** Light or dark theme */
@@ -24,13 +24,13 @@ type Props = {
   style?: React.CSSProperties;
   /** default: `vital__list` */
   className?: string;
-};
+}
 
 type State = {
   open: boolean;
 };
 
-class List extends React.Component<Props, State> {
+export class List extends React.Component<ListProps, State> {
   static defaultProps = {
     themed: 'light',
     border: false,
@@ -95,5 +95,3 @@ class List extends React.Component<Props, State> {
     );
   }
 }
-
-export default List;

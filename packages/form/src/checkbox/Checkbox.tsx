@@ -11,8 +11,6 @@ import { Check } from '@vital-ui/react-icon';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 
-import CheckboxGroup from './CheckboxGroup';
-
 const Root = styled.label`
   font-size: 15px;
   cursor: pointer;
@@ -28,7 +26,7 @@ const Label = styled.span`
   color: ${({ theme }) => theme.checkbox.label.color};
 `;
 
-const Box = styled.span<{ checked: boolean; round: boolean }>`
+const Box = styled.span<{ checked?: boolean; round: boolean }>`
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -50,7 +48,7 @@ const Input = styled.input`
   display: none;
 `;
 
-const IconWrapper = styled.div<{ checked: boolean }>`
+const IconWrapper = styled.div<{ checked?: boolean }>`
   text-align: center;
   width: 100%;
   height: 100%;
@@ -67,7 +65,7 @@ type State = {
 
 export type Props = {
   /** Boolean checked value of the checkbox */
-  checked: boolean;
+  checked?: boolean;
   /** Inital Check value */
   defaultChecked?: boolean;
   /** Disabled checkbox */
@@ -77,15 +75,13 @@ export type Props = {
   /** Custom checkbox Icon */
   icon?: React.ReactNode;
   /** Label text after the checkbox */
-  label: string;
+  label?: string;
   /** Html name attribute */
-  name: string;
+  name?: string;
   /** Function trigger when checkbox value changes */
-  onChange: (props: any) => {};
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
   /** Theme */
   theme?: typeof defaultTheme;
-  /** Value of the checkbox, html value attribute */
-  value: number | string;
   style?: React.CSSProperties;
   /** default: `vital__checkbox` */
   className?: string;
@@ -127,7 +123,6 @@ function iconColor(
  */
 class Checkbox extends React.Component<Props, State> {
   static defaultProps = {
-    defaultChecked: false,
     disabled: false,
     round: false,
     icon: undefined,
@@ -136,13 +131,8 @@ class Checkbox extends React.Component<Props, State> {
     className: '',
   };
 
-  static Group: typeof CheckboxGroup = CheckboxGroup;
-
   state = {
-    checked:
-      'checked' in this.props
-        ? this.props.checked
-        : this.props.defaultChecked || false,
+    checked: this.props.checked || this.props.defaultChecked || false,
   };
 
   static getDerivedStateFromProps(props: Props) {
@@ -154,23 +144,6 @@ class Checkbox extends React.Component<Props, State> {
     return null;
   }
 
-  handleChange: React.ChangeEventHandler<HTMLInputElement> = e => {
-    const { disabled, ...props } = this.props;
-    if (disabled) {
-      return;
-    }
-    this.props.onChange({
-      target: {
-        ...props,
-        checked: e.target.checked,
-      },
-      preventDefault() {
-        e.preventDefault();
-      },
-      nativeEvent: e.nativeEvent,
-    });
-  };
-
   render() {
     const {
       defaultChecked,
@@ -180,9 +153,9 @@ class Checkbox extends React.Component<Props, State> {
       name,
       round = false,
       theme,
-      value,
       style,
       className,
+      onChange,
       ...props
     } = this.props;
 
@@ -212,8 +185,7 @@ class Checkbox extends React.Component<Props, State> {
             checked={this.state.checked}
             defaultChecked={defaultChecked}
             name={name}
-            value={value}
-            onChange={() => this.handleChange}
+            onChange={onChange}
           />
           {label}
         </Label>

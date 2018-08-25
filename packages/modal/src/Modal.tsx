@@ -1,5 +1,4 @@
 /**
- * TODO: rework
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -11,14 +10,12 @@ import { defaultTheme } from '@vital-ui/react-theme';
 
 import ModalWrapper from './ModalWrapper';
 
-type Props = {
-  show?: boolean;
-  children: Node;
-};
+const isBrowser = typeof window !== 'undefined';
 
-type State = {
-  windowWidth: number;
-  windowHeight: number;
+type ModalProps = {
+  show?: boolean;
+  children: React.ReactNode;
+  mountElement?: HTMLElement;
 };
 
 const OverLay = styled.div`
@@ -30,64 +27,31 @@ const OverLay = styled.div`
   bottom: 0;
   right: 0;
   opacity: 0.5;
-  backdrop-filter: blur(5px);
 `;
 
 OverLay.defaultProps = {
   theme: defaultTheme,
 };
 
-class Modal extends React.Component<Props, State> {
+export class Modal extends React.Component<ModalProps> {
   static defaultProps = {
     show: false,
   };
 
-  state = {
-    windowWidth: 0,
-    windowHeight: 0,
-  };
-
-  componentDidMount() {
-    this.handleUpdate();
-    window.addEventListener('resize', this.handleUpdate);
-  }
-
-  componentWillUnmount() {
-    if (this.container && this.container.parentNode) {
-      this.container.parentNode.removeChild(this.container);
-    }
-    window.removeEventListener('resize', this.handleUpdate);
-  }
-
-  handleUpdate = () => {
-    this.setState({
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
-    });
-  };
-
-  modal?: HTMLElement;
-
-  container?: HTMLElement;
+  getNode = () => this.props.mountElement || document.body;
 
   render() {
-    if (!this.props.show) {
+    if (!this.props.show || !isBrowser) {
       return null;
     }
     return ReactDOM.createPortal(
       <div className="vital__modal">
         <OverLay />
-        <ModalWrapper
-          windowWidth={this.state.windowWidth}
-          windowHeight={this.state.windowHeight}
-        >
+        <ModalWrapper>
           {React.Children.only(this.props.children)}
         </ModalWrapper>
       </div>,
-      // $FlowFixMe
-      document.body,
+      this.getNode(),
     );
   }
 }
-
-export default Modal;

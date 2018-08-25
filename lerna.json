@@ -1,8 +1,7 @@
 {
   "lerna": "2.9.1",
   "packages": [
-    "packages/*",
-    "playground/"
+    "packages/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
@@ -10,14 +9,6 @@
     "access": "public"
   },
   "version": "0.8.6-next.3",
-  "command": {
-    "exec": {
-      "ignore": "@gssfed/playground"
-    },
-    "publish": {
-      "ignore": "@gssfed/playground"
-    }
-  },
   "changelog": {
     "repo": "GSS-FED/vital-ui-kit-react",
     "labels": {

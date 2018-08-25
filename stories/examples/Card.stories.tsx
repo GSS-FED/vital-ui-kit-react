@@ -1,22 +1,14 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/no-extraneous-dependencies */
-
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  select,
-} from '@storybook/addon-knobs/react';
+import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Card, Button, ButtonGroup, Icon } from '@vital-ui/react';
-import heroImage from '../../../assets/card-header-pic.png';
+import { Card } from '@vital-ui/react-card/src';
+import { Rocket } from '@vital-ui/react-icon';
+import { Button } from '@vital-ui/react-button/src/Button';
+import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
+// import heroImage from '../../assets/card-header-pic.png';
 
 const content =
   'Lorem ipsum dolor sit amet, sea oblique aliquam oportere ea, id dico interesset eam. Eu eum quem velit verterem, amet dicat quaeque ad est.';
@@ -46,12 +38,12 @@ storiesOf('Packages | Card', module)
           <Card.Header title="Title" />
           <Card.Content>{content}</Card.Content>
           <Card.Footer>
-            <Button.Group style={{ padding: 10 }}>
+            <ButtonGroup style={{ padding: 10 }}>
               <Button>Cancel</Button>
               <Button flat nature="primary">
                 Confirm
               </Button>
-            </Button.Group>
+            </ButtonGroup>
           </Card.Footer>
         </Card>
       )),
@@ -65,32 +57,12 @@ storiesOf('Packages | Card', module)
           <Card.Header title="Title" />
           <Card.Content>{content}</Card.Content>
           <Card.Footer>
-            <Button.Group style={{ padding: 10 }}>
+            <ButtonGroup style={{ padding: 10 }}>
               <Button link>Cancel</Button>
               <Button link nature="primary">
                 Confirm
               </Button>
-            </Button.Group>
-          </Card.Footer>
-        </Card>
-      )),
-    ),
-  )
-  .add(
-    'Hero Image',
-    withInfo(`info`)(
-      withNotes('')(() => (
-        <Card width="300px" height="400px">
-          <Card.Header image={heroImage} title="Title" />
-          <Card.Content>
-            {content}
-            {content}
-            {content}
-            {content}
-          </Card.Content>
-          <Card.Footer>
-            <Card.FooterButton>Cancel</Card.FooterButton>
-            <Card.FooterButton primary>Confirm</Card.FooterButton>
+            </ButtonGroup>
           </Card.Footer>
         </Card>
       )),
@@ -102,7 +74,7 @@ storiesOf('Packages | Card', module)
       withNotes('')(() => (
         <Card width="300px">
           <Card.Content style={{ textAlign: 'center' }}>
-            <Icon.Rocket name="thumbs-up" size="90" color="#0e86fe" />
+            <Rocket name="thumbs-up" fontSize="90" color="#0e86fe" />
             <div
               style={{
                 fontSize: '1.25rem',

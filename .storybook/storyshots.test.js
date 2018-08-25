@@ -4,7 +4,7 @@ import initStoryshots, {
   multiSnapshotWithOptions,
 } from '@storybook/addon-storyshots';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
-import { addSerializer } from 'jest-specific-snapshot';
+// import { addSerializer } from 'jest-specific-snapshot';
 import { Table, SimpleTable } from '../packages/web/src';
 
 /**
@@ -20,7 +20,7 @@ jest.mock('@storybook/addon-info', () => ({
  * Add custom serializer in order to work with multiSnapShot
  * https://github.com/storybooks/storybook/issues/887#issuecomment-357073807
  */
-addSerializer(styleSheetSerializer);
+// addSerializer(styleSheetSerializer);
 
 initStoryshots({
   test: multiSnapshotWithOptions({

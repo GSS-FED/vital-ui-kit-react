@@ -22,7 +22,7 @@ const TooltipContent = styled.div`
 
 const TooltipArrow = styled.div``;
 
-type Placement =
+export type Placement =
   | 'left'
   | 'right'
   | 'top'
@@ -36,7 +36,7 @@ type Placement =
   | 'bottomLeft'
   | 'leftBottom';
 
-type Props = {
+export interface TooltipProps {
   /** the element target for tooltip */
   children: React.ReactNode;
   /** an array of 'click', 'hover', 'focus', 'contextMenu' */
@@ -57,9 +57,9 @@ type Props = {
   popupClassName?: string;
   /** whether destroy popup when hide */
   destroyPopupOnHide?: boolean;
-};
+}
 
-const Tooltip: React.SFC<Props> = ({
+export const Tooltip: React.SFC<TooltipProps> = ({
   children,
   trigger,
   overlay,
@@ -108,5 +108,3 @@ Tooltip.defaultProps = {
   popupClassName: 'vital-popup',
   destroyPopupOnHide: false,
 };
-
-export default Tooltip;

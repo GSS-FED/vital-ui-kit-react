@@ -1,6 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/no-extraneous-dependencies */
-
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
@@ -16,11 +13,11 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Flex } from '@vital-ui/react';
+import { Flex } from '@vital-ui/react-utils/src';
 
 storiesOf('utils | Flex', module).add(
   'Basic',
-  withInfo(`Basic box div`)(() => (
+  withInfo(`Basic Flex div`)(() => (
     <Flex
       alignItems="center"
       color="white"

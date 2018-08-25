@@ -8,7 +8,7 @@ import styled, { css } from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-import Badge from '@vital-ui/react-badge';
+import { Badge } from '@vital-ui/react-badge';
 
 const TabBadge = styled(Badge)`
   padding: 2px 8px;
@@ -53,12 +53,12 @@ const Label = styled(Span)`
 `;
 
 type Props = {
-  label: React.ReactNode;
+  label?: React.ReactNode;
   current?: boolean;
   badge?: number | string;
-  panel: React.ReactNode;
-  index: number;
-  onTabChange: (panel: React.ReactNode, index: number) => {};
+  panel?: React.ReactNode;
+  index?: number;
+  onTabChange?: (panel: React.ReactNode, index?: number) => void;
   style?: React.CSSProperties;
   /** default: `vital__tab-item` */
   className?: string;
@@ -87,7 +87,11 @@ class TabItem extends React.Component<Props> {
         className={cn('vital__tab-item', className)}
         style={style}
         current={current}
-        onClick={() => onTabChange(panel, index)}
+        onClick={() => {
+          if (onTabChange) {
+            onTabChange(panel, index);
+          }
+        }}
         {...props}
       >
         {label && <Label>{label}</Label>}

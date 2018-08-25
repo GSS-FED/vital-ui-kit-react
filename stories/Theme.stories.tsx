@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/no-extraneous-dependencies */
 
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+// import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
 import centered from '@storybook/addon-centered';
 import {
   withKnobs,
-  text,
-  boolean,
-  number,
-  select,
+  // text,
+  // boolean,
+  // number,
+  // select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 import {
   colorPaletteGenerator,
   defaultTheme,
-  defaultComponentsTheme,
+  // defaultComponentsTheme,
 } from '@vital-ui/react';
 
 const Root = styled.div`
@@ -36,7 +36,8 @@ const ColorRect = styled.div`
   height: 40px;
 `;
 
-class ColorPalette extends Component {
+class ColorPalette extends React.Component {
+  static displayName = 'ColorPalette';
   state = {
     primary: defaultTheme.primary,
   };

@@ -1,3 +1,3 @@
-export { default as Select } from './Select';
-export { default as MultiSelect } from './MultiSelect';
-export { default as Tag } from './Tag';
+export * from './Select';
+export * from './MultiSelect';
+export * from './Tag';

@@ -1,14 +1,9 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/no-extraneous-dependencies */
-
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
-import { injectGlobal } from 'styled-components';
 import {
   withKnobs,
   text,
@@ -17,9 +12,10 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { Welcome } from '@storybook/react/demo';
 
-import { Button, Icon } from '@vital-ui/react';
+import { Button } from '@vital-ui/react-button/src/Button';
+import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
+import { Star } from '@vital-ui/react-icon/src';
 
 storiesOf('Packages | Button', module)
   .addDecorator(withKnobs)
@@ -142,7 +138,7 @@ storiesOf('Packages | Button', module)
     withInfo('')(
       withNotes('')(() => (
         <Button circle={boolean('circle', true)}>
-          <Icon.Star name="star" color="#3b5998" />
+          <Star name="star" color="#3b5998" />
         </Button>
       )),
     ),
@@ -151,11 +147,11 @@ storiesOf('Packages | Button', module)
     'ButtonGroup',
     withInfo('Button Group')(
       withNotes('')(() => (
-        <Button.Group>
+        <ButtonGroup>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
           <Button>{text('Label', 'Button')}</Button>
-        </Button.Group>
+        </ButtonGroup>
       )),
     ),
   );

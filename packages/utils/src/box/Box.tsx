@@ -1,4 +1,3 @@
-// TODO: PRops
 import {
   space,
   width,
@@ -31,10 +30,74 @@ import {
   fontWeight,
   letterSpacing,
   fontFamily,
+  BackgroundImageProps,
+  BackgroundPositionProps,
+  BackgroundProps,
+  BackgroundRepeatProps,
+  BackgroundSizeProps,
+  BorderColorProps,
+  BorderRadiusProps,
+  BordersProps,
+  BottomProps,
+  BoxShadowProps,
+  ColorProps,
+  DisplayProps,
+  FontFamilyProps,
+  FontSizeProps,
+  FontWeightProps,
+  HeightProps,
+  LeftProps,
+  LetterSpacingProps,
+  LineHeightProps,
+  MaxHeightProps,
+  MaxWidthProps,
+  MinHeightProps,
+  OpacityProps,
+  PositionProps,
+  RightProps,
+  SizeProps,
+  SpaceProps,
+  TextAlignProps,
+  TopProps,
+  WidthProps,
+  ZIndexProps,
 } from 'styled-system';
 import styled from 'styled-components';
 
-const Box = styled.div`
+export interface BoxProps
+  extends BackgroundImageProps,
+    BackgroundPositionProps,
+    BackgroundProps,
+    BackgroundRepeatProps,
+    BackgroundSizeProps,
+    BorderColorProps,
+    BorderRadiusProps,
+    BordersProps,
+    BottomProps,
+    BoxShadowProps,
+    ColorProps,
+    DisplayProps,
+    FontFamilyProps,
+    FontSizeProps,
+    FontWeightProps,
+    HeightProps,
+    LeftProps,
+    LetterSpacingProps,
+    LineHeightProps,
+    MaxHeightProps,
+    MaxWidthProps,
+    MinHeightProps,
+    OpacityProps,
+    PositionProps,
+    RightProps,
+    SizeProps,
+    SpaceProps,
+    TextAlignProps,
+    TopProps,
+    WidthProps,
+    ZIndexProps {}
+
+export const Box = styled.div<BoxProps>`
   ${space};
   ${width};
   ${fontSize};
@@ -69,5 +132,3 @@ const Box = styled.div`
 `;
 
 Box.displayName = 'Vital_Box';
-
-export default Box;

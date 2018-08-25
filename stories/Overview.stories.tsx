@@ -8,25 +8,26 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  select,
-} from '@storybook/addon-knobs/react';
+// import {
+//   withKnobs,
+//   text,
+//   boolean,
+//   number,
+//   select,
+// } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
+import { Music } from '../packages/icon';
 import {
-  Avatar,
-  Card,
   Button,
-  ButtonGroup,
-  Icon,
-} from '@vital-ui/react';
+  ButtonProps,
+} from '@vital-ui/react-button/src/Button';
+import { ButtonGroup } from '@vital-ui/react-button/src/ButtonGroup';
+import { Card } from '../packages/card/src';
 import Section from './Container/Section';
+import { Avatar, AvatarProps } from '../packages/avatar/src/Avatar';
 
-const AVATAR = [
+const AVATAR: Partial<AvatarProps>[] = [
   { size: 'xsmall', circle: true, outline: true },
   { gender: 'male', size: 'small', circle: true, outline: true },
   { gender: 'female', size: 'medium', circle: true, badge: 10 },
@@ -36,7 +37,7 @@ const AVATAR = [
 
 const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
 
-const NATRUE = [
+const NATRUE: ButtonProps['nature'][] = [
   'default',
   'primary',
   'success',
@@ -45,7 +46,13 @@ const NATRUE = [
   'warning',
 ];
 
-const SIZE = ['xlarge', 'large', 'medium', 'small', 'xsmall'];
+const SIZE: AvatarProps['size'][] = [
+  'xlarge',
+  'large',
+  'medium',
+  'small',
+  'xsmall',
+];
 
 storiesOf('Getting Started', module).add(
   'Overview',
@@ -112,11 +119,7 @@ storiesOf('Getting Started', module).add(
         <Vertical>
           <Card width="300px">
             <Card.Content style={{ textAlign: 'center' }}>
-              <Icon.Music
-                name="thumbs-up"
-                fontSize="90"
-                color="#0e86fe"
-              />
+              <Music name="thumbs-up" fontSize="90" color="#0e86fe" />
               <div
                 style={{
                   fontSize: '1.25rem',
@@ -142,7 +145,9 @@ storiesOf('Getting Started', module).add(
               </div>
             </Card.Content>
             <Card.Footer>
-              <Card.FooterButton primary>Confirm</Card.FooterButton>
+              <Card.FooterButton onClick={() => {}} primary>
+                Confirm
+              </Card.FooterButton>
             </Card.Footer>
           </Card>
         </Vertical>

@@ -1,2 +1,2 @@
-export { default as Box } from './Box';
-export { default as Flex } from './Flex';
+export * from './Box';
+export * from './Flex';

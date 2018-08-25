@@ -9,10 +9,31 @@ import {
   alignSelf,
   justifyContent,
   justifySelf,
+  FlexProps,
+  FlexBasisProps,
+  FlexDirectionProps,
+  FlexWrapProps,
+  AlignContentProps,
+  AlignItemsProps,
+  AlignSelfProps,
+  JustifyContentProps,
+  JustifySelfProps,
 } from 'styled-system';
-import Box from './Box';
+import { Box, BoxProps } from './Box';
 
-const FlexBox = styled(Box)`
+export interface FlexBoxProps
+  extends FlexBasisProps,
+    FlexProps,
+    FlexDirectionProps,
+    FlexWrapProps,
+    AlignContentProps,
+    AlignItemsProps,
+    AlignSelfProps,
+    JustifyContentProps,
+    JustifySelfProps,
+    BoxProps {}
+
+export const Flex = styled(Box)<FlexBoxProps>`
   display: flex;
   ${flex};
   ${flexBasis};
@@ -25,6 +46,4 @@ const FlexBox = styled(Box)`
   ${justifySelf};
 `;
 
-FlexBox.displayName = 'Vital_Flex';
-
-export default FlexBox;
+Flex.displayName = 'Vital_Flex';

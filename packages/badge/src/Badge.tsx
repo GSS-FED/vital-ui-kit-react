@@ -36,7 +36,7 @@ Root.defaultProps = {
   theme: defaultTheme,
 };
 
-type Props = {
+export interface BadgeProps {
   /** Text on the badge */
   label: string | number;
   /** Show 99+ if number is more than 100 */
@@ -46,7 +46,7 @@ type Props = {
   /** className, default is 'vital__badge' */
   className?: string;
   style?: React.CSSProperties;
-};
+}
 
 /**
  * @render react
@@ -56,14 +56,14 @@ type Props = {
  * <Badge label="99+" />
  */
 
-const Badge = ({
+export const Badge = ({
   label,
   trunc = true,
   inverse = false,
   className,
   style,
   ...props
-}: Props) => (
+}: BadgeProps) => (
   <Root
     inverse={inverse}
     className={cn('vital__badge', className)}
@@ -73,5 +73,3 @@ const Badge = ({
     {trunc ? trunTo(label) : label}
   </Root>
 );
-
-export default Badge;

@@ -16,9 +16,17 @@ import {
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Checkbox, CheckboxGroup } from '@vital-ui/react';
+import { Checkbox, CheckboxGroup } from '@vital-ui/react-form/src';
 
-export class CheckBoxExample extends React.Component {
+export class CheckBoxExample extends React.Component<
+  {
+    label: string;
+    round?: boolean;
+    disabled?: boolean;
+    onChange?: (e: any) => void;
+  },
+  { checked: boolean }
+> {
   state = {
     checked: false,
   };
@@ -61,7 +69,7 @@ storiesOf('Packages | Form/Checkbox', module)
     'Custom Icon',
     withInfo()(
       withNotes('This is checkbox')(() => (
-        <Checkbox defaultChecked label="Custom Icon" icon="star" />
+        <Checkbox checked label="Custom Icon" icon="star" />
       )),
     ),
   )

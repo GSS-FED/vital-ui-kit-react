@@ -7,9 +7,9 @@ import {
   borderRightRadius,
 } from './style';
 import { trunTo } from './math';
-import { Box, Flex } from './box';
 import withDeprecationWarnings from './withDeprecationWarnings';
 
+export * from './box';
 export {
   stateColor,
   transitionBase,
@@ -18,7 +18,5 @@ export {
   borderTopRadius,
   borderRightRadius,
   trunTo,
-  Box,
-  Flex,
   withDeprecationWarnings,
 };

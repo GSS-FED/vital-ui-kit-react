@@ -17,7 +17,7 @@ type Props = {
     label: string;
     defaultChecked?: boolean;
   }>;
-  onRadioChange: () => void;
+  onRadioChange?: () => void;
   disabled?: boolean;
   /** default: `vital__radio-group` */
   className?: string;
@@ -34,7 +34,7 @@ type Props = {
 const RadioGroup = ({
   disabled = false,
   items,
-  onRadioChange,
+  onRadioChange = () => {},
   style,
   className,
   ...props

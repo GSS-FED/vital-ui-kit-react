@@ -1,2 +1,2 @@
-export { default as PillsGroup } from './PillsGroup';
-export { default } from './Pill';
+export * from './PillsGroup';
+export * from './Pill';

@@ -20,27 +20,33 @@ import {
 import { withNotes } from '@storybook/addon-notes';
 
 import {
-  Label,
-  Input,
   Select,
-  Icon,
   MultiSelect,
   Tag,
-} from '@vital-ui/react';
+} from '@vital-ui/react-form/src/select';
+import { MoreOption } from '@vital-ui/react-icon';
 
 const FormWrapper = styled.div`
   max-width: 500px;
   padding: 40px;
 `;
 
-const items = new Array(100).fill({}).map(() => ({
+type Item = {
+  content: string;
+  value: string;
+};
+
+const items: Item[] = new Array(100).fill({}).map(() => ({
   content: faker.system.fileName(),
   value: faker.system.fileExt(),
 }));
 
-class SelectExample extends React.Component {
+class SelectExample extends React.Component<
+  {},
+  { selectedItem?: Item }
+> {
   state = {
-    selectedItem: '',
+    selectedItem: undefined,
   };
 
   onChangeItem = selectedItem => {
@@ -51,11 +57,13 @@ class SelectExample extends React.Component {
 
   render() {
     return (
-      <Select
+      <Select<Item>
         selectedItem={this.state.selectedItem}
         itemToString={item => (item ? item.value : '')}
         onChange={this.onChangeItem}
-        shouldRenderItem={(item, value) => item.value.includes(value)}
+        shouldRenderItem={(item, value) =>
+          value ? item.value.includes(value) : false
+        }
       >
         <Select.Input leftIcon="search" rightIcon="times-circle" />
         <Select.Dropdown>
@@ -74,9 +82,12 @@ class SelectExample extends React.Component {
   }
 }
 
-class DropdownExample extends React.Component {
-  state = {
-    selectedItem: '',
+class DropdownExample extends React.Component<
+  {},
+  { selectedItem?: Item }
+> {
+  state: { selectedItem?: Item } = {
+    selectedItem: undefined,
   };
 
   onChangeItem = selectedItem => {
@@ -86,16 +97,21 @@ class DropdownExample extends React.Component {
   };
 
   render() {
+    const defaultText = 'Select an item';
     return (
-      <Select
+      <Select<Item>
         selectedItem={this.state.selectedItem}
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
       >
         <Select.Button
-          text={this.state.selectedItem.content || 'Select an item'}
+          text={
+            this.state.selectedItem
+              ? this.state.selectedItem.content || defaultText
+              : defaultText
+          }
         >
-          <Icon.MoreOption name="caret-down" fontSize={15} />
+          <MoreOption name="caret-down" fontSize={15} />
         </Select.Button>
         <Select.Dropdown>
           {items.map((item, i) => (
@@ -113,8 +129,11 @@ class DropdownExample extends React.Component {
   }
 }
 
-class TagExample extends React.Component {
-  state = {
+class TagExample extends React.Component<
+  {},
+  { selectedItem: Item[] }
+> {
+  state: { selectedItem: Item[] } = {
     selectedItem: [],
   };
 
@@ -132,11 +151,13 @@ class TagExample extends React.Component {
 
   render() {
     return (
-      <MultiSelect
+      <MultiSelect<Item>
+        // @ts-ignore
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
         values={this.state.selectedItem}
         shouldRenderItem={(item, value) =>
+          // @ts-ignore
           item.content.includes(value)
         }
         selection={this.state.selectedItem.map((item, i) => (
@@ -147,6 +168,7 @@ class TagExample extends React.Component {
       >
         <MultiSelect.Dropdown>
           {items
+            // @ts-ignore
             .filter(item => !this.state.selectedItem.includes(item))
             .map((item, i) => (
               <MultiSelect.DropdownItem

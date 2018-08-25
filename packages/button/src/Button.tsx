@@ -6,7 +6,6 @@
 import * as React from 'react';
 import cn from 'classnames';
 
-import ButtonGroup from './ButtonGroup';
 import ButtonElement from './styled';
 
 export type Nature =
@@ -43,6 +42,9 @@ export interface ButtonProps {
   /** Selected state */
   selected?: boolean;
   style?: React.CSSProperties;
+  dark?: boolean;
+  underline?: boolean;
+  disabled?: boolean;
 }
 
 /* tslint:disable-next-line */
@@ -53,7 +55,7 @@ const noop = () => {};
  * @name Button
  * @description Button component with group
  * @example
- * <Button.Group>
+ * <ButtonGroup>
  *   <Button nature="default" size="xlarge">Default</Button>
  *   <Button nature="primary" size="large">Default</Button>
  *   <Button nature="success" size="medium">Default</Button>
@@ -64,10 +66,10 @@ const noop = () => {};
  *   <Button subtle>Default</Button>
  *   <Button light>Default</Button>
  *   <Button link>Default</Button>
- * </Button.Group>
+ * </ButtonGroup>
  */
 
-class Button extends React.Component<ButtonProps> {
+export class Button extends React.Component<ButtonProps> {
   static defaultProps = {
     children: '',
     nature: 'default' as Nature,
@@ -81,9 +83,8 @@ class Button extends React.Component<ButtonProps> {
     onClick: noop,
     style: undefined,
     className: '',
+    disabled: false,
   };
-
-  static Group: typeof ButtonGroup = ButtonGroup;
 
   render() {
     const {
@@ -109,5 +110,3 @@ class Button extends React.Component<ButtonProps> {
     );
   }
 }
-
-export default Button;

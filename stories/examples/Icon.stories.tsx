@@ -15,7 +15,8 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
-import { Tooltip, Icon as IconBase } from '@vital-ui/react';
+import * as IconBase from '@vital-ui/react-icon';
+import { Tooltip } from '@vital-ui/react-tooltip/src';
 
 import Filter from '../Container/Filter';
 
@@ -49,7 +50,9 @@ storiesOf('Packages | Icon', module)
                   if (value === '') {
                     return true;
                   }
-                  return ic.indexOf(value) > -1;
+                  return (
+                    ic.toLowerCase().indexOf(value.toLowerCase()) > -1
+                  );
                 })
                 .map(icon => {
                   const Icon = IconBase[icon];

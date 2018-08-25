@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-import Button from '@vital-ui/react-button';
+import { Button } from '@vital-ui/react-button';
 
 const Root = styled.div<{ border: boolean }>`
   display: inline-block;
@@ -41,7 +41,7 @@ type Props = {
   className?: string;
 };
 
-class MenuItem extends React.Component<Props> {
+export class MenuItem extends React.Component<Props> {
   static defaultProps = {
     border: false,
   };
@@ -66,5 +66,3 @@ class MenuItem extends React.Component<Props> {
     );
   }
 }
-
-export default MenuItem;
