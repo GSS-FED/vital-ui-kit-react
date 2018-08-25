@@ -4,7 +4,7 @@ import * as React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
-import { VitalProvider } from '@vital-ui/react-theme';
+import { VitalProvider } from '../packages/web';
 
 import '@vital-ui/react-theme/src/global.css';
 

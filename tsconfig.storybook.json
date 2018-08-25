@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "declaration": false,
+    "rootDir": ".",
+  },
+  "include": [
+    "packages", "stories"
+  ],
+  "exclude": ["node_modules"]
+}

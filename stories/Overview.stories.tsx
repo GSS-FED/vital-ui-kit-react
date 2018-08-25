@@ -17,7 +17,7 @@ import { withInfo } from '@storybook/addon-info';
 // } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Music } from '../packages/icon';
+import { Music } from '../packages/icon/src';
 import {
   Button,
   ButtonProps,

@@ -20,7 +20,7 @@ import {
   colorPaletteGenerator,
   defaultTheme,
   // defaultComponentsTheme,
-} from '@vital-ui/react';
+} from '@vital-ui/react-theme/src/';
 
 const Root = styled.div`
   text-align: center;

@@ -18,7 +18,7 @@ export { Radio, RadioGroup } from './radio';
 export { Select, MultiSelect, Tag } from './select';
 export { Checkbox, CheckboxGroup } from './checkbox';
 export { default as Switch } from './switch';
-export { default as Slider } from './slider';
+export * from './slider';
 
 /**
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react

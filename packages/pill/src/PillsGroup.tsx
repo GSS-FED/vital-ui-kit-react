@@ -86,10 +86,12 @@ export class PillsGroup extends React.Component<
     }
     return (
       <PriorityNav
-        // @ts-ignore
         className={cn('vital__pill-group', className)}
+        // @ts-ignore
         style={style}
+        // @ts-ignore
         vertical={vertical}
+        // @ts-ignore
         current={this.state.current}
         dropdownList={
           getDropdownListProps || (item => <div>{item}</div>)
