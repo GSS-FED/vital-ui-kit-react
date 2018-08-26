@@ -24,7 +24,7 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -32,24 +32,24 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   padding-left: 2.2em;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:focus {
@@ -61,19 +61,8 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
 
 .c4:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
-}
-
-.c5 {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  width: 2.2em;
-  text-align: center;
-  z-index: 7;
-  color: #456296;
-  left: 0;
-  color: #C3D1EB;
 }
 
 .c1 {
@@ -115,10 +104,9 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
           aria-labelledby="downshift-1-label"
           autoComplete="off"
           autoFocus={false}
-          className="c4"
+          className="vital__input c4"
           disabled={false}
           id="downshift-1-input"
-          name={null}
           onBlur={[Function]}
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -127,18 +115,6 @@ exports[`Storyshots Packages | Form/Select Autocomplete 1`] = `
           type="text"
           value=""
         />
-        <svg
-          className="c5 "
-          height={16}
-          onClick={null}
-          viewBox="0 0 950.8571428571428 1024"
-          width={16}
-        >
-          <path
-            d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
-            fill="currentColor"
-          />
-        </svg>
       </div>
     </div>
   </div>
@@ -176,8 +152,8 @@ exports[`Storyshots Packages | Form/Select Dropdown 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  color: #456297;
-  border: 1px solid #C4D2EB;
+  color: #456296;
+  border: 1px solid #C3D1EB;
   z-index: 5;
   outline: 0;
   text-align: left;
@@ -237,16 +213,26 @@ exports[`Storyshots Packages | Form/Select Dropdown 1`] = `
           Select an item
         </span>
         <svg
-          className=""
-          height={15}
-          onClick={null}
-          viewBox="0 0 585.1428571428571 1024"
-          width={15}
+          fontSize={15}
+          height="1em"
+          name="caret-down"
+          viewBox="0 0 960 256"
+          width="1em"
         >
-          <path
-            d="M585.143 402.286c0 9.714-4 18.857-10.857 25.714l-256 256c-6.857 6.857-16 10.857-25.714 10.857s-18.857-4-25.714-10.857l-256-256c-6.857-6.857-10.857-16-10.857-25.714 0-20 16.571-36.571 36.571-36.571h512c20 0 36.571 16.571 36.571 36.571z"
-            fill="currentColor"
-          />
+          <defs />
+          <g
+            data-name="Layer 2"
+            id="Layer_2"
+          >
+            <g
+              id="icon"
+            >
+              <path
+                className="cls-1"
+                d="M128 0a128 128 0 1 0 128 128A128.14 128.14 0 0 0 128 0zm0 192a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64zM480 0a128 128 0 1 0 128 128A128.14 128.14 0 0 0 480 0zm0 192a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64zM832 0a128 128 0 1 0 128 128A128.14 128.14 0 0 0 832 0zm0 192a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64z"
+              />
+            </g>
+          </g>
         </svg>
       </div>
     </div>
@@ -274,7 +260,7 @@ exports[`Storyshots Packages | Form/Select Tag 1`] = `
 .c4 {
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   border: 0;
   outline: 0;
   height: 1.93267rem;
@@ -289,7 +275,7 @@ exports[`Storyshots Packages | Form/Select Tag 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;

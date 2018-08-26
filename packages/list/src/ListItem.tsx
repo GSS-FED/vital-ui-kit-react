@@ -98,6 +98,8 @@ class ListItem extends React.Component<Props, State> {
     open: this.props.open || false,
   };
 
+  child: HTMLElement;
+
   componentDidMount() {
     if (this.child) {
       this.child.style.display = this.state.open ? '' : 'none';
@@ -153,8 +155,6 @@ class ListItem extends React.Component<Props, State> {
 
   iconHandler = () =>
     this.props.children ? 'chevron-down' : 'chevron-right';
-
-  child: HTMLElement;
 
   renderBadge = () => {
     if (

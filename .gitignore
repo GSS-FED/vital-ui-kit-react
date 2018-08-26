@@ -12,3 +12,4 @@ coverage/
 cjs/
 js2tsx
 storybook-static
+.awcache

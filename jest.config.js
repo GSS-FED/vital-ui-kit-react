@@ -20,6 +20,7 @@ module.exports = {
   },
   globals: {
     'ts-jest': {
+      useBabelrc: true,
       tsConfigFile: 'tsconfig.json',
     },
   },

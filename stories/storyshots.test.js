@@ -5,6 +5,10 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots';
 import styleSheetSerializer from 'jest-styled-components/src/styleSheetSerializer';
 import { addSerializer } from 'jest-specific-snapshot';
+import registerRequireContextHook from 'babel-plugin-require-context-hook/register';
+
+// https://github.com/storybooks/storybook/tree/master/addons/storyshots/storyshots-core#configure-jest-to-work-with-webpacks-requirecontext
+registerRequireContextHook();
 
 /**
  * Mock methods of addon-info so that "Show Info" button don't go into snapshots.

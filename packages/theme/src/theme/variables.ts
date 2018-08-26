@@ -10,15 +10,15 @@ export const primary700 = '#0153A5';
 export const primary800 = '#003A73';
 export const primary900 = '#002040';
 
-export const secondary100 = '#F7F9FE';
+export const secondary100 = '#F7F9FD';
 export const secondary200 = '#EEF2FC';
-export const secondary300 = '#D8E3F6';
-export const secondary400 = '#C4D2EB';
-export const secondary500 = '#95ACD4';
+export const secondary300 = '#D8E2F5';
+export const secondary400 = '#C3D1EB';
+export const secondary500 = '#95ABD3';
 export const secondary600 = '#7189B6';
-export const secondary700 = '#456297';
-export const secondary800 = '#2A487F';
-export const secondary900 = '#1E3768';
+export const secondary700 = '#456296';
+export const secondary800 = '#2A4880';
+export const secondary900 = '#182D54';
 
 export const grey100 = '#F8F8F8';
 export const grey200 = '#F0F0F0';
