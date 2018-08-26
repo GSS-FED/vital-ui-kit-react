@@ -3,12 +3,12 @@
 exports[`Storyshots Getting Started Overview 1`] = `
 .c12 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -28,11 +28,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c12:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c12:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c12:hover {
@@ -43,19 +43,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c12[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c13 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -72,15 +72,15 @@ exports[`Storyshots Getting Started Overview 1`] = `
   background: transparent;
   color: #0E86FE;
   border: 1px solid transparent;
-  color: #456297;
+  color: #456296;
 }
 
 .c13:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c13:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c13:hover {
@@ -89,25 +89,25 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c13:hover {
-  color: #5b7ab4;
+  color: #5b7ab3;
 }
 
 .c13[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c14 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -127,11 +127,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c14:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c14:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c14:hover {
@@ -147,19 +147,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c14[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c15 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -176,15 +176,15 @@ exports[`Storyshots Getting Started Overview 1`] = `
   background: transparent;
   color: #0E86FE;
   border: 1px solid transparent;
-  color: #456297;
+  color: #456296;
 }
 
 .c15:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c15:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c15:hover {
@@ -193,7 +193,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c15:hover {
-  color: #5b7ab4;
+  color: #5b7ab3;
 }
 
 .c15:hover {
@@ -204,19 +204,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c15[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c16 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -233,29 +233,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c16:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c16:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c16[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c17 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -272,29 +272,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c17:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c17:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c17[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c18 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #2BCD86;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -311,29 +311,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c18:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c18:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c18[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c19 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #00C3FF;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -350,29 +350,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c19:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c19:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c19[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c20 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #EB5000;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -389,29 +389,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c20:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c20:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c20[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c21 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #FFB400;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -428,29 +428,29 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c21:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c21:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c21[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c22 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -465,44 +465,44 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c22:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c22:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c22:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c22:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c22[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c23 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -522,11 +522,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c23:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c23:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c23:hover {
@@ -542,19 +542,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c23[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c24 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #2BCD86;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -574,11 +574,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c24:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c24:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c24:hover {
@@ -594,19 +594,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c24[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c25 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #00C3FF;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -626,11 +626,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c25:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c25:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c25:hover {
@@ -646,19 +646,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c25[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c26 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #EB5000;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -678,11 +678,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c26:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c26:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c26:hover {
@@ -698,19 +698,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c26[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c27 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #FFB400;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -730,11 +730,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c27:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c27:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c27:hover {
@@ -750,19 +750,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c27[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c28 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -777,38 +777,38 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: transparent;
-  color: #456297;
+  color: #456296;
   border: 1px solid transparent;
 }
 
 .c28:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c28:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c28:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c28[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c29 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -828,33 +828,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c29:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c29:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c29:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c29[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c30 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #2BCD86;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -874,33 +874,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c30:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c30:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c30:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c30[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c31 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #00C3FF;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -920,33 +920,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c31:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c31:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c31:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c31[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c32 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #EB5000;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -966,33 +966,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c32:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c32:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c32:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c32[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c33 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #FFB400;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1012,33 +1012,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c33:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c33:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c33:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c33[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c34 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1053,37 +1053,37 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #ffffff;
-  color: #456297;
+  color: #456296;
 }
 
 .c34:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c34:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c34:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c34[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c35 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1102,33 +1102,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c35:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c35:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c35:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c35[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c36 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #2BCD86;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1147,33 +1147,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c36:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c36:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c36:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c36[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c37 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #00C3FF;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1192,33 +1192,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c37:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c37:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c37:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c37[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c38 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #EB5000;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1237,33 +1237,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c38:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c38:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c38:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c38[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c39 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #FFB400;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1282,33 +1282,33 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c39:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c39:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c39:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c39[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c41 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1.4rem;
   border-radius: 6px;
   padding: calc(0.8rem - 1px) 1.333rem;
@@ -1328,11 +1328,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c41:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c41:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c41:hover {
@@ -1348,19 +1348,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c41[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c42 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1.2rem;
   border-radius: 5px;
   padding: calc(0.666rem - 1px) 1.2rem;
@@ -1380,11 +1380,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c42:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c42:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c42:hover {
@@ -1400,19 +1400,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c42[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c43 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 0.866rem;
   border-radius: 3px;
   padding: calc(0.4rem - 1px) 0.8rem;
@@ -1432,11 +1432,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c43:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c43:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c43:hover {
@@ -1452,19 +1452,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c43[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c44 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 0.8rem;
   border-radius: 2px;
   padding: calc(0.2rem - 1px) 0.533rem;
@@ -1484,11 +1484,11 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c44:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c44:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c44:hover {
@@ -1504,19 +1504,19 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c44[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c45 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 0.8rem;
   border-radius: 2px;
   padding: calc(0.2rem - 1px) 0.533rem;
@@ -1531,44 +1531,44 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c45:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c45:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c45:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c45:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c45[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c46 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 0.866rem;
   border-radius: 3px;
   padding: calc(0.4rem - 1px) 0.8rem;
@@ -1583,44 +1583,44 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c46:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c46:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c46:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c46:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c46[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c47 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1.2rem;
   border-radius: 5px;
   padding: calc(0.666rem - 1px) 1.2rem;
@@ -1635,44 +1635,44 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c47:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c47:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c47:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c47:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c47[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c48 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1.4rem;
   border-radius: 6px;
   padding: calc(0.8rem - 1px) 1.333rem;
@@ -1687,32 +1687,32 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c48:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c48:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c48:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c48:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c48[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -1740,7 +1740,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  color: #456297;
+  color: #456296;
   font-size: 0.93333rem;
   overflow-x: hidden;
 }
@@ -1753,7 +1753,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border-top: 1px solid #D8E3F6;
+  border-top: 1px solid #D8E2F5;
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -1775,7 +1775,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   right: 0;
   width: 1px;
   height: 100%;
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c54 {
@@ -1801,7 +1801,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
 }
 
 .c54:hover {
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
 }
 
 .c50 {
@@ -1822,7 +1822,7 @@ exports[`Storyshots Getting Started Overview 1`] = `
   box-shadow: none;
   width: 300px;
   height: auto;
-  border: 1px solid #D8E3F6;
+  border: 1px solid #D8E2F5;
 }
 
 .c0 {

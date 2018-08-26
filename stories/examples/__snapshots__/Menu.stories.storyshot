@@ -7,12 +7,12 @@ exports[`Storyshots Packages | Menu Basic 1`] = `
 
 .c3 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -27,26 +27,26 @@ exports[`Storyshots Packages | Menu Basic 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: transparent;
-  color: #456297;
+  color: #456296;
   border: 1px solid transparent;
 }
 
 .c3:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c3:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c3:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c3[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -55,7 +55,7 @@ exports[`Storyshots Packages | Menu Basic 1`] = `
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  border-left: #D8E3F6;
+  border-left: #D8E2F5;
   height: 100%;
 }
 

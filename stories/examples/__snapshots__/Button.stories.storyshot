@@ -3,12 +3,12 @@
 exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 .c1 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -25,17 +25,17 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 }
 
 .c1:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c1:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c1[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -84,12 +84,12 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 exports[`Storyshots Packages | Button Circular style 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -123,17 +123,17 @@ exports[`Storyshots Packages | Button Circular style 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -164,12 +164,12 @@ exports[`Storyshots Packages | Button Circular style 1`] = `
 exports[`Storyshots Packages | Button Default 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -186,17 +186,17 @@ exports[`Storyshots Packages | Button Default 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -215,12 +215,12 @@ exports[`Storyshots Packages | Button Default 1`] = `
 exports[`Storyshots Packages | Button Disable 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -237,17 +237,17 @@ exports[`Storyshots Packages | Button Disable 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -266,12 +266,12 @@ exports[`Storyshots Packages | Button Disable 1`] = `
 exports[`Storyshots Packages | Button Flat 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -286,32 +286,32 @@ exports[`Storyshots Packages | Button Flat 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c0:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -330,12 +330,12 @@ exports[`Storyshots Packages | Button Flat 1`] = `
 exports[`Storyshots Packages | Button Light 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -350,25 +350,25 @@ exports[`Storyshots Packages | Button Light 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #ffffff;
-  color: #456297;
+  color: #456296;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -387,12 +387,12 @@ exports[`Storyshots Packages | Button Light 1`] = `
 exports[`Storyshots Packages | Button Link 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -412,11 +412,11 @@ exports[`Storyshots Packages | Button Link 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
@@ -427,7 +427,7 @@ exports[`Storyshots Packages | Button Link 1`] = `
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -446,12 +446,12 @@ exports[`Storyshots Packages | Button Link 1`] = `
 exports[`Storyshots Packages | Button Subtle 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -466,26 +466,26 @@ exports[`Storyshots Packages | Button Subtle 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: transparent;
-  color: #456297;
+  color: #456296;
   border: 1px solid transparent;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }

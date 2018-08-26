@@ -12,7 +12,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
 }
 
 .c3 {
-  color: #456297;
+  color: #456296;
 }
 
 .c1 {
@@ -21,7 +21,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   display: inline-block;
   width: 1.066rem;
   height: 1.066rem;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 2px;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
@@ -103,7 +103,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
 }
 
 .c3 {
-  color: #456297;
+  color: #456296;
 }
 
 .c1 {
@@ -112,7 +112,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   display: inline-block;
   width: 1.066rem;
   height: 1.066rem;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 2px;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
@@ -280,7 +280,7 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
 }
 
 .c3 {
-  color: #456297;
+  color: #456296;
 }
 
 .c1 {
@@ -289,14 +289,14 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   display: inline-block;
   width: 1.066rem;
   height: 1.066rem;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 2px;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
   transition: all 120ms ease-out;
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
-  border-color: #95ACD4;
+  border-color: #95ABD3;
 }
 
 .c4 {

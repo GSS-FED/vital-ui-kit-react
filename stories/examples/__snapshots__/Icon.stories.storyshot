@@ -24,7 +24,7 @@ exports[`Storyshots Packages | Icon Basic 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -32,23 +32,23 @@ exports[`Storyshots Packages | Icon Basic 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:focus {
@@ -60,7 +60,7 @@ exports[`Storyshots Packages | Icon Basic 1`] = `
 
 .c4:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 

@@ -15,8 +15,8 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   position: relative;
   box-sizing: border-box;
   padding: 0.75rem 1.25rem;
-  border-bottom: 1px solid #D8E3F6;
-  color: #456297;
+  border-bottom: 1px solid #D8E2F5;
+  color: #456296;
   font-size: 1.25rem;
   min-height: 50px;
   display: table;
@@ -40,7 +40,7 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  color: #456297;
+  color: #456296;
   font-size: 0.93333rem;
   overflow-x: hidden;
 }
@@ -53,7 +53,7 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border-top: 1px solid #D8E3F6;
+  border-top: 1px solid #D8E2F5;
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -75,7 +75,7 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   right: 0;
   width: 1px;
   height: 100%;
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c9 {
@@ -101,7 +101,7 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
 }
 
 .c9:hover {
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
 }
 
 .c8 {
@@ -123,11 +123,11 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  color: #456297;
+  color: #456296;
 }
 
 .c8:hover {
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
 }
 
 .c0 {
@@ -148,7 +148,7 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
   box-shadow: none;
   width: 300px;
   height: 220px;
-  border: 1px solid #D8E3F6;
+  border: 1px solid #D8E2F5;
 }
 
 <div
@@ -207,12 +207,12 @@ exports[`Storyshots Packages | Card Default Full Button type 1`] = `
 exports[`Storyshots Packages | Card With Flat Button 1`] = `
 .c6 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -229,29 +229,29 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
 }
 
 .c6:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c6:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c6[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c7 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -271,11 +271,11 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
 }
 
 .c7:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c7:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c7:hover {
@@ -291,7 +291,7 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
 .c7[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -308,8 +308,8 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
   position: relative;
   box-sizing: border-box;
   padding: 0.75rem 1.25rem;
-  border-bottom: 1px solid #D8E3F6;
-  color: #456297;
+  border-bottom: 1px solid #D8E2F5;
+  color: #456296;
   font-size: 1.25rem;
   min-height: 50px;
   display: table;
@@ -328,7 +328,7 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  color: #456297;
+  color: #456296;
   font-size: 0.93333rem;
   overflow-x: hidden;
 }
@@ -341,7 +341,7 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border-top: 1px solid #D8E3F6;
+  border-top: 1px solid #D8E2F5;
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -367,7 +367,7 @@ exports[`Storyshots Packages | Card With Flat Button 1`] = `
   box-shadow: none;
   width: 300px;
   height: 220px;
-  border: 1px solid #D8E3F6;
+  border: 1px solid #D8E2F5;
 }
 
 <div
@@ -431,7 +431,7 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  color: #456297;
+  color: #456296;
   font-size: 0.93333rem;
   overflow-x: hidden;
 }
@@ -444,7 +444,7 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border-top: 1px solid #D8E3F6;
+  border-top: 1px solid #D8E2F5;
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -466,7 +466,7 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
   right: 0;
   width: 1px;
   height: 100%;
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c4 {
@@ -492,7 +492,7 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
 }
 
 .c4:hover {
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
 }
 
 .c0 {
@@ -513,7 +513,7 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
   box-shadow: none;
   width: 300px;
   height: auto;
-  border: 1px solid #D8E3F6;
+  border: 1px solid #D8E2F5;
 }
 
 <div
@@ -603,12 +603,12 @@ exports[`Storyshots Packages | Card With Icon 1`] = `
 exports[`Storyshots Packages | Card With Link Button 1`] = `
 .c6 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -628,11 +628,11 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
 }
 
 .c6:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c6:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c6:hover {
@@ -643,19 +643,19 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
 .c6[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c7 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -675,11 +675,11 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
 }
 
 .c7:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c7:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c7:hover {
@@ -690,7 +690,7 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
 .c7[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -707,8 +707,8 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
   position: relative;
   box-sizing: border-box;
   padding: 0.75rem 1.25rem;
-  border-bottom: 1px solid #D8E3F6;
-  color: #456297;
+  border-bottom: 1px solid #D8E2F5;
+  color: #456296;
   font-size: 1.25rem;
   min-height: 50px;
   display: table;
@@ -727,7 +727,7 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  color: #456297;
+  color: #456296;
   font-size: 0.93333rem;
   overflow-x: hidden;
 }
@@ -740,7 +740,7 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
   flex-grow: 0;
-  border-top: 1px solid #D8E3F6;
+  border-top: 1px solid #D8E2F5;
   min-height: 50px;
   overflow: hidden;
   vertical-align: middle;
@@ -766,7 +766,7 @@ exports[`Storyshots Packages | Card With Link Button 1`] = `
   box-shadow: none;
   width: 300px;
   height: 220px;
-  border: 1px solid #D8E3F6;
+  border: 1px solid #D8E2F5;
 }
 
 <div

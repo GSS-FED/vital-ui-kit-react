@@ -10,7 +10,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   color: #7189B6;
   text-align: center;
   background-color: #EEF2FC;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   z-index: 5;
   position: relative;
@@ -63,7 +63,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -71,23 +71,23 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:focus {
@@ -99,7 +99,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
 
 .c4:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -110,7 +110,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -118,24 +118,24 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   height: auto;
 }
 
 .c11::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c11::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c11:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c11::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c11:focus {
@@ -147,7 +147,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
 
 .c11:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -264,7 +264,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
 }
 
 .c17 {
-  color: #456297;
+  color: #456296;
 }
 
 .c15 {
@@ -273,7 +273,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   display: inline-block;
   width: 1.066rem;
   height: 1.066rem;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 2px;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
@@ -288,14 +288,14 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   display: inline-block;
   width: 1.066rem;
   height: 1.066rem;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 2px;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
   transition: all 120ms ease-out;
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
-  border-color: #95ACD4;
+  border-color: #95ABD3;
 }
 
 .c18 {
@@ -367,7 +367,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   border-radius: 4px;
   background-color: #EEF2FC;
   padding: 1px;
-  box-shadow: 0 0 0 1px #C4D2EB;
+  box-shadow: 0 0 0 1px #C3D1EB;
   cursor: pointer;
 }
 
@@ -768,7 +768,7 @@ exports[`Storyshots Packages | Form Hint 1`] = `
   line-height: 1.42857;
   padding-left: 1px;
   white-space: normal;
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2 {
@@ -794,7 +794,7 @@ exports[`Storyshots Packages | Form Hint 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -802,23 +802,23 @@ exports[`Storyshots Packages | Form Hint 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:focus {
@@ -830,7 +830,7 @@ exports[`Storyshots Packages | Form Hint 1`] = `
 
 .c4:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -937,7 +937,7 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -945,23 +945,23 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c4:focus {
@@ -973,7 +973,7 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
 
 .c4:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1022,12 +1022,12 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
 exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 .c9 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1047,11 +1047,11 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 }
 
 .c9:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c9:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c9:hover {
@@ -1067,7 +1067,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 .c9[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -1081,7 +1081,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
   color: #7189B6;
   text-align: center;
   background-color: #EEF2FC;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   z-index: 5;
   position: relative;
@@ -1111,7 +1111,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1119,23 +1119,23 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c6::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c6:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c6::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c6:focus {
@@ -1147,7 +1147,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 
 .c6:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1407,12 +1407,12 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
 exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 .c5 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1429,29 +1429,29 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 }
 
 .c5:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c5:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c5[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 .c8 {
   position: relative;
-  background: #F7F9FE;
+  background: #F7F9FD;
   color: #0E86FE;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -1471,11 +1471,11 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 }
 
 .c8:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c8:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c8:hover {
@@ -1491,7 +1491,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 .c8[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -1519,7 +1519,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1527,23 +1527,23 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c7::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c7::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c7:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c7::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c7:focus {
@@ -1555,7 +1555,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
 
 .c7:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1761,7 +1761,7 @@ exports[`Storyshots Packages | Form/Input Basic 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1769,23 +1769,23 @@ exports[`Storyshots Packages | Form/Input Basic 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:focus {
@@ -1797,7 +1797,7 @@ exports[`Storyshots Packages | Form/Input Basic 1`] = `
 
 .c2:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1840,7 +1840,7 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1848,23 +1848,23 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:focus {
@@ -1876,7 +1876,7 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
 
 .c2:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1920,7 +1920,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1928,24 +1928,24 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   padding-right: 2.2em;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c2:focus {
@@ -1957,7 +1957,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
 
 .c2:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -1970,7 +1970,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -1978,24 +1978,24 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   padding-left: 2.2em;
 }
 
 .c3::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c3::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c3:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c3::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c3:focus {
@@ -2007,7 +2007,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
 
 .c3:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -2085,7 +2085,7 @@ exports[`Storyshots Packages | Form/Switch Basic 1`] = `
   border-radius: 4px;
   background-color: #EEF2FC;
   padding: 1px;
-  box-shadow: 0 0 0 1px #C4D2EB;
+  box-shadow: 0 0 0 1px #C3D1EB;
   cursor: pointer;
 }
 
@@ -2114,7 +2114,7 @@ exports[`Storyshots Packages | Form/TextArea Basic 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -2122,24 +2122,24 @@ exports[`Storyshots Packages | Form/TextArea Basic 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   height: auto;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0:focus {
@@ -2151,7 +2151,7 @@ exports[`Storyshots Packages | Form/TextArea Basic 1`] = `
 
 .c0:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 
@@ -2177,7 +2177,7 @@ exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
   line-height: 1;
   box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 4px;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -2185,24 +2185,24 @@ exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
   z-index: 5;
   font-size: 1rem;
   padding: 0.46633rem 0.8rem;
-  color: #456297;
+  color: #456296;
   height: auto;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0::-moz-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0:-ms-input-placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0::placeholder {
-  color: #95ACD4;
+  color: #95ABD3;
 }
 
 .c0:focus {
@@ -2214,7 +2214,7 @@ exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
 
 .c0:disabled {
   pointer-events: none;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #EEF2FC;
 }
 

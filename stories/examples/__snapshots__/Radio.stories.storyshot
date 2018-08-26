@@ -7,7 +7,7 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   position: relative;
   margin: 0 5px 10px 0;
   word-break: break-word;
-  color: #456297;
+  color: #456296;
   line-height: 1.3333rem;
   font-size: 1rem;
   cursor: pointer;
@@ -30,7 +30,7 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   margin: -2px 0 0 0;
   width: 15px;
   height: 15px;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 50%;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
@@ -158,7 +158,7 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   position: relative;
   margin: 0 5px 10px 0;
   word-break: break-word;
-  color: #95ACD4;
+  color: #95ABD3;
   line-height: 1.3333rem;
   font-size: 1rem;
   cursor: not-allowed;
@@ -181,7 +181,7 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   margin: -2px 0 0 0;
   width: 15px;
   height: 15px;
-  border: 1px solid #C4D2EB;
+  border: 1px solid #C3D1EB;
   border-radius: 50%;
   background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
@@ -190,7 +190,7 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
 }
 
 .c1:checked {
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
 }
 
 .c1:checked:after {
@@ -198,7 +198,7 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  background: #95ACD4;
+  background: #95ABD3;
 }
 
 .c1:after {
