@@ -81,7 +81,7 @@
     "faker": "4.1.0",
     "flow-copy-source": "2.0.2",
     "husky": "1.0.0-rc.13",
-    "jest": "23.4.2",
+    "jest": "23.5.0",
     "jest-specific-snapshot": "1.0.0",
     "jest-styled-components": "5.0.1",
     "lerna": "2.11.0",
