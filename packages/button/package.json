@@ -18,7 +18,7 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.8.6",
     "classnames": "^2.2.5",
-    "polished": "^1.9.2"
+    "polished": "^2.0.0"
   },
   "devDependencies": {
     "typescript": "^3.0.1"
