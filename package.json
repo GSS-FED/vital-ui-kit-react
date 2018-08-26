@@ -23,7 +23,6 @@
     "lint": "eslint packages/**; exit 0",
     "lint:watch": "esw -w packages/**",
     "changelog": "lerna-changelog",
-    "prepublish": "yarn run build",
     "publish": "lerna publish"
   },
   "repository": {
