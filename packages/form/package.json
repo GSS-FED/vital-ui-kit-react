@@ -23,7 +23,7 @@
     "@vital-ui/react-utils": "^0.8.6",
     "classnames": "^2.2.6",
     "downshift": "^2.0.10",
-    "polished": "1.9.3",
+    "polished": "2.0.2",
     "react-click-outside": "3",
     "react-is": "^16.4.1",
     "resize-observer-polyfill": "1.5.0"
