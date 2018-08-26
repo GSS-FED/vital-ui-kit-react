@@ -80,6 +80,6 @@
     ]
   },
   "linterOptions": {
-    "exclude": ["bin", "node_modules/**", "**/node_modules/**"]
+    "exclude": ["bin", "node_modules/**", "**/node_modules/**", "**/cjs/**", "**/dist/**"]
   }
 }
