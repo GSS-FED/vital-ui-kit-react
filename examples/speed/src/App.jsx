@@ -4,7 +4,7 @@ import {
   Layout,
   colorPaletteGenerator,
   defaultTheme,
-} from '@gssfed/vital-ui-kit-react';
+} from '@vital-ui/react';
 
 import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';

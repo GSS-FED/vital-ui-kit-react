@@ -64,7 +64,7 @@ storiesOf('Packages | Form', module)
         </FieldInput>
         <FieldInput label="Website">
           <MultipleInput>
-            <Addon>http://</Addon>
+            <Addon>http:</Addon>
             <Input placeholder="LabelAddon on the left" />
           </MultipleInput>
         </FieldInput>

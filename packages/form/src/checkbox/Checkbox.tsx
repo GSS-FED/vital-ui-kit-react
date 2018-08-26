@@ -22,9 +22,18 @@ const Root = styled.label`
     }
   }
 `;
+
+Root.defaultProps = {
+  theme: defaultTheme,
+};
+
 const Label = styled.span`
   color: ${({ theme }) => theme.checkbox.label.color};
 `;
+
+Label.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Box = styled.span<{ checked?: boolean; round: boolean }>`
   box-sizing: border-box;
@@ -43,6 +52,10 @@ const Box = styled.span<{ checked?: boolean; round: boolean }>`
   border-color: ${({ checked, theme }) =>
     checked ? theme.checkbox.checkedBorderColor : ''};
 `;
+
+Box.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Input = styled.input`
   display: none;

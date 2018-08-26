@@ -11,7 +11,7 @@ import {
   TextArea,
   Hint,
   Button,
-} from '@gssfed/vital-ui-kit-react';
+} from '@vital-ui/react';
 
 class Form extends PureComponent {
   state = {};
@@ -28,7 +28,7 @@ class Form extends PureComponent {
       isSubmitting,
     } = this.props;
     return (
-      <Box style={{ maxWidth: 500 }} padding="40px">
+      <Box style={{ maxWidth: 500 }} p="40px">
         <form onSubmit={handleSubmit}>
           <FieldInput required label="Username">
             <Input

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Pill, Tabs } from '@gssfed/vital-ui-kit-react';
+import { Pill, Tabs, PillsGroup } from '@vital-ui/react';
 
 import Overview from '../Overview';
 import Form from '../Form';
@@ -13,11 +13,11 @@ class Main extends React.PureComponent {
   render() {
     return (
       <Top>
-        <Pill.Group default={2}>
+        <PillsGroup default={2}>
           <Pill id={1} label="Getting Started" badge="6" />
           <Pill id={2} label="Showcase" badge="23" />
           <Pill id={3} label="More Coming soon" />
-        </Pill.Group>
+        </PillsGroup>
         <Tabs>
           <Tabs.Tab
             label="Overview"

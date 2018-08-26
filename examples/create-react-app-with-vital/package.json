@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@gssfed/react-scripts": "0.2.0",
-    "@gssfed/vital-ui-kit-react": "^0.5.2",
     "@vital-ui/react-badge": "0.8.6-next.0",
     "@vital-ui/react-avatar": "0.8.6-next.0",
     "@vital-ui/react-button": "0.8.6-next.0",

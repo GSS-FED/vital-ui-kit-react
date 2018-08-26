@@ -6,7 +6,7 @@ import {
   MultipleInput,
   Addon,
   TextArea,
-} from '@gssfed/vital-ui-kit-react';
+} from '@vital-ui/react-form';
 
 const FormWrapper = styled.div`
   max-width: 500px;

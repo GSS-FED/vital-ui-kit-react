@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@gssfed/vital-ui-kit-react/dist/base/global.css';
+import '@vital-ui/react/dist/global.css';
 import './App.css';
 import './markdown.css';
 import App from './App';

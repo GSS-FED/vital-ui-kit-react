@@ -27,7 +27,8 @@ const fieldBase = ({
 }: {
   theme: typeof defaultTheme;
 }) => css<{ alarm: boolean; warning: boolean }>`
-  ${fieldWrapperBase} ${fieldInputBase}
+  ${fieldWrapperBase};
+  ${fieldInputBase};
 
   &::placeholder {
     color: ${theme.form.placeholder.color};

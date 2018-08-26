@@ -12,6 +12,7 @@ import {
   fieldWrapperBase,
   fieldInputBase,
 } from '../components/FieldBase';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 const InputBase = styled.input`
   ${fieldInputBase};
@@ -22,6 +23,10 @@ const InputBase = styled.input`
   border-radius: inherit;
 `;
 
+InputBase.defaultProps = {
+  theme: defaultTheme,
+};
+
 const InputWrapper = styled.div`
   ${fieldWrapperBase};
   display: flex;
@@ -29,6 +34,10 @@ const InputWrapper = styled.div`
   cursor: pointer;
   overflow: hidden;
 `;
+
+InputWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 const Input = withContext(InputBase, ({ getInputProps }) =>
   getInputProps({

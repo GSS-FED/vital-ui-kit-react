@@ -12,7 +12,7 @@ import {
   Modal,
   // ProgressBar,
   Tooltip,
-} from '@gssfed/vital-ui-kit-react';
+} from '@vital-ui/react';
 
 import CardCommon from './CardCommon';
 import ScrollView from './Layout/ScrollView';
@@ -123,8 +123,8 @@ class Overview extends React.PureComponent<void, OverviewState> {
           </Vertical>
           <Vertical>
             <Card width="300px">
-              <Card.Container style={{ textAlign: 'center' }}>
-                <Icon name="thumbs-up" size="90" color="#0e86fe" />
+              <Card.Content style={{ textAlign: 'center' }}>
+                <Icon.Music fontSize="90px" color="#0e86fe" />
                 <div
                   style={{
                     fontSize: '1.25rem',
@@ -148,7 +148,7 @@ class Overview extends React.PureComponent<void, OverviewState> {
                 >
                   Let’s Get Started
                 </div>
-              </Card.Container>
+              </Card.Content>
               <Card.Footer>
                 <Card.FooterButton primary>Confirm</Card.FooterButton>
               </Card.Footer>

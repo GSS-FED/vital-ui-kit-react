@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { List, defaultTheme } from '@gssfed/vital-ui-kit-react';
+import { List } from '@vital-ui/react';
 
 const TitleWrapper = styled.div`
   padding-top: 5px;
