@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { Menu } from '@vital-ui/react-menu/src';
+import { Menu } from '../../packages/menu/src';
 import {
   Umbrella,
   Pen,
