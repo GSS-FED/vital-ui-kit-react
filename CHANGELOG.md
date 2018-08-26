@@ -1,4 +1,31 @@
 # Changelog
+## 0.8.7 (2018-08-26)
+
+#### Major
+* `@vital-ui-lab/chart`, `avatar`, `badge`, `button`, `card`, `form`, `icon`, `layout`, `list`, `menu`, `modal`, `pagination`, `pill`, `table`, `tabs`, `theme`, `tooltip`, `utils`, `web`
+  * [#268](https://github.com/GSS-FED/vital-ui-kit-react/pull/268) Flow -> Typescript ([@ericyip](https://github.com/ericyip))
+
+  Flow -> Typescript
+  Publish: v0.8.7
+
+  #### :boom: Breaking Change
+  - All packages named export.
+
+  #### :rocket: Enhancement
+  - avatar: new builtInDefaultAvatar props
+  - modal: rework
+
+  #### :house: Internal
+  - Flatten storybook to root dir
+  - Add Dockerfile, switch storybook static site from netlify to now
+
+  #### :bug: Bug Fix
+  - Fix #261. Select attr warning
+  - Close #264. Remove Icomoon Icon package.
+
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
 ## 0.8.5 (2018-07-30)
 
 #### :rocket: Enhancement
@@ -73,7 +100,7 @@
 ## 0.8.0 (2018-06-20)
 
 #### :boom: Breaking Change
-* `Card.Container` will be removed. use `Card.Content`  instead. 
+* `Card.Container` will be removed. use `Card.Content`  instead.
 * `ThemeProvider` to `VitalProvider`. 💥
 
     #### Sperate all component to packages
@@ -101,14 +128,14 @@
      * [#190](https://github.com/GSS-FED/vital-ui-kit-react/pull/190) v0.8 rename to @vital-ui/react-*. ([@ericyip](https://github.com/ericyip))
 
 #### :rocket: Enhancement
-* new `withDeprecatedWarning` component, use for deprecation warnings. 🗡 
-* Add default className: `.vital__*-*` to all components. e.g. `.vital_avatar-image` 💃 
+* new `withDeprecatedWarning` component, use for deprecation warnings. 🗡
+* Add default className: `.vital__*-*` to all components. e.g. `.vital_avatar-image` 💃
 * `checkbox`: new custom checkbox option.
    * [#190](https://github.com/GSS-FED/vital-ui-kit-react/pull/190) v0.8 rename to @vital-ui/react-*. ([@ericyip](https://github.com/ericyip))
 * Theme
   *  `ThemeProvider` has renamed to `VitalProvider` in `@vital-ui/react`, It's the same but provide new api: `theme` and `componentTheme`.
   * Theme now accepts `variables` and `componentTheme`, should rename provider props from `theme` to `variables`.
-  * Fix #162. pass defaultTheme to each packages that use `theme` and `styled-components` `defaultProps`, so It won't break if install individually without `ThemeProvider`. 
+  * Fix #162. pass defaultTheme to each packages that use `theme` and `styled-components` `defaultProps`, so It won't break if install individually without `ThemeProvider`.
 
 #### :house: Internal
 * Remove babel-root-import plugin. in favor of `babel-plugin-module-resolver`
