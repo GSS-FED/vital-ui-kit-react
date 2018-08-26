@@ -17,6 +17,7 @@
     "watch": "cross-env NODE_ENV=development lerna exec --parallel -- tsc-watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o /public",
+    "lint": "tslint -c tslint.json './**/*.{ts,tsx}'",
     "test": "jest",
     "flow-typed": "rm -rf flow-typed && flow-typed install -s",
     "format": "prettier --write '**/**.{js,jsx,ts,tsx}'",
@@ -107,6 +108,10 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
       "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "tslint -c tslint.json --fix",
       "git add"
     ]
   },
