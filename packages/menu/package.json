@@ -1,11 +1,12 @@
 {
   "name": "@vital-ui/react-menu",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "",
   "peerDependencies": {
@@ -15,11 +16,11 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-button": "^0.8.5",
-    "@vital-ui/react-theme": "^0.8.5",
+    "@vital-ui/react-button": "^0.8.6",
+    "@vital-ui/react-theme": "^0.8.6",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "typescript": "^3.0.1"
   }
 }

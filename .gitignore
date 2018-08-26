@@ -10,3 +10,5 @@ esm/
 coverage/
 .changelog/
 cjs/
+js2tsx
+storybook-static

@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from '@gssfed/vital-ui-kit-react';
+import { ThemeProvider } from '@vital-ui/react-theme';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import '@gssfed/vital-ui-kit-react/dist/base/global.css';
+import '@vital-ui/react-theme/src/global.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './registerServiceWorker';

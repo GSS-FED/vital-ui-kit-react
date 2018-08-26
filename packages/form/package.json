@@ -1,11 +1,12 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.8.5",
+  "version": "0.8.7",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "peerDependencies": {
@@ -15,14 +16,13 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-button": "^0.8.5",
-    "@vital-ui/react-icon": "^0.8.5",
-    "@vital-ui/react-theme": "^0.8.5",
-    "@vital-ui/react-tooltip": "^0.8.5",
-    "@vital-ui/react-utils": "^0.8.5",
+    "@vital-ui/react-button": "^0.8.6",
+    "@vital-ui/react-icon": "^0.8.6",
+    "@vital-ui/react-theme": "^0.8.6",
+    "@vital-ui/react-tooltip": "^0.8.6",
+    "@vital-ui/react-utils": "^0.8.6",
     "classnames": "^2.2.6",
     "downshift": "^2.0.10",
-    "polish": "0.2.3",
     "polished": "1.9.3",
     "react-click-outside": "3",
     "react-is": "^16.4.1",
@@ -33,6 +33,6 @@
     "esm"
   ],
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "typescript": "^3.0.1"
   }
 }

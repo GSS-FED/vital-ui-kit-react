@@ -1,14 +1,13 @@
 {
   "name": "@vital-ui/react-icon",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
-  "sideEffects": [
-    "./selection.json"
-  ],
+  "module": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen:icons": "svgr -d src lib/vital_icons --ext tsx --icon --replace-attr-values '#27aae1=currentColor'",
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
@@ -17,7 +16,8 @@
     "styled-components": "3"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "@svgr/cli": "^2.2.0",
+    "typescript": "^3.0.1"
   },
   "dependencies": {
     "classnames": "^2.2.6"

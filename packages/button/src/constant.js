@@ -1,4 +1,4 @@
-export const size = {
+export var size = {
   xsmall: {
     fontSize: '0.8rem',
     borderRadius: '2px',
@@ -30,12 +30,14 @@ export const size = {
     height: '3rem',
   },
 };
-
-export const natureColor = colors => ({
-  default: colors.secondary700,
-  primary: colors.primary,
-  success: colors.success,
-  info: colors.info,
-  alarm: colors.alarm,
-  warning: colors.warning,
-});
+export var natureColor = function(colors) {
+  return {
+    default: colors.secondary700,
+    primary: colors.primary,
+    success: colors.success,
+    info: colors.info,
+    alarm: colors.alarm,
+    warning: colors.warning,
+  };
+};
+// # sourceMappingURL=constant.js.map

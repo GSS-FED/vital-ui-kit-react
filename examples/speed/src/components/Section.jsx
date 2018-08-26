@@ -1,6 +1,4 @@
-// @flow
-
-import React, { type Node } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const SectionWrapper = styled.div`
@@ -13,12 +11,7 @@ const SectionTitle = styled.div`
   padding-bottom: 10px;
 `;
 
-type Props = {
-  title: string,
-  children: Node,
-};
-
-const Section = ({ title, children }: Props) => (
+const Section = ({ title, children }) => (
   <SectionWrapper>
     <SectionTitle>{title}</SectionTitle>
     {children}

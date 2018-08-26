@@ -1,5 +1,5 @@
 /**
- * @flow
+
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
@@ -133,10 +133,7 @@ class ProgressBar extends React.Component<Props, State> {
             <Label alarm={alarm} warning={warning} success={success}>
               {textLabel && textLabel}
             </Label>
-            <Status>
-              {value}
-              %
-            </Status>
+            <Status>{value}%</Status>
           </StatusWrapper>
         )}
         <Track

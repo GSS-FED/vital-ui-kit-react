@@ -1,15 +1,11 @@
 import React, { PureComponent } from 'react';
 import styled from 'styled-components';
-import { Menu, Icon, defaultTheme } from '@gssfed/vital-ui-kit-react';
+import { Menu, Icon, Box, defaultTheme } from '@vital-ui/react';
 import 'rc-color-picker/assets/index.css';
 import ColorPicker from 'rc-color-picker';
 
 // eslint-disable-next-line
 import uwillx from './uwillx.png';
-
-const MenuIcon = styled(Icon)`
-  margin-right: 10px;
-`;
 
 const Root = styled.div`
   position: absolute;
@@ -79,20 +75,28 @@ class Header extends PureComponent {
               />
             </MenuItem>
             <MenuItem>
-              <MenuIcon name="user" />
-              User Accounts
+              <Box mr="10px">
+                <Icon.Book />
+              </Box>
+              Book
             </MenuItem>
             <MenuItem>
-              <MenuIcon name="search" />
-              Search
+              <Box mr="10px">
+                <Icon.Bell />
+              </Box>
+              Bell
             </MenuItem>
             <MenuItem>
-              <MenuIcon name="cog" />
-              Setting
+              <Box mr="10px">
+                <Icon.Umbrella />
+              </Box>
+              Umbrella
             </MenuItem>
             <MenuItem>
-              <MenuIcon name="power-off" />
-              Logout
+              <Box mr="10px">
+                <Icon.Rocket />
+              </Box>
+              Rocket
             </MenuItem>
           </Menu>
         </MenuWrapper>

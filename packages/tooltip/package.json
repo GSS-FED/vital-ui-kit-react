@@ -1,18 +1,16 @@
 {
   "name": "@vital-ui/react-tooltip",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "module": "dist/index.js",
   "sideEffects": [
     "*.css"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean:build": "rm -rf dist",
-    "build:esm": "cross-env BABEL_ENV=esm babel src --out-dir dist --copy-files",
-    "build:flow": "flow-copy-source src dist",
-    "build": "npm-run-all clean:build --parallel build:esm build:flow"
+    "clean": "rm -rf dist lib",
+    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
+    "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
   },
   "author": "",
   "peerDependencies": {
@@ -26,6 +24,7 @@
     "rc-trigger": "2.5.4"
   },
   "devDependencies": {
-    "flow-bin": "0.77.0"
+    "copyfiles": "^2.0.0",
+    "typescript": "^3.0.1"
   }
 }

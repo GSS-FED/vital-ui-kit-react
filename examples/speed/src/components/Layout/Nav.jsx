@@ -1,19 +1,13 @@
-// @flow
-
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { List, defaultTheme } from '@gssfed/vital-ui-kit-react';
+import { List } from '@vital-ui/react';
 
 const TitleWrapper = styled.div`
   padding-top: 5px;
   padding-bottom: 5px;
 `;
 
-type Props = {
-  theme: typeof defaultTheme,
-};
-
-class Nav extends React.PureComponent<Props> {
+class Nav extends React.PureComponent {
   render() {
     return (
       <div

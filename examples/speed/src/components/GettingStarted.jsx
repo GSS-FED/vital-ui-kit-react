@@ -1,5 +1,3 @@
-// @flow
-
 import * as React from 'react';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
@@ -7,11 +5,7 @@ import fs from 'fs';
 
 const Root = styled.div``;
 
-type State = {
-  innerHeight: number,
-};
-
-class GettingStarted extends React.PureComponent<void, State> {
+class GettingStarted extends React.PureComponent {
   state = {
     innerHeight: 0,
   };

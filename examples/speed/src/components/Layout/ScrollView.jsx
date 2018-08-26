@@ -1,16 +1,6 @@
-// @flow
-
 import * as React from 'react';
 
-type P = {
-  children: React.ReactNode,
-};
-
-type S = {
-  innerHeight: number,
-};
-
-class ScrollView extends React.PureComponent<P, S> {
+class ScrollView extends React.PureComponent {
   state = {
     innerHeight: 0,
   };
