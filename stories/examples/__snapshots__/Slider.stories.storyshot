@@ -277,6 +277,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
 >
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
@@ -326,6 +327,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   </div>
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}

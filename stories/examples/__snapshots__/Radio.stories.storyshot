@@ -77,11 +77,13 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
 >
   <label
     className="vital__radio c0"
+    disabled={false}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={false}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="red"
     />
@@ -93,11 +95,14 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={false}
   >
     <input
       className="vital__radio-input c1"
       defaultChecked={true}
+      disabled={false}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="blue"
     />
@@ -109,11 +114,13 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={false}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={false}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="yellow"
     />
@@ -125,11 +132,13 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={false}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={false}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="green"
     />
@@ -219,11 +228,13 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
 >
   <label
     className="vital__radio c0"
+    disabled={true}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={true}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="red"
     />
@@ -235,11 +246,14 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={true}
   >
     <input
       className="vital__radio-input c1"
       defaultChecked={true}
+      disabled={true}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="blue"
     />
@@ -251,11 +265,13 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={true}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={true}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="yellow"
     />
@@ -267,11 +283,13 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   </label>
   <label
     className="vital__radio c0"
+    disabled={true}
   >
     <input
       className="vital__radio-input c1"
-      defaultChecked={false}
+      disabled={true}
       name="color"
+      onChange={[Function]}
       type="radio"
       value="green"
     />

@@ -47,6 +47,6 @@ jobs:
           name: Lint check
           command: yarn run lint
 
-      # - run:
-      #     name: Test
-      #     command: yarn run test
+      - run:
+          name: Test
+          command: yarn run test

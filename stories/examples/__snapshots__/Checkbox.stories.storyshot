@@ -51,41 +51,37 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
 <label
   checked={false}
   className="vital__checkbox c0"
-  onChange={[Function]}
 >
   <span
     checked={false}
     className="c1"
-    disabled={false}
   >
     <div
       checked={false}
       className="c2"
-      disabled={false}
     >
       <svg
-        className=""
-        height="12"
-        onClick={null}
-        viewBox="0 0 1024 1024"
-        width="12"
+        color="#0E86FE"
+        height="1em"
+        name="check"
+        size="12"
+        viewBox="0 0 903.77 739.84"
+        width="1em"
       >
         <path
-          d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-          fill="#0E86FE"
+          d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+          data-name="Layer 2"
+          fill="currentColor"
         />
       </svg>
     </div>
   </span>
   <span
-    checked={false}
     className="c3"
-    disabled={false}
   >
     <input
       checked={false}
       className="c4"
-      defaultChecked={false}
       disabled={false}
       onChange={[Function]}
       type="checkbox"
@@ -149,41 +145,37 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   <label
     checked={false}
     className="vital__checkbox c0"
-    onChange={[Function]}
   >
     <span
       checked={false}
       className="c1"
-      disabled={false}
     >
       <div
         checked={false}
         className="c2"
-        disabled={false}
       >
         <svg
-          className=""
-          height="12"
-          onClick={null}
-          viewBox="0 0 1024 1024"
-          width="12"
+          color="#0E86FE"
+          height="1em"
+          name="check"
+          size="12"
+          viewBox="0 0 903.77 739.84"
+          width="1em"
         >
           <path
-            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-            fill="#0E86FE"
+            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+            data-name="Layer 2"
+            fill="currentColor"
           />
         </svg>
       </div>
     </span>
     <span
-      checked={false}
       className="c3"
-      disabled={false}
     >
       <input
         checked={false}
         className="c4"
-        defaultChecked={false}
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -194,41 +186,37 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   <label
     checked={false}
     className="vital__checkbox c0"
-    onChange={[Function]}
   >
     <span
       checked={false}
       className="c1"
-      disabled={false}
     >
       <div
         checked={false}
         className="c2"
-        disabled={false}
       >
         <svg
-          className=""
-          height="12"
-          onClick={null}
-          viewBox="0 0 1024 1024"
-          width="12"
+          color="#0E86FE"
+          height="1em"
+          name="check"
+          size="12"
+          viewBox="0 0 903.77 739.84"
+          width="1em"
         >
           <path
-            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-            fill="#0E86FE"
+            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+            data-name="Layer 2"
+            fill="currentColor"
           />
         </svg>
       </div>
     </span>
     <span
-      checked={false}
       className="c3"
-      disabled={false}
     >
       <input
         checked={false}
         className="c4"
-        defaultChecked={false}
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -239,41 +227,37 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   <label
     checked={false}
     className="vital__checkbox c0"
-    onChange={[Function]}
   >
     <span
       checked={false}
       className="c1"
-      disabled={false}
     >
       <div
         checked={false}
         className="c2"
-        disabled={false}
       >
         <svg
-          className=""
-          height="12"
-          onClick={null}
-          viewBox="0 0 1024 1024"
-          width="12"
+          color="#0E86FE"
+          height="1em"
+          name="check"
+          size="12"
+          viewBox="0 0 903.77 739.84"
+          width="1em"
         >
           <path
-            d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-            fill="#0E86FE"
+            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+            data-name="Layer 2"
+            fill="currentColor"
           />
         </svg>
       </div>
     </span>
     <span
-      checked={false}
       className="c3"
-      disabled={false}
     >
       <input
         checked={false}
         className="c4"
-        defaultChecked={false}
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -334,43 +318,40 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
 }
 
 <label
+  checked={true}
   className="vital__checkbox c0"
 >
   <span
     checked={true}
     className="c1"
-    disabled={false}
   >
     <div
       checked={true}
       className="c2"
-      disabled={false}
     >
       <svg
-        className=""
-        height="12"
-        onClick={null}
-        viewBox="0 0 950.8571428571428 1024"
-        width="12"
+        color="#0E86FE"
+        height="1em"
+        name="star"
+        size="12"
+        viewBox="0 0 903.77 739.84"
+        width="1em"
       >
         <path
-          d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"
-          fill="#0E86FE"
+          d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+          data-name="Layer 2"
+          fill="currentColor"
         />
       </svg>
     </div>
   </span>
   <span
-    checked={true}
     className="c3"
-    disabled={false}
   >
     <input
       checked={true}
       className="c4"
-      defaultChecked={true}
       disabled={false}
-      onChange={[Function]}
       type="checkbox"
     />
     Custom Icon

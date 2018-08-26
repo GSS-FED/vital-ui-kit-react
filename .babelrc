@@ -2,8 +2,7 @@
   "presets": ["react", ["env", {"modules": false}]],
   "plugins": [
     "babel-plugin-transform-object-rest-spread",
-    "babel-plugin-transform-class-properties",
-    "babel-plugin-inline-import-data-uri"
+    "babel-plugin-transform-class-properties"
   ],
   "env": {
     "development": {
@@ -13,11 +12,11 @@
     },
     "test": {
       "presets": [
-        "flow",
         ["env", { "modules": "commonjs" }],
         "react"
       ],
       "plugins": [
+        "require-context-hook",
         "babel-plugin-transform-object-rest-spread",
         "babel-plugin-transform-class-properties"
       ]

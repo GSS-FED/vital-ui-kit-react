@@ -49,6 +49,7 @@ exports[`Storyshots Packages | Modal Basic 1`] = `
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"

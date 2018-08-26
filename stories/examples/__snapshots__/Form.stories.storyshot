@@ -120,7 +120,6 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   padding: 0.46633rem 0.8rem;
   color: #456297;
   height: auto;
-  resize: none;
 }
 
 .c11::-webkit-input-placeholder {
@@ -254,21 +253,21 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   padding-top: calc(0.46633rem + 2px);
 }
 
-.c15 {
+.c14 {
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
 }
 
-.c15:hover > span:first-child {
+.c14:hover > span:first-child {
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c18 {
+.c17 {
   color: #456297;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -283,7 +282,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   vertical-align: middle;
 }
 
-.c20 {
+.c19 {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -299,11 +298,11 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   border-color: #95ACD4;
 }
 
-.c19 {
+.c18 {
   display: none;
 }
 
-.c17 {
+.c16 {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -317,7 +316,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   transition: all 120ms ease-out;
 }
 
-.c21 {
+.c20 {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -372,19 +371,6 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   cursor: pointer;
 }
 
-.c14 {
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  display: block;
-  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  box-sizing: border-box;
-  border: 1px solid #C4D2EB;
-}
-
 .c0 {
   max-width: 500px;
   padding: 40px;
@@ -407,10 +393,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
     >
       <input
         autoFocus={false}
-        className="c4"
+        className="vital__input c4"
         disabled={false}
-        icon={null}
-        name={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -439,10 +423,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="First Name"
             spellCheck={false}
@@ -459,10 +441,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="Last Name"
             spellCheck={false}
@@ -493,10 +473,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="Month"
             spellCheck={false}
@@ -513,10 +491,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="Day"
             spellCheck={false}
@@ -533,10 +509,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="Year"
             spellCheck={false}
@@ -565,7 +539,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         <div
           className="vital__addon c9"
         >
-          http://
+          http:
         </div>
       </div>
       <div
@@ -576,10 +550,8 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         >
           <input
             autoFocus={false}
-            className="c4"
+            className="vital__input c4"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the left"
             spellCheck={false}
@@ -606,7 +578,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
       disabled={false}
       id={null}
       maxLength={null}
-      onChange={[Function]}
+      onChange={null}
       placeholder="Comment here"
       rows={3}
       spellCheck={false}
@@ -635,13 +607,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
       <label
         className="c13"
         disabled={false}
-      >
-        <div
-          className="c14"
-          disabled={false}
-          icon={null}
-        />
-      </label>
+      />
     </div>
   </div>
   <div
@@ -662,129 +628,118 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
       }
     >
       <label
-        className="vital__checkbox c15"
+        className="vital__checkbox c14"
       >
         <span
           checked={false}
-          className="c16"
-          disabled={false}
+          className="c15"
         >
           <div
             checked={false}
-            className="c17"
-            disabled={false}
+            className="c16"
           >
             <svg
-              className=""
-              height="12"
-              onClick={null}
-              viewBox="0 0 1024 1024"
-              width="12"
+              color="#0E86FE"
+              height="1em"
+              name="check"
+              size="12"
+              viewBox="0 0 903.77 739.84"
+              width="1em"
             >
               <path
-                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-                fill="#0E86FE"
+                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+                data-name="Layer 2"
+                fill="currentColor"
               />
             </svg>
           </div>
         </span>
         <span
-          checked={false}
-          className="c18"
-          disabled={false}
+          className="c17"
         >
           <input
             checked={false}
-            className="c19"
-            defaultChecked={false}
+            className="c18"
             disabled={false}
-            onChange={[Function]}
             type="checkbox"
           />
           React
         </span>
       </label>
       <label
-        className="vital__checkbox c15"
+        className="vital__checkbox c14"
       >
         <span
           checked={true}
-          className="c20"
-          disabled={false}
+          className="c19"
         >
           <div
             checked={true}
-            className="c21"
-            disabled={false}
+            className="c20"
           >
             <svg
-              className=""
-              height="12"
-              onClick={null}
-              viewBox="0 0 1024 1024"
-              width="12"
+              color="#0E86FE"
+              height="1em"
+              name="check"
+              size="12"
+              viewBox="0 0 903.77 739.84"
+              width="1em"
             >
               <path
-                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-                fill="#0E86FE"
+                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+                data-name="Layer 2"
+                fill="currentColor"
               />
             </svg>
           </div>
         </span>
         <span
-          checked={true}
-          className="c18"
-          disabled={false}
+          className="c17"
         >
           <input
             checked={true}
-            className="c19"
+            className="c18"
             defaultChecked={true}
             disabled={false}
-            onChange={[Function]}
             type="checkbox"
           />
           CSS
         </span>
       </label>
       <label
-        className="vital__checkbox c15"
+        className="vital__checkbox c14"
       >
         <span
           checked={false}
-          className="c16"
-          disabled={false}
+          className="c15"
         >
           <div
             checked={false}
-            className="c17"
-            disabled={false}
+            className="c16"
           >
             <svg
-              className=""
-              height="12"
-              onClick={null}
-              viewBox="0 0 1024 1024"
-              width="12"
+              color="#0E86FE"
+              height="1em"
+              name="check"
+              size="12"
+              viewBox="0 0 903.77 739.84"
+              width="1em"
             >
               <path
-                d="M954.857 323.429c0 14.286-5.714 28.571-16 38.857l-491.429 491.429c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-284.571-284.571c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168.571 374.857-375.429c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857z"
-                fill="#0E86FE"
+                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
+                data-name="Layer 2"
+                fill="currentColor"
               />
             </svg>
           </div>
         </span>
         <span
-          checked={false}
-          className="c18"
-          disabled={false}
+          className="c17"
         >
           <input
             checked={false}
-            className="c19"
-            defaultChecked={false}
+            className="c18"
             disabled={false}
-            onChange={[Function]}
             type="checkbox"
           />
           Vital
@@ -921,10 +876,8 @@ exports[`Storyshots Packages | Form Hint 1`] = `
     >
       <input
         autoFocus={false}
-        className="c4"
+        className="vital__input c4"
         disabled={false}
-        icon={null}
-        name={null}
         onChange={[Function]}
         placeholder={null}
         spellCheck={false}
@@ -1053,10 +1006,8 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
     >
       <input
         autoFocus={false}
-        className="c4"
+        className="vital__input c4"
         disabled={false}
-        icon={null}
-        name={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -1323,10 +1274,8 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
         >
           <input
             autoFocus={false}
-            className="c6"
+            className="vital__input c6"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the right"
             spellCheck={false}
@@ -1365,14 +1314,14 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
           className="vital__addon c8"
         >
           <svg
-            className=""
-            height={16}
-            onClick={null}
-            viewBox="0 0 583.4605714285714 1024"
-            width={16}
+            height="1em"
+            name="dollar"
+            viewBox="0 0 981.58 981.58"
+            width="1em"
           >
             <path
-              d="M558.857 677.143c0 116.571-83.429 208.571-204.571 228.571v100c0 10.286-8 18.286-18.286 18.286h-77.143c-9.714 0-18.286-8-18.286-18.286v-100c-133.714-18.857-206.857-98.857-209.714-102.286-5.714-6.857-6.286-16.571-1.143-23.429l58.857-77.143c2.857-4 8-6.286 13.143-6.857s10.286 1.143 13.714 5.143c1.143 0.571 81.143 77.143 182.286 77.143 56 0 116.571-29.714 116.571-94.286 0-54.857-67.429-81.714-144.571-112.571-102.857-40.571-230.857-92-230.857-235.429 0-105.143 82.286-192 201.714-214.857v-102.857c0-10.286 8.571-18.286 18.286-18.286h77.143c10.286 0 18.286 8 18.286 18.286v100.571c116 13.143 177.714 76 180 78.286 5.714 6.286 6.857 14.857 2.857 21.714l-46.286 83.429c-2.857 5.143-7.429 8.571-13.143 9.143-5.714 1.143-10.857-0.571-15.429-4-0.571-0.571-69.714-61.714-155.429-61.714-72.571 0-122.857 36-122.857 88 0 60.571 69.714 87.429 150.857 118.857 105.143 40.571 224 86.857 224 224.571z"
+              d="M972.21 644.53a32 32 0 0 0-35.82-6.53 447.58 447.58 0 0 1-501.17-91.63 448.45 448.45 0 0 1-91.64-501.18 32 32 0 0 0-42.34-42.35 512.1 512.1 0 1 0 452.82 918 508.584 508.584 0 0 0 37.32-22.15 32 32 0 1 0-35-53.6 445.616 445.616 0 0 1-32.65 19.38A448.09 448.09 0 0 1 256 101.81a511.65 511.65 0 0 0 134 489.81 513.2 513.2 0 0 0 489.72 133.94 448.47 448.47 0 0 1-32.84 41.61 32 32 0 1 0 47.83 42.53 512.16 512.16 0 0 0 84-129.35 32 32 0 0 0-6.5-35.82z"
+              data-name="Layer 2"
               fill="currentColor"
             />
           </svg>
@@ -1386,10 +1335,8 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
         >
           <input
             autoFocus={false}
-            className="c6"
+            className="vital__input c6"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1429,10 +1376,8 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
         >
           <input
             autoFocus={false}
-            className="c6"
+            className="vital__input c6"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1446,6 +1391,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
       >
         <button
           className="vital__button c9"
+          disabled={false}
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1698,6 +1644,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
       >
         <button
           className="vital__button c5"
+          disabled={false}
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1710,6 +1657,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
       >
         <button
           className="vital__button c5"
+          disabled={false}
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1722,6 +1670,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
       >
         <button
           className="vital__button c5"
+          disabled={false}
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1737,10 +1686,8 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
         >
           <input
             autoFocus={false}
-            className="c7"
+            className="vital__input c7"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1771,10 +1718,8 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
         >
           <input
             autoFocus={false}
-            className="c7"
+            className="vital__input c7"
             disabled={false}
-            icon={null}
-            name={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1788,6 +1733,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
       >
         <button
           className="vital__button c8"
+          disabled={false}
           onClick={[Function]}
           selected={false}
           size="medium"
@@ -1868,10 +1814,9 @@ exports[`Storyshots Packages | Form/Input Basic 1`] = `
   >
     <input
       autoFocus={false}
-      className="c2"
+      className="vital__input c2"
       defaultValue="default"
       disabled={false}
-      name={null}
       placeholder="Uncontrolled Input"
       spellCheck={false}
       type="text"
@@ -1948,10 +1893,8 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
   >
     <input
       autoFocus={false}
-      className="c2"
+      className="vital__input c2"
       disabled={false}
-      icon={null}
-      name={null}
       onChange={[Function]}
       placeholder="Controlled Input"
       spellCheck={false}
@@ -2018,7 +1961,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   background-color: #EEF2FC;
 }
 
-.c4 {
+.c3 {
   vertical-align: middle;
   height: 1.93267rem;
   position: relative;
@@ -2039,59 +1982,33 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   padding-left: 2.2em;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #95ACD4;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #95ACD4;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #95ACD4;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #95ACD4;
 }
 
-.c4:focus {
+.c3:focus {
   outline: 0;
   border: 1px solid #0E86FE;
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
   z-index: 7;
 }
 
-.c4:disabled {
+.c3:disabled {
   pointer-events: none;
   border-color: #C4D2EB;
   background-color: #EEF2FC;
-}
-
-.c3 {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  width: 2.2em;
-  text-align: center;
-  z-index: 7;
-  color: #456296;
-  right: 0;
-  cursor: pointer;
-}
-
-.c3:hover {
-  color: #C4D2EB;
-}
-
-.c5 {
-  position: absolute;
-  top: calc(50% - 0.5em);
-  width: 2.2em;
-  text-align: center;
-  z-index: 7;
-  color: #456296;
-  left: 0;
-  color: #C3D1EB;
 }
 
 .c0 {
@@ -2107,25 +2024,12 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="c2"
+      className="vital__input c2"
       disabled={false}
-      name={null}
       placeholder="Right side icon"
       spellCheck={false}
       type="text"
     />
-    <svg
-      className="c3 "
-      height={16}
-      onClick={null}
-      viewBox="0 0 950.8571428571428 1024"
-      width={16}
-    >
-      <path
-        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
-        fill="currentColor"
-      />
-    </svg>
   </div>
   <br />
   <div
@@ -2133,25 +2037,12 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="c4"
+      className="vital__input c3"
       disabled={false}
-      name={null}
       placeholder="Left side icon"
       spellCheck={false}
       type="text"
     />
-    <svg
-      className="c5 "
-      height={16}
-      onClick={null}
-      viewBox="0 0 950.8571428571428 1024"
-      width={16}
-    >
-      <path
-        d="M658.286 475.429c0-141.143-114.857-256-256-256s-256 114.857-256 256 114.857 256 256 256 256-114.857 256-256zM950.857 950.857c0 40-33.143 73.143-73.143 73.143-19.429 0-38.286-8-51.429-21.714l-196-195.429c-66.857 46.286-146.857 70.857-228 70.857-222.286 0-402.286-180-402.286-402.286s180-402.286 402.286-402.286 402.286 180 402.286 402.286c0 81.143-24.571 161.143-70.857 228l196 196c13.143 13.143 21.143 32 21.143 51.429z"
-        fill="currentColor"
-      />
-    </svg>
   </div>
 </div>
 `;
@@ -2198,19 +2089,6 @@ exports[`Storyshots Packages | Form/Switch Basic 1`] = `
   cursor: pointer;
 }
 
-.c2 {
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  display: block;
-  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  box-sizing: border-box;
-  border: 1px solid #C4D2EB;
-}
-
 <div
   className="vital__switch "
   onClick={[Function]}
@@ -2224,250 +2102,7 @@ exports[`Storyshots Packages | Form/Switch Basic 1`] = `
   <label
     className="c1"
     disabled={false}
-  >
-    <div
-      className="c2"
-      disabled={false}
-      icon={null}
-    />
-  </label>
-</div>
-`;
-
-exports[`Storyshots Packages | Form/Switch with Icon Button 1`] = `
-.c0 {
-  display: none;
-}
-
-.c0:checked + label {
-  background-color: #0E86FE;
-  box-shadow: 0 0 0 1px #0E86FE;
-}
-
-.c0:checked + label div {
-  -webkit-transform: translate3d(30px,0,0);
-  -ms-transform: translate3d(30px,0,0);
-  transform: translate3d(30px,0,0);
-  border-color: #0E86FE;
-  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
-}
-
-.c0:disabled + label {
-  background-color: #EEF2FC;
-  cursor: not-allowed;
-  point-events: none;
-}
-
-.c0:disabled + label div {
-  background-color: #EEF2FC;
-  box-shadow: none;
-}
-
-.c1 {
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  width: 53px;
-  height: 24px;
-  border-radius: 4px;
-  background-color: #EEF2FC;
-  padding: 1px;
-  box-shadow: 0 0 0 1px #C4D2EB;
-  cursor: pointer;
-}
-
-.c2 {
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  display: block;
-  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  box-sizing: border-box;
-  border: 1px solid #C4D2EB;
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  text-align: center;
-  line-height: 36px;
-  font-size: 1.2rem;
-  color: #C4D2EB;
-}
-
-<div
-  className="vital__switch "
-  onClick={[Function]}
->
-  <input
-    checked={false}
-    className="c0"
-    disabled={false}
-    type="checkbox"
   />
-  <label
-    className="c1"
-    disabled={false}
-  >
-    <div
-      className="c2"
-      disabled={false}
-      icon="wifi"
-    >
-      <svg
-        className=""
-        height="17"
-        onClick={null}
-        viewBox="0 0 1170.2857142857142 1024"
-        width="17"
-      >
-        <path
-          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
-          fill="#C4D2EB"
-        />
-      </svg>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Packages | Form/Switch with Icon Label 1`] = `
-.c0 {
-  display: none;
-}
-
-.c0:checked + label {
-  background-color: #0E86FE;
-  box-shadow: 0 0 0 1px #0E86FE;
-}
-
-.c0:checked + label div {
-  -webkit-transform: translate3d(30px,0,0);
-  -ms-transform: translate3d(30px,0,0);
-  transform: translate3d(30px,0,0);
-  border-color: #0E86FE;
-  box-shadow: 0 0 0 3px rgba(14,134,254,0.3);
-}
-
-.c0:disabled + label {
-  background-color: #EEF2FC;
-  cursor: not-allowed;
-  point-events: none;
-}
-
-.c0:disabled + label div {
-  background-color: #EEF2FC;
-  box-shadow: none;
-}
-
-.c1 {
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  width: 53px;
-  height: 24px;
-  border-radius: 4px;
-  background-color: #EEF2FC;
-  padding: 1px;
-  box-shadow: 0 0 0 1px #C4D2EB;
-  cursor: pointer;
-}
-
-.c5 {
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  background-color: #ffffff;
-  display: block;
-  box-shadow: 1px 0 0 1px rgba(196,210,235,0.2);
-  -webkit-transition: all 120ms ease-in;
-  transition: all 120ms ease-in;
-  box-sizing: border-box;
-  border: 1px solid #C4D2EB;
-}
-
-.c3 {
-  position: absolute;
-  top: 3px;
-  right: 8px;
-  font-size: 13px;
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
-  color: #C4D2EB;
-  text-align: center;
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
-  opacity: 1;
-  pointer-events: none;
-}
-
-.c4 {
-  display: block;
-}
-
-.c2 {
-  display: none;
-  left: -20px;
-}
-
-<div
-  className="vital__switch "
-  onClick={[Function]}
->
-  <input
-    checked={false}
-    className="c0"
-    disabled={false}
-    type="checkbox"
-  />
-  <label
-    className="c1"
-    disabled={false}
-  >
-    <div
-      checked={false}
-      className="c2 c3"
-    >
-      <svg
-        className=""
-        height={16}
-        onClick={null}
-        viewBox="0 0 1170.2857142857142 1024"
-        width={16}
-      >
-        <path
-          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
-          fill="#ffffff"
-        />
-      </svg>
-    </div>
-    <div
-      checked={false}
-      className="c4 c3"
-    >
-      <svg
-        className=""
-        height={16}
-        onClick={null}
-        viewBox="0 0 1170.2857142857142 1024"
-        width={16}
-      >
-        <path
-          d="M585.143 870.286c-14.857 0-94.857-80-94.857-95.429 0-28 73.143-43.429 94.857-43.429s94.857 15.429 94.857 43.429c0 15.429-80 95.429-94.857 95.429zM739.429 715.429c-8 0-70.286-57.143-154.286-57.143-84.571 0-145.714 57.143-154.286 57.143-13.714 0-96.571-82.286-96.571-96 0-5.143 2.286-9.714 5.714-13.143 61.143-60.571 160.571-94.286 245.143-94.286s184 33.714 245.143 94.286c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96.571 96zM895.429 560c-4.571 0-9.714-2.286-13.143-4.571-94.286-73.143-173.714-116.571-297.143-116.571-172.571 0-304 121.143-310.286 121.143-13.143 0-95.429-82.286-95.429-96 0-4.571 2.286-9.143 5.714-12.571 102.286-102.286 256.571-158.857 400-158.857s297.714 56.571 400 158.857c3.429 3.429 5.714 8 5.714 12.571 0 13.714-82.286 96-95.429 96zM1050.286 405.143c-4.571 0-9.143-2.286-12.571-5.143-132-116-274.286-180.571-452.571-180.571s-320.571 64.571-452.571 180.571c-3.429 2.857-8 5.143-12.571 5.143-13.143 0-96-82.286-96-96 0-5.143 2.286-9.714 5.714-13.143 144.571-143.429 353.143-222.857 555.429-222.857s410.857 79.429 555.429 222.857c3.429 3.429 5.714 8 5.714 13.143 0 13.714-82.857 96-96 96z"
-          fill="#C4D2EB"
-        />
-      </svg>
-    </div>
-    <div
-      className="c5"
-      disabled={false}
-      icon={null}
-    />
-  </label>
 </div>
 `;
 
@@ -2489,7 +2124,6 @@ exports[`Storyshots Packages | Form/TextArea Basic 1`] = `
   padding: 0.46633rem 0.8rem;
   color: #456297;
   height: auto;
-  resize: none;
 }
 
 .c0::-webkit-input-placeholder {
@@ -2553,7 +2187,6 @@ exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
   padding: 0.46633rem 0.8rem;
   color: #456297;
   height: auto;
-  resize: none;
 }
 
 .c0::-webkit-input-placeholder {
@@ -2592,7 +2225,7 @@ exports[`Storyshots Packages | Form/TextArea Controlled TextArea 1`] = `
   disabled={false}
   id={null}
   maxLength={null}
-  onChange={[Function]}
+  onChange={null}
   placeholder="Controlled Input"
   rows={3}
   spellCheck={false}

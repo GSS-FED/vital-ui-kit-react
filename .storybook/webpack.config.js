@@ -7,6 +7,8 @@ module.exports = (baseConfig, env, config) => {
     test: /\.(ts|tsx)$/,
     loader: require.resolve('awesome-typescript-loader'),
     options: {
+      useCache: true,
+      useBabel: true,
       configFileName: 'tsconfig.storybook.json',
     },
   });
