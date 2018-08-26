@@ -42,11 +42,12 @@ jobs:
           key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
-
       - run:
           name: Lint check
           command: yarn run lint
-
+      - run:
+          name: Build
+          command: yarn run build
       - run:
           name: Test
           command: yarn run test
