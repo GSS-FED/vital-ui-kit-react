@@ -65,11 +65,13 @@ An example of Offical Document contains all Vital UI Kit components
 
 ### Installation
 ```bash
+# Install peer denpendcy, we use styled-components
+
 # yarn
-yarn add @vital-ui/react
+yarn add @vital-ui/react styled-components
 
 # npm
-npm i --save @vital-ui/react
+npm i --save @vital-ui/react styled-components
 
 ## or install individual packages
 yarn add @vital-ui/react-avatar
@@ -77,14 +79,14 @@ yarn add @vital-ui/react-avatar
 
 ```js
 // VitalProvider contains default theme and icon, you can override it.
-import { VitalProvider } from '@vital-ui/react'
+import { VitalProvider, Button } from '@vital-ui/react' // If you can use `ThemeProvider` by styled-components, or @vital-ui/react-theme
 // recommend importing the global reset style.
 import '@vital-ui/react/src/global.css'
 
 /* ... */
 render() {
   return (
-    <VitalProvider theme={YOUR_CUSTOM_THEME} icon={ICON}>
+    <VitalProvider theme={YOUR_CUSTOM_THEME}>
       <Button>Vital 💜 React!</Button>
     </VitalProvider>
   )
