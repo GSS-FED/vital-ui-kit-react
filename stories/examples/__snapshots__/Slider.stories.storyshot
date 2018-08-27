@@ -26,7 +26,6 @@ exports[`Storyshots Packages | Form/Slider Basic 1`] = `
   position: absolute;
   border-radius: 100%;
   border-color: #C3D1EB;
-  background-color: #ffffff;
   box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
   text-indent: -3333px;
   overflow: hidden;
@@ -43,7 +42,6 @@ exports[`Storyshots Packages | Form/Slider Basic 1`] = `
 
 .c4:hover {
   border-color: #0E86FE;
-  background-color: #ffffff;
   box-shadow: 0 0 0 2px rgba(196,210,235,0.3);
 }
 
@@ -216,7 +214,6 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   position: absolute;
   border-radius: 100%;
   border-color: #C3D1EB;
-  background-color: #ffffff;
   box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
   text-indent: -3333px;
   overflow: hidden;
@@ -233,7 +230,6 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
 
 .c5:hover {
   border-color: #0E86FE;
-  background-color: #ffffff;
   box-shadow: 0 0 0 2px rgba(196,210,235,0.3);
 }
 

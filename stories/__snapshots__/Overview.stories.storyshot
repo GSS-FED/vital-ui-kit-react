@@ -1838,7 +1838,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c7 {
   position: absolute;
   background-color: #EB5000;
-  color: #ffffff;
   vertical-align: middle;
   height: 9px;
   line-height: 9px;
@@ -1867,7 +1866,6 @@ exports[`Storyshots Getting Started Overview 1`] = `
 .c10 {
   position: absolute;
   background-color: #EB5000;
-  color: #ffffff;
   vertical-align: middle;
   height: 17px;
   line-height: 17px;
