@@ -21,23 +21,23 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - yarn-cache-{{ checksum "yarn.lock" }}
-            - yarn-cache-
+            - yarn-cache-v2-{{ checksum "yarn.lock" }}
+            - yarn-cache-v2
       - restore_cache:
           keys:
-            - dependency-cache-{{ checksum "yarn.lock" }}
-            - dependency-cache-
+            - dependency-cache-v2-{{ checksum "yarn.lock" }}
+            - dependency-cache-v2
       - run:
           name: Install Dependencies
           command: |
             sudo npm install -g yarn
       - run: yarn cache dir
       - save_cache:
-          key: yarn-cache-{{ checksum "yarn.lock" }}
+          key: yarn-cache-v2-{{ checksum "yarn.lock" }}
           paths:
-            - .yarn-cache
+            - .yarn-cache-v2
       - save_cache:
-          key: dependency-cache-{{ checksum "yarn.lock" }}
+          key: dependency-cache-v2-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - run:
