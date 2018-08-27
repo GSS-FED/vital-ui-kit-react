@@ -31,6 +31,8 @@ jobs:
           name: Install Dependencies
           command: |
             sudo npm install -g yarn
+            sudo yarn config set cache-folder .yarn-cache-v2
+            sudo yarn install --pure-lockfile
       - run: yarn cache dir
       - save_cache:
           key: yarn-cache-v2-{{ checksum "yarn.lock" }}
