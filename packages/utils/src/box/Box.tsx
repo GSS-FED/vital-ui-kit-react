@@ -63,6 +63,7 @@ import {
   ZIndexProps,
 } from 'styled-system';
 import styled from 'styled-components';
+import { css, CssProps } from '../style';
 
 export interface BoxProps
   extends BackgroundImageProps,
@@ -95,7 +96,8 @@ export interface BoxProps
     TextAlignProps,
     TopProps,
     WidthProps,
-    ZIndexProps {}
+    ZIndexProps,
+    CssProps {}
 
 export const Box = styled.div<BoxProps>`
   ${space};
@@ -129,6 +131,7 @@ export const Box = styled.div<BoxProps>`
   ${fontWeight};
   ${letterSpacing};
   ${fontFamily};
+  ${css};
 `;
 
 Box.displayName = 'Vital_Box';

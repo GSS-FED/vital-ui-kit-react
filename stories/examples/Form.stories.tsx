@@ -26,7 +26,7 @@ import {
   Checkbox,
   CheckboxGroup,
 } from '../../packages/form/src';
-import { Moon } from '../../packages/icon/src';
+import { Moon, Pen, Share } from '../../packages/icon/src';
 import { Button } from '../../packages/button/src/Button';
 
 const FormWrapper = styled.div`
@@ -242,12 +242,12 @@ storiesOf('Packages | Form/Input', module)
         <FormWrapper>
           <StatelessInput
             placeholder="Right side icon"
-            rightIcon="search"
+            rightIcon={<Pen />}
           />
           <br />
           <StatelessInput
             placeholder="Left side icon"
-            leftIcon="search"
+            leftIcon={<Share />}
           />
         </FormWrapper>
       )),

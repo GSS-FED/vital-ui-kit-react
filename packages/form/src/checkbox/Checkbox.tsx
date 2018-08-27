@@ -4,10 +4,10 @@
  */
 
 import * as React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { rgba } from 'polished';
-// @ts-ignore
-import { Check } from '@vital-ui/react-icon';
+import { CheckIcon } from './CheckIcon';
+import { Box } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 
@@ -35,7 +35,10 @@ Label.defaultProps = {
   theme: defaultTheme,
 };
 
-const Box = styled.span<{ checked?: boolean; round: boolean }>`
+const CheckWrapper = styled.span<{
+  checked?: boolean;
+  round: boolean;
+}>`
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -53,7 +56,7 @@ const Box = styled.span<{ checked?: boolean; round: boolean }>`
     checked ? theme.checkbox.checkedBorderColor : ''};
 `;
 
-Box.defaultProps = {
+CheckWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
@@ -101,8 +104,8 @@ export type Props = {
 };
 
 function iconColor(
-  round: boolean,
-  disabled: boolean,
+  round?: boolean,
+  disabled?: boolean,
   theme: typeof defaultTheme = defaultTheme,
 ) {
   if (disabled) {
@@ -180,17 +183,21 @@ class Checkbox extends React.Component<Props, State> {
         className={cn('vital__checkbox', className)}
         {...props}
       >
-        <Box checked={this.state.checked} round={round}>
+        <CheckWrapper checked={this.state.checked} round={round}>
           <IconWrapper checked={this.state.checked}>
             {customIcon || (
-              <Check
-                name={icon || 'check'}
-                size="12"
-                color={iconColor(round, disabled, theme)}
-              />
+              <Box
+                color={iconColor(
+                  this.props.round,
+                  this.props.disabled,
+                  this.props.theme,
+                )}
+              >
+                <CheckIcon />
+              </Box>
             )}
           </IconWrapper>
-        </Box>
+        </CheckWrapper>
         <Label>
           <Input
             type="checkbox"
@@ -207,4 +214,4 @@ class Checkbox extends React.Component<Props, State> {
   }
 }
 
-export default withTheme(Checkbox);
+export default Checkbox;

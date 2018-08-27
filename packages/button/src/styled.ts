@@ -5,7 +5,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 import { size as SIZE, natureColor } from './constant';
 import { Nature, Size } from './Button';
 
-const Btn = styled.button<{
+const Button = styled.button<{
   nature: Nature;
   size: Size;
   subtle?: boolean;
@@ -157,8 +157,8 @@ const Btn = styled.button<{
   }
 `;
 
-Btn.defaultProps = {
+Button.defaultProps = {
   theme: defaultTheme,
 };
 
-export default Btn;
+export default Button;
