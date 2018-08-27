@@ -1,4 +1,12 @@
 # Changelog
+## 0.8.8 (2018-08-27)
+
+#### :house: Internal
+* `button`, `form`, `theme`, `utils`
+  * [#274](https://github.com/GSS-FED/vital-ui-kit-react/pull/274) Theme update ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
 ## 0.8.7 (2018-08-26)
 
 #### Major
