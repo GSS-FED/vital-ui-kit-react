@@ -135,6 +135,7 @@ exports[`Storyshots Packages | Icon Basic 1`] = `
         autoFocus={false}
         className="vital__input c4"
         disabled={false}
+        icon="search"
         onChange={[Function]}
         placeholder={null}
         spellCheck={false}

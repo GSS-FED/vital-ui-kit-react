@@ -39,7 +39,7 @@ const ColorRect = styled.div`
 class ColorPalette extends React.Component {
   static displayName = 'ColorPalette';
   state = {
-    primary: defaultTheme.primary,
+    primary: defaultTheme.colors.primary,
   };
 
   changeColor = e => {

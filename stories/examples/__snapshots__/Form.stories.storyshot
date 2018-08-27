@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Form Full Example 1`] = `
+.c17 {
+  color: #0E86FE;
+}
+
 .c9 {
   padding: 0.46633rem 0.8rem;
   font-size: 1rem;
@@ -29,7 +33,6 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
 .c2:before {
   content: '';
   display: inline-block;
-  background-color: #EB5000;
   margin: -0.133rem 0.533rem 0 0;
   vertical-align: middle;
   height: 0.266rem;
@@ -263,7 +266,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c17 {
+.c18 {
   color: #456296;
 }
 
@@ -282,7 +285,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   vertical-align: middle;
 }
 
-.c19 {
+.c20 {
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -298,7 +301,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   border-color: #95ABD3;
 }
 
-.c18 {
+.c19 {
   display: none;
 }
 
@@ -316,7 +319,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
   transition: all 120ms ease-out;
 }
 
-.c20 {
+.c21 {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -395,6 +398,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
         autoFocus={false}
         className="vital__input c4"
         disabled={false}
+        icon={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -425,6 +429,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="First Name"
             spellCheck={false}
@@ -443,6 +448,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="Last Name"
             spellCheck={false}
@@ -475,6 +481,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="Month"
             spellCheck={false}
@@ -493,6 +500,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="Day"
             spellCheck={false}
@@ -511,6 +519,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="Year"
             spellCheck={false}
@@ -552,6 +561,7 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             autoFocus={false}
             className="vital__input c4"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the left"
             spellCheck={false}
@@ -638,28 +648,31 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             checked={false}
             className="c16"
           >
-            <svg
+            <div
+              className="c17"
               color="#0E86FE"
-              height="1em"
-              name="check"
-              size="12"
-              viewBox="0 0 903.77 739.84"
-              width="1em"
             >
-              <path
-                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-                data-name="Layer 2"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                height="1em"
+                role="img"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
           </div>
         </span>
         <span
-          className="c17"
+          className="c18"
         >
           <input
             checked={false}
-            className="c18"
+            className="c19"
             disabled={false}
             type="checkbox"
           />
@@ -671,34 +684,37 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
       >
         <span
           checked={true}
-          className="c19"
+          className="c20"
         >
           <div
             checked={true}
-            className="c20"
+            className="c21"
           >
-            <svg
+            <div
+              className="c17"
               color="#0E86FE"
-              height="1em"
-              name="check"
-              size="12"
-              viewBox="0 0 903.77 739.84"
-              width="1em"
             >
-              <path
-                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-                data-name="Layer 2"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                height="1em"
+                role="img"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
           </div>
         </span>
         <span
-          className="c17"
+          className="c18"
         >
           <input
             checked={true}
-            className="c18"
+            className="c19"
             defaultChecked={true}
             disabled={false}
             type="checkbox"
@@ -717,28 +733,31 @@ exports[`Storyshots Packages | Form Full Example 1`] = `
             checked={false}
             className="c16"
           >
-            <svg
+            <div
+              className="c17"
               color="#0E86FE"
-              height="1em"
-              name="check"
-              size="12"
-              viewBox="0 0 903.77 739.84"
-              width="1em"
             >
-              <path
-                d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-                data-name="Layer 2"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                height="1em"
+                role="img"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
           </div>
         </span>
         <span
-          className="c17"
+          className="c18"
         >
           <input
             checked={false}
-            className="c18"
+            className="c19"
             disabled={false}
             type="checkbox"
           />
@@ -878,6 +897,7 @@ exports[`Storyshots Packages | Form Hint 1`] = `
         autoFocus={false}
         className="vital__input c4"
         disabled={false}
+        icon={null}
         onChange={[Function]}
         placeholder={null}
         spellCheck={false}
@@ -912,7 +932,6 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
 .c2:before {
   content: '';
   display: inline-block;
-  background-color: #EB5000;
   margin: -0.133rem 0.533rem 0 0;
   vertical-align: middle;
   height: 0.266rem;
@@ -1008,6 +1027,7 @@ exports[`Storyshots Packages | Form Input with Label 1`] = `
         autoFocus={false}
         className="vital__input c4"
         disabled={false}
+        icon={null}
         onChange={[Function]}
         placeholder="Enter your username"
         spellCheck={false}
@@ -1276,6 +1296,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
             autoFocus={false}
             className="vital__input c6"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the right"
             spellCheck={false}
@@ -1337,6 +1358,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
             autoFocus={false}
             className="vital__input c6"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1378,6 +1400,7 @@ exports[`Storyshots Packages | Form Multiple & Addon 1`] = `
             autoFocus={false}
             className="vital__input c6"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1688,6 +1711,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
             autoFocus={false}
             className="vital__input c7"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1720,6 +1744,7 @@ exports[`Storyshots Packages | Form Multiple & Button 1`] = `
             autoFocus={false}
             className="vital__input c7"
             disabled={false}
+            icon={null}
             onChange={[Function]}
             placeholder="LabelAddon on the both"
             spellCheck={false}
@@ -1895,6 +1920,7 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
       autoFocus={false}
       className="vital__input c2"
       disabled={false}
+      icon={null}
       onChange={[Function]}
       placeholder="Controlled Input"
       spellCheck={false}
@@ -1906,6 +1932,26 @@ exports[`Storyshots Packages | Form/Input Controlled Input 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Input With Icon 1`] = `
+.c3 {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.c3:hover {
+  color: #C3D1EB;
+}
+
+.c5 {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 9;
+  color: #C3D1EB;
+}
+
 .c1 {
   position: relative;
   border-radius: inherit;
@@ -1961,7 +2007,7 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   background-color: #EEF2FC;
 }
 
-.c3 {
+.c4 {
   vertical-align: middle;
   height: 1.93267rem;
   position: relative;
@@ -1982,30 +2028,30 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   padding-left: 2.2em;
 }
 
-.c3::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #95ABD3;
 }
 
-.c3::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #95ABD3;
 }
 
-.c3:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #95ABD3;
 }
 
-.c3::placeholder {
+.c4::placeholder {
   color: #95ABD3;
 }
 
-.c3:focus {
+.c4:focus {
   outline: 0;
   border: 1px solid #0E86FE;
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
   z-index: 7;
 }
 
-.c3:disabled {
+.c4:disabled {
   pointer-events: none;
   border-color: #C3D1EB;
   background-color: #EEF2FC;
@@ -2030,6 +2076,30 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
       spellCheck={false}
       type="text"
     />
+    <div
+      className="c3"
+    >
+      <svg
+        height="1em"
+        viewBox="0 0 768 741.49"
+        width="1em"
+      >
+        <defs />
+        <g
+          data-name="Layer 2"
+          id="Layer_2"
+        >
+          <g
+            id="icon"
+          >
+            <path
+              className="cls-1"
+              d="M758.63 78.86l-50.75-50.74a96 96 0 0 0-135.76 0L169.37 430.86a32 32 0 0 0 0 45.26l96 96a32 32 0 0 0 45.26 0l384-384a32 32 0 0 0-45.26-45.26L288 504.24l-50.74-50.75L617.37 73.37a32 32 0 0 1 45.26 0l50.74 50.75a32 32 0 0 0 45.26-45.26zM150.63 494.86a32 32 0 0 0-51.25 8.32l-96 192a32 32 0 0 0 42.93 42.93l192-96a32 32 0 0 0 8.32-51.25zm-47.07 143.08l33.21-66.43L170 604.72z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
   </div>
   <br />
   <div
@@ -2037,12 +2107,27 @@ exports[`Storyshots Packages | Form/Input With Icon 1`] = `
   >
     <input
       autoFocus={false}
-      className="vital__input c3"
+      className="vital__input c4"
       disabled={false}
       placeholder="Left side icon"
       spellCheck={false}
       type="text"
     />
+    <div
+      className="c5"
+    >
+      <svg
+        height="1em"
+        viewBox="0 0 960 960"
+        width="1em"
+      >
+        <path
+          d="M800 640a159.82 159.82 0 0 0-125.85 61.3L314.53 521.49a160.09 160.09 0 0 0 0-83L674.15 258.7A159.82 159.82 0 0 0 800 320c88.22 0 160-71.78 160-160S888.22 0 800 0 640 71.78 640 160a159.54 159.54 0 0 0 5.47 41.49L285.85 381.3A159.82 159.82 0 0 0 160 320C71.78 320 0 391.78 0 480s71.78 160 160 160a159.82 159.82 0 0 0 125.85-61.3l359.62 179.81A159.54 159.54 0 0 0 640 800c0 88.22 71.78 160 160 160s160-71.78 160-160-71.78-160-160-160zm0-576a96 96 0 1 1-96 96 96.11 96.11 0 0 1 96-96zM160 576a96 96 0 1 1 96-96 96.11 96.11 0 0 1-96 96zm640 320a96 96 0 1 1 96-96 96.11 96.11 0 0 1-96 96z"
+          data-name="Layer 2"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;

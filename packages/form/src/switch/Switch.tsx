@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import styled, { withTheme, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 
@@ -137,7 +137,6 @@ type Props = {
   round?: boolean;
   disabled?: boolean;
   iconLabelBack?: string;
-  theme: any;
   className?: string;
   style?: React.CSSProperties;
 };
@@ -191,6 +190,4 @@ class Switch extends Component<Props, State> {
   }
 }
 
-export default withTheme<Props, { theme: typeof defaultTheme }>(
-  Switch,
-);
+export default Switch;

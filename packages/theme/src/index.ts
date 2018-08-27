@@ -1,7 +1,7 @@
 import defaultVariables from './theme';
 import defaultComponentsTheme from './theme/components';
 
-import { colorPaletteGenerator } from './theme/helper';
+import { colorPaletteGenerator } from './helper';
 
 export { default as ThemeProvider } from './ThemeProvider';
 export { colorPaletteGenerator };
