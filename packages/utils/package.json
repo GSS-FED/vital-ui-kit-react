@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-utils",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
