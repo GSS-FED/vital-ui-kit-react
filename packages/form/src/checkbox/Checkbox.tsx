@@ -18,7 +18,7 @@ const Root = styled.label`
   &:hover {
     > span:first-child {
       box-shadow: ${({ theme }) =>
-        `0 0 0 2px ${rgba(theme.primary, 0.2)}`};
+        `0 0 0 2px ${rgba(theme.colors.primary, 0.2)}`};
     }
   }
 `;

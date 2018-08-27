@@ -1,10 +1,11 @@
 import { Interpolation } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 type StatusProps = {
   alarm: boolean;
   warning: boolean;
   success: boolean;
-  theme: any;
+  theme: typeof defaultTheme;
 };
 
 export const stateColor = (
@@ -18,7 +19,7 @@ export const stateColor = (
     return theme.colors.warning;
   }
   if (success) {
-    return theme.colros.success;
+    return theme.colors.success;
   }
   return defaultColor || theme.colors.primary;
 };

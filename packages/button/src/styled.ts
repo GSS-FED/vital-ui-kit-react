@@ -1,164 +1,176 @@
-import styled, { css } from 'styled-components';
-import { darken, lighten } from 'polished';
-import { defaultTheme } from '@vital-ui/react-theme';
+// TODO: sth wrong about typescript
+// import styled, { css } from 'styled-components';
+// import { darken, lighten } from 'polished';
+// import { defaultTheme } from '@vital-ui/react-theme';
 
-import { size as SIZE, natureColor } from './constant';
-import { Nature, Size } from './Button';
+// import { size as SIZE } from './constant';
+// import { Nature, Size } from './Button';
 
-const Button = styled.button<{
-  nature: Nature;
-  size: Size;
-  subtle?: boolean;
-  selected?: boolean;
-  flat?: boolean;
-  light?: boolean;
-  link?: boolean;
-  dark?: boolean;
-  underline?: boolean;
-  circle?: boolean;
-}>`
-  position: relative;
-  background: ${({ theme }) => theme.button.default.bg};
-  color: ${({ theme, nature }) => natureColor(theme)[nature]};
-  cursor: pointer;
-  border-width: 1px;
-  border-style: solid;
-  border-color: ${({ theme }) => theme.borderColor};
-  font-size: ${({ size }) => SIZE[size].fontSize};
-  border-radius: ${({ size }) => SIZE[size].borderRadius};
-  padding: ${({ size }) => SIZE[size].padding};
-  line-height: 1;
-  font-weight: normal;
-  margin: 0;
-  outline: none;
-  padding: ${({ size }) => SIZE[size].padding};
-  box-sizing: border-box;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
+// type StyledButtonProps = {
+//   nature: Nature;
+//   size: Size;
+//   subtle?: boolean;
+//   selected?: boolean;
+//   flat?: boolean;
+//   light?: boolean;
+//   link?: boolean;
+//   dark?: boolean;
+//   underline?: boolean;
+//   circle?: boolean;
+// };
 
-  &:hover {
-    background: ${({ theme }) => theme.button.default.hoverBg};
-  }
+// export const natureColor = (theme: typeof defaultTheme) => ({
+//   default: theme.colors.secondary700,
+//   primary: theme.colors.primary,
+//   success: theme.colors.success,
+//   info: theme.colors.info,
+//   alarm: theme.colors.alarm,
+//   warning: theme.colors.warning,
+// });
 
-  &:active {
-    background: ${({ theme }) => theme.button.default.activeBg};
-  }
+// const ButtonElement = styled<StyledButtonProps, 'button'>('button')`
+//   position: relative;
+//   background: ${({ theme }) => theme.button.default.bg};
+//   color: ${({ theme, nature }) => natureColor(theme)[nature]};
+//   cursor: pointer;
+//   border-width: 1px;
+//   border-style: solid;
+//   border-color: ${({ theme }) => theme.borderColor};
+//   font-size: ${({ size }) => SIZE[size].fontSize};
+//   border-radius: ${({ size }) => SIZE[size].borderRadius};
+//   padding: ${({ size }) => SIZE[size].padding};
+//   line-height: 1;
+//   font-weight: normal;
+//   margin: 0;
+//   outline: none;
+//   padding: ${({ size }) => SIZE[size].padding};
+//   box-sizing: border-box;
+//   vertical-align: middle;
+//   text-align: center;
+//   text-decoration: none;
 
-  ${({ subtle, selected, theme, nature }) =>
-    subtle &&
-    css`
-      background: ${selected
-        ? theme.button.subtle.bg
-        : 'transparent'};
-      color: ${nature === 'default'
-        ? theme.button.subtle.color
-        : natureColor(theme)[nature]};
-      border: 1px solid transparent;
+//   &:hover {
+//     background: ${({ theme }) => theme.button.default.hoverBg};
+//   }
 
-      &:hover {
-        background: ${theme.button.subtle.hoverBg};
-      }
-    `};
+//   &:active {
+//     background: ${({ theme }) => theme.button.default.activeBg};
+//   }
 
-  ${({ flat, nature, theme }) =>
-    flat &&
-    css`
-      background: ${nature === 'default'
-        ? theme.button.flat.bg
-        : natureColor(theme)[nature]};
-      color: ${nature === 'default'
-        ? natureColor(theme).default
-        : theme.button.flat.color};
-      border-color: ${nature === 'default'
-        ? theme.button.flat.bg
-        : natureColor(theme)[nature]};
+//   ${({ subtle, selected, theme, nature }) =>
+//     subtle &&
+//     css`
+//       background: ${selected
+//         ? theme.button.subtle.bg
+//         : 'transparent'};
+//       color: ${nature === 'default'
+//         ? theme.button.subtle.color
+//         : natureColor(theme)[nature]};
+//       border: 1px solid transparent;
 
-      &:hover {
-        background: ${nature === 'default'
-          ? theme.button.flat.hoverBg
-          : lighten(0.1, natureColor(theme)[nature])};
-        border-color: ${nature === 'default'
-          ? theme.borderColor
-          : lighten(0.1, natureColor(theme)[nature])};
-      }
-      &:active {
-        background: ${nature === 'default'
-          ? theme.button.flat.activeBg
-          : darken(0.12, natureColor(theme)[nature])};
-        border-color: ${nature === 'default'
-          ? theme.button.flat.activeBorderColor
-          : darken(0.12, natureColor(theme)[nature])};
-      }
-    `};
+//       &:hover {
+//         background: ${theme.button.subtle.hoverBg};
+//       }
+//     `};
 
-  ${({ light, theme, nature }) =>
-    light &&
-    css`
-      background: ${theme.button.light.bg};
-      color: ${natureColor(theme)[nature]};
+//   ${({ flat, nature, theme }) =>
+//     flat &&
+//     css`
+//       background: ${nature === 'default'
+//         ? theme.button.flat.bg
+//         : natureColor(theme)[nature]};
+//       color: ${nature === 'default'
+//         ? natureColor(theme).default
+//         : theme.button.flat.color};
+//       border-color: ${nature === 'default'
+//         ? theme.button.flat.bg
+//         : natureColor(theme)[nature]};
 
-      &:hover {
-        background: ${theme.button.light.hoverBg};
-      }
-    `}
+//       &:hover {
+//         background: ${nature === 'default'
+//           ? theme.button.flat.hoverBg
+//           : lighten(0.1, natureColor(theme)[nature])};
+//         border-color: ${nature === 'default'
+//           ? theme.borderColor
+//           : lighten(0.1, natureColor(theme)[nature])};
+//       }
+//       &:active {
+//         background: ${nature === 'default'
+//           ? theme.button.flat.activeBg
+//           : darken(0.12, natureColor(theme)[nature])};
+//         border-color: ${nature === 'default'
+//           ? theme.button.flat.activeBorderColor
+//           : darken(0.12, natureColor(theme)[nature])};
+//       }
+//     `};
 
-  ${({ link, theme }) =>
-    link &&
-    css`
-      background: ${theme.button.link.bg};
-      color: ${theme.button.link.color};
-      border: 1px solid transparent;
+//   ${({ light, theme, nature }) =>
+//     light &&
+//     css`
+//       background: ${theme.button.light.bg};
+//       color: ${natureColor(theme)[nature]};
 
-      &:hover {
-        background: ${theme.button.link.hoverBg};
-        color: ${theme.button.link.hoverColor};
-      }
-    `}
+//       &:hover {
+//         background: ${theme.button.light.hoverBg};
+//       }
+//     `}
 
-   ${({ link, dark, theme }) =>
-     link &&
-     dark &&
-     css`
-       color: ${theme.button.link.darkColor};
+//   ${({ link, theme }) =>
+//     link &&
+//     css`
+//       background: ${theme.button.link.bg};
+//       color: ${theme.button.link.color};
+//       border: 1px solid transparent;
 
-       &:hover {
-         color: ${theme.button.link.hoverDarkColor};
-       }
-     `}
+//       &:hover {
+//         background: ${theme.button.link.hoverBg};
+//         color: ${theme.button.link.hoverColor};
+//       }
+//     `}
 
-   ${({ underline }) =>
-     underline &&
-     css`
-       &:hover {
-         text-decoration: underline;
-       }
-     `}
+//    ${({ link, dark, theme }) =>
+//      link &&
+//      dark &&
+//      css`
+//        color: ${theme.button.link.darkColor};
 
-   ${({ circle }) =>
-     circle &&
-     css`
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 0;
-       border-radius: 100%;
-       width: 2.066rem;
-       line-height: 2.066rem;
-       height: 2.066rem;
-     `}
+//        &:hover {
+//          color: ${theme.button.link.hoverDarkColor};
+//        }
+//      `}
 
-  &[disabled] {
-    color: ${({ theme }) => theme.button.disabled.color};
-    border-color: ${({ theme }) => theme.button.disabled.borderColor};
-    background-color: ${({ theme }) => theme.button.disabled.bg};
-    cursor: not-allowed;
-    pointer-events: none;
-  }
-`;
+//    ${({ underline }) =>
+//      underline &&
+//      css`
+//        &:hover {
+//          text-decoration: underline;
+//        }
+//      `}
 
-Button.defaultProps = {
-  theme: defaultTheme,
-};
+//    ${({ circle }) =>
+//      circle &&
+//      css`
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//        padding: 0;
+//        border-radius: 100%;
+//        width: 2.066rem;
+//        line-height: 2.066rem;
+//        height: 2.066rem;
+//      `}
 
-export default Button;
+//   &[disabled] {
+//     color: ${({ theme }) => theme.button.disabled.color};
+//     border-color: ${({ theme }) => theme.button.disabled.borderColor};
+//     background-color: ${({ theme }) => theme.button.disabled.bg};
+//     cursor: not-allowed;
+//     pointer-events: none;
+//   }
+// `;
+
+// ButtonElement.defaultProps = {
+//   theme: defaultTheme,
+// };
+
+// export default ButtonElement;

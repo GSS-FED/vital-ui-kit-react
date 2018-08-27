@@ -69,6 +69,7 @@
     "cross-env": "5.2.0",
     "faker": "4.1.0",
     "husky": "1.0.0-rc.13",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "23.5.0",
     "jest-specific-snapshot": "1.0.0",
     "jest-styled-components": "5.0.1",

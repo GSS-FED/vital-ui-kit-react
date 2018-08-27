@@ -30,12 +30,3 @@ export const size = {
     height: '3rem',
   },
 };
-
-export const natureColor = (colors: any) => ({
-  default: colors.secondary700,
-  primary: colors.primary,
-  success: colors.success,
-  info: colors.info,
-  alarm: colors.alarm,
-  warning: colors.warning,
-});
