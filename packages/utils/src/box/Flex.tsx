@@ -31,7 +31,9 @@ export interface FlexBoxProps
     AlignSelfProps,
     JustifyContentProps,
     JustifySelfProps,
-    BoxProps {}
+    BoxProps {
+  flexGrow?: number;
+}
 
 export const Flex = styled(Box)<FlexBoxProps>`
   display: flex;
@@ -44,6 +46,7 @@ export const Flex = styled(Box)<FlexBoxProps>`
   ${alignSelf};
   ${justifyContent};
   ${justifySelf};
+  ${props => props.flexGrow};
 `;
 
 Flex.displayName = 'Vital_Flex';

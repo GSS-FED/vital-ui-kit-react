@@ -28,6 +28,7 @@ type Props = {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   className?: string;
   style?: React.CSSProperties;
+  name?: string;
 };
 
 type State = {

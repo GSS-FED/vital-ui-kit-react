@@ -11,7 +11,8 @@
   },
   "files": [
     "dist",
-    "lib"
+    "cjs",
+    "src"
   ],
   "sideEffects": false,
   "author": "Eric Yip (https://github.com/ericyip)",
