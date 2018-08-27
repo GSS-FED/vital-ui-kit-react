@@ -78,5 +78,8 @@
       "check-type",
       "check-typecast"
     ]
+  },
+  "linterOptions": {
+    "exclude": ["bin", "node_modules/**", "**/node_modules/**", "**/cjs/**", "**/dist/**"]
   }
 }

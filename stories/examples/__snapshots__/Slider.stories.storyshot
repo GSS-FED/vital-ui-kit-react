@@ -25,7 +25,7 @@ exports[`Storyshots Packages | Form/Slider Basic 1`] = `
   top: 0;
   position: absolute;
   border-radius: 100%;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #ffffff;
   box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
   text-indent: -3333px;
@@ -72,9 +72,9 @@ exports[`Storyshots Packages | Form/Slider Basic 1`] = `
   margin-top: -4px;
   background-repeat: repeat-x;
   border-radius: 5px;
-  border-color: #95ACD4;
+  border-color: #95ABD3;
   width: 100%;
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
   cursor: pointer;
 }
 
@@ -124,12 +124,12 @@ exports[`Storyshots Packages | Form/Slider Basic 1`] = `
 exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
 .c1 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 0.866rem;
   border-radius: 3px;
   padding: calc(0.4rem - 1px) 0.8rem;
@@ -144,7 +144,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,27 +166,27 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
 }
 
 .c1:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c1:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c1:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c1:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c1[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -215,7 +215,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   top: 0;
   position: absolute;
   border-radius: 100%;
-  border-color: #C4D2EB;
+  border-color: #C3D1EB;
   background-color: #ffffff;
   box-shadow: 0 0 0 1px rgba(196,210,235,0.3);
   text-indent: -3333px;
@@ -262,9 +262,9 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   margin-top: -4px;
   background-repeat: repeat-x;
   border-radius: 5px;
-  border-color: #95ACD4;
+  border-color: #95ABD3;
   width: 100%;
-  background-color: #D8E3F6;
+  background-color: #D8E2F5;
   cursor: pointer;
 }
 
@@ -277,6 +277,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
 >
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}
@@ -326,6 +327,7 @@ exports[`Storyshots Packages | Form/Slider with Custom Button 1`] = `
   </div>
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     onMouseDown={[Function]}
     onMouseUp={[Function]}

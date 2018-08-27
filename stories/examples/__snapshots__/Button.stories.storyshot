@@ -1,22 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Button ButtonGroup 1`] = `
-.c0 > button:not(:last-child) {
-  margin-right: 5px;
-}
-
-.c0 > button {
-  display: inline-block;
-}
-
 .c1 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -33,19 +25,27 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 }
 
 .c1:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c1:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c1[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.c0 > button:not(:last-child) {
+  margin-right: 5px;
+}
+
+.c0 > button {
+  display: inline-block;
 }
 
 <div
@@ -53,6 +53,7 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 >
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -61,6 +62,7 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
   </button>
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -69,6 +71,7 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
   </button>
   <button
     className="vital__button c1"
+    disabled={false}
     onClick={[Function]}
     selected={false}
     size="medium"
@@ -81,12 +84,12 @@ exports[`Storyshots Packages | Button ButtonGroup 1`] = `
 exports[`Storyshots Packages | Button Circular style 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -120,37 +123,39 @@ exports[`Storyshots Packages | Button Circular style 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"
 >
   <svg
-    className=""
-    height={16}
-    onClick={null}
-    viewBox="0 0 804.5714285714286 1024"
-    width={16}
+    color="#3b5998"
+    height="1em"
+    name="star"
+    viewBox="0 0 966.44 928.58"
+    width="1em"
   >
     <path
-      d="M804.571 420.571v109.714c0 30.286-24.571 54.857-54.857 54.857h-237.714v237.714c0 30.286-24.571 54.857-54.857 54.857h-109.714c-30.286 0-54.857-24.571-54.857-54.857v-237.714h-237.714c-30.286 0-54.857-24.571-54.857-54.857v-109.714c0-30.286 24.571-54.857 54.857-54.857h237.714v-237.714c0-30.286 24.571-54.857 54.857-54.857h109.714c30.286 0 54.857 24.571 54.857 54.857v237.714h237.714c30.286 0 54.857 24.571 54.857 54.857z"
-      fill="#3b5998"
+      d="M722.14 928.58A96.75 96.75 0 0 1 677 917.36l-178.55-93.89a32.72 32.72 0 0 0-30.45 0l-178.6 93.89a96.71 96.71 0 0 1-140.33-102l34.11-198.87a32.71 32.71 0 0 0-9.41-29L29.28 446.74a96.73 96.73 0 0 1 53.6-165l199.68-29a32.69 32.69 0 0 0 24.63-17.9l89.3-180.94a96.72 96.72 0 0 1 173.46 0l89.3 180.94a32.73 32.73 0 0 0 24.64 17.9l199.67 29a96.72 96.72 0 0 1 53.6 165L792.68 587.58a32.68 32.68 0 0 0-9.41 29l34.11 198.87a96.92 96.92 0 0 1-95.24 113.17zM483.22 755.71a96.65 96.65 0 0 1 45 11.11l178.59 93.9a32.73 32.73 0 0 0 47.48-34.5l-34.1-198.86A96.7 96.7 0 0 1 748 541.75l144.49-140.84a32.72 32.72 0 0 0-18.13-55.81l-199.68-29a96.67 96.67 0 0 1-72.82-52.9l-89.3-180.96a32.72 32.72 0 0 0-58.68 0l-89.3 180.94a96.67 96.67 0 0 1-72.82 52.9l-199.67 29A32.72 32.72 0 0 0 74 400.91l144.44 140.84a96.69 96.69 0 0 1 27.82 85.6l-34.11 198.87a32.72 32.72 0 0 0 47.47 34.5l178.6-93.9a96.61 96.61 0 0 1 45-11.11z"
+      data-name="Layer 2"
+      fill="currentColor"
     />
   </svg>
 </button>
@@ -159,12 +164,12 @@ exports[`Storyshots Packages | Button Circular style 1`] = `
 exports[`Storyshots Packages | Button Default 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -181,23 +186,24 @@ exports[`Storyshots Packages | Button Default 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -209,12 +215,12 @@ exports[`Storyshots Packages | Button Default 1`] = `
 exports[`Storyshots Packages | Button Disable 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -231,17 +237,17 @@ exports[`Storyshots Packages | Button Disable 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
@@ -260,12 +266,12 @@ exports[`Storyshots Packages | Button Disable 1`] = `
 exports[`Storyshots Packages | Button Flat 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -280,38 +286,39 @@ exports[`Storyshots Packages | Button Flat 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #EEF2FC;
-  color: #456297;
+  color: #456296;
   border-color: #EEF2FC;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
-  border-color: #D8E3F6;
+  background: #D8E2F5;
+  border-color: #D8E2F5;
 }
 
 .c0:active {
-  background: #95ACD4;
-  border-color: #95ACD4;
+  background: #95ABD3;
+  border-color: #95ABD3;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -323,12 +330,12 @@ exports[`Storyshots Packages | Button Flat 1`] = `
 exports[`Storyshots Packages | Button Light 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -343,31 +350,32 @@ exports[`Storyshots Packages | Button Light 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: #ffffff;
-  color: #456297;
+  color: #456296;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -379,12 +387,12 @@ exports[`Storyshots Packages | Button Light 1`] = `
 exports[`Storyshots Packages | Button Link 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -404,11 +412,11 @@ exports[`Storyshots Packages | Button Link 1`] = `
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
@@ -419,13 +427,14 @@ exports[`Storyshots Packages | Button Link 1`] = `
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"
@@ -437,12 +446,12 @@ exports[`Storyshots Packages | Button Link 1`] = `
 exports[`Storyshots Packages | Button Subtle 1`] = `
 .c0 {
   position: relative;
-  background: #F7F9FE;
-  color: #456297;
+  background: #F7F9FD;
+  color: #456296;
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: #D8E3F6;
+  border-color: #D8E2F5;
   font-size: 1rem;
   border-radius: 4px;
   padding: calc(0.533rem - 1px) 1.066rem;
@@ -457,32 +466,33 @@ exports[`Storyshots Packages | Button Subtle 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background: transparent;
-  color: #456297;
+  color: #456296;
   border: 1px solid transparent;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0:active {
-  background: #C4D2EB;
+  background: #C3D1EB;
 }
 
 .c0:hover {
-  background: #D8E3F6;
+  background: #D8E2F5;
 }
 
 .c0[disabled] {
   color: #93a8ce;
   border-color: #eaeff8;
-  background-color: #F7F9FE;
+  background-color: #F7F9FD;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 <button
   className="vital__button c0"
+  disabled={false}
   onClick={[Function]}
   selected={false}
   size="medium"

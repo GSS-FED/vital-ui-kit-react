@@ -16,7 +16,7 @@ exports[`Storyshots Packages | Avatar Basic 1`] = `
   right: calc(9px / -2);
   top: calc(9px / -2);
   left: auto;
-  right: NaN;
+  right: calc9px / -2;
 }
 
 .c2:before {
@@ -36,26 +36,49 @@ exports[`Storyshots Packages | Avatar Basic 1`] = `
 }
 
 .c1 {
+  overflow: hidden;
   width: 32px;
   height: 32px;
   border-radius: 3px;
-  background-color: #F0F0F0;
-  box-sizing: border-box;
 }
 
 <div
   className="vital__avatar c0"
 >
-  <img
-    className="vital__avatar-image c1"
+  <div
+    className="vital__avatar-image-wrapper c1"
     size="medium"
-    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTI0cHgiIGhlaWdodD0iMTI0cHgiIHZpZXdCb3g9IjAgMCAxMjQgMTI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0OC4yICg0NzMyNykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+R3JvdXAgMTc8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iQ29tcG9uZW50cy1BdmF0YXJzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ1OS4wMDAwMDAsIC0xODU0LjAwMDAwMCkiPgogICAgICAgIDxnIGlkPSJHcm91cC0xNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQ1OS4wMDAwMDAsIDE4NTQuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xNCIgZmlsbD0iIzcxODlCNiI+CiAgICAgICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlLTEwIiB4PSIwIiB5PSIwIiB3aWR0aD0iMTI0IiBoZWlnaHQ9IjEyNCI+PC9yZWN0PgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwtMiIgZmlsbD0iI0ZGRkZGRiIgY3g9IjYyIiBjeT0iNDEiIHI9IjE4Ij48L2NpcmNsZT4KICAgICAgICAgICAgPHBhdGggZD0iTTI4LDEwMiBDMjgsODIuMTE3NzQ5IDQzLjIyMjMxODUsNjYgNjIsNjYgQzgwLjc3NzY4MTUsNjYgOTYsODIuMTE3NzQ5IDk2LDEwMiBMMjgsMTAyIFoiIGlkPSJDb21iaW5lZC1TaGFwZS1Db3B5LTIiIGZpbGw9IiNGRkZGRkYiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="
-  />
+  >
+    <svg
+      height="32px"
+      viewBox="0 0 124 124"
+      width="32px"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 0h124v124H0z"
+          fill="#7189B6"
+        />
+        <circle
+          cx={62}
+          cy={41}
+          fill="#FFF"
+          r={18}
+        />
+        <path
+          d="M28 102c0-19.882 15.222-36 34-36s34 16.118 34 36H28z"
+          fill="#FFF"
+        />
+      </g>
+    </svg>
+  </div>
   <span
     className="vital__avatar-badge c2"
     label="99+"
     size="medium"
-    style={null}
   />
 </div>
 `;

@@ -2,7 +2,7 @@
 
 exports[`Storyshots Packages | Tab Basic 1`] = `
 Array [
-  .c5 {
+  .c6 {
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
@@ -12,7 +12,7 @@ Array [
   color: #ffffff;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
@@ -22,7 +22,7 @@ Array [
   color: #00C3FF;
 }
 
-.c4 {
+.c5 {
   padding: 2px 8px;
   font-size: 0.75rem;
   border-radius: 4.975rem;
@@ -39,11 +39,11 @@ Array [
   border-radius: 4px 4px 0 0;
   margin-right: 2px;
   cursor: pointer;
-  color: #456297;
+  color: #456296;
   background-color: #ffffff;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   padding: 5px 20px 4px;
   line-height: 1.4;
@@ -55,9 +55,12 @@ Array [
   cursor: pointer;
 }
 
-.c3 {
+.c4 {
   vertical-align: middle;
   display: inline-block;
+}
+
+.c3 {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: -1px;
@@ -86,47 +89,47 @@ Array [
         onClick={[Function]}
       >
         <span
-          className="c3"
+          className="c3 c4"
         >
           tab1
         </span>
         <span
-          className="vital__badge c4 c5"
+          className="vital__badge c5 c6"
         >
           10
         </span>
       </div>
       <div
-        className="vital__tab-item c6"
+        className="vital__tab-item c7"
         onClick={[Function]}
       >
         <span
-          className="c3"
+          className="c3 c4"
         >
           tab2
         </span>
         <span
-          className="vital__badge c4 c7"
+          className="vital__badge c5 c8"
         >
           99+
         </span>
       </div>
       <div
-        className="vital__tab-item c6"
+        className="vital__tab-item c7"
         onClick={[Function]}
       >
         <span
-          className="c3"
+          className="c3 c4"
         >
           tab3
         </span>
       </div>
       <div
-        className="vital__tab-item c6"
+        className="vital__tab-item c7"
         onClick={[Function]}
       >
         <span
-          className="c3"
+          className="c3 c4"
         >
           tab4
         </span>
