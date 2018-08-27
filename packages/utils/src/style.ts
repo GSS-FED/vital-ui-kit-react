@@ -1,8 +1,11 @@
+import { Interpolation } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
+
 type StatusProps = {
   alarm: boolean;
   warning: boolean;
   success: boolean;
-  theme: any;
+  theme: typeof defaultTheme;
 };
 
 export const stateColor = (
@@ -10,15 +13,15 @@ export const stateColor = (
   defaultColor?: string,
 ) => {
   if (alarm) {
-    return theme.alarm;
+    return theme.colors.alarm;
   }
   if (warning) {
-    return theme.warning;
+    return theme.colors.warning;
   }
   if (success) {
-    return theme.success;
+    return theme.colors.success;
   }
-  return defaultColor || theme.primary;
+  return defaultColor || theme.colors.primary;
 };
 
 export const transitionBase = (
@@ -48,3 +51,9 @@ export const borderRightRadius = (size: number) => `
   border-bottom-right-radius: ${size}px;
   border-top-right-radius: ${size}px;
 `;
+
+export interface CssProps<T = {}> {
+  css?: Interpolation<T>;
+}
+
+export const css = (props: CssProps) => props.css;

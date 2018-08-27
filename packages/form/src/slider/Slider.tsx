@@ -5,7 +5,6 @@
 
 import * as React from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
-import {} from '@vital-ui/react-icon';
 import { Tooltip } from '@vital-ui/react-tooltip';
 
 import {

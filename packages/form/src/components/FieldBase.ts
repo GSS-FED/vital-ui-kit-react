@@ -7,7 +7,7 @@ export const fieldWrapperBase = ({ theme = defaultTheme }) => css`
   width: 100%;
   line-height: 1;
   box-sizing: border-box;
-  background-color: ${theme.white};
+  background-color: ${theme.colors.white};
   border: 1px solid ${theme.form.borderColor};
   border-radius: 4px;
   transition: border-color ease-in-out 0.15s,
@@ -51,10 +51,10 @@ const fieldBase = ({
       css`
         pointer-events: none;
         background-color: ${theme.form.disabled.alarmBg};
-        border-color: ${theme.alarm};
+        border-color: ${theme.colors.alarm};
 
         &::placeholder {
-          color: ${theme.alarm};
+          color: ${theme.colors.alarm};
         }
       `};
   }
@@ -62,13 +62,13 @@ const fieldBase = ({
   ${({ alarm }) =>
     alarm &&
     css`
-      border-color: ${theme.alarm};
+      border-color: ${theme.colors.alarm};
     `};
 
   ${({ warning }) =>
     warning &&
     css`
-      border-color: ${theme.warning};
+      border-color: ${theme.colors.warning};
     `};
 `;
 

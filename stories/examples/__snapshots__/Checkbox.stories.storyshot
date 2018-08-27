@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
+.c3 {
+  color: #0E86FE;
+}
+
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -11,7 +15,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c3 {
+.c4 {
   color: #456296;
 }
 
@@ -30,7 +34,7 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
@@ -60,28 +64,31 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
       checked={false}
       className="c2"
     >
-      <svg
+      <div
+        className="c3"
         color="#0E86FE"
-        height="1em"
-        name="check"
-        size="12"
-        viewBox="0 0 903.77 739.84"
-        width="1em"
       >
-        <path
-          d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-          data-name="Layer 2"
-          fill="currentColor"
-        />
-      </svg>
+        <svg
+          height="1em"
+          role="img"
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </div>
   </span>
   <span
-    className="c3"
+    className="c4"
   >
     <input
       checked={false}
-      className="c4"
+      className="c5"
       disabled={false}
       onChange={[Function]}
       type="checkbox"
@@ -92,6 +99,10 @@ exports[`Storyshots Packages | Form/Checkbox Basic 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
+.c3 {
+  color: #0E86FE;
+}
+
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -102,7 +113,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c3 {
+.c4 {
   color: #456296;
 }
 
@@ -121,7 +132,7 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
   vertical-align: middle;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
@@ -154,28 +165,31 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         checked={false}
         className="c2"
       >
-        <svg
+        <div
+          className="c3"
           color="#0E86FE"
-          height="1em"
-          name="check"
-          size="12"
-          viewBox="0 0 903.77 739.84"
-          width="1em"
         >
-          <path
-            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-            data-name="Layer 2"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
       </div>
     </span>
     <span
-      className="c3"
+      className="c4"
     >
       <input
         checked={false}
-        className="c4"
+        className="c5"
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -195,28 +209,31 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         checked={false}
         className="c2"
       >
-        <svg
+        <div
+          className="c3"
           color="#0E86FE"
-          height="1em"
-          name="check"
-          size="12"
-          viewBox="0 0 903.77 739.84"
-          width="1em"
         >
-          <path
-            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-            data-name="Layer 2"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
       </div>
     </span>
     <span
-      className="c3"
+      className="c4"
     >
       <input
         checked={false}
-        className="c4"
+        className="c5"
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -236,28 +253,31 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
         checked={false}
         className="c2"
       >
-        <svg
+        <div
+          className="c3"
           color="#0E86FE"
-          height="1em"
-          name="check"
-          size="12"
-          viewBox="0 0 903.77 739.84"
-          width="1em"
         >
-          <path
-            d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-            data-name="Layer 2"
-            fill="currentColor"
-          />
-        </svg>
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
       </div>
     </span>
     <span
-      className="c3"
+      className="c4"
     >
       <input
         checked={false}
-        className="c4"
+        className="c5"
         disabled={false}
         onChange={[Function]}
         type="checkbox"
@@ -269,6 +289,10 @@ exports[`Storyshots Packages | Form/Checkbox CheckboxGroup 1`] = `
 `;
 
 exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
+.c3 {
+  color: #0E86FE;
+}
+
 .c0 {
   font-size: 15px;
   cursor: pointer;
@@ -279,7 +303,7 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
 }
 
-.c3 {
+.c4 {
   color: #456296;
 }
 
@@ -299,7 +323,7 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
   border-color: #95ABD3;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
@@ -329,28 +353,31 @@ exports[`Storyshots Packages | Form/Checkbox Custom Icon 1`] = `
       checked={true}
       className="c2"
     >
-      <svg
+      <div
+        className="c3"
         color="#0E86FE"
-        height="1em"
-        name="star"
-        size="12"
-        viewBox="0 0 903.77 739.84"
-        width="1em"
       >
-        <path
-          d="M291.88 739.84a31.91 31.91 0 0 1-22.63-9.38l-240-240a99.88 99.88 0 0 1 141.26-141.25l16 16a32 32 0 1 1-45.26 45.25l-16-16a35.88 35.88 0 0 0-50.74 50.75l217.37 217.37 537.37-537.37a35.88 35.88 0 0 0-50.74-50.75l-464 464a32 32 0 0 1-45.26 0l-64-64a32 32 0 0 1 45.26-45.25l41.37 41.37L733.25 29.21a99.88 99.88 0 1 1 141.26 141.25l-560 560a31.91 31.91 0 0 1-22.63 9.38z"
-          data-name="Layer 2"
-          fill="currentColor"
-        />
-      </svg>
+        <svg
+          height="1em"
+          role="img"
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
     </div>
   </span>
   <span
-    className="c3"
+    className="c4"
   >
     <input
       checked={true}
-      className="c4"
+      className="c5"
       disabled={false}
       type="checkbox"
     />

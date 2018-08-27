@@ -4,7 +4,6 @@ exports[`Storyshots Packages | Avatar Basic 1`] = `
 .c2 {
   position: absolute;
   background-color: #EB5000;
-  color: #ffffff;
   vertical-align: middle;
   height: 9px;
   line-height: 9px;

@@ -38,16 +38,11 @@ exports[`Storyshots Packages | Radio Basic 1`] = `
   cursor: pointer;
 }
 
-.c1:checked {
-  border-color: #0E86FE;
-}
-
 .c1:checked:after {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  background: #0E86FE;
 }
 
 .c1:after {
@@ -189,16 +184,11 @@ exports[`Storyshots Packages | Radio Disable 1`] = `
   cursor: pointer;
 }
 
-.c1:checked {
-  border-color: #C3D1EB;
-}
-
 .c1:checked:after {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  background: #95ABD3;
 }
 
 .c1:after {

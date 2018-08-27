@@ -4,7 +4,7 @@
  */
 import * as React from 'react';
 import styled from 'styled-components';
-import { Close } from '@vital-ui/react-icon';
+import { CloseIcon } from './icon/CloseIcon';
 
 const Li = styled.li`
   color: #ffffff;
@@ -43,11 +43,11 @@ export const Tag: React.SFC<TagProps> = ({
   <Li onClick={onClick}>
     <Content>{children}</Content>
     {onCloseClick && (
-      <Close
+      <CloseIcon
         onClick={onCloseClick}
         name="close"
         color="#fff"
-        size={13}
+        fontSize={13}
       />
     )}
   </Li>

@@ -14,25 +14,37 @@ type iconProps = {
   theme?: typeof defaultTheme;
 };
 
-// @ts-ignore
 const iconPositionStyle = ({
   iconPosition,
   theme = defaultTheme,
 }: iconProps) => {
   if (iconPosition === 'left') {
     return css`
-      left: 0;
+      left: 8px;
+      top: 8px;
+      z-index: 9;
       color: ${theme.form.inputIcon.leftColor};
     `;
   }
   return css`
-    right: 0;
+    right: 8px;
+    top: 8px;
+    z-index: 9;
     cursor: pointer;
 
     &:hover {
       color: ${theme.form.inputIcon.rightHoverColor};
     }
   `;
+};
+
+const IconButton = styled.div`
+  position: absolute;
+  ${iconPositionStyle};
+`;
+
+IconButton.defaultProps = {
+  theme: defaultTheme,
 };
 
 const Root = styled.div`
@@ -71,8 +83,6 @@ export type Props = {
   leftIcon?: IconProps;
   /** Right Icon name, or Icon component */
   rightIcon?: IconProps;
-  /** Right Icon on Click */
-  onRightIconClick?: () => void;
   /** Default value of input */
   defaultValue?: string;
   value?: string;
@@ -89,10 +99,6 @@ export type Props = {
   /** default: `vital__input` */
   className?: string;
   style?: React.CSSProperties;
-  /** will remove */
-  icon?: string;
-  /** `left` or `right` */
-  iconPosition?: IconPosition;
   /** On Change */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   theme?: typeof defaultTheme;
@@ -113,13 +119,11 @@ class StatelessInput extends React.Component<Props> {
     spellCheck: false,
     style: undefined,
     className: '',
-    iconPosition: 'right' as IconPosition,
-    icon: undefined,
   };
 
-  renderIcon = (icon: IconProps, onClick?: () => void) => {
+  renderIcon = (icon: IconProps, position: IconPosition) => {
     if (ReactIs.isElement(icon)) {
-      return icon;
+      return <IconButton iconPosition={position}>{icon}</IconButton>;
     }
     return null;
   };
@@ -139,9 +143,6 @@ class StatelessInput extends React.Component<Props> {
       rightIcon,
       style,
       className,
-      icon,
-      iconPosition,
-      onRightIconClick,
       onChange,
       value,
       theme = defaultTheme,
@@ -168,8 +169,8 @@ class StatelessInput extends React.Component<Props> {
           theme={theme}
           {...props}
         />
-        {leftIcon && this.renderIcon(leftIcon)}
-        {rightIcon && this.renderIcon(rightIcon, onRightIconClick)}
+        {leftIcon && this.renderIcon(leftIcon, 'left')}
+        {rightIcon && this.renderIcon(rightIcon, 'right')}
       </Root>
     );
   }
