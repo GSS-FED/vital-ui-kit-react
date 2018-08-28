@@ -102,7 +102,7 @@ export type Props = {
   /** On Change */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   theme?: typeof defaultTheme;
-  name: string;
+  name?: string;
 };
 
 class StatelessInput extends React.Component<Props> {
