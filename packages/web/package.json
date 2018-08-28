@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "description": "Vital UI Kit for React!",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -33,7 +33,7 @@
     "@vital-ui/react-badge": "^0.8.9",
     "@vital-ui/react-button": "^0.8.8",
     "@vital-ui/react-card": "^0.8.9",
-    "@vital-ui/react-form": "^0.8.9",
+    "@vital-ui/react-form": "^0.8.10",
     "@vital-ui/react-icon": "^0.8.8",
     "@vital-ui/react-layout": "^0.8.8",
     "@vital-ui/react-list": "^0.8.9",

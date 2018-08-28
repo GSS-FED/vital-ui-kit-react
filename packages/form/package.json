@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
