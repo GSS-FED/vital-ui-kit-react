@@ -703,7 +703,7 @@ acorn-globals@^4.1.0:
   dependencies:
     acorn "^5.0.0"
 
-acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0:
+acorn@^5.0.0, acorn@^5.3.0:
   version "5.6.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.6.2.tgz#b1da1d7be2ac1b4a327fb9eab851702c5045b4e7"
 
@@ -714,6 +714,10 @@ acorn@^5.5.3:
 acorn@^5.6.2:
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.2.tgz#91fa871883485d06708800318404e72bfb26dcc5"
+
+acorn@^5.7.3:
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.3.tgz#67aa231bf8812974b85235a96771eb6bd07ea279"
 
 add-dom-event-listener@1.x:
   version "1.0.2"
@@ -6482,7 +6486,7 @@ lru-cache@^4.0.1, lru-cache@^4.1.1, lru-cache@^4.1.2:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-magic-string@^0.22.4:
+magic-string@^0.22.4, magic-string@^0.22.5:
   version "0.22.5"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.22.5.tgz#8e9cf5afddf44385c1da5bc2a6a0dbd10b03657e"
   dependencies:
@@ -8979,16 +8983,16 @@ rollup-plugin-json@3.0.0:
   dependencies:
     rollup-pluginutils "^2.2.0"
 
-rollup-plugin-node-globals@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-node-globals/-/rollup-plugin-node-globals-1.2.1.tgz#2bd8309c19a0390b54cfac19a3bc13eabf3e5541"
+rollup-plugin-node-globals@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-node-globals/-/rollup-plugin-node-globals-1.4.0.tgz#5e1f24a9bb97c0ef51249f625e16c7e61b7c020b"
   dependencies:
-    acorn "^5.5.0"
+    acorn "^5.7.3"
     buffer-es6 "^4.9.3"
-    estree-walker "^0.5.1"
-    magic-string "^0.22.4"
+    estree-walker "^0.5.2"
+    magic-string "^0.22.5"
     process-es6 "^0.11.6"
-    rollup-pluginutils "^2.0.1"
+    rollup-pluginutils "^2.3.1"
 
 rollup-plugin-node-resolve@3.3.0:
   version "3.3.0"
@@ -9048,6 +9052,13 @@ rollup-pluginutils@^1.5.0, rollup-pluginutils@^1.5.1:
 rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.0.tgz#478ace04bd7f6da2e724356ca798214884738fc4"
+  dependencies:
+    estree-walker "^0.5.2"
+    micromatch "^2.3.11"
+
+rollup-pluginutils@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.3.1.tgz#760d185ccc237dedc12d7ae48c6bcd127b4892d0"
   dependencies:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
