@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-avatar",
-  "version": "0.8.11-0",
+  "version": "0.8.11-1",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -23,8 +23,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-theme": "^0.8.11-0",
-    "@vital-ui/react-utils": "^0.8.11-0",
+    "@vital-ui/react-theme": "^0.8.11-1",
+    "@vital-ui/react-utils": "^0.8.11-1",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
