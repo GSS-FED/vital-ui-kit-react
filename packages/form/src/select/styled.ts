@@ -78,6 +78,7 @@ export const SelectButton = styled.div`
   text-align: left;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 `;
 
 SelectButton.defaultProps = {

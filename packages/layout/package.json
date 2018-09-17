@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-layout",
-  "version": "0.8.8",
+  "version": "0.8.11-0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,7 +16,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.3"
   },
   "dependencies": {
     "classnames": "^2.2.6"

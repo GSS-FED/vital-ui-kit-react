@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.8.10",
+  "version": "0.8.11-0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,19 +16,19 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-button": "^0.8.8",
-    "@vital-ui/react-icon": "^0.8.8",
-    "@vital-ui/react-theme": "^0.8.8",
-    "@vital-ui/react-tooltip": "^0.8.8",
-    "@vital-ui/react-utils": "^0.8.9",
+    "@vital-ui/react-button": "^0.8.11-0",
+    "@vital-ui/react-icon": "^0.8.11-0",
+    "@vital-ui/react-theme": "^0.8.11-0",
+    "@vital-ui/react-tooltip": "^0.8.11-0",
+    "@vital-ui/react-utils": "^0.8.11-0",
     "classnames": "^2.2.6",
-    "downshift": "^2.0.10",
+    "downshift": "^2.2.2",
     "polished": "2.0.3",
     "react-click-outside": "3",
-    "react-is": "^16.4.1",
+    "react-is": "^16.5.1",
     "resize-observer-polyfill": "1.5.0"
   },
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.3"
   }
 }

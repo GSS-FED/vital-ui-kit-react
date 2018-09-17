@@ -5,6 +5,7 @@ import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
 import '../packages/web/src/global.css';
+import { ThemeProvider } from '../packages/theme/dist';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
@@ -45,7 +46,7 @@ setOptions({
   sidebarAnimations: false,
 });
 
-// addDecorator(story => <VitalProvider>{story()}</VitalProvider>);
+addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
 // automatically import all files ending in *.stories.js
 // const req = require.context('../stories', true, /.stories.jsx$/);
 const req = require.context('../stories', true, /.stories.tsx$/);

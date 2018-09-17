@@ -6,7 +6,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { trunTo } from '@vital-ui/react-utils';
+import {
+  trunTo,
+  superBoxStyle,
+  BoxProps,
+} from '@vital-ui/react-utils';
 import cn from 'classnames';
 
 const inverseOrNot = ({
@@ -22,13 +26,17 @@ const inverseOrNot = ({
   color: ${inverse ? theme.badge.inverseColor : theme.badge.color};
 `;
 
-const Root = styled.span<{ inverse: boolean }>`
+interface RootProps extends BoxProps {
+  inverse: boolean;
+}
+
+const Root = styled<RootProps, 'span'>('span')`
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
   border-radius: 0.75rem;
   font-size: 0.725rem;
-
+  ${superBoxStyle};
   ${inverseOrNot};
 `;
 
@@ -36,7 +44,7 @@ Root.defaultProps = {
   theme: defaultTheme,
 };
 
-export interface BadgeProps {
+export interface BadgeProps extends BoxProps {
   /** Text on the badge */
   label: string | number;
   /** Show 99+ if number is more than 100 */

@@ -110,7 +110,6 @@ class StatelessInput extends React.Component<Props> {
     type: 'text',
     placeholder: null,
     rightIcon: undefined,
-    onRightIconClick: undefined,
     leftIcon: undefined,
     defaultValue: undefined,
     disabled: false,

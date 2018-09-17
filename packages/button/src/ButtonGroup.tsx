@@ -5,11 +5,14 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { Box, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled.div<{
+type RootProps = {
   marginHorizontal: string;
   vertical: boolean;
-}>`
+};
+
+const Root = styled<RootProps, any>(Box)`
   > button:not(:last-child) {
     margin-right: ${({ vertical, marginHorizontal }) =>
       vertical ? 0 : marginHorizontal};
@@ -20,7 +23,7 @@ const Root = styled.div<{
   }
 `;
 
-export interface ButtonGroupProps {
+export interface ButtonGroupProps extends BoxProps {
   vertical?: boolean;
   /** Horizontal margin between buttons */
   marginHorizontal?: string;

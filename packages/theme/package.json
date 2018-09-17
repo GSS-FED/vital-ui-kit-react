@@ -1,10 +1,9 @@
 {
   "name": "@vital-ui/react-theme",
-  "version": "0.8.8",
+  "version": "0.8.11-0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "sideEffects": [
     "*.css"
   ],
@@ -17,10 +16,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/lodash.merge": "^4.6.4",
-    "copyfiles": "^2.0.0",
-    "react": "16.4.2",
+    "copyfiles": "^2.1.0",
+    "react": "16.5.1",
     "styled-components": "3.4.5",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.3"
   },
   "peerDependencies": {
     "react": "^16",
@@ -31,6 +30,6 @@
     "classnames": "^2.2.6",
     "fs-extra": "^7.0.0",
     "lodash.merge": "^4.6.1",
-    "polished": "^2.0.0"
+    "polished": "^2.0.3"
   }
 }
