@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-theme",
-  "version": "0.8.11-1",
+  "version": "0.8.11-2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -19,7 +19,7 @@
     "copyfiles": "^2.1.0",
     "react": "16.5.1",
     "styled-components": "3.4.5",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.1"
   },
   "peerDependencies": {
     "react": "^16",

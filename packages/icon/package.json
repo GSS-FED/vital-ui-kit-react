@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-icon",
-  "version": "0.8.11-1",
+  "version": "0.8.11-2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@svgr/cli": "^2.4.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.1"
   },
   "dependencies": {
     "classnames": "^2.2.6"

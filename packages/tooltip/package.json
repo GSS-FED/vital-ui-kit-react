@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-tooltip",
-  "version": "0.8.11-1",
+  "version": "0.8.11-2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "copyfiles": "^2.1.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.1"
   }
 }
