@@ -7,17 +7,18 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { Box, BoxProps } from '@vital-ui/react-utils';
 
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 import FooterButton from './FooterButton';
 
-const Root = styled.div<{
-  width?: string;
-  height?: string;
+interface CardRootProps extends BoxProps {
   shadow?: boolean;
-}>`
+}
+
+const Root = styled<CardRootProps, any>(Box)`
   position: relative;
   display: flex;
   margin: auto;
@@ -38,12 +39,9 @@ Root.defaultProps = {
   theme: defaultTheme,
 };
 
-export interface CardProps {
+export interface CardProps extends BoxProps {
   children: React.ReactNode;
-  width?: string;
-  height?: string;
   shadow?: boolean;
-  className?: string;
 }
 
 /**
@@ -87,6 +85,7 @@ class Card extends React.Component<CardProps> {
       ...props
     } = this.props;
     return (
+      // @ts-ignore
       <Root
         className={cn('vital__card', className)}
         width={width}

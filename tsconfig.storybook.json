@@ -9,7 +9,8 @@
     "noUnusedLocals": false,
     "declaration": false,
     "rootDir": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "."
   },
   "include": [
     "packages", "stories"

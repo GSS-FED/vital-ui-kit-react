@@ -9,7 +9,8 @@ import { defaultTheme } from '@vital-ui/react-theme';
 import {
   trunTo,
   superBoxStyle,
-  BoxProps,
+  CssProps,
+  css,
 } from '@vital-ui/react-utils';
 import cn from 'classnames';
 
@@ -26,7 +27,7 @@ const inverseOrNot = ({
   color: ${inverse ? theme.badge.inverseColor : theme.badge.color};
 `;
 
-interface RootProps extends BoxProps {
+interface RootProps extends CssProps {
   inverse: boolean;
 }
 
@@ -38,13 +39,14 @@ const Root = styled<RootProps, 'span'>('span')`
   font-size: 0.725rem;
   ${superBoxStyle};
   ${inverseOrNot};
+  ${css};
 `;
 
 Root.defaultProps = {
   theme: defaultTheme,
 };
 
-export interface BadgeProps extends BoxProps {
+export interface BadgeProps extends CssProps {
   /** Text on the badge */
   label: string | number;
   /** Show 99+ if number is more than 100 */
@@ -64,14 +66,14 @@ export interface BadgeProps extends BoxProps {
  * <Badge label="99+" />
  */
 
-export const Badge = ({
+export const Badge: React.SFC<BadgeProps> = ({
   label,
   trunc = true,
   inverse = false,
   className,
   style,
   ...props
-}: BadgeProps) => (
+}) => (
   <Root
     inverse={inverse}
     className={cn('vital__badge', className)}

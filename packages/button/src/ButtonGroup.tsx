@@ -3,14 +3,14 @@
  * MIT license
  */
 
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Box, BoxProps } from '@vital-ui/react-utils';
 
-type RootProps = {
+interface RootProps extends BoxProps {
   marginHorizontal: string;
   vertical: boolean;
-};
+}
 
 const Root = styled<RootProps, any>(Box)`
   > button:not(:last-child) {
@@ -23,7 +23,7 @@ const Root = styled<RootProps, any>(Box)`
   }
 `;
 
-export interface ButtonGroupProps extends BoxProps {
+export interface ButtonGroupProps {
   vertical?: boolean;
   /** Horizontal margin between buttons */
   marginHorizontal?: string;
@@ -32,17 +32,22 @@ export interface ButtonGroupProps extends BoxProps {
   style?: React.CSSProperties;
 }
 
-export const ButtonGroup: React.SFC<ButtonGroupProps> = ({
-  children,
-  marginHorizontal = '5px',
-  vertical = false,
-  ...props
-}) => (
-  <Root
-    vertical={vertical}
-    marginHorizontal={marginHorizontal}
-    {...props}
-  >
-    {children}
-  </Root>
-);
+export class ButtonGroup extends React.Component<ButtonGroupProps> {
+  render() {
+    const {
+      children,
+      marginHorizontal = '5px',
+      vertical = false,
+      ...props
+    } = this.props;
+    return (
+      <Root
+        vertical={vertical}
+        marginHorizontal={marginHorizontal}
+        {...props}
+      >
+        {children}
+      </Root>
+    );
+  }
+}

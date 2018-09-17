@@ -34,6 +34,7 @@ export const white = '#ffffff' as '#ffffff';
 export const primary = primary500;
 export const secondary = secondary500;
 
+// status color
 export const info = '#00C3FF' as '#00C3FF';
 export const success = '#2BCD86' as '#2BCD86';
 export const alarm = '#EB5000' as '#EB5000';

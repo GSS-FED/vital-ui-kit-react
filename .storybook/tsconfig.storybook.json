@@ -6,6 +6,7 @@
     "noImplicitThis": false,
     "noImplicitAny": false,
     "strictNullChecks": false,
+    "baseUrl": "../"
   },
   "exclude": ["node_modules"]
 }

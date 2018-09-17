@@ -123,7 +123,7 @@ class ListItem extends React.Component<Props, State> {
   };
 
   startAnimation = () => {
-    const stylerBall = styler(this.child);
+    const stylerBall = styler(this.child, {});
     // Animation after state change
     if (!this.state.open) {
       this.child.style.display = '';

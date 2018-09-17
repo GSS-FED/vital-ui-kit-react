@@ -53,7 +53,7 @@ export const borderRightRadius = (size: number) => `
 `;
 
 export interface CssProps<T = {}> {
-  css?: Interpolation<T>;
+  css?: Interpolation<T> | string;
 }
 
 export const css = (props: CssProps) => props.css;
