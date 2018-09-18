@@ -5,22 +5,13 @@
 
 import * as React from 'react';
 import cn from 'classnames';
-import styled, { css } from 'styled-components';
+import { Nature, Size, BuiltinSize } from './constant';
+
+import styled, { css, ThemedStyledProps } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { size as SIZE } from './constant';
 
-export type Nature =
-  | 'default'
-  | 'primary'
-  | 'success'
-  | 'info'
-  | 'alarm'
-  | 'warning';
-
-export type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
-
-type StyledButtonProps = {
+type ButtonElementProps = {
   nature: Nature;
   size: Size;
   subtle?: boolean;
@@ -31,7 +22,20 @@ type StyledButtonProps = {
   dark?: boolean;
   underline?: boolean;
   circle?: boolean;
+  builtinSize?: BuiltinSize;
 };
+
+type StyledButtonProps = ThemedStyledProps<
+  ButtonElementProps,
+  typeof defaultTheme
+>;
+
+function builtInOrTheme(
+  builtin: BuiltinSize | undefined,
+  theme: typeof defaultTheme,
+) {
+  return builtin ? builtin : theme.button;
+}
 
 export const natureColor = (theme: typeof defaultTheme) => ({
   default: theme.colors.secondary700,
@@ -42,137 +46,164 @@ export const natureColor = (theme: typeof defaultTheme) => ({
   warning: theme.colors.warning,
 });
 
-const ButtonElement = styled<StyledButtonProps, 'button'>('button')`
+const buttonBaseStyle = ({
+  theme,
+  size,
+  nature,
+  builtinSize,
+}: StyledButtonProps) => css`
   position: relative;
-  background: ${({ theme }) => theme.button.default.bg};
-  color: ${({ theme, nature }) => natureColor(theme)[nature]};
+  background: ${theme.button.default.bg};
+  color: ${natureColor(theme)[nature]};
   cursor: pointer;
   border-width: 1px;
   border-style: solid;
-  border-color: ${({ theme }) => theme.borderColor};
-  font-size: ${({ size }) => SIZE[size].fontSize};
-  border-radius: ${({ size }) => SIZE[size].borderRadius};
-  padding: ${({ size }) => SIZE[size].padding};
+  border-color: ${theme.borderColor};
+  font-size: ${builtInOrTheme(builtinSize, theme)[size].fontSize};
+  border-radius: ${builtInOrTheme(builtinSize, theme)[size]
+    .borderRadius};
+  padding: ${builtInOrTheme(builtinSize, theme)[size].padding};
   line-height: 1;
   font-weight: normal;
   margin: 0;
   outline: none;
-  padding: ${({ size }) => SIZE[size].padding};
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-
   &:hover {
-    background: ${({ theme }) => theme.button.default.hoverBg};
+    background: ${theme.button.default.hoverBg};
   }
 
   &:active {
-    background: ${({ theme }) => theme.button.default.activeBg};
+    background: ${theme.button.default.activeBg};
   }
+`;
 
-  ${({ subtle, selected, theme, nature }) =>
-    subtle &&
-    css`
-      background: ${selected
-        ? theme.button.subtle.bg
-        : 'transparent'};
-      color: ${nature === 'default'
-        ? theme.button.subtle.color
-        : natureColor(theme)[nature]};
-      border: 1px solid transparent;
+const subtleStyle = ({
+  subtle,
+  selected,
+  theme,
+  nature,
+}: StyledButtonProps) =>
+  subtle &&
+  css`
+    background: ${selected ? theme.button.subtle.bg : 'transparent'};
+    color: ${nature === 'default'
+      ? theme.button.subtle.color
+      : natureColor(theme)[nature]};
+    border: 1px solid transparent;
 
-      &:hover {
-        background: ${theme.button.subtle.hoverBg};
-      }
-    `};
+    &:hover {
+      background: ${theme.button.subtle.hoverBg};
+    }
+  `;
 
-  ${({ flat, nature, theme }) =>
-    flat &&
-    css`
+const flatStyle = ({ flat, nature, theme }: StyledButtonProps) =>
+  flat &&
+  css`
+    background: ${nature === 'default'
+      ? theme.button.flat.bg
+      : natureColor(theme)[nature]};
+    color: ${nature === 'default'
+      ? natureColor(theme).default
+      : theme.button.flat.color};
+    border-color: ${nature === 'default'
+      ? theme.button.flat.bg
+      : natureColor(theme)[nature]};
+
+    &:hover {
       background: ${nature === 'default'
-        ? theme.button.flat.bg
-        : natureColor(theme)[nature]};
-      color: ${nature === 'default'
-        ? natureColor(theme).default
-        : theme.button.flat.color};
+        ? theme.button.flat.hoverBg
+        : lighten(0.1, natureColor(theme)[nature])};
       border-color: ${nature === 'default'
-        ? theme.button.flat.bg
-        : natureColor(theme)[nature]};
+        ? theme.borderColor
+        : lighten(0.1, natureColor(theme)[nature])};
+    }
+    &:active {
+      background: ${nature === 'default'
+        ? theme.button.flat.activeBg
+        : darken(0.12, natureColor(theme)[nature])};
+      border-color: ${nature === 'default'
+        ? theme.button.flat.activeBorderColor
+        : darken(0.12, natureColor(theme)[nature])};
+    }
+  `;
 
-      &:hover {
-        background: ${nature === 'default'
-          ? theme.button.flat.hoverBg
-          : lighten(0.1, natureColor(theme)[nature])};
-        border-color: ${nature === 'default'
-          ? theme.borderColor
-          : lighten(0.1, natureColor(theme)[nature])};
-      }
-      &:active {
-        background: ${nature === 'default'
-          ? theme.button.flat.activeBg
-          : darken(0.12, natureColor(theme)[nature])};
-        border-color: ${nature === 'default'
-          ? theme.button.flat.activeBorderColor
-          : darken(0.12, natureColor(theme)[nature])};
-      }
-    `};
+const lightStyle = ({ light, theme, nature }: StyledButtonProps) =>
+  light &&
+  css`
+    background: ${theme.button.light.bg};
+    color: ${natureColor(theme)[nature]};
 
-  ${({ light, theme, nature }) =>
-    light &&
-    css`
-      background: ${theme.button.light.bg};
-      color: ${natureColor(theme)[nature]};
+    &:hover {
+      background: ${theme.button.light.hoverBg};
+    }
+  `;
 
-      &:hover {
-        background: ${theme.button.light.hoverBg};
-      }
-    `}
+const linkStyle = ({ link, theme }: StyledButtonProps) =>
+  link &&
+  css`
+    background: ${theme.button.link.bg};
+    color: ${theme.button.link.color};
+    border: 1px solid transparent;
 
-  ${({ link, theme }) =>
-    link &&
-    css`
-      background: ${theme.button.link.bg};
-      color: ${theme.button.link.color};
-      border: 1px solid transparent;
+    &:hover {
+      background: ${theme.button.link.hoverBg};
+      color: ${theme.button.link.hoverColor};
+    }
+  `;
 
-      &:hover {
-        background: ${theme.button.link.hoverBg};
-        color: ${theme.button.link.hoverColor};
-      }
-    `}
+const linkDarkStyle = ({ link, dark, theme }: StyledButtonProps) =>
+  link &&
+  dark &&
+  css`
+    color: ${theme.button.link.darkColor};
 
-   ${({ link, dark, theme }) =>
-     link &&
-     dark &&
-     css`
-       color: ${theme.button.link.darkColor};
+    &:hover {
+      color: ${theme.button.link.hoverDarkColor};
+    }
+  `;
 
-       &:hover {
-         color: ${theme.button.link.hoverDarkColor};
-       }
-     `}
+const underlineStyle = ({ underline }: StyledButtonProps) =>
+  underline &&
+  css`
+    &:hover {
+      text-decoration: underline;
+    }
+  `;
 
-   ${({ underline }) =>
-     underline &&
-     css`
-       &:hover {
-         text-decoration: underline;
-       }
-     `}
+const circleStyle = ({ circle }: StyledButtonProps) =>
+  circle &&
+  css`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 100%;
+    width: 2.066rem;
+    line-height: 2.066rem;
+    height: 2.066rem;
+  `;
 
-   ${({ circle }) =>
-     circle &&
-     css`
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       padding: 0;
-       border-radius: 100%;
-       width: 2.066rem;
-       line-height: 2.066rem;
-       height: 2.066rem;
-     `}
+const ButtonElement = styled<ButtonElementProps, 'button'>('button')`
+  /* Basic */
+  ${buttonBaseStyle}
+  /* subtle */
+  ${subtleStyle}
+  /* flat */
+  ${flatStyle}
+  /* light */
+  ${lightStyle}
+  /* link */
+  ${linkStyle}
+  ${linkDarkStyle}
+
+  /* underline */
+  ${underlineStyle}
+
+  /* circle */
+  ${circleStyle};
 
   &[disabled] {
     color: ${({ theme }) => theme.button.disabled.color};
@@ -187,13 +218,13 @@ ButtonElement.defaultProps = {
   theme: defaultTheme,
 };
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** `vital_button` */
   className?: string;
   /** The content of the button */
   children?: React.ReactNode;
-  /** on click event */
-  onClick?: () => void;
+  builtinSize?: BuiltinSize;
   /** 6 nature state */
   nature?: Nature;
   /** Flat style */
@@ -215,9 +246,6 @@ export interface ButtonProps {
   underline?: boolean;
   disabled?: boolean;
 }
-
-/* tslint:disable-next-line */
-const noop = () => {};
 
 /**
  * @render react
@@ -249,9 +277,6 @@ export class Button extends React.Component<ButtonProps> {
     link: false,
     subtle: false,
     selected: false,
-    onClick: noop,
-    style: undefined,
-    className: '',
     disabled: false,
   };
 
@@ -260,7 +285,6 @@ export class Button extends React.Component<ButtonProps> {
       children,
       className,
       style,
-      onClick,
       nature = 'default',
       size = 'medium',
       ...props
@@ -269,7 +293,6 @@ export class Button extends React.Component<ButtonProps> {
       <ButtonElement
         className={cn('vital__button', className)}
         style={style}
-        onClick={onClick}
         nature={nature}
         size={size}
         {...props}

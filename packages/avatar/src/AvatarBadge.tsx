@@ -2,16 +2,18 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { trunTo } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { badgeSizes, Size } from './constants';
+import { Size } from './constants';
 
 const badgeTransformStyle = ({
   size,
   circle,
   label,
+  theme,
 }: {
   size: Size;
   label: string | number;
   circle: boolean;
+  theme: typeof defaultTheme;
 }) => {
   if (size === 'xlarge') {
     return css`
@@ -20,7 +22,9 @@ const badgeTransformStyle = ({
       font-size: 0.725rem;
       left: ${circle ? '70%' : 'auto'};
       right: ${circle ? 'auto' : '-12%'};
-      top: ${circle ? 0 : `calc(${badgeSizes[size].height} / -2)`};
+      top: ${circle
+        ? 0
+        : `calc(${theme.avatar[size].badgeHeight} / -2)`};
     `;
   }
   // circle badge style
@@ -28,12 +32,16 @@ const badgeTransformStyle = ({
     padding: 0;
     border-radius: 50%;
     font-size: 0;
-    width: ${badgeSizes[size].height};
-    height: ${badgeSizes[size].height};
-    right: calc(${badgeSizes[size].height} / -2);
-    top: ${circle ? 0 : `calc(${badgeSizes[size].height} / -2)`};
+    width: ${theme.avatar[size].badgeHeight};
+    height: ${theme.avatar[size].badgeHeight};
+    right: calc(${theme.avatar[size].badgeHeight} / -2);
+    top: ${circle
+      ? 0
+      : `calc(${theme.avatar[size].badgeHeight} / -2)`};
     left: ${circle ? '70%' : 'auto'};
-    right: ${circle ? 'auto' : `calc${badgeSizes[size].height} / -2`};
+    right: ${circle
+      ? 'auto'
+      : `calc${theme.avatar[size].badgeHeight} / -2`};
 
     &:before {
       content: '';
@@ -48,17 +56,19 @@ const badgeTransformStyle = ({
   `;
 };
 
-const Root = styled.span<{
+type RootProps = {
   size: Size;
   label: string | number;
   circle: boolean;
-}>`
+};
+
+const Root = styled<RootProps, 'span'>('span')`
   position: absolute;
   background-color: ${({ theme }) => theme.avatar.badgeBg};
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.colors.white};
   vertical-align: middle;
-  height: ${({ size }) => badgeSizes[size].height};
-  line-height: ${({ size }) => badgeSizes[size].height};
+  height: ${({ size, theme }) => theme.avatar[size].badgeHeight};
+  line-height: ${({ size, theme }) => theme.avatar[size].badgeHeight};
   ${badgeTransformStyle};
 `;
 

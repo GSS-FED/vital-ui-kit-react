@@ -31,9 +31,9 @@ const Input = (props: InputProps) => (
 const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
-}> = ({ text, children, ...props }) => (
+}> = ({ text = '', children, ...props }) => (
   <SelectButton {...props}>
-    {text && <SelectButtonText>{text}</SelectButtonText>}
+    {<SelectButtonText>{text}</SelectButtonText>}
     {children}
   </SelectButton>
 );

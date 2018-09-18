@@ -3,7 +3,7 @@ import { configure, addDecorator } from '@storybook/react';
 import * as React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
-
+import { ThemeProvider } from '../packages/theme/dist';
 import '../packages/web/src/global.css';
 
 function loadStories() {
@@ -45,7 +45,7 @@ setOptions({
   sidebarAnimations: false,
 });
 
-// addDecorator(story => <VitalProvider>{story()}</VitalProvider>);
+addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
 // automatically import all files ending in *.stories.js
 // const req = require.context('../stories', true, /.stories.jsx$/);
 const req = require.context('../stories', true, /.stories.tsx$/);

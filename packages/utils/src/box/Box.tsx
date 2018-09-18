@@ -62,8 +62,8 @@ import {
   WidthProps,
   ZIndexProps,
 } from 'styled-system';
-import styled from 'styled-components';
-import { css, CssProps } from '../style';
+import styled, { css } from 'styled-components';
+import { css as cssStyle, CssProps } from '../style';
 
 export interface BoxProps
   extends BackgroundImageProps,
@@ -76,7 +76,6 @@ export interface BoxProps
     BordersProps,
     BottomProps,
     BoxShadowProps,
-    ColorProps,
     DisplayProps,
     FontFamilyProps,
     FontSizeProps,
@@ -97,9 +96,13 @@ export interface BoxProps
     TopProps,
     WidthProps,
     ZIndexProps,
-    CssProps {}
+    CssProps,
+    React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLDivElement>,
+      HTMLDivElement
+    > {}
 
-export const Box = styled.div<BoxProps>`
+export const superBoxStyle = css`
   ${space};
   ${width};
   ${fontSize};
@@ -131,7 +134,12 @@ export const Box = styled.div<BoxProps>`
   ${fontWeight};
   ${letterSpacing};
   ${fontFamily};
-  ${css};
+  ${cssStyle};
+`;
+
+export const Box = styled<BoxProps & ColorProps, 'div'>('div')`
+  ${superBoxStyle};
+  ${color};
 `;
 
 Box.displayName = 'Vital_Box';

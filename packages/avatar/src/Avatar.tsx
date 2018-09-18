@@ -4,33 +4,39 @@
  */
 
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, withTheme } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
+import { CssProps, css as cssStyle } from '@vital-ui/react-utils';
 
 import { AvatarBadge } from './AvatarBadge';
-import { avatarSizes, Size } from './constants';
+import { BuiltinTheme, Size } from './constants';
 import { defaultAvatarSets } from './default-avatar';
 
 type SizeStyleProps = {
   size: Size;
   circle?: boolean;
-  builtinTheme?: typeof builtinTheme;
+  builtinTheme?: BuiltinTheme;
 };
 
 const sizeStyle = css<SizeStyleProps>`
-  width: ${({ size }) => builtinTheme[size].size};
-  height: ${({ size }) => builtinTheme[size].size};
-  border-radius: ${({ size, circle }) =>
-    circle ? '50%' : builtinTheme[size].borderRadius};
+  width: ${({ size, theme, builtinTheme }) =>
+    getBuiltInOrTheme(builtinTheme, theme)[size].size};
+  height: ${({ size, theme, builtinTheme }) =>
+    getBuiltInOrTheme(builtinTheme, theme)[size].size};
+  border-radius: ${({ size, circle, theme, builtinTheme }) =>
+    circle
+      ? '50%'
+      : getBuiltInOrTheme(builtinTheme, theme)[size].borderRadius};
 `;
 
-const Root = styled.div`
+const Root = styled.div<CssProps>`
   position: relative;
   display: inline-block;
+  ${cssStyle};
 `;
 
-const Image = styled.img<SizeStyleProps>`
+const Image = styled<SizeStyleProps, 'img'>('img')`
   background-color: ${({ theme }) => theme.grey200};
   box-sizing: border-box;
   ${sizeStyle};
@@ -40,22 +46,20 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   ${sizeStyle};
 `;
-
+ImageWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 Image.defaultProps = {
   theme: defaultTheme,
 };
 
-const builtinTheme = {
-  ...avatarSizes,
-};
-
 type Gender = 'male' | 'female';
 
-export interface AvatarProps {
+export interface AvatarProps extends CssProps {
   /** Default sets of avatar */
   bulltinAvatars?: typeof defaultAvatarSets;
   /** Each Avatar size and borderRadius if circle  */
-  builtinTheme?: typeof builtinTheme;
+  builtinTheme?: BuiltinTheme;
   /** Image src html attr of the avatar. */
   src?: string;
   /** @deprecated Circle style. */
@@ -68,7 +72,8 @@ export interface AvatarProps {
   badge?: React.ReactNode;
   gender?: Gender;
   outline?: boolean;
-  containerStyle?: React.CSSProperties;
+  BoxStyle?: React.CSSProperties;
+  style?: React.CSSProperties;
   imageStyle?: React.CSSProperties;
   badgeStyle?: React.CSSProperties;
   /** Default is `vital__avatar` */
@@ -77,6 +82,7 @@ export interface AvatarProps {
   imageClassName?: string;
   /** Default is `vital__avatar-badge` */
   badgeClassName?: string;
+  theme: typeof defaultTheme;
 }
 
 /**
@@ -91,22 +97,12 @@ export interface AvatarProps {
  *  round
  * />
  */
-export class Avatar extends React.Component<AvatarProps> {
+class AvatarBase extends React.Component<AvatarProps> {
   static defaultProps = {
     bulltinAvatars: defaultAvatarSets,
-    builtinTheme,
-    badge: null,
-    src: null,
-    gender: undefined,
     circle: false,
-    size: 'medium',
+    size: 'medium' as Size,
     outline: false,
-    imageStyle: undefined,
-    containerStyle: undefined,
-    badgeStyle: undefined,
-    containerClassName: '',
-    imageClassName: '',
-    badgeClassName: '',
   };
 
   static Badge: typeof AvatarBadge = AvatarBadge;
@@ -120,7 +116,7 @@ export class Avatar extends React.Component<AvatarProps> {
       badge,
       outline,
       gender,
-      containerStyle,
+      style,
       imageStyle,
       badgeStyle,
       containerClassName,
@@ -130,15 +126,16 @@ export class Avatar extends React.Component<AvatarProps> {
     } = this.props;
     return (
       <Root
-        style={containerStyle}
+        style={style}
         className={cn('vital__avatar', containerClassName)}
+        css={css}
         {...props}
       >
         {src ? (
           <Image
             className={cn('vital__avatar-image', imageClassName)}
             src={src}
-            size={size!}
+            size={size}
             circle={circle}
             style={imageStyle}
             {...props}
@@ -164,11 +161,13 @@ export class Avatar extends React.Component<AvatarProps> {
       bulltinAvatars,
       size,
       builtinTheme,
+      theme,
     } = this.props;
+    const sizeTheme = getBuiltInOrTheme(builtinTheme, theme);
     const defaultAvatarRenderer = bulltinAvatars || defaultAvatarSets;
     const avatarProps = {
-      width: builtinTheme![size!].size,
-      height: builtinTheme![size!].size,
+      width: sizeTheme![size!].size,
+      height: sizeTheme![size!].size,
     };
     if (outline && gender) {
       if (gender === 'female') {
@@ -220,3 +219,35 @@ export class Avatar extends React.Component<AvatarProps> {
     return badge;
   };
 }
+
+export const Avatar = withTheme(AvatarBase);
+
+function getBuiltInOrTheme(
+  builtin: BuiltinTheme | undefined,
+  theme: typeof defaultTheme,
+) {
+  return builtin ? builtin : theme.avatar || constants;
+}
+
+const constants = {
+  small: {
+    size: '24px',
+    borderRadius: '2px',
+    badgeHeight: '7px',
+  },
+  medium: {
+    size: '32px',
+    borderRadius: '3px',
+    badgeHeight: '9px',
+  },
+  large: {
+    size: '48px',
+    borderRadius: '4px',
+    badgeHeight: '13px',
+  },
+  xlarge: {
+    size: '64px',
+    borderRadius: '4px',
+    badgeHeight: '17px',
+  },
+};
