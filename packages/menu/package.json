@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-menu",
-  "version": "0.8.11-3",
+  "version": "0.8.11-4",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,8 +16,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-button": "^0.8.11-3",
-    "@vital-ui/react-theme": "^0.8.11-3",
+    "@vital-ui/react-button": "^0.8.11-4",
+    "@vital-ui/react-theme": "^0.8.11-4",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
