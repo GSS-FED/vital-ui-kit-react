@@ -57,7 +57,6 @@ class Filter extends React.PureComponent<P, S> {
       <Wrapper>
         <FieldInput style={{ width: '60%' }}>
           <Input
-            icon="search"
             value={this.state.filterValue}
             onChange={this.onInputChange}
           />

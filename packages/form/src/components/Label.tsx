@@ -3,11 +3,21 @@ import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 import styled, { css } from 'styled-components';
 
-const LabelElement = styled.span<{
-  align: string;
-  required: boolean;
-  inline: boolean;
-}>`
+interface LabelProps {
+  /** is required? */
+  required?: boolean;
+  /** label display inline */
+  inline?: boolean;
+  /** align `left` or `right` */
+  align?: 'left' | 'right';
+  /** default: `vital__label` */
+  className?: string;
+  style?: React.CSSProperties;
+}
+
+export const Label = styled.span.attrs<LabelProps>({
+  className: props => cn('vital__label', props.className),
+})`
   position: relative;
   font-size: 0.866rem;
   color: ${({ theme }) => theme.labelColor};
@@ -48,49 +58,9 @@ const LabelElement = styled.span<{
     `};
 `;
 
-LabelElement.defaultProps = {
-  theme: defaultTheme,
-};
-
-type Props = {
-  /** text of the label */
-  text: string;
-  /** is required? */
-  required?: boolean;
-  /** label display inline */
-  inline?: boolean;
-  /** align `left` or `right` */
-  align?: 'left' | 'right';
-  /** default: `vital__label` */
-  className?: string;
-  style?: React.CSSProperties;
-};
-
-const Label: React.SFC<Props> = ({
-  style,
-  className,
-  text,
-  required = false,
-  inline = false,
-  align = 'left',
-}) => (
-  <LabelElement
-    style={style}
-    className={cn('vital__label', className)}
-    inline={inline}
-    align={align}
-    required={required}
-  >
-    {text}
-  </LabelElement>
-);
-
 Label.defaultProps = {
+  theme: defaultTheme,
   required: false,
   align: 'left',
   inline: false,
-  style: undefined,
-  className: '',
 };
-
-export default Label;

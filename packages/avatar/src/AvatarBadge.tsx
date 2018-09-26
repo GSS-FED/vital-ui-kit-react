@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { trunTo } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { Size } from './constants';
+import { AvatarSize } from './constants';
 
 const badgeTransformStyle = ({
   size,
@@ -10,7 +10,7 @@ const badgeTransformStyle = ({
   label,
   theme,
 }: {
-  size: Size;
+  size: AvatarSize;
   label: string | number;
   circle: boolean;
   theme: typeof defaultTheme;
@@ -57,7 +57,7 @@ const badgeTransformStyle = ({
 };
 
 type RootProps = {
-  size: Size;
+  size: AvatarSize;
   label: string | number;
   circle: boolean;
 };
@@ -78,7 +78,7 @@ Root.defaultProps = {
 
 export interface AvatarBadgeProps {
   label: string | number;
-  size?: Size;
+  size?: AvatarSize;
   circle?: boolean;
   style?: React.CSSProperties;
   className?: string;

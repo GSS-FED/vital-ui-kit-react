@@ -2,9 +2,9 @@ import { Interpolation } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 type StatusProps = {
-  alarm: boolean;
-  warning: boolean;
-  success: boolean;
+  alarm?: boolean;
+  warning?: boolean;
+  success?: boolean;
   theme: typeof defaultTheme;
 };
 
@@ -53,7 +53,7 @@ export const borderRightRadius = (size: number) => `
 `;
 
 export interface CssProps<T = {}> {
-  css?: Interpolation<T>;
+  css?: Interpolation<T> | string;
 }
 
 export const css = (props: CssProps) => props.css;

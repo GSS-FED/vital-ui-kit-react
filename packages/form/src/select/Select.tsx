@@ -6,10 +6,8 @@
 import * as React from 'react';
 import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
-import FieldInput from '../FieldInput';
-import InputBase, {
-  Props as InputProps,
-} from '../input/StatelessInput';
+import { FieldInput } from '../FieldInput';
+import { Input as InputBase, InputProps } from '../input';
 import { DropdownBase, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
 import { SelectButton, SelectButtonText } from './styled';

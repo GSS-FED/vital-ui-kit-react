@@ -24,11 +24,11 @@ storiesOf('Packages | Pill', module)
     withInfo(`info`)(
       withNotes('This is pill')(() => (
         <PillsGroup vertical={boolean('vertical', false)}>
-          <Pill label="Dashboard" badge="23" />
-          <Pill label="Projects" badge="99+" />
-          <Pill label="Issues" badge="6" />
-          <Pill label="Reports" />
-          <Pill label="User Center" />
+          <Pill badge="23">Dashboard</Pill>
+          <Pill badge="99+">Projects</Pill>
+          <Pill badge="6">Issues</Pill>
+          <Pill>Reports</Pill>
+          <Pill>User Center</Pill>
         </PillsGroup>
       )),
     ),

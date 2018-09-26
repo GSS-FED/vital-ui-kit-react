@@ -10,6 +10,7 @@ module.exports = (baseConfig, env, config) => {
       useCache: true,
       useBabel: true,
       configFileName: 'tsconfig.storybook.json',
+      babelCore: '@babel/core',
     },
   });
   config.plugins.push(

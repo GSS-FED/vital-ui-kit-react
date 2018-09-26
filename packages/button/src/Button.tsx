@@ -5,15 +5,16 @@
 
 import * as React from 'react';
 import cn from 'classnames';
-import { Nature, Size, BuiltinSize } from './constant';
+import { Nature, ButtonSize, BuiltinSize } from './constant';
 
 import styled, { css, ThemedStyledProps } from 'styled-components';
 import { darken, lighten } from 'polished';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-type ButtonElementProps = {
+interface ButtonElementProps extends BoxProps {
   nature: Nature;
-  size: Size;
+  size: ButtonSize;
   subtle?: boolean;
   selected?: boolean;
   flat?: boolean;
@@ -23,7 +24,7 @@ type ButtonElementProps = {
   underline?: boolean;
   circle?: boolean;
   builtinSize?: BuiltinSize;
-};
+}
 
 type StyledButtonProps = ThemedStyledProps<
   ButtonElementProps,
@@ -205,6 +206,8 @@ const ButtonElement = styled<ButtonElementProps, 'button'>('button')`
   /* circle */
   ${circleStyle};
 
+  ${superBoxStyle};
+
   &[disabled] {
     color: ${({ theme }) => theme.button.disabled.color};
     border-color: ${({ theme }) => theme.button.disabled.borderColor};
@@ -219,7 +222,8 @@ ButtonElement.defaultProps = {
 };
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    BoxProps {
   /** `vital_button` */
   className?: string;
   /** The content of the button */
@@ -236,7 +240,7 @@ export interface ButtonProps
   /** Link style */
   link?: boolean;
   /** Button size */
-  size?: Size;
+  size?: ButtonSize;
   /** Circle button */
   circle?: boolean;
   /** Selected state */
@@ -270,7 +274,7 @@ export class Button extends React.Component<ButtonProps> {
   static defaultProps = {
     children: '',
     nature: 'default' as Nature,
-    size: 'medium' as Size,
+    size: 'medium' as ButtonSize,
     circle: false,
     light: false,
     flat: false,

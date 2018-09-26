@@ -214,7 +214,7 @@ class ListItem extends React.Component<Props, State> {
         </ListTitleWrapper>
         {children && (
           <InnerWrapper
-            innerRef={s => {
+            ref={s => {
               this.child = s;
             }}
           >

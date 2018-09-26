@@ -7,12 +7,9 @@
   "style": "./dist/global.css",
   "scripts": {
     "clean": "rm -rf dist lib",
-    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
-    "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": false,
   "contributors": [
     "Eric Yip (https://github.com/ericyip)",
     "Laura Lee (https://github.com/l443018)"
@@ -35,11 +32,9 @@
     "@vital-ui/react-card": "^0.8.11-5",
     "@vital-ui/react-form": "^0.8.11-5",
     "@vital-ui/react-icon": "^0.8.8",
-    "@vital-ui/react-layout": "^0.8.8",
     "@vital-ui/react-list": "^0.8.11-5",
     "@vital-ui/react-menu": "^0.8.11-5",
     "@vital-ui/react-modal": "^0.8.11-5",
-    "@vital-ui/react-pagination": "^0.8.11-5",
     "@vital-ui/react-pill": "^0.8.11-5",
     "@vital-ui/react-tabs": "^0.8.11-5",
     "@vital-ui/react-theme": "^0.8.11-5",

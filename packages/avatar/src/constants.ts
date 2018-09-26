@@ -1,7 +1,12 @@
-export type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
+export type AvatarSize =
+  | 'xlarge'
+  | 'large'
+  | 'medium'
+  | 'small'
+  | 'xsmall';
 
 export type BuiltinTheme = {
-  [key in Size]: {
+  [key in AvatarSize]: {
     size: string;
     borderRadius: string;
   }

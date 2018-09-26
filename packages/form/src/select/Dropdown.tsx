@@ -19,7 +19,7 @@ export const DropdownBase = <T extends {}>({
 }) => {
   if (isOpen) {
     return (
-      <MenuList {...getMenuProps({ refKey: 'innerRef' })}>
+      <MenuList {...getMenuProps()}>
         {React.Children.map(children, child => child).filter(
           (child: React.ReactElement<any>) =>
             shouldRenderItem(child.props.item, inputValue),

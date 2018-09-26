@@ -1,6 +1,6 @@
 declare module 'rc-trigger' {
   import React from 'react';
-  export interface RcTriggerProps {
+  type Props = {
     /** whether popup is visible */
     popupVisible?: boolean;
     /** which actions cause popup shown */
@@ -29,7 +29,7 @@ declare module 'rc-trigger' {
     stretch?: string;
     /** use preset popup align config from builtinPlacements, can be merged by popupAlign prop */
     popupPlacement?: any;
-  }
+  };
 
   export default class extends React.Component<Props> {}
 }

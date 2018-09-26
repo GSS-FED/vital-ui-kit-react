@@ -7,6 +7,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { isElement } from '@vital-ui/react-utils';
 
 import TabItem from './TabItem';
 import TabList from './TabList';
@@ -90,22 +91,23 @@ export class Tabs extends React.Component<Props, State> {
           {...props}
         >
           <TabList>
-            {React.Children.map(
-              this.props.children,
-              (child: React.ReactElement<any>, i) => {
-                if (child.type === TabItem) {
-                  if (this.state.activeIndex === i) {
-                    activePanel = child.props.panel;
-                  }
-                  return React.cloneElement(child, {
-                    index: i,
-                    current: this.state.activeIndex === i,
-                    onTabChange: this.onTabChange,
-                  });
+            {React.Children.map(this.props.children, (child, i) => {
+              if (
+                child &&
+                isElement(child) &&
+                child.type === TabItem
+              ) {
+                if (this.state.activeIndex === i) {
+                  activePanel = child.props.panel;
                 }
-                return undefined;
-              },
-            )}
+                return React.cloneElement(child, {
+                  index: i,
+                  current: this.state.activeIndex === i,
+                  onTabChange: this.onTabChange,
+                });
+              }
+              return undefined;
+            })}
           </TabList>
         </Root>
         {activePanel && <div>{activePanel}</div>}

@@ -96,11 +96,7 @@ export interface BoxProps
     TopProps,
     WidthProps,
     ZIndexProps,
-    CssProps,
-    React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLDivElement>,
-      HTMLDivElement
-    > {}
+    CssProps {}
 
 export const superBoxStyle = css`
   ${space};

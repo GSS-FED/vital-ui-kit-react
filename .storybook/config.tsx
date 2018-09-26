@@ -1,20 +1,33 @@
-import { injectGlobal } from 'styled-components';
+// @ts-ignore
+import { createGlobalStyle, css } from 'styled-components';
+// @ts-ignore
 import { configure, addDecorator } from '@storybook/react';
 import * as React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import { ThemeProvider } from '../packages/theme/dist';
-import '../packages/web/src/global.css';
+import { gloablStyle } from '../packages/theme';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-// tslint:disable-next-line
-injectGlobal`
+const fontFamily = css`
+  html,
+  body {
+    font-family: 'Roboto', 'Helvetica', 'PingFang TC', 'Arial',
+      'sans-serif', 'Microsoft JhengHei', 'Heiti TC';
+  }
+`;
+
+const GlobalStyle = createGlobalStyle`
   #root {
     padding: 20px;
   }
+  ${gloablStyle.linkStyle};
+  ${gloablStyle.reset};
+  ${gloablStyle.vitalTypographyStyle};
+  ${fontFamily};
 `;
 
 setOptions({
@@ -45,8 +58,15 @@ setOptions({
   sidebarAnimations: false,
 });
 
-addDecorator(story => <ThemeProvider>{story()}</ThemeProvider>);
+addDecorator(story => (
+  <ThemeProvider>
+    <>
+      <GlobalStyle />
+      {story()}
+    </>
+  </ThemeProvider>
+));
 // automatically import all files ending in *.stories.js
-// const req = require.context('../stories', true, /.stories.jsx$/);
+// @ts-ignore
 const req = require.context('../stories', true, /.stories.tsx$/);
 configure(loadStories, module);

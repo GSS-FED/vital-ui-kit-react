@@ -7,8 +7,9 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { BoxProps, superBoxStyle } from '@vital-ui/react-utils';
 
-const ButtonWrapper = styled.div`
+const ButtonWrapper = styled<BoxProps, 'div'>('div')`
   position: relative;
   height: 50px;
   display: table-cell;
@@ -25,6 +26,7 @@ const ButtonWrapper = styled.div`
       background: ${({ theme }) => theme.borderColor};
     }
   }
+  ${superBoxStyle};
 `;
 
 const Button = styled.button<{ primary: boolean }>`

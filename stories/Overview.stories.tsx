@@ -43,7 +43,7 @@ const NATRUE: ButtonProps['nature'][] = [
   'warning',
 ];
 
-const SIZE: AvatarProps['size'][] = [
+const SIZE: ButtonProps['size'][] = [
   'xlarge',
   'large',
   'medium',

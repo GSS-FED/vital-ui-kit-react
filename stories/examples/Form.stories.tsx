@@ -15,10 +15,8 @@ import { withNotes } from '@storybook/addon-notes';
 
 import {
   Input,
-  StatelessInput,
   FieldInput,
   TextArea,
-  StatelessTextArea,
   MultipleInput,
   Hint,
   Addon,
@@ -69,7 +67,7 @@ storiesOf('Packages | Form', module)
           </MultipleInput>
         </FieldInput>
         <FieldInput label="Comment" inline>
-          <TextArea placeholder="Comment here" minRows={3} />
+          <TextArea placeholder="Comment here" rows={3} />
         </FieldInput>
         <FieldInput label="Send Email" inline>
           <Switch
@@ -134,8 +132,8 @@ storiesOf('Packages | Form', module)
         <FormWrapper>
           <FieldInput label="Username" inline>
             <Input value="dramsign" />
-            <Hint text="Username is available" success />
-            <Hint text="Example: James Allen" />
+            <Hint success>Username is available</Hint>
+            <Hint>Example: James Allen</Hint>
           </FieldInput>
         </FormWrapper>
       )),
@@ -203,12 +201,10 @@ storiesOf('Packages | Form/Input', module)
   .addDecorator(withKnobs)
   .add(
     'Basic',
-    withInfo(`Stateless input. Uncontrolled component.
-      visit https://reactjs.org/docs/uncontrolled-components.html for more
-    `)(
+    withInfo(``)(
       withNotes(`Uncontrolled component`)(() => (
         <FormWrapper>
-          <StatelessInput
+          <Input
             placeholder={text('Placeholder', 'Uncontrolled Input')}
             defaultValue={text('Default Value', 'default')}
             disabled={boolean('Disabled', false)}
@@ -240,36 +236,15 @@ storiesOf('Packages | Form/Input', module)
     withInfo(`Icon in Left or Right`)(
       withNotes('insert icon component')(() => (
         <FormWrapper>
-          <StatelessInput
-            placeholder="Right side icon"
-            rightIcon={<Pen />}
-          />
+          <Input placeholder="Right side icon" rightIcon={<Pen />} />
           <br />
-          <StatelessInput
-            placeholder="Left side icon"
-            leftIcon={<Share />}
-          />
+          <Input placeholder="Left side icon" leftIcon={<Share />} />
         </FormWrapper>
       )),
     ),
   );
 
 storiesOf('Packages | Form/TextArea', module)
-  .addDecorator(withKnobs)
-  .add(
-    'Basic',
-    withInfo(``)(
-      withNotes(`Uncontrolled component`)(() => (
-        <StatelessTextArea
-          placeholder={text('Placeholder', 'Uncontrolled Input')}
-          disabled={boolean('Disabled', false)}
-          alarm={boolean('Alarm', false)}
-          warning={boolean('Warning', false)}
-          minRows={3}
-        />
-      )),
-    ),
-  )
   .addDecorator(withKnobs)
   .add(
     'Controlled TextArea',
@@ -280,7 +255,7 @@ storiesOf('Packages | Form/TextArea', module)
           disabled={boolean('Disabled', false)}
           alarm={boolean('Alarm', false)}
           warning={boolean('Warning', false)}
-          minRows={3}
+          rows={3}
         />
       )),
     ),

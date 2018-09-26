@@ -6,10 +6,15 @@ export type Nature =
   | 'alarm'
   | 'warning';
 
-export type Size = 'xlarge' | 'large' | 'medium' | 'small' | 'xsmall';
+export type ButtonSize =
+  | 'xlarge'
+  | 'large'
+  | 'medium'
+  | 'small'
+  | 'xsmall';
 
 export type BuiltinSize = {
-  [key in Size]: {
+  [key in ButtonSize]: {
     fontSize: string;
     borderRadius: string;
     padding: string;

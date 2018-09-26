@@ -16,12 +16,13 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "3"
+    "styled-components": "3 || 4"
   },
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
-    "rc-trigger": "2.5.4"
+    "rc-trigger": "2.5.4",
+    "@vital-ui/react-theme": "^0.8.11-5"
   },
   "devDependencies": {
     "copyfiles": "^2.0.0",

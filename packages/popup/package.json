@@ -1,6 +1,6 @@
 {
-  "name": "@vital-ui/react-layout",
-  "version": "0.8.8",
+  "name": "@vital-ui/react-popup",
+  "version": "0.8.11-5",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -12,13 +12,16 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "3"
+    "styled-components": "3 || 4"
   },
   "license": "ISC",
+  "dependencies": {
+    "@vital-ui/react-badge": "^0.8.11-5",
+    "@vital-ui/react-theme": "^0.8.11-5",
+    "@vital-ui/react-utils": "^0.8.11-5",
+    "classnames": "^2.2.6"
+  },
   "devDependencies": {
     "typescript": "^3.0.1"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6"
   }
 }

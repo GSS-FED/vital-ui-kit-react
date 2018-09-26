@@ -60,8 +60,8 @@ storiesOf('Packages | Icon', module)
                     <Tooltip
                       key={icon}
                       placement="bottom"
-                      overlay={icon}
-                      trigger={['hover']}
+                      popup={icon}
+                      action={['hover']}
                       mouseLeaveDelay={0}
                     >
                       <Wrapper>

@@ -40,9 +40,7 @@ InputWrapper.defaultProps = {
 };
 
 const Input = withContext(InputBase, ({ getInputProps }) =>
-  getInputProps({
-    refKey: 'innerRef',
-  }),
+  getInputProps(),
 );
 
 type State = {
@@ -138,7 +136,7 @@ export class MultiSelect<T> extends React.Component<
         <InputWrapper onClick={this.handleInputClick}>
           {selection && selection}
           <Input
-            innerRef={this.input}
+            ref={this.input}
             onChange={this.handleInputChange}
             onKeyDown={this.handleKeyDown}
           />

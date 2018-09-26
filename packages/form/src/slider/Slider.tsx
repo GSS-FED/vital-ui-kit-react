@@ -83,11 +83,11 @@ export class Slider extends React.Component<SliderProps, State> {
     value: this.props.value || 0,
   };
 
-  slider = React.createRef<HTMLDivElement>();
+  slider = React.createRef<any>();
 
-  track = React.createRef<HTMLDivElement>();
+  track = React.createRef<any>();
 
-  handle = React.createRef<HTMLDivElement>();
+  handle = React.createRef<any>();
 
   // delay timeout of the button calling function
   start = 700;
@@ -331,7 +331,7 @@ export class Slider extends React.Component<SliderProps, State> {
 
     return (
       <SliderRoot
-        innerRef={this.slider}
+        ref={this.slider}
         disabled={this.props.disabled!}
         aria-valuemin={this.props.min}
         aria-valuemax={this.props.max}
@@ -362,7 +362,7 @@ export class Slider extends React.Component<SliderProps, State> {
           >
             <SlideHandler
               size={this.props.size!}
-              innerRef={this.handle}
+              ref={this.handle}
               style={{
                 left: `${position}px`,
               }}

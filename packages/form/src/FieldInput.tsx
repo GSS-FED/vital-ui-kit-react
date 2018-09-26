@@ -1,17 +1,22 @@
 import * as React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
+import { Label } from './components/Label';
 
-import Label from './components/Label';
+interface RootProps extends BoxProps {
+  inline?: boolean;
+}
 
-const Root = styled.div<{ inline?: boolean }>`
+const Root = styled<RootProps, 'div'>('div')`
   display: ${props => (props.inline ? 'table' : 'block')};
   margin-bottom: ${props => (props.inline ? '1.866rem' : '1.333rem')};
   position: relative;
   width: 100%;
+  ${superBoxStyle};
 
-  ${props =>
-    props.inline &&
+  ${({ inline }) =>
+    inline &&
     css`
       > span {
         display: table-cell;
@@ -28,7 +33,7 @@ const Root = styled.div<{ inline?: boolean }>`
     `};
 `;
 
-type FieldInputProps = {
+export interface FieldInputProps extends BoxProps {
   label?: React.ReactNode;
   align?: 'left' | 'right';
   inline?: boolean;
@@ -37,10 +42,9 @@ type FieldInputProps = {
   style?: React.CSSProperties;
   className?: string;
   labelProps?: any;
-  containerProps?: any;
   ref?: React.Ref<any>;
   labelRef?: React.Ref<any>;
-};
+}
 
 /**
  * @render react
@@ -51,7 +55,7 @@ type FieldInputProps = {
  *   ...
  * </FieldInput>
  */
-class FieldInput extends React.Component<FieldInputProps> {
+export class FieldInput extends React.Component<FieldInputProps> {
   static defaultProps = {
     inline: false,
     required: false,
@@ -71,27 +75,25 @@ class FieldInput extends React.Component<FieldInputProps> {
       labelProps,
       ref,
       labelRef,
-      containerProps,
+      ...props
     } = this.props;
     return (
       <Root
         style={style}
         className={cn('vital__fieldInput', className)}
         inline={inline}
-        innerRef={ref}
-        {...containerProps}
+        {...props}
       >
         <Label
-          innerRef={labelRef}
-          text={label}
+          ref={labelRef}
           required={required}
           align={align}
           {...labelProps}
-        />
+        >
+          {label}
+        </Label>
         {children}
       </Root>
     );
   }
 }
-
-export default FieldInput;

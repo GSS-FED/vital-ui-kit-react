@@ -1,9 +1,11 @@
-import * as React from 'react';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 import styled from 'styled-components';
 
-const Root = styled.div`
+export const Addon = styled.div.attrs<BoxProps>({
+  className: props => cn('vital__addon', props.className),
+})`
   padding: 0.46633rem 0.8rem;
   font-size: 1rem;
   font-weight: 400;
@@ -17,27 +19,11 @@ const Root = styled.div`
   z-index: 5;
   position: relative;
   box-sizing: border-box;
+  ${superBoxStyle};
 `;
 
-Root.defaultProps = {
+Addon.defaultProps = {
   theme: defaultTheme,
 };
-
-type Props = {
-  children?: React.ReactNode;
-  className?: string;
-  /** default: `vital__addon` */
-  style?: React.CSSProperties;
-};
-
-const Addon: React.SFC<Props> = ({
-  children,
-  style,
-  className,
-}: Props) => (
-  <Root style={style} className={cn('vital__addon', className)}>
-    {children}
-  </Root>
-);
 
 export default Addon;

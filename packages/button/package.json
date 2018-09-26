@@ -12,11 +12,12 @@
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
-    "styled-components": "3"
+    "styled-components": "3 || 4"
   },
   "license": "ISC",
   "dependencies": {
     "@vital-ui/react-theme": "^0.8.11-5",
+    "@vital-ui/react-utils": "^0.8.11-5",
     "classnames": "^2.2.6",
     "polished": "^2.0.0",
     "styled-map": "^3.0.0"

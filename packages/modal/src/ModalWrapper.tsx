@@ -18,7 +18,7 @@ type Props = {
 };
 
 class ModalWrapper extends React.Component<Props> {
-  modal = React.createRef<HTMLDivElement>();
+  modal = React.createRef<any>();
 
   getWidth = (width?: number, height?: number) => {
     if (this.modal.current && width && height) {
@@ -29,7 +29,7 @@ class ModalWrapper extends React.Component<Props> {
 
   render() {
     return (
-      <Root innerRef={this.modal}>
+      <Root ref={this.modal}>
         {React.Children.only(this.props.children)}
         <ReactResizeDetector
           handleHeight

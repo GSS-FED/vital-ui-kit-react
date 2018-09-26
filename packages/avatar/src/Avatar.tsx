@@ -7,33 +7,41 @@ import * as React from 'react';
 import styled, { css, withTheme } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
-import { CssProps, css as cssStyle } from '@vital-ui/react-utils';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
 import { AvatarBadge } from './AvatarBadge';
-import { BuiltinTheme, Size } from './constants';
+import { BuiltinTheme, AvatarSize } from './constants';
 import { defaultAvatarSets } from './default-avatar';
 
 type SizeStyleProps = {
-  size: Size;
+  size: AvatarSize | number;
   circle?: boolean;
   builtinTheme?: BuiltinTheme;
 };
 
 const sizeStyle = css<SizeStyleProps>`
-  width: ${({ size, theme, builtinTheme }) =>
-    getBuiltInOrTheme(builtinTheme, theme)[size].size};
-  height: ${({ size, theme, builtinTheme }) =>
-    getBuiltInOrTheme(builtinTheme, theme)[size].size};
+  width: ${({ size, theme, builtinTheme }) => {
+    if (typeof size === 'number') {
+      return size + 'px';
+    }
+    return getBuiltInOrTheme(builtinTheme, theme)[size].size;
+  }};
+  height: ${({ size, theme, builtinTheme }) => {
+    if (typeof size === 'number') {
+      return size + 'px';
+    }
+    return getBuiltInOrTheme(builtinTheme, theme)[size].size;
+  }};
   border-radius: ${({ size, circle, theme, builtinTheme }) =>
     circle
       ? '50%'
       : getBuiltInOrTheme(builtinTheme, theme)[size].borderRadius};
 `;
 
-const Root = styled.div<CssProps>`
+const Root = styled<BoxProps, 'div'>('div')`
   position: relative;
   display: inline-block;
-  ${cssStyle};
+  ${superBoxStyle};
 `;
 
 const Image = styled<SizeStyleProps, 'img'>('img')`
@@ -55,7 +63,7 @@ Image.defaultProps = {
 
 type Gender = 'male' | 'female';
 
-export interface AvatarProps extends CssProps {
+export interface AvatarProps extends BoxProps {
   /** Default sets of avatar */
   bulltinAvatars?: typeof defaultAvatarSets;
   /** Each Avatar size and borderRadius if circle  */
@@ -67,12 +75,11 @@ export interface AvatarProps extends CssProps {
   /** Circle style. */
   circle?: boolean;
   /** Avatar size, default is `medium`, `xlarge`, `large`, `medium`, `small`, `xsmall` */
-  size?: Size;
+  size?: AvatarSize | number;
   /** Value for the right top badge */
   badge?: React.ReactNode;
   gender?: Gender;
   outline?: boolean;
-  BoxStyle?: React.CSSProperties;
   style?: React.CSSProperties;
   imageStyle?: React.CSSProperties;
   badgeStyle?: React.CSSProperties;
@@ -82,7 +89,7 @@ export interface AvatarProps extends CssProps {
   imageClassName?: string;
   /** Default is `vital__avatar-badge` */
   badgeClassName?: string;
-  theme: typeof defaultTheme;
+  theme?: typeof defaultTheme;
 }
 
 /**
@@ -101,7 +108,7 @@ class AvatarBase extends React.Component<AvatarProps> {
   static defaultProps = {
     bulltinAvatars: defaultAvatarSets,
     circle: false,
-    size: 'medium' as Size,
+    size: 'medium' as AvatarSize,
     outline: false,
   };
 
@@ -128,7 +135,6 @@ class AvatarBase extends React.Component<AvatarProps> {
       <Root
         style={style}
         className={cn('vital__avatar', containerClassName)}
-        css={css}
         {...props}
       >
         {src ? (
@@ -138,7 +144,6 @@ class AvatarBase extends React.Component<AvatarProps> {
             size={size}
             circle={circle}
             style={imageStyle}
-            {...props}
           />
         ) : (
           <ImageWrapper
@@ -161,7 +166,7 @@ class AvatarBase extends React.Component<AvatarProps> {
       bulltinAvatars,
       size,
       builtinTheme,
-      theme,
+      theme = defaultTheme,
     } = this.props;
     const sizeTheme = getBuiltInOrTheme(builtinTheme, theme);
     const defaultAvatarRenderer = bulltinAvatars || defaultAvatarSets;
@@ -206,6 +211,10 @@ class AvatarBase extends React.Component<AvatarProps> {
       return null;
     }
     if (typeof badge === 'string' || typeof badge === 'number') {
+      // FIXME: We skip the size calc since AvatarBadge now doesn't support number;
+      if (typeof size === 'number') {
+        return badge;
+      }
       return (
         <AvatarBadge
           className={cn('vital__avatar-badge', badgeClassName)}
