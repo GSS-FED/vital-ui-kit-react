@@ -357,8 +357,8 @@ export class Slider extends React.Component<SliderProps, State> {
           />
           <Tooltip
             placement="bottom"
-            overlay={this.state.value}
-            trigger={['hover']}
+            popup={this.state.value}
+            action={['hover']}
           >
             <SlideHandler
               size={this.props.size!}

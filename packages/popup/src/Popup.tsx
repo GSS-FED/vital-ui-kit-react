@@ -59,6 +59,8 @@ interface Props {
   destroyPopupOnHide?: boolean;
   /** 'width', 'minWidth', 'height', 'minHeight' */
   stretch?: string;
+  /** use preset popup align config from builtinPlacements, can be merged by popupAlign prop */
+  popupPlacement?: any;
 }
 
 class Popup extends React.Component<Props> {

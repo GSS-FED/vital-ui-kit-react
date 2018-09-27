@@ -291,6 +291,7 @@ export class Button extends React.Component<ButtonProps> {
       style,
       nature = 'default',
       size = 'medium',
+      unselectable,
       ...props
     } = this.props;
     return (
