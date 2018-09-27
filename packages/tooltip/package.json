@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-tooltip",
-  "version": "0.8.8",
+  "version": "0.9.0-0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -20,9 +20,9 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@vital-ui/react-theme": "^0.9.0-0",
     "classnames": "^2.2.6",
-    "rc-trigger": "2.5.4",
-    "@vital-ui/react-theme": "^0.8.11-5"
+    "rc-trigger": "2.5.4"
   },
   "devDependencies": {
     "copyfiles": "^2.0.0",
