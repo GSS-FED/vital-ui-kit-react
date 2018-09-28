@@ -20,7 +20,7 @@
   },
   "peerDependencies": {
     "react": "^16",
-    "styled-components": "3 || 4"
+    "styled-components": "*"
   },
   "dependencies": {
     "@types/fs-extra": "^5.0.4",

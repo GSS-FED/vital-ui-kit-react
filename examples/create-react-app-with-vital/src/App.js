@@ -36,7 +36,7 @@ class App extends React.Component {
           <Button.Group>
             <Button link>
               <Link to="/overview">
-                Overview <Badge label="999" />
+                Overview <Badge>999+</Badge>
               </Link>
             </Button>
             <Button link>

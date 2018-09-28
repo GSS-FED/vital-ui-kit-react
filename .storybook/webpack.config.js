@@ -1,20 +1,28 @@
 const path = require('path');
-const TSDocgenPlugin = require('react-docgen-typescript-webpack-plugin');
 // const CircularDependencyPlugin = require('circular-dependency-plugin')
-
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 module.exports = (baseConfig, env, config) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve('awesome-typescript-loader'),
-    options: {
-      useCache: true,
-      useBabel: true,
-      configFileName: 'tsconfig.storybook.json',
-      babelCore: '@babel/core',
-    },
+    include: path.resolve(__dirname, '../'),
+    use: [
+      {
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: true,
+        },
+      },
+      { loader: 'react-docgen-typescript-loader' },
+    ],
+    // options: {
+    //   useCache: true,
+    //   useBabel: true,
+    //   configFileName: 'tsconfig.storybook.json',
+    //   babelCore: '@babel/core',
+    // },
   });
-  config.plugins.push(
-    new TSDocgenPlugin(),
+  config.plugins
+    .push
     // new CircularDependencyPlugin({
     // exclude detection of files based on a RegExp
     // exclude: /a\.js|node_modules/,
@@ -23,7 +31,12 @@ module.exports = (baseConfig, env, config) => {
     // set the current working directory for displaying module paths
     // cwd: process.cwd(),
     // })
-  );
+    ();
+  config.resolve.plugins = [
+    new TsconfigPathsPlugin({
+      configFile: 'tsconfig.storybook.json',
+    }),
+  ];
   config.resolve.extensions.push('.ts', '.tsx', 'jsx');
   return config;
 };

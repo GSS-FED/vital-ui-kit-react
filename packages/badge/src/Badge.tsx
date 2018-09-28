@@ -48,7 +48,7 @@ Root.defaultProps = {
 
 export interface BadgeProps extends RootProps {
   /** Text on the badge */
-  label: string | number;
+  children: React.ReactNode;
   /** Show 99+ if number is more than 100 */
   trunc?: boolean;
   /** className, default is 'vital__badge' */
@@ -61,11 +61,11 @@ export interface BadgeProps extends RootProps {
  * @name Badge
  * @description Vital UI Kit Badge Label
  * @example
- * <Badge label="99+" />
+ * <Badge>99</Badge>
  */
 
 export const Badge: React.SFC<BadgeProps> = ({
-  label,
+  children,
   trunc = true,
   inverse = false,
   className,
@@ -78,6 +78,9 @@ export const Badge: React.SFC<BadgeProps> = ({
     style={style}
     {...props}
   >
-    {trunc ? trunTo(label) : label}
+    {(trunc && typeof children === 'string') ||
+    typeof children === 'number'
+      ? trunTo(children)
+      : children}
   </Root>
 );

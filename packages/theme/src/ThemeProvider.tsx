@@ -3,29 +3,33 @@ import { ThemeProvider as Provider } from 'styled-components';
 import merge from 'lodash.merge';
 
 import defaultVariables from './theme';
-import defaultComponentsTheme from './theme/components';
+import defaultComponentsThemeFn from './theme/components';
 
-type Props = {
-  theme?: any;
+type Props<T> = {
+  theme?: T;
   children: React.ReactNode;
   componentTheme?: (props: typeof defaultVariables) => any;
 };
 
-class ThemeProvider extends React.Component<Props> {
+class ThemeProvider<T> extends React.Component<Props<T>> {
   static defaultProps = {
     theme: {},
-    componentTheme: (n: any) => n,
   };
 
   render() {
     const { theme, componentTheme, children } = this.props;
+    let combinedTheme = defaultVariables;
+    if (theme && Object.keys(theme).length > 0) {
+      combinedTheme = combineTheme<T>(defaultVariables, theme);
+    }
 
-    const combinedTheme = { ...defaultVariables, ...theme };
-
+    const defaultComponentsTheme = defaultComponentsThemeFn(
+      combinedTheme,
+    );
     const combinedWithComponentTheme = merge(
       combinedTheme,
-      defaultComponentsTheme(combinedTheme),
-      componentTheme!(combinedTheme),
+      defaultComponentsTheme,
+      componentTheme && componentTheme(combinedTheme),
     );
 
     return (
@@ -37,3 +41,14 @@ class ThemeProvider extends React.Component<Props> {
 }
 
 export default ThemeProvider;
+
+export function combineTheme<T>(
+  varirables: typeof defaultVariables,
+  theme: T,
+): T & typeof defaultVariables {
+  return {
+    ...varirables,
+    // @ts-ignore
+    ...theme,
+  };
+}

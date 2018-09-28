@@ -107,6 +107,7 @@ export interface InputProps extends BoxProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   theme?: typeof defaultTheme;
   name?: string;
+  onRightIconClick?: () => void;
 }
 
 export class Input extends React.Component<InputProps> {

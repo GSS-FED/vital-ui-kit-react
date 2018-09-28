@@ -4,7 +4,7 @@
  */
 
 import * as React from 'react';
-import styled, { css, withTheme } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
@@ -32,15 +32,24 @@ const sizeStyle = css<SizeStyleProps>`
     }
     return getBuiltInOrTheme(builtinTheme, theme)[size].size;
   }};
-  border-radius: ${({ size, circle, theme, builtinTheme }) =>
-    circle
+  border-radius: ${({ size, circle, theme, builtinTheme }) => {
+    if (typeof size === 'number') {
+      return circle ? '50%' : '3px';
+    }
+    return circle
       ? '50%'
-      : getBuiltInOrTheme(builtinTheme, theme)[size].borderRadius};
+      : getBuiltInOrTheme(builtinTheme, theme)[size].borderRadius;
+  }};
 `;
 
-const Root = styled<BoxProps, 'div'>('div')`
+const Root = styled<BoxProps & { circle?: boolean }, 'div'>('div')`
   position: relative;
   display: inline-block;
+  ${({ circle }) =>
+    circle &&
+    css`
+      border-radius: 50%;
+    `};
   ${superBoxStyle};
 `;
 
@@ -104,7 +113,7 @@ export interface AvatarProps extends BoxProps {
  *  round
  * />
  */
-class AvatarBase extends React.Component<AvatarProps> {
+export class Avatar extends React.Component<AvatarProps> {
   static defaultProps = {
     bulltinAvatars: defaultAvatarSets,
     circle: false,
@@ -133,6 +142,7 @@ class AvatarBase extends React.Component<AvatarProps> {
     } = this.props;
     return (
       <Root
+        circle={circle}
         style={style}
         className={cn('vital__avatar', containerClassName)}
         {...props}
@@ -170,9 +180,11 @@ class AvatarBase extends React.Component<AvatarProps> {
     } = this.props;
     const sizeTheme = getBuiltInOrTheme(builtinTheme, theme);
     const defaultAvatarRenderer = bulltinAvatars || defaultAvatarSets;
+    const avatarSize =
+      typeof size === 'number' ? size : sizeTheme![size!].size;
     const avatarProps = {
-      width: sizeTheme![size!].size,
-      height: sizeTheme![size!].size,
+      width: avatarSize,
+      height: avatarSize,
     };
     if (outline && gender) {
       if (gender === 'female') {
@@ -212,14 +224,12 @@ class AvatarBase extends React.Component<AvatarProps> {
     }
     if (typeof badge === 'string' || typeof badge === 'number') {
       // FIXME: We skip the size calc since AvatarBadge now doesn't support number;
-      if (typeof size === 'number') {
-        return badge;
-      }
       return (
         <AvatarBadge
           className={cn('vital__avatar-badge', badgeClassName)}
           label={badge}
-          size={size}
+          // @ts-ignore
+          size={typeof size === 'number' ? 'medium' : size}
           circle={circle}
           style={badgeStyle}
         />
@@ -228,8 +238,6 @@ class AvatarBase extends React.Component<AvatarProps> {
     return badge;
   };
 }
-
-export const Avatar = withTheme(AvatarBase);
 
 function getBuiltInOrTheme(
   builtin: BuiltinTheme | undefined,

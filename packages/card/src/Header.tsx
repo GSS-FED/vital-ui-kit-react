@@ -107,8 +107,9 @@ const Header: React.SFC<HeaderProps> = ({
           <Badge
             style={badgeStyle}
             className={cn('vital__card-header-badge', badgeClassName)}
-            label={badge}
-          />
+          >
+            {badge}
+          </Badge>
         </BadgeCell>
       )}
       {children}

@@ -1,14 +1,22 @@
 {
-  "presets": ["@babel/preset-react", ["@babel/preset-env", {"modules": false}]],
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/preset-env", { "modules": false }]
+  ],
   "plugins": [
     "@babel/plugin-proposal-class-properties",
     "@babel/plugin-proposal-object-rest-spread"
   ],
   "env": {
     "development": {
-      "plugins": [["babel-plugin-styled-components", {
-        "displayName": true
-      }]]
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "displayName": true
+          }
+        ]
+      ]
     },
     "test": {
       "presets": [

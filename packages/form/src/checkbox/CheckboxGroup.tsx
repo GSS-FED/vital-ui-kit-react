@@ -1,38 +1,45 @@
 /**
- * TODO: refactor
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react
  * MIT license
  */
 
 import * as React from 'react';
 import cn from 'classnames';
-import styled from 'styled-components';
+import { Box, BoxProps } from '@vital-ui/react-utils';
+import {
+  CheckboxContext,
+  CheckboxContextProps,
+} from './CheckboxContext';
 
-const StyledCheckboxGroup = styled.div``;
-
-type Props = {
+interface CheckboxGroupProps extends BoxProps, CheckboxContextProps {
   className?: string;
   style?: React.CSSProperties;
-};
+}
 
-const CheckboxGroup: React.SFC<Props> = ({
+const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
   children,
   style,
   className,
+  icon,
+  round,
+  disabled,
   ...props
 }) => (
-  <StyledCheckboxGroup
+  <Box
     style={style}
     className={cn('vital__checkbox-group', className)}
     {...props}
   >
-    {children}
-  </StyledCheckboxGroup>
+    <CheckboxContext.Provider
+      value={{
+        icon,
+        round,
+        disabled,
+      }}
+    >
+      {children}
+    </CheckboxContext.Provider>
+  </Box>
 );
-
-CheckboxGroup.defaultProps = {
-  className: '',
-  style: undefined,
-};
 
 export default CheckboxGroup;

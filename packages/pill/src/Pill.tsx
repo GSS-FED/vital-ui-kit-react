@@ -143,7 +143,7 @@ export class Pill extends React.Component<PillProps> {
         <Text vertical={vertical} badge={badge}>
           {children}
         </Text>
-        {badge && <PillBadge label={badge} />}
+        {badge && <PillBadge>{badge}</PillBadge>}
       </Root>
     );
   }

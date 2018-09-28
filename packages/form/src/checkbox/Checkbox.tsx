@@ -10,6 +10,7 @@ import { CheckIcon } from './CheckIcon';
 import { Box } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
+import { CheckboxContext } from './CheckboxContext';
 
 const Root = styled.label`
   font-size: 15px;
@@ -75,11 +76,7 @@ const IconWrapper = styled.div<{ checked?: boolean }>`
   transition: all 120ms ease-out;
 `;
 
-type State = {
-  checked: boolean;
-};
-
-export type Props = {
+export type CheckboxProps = {
   /** Boolean checked value of the checkbox */
   checked?: boolean;
   /** Inital Check value */
@@ -89,7 +86,7 @@ export type Props = {
   /** Round style */
   round?: boolean;
   /** Custom checkbox Icon */
-  icon?: React.ReactNode;
+  icon?: React.ReactNode | ((props: any) => React.ReactNode);
   /** Label text after the checkbox */
   label?: string;
   /** Html name attribute */
@@ -137,7 +134,7 @@ function iconColor(
  *  />
  * </Checkbox.Group>
  */
-class Checkbox extends React.Component<Props, State> {
+class Checkbox extends React.Component<CheckboxProps> {
   static defaultProps = {
     disabled: false,
     round: false,
@@ -146,19 +143,6 @@ class Checkbox extends React.Component<Props, State> {
     style: undefined,
     className: '',
   };
-
-  state = {
-    checked: this.props.checked || this.props.defaultChecked || false,
-  };
-
-  static getDerivedStateFromProps(props: Props) {
-    if ('checked' in props) {
-      return {
-        checked: props.checked,
-      };
-    }
-    return null;
-  }
 
   render() {
     const {
@@ -175,41 +159,62 @@ class Checkbox extends React.Component<Props, State> {
       ...props
     } = this.props;
 
-    const customIcon = icon && typeof icon !== 'string';
+    const customIcon =
+      typeof icon === 'function'
+        ? icon({
+            color: iconColor(
+              this.props.round,
+              this.props.disabled,
+              this.props.theme,
+            ),
+          })
+        : icon;
 
     return (
-      <Root
-        style={style}
-        className={cn('vital__checkbox', className)}
-        {...props}
-      >
-        <CheckWrapper checked={this.state.checked} round={round}>
-          <IconWrapper checked={this.state.checked}>
-            {customIcon || (
-              <Box
-                color={iconColor(
-                  this.props.round,
-                  this.props.disabled,
-                  this.props.theme,
-                )}
-              >
-                <CheckIcon />
-              </Box>
-            )}
-          </IconWrapper>
-        </CheckWrapper>
-        <Label>
-          <Input
-            type="checkbox"
-            disabled={disabled}
-            checked={this.state.checked}
-            defaultChecked={defaultChecked}
-            name={name}
-            onChange={onChange}
-          />
-          {label}
-        </Label>
-      </Root>
+      <CheckboxContext.Consumer>
+        {({
+          round: contextRound,
+          disabled: contextDisabled,
+          icon: contextIcon,
+        }) => (
+          <Root
+            style={style}
+            className={cn('vital__checkbox', className)}
+            {...props}
+          >
+            <CheckWrapper
+              checked={this.props.checked}
+              round={contextRound || round}
+            >
+              <IconWrapper checked={this.props.checked}>
+                {contextIcon ||
+                  customIcon || (
+                    <Box
+                      color={iconColor(
+                        this.props.round,
+                        this.props.disabled,
+                        this.props.theme,
+                      )}
+                    >
+                      <CheckIcon />
+                    </Box>
+                  )}
+              </IconWrapper>
+            </CheckWrapper>
+            <Label>
+              <Input
+                type="checkbox"
+                disabled={contextDisabled || disabled}
+                checked={this.props.checked}
+                defaultChecked={defaultChecked}
+                name={name}
+                onChange={onChange}
+              />
+              {label}
+            </Label>
+          </Root>
+        )}
+      </CheckboxContext.Consumer>
     );
   }
 }

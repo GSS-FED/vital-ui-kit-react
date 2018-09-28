@@ -52,5 +52,3 @@ export const flexBoxStyle = css`
 export const Flex = styled(Box)<FlexBoxProps>`
   ${flexBoxStyle};
 `;
-
-Flex.displayName = 'Vital_Flex';

@@ -8,8 +8,13 @@ import styled from 'styled-components';
 import { transitionBase } from '@vital-ui/react-utils';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled.label<{ disabled: boolean }>`
+interface RootProps extends BoxProps {
+  disabled?: boolean;
+}
+
+const Root = styled<RootProps, 'label'>('label')`
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -27,6 +32,7 @@ const Root = styled.label<{ disabled: boolean }>`
       border-color: ${({ theme }) => theme.form.focusBorderColor};
     }
   }
+  ${superBoxStyle};
 `;
 
 Root.defaultProps = {
@@ -84,9 +90,10 @@ const Label = styled.span`
   padding-left: 4px;
 `;
 
-type Props = {
+interface RadioProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   label: string;
-  name: string;
+  name?: string;
   checked?: boolean;
   defaultChecked?: boolean;
   disabled?: boolean;
@@ -97,9 +104,9 @@ type Props = {
   /** default: `vtail_radio-input` */
   inputClassName?: string;
   inputStyle?: React.CSSProperties;
-};
+}
 
-const Radio = ({
+const Radio: React.SFC<RadioProps> = ({
   disabled = false,
   label,
   checked,
@@ -111,7 +118,7 @@ const Radio = ({
   inputClassName,
   inputStyle,
   ...props
-}: Props) => (
+}) => (
   <Root
     style={style}
     className={cn('vital__radio')}

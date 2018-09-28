@@ -6,7 +6,6 @@
 import * as React from 'react';
 import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
-import { FieldInput } from '../FieldInput';
 import { Input as InputBase, InputProps } from '../input';
 import { DropdownBase, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
@@ -76,18 +75,13 @@ export class Select<T> extends React.Component<SelectProps<T>> {
   );
 
   render() {
-    const { children, label, ...props } = this.props;
+    const { children, ...props } = this.props;
     return (
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
           <div>
             <Context.Provider value={{ ...props, ...options }}>
-              <FieldInput
-                label={label}
-                labelProps={options.getLabelProps()}
-              >
-                {children}
-              </FieldInput>
+              {children}
             </Context.Provider>
           </div>
         )}

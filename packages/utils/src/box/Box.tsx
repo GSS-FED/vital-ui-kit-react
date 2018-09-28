@@ -137,5 +137,3 @@ export const Box = styled<BoxProps & ColorProps, 'div'>('div')`
   ${superBoxStyle};
   ${color};
 `;
-
-Box.displayName = 'Vital_Box';
