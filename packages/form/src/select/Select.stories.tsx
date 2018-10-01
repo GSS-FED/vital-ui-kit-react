@@ -7,7 +7,7 @@ import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
 import { Select, MultiSelect, Tag } from '.';
-import { MoreOption } from '@vital-ui/react-icon';
+import { MoreOption, Close } from '@vital-ui/react-icon';
 
 const FormWrapper = styled.div`
   max-width: 500px;
@@ -44,13 +44,9 @@ class SelectExample extends React.Component<
         selectedItem={this.state.selectedItem}
         itemToString={item => (item ? item.value : '')}
         onChange={this.onChangeItem}
-        shouldRenderItem={(item, value) =>
-          value ? item.value.includes(value) : false
-        }
       >
-        <Select.Input leftIcon="search" rightIcon="times-circle" />
-        <Select.Dropdown>
-          {items.map((item, i) => (
+        <Select.Dropdown
+          popup={items.map((item, i) => (
             <Select.DropdownItem
               key={item.content}
               item={item}
@@ -59,6 +55,9 @@ class SelectExample extends React.Component<
               {item.value}
             </Select.DropdownItem>
           ))}
+        >
+          <Select.Input rightIcon={<Close />} />
+          {/* <div>yo</div> */}
         </Select.Dropdown>
       </Select>
     );
@@ -87,17 +86,8 @@ class DropdownExample extends React.Component<
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
       >
-        <Select.Button
-          text={
-            this.state.selectedItem
-              ? this.state.selectedItem.content || defaultText
-              : defaultText
-          }
-        >
-          <MoreOption name="caret-down" fontSize={15} />
-        </Select.Button>
-        <Select.Dropdown>
-          {items.map((item, i) => (
+        <Select.Dropdown
+          popup={items.map((item, i) => (
             <Select.DropdownItem
               key={item.content}
               item={item}
@@ -106,6 +96,16 @@ class DropdownExample extends React.Component<
               {item.content}
             </Select.DropdownItem>
           ))}
+        >
+          <Select.Button
+            text={
+              this.state.selectedItem
+                ? this.state.selectedItem.content || defaultText
+                : defaultText
+            }
+          >
+            <MoreOption name="caret-down" fontSize={15} />
+          </Select.Button>
         </Select.Dropdown>
       </Select>
     );
@@ -139,18 +139,14 @@ class TagExample extends React.Component<
         itemToString={item => (item ? item.content : '')}
         onChange={this.onChangeItem}
         values={this.state.selectedItem}
-        shouldRenderItem={(item, value) =>
-          // @ts-ignore
-          item.content.includes(value)
-        }
         selection={this.state.selectedItem.map((item, i) => (
           <Tag key={i} onCloseClick={() => this.onDeleteItem(item)}>
             {item.content}
           </Tag>
         ))}
       >
-        <MultiSelect.Dropdown>
-          {items
+        <MultiSelect.Dropdown
+          popup={items
             // @ts-ignore
             .filter(item => !this.state.selectedItem.includes(item))
             .map((item, i) => (
@@ -162,7 +158,7 @@ class TagExample extends React.Component<
                 {item.content}
               </MultiSelect.DropdownItem>
             ))}
-        </MultiSelect.Dropdown>
+        />
       </MultiSelect>
     );
   }

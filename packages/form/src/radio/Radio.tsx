@@ -9,6 +9,7 @@ import { transitionBase } from '@vital-ui/react-utils';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
+import { RadioContext } from './RadioContext';
 
 interface RootProps extends BoxProps {
   disabled?: boolean;
@@ -56,13 +57,13 @@ const Input = styled.input`
 
   &:checked {
     border-color: ${({ disabled, theme }) =>
-      disabled ? theme.secondary400 : theme.primary};
+      disabled ? theme.colors.secondary400 : theme.colors.primary};
 
     &:after {
       opacity: 1;
       transform: scale(1);
       background: ${({ disabled, theme }) =>
-        disabled ? theme.secondary : theme.primary};
+        disabled ? theme.colors.secondary : theme.colors.primary};
     }
   }
 
@@ -92,12 +93,9 @@ const Label = styled.span`
 
 interface RadioProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string;
-  name?: string;
-  checked?: boolean;
+  label?: string;
+  value?: string;
   defaultChecked?: boolean;
-  disabled?: boolean;
-  onChange: () => void;
   /** default: `vital__radio` */
   className?: string;
   style?: React.CSSProperties;
@@ -107,36 +105,40 @@ interface RadioProps
 }
 
 const Radio: React.SFC<RadioProps> = ({
-  disabled = false,
   label,
-  checked,
   defaultChecked,
-  name,
-  onChange,
   style,
   className,
   inputClassName,
   inputStyle,
+  value,
+  onChange,
   ...props
 }) => (
-  <Root
-    style={style}
-    className={cn('vital__radio')}
-    disabled={disabled}
-  >
-    <Input
-      className={cn('vital__radio-input', inputClassName)}
-      style={inputStyle}
-      disabled={disabled}
-      type="radio"
-      defaultChecked={defaultChecked}
-      checked={checked}
-      name={name}
-      onChange={onChange}
-      {...props}
-    />
-    <Label>{label}</Label>
-  </Root>
+  <RadioContext.Consumer>
+    {({ name, disabled, seletedValue, onChange: handleChange }) => (
+      <Root
+        style={style}
+        className={cn('vital__radio')}
+        disabled={disabled}
+      >
+        <Input
+          className={cn('vital__radio-input', inputClassName)}
+          style={inputStyle}
+          disabled={disabled}
+          type="radio"
+          defaultChecked={defaultChecked}
+          checked={value === seletedValue}
+          name={name}
+          onChange={
+            handleChange ? () => handleChange(value) : onChange
+          }
+          {...props}
+        />
+        <Label>{label}</Label>
+      </Root>
+    )}
+  </RadioContext.Consumer>
 );
 
 export default Radio;

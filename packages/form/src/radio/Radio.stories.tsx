@@ -4,7 +4,8 @@ import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs/react';
 import { withNotes } from '@storybook/addon-notes';
 
-import { RadioGroup } from '.';
+import { Value } from '@vital-ui/react-utils';
+import { RadioGroup, Radio } from '.';
 
 const items = [
   { name: 'color', value: 'red', label: 'Red' },
@@ -20,5 +21,21 @@ const items = [
 
 storiesOf('Packages | Form/Radio', module)
   .addDecorator(withKnobs)
-  .add('Basic', () => <RadioGroup items={items} />)
-  .add('Disable', () => <RadioGroup items={items} disabled />);
+  .add('Basic', () => (
+    <Value<string> initial="red">
+      {({ value, set }) => (
+        <RadioGroup name="color" selectedValue={value} onChange={set}>
+          <Radio label="red" value="red" />
+          <Radio label="blue" value="blue" />
+          <Radio label="yellow" value="yellow" />
+        </RadioGroup>
+      )}
+    </Value>
+  ))
+  .add('Disable', () => (
+    <RadioGroup name="color" disabled>
+      <Radio label="red" value="red" />
+      <Radio label="blue" value="blue" />
+      <Radio label="yellow" value="yellow" />
+    </RadioGroup>
+  ));

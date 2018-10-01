@@ -84,7 +84,6 @@ class Popup extends React.Component<Props> {
     } = this.props;
     return (
       <Trigger
-        // ref={this.props.innerRef}
         popupPlacement={placement}
         builtinPlacements={{ ...placements, ...builtinPlacements }}
         {...rest}

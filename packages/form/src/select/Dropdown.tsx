@@ -3,31 +3,35 @@
  * MIT license
  */
 import * as React from 'react';
-import { ControllerStateAndHelpers } from 'downshift';
-import { MenuList, MenuItem } from './styled';
+import { Popup, PopupContent } from '@vital-ui/react-popup';
+import { MenuItem } from './styled';
 import { Context } from './context';
 
-export const DropdownBase = <T extends {}>({
-  getMenuProps,
-  isOpen,
+export interface DropdownProps {
+  popup: React.ReactNode;
+}
+
+export const Dropdown: React.SFC<DropdownProps> = ({
+  popup,
   children,
-  inputValue,
-  shouldRenderItem,
-}: ControllerStateAndHelpers<T> & {
-  children: React.ReactElement<any>[];
-  shouldRenderItem: (item: T, value: string | null) => boolean;
 }) => {
-  if (isOpen) {
-    return (
-      <MenuList {...getMenuProps()}>
-        {React.Children.map(children, child => child).filter(
-          (child: React.ReactElement<any>) =>
-            shouldRenderItem(child.props.item, inputValue),
-        )}
-      </MenuList>
-    );
-  }
-  return null;
+  return (
+    <Context.Consumer>
+      {({ getMenuProps, isOpen }) => (
+        <div {...getMenuProps()}>
+          <Popup
+            popupVisible={isOpen}
+            stretch="width"
+            popup={
+              <PopupContent maxHeight="220px">{popup}</PopupContent>
+            }
+          >
+            {children}
+          </Popup>
+        </div>
+      )}
+    </Context.Consumer>
+  );
 };
 
 type Props = {

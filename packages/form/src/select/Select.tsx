@@ -7,32 +7,37 @@ import * as React from 'react';
 import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
 import { Input as InputBase, InputProps } from '../input';
-import { DropdownBase, DropdownItem } from './Dropdown';
+import { Dropdown, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
 import { SelectButton, SelectButtonText } from './styled';
 import { DownshiftProps } from './DownshiftTypes';
 
 export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
-  label?: React.ReactNode;
-  shouldRenderItem?: (item: T, value: string | null) => boolean;
 }
 
-const Input = (props: InputProps) => (
-  <InputBase
-    {...props}
-    rightIcon={props.value ? props.rightIcon || null : null}
-  />
+const Input = React.forwardRef<HTMLInputElement>(
+  (props: InputProps, ref) => (
+    <InputBase
+      inputRef={ref}
+      {...props}
+      rightIcon={props.value ? props.rightIcon || null : null}
+    />
+  ),
 );
 
 const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text = '', children, ...props }) => (
-  <SelectButton {...props}>
-    {<SelectButtonText>{text}</SelectButtonText>}
-    {children}
-  </SelectButton>
+  <Context.Consumer>
+    {({ getToggleButtonProps }) => (
+      <SelectButton {...getToggleButtonProps()} {...props}>
+        {<SelectButtonText>{text}</SelectButtonText>}
+        {children}
+      </SelectButton>
+    )}
+  </Context.Consumer>
 );
 
 Button.defaultProps = {
@@ -40,21 +45,7 @@ Button.defaultProps = {
   children: null,
 };
 
-const Dropdown = withContext(
-  DropdownBase,
-  ({ getMenuProps, isOpen, inputValue, shouldRenderItem }) => ({
-    getMenuProps,
-    isOpen,
-    inputValue,
-    shouldRenderItem,
-  }),
-);
-
 export class Select<T> extends React.Component<SelectProps<T>> {
-  static defaultProps = {
-    shouldRenderItem: () => true,
-  };
-
   static Input = withContext(
     Input,
     ({ getInputProps, clearSelection }) => ({
@@ -69,10 +60,7 @@ export class Select<T> extends React.Component<SelectProps<T>> {
 
   static Context: typeof Context = Context;
 
-  static Button: typeof Button = withContext(
-    Button,
-    ({ getToggleButtonProps }) => getToggleButtonProps(),
-  );
+  static Button: typeof Button = Button;
 
   render() {
     const { children, ...props } = this.props;

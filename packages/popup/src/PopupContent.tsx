@@ -1,17 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import {
-  width,
-  height,
-  maxHeight,
-  maxWidth,
-  WidthProps,
-  HeightProps,
-  MaxHeightProps,
-  MaxWidthProps,
-  space,
-  SpaceProps,
-} from 'styled-system';
+import styled, { css, Interpolation } from 'styled-components';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
 export const windowStyle = css`
   display: flex;
@@ -19,14 +8,10 @@ export const windowStyle = css`
   align-items: stretch;
   overflow: scroll;
   border-radius: 4px;
-  ${width};
-  ${maxWidth};
-  ${height};
-  ${maxHeight};
-  ${space};
+  ${superBoxStyle};
 `;
 
-export const popupStyle = css`
+export const defaultPopupStyle = css`
   color: #43434b;
   background-color: #ffffff;
   border-color: #dedee2;
@@ -36,17 +21,17 @@ export const popupStyle = css`
   box-shadow: 0 6px 20px 0 rgba(99, 99, 111, 0.2);
 `;
 
-const Root = styled.div`
-  ${popupStyle};
+const Root = styled<RootProps, 'div'>('div')`
+  ${({ popupStyle }) =>
+    popupStyle ? popupStyle : defaultPopupStyle};
   ${windowStyle};
 `;
 
-interface Props
-  extends WidthProps,
-    HeightProps,
-    MaxWidthProps,
-    MaxHeightProps,
-    SpaceProps {}
+interface RootProps {
+  popupStyle?: Interpolation<any> | string;
+}
+
+interface Props extends BoxProps, RootProps {}
 
 export class PopupContent extends React.Component<Props> {
   render() {

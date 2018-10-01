@@ -8,13 +8,14 @@ import cn from 'classnames';
 import { Box, BoxProps } from '@vital-ui/react-utils';
 import { RadioContext } from './RadioContext';
 
-interface RadioGroupProps extends BoxProps {
-  onChange?: (selectedValue: string | number) => void;
+interface RadioGroupProps<T> extends BoxProps {
+  onChange?: (selectedValue: T | string | number) => void;
   disabled?: boolean;
   /** default: `vital__radio-group` */
   className?: string;
   style?: React.CSSProperties;
-  selectedValue: string | number;
+  selectedValue?: T | string | number;
+  name?: string;
 }
 
 /**
@@ -22,12 +23,22 @@ interface RadioGroupProps extends BoxProps {
  * @name Radio
  * @description Group of radio buttons
  * @example
- * <RadioGroup items={[{name: 'color', value: 'red', label: 'Red'}, {name: 'color', value: 'blue', label: 'Blue', defaultChecked: true}, {name: 'color', value:'yello', label: 'Yellow'}]} />
+ * <RadioGroup name="color" selectedValue={value} onChange={set}>
+ *        <Radio label="red" value="red" />
+ *        <Radio label="blue" value="blue" />
+ *        <Radio label="yellow" value="yellow" />
+ *      </RadioGroup>
  */
-class RadioGroup extends React.Component<RadioGroupProps> {
+class RadioGroup<T> extends React.Component<RadioGroupProps<T>> {
   static defaultProps = {
     onChange: () => {},
     disabled: false,
+  };
+
+  handleChange = value => {
+    if (this.props.onChange) {
+      this.props.onChange(value);
+    }
   };
 
   render() {
@@ -36,6 +47,7 @@ class RadioGroup extends React.Component<RadioGroupProps> {
       onChange,
       style,
       className,
+      name,
       ...props
     } = this.props;
     return (
@@ -46,8 +58,10 @@ class RadioGroup extends React.Component<RadioGroupProps> {
       >
         <RadioContext.Provider
           value={{
+            name: name,
             disabled: this.props.disabled,
             seletedValue: this.props.selectedValue,
+            onChange: this.handleChange,
           }}
         >
           {this.props.children}

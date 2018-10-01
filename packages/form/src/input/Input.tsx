@@ -74,19 +74,17 @@ InputElement.defaultProps = {
   rightIcon: false,
 };
 
-type IconProps = any;
-
 export interface InputProps extends BoxProps {
   /** Input ref */
-  inputRef?: React.RefObject<HTMLInputElement>;
+  inputRef?: React.Ref<HTMLInputElement>;
   /** Html attr */
   type?: string;
   /** Html attr */
   placeholder?: string;
   /** Left Icon name, or Icon component */
-  leftIcon?: IconProps;
+  leftIcon?: any;
   /** Right Icon name, or Icon component */
-  rightIcon?: IconProps;
+  rightIcon?: any;
   /** Default value of input */
   defaultValue?: string;
   value?: string;
@@ -108,6 +106,7 @@ export interface InputProps extends BoxProps {
   theme?: typeof defaultTheme;
   name?: string;
   onRightIconClick?: () => void;
+  children?: React.ReactNode;
 }
 
 export class Input extends React.Component<InputProps> {
@@ -126,9 +125,19 @@ export class Input extends React.Component<InputProps> {
     className: '',
   };
 
-  renderIcon = (icon: IconProps, position: IconPosition) => {
+  renderIcon = (icon: any, position: IconPosition) => {
+    const { onRightIconClick } = this.props;
     if (isElement(icon)) {
-      return <IconButton iconPosition={position}>{icon}</IconButton>;
+      return (
+        <IconButton
+          onClick={
+            position === 'right' ? onRightIconClick : undefined
+          }
+          iconPosition={position}
+        >
+          {icon}
+        </IconButton>
+      );
     }
     return null;
   };
@@ -150,6 +159,7 @@ export class Input extends React.Component<InputProps> {
       className,
       onChange,
       value,
+      onRightIconClick,
       theme = defaultTheme,
       ...props
     } = this.props;
