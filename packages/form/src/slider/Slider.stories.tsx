@@ -25,7 +25,7 @@ storiesOf('Packages | Form/Slider', module)
       )}
       disabled={boolean('disabled', false)}
       hasButton={boolean('hasButton', false)}
-      value={0}
+      value={1}
       max={number('max', 100)}
       min={number('min', 0)}
       step={number('step', 10)}

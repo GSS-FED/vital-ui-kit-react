@@ -24,7 +24,6 @@
         "@babel/preset-react"
       ],
       "plugins": [
-        "require-context-hook",
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-object-rest-spread"
       ]

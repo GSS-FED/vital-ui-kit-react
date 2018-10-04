@@ -3,7 +3,7 @@ const TEST_REGEX =
 
 module.exports = {
   testRegex: TEST_REGEX,
-  setupTestFrameworkScriptFile: './stories/storyshots.js',
+  setupTestFrameworkScriptFile: './jest.setup.js',
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
     '^.+\\.(js|jsx)$': 'babel-jest',

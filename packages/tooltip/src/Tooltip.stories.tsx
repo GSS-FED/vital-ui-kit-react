@@ -4,7 +4,7 @@ import { Tooltip } from '.';
 import 'rc-trigger/assets/index.css';
 
 storiesOf('Packages | Tooltip', module).add('Basic', () => (
-  <Tooltip popup={<div>hi</div>}>
+  <Tooltip placement="left" popup={<div>hi</div>}>
     <button>hover</button>
   </Tooltip>
 ));

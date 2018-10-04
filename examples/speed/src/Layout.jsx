@@ -40,7 +40,7 @@ Sidebar.displayName = 'Sidebar';
 Content.displayName = 'Content';
 
 type Props = {
-  children: React.ReactNode;
+  children: React.ReactNode,
 };
 
 /**

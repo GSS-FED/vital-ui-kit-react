@@ -80,7 +80,8 @@ export class Slider extends React.Component<SliderProps, State> {
     grab: 0,
     // cache the mouse down postion x
     startX: 0,
-    value: this.props.value || 0,
+    value:
+      this.props.value || clamp(0, this.props.max, this.props.min),
   };
 
   slider = React.createRef<any>();
@@ -150,7 +151,10 @@ export class Slider extends React.Component<SliderProps, State> {
         (percentage * (this.props.max - this.props.min)) /
           this.props.step,
       );
-    this.setState({ value });
+    this.setState({
+      value,
+      position: this.getPositionFromValue(value),
+    });
     if (this.props.onChange) {
       this.props.onChange(value, e);
     }
@@ -199,7 +203,7 @@ export class Slider extends React.Component<SliderProps, State> {
 
   increaseByStep = () => {
     this.setState(prevState => ({
-      value: this.clamp(
+      value: clamp(
         prevState.value + this.props.step,
         this.props.max,
         this.props.min,
@@ -209,7 +213,7 @@ export class Slider extends React.Component<SliderProps, State> {
 
   decreaseByStep = () => {
     this.setState(prevState => ({
-      value: this.clamp(
+      value: clamp(
         prevState.value - this.props.step,
         this.props.max,
         this.props.min,
@@ -231,19 +235,18 @@ export class Slider extends React.Component<SliderProps, State> {
     const { startX, limit, grab, position } = this.state;
     const diff = pos - startX;
 
-    const newHandlerLeft = this.clamp(position + diff, limit, grab);
-    const percentage = (newHandlerLeft - grab) / (limit - grab);
-    const value =
+    const percentage = (position + diff - grab) / (limit - grab);
+    const value = clamp(
       this.props.step *
-      Math.round(
-        (percentage * (this.props.max - this.props.min)) /
-          this.props.step,
-      );
+        Math.round(
+          (percentage * (this.props.max - this.props.min)) /
+            this.props.step,
+        ),
+      this.props.max,
+      this.props.min,
+    );
     return value;
   };
-
-  clamp = (value: number, max: number, min: number) =>
-    Math.min(Math.max(value, min), max);
 
   renderDecreaseButton = () => {
     let buttonShow = this.props.hasButton;
@@ -267,6 +270,7 @@ export class Slider extends React.Component<SliderProps, State> {
       return (
         <Button {...buttonProps} circle size="xsmall">
           <svg
+            width="10px"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             data-prefix="fas"
@@ -307,6 +311,7 @@ export class Slider extends React.Component<SliderProps, State> {
       return (
         <Button {...buttonProps} circle size="xsmall">
           <svg
+            width="10px"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             data-prefix="fas"
@@ -326,7 +331,6 @@ export class Slider extends React.Component<SliderProps, State> {
   };
 
   render() {
-    //
     const position = this.getPositionFromValue(this.state.value);
 
     return (
@@ -345,10 +349,6 @@ export class Slider extends React.Component<SliderProps, State> {
           <Track
             size={this.props.size}
             onMouseDown={this.handleTrack}
-            onMouseUp={(e: React.MouseEvent<any>) => {
-              this.setState({ startX: e.clientX });
-              this.handleEnd(e);
-            }}
             onTouchStart={this.handleStart}
             onTouchEnd={this.handleEnd}
             trackRef={this.track}
@@ -375,3 +375,9 @@ export class Slider extends React.Component<SliderProps, State> {
     );
   }
 }
+
+/**
+ * clamp value between max and min
+ */
+const clamp = (value: number, max: number, min: number) =>
+  Math.min(Math.max(value, min), max);
