@@ -16,7 +16,7 @@ const Display = styled.div`
 
 const Wrapper = styled.div`
   padding: 20px;
-  ${'' /* margin: 10px; */} border-radius: 8px;
+  border-radius: 8px;
   cursor: pointer;
   &:hover {
     background: #c4d2eb;

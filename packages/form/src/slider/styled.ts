@@ -29,7 +29,7 @@ const SlideHandler = styled.div<{ size: Size }>`
   position: absolute;
   border-radius: 100%;
   border-color: ${({ theme }) => theme.form.borderColor};
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0 0 0 1px rgba(196, 210, 235, 0.3);
   text-indent: -3333px;
   overflow: hidden;
@@ -44,7 +44,7 @@ const SlideHandler = styled.div<{ size: Size }>`
 
   &:hover {
     border-color: ${({ theme }) => theme.form.focusBorderColor};
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.colors.white};
     box-shadow: 0 0 0 2px rgba(196, 210, 235, 0.3);
   }
 `;

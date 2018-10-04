@@ -74,7 +74,6 @@ interface RcTriggerProps {
   /** which actions cause popup shown */
   action?: Array<'hover' | 'click' | 'focus' | 'contextMenu'>;
   popupAlign?: PopupAlign;
-  placement?: Placement;
   /** Popup content */
   popup: React.ReactNode | (() => React.ReactNode);
   /** additional style of popup */
@@ -102,12 +101,15 @@ interface RcTriggerProps {
 export interface TooltipProps extends RcTriggerProps {
   /** the element target for tooltip */
   children: React.ReactNode;
+  placement?: Placement;
 }
 
 export const Tooltip: React.SFC<TooltipProps> = ({
   children,
   popupStyle,
   popup,
+  placement,
+  popupPlacement,
   ...props
 }) => {
   const TooltipBase = () => [
@@ -119,6 +121,7 @@ export const Tooltip: React.SFC<TooltipProps> = ({
 
   return (
     <Trigger
+      popupPlacement={popupPlacement || placement}
       popup={TooltipBase}
       builtinPlacements={placements}
       {...props}
@@ -134,4 +137,5 @@ Tooltip.defaultProps = {
   mouseLeaveDelay: 0,
   popupClassName: 'vital-popup',
   destroyPopupOnHide: false,
+  placement: 'bottom',
 };

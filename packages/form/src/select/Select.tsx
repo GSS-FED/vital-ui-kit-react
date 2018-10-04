@@ -16,7 +16,7 @@ export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
 }
 
-const Input = React.forwardRef<HTMLInputElement>(
+const Input = React.forwardRef<HTMLInputElement & InputProps>(
   (props: InputProps, ref) => (
     <InputBase
       inputRef={ref}
@@ -32,7 +32,7 @@ const Button: React.SFC<{
 }> = ({ text = '', children, ...props }) => (
   <Context.Consumer>
     {({ getToggleButtonProps }) => (
-      <SelectButton {...getToggleButtonProps()} {...props}>
+      <SelectButton {...props} {...getToggleButtonProps()}>
         {<SelectButtonText>{text}</SelectButtonText>}
         {children}
       </SelectButton>
