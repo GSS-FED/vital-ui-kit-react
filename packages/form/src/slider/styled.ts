@@ -17,14 +17,16 @@ const SliderRoot = styled.div`
     `};
 `;
 
-const SliderWrapper = styled.div<{ size: Size; disabled: boolean }>`
+type SliderWrapperProps = { size: Size; disabled: boolean };
+
+const SliderWrapper = styled<SliderWrapperProps, 'div'>('div')`
   display: block;
   position: relative;
   width: 100%;
   height: ${props => constants[props.size].handlerSize};
 `;
 
-const SlideHandler = styled.div<{ size: Size }>`
+const SlideHandler = styled<{ size: Size }, 'div'>('div')`
   top: 0;
   position: absolute;
   border-radius: 100%;

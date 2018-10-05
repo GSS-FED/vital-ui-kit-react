@@ -26,9 +26,9 @@ storiesOf('Packages | Form/Slider', module)
       disabled={boolean('disabled', false)}
       hasButton={boolean('hasButton', false)}
       value={1}
-      max={number('max', 100)}
-      min={number('min', 0)}
-      step={number('step', 10)}
+      max={number('max', 2)}
+      min={number('min', 1)}
+      step={number('step', 0.1)}
     />
   ))
   .add('with Custom Button', () => (

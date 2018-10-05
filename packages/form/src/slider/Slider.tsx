@@ -14,14 +14,17 @@ import {
   Button,
 } from './styled';
 import Track from './track';
-
+import { clamp, noop, toFixed, countDecimals } from './utils';
 import constants from './constants';
 
 type State = {
   active: boolean;
   position: number;
+  /** Value handle offset */
   grab: number;
+  /** Limit of the handle drag */
   limit: number;
+  /** cache the mouse down postion x */
   startX: number;
   value: number;
 };
@@ -67,18 +70,15 @@ export class Slider extends React.Component<SliderProps, State> {
     decreaseButton: null,
     increaseButton: null,
     trackLabel: false,
-    onChangeStart: null,
-    onChangeComplete: null,
+    onChangeStart: noop,
+    onChangeComplete: noop,
   };
 
-  state = {
+  state: State = {
     active: false,
     position: -constants[this.props.size!].handlerSize / 2,
-    // limit of the handle drag
     limit: 0,
-    // handle offset
     grab: 0,
-    // cache the mouse down postion x
     startX: 0,
     value:
       this.props.value || clamp(0, this.props.max, this.props.min),
@@ -90,7 +90,7 @@ export class Slider extends React.Component<SliderProps, State> {
 
   handle = React.createRef<any>();
 
-  // delay timeout of the button calling function
+  /** delay timeout of the button calling function */
   start = 700;
 
   timeout: any = undefined;
@@ -120,6 +120,133 @@ export class Slider extends React.Component<SliderProps, State> {
     }));
   };
 
+  increaseByStep = () => {
+    const decimals = countDecimals(this.props.step);
+    const toFixedDecimals = toFixed(decimals);
+    this.setState(prevState => {
+      const value = toFixedDecimals(
+        clamp(
+          prevState.value + this.props.step,
+          this.props.max,
+          this.props.min,
+        ),
+      );
+      return {
+        value,
+        position: this.getPositionFromValue(value),
+      };
+    });
+  };
+
+  decreaseByStep = () => {
+    const decimals = countDecimals(this.props.step);
+    const toFixedDecimals = toFixed(decimals);
+    this.setState(prevState => {
+      const value = toFixedDecimals(
+        clamp(
+          prevState.value - this.props.step,
+          this.props.max,
+          this.props.min,
+        ),
+      );
+      return {
+        value,
+        position: this.getPositionFromValue(value),
+      };
+    });
+  };
+
+  // -------------------------------------
+  //   Calculation
+  // -------------------------------------
+
+  getPositionFromValue = (value: number): number => {
+    const { min, max } = this.props;
+    const { limit } = this.state;
+    const diffMaxMin = max - min;
+    const diffValMin = value - min;
+    const percentage = diffValMin / diffMaxMin;
+    const pos = Math.round(percentage * limit);
+    return pos;
+  };
+
+  getValueFromPosition = (pos: number): number => {
+    const { startX, limit, grab, position } = this.state;
+    const diff = pos - startX;
+    const percentage = (position + diff - grab) / (limit - grab);
+    return this.getValueFromPercentage(percentage);
+  };
+
+  render() {
+    const position = this.getPositionFromValue(this.state.value);
+
+    return (
+      <SliderRoot
+        ref={this.slider}
+        disabled={this.props.disabled!}
+        aria-valuemin={this.props.min}
+        aria-valuemax={this.props.max}
+        aria-valuenow={this.props.value}
+      >
+        {this.renderDecreaseButton()}
+        <SliderWrapper
+          size={this.props.size!}
+          disabled={this.props.disabled!}
+        >
+          <Track
+            size={this.props.size}
+            onMouseDown={this.handleTrack}
+            onMouseUp={() =>
+              this.setState({
+                active: false,
+              })
+            }
+            onTouchStart={this.handleStart}
+            onTouchEnd={this.handleEnd}
+            trackRef={this.track}
+            disabled={this.props.disabled!}
+            selectionWidth={position - this.state.grab}
+          />
+          <Tooltip
+            placement="bottom"
+            popup={this.state.value}
+            popupVisible={this.state.active}
+          >
+            <SlideHandler
+              size={this.props.size!}
+              ref={this.handle}
+              style={{
+                left: `${position}px`,
+              }}
+              onMouseDown={this.handleStart}
+            />
+          </Tooltip>
+        </SliderWrapper>
+        {this.renderIncreaseButton()}
+      </SliderRoot>
+    );
+  }
+
+  getValueFromPercentage = (percentage: number) => {
+    const decimals = countDecimals(this.props.step);
+    const toFixedDecimals = toFixed(decimals);
+    return toFixedDecimals(
+      clamp(
+        this.props.step *
+          toFixedDecimals(
+            (this.props.min +
+              percentage * (this.props.max - this.props.min)) /
+              this.props.step,
+          ),
+        this.props.max,
+        this.props.min,
+      ),
+    );
+  };
+
+  // -------------------------------------
+  //   Event Handler
+  // -------------------------------------
   handleStart: React.ReactEventHandler = e => {
     if (this.props.disabled) {
       return;
@@ -145,14 +272,10 @@ export class Slider extends React.Component<SliderProps, State> {
     e.stopPropagation();
     const percentage =
       e.nativeEvent.offsetX / this.track.current.clientWidth;
-    const value =
-      this.props.step *
-      Math.round(
-        (percentage * (this.props.max - this.props.min)) /
-          this.props.step,
-      );
+    const value = this.getValueFromPercentage(percentage);
     this.setState({
       value,
+      active: true,
       position: this.getPositionFromValue(value),
     });
     if (this.props.onChange) {
@@ -187,6 +310,9 @@ export class Slider extends React.Component<SliderProps, State> {
     if (this.props.disabled) {
       return;
     }
+    this.setState({
+      active: true,
+    });
     this.increaseByStep();
     this.timeout = setTimeout(this.handleIncrease, this.start);
     this.start = this.start / 2;
@@ -196,59 +322,18 @@ export class Slider extends React.Component<SliderProps, State> {
     if (this.props.disabled) {
       return;
     }
+    this.setState({
+      active: true,
+    });
     this.decreaseByStep();
     this.timeout = setTimeout(this.handleDecrease, this.start);
     this.start = this.start / 2;
   };
 
-  increaseByStep = () => {
-    this.setState(prevState => ({
-      value: clamp(
-        prevState.value + this.props.step,
-        this.props.max,
-        this.props.min,
-      ),
-    }));
-  };
-
-  decreaseByStep = () => {
-    this.setState(prevState => ({
-      value: clamp(
-        prevState.value - this.props.step,
-        this.props.max,
-        this.props.min,
-      ),
-    }));
-  };
-
-  getPositionFromValue = (value: number): number => {
-    const { min, max } = this.props;
-    const { limit } = this.state;
-    const diffMaxMin = max - min;
-    const diffValMin = value - min;
-    const percentage = diffValMin / diffMaxMin;
-    const pos = Math.round(percentage * limit);
-    return pos;
-  };
-
-  getValueFromPosition = (pos: number): number => {
-    const { startX, limit, grab, position } = this.state;
-    const diff = pos - startX;
-
-    const percentage = (position + diff - grab) / (limit - grab);
-    const value = clamp(
-      this.props.step *
-        Math.round(
-          (percentage * (this.props.max - this.props.min)) /
-            this.props.step,
-        ),
-      this.props.max,
-      this.props.min,
-    );
-    return value;
-  };
-
-  renderDecreaseButton = () => {
+  // -------------------------------------
+  //   Render
+  // -------------------------------------
+  private renderDecreaseButton = () => {
     let buttonShow = this.props.hasButton;
     if (this.props.decreaseButton) {
       buttonShow = true;
@@ -258,6 +343,9 @@ export class Slider extends React.Component<SliderProps, State> {
         onMouseDown: this.handleDecrease,
         onMouseUp: () => {
           clearTimeout(this.timeout);
+          this.setState({
+            active: false,
+          });
           this.start = 700;
         },
         style: { marginRight: '12px', flex: '0 0 auto' },
@@ -289,7 +377,7 @@ export class Slider extends React.Component<SliderProps, State> {
     return null;
   };
 
-  renderIncreaseButton = () => {
+  private renderIncreaseButton = () => {
     let buttonShow = this.props.hasButton;
     if (this.props.increaseButton) {
       buttonShow = true;
@@ -298,6 +386,9 @@ export class Slider extends React.Component<SliderProps, State> {
       const buttonProps = {
         onMouseDown: this.handleIncrease,
         onMouseUp: () => {
+          this.setState({
+            active: false,
+          });
           clearTimeout(this.timeout);
           this.start = 700;
         },
@@ -329,55 +420,4 @@ export class Slider extends React.Component<SliderProps, State> {
     }
     return null;
   };
-
-  render() {
-    const position = this.getPositionFromValue(this.state.value);
-
-    return (
-      <SliderRoot
-        ref={this.slider}
-        disabled={this.props.disabled!}
-        aria-valuemin={this.props.min}
-        aria-valuemax={this.props.max}
-        aria-valuenow={this.props.value}
-      >
-        {this.renderDecreaseButton()}
-        <SliderWrapper
-          size={this.props.size!}
-          disabled={this.props.disabled!}
-        >
-          <Track
-            size={this.props.size}
-            onMouseDown={this.handleTrack}
-            onTouchStart={this.handleStart}
-            onTouchEnd={this.handleEnd}
-            trackRef={this.track}
-            disabled={this.props.disabled!}
-            selectionWidth={position - this.state.grab}
-          />
-          <Tooltip
-            placement="bottom"
-            popup={this.state.value}
-            action={['hover']}
-          >
-            <SlideHandler
-              size={this.props.size!}
-              ref={this.handle}
-              style={{
-                left: `${position}px`,
-              }}
-              onMouseDown={this.handleStart}
-            />
-          </Tooltip>
-        </SliderWrapper>
-        {this.renderIncreaseButton()}
-      </SliderRoot>
-    );
-  }
 }
-
-/**
- * clamp value between max and min
- */
-const clamp = (value: number, max: number, min: number) =>
-  Math.min(Math.max(value, min), max);
