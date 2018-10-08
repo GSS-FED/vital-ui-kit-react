@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "scripts": {
     "gen:assets": "svgr -d default-avatar assets --ext tsx --icon",
-    "clean": "rm -rf dist lib",
+    "clean": "rm -rf dist cjs",
     "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "files": [
