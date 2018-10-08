@@ -40,10 +40,7 @@ export interface SliderProps {
   decreaseButton?: React.ReactElement<any>;
   increaseButton?: React.ReactElement<any>;
   trackLabel?: boolean;
-  onChange?: (
-    value: number,
-    e: React.SyntheticEvent<HTMLElement>,
-  ) => void;
+  onChange?: (value: number) => void;
   onChangeStart?: React.EventHandler<any>;
   onChangeComplete?: React.EventHandler<any>;
 }
@@ -123,37 +120,51 @@ export class Slider extends React.Component<SliderProps, State> {
   increaseByStep = () => {
     const decimals = countDecimals(this.props.step);
     const toFixedDecimals = toFixed(decimals);
-    this.setState(prevState => {
-      const value = toFixedDecimals(
-        clamp(
-          prevState.value + this.props.step,
-          this.props.max,
-          this.props.min,
-        ),
-      );
-      return {
-        value,
-        position: this.getPositionFromValue(value),
-      };
-    });
+    this.setState(
+      prevState => {
+        const value = toFixedDecimals(
+          clamp(
+            prevState.value + this.props.step,
+            this.props.max,
+            this.props.min,
+          ),
+        );
+        return {
+          value,
+          position: this.getPositionFromValue(value),
+        };
+      },
+      () => {
+        if (this.props.onChange) {
+          this.props.onChange(this.state.value);
+        }
+      },
+    );
   };
 
   decreaseByStep = () => {
     const decimals = countDecimals(this.props.step);
     const toFixedDecimals = toFixed(decimals);
-    this.setState(prevState => {
-      const value = toFixedDecimals(
-        clamp(
-          prevState.value - this.props.step,
-          this.props.max,
-          this.props.min,
-        ),
-      );
-      return {
-        value,
-        position: this.getPositionFromValue(value),
-      };
-    });
+    this.setState(
+      prevState => {
+        const value = toFixedDecimals(
+          clamp(
+            prevState.value - this.props.step,
+            this.props.max,
+            this.props.min,
+          ),
+        );
+        return {
+          value,
+          position: this.getPositionFromValue(value),
+        };
+      },
+      () => {
+        if (this.props.onChange) {
+          this.props.onChange(this.state.value);
+        }
+      },
+    );
   };
 
   // -------------------------------------
@@ -279,7 +290,7 @@ export class Slider extends React.Component<SliderProps, State> {
       position: this.getPositionFromValue(value),
     });
     if (this.props.onChange) {
-      this.props.onChange(value, e);
+      this.props.onChange(this.state.value);
     }
   };
 
@@ -288,7 +299,7 @@ export class Slider extends React.Component<SliderProps, State> {
     const value = this.getValueFromPosition(e.clientX);
     this.setState({ value });
     if (this.props.onChange) {
-      this.props.onChange(value, e);
+      this.props.onChange(this.state.value);
     }
   };
 
