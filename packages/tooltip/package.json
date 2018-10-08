@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist lib",
-    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
+    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1 && copyfiles src/*.css cjs -u 1",
     "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
   },
   "author": "",
