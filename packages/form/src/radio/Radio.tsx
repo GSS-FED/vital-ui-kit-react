@@ -34,6 +34,7 @@ const Root = styled<RootProps, 'label'>('label')`
     }
   }
   ${superBoxStyle};
+  ${({ theme }) => theme.radio.css};
 `;
 
 Root.defaultProps = {
@@ -47,33 +48,37 @@ const Input = styled.input`
   position: relative;
   box-sizing: content-box;
   margin: -2px 0 0 0;
-  width: 15px;
-  height: 15px;
+  width: ${({ theme }) => theme.radio.size};
+  height: ${({ theme }) => theme.radio.size};
   border: 1px solid ${({ theme }) => theme.form.borderColor};
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.radio.bg};
   ${transitionBase};
   cursor: pointer;
 
   &:checked {
     border-color: ${({ disabled, theme }) =>
-      disabled ? theme.colors.secondary400 : theme.colors.primary};
+      disabled ? theme.colors.secondary400 : theme.radio.primary};
+    background-color: ${({ disabled, theme }) =>
+      disabled ? theme.colors.secondary400 : theme.radio.checkedBg};
 
     &:after {
       opacity: 1;
       transform: scale(1);
       background: ${({ disabled, theme }) =>
-        disabled ? theme.colors.secondary : theme.colors.primary};
+        disabled ? theme.colors.secondary : theme.radio.checkedAfter};
     }
   }
 
   &:after {
     content: '';
     position: absolute;
-    width: 9px;
-    height: 9px;
-    top: calc((15px - 9px) / 2);
-    left: calc((15px - 9px) / 2);
+    width: ${({ theme }) => theme.radio.checkedSize};
+    height: ${({ theme }) => theme.radio.checkedSize};
+    top: ${({ theme }) =>
+      `calc((${theme.radio.size} - ${theme.radio.checkedSize})/2)`};
+    left: ${({ theme }) =>
+      `calc((${theme.radio.size} - ${theme.radio.checkedSize})/2)`};
     border-radius: 50%;
     background: transparent;
     opacity: 0;

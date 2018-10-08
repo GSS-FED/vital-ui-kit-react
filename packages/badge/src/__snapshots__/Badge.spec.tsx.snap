@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should render with default styles 1`] = `
+.c0 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 0.725rem;
+  background-color: #00C3FF;
+  color: #ffffff;
+}
+
+<span
+  className="vital__badge c0"
+>
+  1
+</span>
+`;

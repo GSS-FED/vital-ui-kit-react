@@ -190,13 +190,15 @@ export default (theme: typeof defaultTheme) => ({
       color: '#456296',
     },
   },
-  progressBar: {
-    defaultColor: '#95abd3',
-  },
   radio: {
     color: (disabled: boolean) =>
       disabled ? theme.colors.secondary : theme.colors.secondary700,
     hoverBorderColor: theme.colors.primary500,
+    size: '15px',
+    checkedSize: '9px',
+    checkedBg: theme.colors.white,
+    checkedAfter: theme.colors.primary,
+    bg: theme.colors.white,
   },
   select: {
     item: {

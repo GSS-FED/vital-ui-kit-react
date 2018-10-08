@@ -7,18 +7,6 @@ import { withNotes } from '@storybook/addon-notes';
 import { Value } from '@vital-ui/react-utils';
 import { RadioGroup, Radio } from '.';
 
-const items = [
-  { name: 'color', value: 'red', label: 'Red' },
-  {
-    name: 'color',
-    value: 'blue',
-    label: 'Blue',
-    defaultChecked: true,
-  },
-  { name: 'color', value: 'yellow', label: 'Yellow' },
-  { name: 'color', value: 'green', label: 'Green' },
-];
-
 storiesOf('Packages | Form/Radio', module)
   .addDecorator(withKnobs)
   .add('Basic', () => (

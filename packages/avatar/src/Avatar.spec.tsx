@@ -2,7 +2,6 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Avatar } from './Avatar';
 import { ThemeProvider } from '@vital-ui/react-theme';
-import 'jest-styled-components';
 
 describe('Avatar', () => {
   it('should render with default styles', () => {

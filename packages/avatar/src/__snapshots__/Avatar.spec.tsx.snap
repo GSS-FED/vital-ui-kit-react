@@ -1,11 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Avatar should render with css prop 1`] = `
+.c0 {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.c1 {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 <div
-  className="vital__avatar sc-bxivhb cUJQCQ"
+  className="vital__avatar c0"
 >
   <div
-    className="vital__avatar-image-wrapper sc-EHOje gcSYnP"
+    className="vital__avatar-image-wrapper c1"
     size={150}
   >
     <svg
@@ -38,11 +52,23 @@ exports[`Avatar should render with css prop 1`] = `
 `;
 
 exports[`Avatar should render with default styles 1`] = `
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+}
+
 <div
-  className="vital__avatar sc-bxivhb dwitlx"
+  className="vital__avatar c0"
 >
   <div
-    className="vital__avatar-image-wrapper sc-EHOje hKoVtM"
+    className="vital__avatar-image-wrapper c1"
     size="medium"
   >
     <svg
@@ -75,11 +101,23 @@ exports[`Avatar should render with default styles 1`] = `
 `;
 
 exports[`Avatar should render with number size prop 1`] = `
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
+}
+
 <div
-  className="vital__avatar sc-bxivhb dwitlx"
+  className="vital__avatar c0"
 >
   <div
-    className="vital__avatar-image-wrapper sc-EHOje iWzCXI"
+    className="vital__avatar-image-wrapper c1"
     size={150}
   >
     <svg
@@ -112,11 +150,23 @@ exports[`Avatar should render with number size prop 1`] = `
 `;
 
 exports[`Avatar should render with theme props 1`] = `
+.c0 {
+  position: relative;
+  display: inline-block;
+}
+
+.c1 {
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
 <div
-  className="vital__avatar sc-bxivhb dwitlx"
+  className="vital__avatar c0"
 >
   <div
-    className="vital__avatar-image-wrapper sc-EHOje kXLHxS"
+    className="vital__avatar-image-wrapper c1"
     size="xsmall"
   >
     <svg
