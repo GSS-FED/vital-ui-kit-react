@@ -5,7 +5,7 @@
   "main": "cjs/index.js",
   "module": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf dist lib",
+    "clean": "rm -rf dist cjs",
     "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",

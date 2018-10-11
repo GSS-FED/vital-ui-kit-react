@@ -4,7 +4,7 @@
  */
 
 import * as React from 'react';
-import ResizeObserver from 'resize-observer-polyfill';
+import ReactResizeDetector from 'react-resize-detector';
 import { Tooltip } from '@vital-ui/react-tooltip';
 
 import {
@@ -94,10 +94,10 @@ export class Slider extends React.Component<SliderProps, State> {
 
   componentDidMount() {
     this.handleUpdate();
-    const resizeObserver = new ResizeObserver(this.handleUpdate);
-    if (this.track.current) {
-      resizeObserver.observe(this.track.current);
-    }
+    // const resizeObserver = new ResizeObserver(this.handleUpdate);
+    // if (this.track.current) {
+    //   resizeObserver.observe(this.track.current);
+    // }
   }
 
   handleUpdate = () => {
@@ -232,6 +232,10 @@ export class Slider extends React.Component<SliderProps, State> {
               onMouseDown={this.handleStart}
             />
           </Tooltip>
+          <ReactResizeDetector
+            handleWidth
+            onResize={this.handleUpdate}
+          />
         </SliderWrapper>
         {this.renderIncreaseButton()}
       </SliderRoot>
