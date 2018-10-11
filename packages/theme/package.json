@@ -1,15 +1,14 @@
 {
   "name": "@vital-ui/react-theme",
-  "version": "0.9.0-y.4",
+  "version": "0.9.0-y.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
   "typings": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "clean": "rm -rf dist lib",
-    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
-    "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
+    "clean": "rm -rf dist cjs",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
