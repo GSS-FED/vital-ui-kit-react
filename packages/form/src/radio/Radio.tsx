@@ -99,7 +99,7 @@ const Label = styled.span`
 interface RadioProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
-  value?: string;
+  value?: number | string;
   defaultChecked?: boolean;
   /** default: `vital__radio` */
   className?: string;
