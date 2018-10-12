@@ -1,3 +1,308 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ThemeProvider it should return default theme wihtout any input props 1`] = `undefined`;
+exports[`ThemeProvider match combine theme with componentTheme 1`] = `
+Object {
+  "avatar": Object {
+    "badgeBg": "#EB5000",
+    "large": Object {
+      "badgeHeight": "13px",
+      "borderRadius": "4px",
+      "size": "48px",
+    },
+    "medium": Object {
+      "badgeHeight": "9px",
+      "borderRadius": "3px",
+      "size": "32px",
+    },
+    "small": Object {
+      "badgeHeight": "7px",
+      "borderRadius": "2px",
+      "size": "24px",
+    },
+    "xlarge": Object {
+      "badgeHeight": "17px",
+      "borderRadius": "4px",
+      "size": "64px",
+    },
+    "xsmall": Object {
+      "badgeHeight": "5px",
+      "borderRadius": "2px",
+      "size": "16px",
+    },
+  },
+  "badge": Object {
+    "bg": "#00C3FF",
+    "color": "#ffffff",
+    "inverseBg": "#ffffff",
+    "inverseColor": "#00C3FF",
+  },
+  "border": "1px solid #D8E2F5",
+  "borderColor": "#D8E2F5",
+  "bp": Object {
+    "desktop": "1440px",
+    "padLand": "1024px",
+    "padMiddle": " 800px",
+    "padPortrait": " 768px",
+    "phoneLand": " 667px",
+    "phoneMiddle": " 480px",
+    "phonePortrait": " 320px",
+  },
+  "button": Object {
+    "default": Object {
+      "activeBg": "#C3D1EB",
+      "bg": "#F7F9FD",
+      "hoverBg": "#D8E2F5",
+    },
+    "disabled": Object {
+      "bg": "#F7F9FD",
+      "borderColor": "#eaeff8",
+      "color": "#93a8ce",
+    },
+    "flat": Object {
+      "activeBg": "#95ABD3",
+      "activeBorderColor": "#95ABD3",
+      "bg": "#EEF2FC",
+      "color": "#ffffff",
+      "hoverBg": "#D8E2F5",
+    },
+    "large": Object {
+      "borderRadius": "5px",
+      "fontSize": "1.2rem",
+      "height": "2.532rem",
+      "padding": "calc(0.666rem - 1px) 1.2rem",
+    },
+    "light": Object {
+      "activeBg": "#C3D1EB",
+      "bg": "#ffffff",
+      "borderColor": "#C3D1EB",
+      "hoverBg": "#D8E2F5",
+    },
+    "link": Object {
+      "bg": "transparent",
+      "color": "#0E86FE",
+      "darkColor": "#456296",
+      "hoverBg": "transparent",
+      "hoverColor": "#41a0fe",
+      "hoverDarkColor": "#5b7ab3",
+    },
+    "medium": Object {
+      "borderRadius": "4px",
+      "fontSize": "1rem",
+      "height": "2.066rem",
+      "padding": "calc(0.533rem - 1px) 1.066rem",
+    },
+    "small": Object {
+      "borderRadius": "3px",
+      "fontSize": "0.866rem",
+      "height": "1.666rem",
+      "padding": "calc(0.4rem - 1px) 0.8rem",
+    },
+    "subtle": Object {
+      "bg": "#C3D1EB",
+      "color": "#456296",
+      "hoverBg": "#D8E2F5",
+    },
+    "xlarge": Object {
+      "borderRadius": "6px",
+      "fontSize": "1.4rem",
+      "height": "3rem",
+      "padding": "calc(0.8rem - 1px) 1.333rem",
+    },
+    "xsmall": Object {
+      "borderRadius": "2px",
+      "fontSize": "0.8rem",
+      "height": "1.2rem",
+      "padding": "calc(0.2rem - 1px) 0.533rem",
+    },
+  },
+  "card": Object {
+    "bg": "#ffffff",
+    "button": Object {
+      "bg": "#ffffff",
+      "color": [Function],
+      "hover": "#D8E2F5",
+    },
+    "color": "#456296",
+  },
+  "checkbox": Object {
+    "bg": "#ffffff",
+    "borderColor": "#C3D1EB",
+    "boxShadow": "0 0 0 2px rgba(149,171,211,0.2)",
+    "checkedBg": "#0E86FE",
+    "checkedBorderColor": "#95ABD3",
+    "icon": Object {
+      "color": "#0E86FE",
+      "disabledColor": "#D8E2F5",
+      "roundColor": "#ffffff",
+    },
+    "label": Object {
+      "color": "#456296",
+    },
+    "roundBg": "#0E86FE",
+  },
+  "colors": Object {
+    "alarm": "#EB5000",
+    "grey100": "#F8F8F8",
+    "grey200": "#F0F0F0",
+    "grey300": "#dddddd",
+    "grey400": "#cccccc",
+    "grey500": "#aaaaaa",
+    "grey600": "#888888",
+    "grey700": "#555555",
+    "grey800": "#333333",
+    "grey900": "#0D0D0D",
+    "info": "#00C3FF",
+    "primary": "#0E86FE",
+    "primary100": "#D9ECFF",
+    "primary200": "#A6D2FF",
+    "primary300": "#73B9FE",
+    "primary400": "#419FFE",
+    "primary500": "#0E86FE",
+    "primary600": "#016DD8",
+    "primary700": "#0153A5",
+    "primary800": "#003A73",
+    "primary900": "#002040",
+    "secondary": "#95ABD3",
+    "secondary100": "#F7F9FD",
+    "secondary200": "#EEF2FC",
+    "secondary300": "#D8E2F5",
+    "secondary400": "#C3D1EB",
+    "secondary500": "#95ABD3",
+    "secondary600": "#7189B6",
+    "secondary700": "#456296",
+    "secondary800": "#2A4880",
+    "secondary900": "#182D54",
+    "success": "#2BCD86",
+    "warning": "#FFB400",
+    "white": "#ffffff",
+  },
+  "defaultTransition": "all 120ms ease-out",
+  "fontSize": Array [
+    14,
+    18,
+    24,
+  ],
+  "form": Object {
+    "addon": Object {
+      "bg": "#EEF2FC",
+    },
+    "bg": "#ffffff",
+    "borderColor": "#C3D1EB",
+    "color": "#456296",
+    "disabled": Object {
+      "alarmBg": "#ffd0b8",
+      "bg": "#EEF2FC",
+    },
+    "disabledBg": "#EEF2FC",
+    "focusBorderColor": "#0E86FE",
+    "hint": Object {
+      "color": "#95ABD3",
+    },
+    "hoverBorderColor": "#7189B6",
+    "inputIcon": Object {
+      "color": "#456296",
+      "leftColor": "#C3D1EB",
+      "rightHoverColor": "#C3D1EB",
+    },
+    "inputPadding": "0.46633rem 0.8rem",
+    "placeholder": Object {
+      "color": "#95ABD3",
+    },
+  },
+  "labelColor": "#7189B6",
+  "list": Object {
+    "item": Object {
+      "bg": "#f7f9fd",
+    },
+    "link": Object {
+      "bg": "#D8E2F5",
+      "color": "#419FFE",
+    },
+  },
+  "pill": Object {
+    "active": Object {
+      "bg": "#c3d1eb",
+      "color": "#456296",
+    },
+    "bg": [Function],
+    "color": [Function],
+    "hover": Object {
+      "bg": "#d8e2f5",
+      "color": "#456296",
+    },
+  },
+  "radio": Object {
+    "bg": "#ffffff",
+    "checkedAfter": "#0E86FE",
+    "checkedBg": "#ffffff",
+    "checkedSize": "9px",
+    "color": [Function],
+    "hoverBorderColor": "#0E86FE",
+    "size": "15px",
+  },
+  "select": Object {
+    "button": Object {
+      "color": "#456296",
+    },
+    "item": Object {
+      "color": "#7189B6",
+      "hoverBg": "#EEF2FC",
+    },
+    "tag": Object {
+      "bg": "#0E86FE",
+      "borderRadius": "4px",
+      "hoverBg": "#419FFE",
+      "padding": "0.1em 0.15em 0.1em 0.4em",
+    },
+  },
+  "selection": Object {
+    "background": "#95ABD3",
+    "disabledBackground": "#95ABD3",
+  },
+  "shadowColor": "rgba(14, 134, 254, 0.2)",
+  "switch": Object {
+    "buttonSize": "22px",
+    "checked": "#0E86FE",
+    "disabled": "#EEF2FC",
+    "icon": "#C3D1EB",
+    "label": Object {
+      "bg": "#EEF2FC",
+      "checkedColor": "#ffffff",
+      "color": "#C3D1EB",
+      "shadowColor": "#C3D1EB",
+    },
+    "shadow": "0 0 0 3px rgba(14, 134, 254, 0.3)",
+  },
+  "tab": Object {
+    "bg": "linear-gradient(to left, #00C3FF, #0E86FE)",
+    "item": Object {
+      "bg": "rgba(255,255,255,0.3)",
+      "color": "#ffffff",
+      "current": Object {
+        "bg": "#ffffff",
+        "color": "#456296",
+      },
+    },
+    "panel": Object {
+      "bg": "#ffffff",
+      "color": "#7189B6",
+    },
+  },
+  "table": Object {
+    "color": "#456296",
+    "hoverBg": "#D8E2F5",
+    "striped": Object {
+      "odd": "#F7F9FD",
+    },
+  },
+  "tooltip": Object {
+    "bg": "#182d54",
+    "color": "#ffffff",
+  },
+  "track": Object {
+    "alarmbg": "#FFD0B8",
+    "bg": "#D8E2F5",
+    "borderColor": "#95ABD3",
+  },
+}
+`;
