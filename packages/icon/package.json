@@ -16,7 +16,7 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@svgr/cli": "2.2.0",
+    "@svgr/cli": "2.4.1",
     "typescript": "3.0.1"
   },
   "dependencies": {
