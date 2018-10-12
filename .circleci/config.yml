@@ -48,6 +48,6 @@ jobs:
       - run:
           name: Build
           command: yarn run build
-      # - run:
-      #     name: Test
-      #     command: yarn run test
+      - run:
+          name: Test
+          command: yarn run test
