@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   flex,
   flexBasis,
@@ -35,7 +35,7 @@ export interface FlexBoxProps
   flexGrow?: number;
 }
 
-export const Flex = styled(Box)<FlexBoxProps>`
+export const flexBoxStyle = css`
   display: flex;
   ${flex};
   ${flexBasis};
@@ -49,4 +49,6 @@ export const Flex = styled(Box)<FlexBoxProps>`
   ${props => props.flexGrow};
 `;
 
-Flex.displayName = 'Vital_Flex';
+export const Flex = styled(Box)<FlexBoxProps>`
+  ${flexBoxStyle};
+`;

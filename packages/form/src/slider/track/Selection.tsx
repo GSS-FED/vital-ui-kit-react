@@ -6,7 +6,10 @@ import { borderRightRadius, stateColor } from '@vital-ui/react-utils';
 import constants from './constants';
 import { Size } from '../types';
 
-const Root = styled.div<Props>`
+const Root = styled<Props, 'div'>('div').attrs({
+  // @ts-ignore
+  style: ({ width }) => ({ width }),
+})`
   position: absolute;
   margin: 0;
   padding: 0;
@@ -14,7 +17,6 @@ const Root = styled.div<Props>`
   left: 0;
   height: ${props => constants[props.size!].trackHeight};
   top: 0;
-  width: ${props => `${props.width}px`};
   pointer-events: none;
   background-color: ${(props: any) =>
       stateColor(

@@ -165,7 +165,7 @@ class ListItem extends React.Component<Props, State> {
         <BadgeWrapper
           hasIconRight={this.props.children || this.props.hasLink}
         >
-          <Badge label={this.props.badge} />
+          <Badge>{this.props.badge}</Badge>
         </BadgeWrapper>
       );
     }
@@ -214,7 +214,7 @@ class ListItem extends React.Component<Props, State> {
         </ListTitleWrapper>
         {children && (
           <InnerWrapper
-            innerRef={s => {
+            ref={s => {
               this.child = s;
             }}
           >

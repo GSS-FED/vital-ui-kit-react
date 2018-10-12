@@ -7,17 +7,17 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { BoxProps, superBoxStyle } from '@vital-ui/react-utils';
 
 import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 import FooterButton from './FooterButton';
 
-const Root = styled.div<{
-  width?: string;
-  height?: string;
+interface RootProps extends BoxProps {
   shadow?: boolean;
-}>`
+}
+const Root = styled<RootProps, 'div'>('div')`
   position: relative;
   display: flex;
   margin: auto;
@@ -29,20 +29,16 @@ const Root = styled.div<{
   background-color: ${({ theme }) => theme.card.bg};
   box-shadow: ${({ shadow }) =>
     shadow ? '2px 2px 4px 0px #cfd8dc' : 'none'};
-  width: ${({ width }) => width};
-  height ${({ height }) => height};
   border: ${({ theme }) => theme.border};
+  ${superBoxStyle};
 `;
 
 Root.defaultProps = {
   theme: defaultTheme,
 };
 
-export interface CardProps {
+export interface CardProps extends RootProps {
   children: React.ReactNode;
-  width?: string;
-  height?: string;
-  shadow?: boolean;
   className?: string;
 }
 

@@ -6,36 +6,38 @@
 import * as React from 'react';
 import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
-import FieldInput from '../FieldInput';
-import InputBase, {
-  Props as InputProps,
-} from '../input/StatelessInput';
-import { DropdownBase, DropdownItem } from './Dropdown';
+import { Input as InputBase, InputProps } from '../input';
+import { Dropdown, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
 import { SelectButton, SelectButtonText } from './styled';
 import { DownshiftProps } from './DownshiftTypes';
 
 export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
-  label?: React.ReactNode;
-  shouldRenderItem?: (item: T, value: string | null) => boolean;
 }
 
-const Input = (props: InputProps) => (
-  <InputBase
-    {...props}
-    rightIcon={props.value ? props.rightIcon || null : null}
-  />
+const Input = React.forwardRef<HTMLInputElement & InputProps>(
+  (props: InputProps, ref) => (
+    <InputBase
+      inputRef={ref}
+      {...props}
+      rightIcon={props.value ? props.rightIcon || null : null}
+    />
+  ),
 );
 
 const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
-}> = ({ text, children, ...props }) => (
-  <SelectButton {...props}>
-    {text && <SelectButtonText>{text}</SelectButtonText>}
-    {children}
-  </SelectButton>
+}> = ({ text = '', children, ...props }) => (
+  <Context.Consumer>
+    {({ getToggleButtonProps }) => (
+      <SelectButton {...props} {...getToggleButtonProps()}>
+        {<SelectButtonText>{text}</SelectButtonText>}
+        {children}
+      </SelectButton>
+    )}
+  </Context.Consumer>
 );
 
 Button.defaultProps = {
@@ -43,21 +45,7 @@ Button.defaultProps = {
   children: null,
 };
 
-const Dropdown = withContext(
-  DropdownBase,
-  ({ getMenuProps, isOpen, inputValue, shouldRenderItem }) => ({
-    getMenuProps,
-    isOpen,
-    inputValue,
-    shouldRenderItem,
-  }),
-);
-
 export class Select<T> extends React.Component<SelectProps<T>> {
-  static defaultProps = {
-    shouldRenderItem: () => true,
-  };
-
   static Input = withContext(
     Input,
     ({ getInputProps, clearSelection }) => ({
@@ -72,24 +60,16 @@ export class Select<T> extends React.Component<SelectProps<T>> {
 
   static Context: typeof Context = Context;
 
-  static Button: typeof Button = withContext(
-    Button,
-    ({ getToggleButtonProps }) => getToggleButtonProps(),
-  );
+  static Button: typeof Button = Button;
 
   render() {
-    const { children, label, ...props } = this.props;
+    const { children, ...props } = this.props;
     return (
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
           <div>
             <Context.Provider value={{ ...props, ...options }}>
-              <FieldInput
-                label={label}
-                labelProps={options.getLabelProps()}
-              >
-                {children}
-              </FieldInput>
+              {children}
             </Context.Provider>
           </div>
         )}

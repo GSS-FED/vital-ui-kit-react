@@ -1,18 +1,15 @@
 {
   "name": "@vital-ui/react",
-  "version": "0.8.10",
+  "version": "0.9.0-y.5",
   "description": "Vital UI Kit for React!",
   "main": "cjs/index.js",
   "module": "dist/index.js",
   "style": "./dist/global.css",
   "scripts": {
     "clean": "rm -rf dist lib",
-    "copy": "copyfiles src/*.css dist -u 1 && copyfiles src/*.css lib -u 1",
-    "compile": "tsc && tsc --module commonjs --outdir cjs && yarn run copy"
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": false,
   "contributors": [
     "Eric Yip (https://github.com/ericyip)",
     "Laura Lee (https://github.com/l443018)"
@@ -29,22 +26,20 @@
     "web"
   ],
   "dependencies": {
-    "@vital-ui/react-avatar": "^0.8.9",
-    "@vital-ui/react-badge": "^0.8.9",
-    "@vital-ui/react-button": "^0.8.8",
-    "@vital-ui/react-card": "^0.8.9",
-    "@vital-ui/react-form": "^0.8.10",
-    "@vital-ui/react-icon": "^0.8.8",
-    "@vital-ui/react-layout": "^0.8.8",
-    "@vital-ui/react-list": "^0.8.9",
-    "@vital-ui/react-menu": "^0.8.8",
-    "@vital-ui/react-modal": "^0.8.9",
-    "@vital-ui/react-pagination": "^0.8.8",
-    "@vital-ui/react-pill": "^0.8.9",
-    "@vital-ui/react-tabs": "^0.8.9",
-    "@vital-ui/react-theme": "^0.8.8",
-    "@vital-ui/react-tooltip": "^0.8.8",
-    "@vital-ui/react-utils": "^0.8.9"
+    "@vital-ui/react-avatar": "^0.9.0-y.5",
+    "@vital-ui/react-badge": "^0.9.0-y.5",
+    "@vital-ui/react-button": "^0.9.0-y.5",
+    "@vital-ui/react-card": "^0.9.0-y.5",
+    "@vital-ui/react-form": "^0.9.0-y.5",
+    "@vital-ui/react-icon": "^0.9.0-y.5",
+    "@vital-ui/react-list": "^0.9.0-y.5",
+    "@vital-ui/react-menu": "^0.9.0-y.5",
+    "@vital-ui/react-modal": "^0.9.0-y.5",
+    "@vital-ui/react-pill": "^0.9.0-y.5",
+    "@vital-ui/react-tabs": "^0.9.0-y.5",
+    "@vital-ui/react-theme": "^0.9.0-y.5",
+    "@vital-ui/react-tooltip": "^0.9.0-y.5",
+    "@vital-ui/react-utils": "^0.9.0-y.5"
   },
   "peerDependencies": {
     "react": "^16",

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
+import fieldBase from '../components/FieldBase';
 
 export const MenuList = styled.ul`
   display: block;
@@ -59,25 +60,14 @@ MenuItem.defaultProps = {
 };
 
 export const SelectButton = styled.div`
-  width: 100%;
-  position: relative;
-  margin: 0;
-  padding: calc(0.533rem - 1px) 1.066rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  line-height: 1.2;
-  box-sizing: border-box;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
+  ${fieldBase};
   cursor: pointer;
-  color: ${({ theme }) => theme.select.button.color};
-  border: 1px solid ${({ theme }) => theme.form.borderColor};
   z-index: 5;
   outline: 0;
   text-align: left;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 `;
 
 SelectButton.defaultProps = {

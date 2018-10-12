@@ -1,34 +1,57 @@
 import * as React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
+import { Label } from './components/Label';
 
-import Label from './components/Label';
+interface RootProps extends BoxProps {
+  inline?: boolean;
+}
 
-const Root = styled.div<{ inline?: boolean }>`
-  display: ${props => (props.inline ? 'table' : 'block')};
-  margin-bottom: ${props => (props.inline ? '1.866rem' : '1.333rem')};
+const fieldInputItemStyle = css`
+  display: block;
+  margin-bottom: 1.333rem;
   position: relative;
-  width: 100%;
-
-  ${props =>
-    props.inline &&
-    css`
-      > span {
-        display: table-cell;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 1%;
-        min-width: 8rem;
-        padding-right: 1.2rem;
-        line-height: 1;
-        vertical-align: top;
-        padding-top: calc(0.46633rem + 2px);
-      }
-    `};
 `;
 
-type FieldInputProps = {
+export const FieldInputItem = styled<BoxProps, 'div'>('div')`
+  ${fieldInputItemStyle};
+  ${superBoxStyle};
+`;
+
+const inlineFieldInputItemStyle = css`
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+
+  > span {
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 1%;
+    min-width: 8rem;
+    padding-right: 1.2rem;
+    line-height: 1;
+    vertical-align: top;
+    padding-top: calc(0.46633rem + 2px);
+  }
+`;
+
+export const InlineFieldInputItem = styled<BoxProps, 'div'>('div')`
+  ${inlineFieldInputItemStyle};
+  ${superBoxStyle};
+`;
+
+const Root = styled<RootProps, 'div'>('div')`
+  ${({ inline }) =>
+    inline ? inlineFieldInputItemStyle : fieldInputItemStyle};
+  position: relative;
+  width: 100%;
+  ${superBoxStyle};
+`;
+
+export interface FieldInputProps extends BoxProps {
   label?: React.ReactNode;
   align?: 'left' | 'right';
   inline?: boolean;
@@ -37,10 +60,9 @@ type FieldInputProps = {
   style?: React.CSSProperties;
   className?: string;
   labelProps?: any;
-  containerProps?: any;
   ref?: React.Ref<any>;
   labelRef?: React.Ref<any>;
-};
+}
 
 /**
  * @render react
@@ -51,7 +73,7 @@ type FieldInputProps = {
  *   ...
  * </FieldInput>
  */
-class FieldInput extends React.Component<FieldInputProps> {
+export class FieldInput extends React.Component<FieldInputProps> {
   static defaultProps = {
     inline: false,
     required: false,
@@ -71,27 +93,27 @@ class FieldInput extends React.Component<FieldInputProps> {
       labelProps,
       ref,
       labelRef,
-      containerProps,
+      ...props
     } = this.props;
     return (
       <Root
         style={style}
         className={cn('vital__fieldInput', className)}
         inline={inline}
-        innerRef={ref}
-        {...containerProps}
+        {...props}
       >
-        <Label
-          innerRef={labelRef}
-          text={label}
-          required={required}
-          align={align}
-          {...labelProps}
-        />
+        {label && (
+          <Label
+            ref={labelRef}
+            required={required}
+            align={align}
+            {...labelProps}
+          >
+            {label}
+          </Label>
+        )}
         {children}
       </Root>
     );
   }
 }
-
-export default FieldInput;

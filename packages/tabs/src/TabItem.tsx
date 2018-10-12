@@ -95,7 +95,7 @@ class TabItem extends React.Component<Props> {
         {...props}
       >
         {label && <Label>{label}</Label>}
-        {badge && <TabBadge inverse={!current} label={badge} />}
+        {badge && <TabBadge inverse={!current}>{badge}</TabBadge>}
       </Root>
     );
   }

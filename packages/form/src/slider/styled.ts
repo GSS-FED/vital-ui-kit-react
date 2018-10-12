@@ -17,19 +17,21 @@ const SliderRoot = styled.div`
     `};
 `;
 
-const SliderWrapper = styled.div<{ size: Size; disabled: boolean }>`
+type SliderWrapperProps = { size: Size; disabled: boolean };
+
+const SliderWrapper = styled<SliderWrapperProps, 'div'>('div')`
   display: block;
   position: relative;
   width: 100%;
   height: ${props => constants[props.size].handlerSize};
 `;
 
-const SlideHandler = styled.div<{ size: Size }>`
+const SlideHandler = styled<{ size: Size }, 'div'>('div')`
   top: 0;
   position: absolute;
   border-radius: 100%;
   border-color: ${({ theme }) => theme.form.borderColor};
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.colors.white};
   box-shadow: 0 0 0 1px rgba(196, 210, 235, 0.3);
   text-indent: -3333px;
   overflow: hidden;
@@ -44,7 +46,7 @@ const SlideHandler = styled.div<{ size: Size }>`
 
   &:hover {
     border-color: ${({ theme }) => theme.form.focusBorderColor};
-    background-color: ${({ theme }) => theme.white};
+    background-color: ${({ theme }) => theme.colors.white};
     box-shadow: 0 0 0 2px rgba(196, 210, 235, 0.3);
   }
 `;

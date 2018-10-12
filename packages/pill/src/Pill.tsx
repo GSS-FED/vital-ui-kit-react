@@ -6,6 +6,7 @@
 import React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
+// import { superBoxStyle, BoxProps} from '@vital-ui/react-utils'
 import { defaultTheme } from '@vital-ui/react-theme';
 import { Badge } from '@vital-ui/react-badge';
 
@@ -78,8 +79,6 @@ const PillBadge = styled(Badge)`
 `;
 
 export interface PillProps {
-  /** Content inside Pill */
-  label: React.ReactNode;
   /** Show badge if it has one */
   badge?: string | number;
   /** The current state */
@@ -126,10 +125,10 @@ export class Pill extends React.Component<PillProps> {
       current = false,
       badge,
       index,
-      label,
       style,
       className,
       onSelect,
+      children,
       ...props
     } = this.props;
     return (
@@ -142,9 +141,9 @@ export class Pill extends React.Component<PillProps> {
         {...props}
       >
         <Text vertical={vertical} badge={badge}>
-          {label}
+          {children}
         </Text>
-        {badge && <PillBadge label={badge} />}
+        {badge && <PillBadge>{badge}</PillBadge>}
       </Root>
     );
   }

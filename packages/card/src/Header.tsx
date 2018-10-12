@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { Badge } from '@vital-ui/react-badge';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled.div`
+const Root = styled<BoxProps, 'div'>('div')`
   position: relative;
   box-sizing: border-box;
   padding: 0.75rem 1.25rem;
@@ -14,6 +15,7 @@ const Root = styled.div`
   min-height: 50px;
   display: table;
   width: 100%;
+  ${superBoxStyle};
 `;
 
 const Title = styled.div``;
@@ -49,7 +51,7 @@ const BadgeCell = styled(Cell)`
   text-align: right;
 `;
 
-type Props = {
+interface HeaderProps extends BoxProps {
   children?: React.ReactNode;
   image?: string;
   title?: string;
@@ -63,9 +65,9 @@ type Props = {
   badgeStyle?: React.CSSProperties;
   /** default: `vital__card-header-badge` */
   badgeClassName?: string;
-};
+}
 
-const Header = ({
+const Header: React.SFC<HeaderProps> = ({
   children,
   image,
   title,
@@ -77,7 +79,7 @@ const Header = ({
   badgeClassName,
   badgeStyle,
   ...props
-}: Props) => {
+}) => {
   if (image) {
     return (
       <RootWithImage
@@ -105,8 +107,9 @@ const Header = ({
           <Badge
             style={badgeStyle}
             className={cn('vital__card-header-badge', badgeClassName)}
-            label={badge}
-          />
+          >
+            {badge}
+          </Badge>
         </BadgeCell>
       )}
       {children}

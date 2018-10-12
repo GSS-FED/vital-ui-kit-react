@@ -13,3 +13,6 @@ cjs/
 js2tsx
 storybook-static
 .awcache
+
+# Next example
+.next

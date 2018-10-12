@@ -1,24 +1,31 @@
 {
-  "presets": ["react", ["env", {"modules": false}]],
+  "presets": [
+    "@babel/preset-react",
+    ["@babel/preset-env", { "modules": false }]
+  ],
   "plugins": [
-    "babel-plugin-transform-object-rest-spread",
-    "babel-plugin-transform-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
   ],
   "env": {
     "development": {
-      "plugins": [["babel-plugin-styled-components", {
-        "displayName": true
-      }]]
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "displayName": true
+          }
+        ]
+      ]
     },
     "test": {
       "presets": [
-        ["env", { "modules": "commonjs" }],
-        "react"
+        ["@babel/preset-env", { "modules": "commonjs" }],
+        "@babel/preset-react"
       ],
       "plugins": [
-        "require-context-hook",
-        "babel-plugin-transform-object-rest-spread",
-        "babel-plugin-transform-class-properties"
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread"
       ]
     }
   }

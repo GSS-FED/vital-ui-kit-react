@@ -1,24 +1,17 @@
-export { default as Hint } from './components/Hint';
-export { default as Addon } from './components/Addon';
-export { default as Label } from './components/Label';
 export { default as FieldBase } from './components/FieldBase';
-
-export { default as Input } from './input/Input';
-export { default as StatelessInput } from './input/StatelessInput';
-
-export { default as TextArea } from './textarea/TextArea';
-export {
-  default as StatelessTextArea,
-} from './textarea/StatelessTextArea';
-
-export { default as MultipleInput } from './MultipleInput';
-export { default as FieldInput } from './FieldInput';
-
 export { Radio, RadioGroup } from './radio';
 export { Select, MultiSelect, Tag } from './select';
 export { Checkbox, CheckboxGroup } from './checkbox';
-export { default as Switch } from './switch';
+
+export * from './switch';
+export * from './input';
+export * from './components/Label';
+export * from './components/Hint';
+export * from './components/Addon';
+export * from './MultipleInput';
 export * from './slider';
+export * from './FieldInput';
+export * from './textarea';
 
 /**
  * Copyright © 2018 Galaxy Software Services https://github.com/GSS-FED/vital-ui-kit-react

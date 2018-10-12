@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
 import {
   ThemeProvider,
-  Layout,
   colorPaletteGenerator,
   defaultTheme,
 } from '@vital-ui/react';
 
+import Layout from './Layout';
 import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';

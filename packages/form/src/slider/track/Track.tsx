@@ -51,7 +51,7 @@ type Props = {
   onMouseUp?: React.MouseEventHandler<HTMLDivElement>;
   onTouchStart?: React.TouchEventHandler<HTMLDivElement>;
   onTouchEnd?: React.TouchEventHandler<HTMLDivElement>;
-  trackRef?: React.RefObject<HTMLDivElement>;
+  trackRef?: React.RefObject<any>;
 };
 
 // tslint:disable-next-line
@@ -95,7 +95,7 @@ class Track extends React.Component<Props> {
         onMouseUp={onMouseUp}
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
-        innerRef={trackRef}
+        ref={trackRef}
       >
         <Selection
           alarm={alarm}

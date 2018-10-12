@@ -9,18 +9,18 @@ import { CloseIcon } from './icon/CloseIcon';
 const Li = styled.li`
   color: #ffffff;
   border-color: transparent;
-  background-color: #0e86fe;
-  border-radius: 4px;
+  background-color: ${({ theme }) => theme.select.tag.bg};
+  border-radius: ${({ theme }) => theme.select.tag.borderRadius};
   line-height: 1;
   margin: 4px 0 4px 5px;
-  padding: 0.1em 0.15em 0.1em 0.4em;
+  padding: ${({ theme }) => theme.select.tag.padding};
   font-weight: 400;
   display: flex;
   align-items: center;
   overflow: hidden;
 
   &:hover {
-    background-color: #419ffe;
+    background-color: ${({ theme }) => theme.select.tag.hoverBg};
   }
 `;
 

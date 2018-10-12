@@ -1,0 +1,24 @@
+{
+  "name": "@gssfed/with-next",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vital-ui/react": "latest",
+    "@zeit/next-css": "^1.0.1",
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.10"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "1.5.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-icon",
-  "version": "0.8.8",
+  "version": "0.9.0-y.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -13,7 +13,7 @@
   "license": "MIT",
   "peerDependencies": {
     "react": "^16",
-    "styled-components": "3"
+    "styled-components": "*"
   },
   "devDependencies": {
     "@svgr/cli": "^2.2.0",

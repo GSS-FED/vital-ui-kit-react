@@ -1,5 +1,5 @@
 {
   "name": "vital-ui-react",
-  "alias": "vital-ui-react",
+  "alias": ["vital-ui-react", "react.vitaluikit.com"],
   "type": "static"
 }
