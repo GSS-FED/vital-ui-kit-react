@@ -32,6 +32,6 @@
     "resize-observer-polyfill": "1.5.0"
   },
   "devDependencies": {
-    "typescript": "^3.0.1"
+    "typescript": "3.0.1"
   }
 }

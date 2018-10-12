@@ -13,9 +13,9 @@
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
-    "@types/lodash.merge": "^4.6.4",
-    "copyfiles": "^2.0.0",
-    "typescript": "^3.0.1"
+    "@types/lodash.merge": "4.6.4",
+    "copyfiles": "2.0.0",
+    "typescript": "3.0.1"
   },
   "peerDependencies": {
     "react": "^16",

@@ -47,8 +47,8 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "copyfiles": "^2.0.0",
-    "typescript": "^3.0.1"
+    "copyfiles": "2.0.0",
+    "typescript": "3.0.1"
   },
   "license": "MIT",
   "bugs": {
