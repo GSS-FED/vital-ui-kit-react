@@ -66,7 +66,7 @@
     "babel-loader": "8.0.2",
     "babel-plugin-styled-components": "1.5.1",
     "circular-dependency-plugin": "5.0.2",
-    "copyfiles": "2.0.0",
+    "copyfiles": "2.1.0",
     "cross-env": "5.2.0",
     "faker": "4.1.0",
     "husky": "1.0.0-rc.13",
