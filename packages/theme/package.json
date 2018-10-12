@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-theme",
-  "version": "0.9.0-y.5",
+  "version": "0.9.0-y.6",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
