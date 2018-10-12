@@ -16,10 +16,7 @@ const Root = styled<BoxProps, 'div'>('div')`
   ${superBoxStyle};
 `;
 
-const LabelCell = styled.div`
-  display: table-cell;
-  vertical-align: middle;
-
+const noSpacetyle = css`
   > * {
     width: calc(100% + 2px);
   }
@@ -53,6 +50,16 @@ const LabelCell = styled.div`
       border-radius: 0;
     }
   }
+`;
+
+type LabelCellProps = {
+  paddingBetween?: number;
+  addon?: boolean;
+};
+
+const LabelCell = styled<LabelCellProps, 'div'>('div')`
+  display: table-cell;
+  /* vertical-align: middle; */
 
   ${({ addon }: { addon?: boolean }) =>
     addon &&
@@ -60,12 +67,22 @@ const LabelCell = styled.div`
       width: 1%;
       white-space: nowrap;
     `};
+
+  ${({ paddingBetween }) =>
+    paddingBetween
+      ? css`
+          :not(:last-child) {
+            padding-right: ${paddingBetween}px;
+          }
+        `
+      : noSpacetyle};
 `;
 
 export interface MulipleInputProps extends BoxProps {
   children: React.ReactNode[];
   style?: React.CSSProperties;
   className?: string;
+  paddingBetween?: number;
 }
 
 /**
@@ -82,14 +99,22 @@ export class MultipleInput extends React.Component<
   MulipleInputProps
 > {
   render() {
-    const { style, className, children } = this.props;
+    const {
+      style,
+      className,
+      children,
+      paddingBetween,
+      ...props
+    } = this.props;
     return (
       <Root
         style={style}
         className={cn('vital__multipleInput', className)}
+        {...props}
       >
         {children.map((child, i) => (
           <LabelCell
+            paddingBetween={paddingBetween}
             addon={
               (child && isElement(child) && child.type) === Addon
             }

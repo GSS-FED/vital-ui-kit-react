@@ -6,7 +6,7 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
   borderColor: theme.colors.secondary300,
   labelColor: theme.colors.secondary600,
   border: `1px solid ${theme.colors.secondary300}`,
-  shadowColor: 'rgba(14, 134, 254, 0.2)',
+  shadowColor: rgba(theme.colors.primary, 0.2),
   avatar: {
     badgeBg: theme.colors.alarm,
     xsmall: {
@@ -42,6 +42,14 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
     inverseColor: theme.colors.info,
   },
   button: {
+    natureColor: {
+      default: theme.colors.secondary700,
+      primary: theme.colors.primary,
+      success: theme.colors.success,
+      info: theme.colors.info,
+      alarm: theme.colors.alarm,
+      warning: theme.colors.warning,
+    },
     default: {
       bg: theme.colors.secondary100,
       hoverBg: theme.colors.secondary300,
@@ -61,16 +69,16 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
     },
     light: {
       bg: theme.colors.white,
-      hoverBg: theme.colors.secondary300,
-      activeBg: theme.colors.secondary400,
+      hoverBg: theme.colors.secondary400,
+      activeBg: theme.colors.secondary200,
       borderColor: theme.colors.secondary400,
     },
     link: {
       bg: 'transparent',
-      color: theme.colors.primary500,
+      color: theme.colors.primary,
       hoverBg: 'transparent',
       darkColor: theme.colors.secondary700,
-      hoverColor: lighten(0.1, theme.colors.primary500),
+      hoverColor: theme.colors.primary900,
       hoverDarkColor: lighten(0.1, theme.colors.secondary700),
     },
     disabled: {
@@ -91,10 +99,10 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
       height: '1.666rem',
     },
     medium: {
-      fontSize: '1rem',
-      borderRadius: '4px',
-      padding: 'calc(0.533rem - 1px) 1.066rem',
-      height: '2.066rem',
+      fontSize: '16px',
+      borderRadius: '100px',
+      padding: '8px 16px',
+      height: '32px',
     },
     large: {
       fontSize: '1.2rem',
@@ -115,38 +123,36 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
     button: {
       bg: theme.colors.white,
       color: (isPrimary: boolean) =>
-        isPrimary
-          ? theme.colors.primary500
-          : theme.colors.secondary700,
+        isPrimary ? theme.colors.primary : theme.colors.secondary700,
       hover: theme.colors.secondary300,
     },
   },
   checkbox: {
-    boxShadow: `0 0 0 2px ${rgba(theme.colors.secondary, 0.2)}`,
+    boxShadow: `0 0 0 2px ${rgba(theme.colors.primary, 0.2)}`,
     borderColor: theme.colors.secondary400,
-    checkedBorderColor: theme.colors.secondary,
-    checkedBg: theme.colors.primary500,
-    roundBg: theme.colors.primary500,
+    checkedBorderColor: theme.colors.primary700,
+    checkedBg: theme.colors.primary700,
+    roundBg: theme.colors.primary700,
     bg: theme.colors.white,
     label: {
       color: theme.colors.secondary700,
     },
     icon: {
-      color: theme.colors.primary500,
+      color: theme.colors.white,
       roundColor: theme.colors.white,
       disabledColor: theme.colors.secondary300,
     },
   },
   switch: {
-    checked: theme.colors.primary500,
+    checked: theme.colors.primary,
     disabled: theme.colors.secondary200,
-    shadow: '0 0 0 3px rgba(14, 134, 254, 0.3)',
-    buttonSize: '22px',
+    shadow: '0 0 0 3px rgba(255, 132, 0, 0.3)',
+    buttonSize: '18px',
     label: {
       checkedColor: theme.colors.white,
       bg: theme.colors.secondary200,
       shadowColor: theme.colors.secondary400,
-      color: theme.colors.secondary400,
+      color: theme.colors.secondary500,
     },
     icon: theme.colors.secondary400,
   },
@@ -157,7 +163,7 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
     borderColor: theme.colors.secondary400,
     hoverBorderColor: theme.colors.secondary600,
     focusBorderColor: theme.colors.primary500,
-    inputPadding: '0.46633rem 0.8rem',
+    inputPadding: '7px 12px',
     placeholder: {
       color: theme.colors.secondary,
     },
@@ -202,19 +208,19 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
   radio: {
     color: (disabled: boolean) =>
       disabled ? theme.colors.secondary : theme.colors.secondary700,
-    hoverBorderColor: theme.colors.primary500,
-    size: '15px',
-    checkedSize: '9px',
-    checkedBg: theme.colors.white,
-    checkedAfter: theme.colors.primary,
+    hoverBorderColor: theme.colors.primary,
+    size: '16px',
+    checkedSize: '6px',
+    checkedBg: theme.colors.primary700,
+    checkedAfter: theme.colors.white,
     bg: theme.colors.white,
   },
   select: {
     tag: {
-      bg: theme.colors.primary500,
-      hoverBg: theme.colors.primary400,
-      borderRadius: '4px',
-      padding: '0.1em 0.15em 0.1em 0.4em',
+      bg: theme.colors.secondary700,
+      hoverBg: theme.colors.secondary400,
+      borderRadius: '100px',
+      padding: '4px 8px 4px 10px',
     },
     item: {
       color: theme.colors.secondary600,
@@ -233,7 +239,7 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
   },
   tab: {
     bg: `linear-gradient(to left, ${theme.colors.info}, ${
-      theme.colors.primary500
+      theme.colors.primary
     })`,
     panel: {
       bg: theme.colors.white,

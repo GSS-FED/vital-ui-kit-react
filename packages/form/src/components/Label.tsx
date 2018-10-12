@@ -31,7 +31,7 @@ export const Label = styled.span.attrs<LabelProps>({
       :before {
         content: '';
         display: inline-block;
-        background-color: ${theme.alarm};
+        background-color: ${theme.colors.alarm};
         margin: -0.133rem 0.533rem 0 0;
         vertical-align: middle;
         height: 0.266rem;

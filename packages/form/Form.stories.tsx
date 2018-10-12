@@ -18,9 +18,12 @@ import {
   Switch,
   Checkbox,
   CheckboxGroup,
+  Select,
+  FieldInputItem,
 } from './src';
-import { Moon } from '../icon/src';
+import { Moon, MoreOption } from '../icon/src';
 import { Button } from '../button/src/Button';
+import { Value } from '@vital-ui/react-utils';
 
 const FormWrapper = styled.div`
   max-width: 500px;
@@ -32,7 +35,7 @@ storiesOf('Packages | Form', module)
   .add('Full Example', () => (
     <FormWrapper>
       <FieldInput required label="Username">
-        <Input placeholder="Enter your username" />
+        <Input alarm placeholder="Enter your username" />
       </FieldInput>
       <FieldInput required label="Fullname">
         <MultipleInput>
@@ -45,6 +48,41 @@ storiesOf('Packages | Form', module)
           <Input placeholder="Month" />
           <Input placeholder="Day" />
           <Input placeholder="Year" />
+        </MultipleInput>
+      </FieldInput>
+      <FieldInput label="Phone" inline>
+        <MultipleInput paddingBetween={6}>
+          <FieldInputItem>
+            <Input type="tel" />
+            <Hint alarm position="absolute">
+              Required
+            </Hint>
+          </FieldInputItem>
+          <Value<string | null> initial={null}>
+            {({ value, set }) => (
+              <Select<string | null>
+                selectedItem={value}
+                itemToString={item => (item ? item : '')}
+                onChange={selectedItem => set(selectedItem)}
+              >
+                <Select.Dropdown
+                  popup={['phone', 'mobile', 'fax'].map((item, i) => (
+                    <Select.DropdownItem
+                      key={item}
+                      item={item}
+                      index={i}
+                    >
+                      {item}
+                    </Select.DropdownItem>
+                  ))}
+                >
+                  <Select.Button text={value ? value : 'Select'}>
+                    <MoreOption color="#A8A8B2" />
+                  </Select.Button>
+                </Select.Dropdown>
+              </Select>
+            )}
+          </Value>
         </MultipleInput>
       </FieldInput>
       <FieldInput label="Website">
@@ -169,14 +207,5 @@ storiesOf('Packages | Form/TextArea', module)
       alarm={boolean('Alarm', false)}
       warning={boolean('Warning', false)}
       rows={3}
-    />
-  ));
-
-storiesOf('Packages | Form/Switch', module)
-  .addDecorator(withKnobs)
-  .add('Basic', () => (
-    <Switch
-      disabled={boolean('Disabled', false)}
-      round={boolean('Round', false)}
     />
   ));

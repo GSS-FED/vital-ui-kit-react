@@ -8,10 +8,20 @@ import { setOptions } from '@storybook/addon-options';
 import { ThemeProvider } from '../packages/theme/dist';
 import { gloablStyle } from '../packages/theme';
 import { withInfo } from '@storybook/addon-info';
+import mainTheme from '../packages/theme/src/theme';
+import crmTheme from '../packages/theme/src/theme/crm/';
+import { combinedWithComponent } from '../packages/theme/src';
+import componentTheme from '../packages/theme/src/theme/crm/components';
+import { withThemes } from 'storybook-styled-components';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
+
+const themes = {
+  Main: combinedWithComponent(mainTheme),
+  CRM: combinedWithComponent(crmTheme, componentTheme),
+};
 
 const fontFamily = css`
   html,
@@ -97,13 +107,17 @@ setOptions({
 });
 
 addDecorator(story => (
-  <ThemeProvider>
-    <>
-      <GlobalStyle />
-      {story()}
-    </>
-  </ThemeProvider>
+  // <ThemeProvider<typeof crmTheme>
+  //   theme={crmTheme}
+  //   componentTheme={componentTheme}
+  // >
+  // {/* </ThemeProvider> */}
+  <>
+    <GlobalStyle />
+    {story()}
+  </>
 ));
+addDecorator(withThemes(themes));
 // automatically import all files ending in *.stories.js
 // @ts-ignore
 const req = require.context('../packages', true, /.stories.tsx$/);

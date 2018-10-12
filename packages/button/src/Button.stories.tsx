@@ -18,12 +18,12 @@ storiesOf('Packages | Button', module)
       nature={select(
         'Nature',
         {
-          default: 'Default',
-          primary: 'Primary',
-          success: 'Success',
-          info: 'Info',
-          alarm: 'Alarm',
-          warning: 'Warning',
+          default: 'default',
+          primary: 'primary',
+          success: 'success',
+          info: 'info',
+          alarm: 'alarm',
+          warning: 'warning',
         },
         'default',
       )}
@@ -48,12 +48,12 @@ storiesOf('Packages | Button', module)
       nature={select(
         'Nature',
         {
-          default: 'Default',
-          primary: 'Primary',
-          success: 'Success',
-          info: 'Info',
-          alarm: 'Alarm',
-          warning: 'Warning',
+          default: 'default',
+          primary: 'primary',
+          success: 'success',
+          info: 'info',
+          alarm: 'alarm',
+          warning: 'warning',
         },
         'default',
       )}
@@ -67,12 +67,12 @@ storiesOf('Packages | Button', module)
       nature={select(
         'Nature',
         {
-          default: 'Default',
-          primary: 'Primary',
-          success: 'Success',
-          info: 'Info',
-          alarm: 'Alarm',
-          warning: 'Warning',
+          default: 'default',
+          primary: 'primary',
+          success: 'success',
+          info: 'info',
+          alarm: 'alarm',
+          warning: 'warning',
         },
         'default',
       )}

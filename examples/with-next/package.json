@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react": "^0.9.0-y.4",
+    "@vital-ui/react": "latest",
     "@zeit/next-css": "^1.0.1",
     "next": "^7.0.1",
     "react": "^16.5.2",

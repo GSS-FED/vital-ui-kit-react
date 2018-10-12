@@ -719,135 +719,136 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.11.7.tgz#0e75ca9357d646ca754016ca1d68a127ad7e7300"
   integrity sha512-yOxFfkN9xUFLyvWaeYj90mlqTJ41CsQzWKS3gXdOMOyPVacUsymejKxJ4/pMW7exouubuEeZLJawGgcNGYlTeg==
 
-"@vital-ui/react-avatar@^0.9.0-y.4":
-  version "0.9.0-y.3"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-avatar/-/react-avatar-0.9.0-y.3.tgz#5605fe072e731b6e991a33d095281173ad11a52e"
-  integrity sha512-ZwwKhVv8QJ8LQIwnpwfninPJMVuDnwgvDrFn+BjCuFEZYxz9hF/Wd3A4iqxbHXpEDIXz6C23GI5P8UUbwrsTpw==
+"@vital-ui/react-avatar@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-avatar/-/react-avatar-0.9.0-y.5.tgz#213dbfab11141a980c7b73f1defbc84fbc34ce53"
+  integrity sha512-DO5mJEQqXo5/WPusqW4loTMTXkjLb3Qa+r/xTrJTdK76bHHFVM2TsdhCQWJsGViqCpe7gej/ZnnnW5o8EzAaSw==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.3"
-    "@vital-ui/react-utils" "^0.9.0-y.3"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
 
-"@vital-ui/react-badge@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-badge/-/react-badge-0.9.0-y.4.tgz#f0f60489c9bb8f27ae11a00befebe82bceaf39ea"
-  integrity sha512-3Esq+DAEY+OKctNrcYaITV5SIIECnNYJ/OXxY0X+UF0jFGRIRMm31NDfhKwFfCS7B/hytDAu1Sa9vHkEbcq9Rw==
+"@vital-ui/react-badge@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-badge/-/react-badge-0.9.0-y.5.tgz#c5b620472a1ce354f1e7d268949ca6a2c2104a84"
+  integrity sha512-NCHCaEEQPSy9uS4XcTz9iPEEsc/I7zYPCZRCBUDUJV9264LRq79mTFITwiFilrv7WSfZ79aU3vCYdkk01yyu5g==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
 
-"@vital-ui/react-button@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-button/-/react-button-0.9.0-y.4.tgz#060424c25c462ececec0c2d3157d5534865ee136"
-  integrity sha512-zlaM5w669sCo0a4VKCT+SWcDK8Ogf5Oav8K2KKSE3mq76Qd35lJs5pobuoC3XkCXPJNwlCEW5PKvAgI5DCDDPw==
+"@vital-ui/react-button@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-button/-/react-button-0.9.0-y.5.tgz#342b4c508bdf4956b588df3a33f16c5e9d2fc148"
+  integrity sha512-4vCB3hnoe2u+zaeDNBk9AVN3qmioK9xik1S3jRyLpFkT6dMxFy93g9vgKnxaZquzC36Dk2DcgWE8rt3h/RseeQ==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     polished "^2.0.0"
     styled-map "^3.0.0"
 
-"@vital-ui/react-card@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-card/-/react-card-0.9.0-y.4.tgz#81ae31fa6b379771c55919925778e80f62e61758"
-  integrity sha512-/ziZe6zH9S61NcNFo8E+sycxpE4xKaZaTR9CuocdzMxBLnMUU43kAYKwoyrtuaEpQJkfeDdtOgfnpBtaEasmvg==
+"@vital-ui/react-card@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-card/-/react-card-0.9.0-y.5.tgz#aff1ebf717cf515827f2ebde97c1fc87196e2e8f"
+  integrity sha512-7PjfKG0TwIjzpXD8uxVJ78Q+9hH1IXhNTgLt/WDq1ETwf0Ly3qpBvqwa64x3qQjo6enO/xhuB4G10XpZle7K7A==
   dependencies:
-    "@vital-ui/react-badge" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-badge" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
 
-"@vital-ui/react-form@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-form/-/react-form-0.9.0-y.4.tgz#d3f18ceac61857cbae8f0d4c06d797c0390abb33"
-  integrity sha512-QBvM7AWMiSxSoTkvMtgYGtKNABC7WMhrS5lR8XVi5KEiBkYyrWHHL7CN2LceQdsU0V/prUexbFmVH++W9ZRxuQ==
+"@vital-ui/react-form@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-form/-/react-form-0.9.0-y.5.tgz#1d899fd8049a2f48734132ea5d3af3149512b8fd"
+  integrity sha512-U8J2OXODDIifo67cFBmZrKlpxvDCmAr6AomgbhbDWwSm2ULOhBq9SR+KNZyXIGPRob7ym5S3/MEASVrs47YJcg==
   dependencies:
-    "@vital-ui/react-button" "^0.9.0-y.4"
-    "@vital-ui/react-icon" "^0.9.0-y.4"
-    "@vital-ui/react-popup" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-tooltip" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-button" "^0.9.0-y.5"
+    "@vital-ui/react-icon" "^0.9.0-y.5"
+    "@vital-ui/react-popup" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-tooltip" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     downshift "^2.0.10"
     polished "2.0.3"
     react-click-outside "3"
     react-is "^16.4.1"
+    react-resize-detector "^3.1.3"
     resize-observer-polyfill "1.5.0"
 
-"@vital-ui/react-icon@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-icon/-/react-icon-0.9.0-y.4.tgz#7b8074c147f85f2e79bb395ff8ae6f21a2edd1fa"
-  integrity sha512-GEAwi7iZOQE2gOg/Yy/xWY3FGmvLCjvvAPaqydHWgZspjycVWNfMkRMjRE5Y68h2U+fFsmMGVtHyTIsvOhvU4w==
+"@vital-ui/react-icon@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-icon/-/react-icon-0.9.0-y.5.tgz#226e18e6d78207b70a07f7af955bd9a909056855"
+  integrity sha512-AIF+zXB730/0K00YQBzeh0rqk0+at7X9AY3lkvJgoIZgCGanCVLARjwR5GUQMUMBCrcO5UFbbtGiNZzOl0irYA==
   dependencies:
     classnames "^2.2.6"
 
-"@vital-ui/react-list@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-list/-/react-list-0.9.0-y.4.tgz#7bf850eb82df23d84ff4b4216657e9d9f7d6dc28"
-  integrity sha512-q/ow8tLvZUt+43DS4TmoJosxdvVGORbHBIVY9O0/2Zy6IwUAdNZHU/rorrRbgEztWMCtpbQzrAWGhBt452UucQ==
+"@vital-ui/react-list@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-list/-/react-list-0.9.0-y.5.tgz#dea81f495cef38da401d6d9e9055e4c4fcb0050f"
+  integrity sha512-iVlPNx076FOFX9WrfBCQQsLSjDGpcMjnzxxcfSrndwfW+6q3JojicO/DOnBq7FxLQzwXC3XnLNy6LTN08T7iiA==
   dependencies:
-    "@vital-ui/react-badge" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-badge" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     popmotion "8.1.22"
 
-"@vital-ui/react-menu@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-menu/-/react-menu-0.9.0-y.4.tgz#5952068c2a077110253c1f56368bb4adc08fda99"
-  integrity sha512-qaOoczMLZCUQovBtUwn3LlRrGyg4/DoeOLPbUeFTqHbe5ZLsGa1BjNyswx9cZrerNPvvWRh+vlc616LKyL3rxQ==
+"@vital-ui/react-menu@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-menu/-/react-menu-0.9.0-y.5.tgz#c2328a5c277c7108c714766276a6a4642f54e251"
+  integrity sha512-R18kivIZk1OyVeA1oyNtObG3A0aogDAOYmWHCvJD3sed/mAc2LyGTwTLQxdSU6Svd21qD8eVGEzhaXIw8bIuyA==
   dependencies:
-    "@vital-ui/react-button" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
+    "@vital-ui/react-button" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
     classnames "^2.2.6"
 
-"@vital-ui/react-modal@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-modal/-/react-modal-0.9.0-y.4.tgz#22cf6413a476272443599eef8037c6f7dc7dd836"
-  integrity sha512-9mwTMVAUbdLUHi2xKJz/WZq1Dy2F0eC5c2PZi40nCUY3X7gy0KMelY8eR9qWx71Y6FVRg0lGCoWY8GMybom14Q==
+"@vital-ui/react-modal@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-modal/-/react-modal-0.9.0-y.5.tgz#5180ffd0305f5cfdd8d4dc991bf8215f8291db4c"
+  integrity sha512-YcjzjGq0sZjaEWZkzClsVp8mikDWcso2I9UZfFT+ERAFu33ifr8OtnL819+HAjue7BdK8Mtj3R+aBUgVX7+LWQ==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     react-resize-detector "^3.1.1"
 
-"@vital-ui/react-pill@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-pill/-/react-pill-0.9.0-y.4.tgz#7c7bc2ee87d8c67e131a017b37768e1fd5bd1d82"
-  integrity sha512-COgPt5KHVDSBw8Vy9C0ERwgZpTLP0uT5AcbwtP//j37rlvaqe1EmnG8xEZviAB6KpbFjPG26m/UXRKUP1ecwJg==
+"@vital-ui/react-pill@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-pill/-/react-pill-0.9.0-y.5.tgz#3d9548aafcc899915448e653c3f8303e533a6625"
+  integrity sha512-orMEHqpSTp1ed9JHdWoB08rxS0p8AQ6Vuq/jVgpi5Nl0/iFEbia3yGmt0KVFNptMHqfBt98dErpzyxZDiD9W9g==
   dependencies:
-    "@vital-ui/react-badge" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-badge" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     react-priority-navigation "0.2.2"
 
-"@vital-ui/react-popup@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-popup/-/react-popup-0.9.0-y.4.tgz#b3158309730aff6ade887ffc75addb1cd6077269"
-  integrity sha512-jpbW38kUaE4OfX9qSzf4Ci5NbB9zDVsgyfMu2najUkBpcTQBL5ORo0s/By/1ZMF7uqT5HscW/MZfTOTKnEuaXA==
+"@vital-ui/react-popup@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-popup/-/react-popup-0.9.0-y.5.tgz#2bad82ba3f5d51278f185ee25375e3df9b7c0d6a"
+  integrity sha512-LWgvHFush8HjJP+9XckEA39vAbwMk8uNg5CgDaR+2h0n8jxDH4ZIFYrz7esdK+9HywW04nnh1VpXP74OXjNw0g==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
     rc-trigger "2.6.2"
 
-"@vital-ui/react-tabs@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-tabs/-/react-tabs-0.9.0-y.4.tgz#5e034211134eb5a2d66a521411309dd6bcb8c199"
-  integrity sha512-6PxcFgB+Majqlp50vvO6ZwouRbGbck5+4aVhtINpfKzNQoilsIfpBKb3uw13L6ksR9hgUMfCOFpWITJubVfb8A==
+"@vital-ui/react-tabs@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-tabs/-/react-tabs-0.9.0-y.5.tgz#5081e0ad1689317eec1255c100f9f7d3498c3f4e"
+  integrity sha512-7ECvjS66wsjyRn4SPwe1YDc6j4fSYwvoAeBp/p9Hc47b3Y7YNvroB3aYQ3IvaZamgR2hGWLiYwKMPloo0BpaEw==
   dependencies:
-    "@vital-ui/react-badge" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-badge" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
     classnames "^2.2.6"
 
-"@vital-ui/react-theme@^0.9.0-y.3", "@vital-ui/react-theme@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-theme/-/react-theme-0.9.0-y.4.tgz#0f3c27b0f6c130f7372f99368c034f8ebf89ea7a"
-  integrity sha512-AAuEtNHmDUzQNwOtaQ1Q4p8DSGv9STGluRh/lI+HV5Gcni6uOYQUQ0hPwu/OrS2rN0k22ynXgFQSQsYBL32eZQ==
+"@vital-ui/react-theme@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-theme/-/react-theme-0.9.0-y.5.tgz#caf86bd54fdaf1b14308cf836021a25a65e12d8b"
+  integrity sha512-c4H5ml4hDs8JQwO1s+yD5hv+odHlEUGOP5K2cZfeR1Eqvvp3ZMDaeSOtgUWy4/vdfbi53Stm/oZiHliCbDySYA==
   dependencies:
     "@types/fs-extra" "^5.0.4"
     classnames "^2.2.6"
@@ -855,43 +856,43 @@
     lodash.merge "^4.6.1"
     polished "^2.0.3"
 
-"@vital-ui/react-tooltip@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-tooltip/-/react-tooltip-0.9.0-y.4.tgz#d283f3e9cdf0824e75d52e2cfea8297378a80d4e"
-  integrity sha512-DyP49udQbISYG1q1ieKr9/9u++aOWKkEmSDofbYXPf8LUiQpY3hrTJ0mF9zdGSjPjRiVaYhgHE8953xgfBjaeg==
+"@vital-ui/react-tooltip@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-tooltip/-/react-tooltip-0.9.0-y.5.tgz#c65d73061b2defa97ed5f7809a57c5387bafaa16"
+  integrity sha512-7IDGkTz7FA7x/2uae5SJpXzb7lqdNYF2PkhjgcXO7zzzJ7i83OKZkPFmIsLZwoKskIphlWIP7xrjspXiGmmIaA==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
     classnames "^2.2.6"
     rc-trigger "2.6.2"
 
-"@vital-ui/react-utils@^0.9.0-y.3", "@vital-ui/react-utils@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react-utils/-/react-utils-0.9.0-y.4.tgz#c088f34f5a63c91c53436eb84abf515cd5aa8655"
-  integrity sha512-yjHsL1SnOBdhIYZGixMP8UEgAKPdnXavBqQoyzUSbKaWXYYhBF26wk7gdSXuDYd7LEYIschUMFEHkc7kxa4vHQ==
+"@vital-ui/react-utils@^0.9.0-y.5":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react-utils/-/react-utils-0.9.0-y.5.tgz#e0a84eb7ec0ef4d428aa459bf2695f6fda48700e"
+  integrity sha512-7J7TQaX0MoYx+0u/6CRyzF23B4nN2/UhbaoJ3/77TaE3715U+4gbi53uBaplzxLi+6yCp2d3l/p0lxsSPP2Y/g==
   dependencies:
-    "@vital-ui/react-theme" "^0.9.0-y.4"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
     classnames "^2.2.6"
     styled-system "^3.0.2"
 
-"@vital-ui/react@^0.9.0-y.4":
-  version "0.9.0-y.4"
-  resolved "https://registry.yarnpkg.com/@vital-ui/react/-/react-0.9.0-y.4.tgz#b82bf5dec80fbef9e558a2233d33682ce67c75d8"
-  integrity sha512-pzqFVTH4CBzo1FC6ADjOhOnb3ZR96DkTNRwXM9kssj3EfrwYoLXL3SBZ/15vN6hrImk2JTr+1EGo6WlM2cRydA==
+"@vital-ui/react@latest":
+  version "0.9.0-y.5"
+  resolved "https://registry.yarnpkg.com/@vital-ui/react/-/react-0.9.0-y.5.tgz#fe228ac398eb9d2c30e76380553b59d1c07f650f"
+  integrity sha512-C8XTL3mhGTVOUkQO8+w2uv0wINAPjWP19AqPy2wZPcRv/D/QJc9fP2iChkAhxxDm375ODBSRM9LR+CbbtCJwGQ==
   dependencies:
-    "@vital-ui/react-avatar" "^0.9.0-y.4"
-    "@vital-ui/react-badge" "^0.9.0-y.4"
-    "@vital-ui/react-button" "^0.9.0-y.4"
-    "@vital-ui/react-card" "^0.9.0-y.4"
-    "@vital-ui/react-form" "^0.9.0-y.4"
-    "@vital-ui/react-icon" "^0.9.0-y.4"
-    "@vital-ui/react-list" "^0.9.0-y.4"
-    "@vital-ui/react-menu" "^0.9.0-y.4"
-    "@vital-ui/react-modal" "^0.9.0-y.4"
-    "@vital-ui/react-pill" "^0.9.0-y.4"
-    "@vital-ui/react-tabs" "^0.9.0-y.4"
-    "@vital-ui/react-theme" "^0.9.0-y.4"
-    "@vital-ui/react-tooltip" "^0.9.0-y.4"
-    "@vital-ui/react-utils" "^0.9.0-y.4"
+    "@vital-ui/react-avatar" "^0.9.0-y.5"
+    "@vital-ui/react-badge" "^0.9.0-y.5"
+    "@vital-ui/react-button" "^0.9.0-y.5"
+    "@vital-ui/react-card" "^0.9.0-y.5"
+    "@vital-ui/react-form" "^0.9.0-y.5"
+    "@vital-ui/react-icon" "^0.9.0-y.5"
+    "@vital-ui/react-list" "^0.9.0-y.5"
+    "@vital-ui/react-menu" "^0.9.0-y.5"
+    "@vital-ui/react-modal" "^0.9.0-y.5"
+    "@vital-ui/react-pill" "^0.9.0-y.5"
+    "@vital-ui/react-tabs" "^0.9.0-y.5"
+    "@vital-ui/react-theme" "^0.9.0-y.5"
+    "@vital-ui/react-tooltip" "^0.9.0-y.5"
+    "@vital-ui/react-utils" "^0.9.0-y.5"
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
@@ -4301,7 +4302,7 @@ react-priority-navigation@0.2.2:
     resize-observer-polyfill "^1.5.0"
     uniqid "^5.0.0"
 
-react-resize-detector@^3.1.1:
+react-resize-detector@^3.1.1, react-resize-detector@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/react-resize-detector/-/react-resize-detector-3.1.3.tgz#23ecf44db98f09dc0d39f34d2ddbadf4dde6e5c8"
   integrity sha512-j8Ds5AQA5SiNmOSSQp1XeiaHt763KWV4p2HHsxaOeT3jML9MpPoCiqwiBje5yRrgy38sW2v0Qw5T8pW1doiUIw==

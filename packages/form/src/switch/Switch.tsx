@@ -6,71 +6,18 @@
 import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import cn from 'classnames';
+import { Box, BoxProps, superBoxStyle } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-const Root = styled.div``;
-
-const Input = styled.input`
-  display: none;
-
-  &:checked {
-    & + label {
-      background-color: ${({ theme }) => theme.form.switch.checked};
-      box-shadow: 0 0 0 1px
-        ${({ theme }) => theme.form.switch.checked};
-
-      div {
-        transform: translate3d(30px, 0, 0);
-        border-color: ${({ theme }) => theme.form.switch.checked};
-        box-shadow: 0 0 0 3px rgba(14, 134, 254, 0.3);
-      }
-    }
-  }
-
-  &:disabled {
-    & + label {
-      background-color: ${({ theme }) => theme.form.switch.disabled};
-      cursor: not-allowed;
-      point-events: none;
-
-      div {
-        background-color: ${({ theme }) =>
-          theme.form.switch.disabled};
-        box-shadow: none;
-      }
-    }
-  }
-`;
-
-Input.defaultProps = {
-  theme: defaultTheme,
-};
-
-const Label = styled.label<{ round?: boolean; disabled?: boolean }>`
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  width: 53px;
-  height: 24px;
-  border-radius: ${props => (props.round ? '24px' : '4px')};
-  background-color: ${({ theme }) => theme.form.switch.label.bg};
-  padding: 1px;
-  box-shadow: 0 0 0 1px
-    ${({ theme }) => theme.form.switch.label.shadowColor};
-  cursor: pointer;
-`;
-
-Label.defaultProps = {
-  theme: defaultTheme,
-};
-
-const Btn = styled.div<{
+type BtnProps = {
   round?: boolean;
-  icon: any;
+  icon?: any;
   disabled?: boolean;
-}>`
-  width: 22px;
-  height: 22px;
+};
+
+const Btn = styled<BtnProps, 'div'>('div')`
+  width: ${({ theme }) => theme.switch.buttonSize};
+  height: ${({ theme }) => theme.switch.buttonSize};
   border-radius: ${props => (props.round ? '50%' : '4px')};
   background-color: #ffffff;
   display: block;
@@ -90,15 +37,80 @@ const Btn = styled.div<{
       text-align: center;
       line-height: 36px;
       font-size: 1.2rem;
-      color: ${theme.form.switch.icon};
+      color: ${theme.switch.icon};
     `};
+
+  ${superBoxStyle};
 `;
 
 Btn.defaultProps = {
   theme: defaultTheme,
 };
 
-const Text = styled.div`
+const checkedStyle = css`
+  &:checked {
+    & + label {
+      background-color: ${({ theme }) => theme.switch.checked};
+      box-shadow: 0 0 0 1px ${({ theme }) => theme.switch.checked};
+
+      ${Btn} {
+        transform: translate3d(30px, 0, 0);
+        border-color: ${({ theme }) => theme.switch.checked};
+        box-shadow: ${({ theme }) => theme.switch.shadow};
+      }
+    }
+  }
+`;
+
+const disabledStyle = css`
+  &:disabled {
+    & + label {
+      background-color: ${({ theme }) => theme.switch.disabled};
+      cursor: not-allowed;
+      point-events: none;
+
+      ${Btn} {
+        background-color: ${({ theme }) => theme.switch.disabled};
+        box-shadow: none;
+      }
+    }
+  }
+`;
+
+const Input = styled.input`
+  display: none;
+
+  ${checkedStyle};
+  ${disabledStyle};
+`;
+
+Input.defaultProps = {
+  theme: defaultTheme,
+};
+
+type LabelProps = { round?: boolean; disabled?: boolean };
+
+const Label = styled<LabelProps, 'label'>('label')`
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 53px;
+  height: 24px;
+  border-radius: ${props => (props.round ? '24px' : '4px')};
+  background-color: ${({ theme }) => theme.switch.label.bg};
+  padding: 1px;
+  color: #fff;
+  box-shadow: 0 0 0 1px
+    ${({ theme }) => theme.switch.label.shadowColor};
+  cursor: pointer;
+`;
+
+Label.defaultProps = {
+  theme: defaultTheme,
+};
+
+const Text = styled<TextProps, 'div'>('div')`
   position: absolute;
   top: 3px;
   right: 8px;
@@ -106,7 +118,10 @@ const Text = styled.div`
   width: 18px;
   height: 18px;
   line-height: 18px;
-  color: ${({ theme }) => theme.form.switch.label.color};
+  color: ${({ theme, checked }) =>
+    checked
+      ? theme.switch.label.checkedColor
+      : theme.switch.label.color};
   text-align: center;
   transition: all 300ms ease-in;
   opacity: 1;
@@ -117,15 +132,17 @@ Text.defaultProps = {
   theme: defaultTheme,
 };
 
+type TextProps = { checked?: boolean };
+
 // @ts-ignore
-const TextOff = styled(Text)<{ checked: boolean }>`
+const TextOff = styled(Text)<{ checked?: boolean }>`
   display: ${props => (props.checked ? 'none' : 'block')};
 `;
 
 // @ts-ignore
-const TextOn = styled(Text)<{ checked: boolean }>`
+const TextOn = styled(Text)<{ checked?: boolean }>`
   display: ${props => (props.checked ? 'block' : 'none')};
-  left: -20px;
+  left: 8px;
 `;
 
 type State = {
@@ -139,7 +156,14 @@ type Props = {
   iconLabelBack?: string;
   className?: string;
   style?: React.CSSProperties;
-};
+  checked?: boolean;
+  onChange?: (checked: boolean) => void;
+  off?: React.ReactNode;
+  on?: React.ReactNode;
+  icon?: React.ReactNode;
+  buttonProps?: BoxProps;
+  button?: React.ReactNode;
+} & BoxProps;
 
 /**
  * @render react
@@ -147,47 +171,70 @@ type Props = {
  * @description Toggle boolean value
  * @example
  * <Switch
- *  isRound
+ *  round
  * />
  */
-class Switch extends Component<Props, State> {
+export class Switch extends Component<Props, State> {
   static defaultProps = {
-    defaultChecked: false,
-    isRound: false,
+    round: false,
     disabled: false,
     iconBtn: undefined,
     iconLabelFront: undefined,
     iconLabelBack: undefined,
   };
 
-  state = {
-    checked: this.props.defaultChecked || false,
-  };
-
   onCheck = () => {
     if (this.props.disabled) {
       return;
     }
-    this.setState(prevState => ({ checked: !prevState.checked }));
+    if (this.props.onChange) {
+      this.props.onChange(!this.props.checked);
+    }
   };
 
   render() {
-    const { round, disabled, style, className } = this.props;
+    const {
+      round,
+      disabled,
+      style,
+      className,
+      checked,
+      defaultChecked,
+      iconLabelBack,
+      onChange,
+      off,
+      on,
+      icon,
+      button,
+      buttonProps,
+      ...rest
+    } = this.props;
     return (
-      <Root
+      <Box
         style={style}
         className={cn('vital__switch', className)}
         onClick={this.onCheck}
+        {...rest}
       >
         <Input
+          defaultChecked={defaultChecked}
           type="checkbox"
-          checked={this.state.checked}
+          checked={checked}
+          onChange={() => {}}
           disabled={disabled}
         />
-        <Label round={round} disabled={disabled} />
-      </Root>
+        <Label round={round} disabled={disabled}>
+          <TextOff checked={checked}>{off}</TextOff>
+          {button ? (
+            button
+          ) : (
+            <Btn round={round} disabled={disabled} {...buttonProps}>
+              {icon}
+            </Btn>
+          )}
+          <TextOn checked={checked}>{on}</TextOn>
+        </Label>
+      </Box>
     );
   }
 }
-
-export default Switch;

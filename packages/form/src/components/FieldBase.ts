@@ -18,7 +18,7 @@ export const fieldWrapperBase = ({ theme = defaultTheme }) => css`
 
 export const fieldInputBase = ({ theme = defaultTheme }) => css`
   font-size: 1rem;
-  padding: 0.46633rem 0.8rem;
+  padding: ${theme.form.inputPadding};
   color: ${theme.form.color};
 `;
 
@@ -34,10 +34,14 @@ const fieldBase = ({
     color: ${theme.form.placeholder.color};
   }
 
+  &:hover {
+    border: 1px solid ${theme.form.hoverBorderColor};
+  }
+
   &:focus {
     outline: 0;
     border: 1px solid ${theme.form.focusBorderColor};
-    box-shadow: 0 0 0 2px rgba(14, 134, 254, 0.2);
+    box-shadow: 0 0 0 2px ${theme.shadowColor};
     z-index: 7;
   }
 

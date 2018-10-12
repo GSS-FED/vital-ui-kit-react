@@ -4,7 +4,7 @@
  */
 
 import * as React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 import { CheckIcon } from './CheckIcon';
 import { Box } from '@vital-ui/react-utils';
@@ -36,10 +36,12 @@ Label.defaultProps = {
   theme: defaultTheme,
 };
 
-const CheckWrapper = styled.span<{
+interface CheckWrapper {
   checked?: boolean;
-  round: boolean;
-}>`
+  round?: boolean;
+}
+
+const CheckWrapper = styled<CheckWrapper, 'span'>('span')`
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -48,7 +50,11 @@ const CheckWrapper = styled.span<{
   border: ${({ theme }) => `1px solid ${theme.checkbox.borderColor}`};
   border-radius: ${props => (props.round ? '50%' : '2px')};
   background-color: ${({ checked, round, theme }) =>
-    theme.checkbox.bg(checked && round)};
+    checked
+      ? theme.checkbox.checkedBg
+      : round
+        ? theme.CheckboxContext.roundRb
+        : theme.checkbox.bg};
   transition: ${({ theme }) => theme.defaultTransition};
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
@@ -190,11 +196,14 @@ class Checkbox extends React.Component<CheckboxProps> {
                 {contextIcon ||
                   customIcon || (
                     <Box
-                      color={iconColor(
-                        this.props.round,
-                        this.props.disabled,
-                        this.props.theme,
-                      )}
+                      css={css`
+                        color: ${({ theme }) =>
+                          iconColor(
+                            this.props.round,
+                            this.props.disabled,
+                            theme,
+                          )};
+                      `}
                     >
                       <CheckIcon />
                     </Box>

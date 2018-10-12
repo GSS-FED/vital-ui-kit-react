@@ -8,7 +8,7 @@ import defaultComponentsThemeFn from './theme/components';
 type Props<T> = {
   theme?: T;
   children: React.ReactNode;
-  componentTheme?: (props: typeof defaultVariables) => any;
+  componentTheme?: (props: T | typeof defaultVariables) => any;
 };
 
 class ThemeProvider<T> extends React.Component<Props<T>> {
@@ -23,13 +23,9 @@ class ThemeProvider<T> extends React.Component<Props<T>> {
       combinedTheme = combineTheme<T>(defaultVariables, theme);
     }
 
-    const defaultComponentsTheme = defaultComponentsThemeFn(
+    const combinedWithComponentTheme = combinedWithComponent(
       combinedTheme,
-    );
-    const combinedWithComponentTheme = merge(
-      combinedTheme,
-      defaultComponentsTheme,
-      componentTheme && componentTheme(combinedTheme),
+      componentTheme,
     );
 
     return (
@@ -51,4 +47,15 @@ export function combineTheme<T>(
     // @ts-ignore
     ...theme,
   };
+}
+
+export function combinedWithComponent(
+  theme: any,
+  componentTheme?: any,
+) {
+  return merge(
+    theme,
+    defaultComponentsThemeFn(theme),
+    componentTheme && componentTheme(theme),
+  );
 }

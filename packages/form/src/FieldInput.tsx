@@ -8,29 +8,47 @@ interface RootProps extends BoxProps {
   inline?: boolean;
 }
 
+const fieldInputItemStyle = css`
+  display: block;
+  margin-bottom: 1.333rem;
+  position: relative;
+`;
+
+export const FieldInputItem = styled<BoxProps, 'div'>('div')`
+  ${fieldInputItemStyle};
+  ${superBoxStyle};
+`;
+
+const inlineFieldInputItemStyle = css`
+  display: table;
+  margin-bottom: 1.866rem;
+  position: relative;
+
+  > span {
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 1%;
+    min-width: 8rem;
+    padding-right: 1.2rem;
+    line-height: 1;
+    vertical-align: top;
+    padding-top: calc(0.46633rem + 2px);
+  }
+`;
+
+export const InlineFieldInputItem = styled<BoxProps, 'div'>('div')`
+  ${inlineFieldInputItemStyle};
+  ${superBoxStyle};
+`;
+
 const Root = styled<RootProps, 'div'>('div')`
-  display: ${props => (props.inline ? 'table' : 'block')};
-  margin-bottom: ${props => (props.inline ? '1.866rem' : '1.333rem')};
+  ${({ inline }) =>
+    inline ? inlineFieldInputItemStyle : fieldInputItemStyle};
   position: relative;
   width: 100%;
   ${superBoxStyle};
-
-  ${({ inline }) =>
-    inline &&
-    css`
-      > span {
-        display: table-cell;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 1%;
-        min-width: 8rem;
-        padding-right: 1.2rem;
-        line-height: 1;
-        vertical-align: top;
-        padding-top: calc(0.46633rem + 2px);
-      }
-    `};
 `;
 
 export interface FieldInputProps extends BoxProps {
@@ -84,14 +102,16 @@ export class FieldInput extends React.Component<FieldInputProps> {
         inline={inline}
         {...props}
       >
-        <Label
-          ref={labelRef}
-          required={required}
-          align={align}
-          {...labelProps}
-        >
-          {label}
-        </Label>
+        {label && (
+          <Label
+            ref={labelRef}
+            required={required}
+            align={align}
+            {...labelProps}
+          >
+            {label}
+          </Label>
+        )}
         {children}
       </Root>
     );

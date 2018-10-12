@@ -52,34 +52,35 @@ const buttonBaseStyle = ({
   size,
   nature,
   builtinSize,
-}: StyledButtonProps) => css`
-  position: relative;
-  background: ${theme.button.default.bg};
-  color: ${natureColor(theme)[nature]};
-  cursor: pointer;
-  border-width: 1px;
-  border-style: solid;
-  border-color: ${theme.borderColor};
-  font-size: ${builtInOrTheme(builtinSize, theme)[size].fontSize};
-  border-radius: ${builtInOrTheme(builtinSize, theme)[size]
-    .borderRadius};
-  padding: ${builtInOrTheme(builtinSize, theme)[size].padding};
-  line-height: 1;
-  font-weight: normal;
-  margin: 0;
-  outline: none;
-  box-sizing: border-box;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
-  &:hover {
-    background: ${theme.button.default.hoverBg};
-  }
+}: StyledButtonProps) =>
+  css`
+    position: relative;
+    background: ${theme.button.default.bg};
+    color: ${natureColor(theme)[nature]};
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: ${theme.borderColor};
+    font-size: ${builtInOrTheme(builtinSize, theme)[size].fontSize};
+    border-radius: ${builtInOrTheme(builtinSize, theme)[size]
+      .borderRadius};
+    padding: ${builtInOrTheme(builtinSize, theme)[size].padding};
+    line-height: 1;
+    font-weight: normal;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: ${theme.button.default.hoverBg};
+    }
 
-  &:active {
-    background: ${theme.button.default.activeBg};
-  }
-`;
+    &:active {
+      background: ${theme.button.default.activeBg};
+    }
+  `;
 
 const subtleStyle = ({
   subtle,
@@ -139,6 +140,9 @@ const lightStyle = ({ light, theme, nature }: StyledButtonProps) =>
 
     &:hover {
       background: ${theme.button.light.hoverBg};
+    }
+    &:active {
+      background: ${theme.button.light.activeBg};
     }
   `;
 
@@ -211,7 +215,7 @@ const ButtonElement = styled<ButtonElementProps, 'button'>('button')`
   &[disabled] {
     color: ${({ theme }) => theme.button.disabled.color};
     border-color: ${({ theme }) => theme.button.disabled.borderColor};
-    background-color: ${({ theme }) => theme.button.disabled.bg};
+    background: ${({ theme }) => theme.button.disabled.bg};
     cursor: not-allowed;
     pointer-events: none;
   }

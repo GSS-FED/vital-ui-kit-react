@@ -52,10 +52,14 @@ const Root = styled.div`
 `;
 
 interface InputElementProps extends BoxProps {
-  alarm: boolean;
-  warning: boolean;
-  leftIcon: boolean;
-  rightIcon: boolean;
+  /** Alarm state */
+  alarm?: boolean;
+  /** Warning State */
+  warning?: boolean;
+  /** Left Icon name, or Icon component */
+  leftIcon?: any;
+  /** Right Icon name, or Icon component */
+  rightIcon?: any;
 }
 
 const InputElement = styled<InputElementProps, 'input'>('input')`
@@ -74,26 +78,18 @@ InputElement.defaultProps = {
   rightIcon: false,
 };
 
-export interface InputProps extends BoxProps {
+export interface InputProps extends InputElementProps {
   /** Input ref */
   inputRef?: React.Ref<HTMLInputElement>;
   /** Html attr */
   type?: string;
   /** Html attr */
   placeholder?: string;
-  /** Left Icon name, or Icon component */
-  leftIcon?: any;
-  /** Right Icon name, or Icon component */
-  rightIcon?: any;
   /** Default value of input */
   defaultValue?: string;
   value?: string;
   /** Disabled state */
   disabled?: boolean;
-  /** Alarm state */
-  alarm?: boolean;
-  /** Warning State */
-  warning?: boolean;
   /** Auto Focus attr */
   autoFocus?: boolean;
   /** Spell check attr */

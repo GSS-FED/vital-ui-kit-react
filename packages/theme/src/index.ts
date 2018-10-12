@@ -8,7 +8,11 @@ const defaultTheme = {
   ...defaultComponentsTheme(defaultVariables),
 };
 
-export { default as ThemeProvider } from './ThemeProvider';
+export {
+  default as ThemeProvider,
+  combinedWithComponent,
+  combineTheme,
+} from './ThemeProvider';
 export {
   defaultVariables,
   defaultComponentsTheme,
