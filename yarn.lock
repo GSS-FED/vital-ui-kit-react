@@ -8518,15 +8518,22 @@ pn@^1.1.0:
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
-polished@2.0.3, polished@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-2.0.3.tgz#54bb5f474bebe149e760d4015ed04207817fd38e"
-  integrity sha512-MMwthxXsmZZlZY/x79KX/8kXpSU0lq3ntnDmAdhpQGk9pU9EM/rQmUbsgIuuk2Cvl6zYSWjyBsDEU8sa1598xg==
+polished@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-2.2.0.tgz#5ca7e178cc5352bd7fd1efc45342f7c6d59cc982"
+  integrity sha512-GEKeNET1XIri53xKpFwGZX4fh2k3b5GE5fxwLWYYR2sGWkMAHJVcb7bK1g6QHIDcoIEEGC8CzHOQgl2qFByd3w==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
 
 polished@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/polished/-/polished-2.0.2.tgz#968aa98a86a51d611ccbfe23d3593afea7184b90"
   integrity sha512-VlvVFl8MG4xymNL45gG2Pcs0xdkHWelBMGpQ3+jgBR9ZZOIJHO2axIu58OflJIjqEpCSnTB9EAgGgiUk0DiXZA==
+
+polished@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-2.0.3.tgz#54bb5f474bebe149e760d4015ed04207817fd38e"
+  integrity sha512-MMwthxXsmZZlZY/x79KX/8kXpSU0lq3ntnDmAdhpQGk9pU9EM/rQmUbsgIuuk2Cvl6zYSWjyBsDEU8sa1598xg==
 
 popmotion@8.1.22:
   version "8.1.22"
