@@ -1392,10 +1392,10 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/styled-system@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.4.tgz#ffdadef7e1bf90c6366bc8ccecedfaa04b45ce8a"
-  integrity sha512-sifJ9mbtxzQ8Y+UpQQulUt2YTYPo7WA4NKCgUpoKmi06EzK3ULR1n5ruL/01V3gWuvyZLjbv+IbWhIYcxXi9Nw==
+"@types/styled-system@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.2.tgz#a153495c58c8679fb512084164dc3f441ae4d1a3"
+  integrity sha512-HsLYsoVvWCWoBOQmr02MLoUHIfnWAC2p6VmsajB3YeIX7EemDQRg52/6yfzNalDEzE8t4INYp4d9QfXfvtSqrg==
 
 "@webassemblyjs/ast@1.7.6":
   version "1.7.6"
@@ -11028,10 +11028,10 @@ ts-jest@23.1.4:
     json5 "^0.5.0"
     lodash "^4.17.10"
 
-ts-loader@5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.2.1.tgz#e6815c631dcafc24319ce8be6f8af94908749cf3"
-  integrity sha512-KC0cOvsFVyxBlg5h9jvaMlIL2tNsyQLvT2/OvIlO0AMUBJ4iXTtOfaDEqvmqv2lM/icekQfDsP2PsYBCDHpuOQ==
+ts-loader@5.2.2:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-5.2.2.tgz#a707849b08ca754cc46f5c7053e79fe1c84caf0e"
+  integrity sha512-vM/TrEKXBqRYq5yLatsXyKFnYSpv53klmGtrILGlNqcMsxPVi8+e4yr1Agbu9oMZepx/4szDVn5QpFo83IQdQg==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
