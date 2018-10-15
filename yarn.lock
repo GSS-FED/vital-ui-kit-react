@@ -8553,6 +8553,11 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+node-cleanup@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/node-cleanup/-/node-cleanup-2.1.2.tgz#7ac19abd297e09a7f72a71545d951b517e4dde2c"
+  integrity sha1-esGavSl+Caf3KnFUXZUbUX5N3iw=
+
 node-dir@^0.1.10:
   version "0.1.17"
   resolved "https://registry.yarnpkg.com/node-dir/-/node-dir-0.1.17.tgz#5f5665d93351335caabef8f1c554516cf5f1e4e5"
@@ -11469,6 +11474,11 @@ string-argv@^0.0.2:
   resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.0.2.tgz#dac30408690c21f3c3630a3ff3a05877bdcbd736"
   integrity sha1-2sMECGkMIfPDYwo/86BYd73L1zY=
 
+string-argv@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/string-argv/-/string-argv-0.1.1.tgz#66bd5ae3823708eaa1916fa5412703150d4ddfaf"
+  integrity sha512-El1Va5ehZ0XTj3Ekw4WFidXvTmt9SrC0+eigdojgtJMVtPkF0qbBe9fyNSl9eQf+kUHnTSQxdQYzuHfZy8V+DQ==
+
 string-length@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/string-length/-/string-length-2.0.0.tgz#d40dbb686a3ace960c1cffca562bf2c45f8363ed"
@@ -12009,14 +12019,16 @@ ts-loader@5.2.2:
     micromatch "^3.1.4"
     semver "^5.0.1"
 
-tsc-watch@1.0.26:
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.26.tgz#a9130775b018b46b03116840debaac6dd40fbc56"
-  integrity sha512-dNEic+kUspyw3b+/9wiur5ruw9Ke2cBLh7eE48GcCw+nuutvpuTBMP/F0fYOolU3IJLCbRVwVx5o0NY8lq7S0g==
+tsc-watch@1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.30.tgz#dc4f0a974cb4ab622e4317bd3e255bfe9b85eb84"
+  integrity sha512-y4aIyRnzSof+614TIxEU14ZBAH5xbn9rrO4Sb/vXlSeEcNIeYIRbn33gjdtuiwiKKmMw3/hhd7FSm57r0mRa4g==
   dependencies:
     chalk "^2.3.0"
     cross-spawn "^5.1.0"
+    node-cleanup "^2.1.2"
     ps-tree "^1.1.0"
+    string-argv "^0.1.1"
     strip-ansi "^4.0.0"
 
 tsconfig-paths-webpack-plugin@3.2.0:
