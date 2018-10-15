@@ -3491,10 +3491,10 @@ copy-to-clipboard@^3.0.8:
   dependencies:
     toggle-selection "^1.0.3"
 
-copyfiles@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-2.0.0.tgz#bbd78bb78e8fd6db5c67adf54249317b24560f2a"
-  integrity sha512-NSSJdwCH27/hEiBlhkXYWh3AaPo8IATxLX5XtJQgknOvOehrREtETsGd/BNr2vuj0URgKBC/50PNRM3yShQGJQ==
+copyfiles@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/copyfiles/-/copyfiles-2.1.0.tgz#0e2a4188162d6b2f3c5adfe34e9c0bd564d23164"
+  integrity sha512-cAeDE0vL/koE9WSEGxqPpSyvU638Kgfu6wfrnj7kqp9FWa1CWsU54Coo6sdYZP4GstWa39tL/wIVJWfXcujgNA==
   dependencies:
     glob "^7.0.5"
     minimatch "^3.0.3"
