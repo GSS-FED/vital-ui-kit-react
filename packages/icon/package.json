@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-icon",
-  "version": "0.9.0-y.6",
+  "version": "0.9.0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
