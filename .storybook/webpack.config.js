@@ -1,11 +1,39 @@
 const path = require('path');
-// const CircularDependencyPlugin = require('circular-dependency-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-module.exports = (baseConfig, env, config) => {
+module.exports = (defaultConfig, env, config) => {
+  //babel-loader@8 installed and @babel/core@7
+  defaultConfig.module.rules[0].use[0].loader = require.resolve(
+    'babel-loader',
+  );
+
+  defaultConfig.module.rules[0].use[0].options.presets = [
+    require.resolve('@babel/preset-react'),
+    require.resolve('@babel/preset-env'),
+  ];
+
+  // any plugin you want to add
+  defaultConfig.module.rules[0].use[0].options.plugins = [
+    require.resolve('@babel/plugin-proposal-object-rest-spread'),
+  ];
+
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    include: path.resolve(__dirname, '../'),
     use: [
+      {
+        loader: require.resolve('babel-loader'),
+        options: {
+          babelrc: false,
+          presets: [
+            require.resolve('@babel/preset-react'),
+            require.resolve('@babel/preset-env'),
+          ],
+          plugins: [
+            require.resolve(
+              '@babel/plugin-proposal-object-rest-spread',
+            ),
+          ],
+        },
+      },
       {
         loader: 'ts-loader',
         options: {
@@ -13,30 +41,30 @@ module.exports = (baseConfig, env, config) => {
         },
       },
       { loader: 'react-docgen-typescript-loader' },
+      // {
+      //   loader: require.resolve("awesome-typescript-loader"),
+      //   options: {
+      //     useCache: true,
+      //     useBabel: true,
+      //     configFileName: 'tsconfig.storybook.json',
+      //     babelCore: '@babel/core',
+      //   },
+      // },
+      {
+        loader: require.resolve(
+          '@storybook/addon-storysource/loader',
+        ),
+        options: {
+          parser: 'typescript',
+        },
+      },
     ],
-    // options: {
-    //   useCache: true,
-    //   useBabel: true,
-    //   configFileName: 'tsconfig.storybook.json',
-    //   babelCore: '@babel/core',
-    // },
   });
-  config.plugins
-    .push
-    // new CircularDependencyPlugin({
-    // exclude detection of files based on a RegExp
-    // exclude: /a\.js|node_modules/,
-    // add errors to webpack instead of warnings
-    // failOnError: true,
-    // set the current working directory for displaying module paths
-    // cwd: process.cwd(),
-    // })
-    ();
   config.resolve.plugins = [
     new TsconfigPathsPlugin({
       configFile: 'tsconfig.storybook.json',
     }),
   ];
-  config.resolve.extensions.push('.ts', '.tsx', 'jsx');
+  config.resolve.extensions.push('.ts', '.tsx', '.json');
   return config;
 };
