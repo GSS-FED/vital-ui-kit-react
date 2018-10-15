@@ -52,7 +52,7 @@
     "@storybook/addon-storyshots": "4.0.0-alpha.21",
     "@storybook/addons": "4.0.0-alpha.21",
     "@storybook/react": "4.0.0-alpha.21",
-    "@svgr/cli": "2.2.0",
+    "@svgr/cli": "2.4.1",
     "@types/classnames": "2.2.6",
     "@types/jest": "23.3.5",
     "@types/react": "16.4.11",
