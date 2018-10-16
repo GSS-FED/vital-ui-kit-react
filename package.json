@@ -60,7 +60,7 @@
     "@types/react-dom": "16.0.9",
     "@types/react-is": "16.5.0",
     "@types/styled-components": "3.0.1",
-    "@types/styled-system": "3.0.2",
+    "@types/styled-system": "3.0.5",
     "awesome-typescript-loader": "5.2.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.6.0",
