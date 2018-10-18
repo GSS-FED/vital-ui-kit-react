@@ -96,7 +96,7 @@ const Label = styled.span`
   padding-left: 4px;
 `;
 
-interface RadioProps
+export interface RadioProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   value?: number | string;
@@ -109,7 +109,7 @@ interface RadioProps
   inputStyle?: React.CSSProperties;
 }
 
-const Radio: React.SFC<RadioProps> = ({
+export const Radio: React.SFC<RadioProps> = ({
   label,
   defaultChecked,
   style,
@@ -145,5 +145,3 @@ const Radio: React.SFC<RadioProps> = ({
     )}
   </RadioContext.Consumer>
 );
-
-export default Radio;

@@ -82,7 +82,7 @@ const IconWrapper = styled.div<{ checked?: boolean }>`
   transition: all 120ms ease-out;
 `;
 
-export type CheckboxProps = {
+export interface CheckboxProps {
   /** Boolean checked value of the checkbox */
   checked?: boolean;
   /** Inital Check value */
@@ -104,7 +104,7 @@ export type CheckboxProps = {
   style?: React.CSSProperties;
   /** default: `vital__checkbox` */
   className?: string;
-};
+}
 
 function iconColor(
   round?: boolean,
@@ -140,7 +140,7 @@ function iconColor(
  *  />
  * </Checkbox.Group>
  */
-class Checkbox extends React.Component<CheckboxProps> {
+export class Checkbox extends React.Component<CheckboxProps> {
   static defaultProps = {
     disabled: false,
     round: false,
@@ -227,5 +227,3 @@ class Checkbox extends React.Component<CheckboxProps> {
     );
   }
 }
-
-export default Checkbox;

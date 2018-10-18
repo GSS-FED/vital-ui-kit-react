@@ -1,8 +1,8 @@
 export { default as FieldBase } from './components/FieldBase';
-export { Radio, RadioGroup } from './radio';
-export { Select, MultiSelect, Tag } from './select';
-export { Checkbox, CheckboxGroup } from './checkbox';
 
+export * from './radio';
+export * from './checkbox';
+export * from './select';
 export * from './switch';
 export * from './input';
 export * from './components/Label';

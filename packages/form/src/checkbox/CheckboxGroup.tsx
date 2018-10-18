@@ -11,12 +11,14 @@ import {
   CheckboxContextProps,
 } from './CheckboxContext';
 
-interface CheckboxGroupProps extends BoxProps, CheckboxContextProps {
+export interface CheckboxGroupProps
+  extends BoxProps,
+    CheckboxContextProps {
   className?: string;
   style?: React.CSSProperties;
 }
 
-const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
+export const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
   children,
   style,
   className,
@@ -41,5 +43,3 @@ const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
     </CheckboxContext.Provider>
   </Box>
 );
-
-export default CheckboxGroup;
