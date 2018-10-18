@@ -1915,10 +1915,10 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/styled-system@3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.2.tgz#a153495c58c8679fb512084164dc3f441ae4d1a3"
-  integrity sha512-HsLYsoVvWCWoBOQmr02MLoUHIfnWAC2p6VmsajB3YeIX7EemDQRg52/6yfzNalDEzE8t4INYp4d9QfXfvtSqrg==
+"@types/styled-system@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.5.tgz#527ba5242697b00ad87efa249412cc0e873d835c"
+  integrity sha512-h67bqmI6didVcvbGlUvH1ITPtcCx25A13coyPG7znkCwQcsCkk7jRE0N+FNzjH90PvwrfQ8V9GDAPL1TvZLmhQ==
 
 "@webassemblyjs/ast@1.7.8":
   version "1.7.8"
