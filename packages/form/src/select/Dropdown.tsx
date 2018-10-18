@@ -3,32 +3,35 @@
  * MIT license
  */
 import * as React from 'react';
-import { Popup, PopupContent } from '@vital-ui/react-popup';
+import {
+  Popup,
+  PopupContent,
+  PopupProps,
+} from '@vital-ui/react-popup';
 import { MenuItem } from './styled';
 import { Context } from './context';
 
-export interface DropdownProps {
-  popup: React.ReactNode;
-}
+export interface DropdownProps extends PopupProps {}
 
 export const Dropdown: React.SFC<DropdownProps> = ({
   popup,
   children,
+  ...props
 }) => {
   return (
     <Context.Consumer>
       {({ getMenuProps, isOpen }) => (
-        <div {...getMenuProps()}>
-          <Popup
-            popupVisible={isOpen}
-            stretch="width"
-            popup={
-              <PopupContent maxHeight="220px">{popup}</PopupContent>
-            }
-          >
-            {children}
-          </Popup>
-        </div>
+        <Popup
+          {...getMenuProps()}
+          {...props}
+          popupVisible={isOpen}
+          stretch="width"
+          popup={
+            <PopupContent maxHeight="220px">{popup}</PopupContent>
+          }
+        >
+          {children}
+        </Popup>
       )}
     </Context.Consumer>
   );

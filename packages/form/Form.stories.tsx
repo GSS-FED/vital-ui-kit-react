@@ -95,10 +95,16 @@ storiesOf('Packages | Form', module)
         <TextArea placeholder="Comment here" rows={3} />
       </FieldInput>
       <FieldInput label="Send Email" inline>
-        <Switch
-          disabled={boolean('Switch Disabled', false)}
-          round={boolean('Switch Round', false)}
-        />
+        <Value<boolean> initial={false}>
+          {({ value, set }) => (
+            <Switch
+              checked={value}
+              onChange={set}
+              disabled={boolean('Switch Disabled', false)}
+              round={boolean('Switch Round', false)}
+            />
+          )}
+        </Value>
       </FieldInput>
       <FieldInput label="Interested in" inline>
         <CheckboxGroup

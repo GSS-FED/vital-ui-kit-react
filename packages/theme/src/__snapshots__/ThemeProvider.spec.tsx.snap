@@ -128,7 +128,7 @@ Object {
     "bg": "#ffffff",
     "borderColor": "#C3D1EB",
     "boxShadow": "0 0 0 2px rgba(149,171,211,0.2)",
-    "checkedBg": "#0E86FE",
+    "checkedBg": "#ffffff",
     "checkedBorderColor": "#95ABD3",
     "icon": Object {
       "color": "#0E86FE",
