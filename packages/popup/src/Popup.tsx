@@ -32,7 +32,7 @@ interface PopupAlign {
   useCssTransform: boolean;
 }
 
-interface Props {
+export interface PopupProps {
   /** whether popup is visible */
   popupVisible?: boolean;
   /** which actions cause popup shown */
@@ -63,8 +63,8 @@ interface Props {
   popupPlacement?: any;
 }
 
-class Popup extends React.Component<Props> {
-  static defaultProps: Partial<Props> = {
+export class Popup extends React.Component<PopupProps> {
+  static defaultProps: Partial<PopupProps> = {
     action: ['click'],
     placement: 'bottom',
     popupClassName: 'Vital__Popup',
@@ -93,5 +93,3 @@ class Popup extends React.Component<Props> {
     );
   }
 }
-
-export default Popup;

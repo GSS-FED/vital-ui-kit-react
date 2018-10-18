@@ -39,9 +39,19 @@ InputWrapper.defaultProps = {
   theme: defaultTheme,
 };
 
-const Input = withContext(InputBase, ({ getInputProps }) =>
-  getInputProps(),
-);
+const Input = React.forwardRef<
+  HTMLInputElement,
+  React.DetailedHTMLProps<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+  >
+>((props, ref) => (
+  <Context.Consumer>
+    {({ getInputProps }) => (
+      <InputBase ref={ref} {...getInputProps({ ...props })} />
+    )}
+  </Context.Consumer>
+));
 
 type State = {
   input: string;

@@ -125,7 +125,7 @@ export default <T extends typeof defaultTheme>(theme: T) => ({
     boxShadow: `0 0 0 2px ${rgba(theme.colors.secondary, 0.2)}`,
     borderColor: theme.colors.secondary400,
     checkedBorderColor: theme.colors.secondary,
-    checkedBg: theme.colors.primary500,
+    checkedBg: theme.colors.white,
     roundBg: theme.colors.primary500,
     bg: theme.colors.white,
     label: {

@@ -211,6 +211,7 @@ export class Switch extends Component<Props, State> {
     } = this.props;
     return (
       <Box
+        display="inline-block"
         style={style}
         className={cn('vital__switch', className)}
         onClick={this.onCheck}
