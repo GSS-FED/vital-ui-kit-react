@@ -7,7 +7,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import { Select, SelectProps } from './Select';
-import { withContext, Context } from './context';
+import { Context } from './context';
 import {
   fieldWrapperBase,
   fieldInputBase,
