@@ -8,7 +8,7 @@ import cn from 'classnames';
 import { Box, BoxProps } from '@vital-ui/react-utils';
 import { RadioContext } from './RadioContext';
 
-interface RadioGroupProps<T> extends BoxProps {
+export interface RadioGroupProps<T> extends BoxProps {
   onChange?: (selectedValue: T | string | number) => void;
   disabled?: boolean;
   /** default: `vital__radio-group` */
@@ -29,7 +29,9 @@ interface RadioGroupProps<T> extends BoxProps {
  *        <Radio label="yellow" value="yellow" />
  *      </RadioGroup>
  */
-class RadioGroup<T> extends React.Component<RadioGroupProps<T>> {
+export class RadioGroup<T> extends React.Component<
+  RadioGroupProps<T>
+> {
   static defaultProps = {
     onChange: () => {},
     disabled: false,
@@ -70,5 +72,3 @@ class RadioGroup<T> extends React.Component<RadioGroupProps<T>> {
     );
   }
 }
-
-export default RadioGroup;
