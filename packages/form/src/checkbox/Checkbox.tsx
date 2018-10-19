@@ -99,6 +99,7 @@ export interface CheckboxProps {
   name?: string;
   /** Function trigger when checkbox value changes */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onValueChange?: (value: boolean) => void;
   /** Theme */
   theme?: typeof defaultTheme;
   style?: React.CSSProperties;
@@ -162,6 +163,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
       style,
       className,
       onChange,
+      onValueChange,
       ...props
     } = this.props;
 
@@ -217,7 +219,14 @@ export class Checkbox extends React.Component<CheckboxProps> {
                 checked={this.props.checked}
                 defaultChecked={defaultChecked}
                 name={name}
-                onChange={onChange}
+                onChange={e => {
+                  if (onChange) {
+                    onChange(e);
+                  }
+                  if (onValueChange) {
+                    onValueChange(!this.props.checked);
+                  }
+                }}
               />
               {label}
             </Label>
