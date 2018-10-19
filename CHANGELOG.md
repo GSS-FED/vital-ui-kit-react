@@ -1,14 +1,15 @@
 # Changelog
-## Unreleased (2018-10-19)
+## 0.9.1 (2018-10-19)
+
+#### :rocket: Enhancement
+* `form`
+  * [#319](https://github.com/GSS-FED/vital-ui-kit-react/pull/319) Add checkbox onValueChange ([@ericyip](https://github.com/ericyip))
 
 #### :house: Internal
 * `form`, `popup`, `theme`
   * [#317](https://github.com/GSS-FED/vital-ui-kit-react/pull/317) Form update ([@ericyip](https://github.com/ericyip))
 * `form`
   * [#316](https://github.com/GSS-FED/vital-ui-kit-react/pull/316) Form export interface ([@ericyip](https://github.com/ericyip))
-
-#### Committers: 1
-- Eric Yip ([@ericyip](https://github.com/ericyip))
 
 ## 0.8.8 (2018-08-27)
 

@@ -32,6 +32,7 @@
 </p>
 
 ## Intro
+
 [Vital UI Kit](https://github.com/GSS-FED/vital-ui-kit) provide many UI components which are built for [Vital Cloud Services Family](https://www.gsscloud.com/en/). Vital UI Kit React encapsulated css style and components in order to achieve these goals:
 
 - Themeable, build with styled-components. 💅
@@ -42,17 +43,17 @@
 ## Demo
 
 ### Speed
+
 An example of Offical Document contains all Vital UI Kit components
 
-<img 
+<img
   src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit-react/master/assets/demo_screen_shot.png"
 />
 <a href="https://speed-vital-react.netlify.com/"><b>View Demo</b></a>
 
-
-
 ### Bit
-<img 
+
+<img
   src="https://cdn-images-1.medium.com/max/1600/1*C_gNgDDeyTO_SMXw5sIX5g.gif"
 />
 
@@ -60,10 +61,10 @@ An example of Offical Document contains all Vital UI Kit components
   Play them on BitSrc
 </a>
 
-
 ## Getting Started
 
 ### Installation
+
 ```bash
 # Install peer denpendcy, we use styled-components
 
@@ -79,16 +80,26 @@ yarn add @vital-ui/react-avatar
 
 ```js
 // VitalProvider contains default theme and icon, you can override it.
-import { VitalProvider, Button } from '@vital-ui/react' // If you can use `ThemeProvider` by styled-components, or @vital-ui/react-theme
+import { ThemeProvier, Button } from '@vital-ui/react' // You can use `ThemeProvider` by styled-components, or @vital-ui/react-theme
+
 // recommend importing the global reset style.
-import '@vital-ui/react/src/global.css'
+import { gloablStyle } from '@vital-ui/react';
+import { createGlobalStyle } from 'styled-components'
+
+
+const GlobalStyle = createGlobalStyle`
+  ${gloablStyle.linkStyle};
+  ${gloablStyle.reset};
+  ${gloablStyle.vitalTypographyStyle};
+  ${gloablStyle.robotoFontFamily};
+`;
 
 /* ... */
 render() {
   return (
-    <VitalProvider theme={YOUR_CUSTOM_THEME}>
+    <ThemeProvider theme={YOUR_CUSTOM_THEME}>
       <Button>Vital 💜 React!</Button>
-    </VitalProvider>
+    </ThemeProvider>
   )
 }
 ```
@@ -100,6 +111,5 @@ Make sure read our [contributing guide](https://github.com/GSS-FED/vital-ui-kit-
 ## Roadmap
 
 - docs
-- layout
 - Table(expand content)
 - Calendar
