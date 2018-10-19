@@ -98,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
 render() {
   return (
     <ThemeProvider theme={YOUR_CUSTOM_THEME}>
+      <GlobalStyle />
       <Button>Vital 💜 React!</Button>
     </ThemeProvider>
   )
