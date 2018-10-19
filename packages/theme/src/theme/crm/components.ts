@@ -1,8 +1,7 @@
 import { rgba, lighten } from 'polished';
-import defaultTheme from '.';
 
 // component theme factory
-export default <T extends typeof defaultTheme>(theme: T) => ({
+export default <T extends any>(theme: T) => ({
   borderColor: theme.colors.secondary300,
   labelColor: theme.colors.secondary600,
   border: `1px solid ${theme.colors.secondary300}`,

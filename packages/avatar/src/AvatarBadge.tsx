@@ -13,7 +13,7 @@ const badgeTransformStyle = ({
   size: AvatarSize;
   label: string | number;
   circle: boolean;
-  theme: typeof defaultTheme;
+  theme: any;
 }) => {
   if (size === 'xlarge') {
     return css`

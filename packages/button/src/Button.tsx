@@ -26,19 +26,16 @@ interface ButtonElementProps extends BoxProps {
   builtinSize?: BuiltinSize;
 }
 
-type StyledButtonProps = ThemedStyledProps<
-  ButtonElementProps,
-  typeof defaultTheme
->;
+type StyledButtonProps = ThemedStyledProps<ButtonElementProps, any>;
 
 function builtInOrTheme(
   builtin: BuiltinSize | undefined,
-  theme: typeof defaultTheme,
+  theme: any,
 ) {
   return builtin ? builtin : theme.button;
 }
 
-export const natureColor = (theme: typeof defaultTheme) => ({
+export const natureColor = (theme: any) => ({
   default: theme.colors.secondary700,
   primary: theme.colors.primary,
   success: theme.colors.success,

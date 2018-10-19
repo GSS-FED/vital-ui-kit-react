@@ -98,7 +98,7 @@ export interface AvatarProps extends BoxProps {
   imageClassName?: string;
   /** Default is `vital__avatar-badge` */
   badgeClassName?: string;
-  theme?: typeof defaultTheme;
+  theme?: any;
 }
 
 /**
@@ -241,7 +241,7 @@ export class Avatar extends React.Component<AvatarProps> {
 
 function getBuiltInOrTheme(
   builtin: BuiltinTheme | undefined,
-  theme: typeof defaultTheme,
+  theme: any,
 ) {
   return builtin ? builtin : theme.avatar || constants;
 }

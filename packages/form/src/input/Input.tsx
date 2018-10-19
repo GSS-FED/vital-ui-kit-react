@@ -10,7 +10,7 @@ type IconPosition = 'left' | 'right';
 type iconProps = {
   iconPosition?: IconPosition;
   name?: string;
-  theme?: typeof defaultTheme;
+  theme?: any;
 };
 
 const iconPositionStyle = ({
@@ -99,7 +99,7 @@ export interface InputProps extends InputElementProps {
   style?: React.CSSProperties;
   /** On Change */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  theme?: typeof defaultTheme;
+  theme?: any;
   name?: string;
   onRightIconClick?: () => void;
   children?: React.ReactNode;

@@ -22,11 +22,10 @@ export const fieldInputBase = ({ theme = defaultTheme }) => css`
   color: ${theme.form.color};
 `;
 
-const fieldBase = ({
-  theme = defaultTheme,
-}: {
-  theme: typeof defaultTheme;
-}) => css<{ alarm: boolean; warning: boolean }>`
+const fieldBase = ({ theme = defaultTheme }: { theme: any }) => css<{
+  alarm: boolean;
+  warning: boolean;
+}>`
   ${fieldWrapperBase};
   ${fieldInputBase};
 

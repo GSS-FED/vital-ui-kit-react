@@ -19,7 +19,7 @@
 //   circle?: boolean;
 // };
 
-// export const natureColor = (theme: typeof defaultTheme) => ({
+// export const natureColor = (theme: any) => ({
 //   default: theme.colors.secondary700,
 //   primary: theme.colors.primary,
 //   success: theme.colors.success,

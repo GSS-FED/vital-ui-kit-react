@@ -101,7 +101,7 @@ export interface CheckboxProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   onValueChange?: (value: boolean) => void;
   /** Theme */
-  theme?: typeof defaultTheme;
+  theme?: any;
   style?: React.CSSProperties;
   /** default: `vital__checkbox` */
   className?: string;
@@ -110,7 +110,7 @@ export interface CheckboxProps {
 function iconColor(
   round?: boolean,
   disabled?: boolean,
-  theme: typeof defaultTheme = defaultTheme,
+  theme: any = defaultTheme,
 ) {
   if (disabled) {
     return theme.checkbox.icon.disabledColor;

@@ -4,7 +4,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 export const rcTooltipStyle = ({
   theme = defaultTheme,
 }: {
-  theme?: typeof defaultTheme;
+  theme?: any;
 }) => css`
   .rc-tooltip-arrow {
     position: absolute;
