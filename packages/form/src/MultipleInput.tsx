@@ -59,7 +59,7 @@ type LabelCellProps = {
 
 const LabelCell = styled<LabelCellProps, 'div'>('div')`
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 
   ${({ addon }: { addon?: boolean }) =>
     addon &&

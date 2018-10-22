@@ -5,22 +5,9 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled.div<{
-  marginHorizontal: string;
-  vertical: boolean;
-}>`
-  > button:not(:last-child) {
-    margin-right: ${({ vertical, marginHorizontal }) =>
-      vertical ? 0 : marginHorizontal};
-  }
-
-  > button {
-    display: inline-block;
-  }
-`;
-
-export interface ButtonGroupProps {
+export interface ButtonGroupProps extends BoxProps {
   vertical?: boolean;
   /** Horizontal margin between buttons */
   marginHorizontal?: string;
@@ -29,17 +16,19 @@ export interface ButtonGroupProps {
   style?: React.CSSProperties;
 }
 
-export const ButtonGroup: React.SFC<ButtonGroupProps> = ({
-  children,
-  marginHorizontal = '5px',
-  vertical = false,
-  ...props
-}) => (
-  <Root
-    vertical={vertical}
-    marginHorizontal={marginHorizontal}
-    {...props}
-  >
-    {children}
-  </Root>
-);
+const ButtonGroup = styled<ButtonGroupProps, 'div'>('div')`
+  > button:not(:last-child) {
+    margin-right: ${({ vertical, marginHorizontal }) =>
+      vertical ? 0 : marginHorizontal};
+  }
+
+  > button {
+    display: inline-block;
+  }
+  ${superBoxStyle};
+`;
+
+ButtonGroup.defaultProps = {
+  marginHorizontal: '5px',
+  vertical: false,
+};
