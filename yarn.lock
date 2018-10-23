@@ -1488,6 +1488,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@sheerun/mutationobserver-shim@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
+  integrity sha512-vTCdPp/T/Q3oSqwHmZ5Kpa9oI7iLtGl3RQaA/NyLHikvcrPxACkkKVr/XzkSPJWXHRhKGzVvb0urJsbMlRxi1Q==
+
 "@storybook/addon-actions@4.0.0-rc.1":
   version "4.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-4.0.0-rc.1.tgz#672ae2fdef62304b5f35bb18a1e98a420cfafee9"
@@ -4627,12 +4632,12 @@ dom-serializer@0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-dom-testing-library@^3.8.1:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-3.9.0.tgz#acb7fb77afa389e61e420c3d81cff64a4d33498f"
-  integrity sha512-Wk0QFL8PR42rhsgJV9nfnP1MM65ERHEPR7SDtf5JXLKPr1fu+VZaztt/tD7pWTyVJI6wwFwtN8pbdZmj+Mfg3g==
+dom-testing-library@^3.9.0:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/dom-testing-library/-/dom-testing-library-3.11.1.tgz#a2a1b0fe04700f585da9f3539ca626ab17ccf050"
+  integrity sha512-qfa1l4UuQp4hQnokn/MZpnHbG3F3bbuvjDh8giFFVBESyvXJDF9FVC3NarUx2jxAULKXeq0mr/2s0kebrbSE+g==
   dependencies:
-    mutationobserver-shim "^0.3.2"
+    "@sheerun/mutationobserver-shim" "^0.3.2"
     pretty-format "^23.6.0"
     wait-for-expect "^1.0.0"
 
@@ -8425,11 +8430,6 @@ multimatch@^2.1.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
-mutationobserver-shim@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#f4d5dae7a4971a2207914fb5a90ebd514b65acca"
-  integrity sha1-9NXa56SXGiIHkU+1qQ69UUtlrMo=
-
 mute-stream@0.0.7, mute-stream@~0.0.4:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
@@ -10151,13 +10151,12 @@ react-test-renderer@16.5.2:
     react-is "^16.5.2"
     schedule "^0.5.0"
 
-react-testing-library@5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/react-testing-library/-/react-testing-library-5.2.0.tgz#d7af9b0e6d1b653287d8c06cd0eab9e6d5d645ba"
-  integrity sha512-H0V3uM4dpxi/4Hy8nRwrT4i38hYLlyr5oIpUyzk6U1++NOP6XVYmuG8y8xoDsvxb8olN/iTLQzg2SWphR+uvyQ==
+react-testing-library@5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/react-testing-library/-/react-testing-library-5.2.1.tgz#31f163e900457e5c0dcff7669ae06b502f8a9a7a"
+  integrity sha512-UNOWuWWFkqKvvIfnVK9JH9hMHk9Xd7G8Bl0F5zdxJJIhdcakKX2I0w+6SSIgI+Ru3UYDDVqgQTW2Zu1fc2PH8w==
   dependencies:
-    dom-testing-library "^3.8.1"
-    wait-for-expect "^1.0.0"
+    dom-testing-library "^3.9.0"
 
 react-textarea-autosize@^7.0.4:
   version "7.0.4"
