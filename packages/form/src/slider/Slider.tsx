@@ -43,6 +43,7 @@ export interface SliderProps {
   onChange?: (value: number) => void;
   onChangeStart?: React.EventHandler<any>;
   onChangeComplete?: React.EventHandler<any>;
+  showTooltip?: boolean;
 }
 
 /**
@@ -221,7 +222,7 @@ export class Slider extends React.Component<SliderProps, State> {
           <Tooltip
             placement="bottom"
             popup={this.state.value}
-            popupVisible={this.state.active}
+            popupVisible={this.state.active && this.props.showTooltip}
           >
             <SlideHandler
               size={this.props.size!}
@@ -363,7 +364,11 @@ export class Slider extends React.Component<SliderProps, State> {
           });
           this.start = 700;
         },
-        style: { marginRight: '12px', flex: '0 0 auto' },
+        style: {
+          marginRight: '12px',
+          flex: '0 0 auto',
+          cursor: 'pointer',
+        },
       };
       if (this.props.decreaseButton) {
         return React.cloneElement(this.props.decreaseButton, {

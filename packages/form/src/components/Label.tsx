@@ -1,9 +1,10 @@
 import * as React from 'react';
 import cn from 'classnames';
+import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
 import styled, { css } from 'styled-components';
 
-interface LabelProps {
+export interface LabelProps extends BoxProps {
   /** is required? */
   required?: boolean;
   /** label display inline */
@@ -56,6 +57,8 @@ export const Label = styled.span.attrs<LabelProps>({
       vertical-align: top;
       padding-top: calc(0.46633rem + 2px);
     `};
+
+  ${superBoxStyle};
 `;
 
 Label.defaultProps = {

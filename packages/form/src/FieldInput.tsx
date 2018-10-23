@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
-import { Label } from './components/Label';
+import { Label, LabelProps } from './components/Label';
 
 interface RootProps extends BoxProps {
   inline?: boolean;
@@ -26,7 +26,7 @@ const inlineFieldInputItemStyle = css`
 
   > span {
     display: table-cell;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 1%;
@@ -51,17 +51,19 @@ const Root = styled<RootProps, 'div'>('div')`
   ${superBoxStyle};
 `;
 
+type GetLabelPropsFunc = (props?: Partial<LabelProps>) => LabelProps;
 export interface FieldInputProps extends BoxProps {
-  label?: React.ReactNode;
+  label?:
+    | ((props: GetLabelPropsFunc) => React.ReactNode)
+    | React.ReactNode;
   align?: 'left' | 'right';
   inline?: boolean;
   required?: boolean;
   children: React.ReactNode;
   style?: React.CSSProperties;
   className?: string;
-  labelProps?: any;
+  labelProps?: LabelProps;
   ref?: React.Ref<any>;
-  labelRef?: React.Ref<any>;
 }
 
 /**
@@ -81,6 +83,15 @@ export class FieldInput extends React.Component<FieldInputProps> {
     containerProps: undefined,
   };
 
+  static Label = Label;
+
+  getLabelProps: GetLabelPropsFunc = props => ({
+    required: this.props.required,
+    align: this.props.align,
+    ...this.props.labelProps,
+    ...props,
+  });
+
   render() {
     const {
       label,
@@ -92,7 +103,6 @@ export class FieldInput extends React.Component<FieldInputProps> {
       className,
       labelProps,
       ref,
-      labelRef,
       ...props
     } = this.props;
     return (
@@ -102,15 +112,11 @@ export class FieldInput extends React.Component<FieldInputProps> {
         inline={inline}
         {...props}
       >
-        {label && (
-          <Label
-            ref={labelRef}
-            required={required}
-            align={align}
-            {...labelProps}
-          >
-            {label}
-          </Label>
+        {typeof label === 'function' ? (
+          // @ts-ignore
+          label(this.getLabelProps)
+        ) : (
+          <Label {...this.getLabelProps()}>{label}</Label>
         )}
         {children}
       </Root>
