@@ -4,10 +4,9 @@
  */
 
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { rgba } from 'polished';
 import { CheckIcon } from './CheckIcon';
-import { Box } from '@vital-ui/react-utils';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
 import { CheckboxContext } from './CheckboxContext';
