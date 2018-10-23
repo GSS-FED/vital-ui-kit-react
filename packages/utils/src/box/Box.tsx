@@ -52,6 +52,8 @@ import {
   MaxHeightProps,
   MaxWidthProps,
   MinHeightProps,
+  minWidth,
+  MinWidthProps,
   OpacityProps,
   PositionProps,
   RightProps,
@@ -64,6 +66,7 @@ import {
 } from 'styled-system';
 import styled, { css } from 'styled-components';
 import { css as cssStyle, CssProps } from '../style';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 export interface BoxProps
   extends BackgroundImageProps,
@@ -96,7 +99,8 @@ export interface BoxProps
     TopProps,
     WidthProps,
     ZIndexProps,
-    CssProps {}
+    CssProps,
+    MinWidthProps {}
 
 export const superBoxStyle = css`
   ${space};
@@ -131,9 +135,14 @@ export const superBoxStyle = css`
   ${letterSpacing};
   ${fontFamily};
   ${cssStyle};
+  ${minWidth};
 `;
 
 export const Box = styled<BoxProps & ColorProps, 'div'>('div')`
   ${superBoxStyle};
   ${color};
 `;
+
+Box.defaultProps = {
+  theme: defaultTheme,
+};

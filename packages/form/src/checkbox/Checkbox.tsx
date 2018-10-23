@@ -53,7 +53,7 @@ const CheckWrapper = styled<CheckWrapper, 'span'>('span')`
     checked
       ? theme.checkbox.checkedBg
       : round
-        ? theme.CheckboxContext.roundRb
+        ? theme.checkbox.roundBg
         : theme.checkbox.bg};
   transition: ${({ theme }) => theme.defaultTransition};
   margin: -2px 0.6em 0 0;
@@ -71,7 +71,13 @@ const Input = styled.input`
   display: none;
 `;
 
-const IconWrapper = styled.div<{ checked?: boolean }>`
+interface IconWrapperProps {
+  checked?: boolean;
+  round?: boolean;
+  disabled?: boolean;
+}
+
+const IconWrapper = styled<IconWrapperProps, 'div'>('div')`
   text-align: center;
   width: 100%;
   height: 100%;
@@ -80,7 +86,13 @@ const IconWrapper = styled.div<{ checked?: boolean }>`
   transform: ${({ checked }) => (checked ? 'scale(1)' : 'scale(0)')};
   pointer-events: none;
   transition: all 120ms ease-out;
+  color: ${({ round, disabled, theme }) =>
+    iconColor(round, disabled, theme)};
 `;
+
+IconWrapper.defaultProps = {
+  theme: defaultTheme,
+};
 
 export interface CheckboxProps {
   /** Boolean checked value of the checkbox */
@@ -167,17 +179,6 @@ export class Checkbox extends React.Component<CheckboxProps> {
       ...props
     } = this.props;
 
-    const customIcon =
-      typeof icon === 'function'
-        ? icon({
-            color: iconColor(
-              this.props.round,
-              this.props.disabled,
-              this.props.theme,
-            ),
-          })
-        : icon;
-
     return (
       <CheckboxContext.Consumer>
         {({
@@ -195,21 +196,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
               round={contextRound || round}
             >
               <IconWrapper checked={this.props.checked}>
-                {contextIcon ||
-                  customIcon || (
-                    <Box
-                      css={css`
-                        color: ${({ theme }) =>
-                          iconColor(
-                            this.props.round,
-                            this.props.disabled,
-                            theme,
-                          )};
-                      `}
-                    >
-                      <CheckIcon />
-                    </Box>
-                  )}
+                {contextIcon || icon || <CheckIcon />}
               </IconWrapper>
             </CheckWrapper>
             <Label>

@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox render with round style 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    .c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456296;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C3D1EB;
+  border-radius: 50%;
+  background-color: #0E86FE;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  color: #0E86FE;
+}
+
+<div>
+      <label
+        class="vital__checkbox c0"
+      >
+        <span
+          class="c1"
+        >
+          <div
+            class="c2"
+          >
+            <svg
+              height="1em"
+              role="img"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          class="c3"
+        >
+          <input
+            class="c4"
+            type="checkbox"
+          />
+          round
+        </span>
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="vital__checkbox sc-bdVaJa RyhGg"
+    >
+      <span
+        class="sc-htpNat efrRpH"
+      >
+        <div
+          class="sc-ifAKCX hLQgOo"
+        >
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        class="sc-bwzfXH iuQrxO"
+      >
+        <input
+          class="sc-bxivhb cRvGhf"
+          type="checkbox"
+        />
+        round
+      </span>
+    </label>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Checkbox should render with Custom Theme 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    .c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: red;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C3D1EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+  border-color: #95ABD3;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  color: #0E86FE;
+}
+
+<div>
+      <label
+        class="vital__checkbox c0"
+      >
+        <span
+          class="c1"
+        >
+          <div
+            class="c2"
+          >
+            <svg
+              height="1em"
+              role="img"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          class="c3"
+        >
+          <input
+            checked=""
+            class="c4"
+            type="checkbox"
+          />
+          custom
+        </span>
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="vital__checkbox sc-bdVaJa RyhGg"
+    >
+      <span
+        class="sc-htpNat deAzeE"
+      >
+        <div
+          class="sc-ifAKCX jXwSsA"
+        >
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        class="sc-bwzfXH bukUYK"
+      >
+        <input
+          checked=""
+          class="sc-bxivhb cRvGhf"
+          type="checkbox"
+        />
+        custom
+      </span>
+    </label>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Checkbox should render with default styles 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.c0:hover > span:first-child {
+  box-shadow: 0 0 0 2px rgba(14,134,254,0.2);
+}
+
+.c3 {
+  color: #456296;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 1.066rem;
+  height: 1.066rem;
+  border: 1px solid #C3D1EB;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  margin: -2px 0.6em 0 0;
+  vertical-align: middle;
+  border-color: #95ABD3;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: none;
+  -webkit-transition: all 120ms ease-out;
+  transition: all 120ms ease-out;
+  color: #0E86FE;
+}
+
+<body>
+    <div>
+      <label
+        class="vital__checkbox c0"
+      >
+        <span
+          class="c1"
+        >
+          <div
+            class="c2"
+          >
+            <svg
+              height="1em"
+              role="img"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          class="c3"
+        >
+          <input
+            checked=""
+            class="c4"
+            type="checkbox"
+          />
+          default
+        </span>
+      </label>
+    </div>
+  </body>,
+  "container": <div>
+    <label
+      class="vital__checkbox sc-bdVaJa RyhGg"
+    >
+      <span
+        class="sc-htpNat deAzeE"
+      >
+        <div
+          class="sc-ifAKCX jXwSsA"
+        >
+          <svg
+            height="1em"
+            role="img"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </span>
+      <span
+        class="sc-bwzfXH iuQrxO"
+      >
+        <input
+          checked=""
+          class="sc-bxivhb cRvGhf"
+          type="checkbox"
+        />
+        default
+      </span>
+    </label>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
