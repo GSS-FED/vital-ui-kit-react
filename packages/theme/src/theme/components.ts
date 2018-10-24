@@ -125,7 +125,7 @@ export default <T extends any>(theme: T) => ({
     borderColor: theme.colors.secondary400,
     checkedBorderColor: theme.colors.secondary,
     checkedBg: theme.colors.white,
-    roundBg: theme.colors.primary500,
+    roundBg: theme.colors.white,
     bg: theme.colors.white,
     label: {
       color: theme.colors.secondary700,

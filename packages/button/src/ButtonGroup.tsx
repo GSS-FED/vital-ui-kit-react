@@ -16,7 +16,7 @@ export interface ButtonGroupProps extends BoxProps {
   style?: React.CSSProperties;
 }
 
-const ButtonGroup = styled<ButtonGroupProps, 'div'>('div')`
+export const ButtonGroup = styled<ButtonGroupProps, 'div'>('div')`
   > button:not(:last-child) {
     margin-right: ${({ vertical, marginHorizontal }) =>
       vertical ? 0 : marginHorizontal};
