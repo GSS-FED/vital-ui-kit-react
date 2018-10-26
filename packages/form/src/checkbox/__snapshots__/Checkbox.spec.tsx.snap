@@ -26,7 +26,7 @@ Object {
   height: 1.066rem;
   border: 1px solid #C3D1EB;
   border-radius: 50%;
-  background-color: #0E86FE;
+  background-color: #ffffff;
   -webkit-transition: all 120ms ease-out;
   transition: all 120ms ease-out;
   margin: -2px 0.6em 0 0;
@@ -93,7 +93,7 @@ Object {
       class="vital__checkbox sc-bdVaJa RyhGg"
     >
       <span
-        class="sc-htpNat efrRpH"
+        class="sc-htpNat cUzqxB"
       >
         <div
           class="sc-ifAKCX hLQgOo"

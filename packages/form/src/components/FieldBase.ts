@@ -4,7 +4,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 export const fieldWrapperBase = ({ theme = defaultTheme }) => css`
   position: relative;
   display: block;
-  width: 100%;
+  /* width: 100%; */
   line-height: 1;
   box-sizing: border-box;
   background-color: ${theme.colors.white};
@@ -22,17 +22,50 @@ export const fieldInputBase = ({ theme = defaultTheme }) => css`
   color: ${theme.form.color};
 `;
 
-const fieldBase = ({ theme = defaultTheme }: { theme: any }) => css<{
-  alarm: boolean;
-  warning: boolean;
-}>`
-  ${fieldWrapperBase};
-  ${fieldInputBase};
-
+export const inputStyle = ({
+  theme = defaultTheme,
+  alarm,
+}: {
+  theme: any;
+  alarm?: boolean;
+}) => css`
+  color: ${theme.form.color};
   &::placeholder {
     color: ${theme.form.placeholder.color};
   }
+  ${alarm &&
+    css`
+      &:disabled {
+        pointer-events: none;
+        background-color: ${theme.form.disabled.alarmBg};
+        border-color: ${theme.colors.alarm};
 
+        &::placeholder {
+          color: ${theme.colors.alarm};
+        }
+      }
+    `};
+`;
+
+export const resetInput = css`
+  background-color: transparent;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  font-size: 1rem;
+  outline: 0;
+`;
+
+export const inputStatus = ({
+  theme = defaultTheme,
+  warning,
+  alarm,
+}: {
+  theme: any;
+  warning: boolean;
+  alarm: boolean;
+}) => css`
   &:hover {
     border: 1px solid ${theme.form.hoverBorderColor};
   }
@@ -48,31 +81,27 @@ const fieldBase = ({ theme = defaultTheme }: { theme: any }) => css<{
     pointer-events: none;
     border-color: ${theme.form.borderColor};
     background-color: ${theme.form.disabled.bg};
-
-    ${({ alarm }) =>
-      alarm &&
-      css`
-        pointer-events: none;
-        background-color: ${theme.form.disabled.alarmBg};
-        border-color: ${theme.colors.alarm};
-
-        &::placeholder {
-          color: ${theme.colors.alarm};
-        }
-      `};
   }
 
-  ${({ alarm }) =>
-    alarm &&
+  ${alarm &&
     css`
       border-color: ${theme.colors.alarm};
     `};
 
-  ${({ warning }) =>
-    warning &&
+  ${warning &&
     css`
       border-color: ${theme.colors.warning};
     `};
+`;
+
+const fieldBase = (props: any) => css<{
+  alarm: boolean;
+  warning: boolean;
+}>`
+  ${fieldWrapperBase};
+  ${inputStatus};
+  ${inputStyle};
+  ${fieldInputBase};
 `;
 
 export default fieldBase;
