@@ -6,19 +6,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Trigger from 'rc-trigger';
-import 'rc-trigger/assets/index.css';
+// import 'rc-trigger/assets/index.css';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { rcTooltipStyle } from './styled';
+import { createGlobalStyle } from 'styled-components';
 
 import { placements } from './placements';
-
-const Root = styled(Trigger)`
-  ${rcTooltipStyle};
-`;
-
-Root.defaultProps = {
-  theme: defaultTheme,
-};
 
 const TooltipContent = styled.div`
   display: inline-block;
@@ -27,6 +20,10 @@ const TooltipContent = styled.div`
   color: ${({ theme }) => theme.tooltip.color};
   background: ${({ theme }) => theme.tooltip.bg};
   border-radius: 4px;
+`;
+
+const RcTooltipStyle = createGlobalStyle`
+  ${rcTooltipStyle};
 `;
 
 TooltipContent.defaultProps = {
@@ -128,14 +125,17 @@ export const Tooltip: React.SFC<TooltipProps> = ({
   ];
 
   return (
-    <Root
-      popupPlacement={popupPlacement || placement}
-      popup={TooltipBase}
-      builtinPlacements={placements}
-      {...props}
-    >
-      {children}
-    </Root>
+    <>
+      <Trigger
+        popupPlacement={popupPlacement || placement}
+        popup={TooltipBase}
+        builtinPlacements={placements}
+        {...props}
+      >
+        {children}
+      </Trigger>
+      <RcTooltipStyle />
+    </>
   );
 };
 

@@ -2,56 +2,38 @@ import * as React from 'react';
 import cn from 'classnames';
 import styled, { css } from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { isElement, BoxProps } from '@vital-ui/react-utils';
-import baseStyle from '../components/FieldBase';
+import { BoxProps, render, Box } from '@vital-ui/react-utils';
+import {
+  fieldWrapperBase,
+  resetInput,
+  fieldInputBase,
+  inputStyle,
+  inputStatus,
+} from '../components/FieldBase';
 
 type IconPosition = 'left' | 'right';
-
-type iconProps = {
-  iconPosition?: IconPosition;
-  name?: string;
-  theme?: any;
-};
-
-const iconPositionStyle = ({
-  iconPosition,
-  theme = defaultTheme,
-}: iconProps) => {
-  if (iconPosition === 'left') {
-    return css`
-      left: 8px;
-      top: 8px;
-      z-index: 9;
-      color: ${theme.form.inputIcon.leftColor};
-    `;
-  }
-  return css`
-    right: 8px;
-    top: 8px;
-    z-index: 9;
-    cursor: pointer;
-
-    &:hover {
-      color: ${theme.form.inputIcon.rightHoverColor};
-    }
-  `;
-};
-
-const IconButton = styled.div`
-  position: absolute;
-  ${iconPositionStyle};
-`;
-
-IconButton.defaultProps = {
-  theme: defaultTheme,
-};
 
 const Root = styled.div`
   position: relative;
   border-radius: inherit;
+  ${fieldWrapperBase};
+  ${inputStatus};
+  display: flex;
+  height: 2rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+`;
+
+export const IconButton = styled(Box)`
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  color: inherit;
+  cursor: pointer;
 `;
 
 interface InputElementProps extends BoxProps {
+  // TODO: forwardRef React.ClassAttributes<HTMLInputElement>,
   /** Alarm state */
   alarm?: boolean;
   /** Warning State */
@@ -63,11 +45,16 @@ interface InputElementProps extends BoxProps {
 }
 
 const InputElement = styled<InputElementProps, 'input'>('input')`
-  vertical-align: middle;
-  height: 1.93267rem;
-  ${baseStyle};
-  padding-left: ${({ leftIcon }) => leftIcon && '2.2em'};
-  padding-right: ${({ rightIcon }) => rightIcon && '2.2em'};
+  background-color: transparent;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  flex: 1;
+  ${resetInput};
+  ${fieldInputBase};
+  ${inputStyle};
+  padding: 0.46633rem 0;
 `;
 
 InputElement.defaultProps = {
@@ -78,7 +65,9 @@ InputElement.defaultProps = {
   rightIcon: false,
 };
 
-export interface InputProps extends InputElementProps {
+export interface InputProps
+  extends InputElementProps,
+    React.HTMLAttributes<HTMLInputElement> {
   /** Input ref */
   inputRef?: React.Ref<HTMLInputElement>;
   /** Html attr */
@@ -123,19 +112,14 @@ export class Input extends React.Component<InputProps> {
 
   renderIcon = (icon: any, position: IconPosition) => {
     const { onRightIconClick } = this.props;
-    if (isElement(icon)) {
-      return (
-        <IconButton
-          onClick={
-            position === 'right' ? onRightIconClick : undefined
-          }
-          iconPosition={position}
-        >
-          {icon}
-        </IconButton>
-      );
-    }
-    return null;
+    return render(icon, IconButton, {
+      onClick: position === 'right' ? onRightIconClick : undefined,
+      css:
+        position === 'right' &&
+        css`
+          text-align: center;
+        `,
+    });
   };
 
   render() {
@@ -161,6 +145,7 @@ export class Input extends React.Component<InputProps> {
     } = this.props;
     return (
       <Root>
+        {leftIcon && this.renderIcon(leftIcon, 'left')}
         <InputElement
           style={style}
           className={cn('vital__input', className)}
@@ -181,7 +166,6 @@ export class Input extends React.Component<InputProps> {
           theme={theme}
           {...props}
         />
-        {leftIcon && this.renderIcon(leftIcon, 'left')}
         {rightIcon && this.renderIcon(rightIcon, 'right')}
       </Root>
     );

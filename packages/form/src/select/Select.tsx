@@ -60,7 +60,7 @@ export class Select<T> extends React.Component<SelectProps<T>> {
 
   static Context: typeof Context = Context;
 
-  static Button: typeof Button = Button;
+  static Button = Button;
 
   render() {
     const { children, ...props } = this.props;
