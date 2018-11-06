@@ -23,6 +23,6 @@
     "popmotion": "8.1.22"
   },
   "devDependencies": {
-    "typescript": "3.1.5"
+    "typescript": "3.1.6"
   }
 }

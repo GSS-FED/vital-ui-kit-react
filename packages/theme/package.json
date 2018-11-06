@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/lodash.merge": "4.6.4",
     "copyfiles": "2.1.0",
-    "typescript": "3.1.5"
+    "typescript": "3.1.6"
   },
   "peerDependencies": {
     "react": "^16",
