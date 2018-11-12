@@ -2025,10 +2025,10 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/styled-system@3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.7.tgz#1bb1b5161f2009f10aa37c4c627ecb78fa543cb3"
-  integrity sha512-5IVTchugOLqVdSQcF7C5b544k3zML1+EhA67pWnueMwz/wrr15GXHw8GvdOQqgm9mZ3HbgZSBMXDSH5Q0yZE8Q==
+"@types/styled-system@3.0.8":
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.8.tgz#a544e726e58404bf77d4108ed6c50fa405651c3c"
+  integrity sha512-c1vSmGcLqTUXdcq0QIt7xHPv0EFuVjkGSkEF8j8D7XGUCn8OrR61HdrjwridVcsn8VyAFYHc75Amcx+v0aUH9g==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
