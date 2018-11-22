@@ -2070,10 +2070,12 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/styled-system@3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.8.tgz#a544e726e58404bf77d4108ed6c50fa405651c3c"
-  integrity sha512-c1vSmGcLqTUXdcq0QIt7xHPv0EFuVjkGSkEF8j8D7XGUCn8OrR61HdrjwridVcsn8VyAFYHc75Amcx+v0aUH9g==
+"@types/styled-system@3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.0.9.tgz#a17d78b3500ed5c76570fd4f692546616eed015c"
+  integrity sha512-QUtiOVULbaLCrdQYzZpqDdjx2QUwdfk+F9op2kZy1Xqjh5S6D0vMousLUByBRDf7tqL/ZdtX0E5/gFav1A6DCA==
+  dependencies:
+    csstype "^2.2.0"
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
