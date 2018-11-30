@@ -78,7 +78,7 @@
     "lerna-changelog": "0.8.2",
     "lint-staged": "8.0.4",
     "markdown-loader-jest": "0.1.1",
-    "prettier": "1.15.2",
+    "prettier": "1.15.3",
     "react": "16.6.3",
     "react-docgen-typescript-loader": "3.0.0",
     "react-dom": "16.6.3",
