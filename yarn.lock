@@ -10663,18 +10663,6 @@ rc-trigger@2.6.2:
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-trigger@^2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-2.5.4.tgz#9088a24ba5a811b254f742f004e38a9e2f8843fb"
-  integrity sha512-clgXOdazDW2qg4vTZSAExpvOuojPNuMoamG+SxAm5Ih+rpVcrtEiDlDZWY4yUHyfEWJZBzgbrr4np/z2FK6RfA==
-  dependencies:
-    babel-runtime "6.x"
-    classnames "^2.2.6"
-    prop-types "15.x"
-    rc-align "^2.4.0"
-    rc-animate "2.x"
-    rc-util "^4.4.0"
-
 rc-util@^4.0.4, rc-util@^4.4.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-4.5.0.tgz#3183e6ec806f382efb2d3e85770d95875fa6180f"
@@ -10842,15 +10830,13 @@ react-modal@^3.6.1:
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
 
-react-priority-navigation@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.2.2.tgz#25cc0797faf932e7455f7e2807ceacb6a85790fa"
-  integrity sha512-dGJEAqalIVwyuYQtwVUk1PXj685u2LJWkCL1Pj/HwDY1v7NwjJHF9cUf54oR4D3hRFb/xRd+SK14fPjVkJsrhQ==
+react-priority-navigation@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.3.0.tgz#07a989851cb3ac49574781d82619cb12e2f24213"
+  integrity sha512-zfZV1FVw2f2865wSigFhL/BcdtHQXF/BD61RKNIBhT6AsDFLoAnSSOx9s1bINWLBZbTKK7r2My2iAhrJ+ubMeg==
   dependencies:
     lodash.debounce "^4.0.8"
-    rc-trigger "^2.5.4"
     resize-observer-polyfill "^1.5.0"
-    uniqid "^5.0.0"
 
 react-resize-detector@^3.1.1:
   version "3.1.1"
@@ -12957,11 +12943,6 @@ union-value@^1.0.0:
     get-value "^2.0.6"
     is-extendable "^0.1.1"
     set-value "^0.4.3"
-
-uniqid@^5.0.0:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.0.3.tgz#917968310edc868d50df6c44f783f32c7d80fac1"
-  integrity sha512-R2qx3X/LYWSdGRaluio4dYrPXAJACTqyUjuyXHoJLBUOIfmMcnYOyY2d6Y4clZcIz5lK6ZaI0Zzmm0cPfsIqzQ==
 
 unique-filename@^1.1.0:
   version "1.1.0"
