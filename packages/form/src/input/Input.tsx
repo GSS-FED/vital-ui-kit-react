@@ -44,7 +44,7 @@ interface InputElementProps extends BoxProps {
   rightIcon?: any;
 }
 
-const InputElement = styled('input')<InputElementProps>`
+const InputElement = styled.input<InputElementProps>`
   background-color: transparent;
   border-width: initial;
   border-style: none;

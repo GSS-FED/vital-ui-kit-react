@@ -108,7 +108,7 @@ export interface AvatarProps extends BoxProps {
  *  badge="99+"
  *  size="large"
  *  gender="male"
- *  round
+ *  circle
  * />
  */
 export class Avatar extends React.Component<AvatarProps> {
@@ -211,8 +211,7 @@ export class Avatar extends React.Component<AvatarProps> {
     const {
       badge,
       size,
-      round,
-      circle = round,
+      circle,
       badgeStyle,
       badgeClassName,
     } = this.props;
@@ -224,6 +223,7 @@ export class Avatar extends React.Component<AvatarProps> {
       return (
         // @ts-ignore
         <AvatarBadge
+          // @ts-ignore
           className={cn('vital__avatar-badge', badgeClassName)}
           label={badge}
           // @ts-ignore
