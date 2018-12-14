@@ -40,7 +40,7 @@ interface CheckWrapper {
   round?: boolean;
 }
 
-const CheckWrapper = styled<CheckWrapper, 'span'>('span')`
+const CheckWrapper = styled('span')<CheckWrapper>`
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -52,8 +52,8 @@ const CheckWrapper = styled<CheckWrapper, 'span'>('span')`
     checked
       ? theme.checkbox.checkedBg
       : round
-        ? theme.checkbox.roundBg
-        : theme.checkbox.bg};
+      ? theme.checkbox.roundBg
+      : theme.checkbox.bg};
   transition: ${({ theme }) => theme.defaultTransition};
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
@@ -76,7 +76,7 @@ interface IconWrapperProps {
   disabled?: boolean;
 }
 
-const IconWrapper = styled<IconWrapperProps, 'div'>('div')`
+const IconWrapper = styled('div')<IconWrapperProps>`
   text-align: center;
   width: 100%;
   height: 100%;

@@ -62,7 +62,7 @@ type RootProps = {
   circle: boolean;
 };
 
-const Root = styled<RootProps, 'span'>('span')`
+const Root = styled('span')<RootProps>`
   position: absolute;
   background-color: ${({ theme }) => theme.avatar.badgeBg};
   color: ${({ theme }) => theme.colors.white};
@@ -84,7 +84,9 @@ export interface AvatarBadgeProps {
   className?: string;
 }
 
-export const AvatarBadge: React.SFC<AvatarBadgeProps> = ({
+export const AvatarBadge: React.FunctionComponent<
+  AvatarBadgeProps
+> = ({
   label,
   size = 'medium',
   circle = false,

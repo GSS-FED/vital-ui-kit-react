@@ -16,7 +16,7 @@ interface StarProps {
   'data-is-favorited': boolean;
 }
 
-const Star = styled<StarProps, any>(ViStar)`
+const Star = styled(ViStar)<StarProps>`
   color: ${({ 'data-is-favorited': isFavorited }) =>
     isFavorited ? '#FFD233' : `#dedee2`};
   font-size: 1.14em;
@@ -34,11 +34,9 @@ interface FavoriteStarProps {
   onClick: React.MouseEventHandler;
 }
 
-export const FavoriteStar: React.SFC<FavoriteStarProps> = ({
-  isFavorited,
-  onClick,
-  ...props
-}) => (
+export const FavoriteStar: React.FunctionComponent<
+  FavoriteStarProps
+> = ({ isFavorited, onClick, ...props }) => (
   <IconButton {...props} onClick={onClick}>
     <Star data-is-favorited={isFavorited} />
   </IconButton>

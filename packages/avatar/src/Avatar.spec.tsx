@@ -14,19 +14,19 @@ describe('Avatar', () => {
     expect(avatar.toJSON()).toMatchSnapshot();
   });
 
-  it('should render with css prop', () => {
-    const avatar = renderer.create(
-      <Avatar
-        size={150}
-        css={`
-          border: 1px solid grey;
-        `}
-        circle
-      />,
-    );
+  // it('should render with css prop', () => {
+  //   const avatar = renderer.create(
+  //     <Avatar
+  //       size={150}
+  //       css={`
+  //         border: 1px solid grey;
+  //       `}
+  //       circle
+  //     />,
+  //   );
 
-    expect(avatar.toJSON()).toMatchSnapshot();
-  });
+  //   expect(avatar.toJSON()).toMatchSnapshot();
+  // });
 
   it('should render with theme props', () => {
     const avatar = renderer.create(

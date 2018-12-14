@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled<BoxProps, 'div'>('div')`
+const Root = styled('div')<BoxProps>`
   position: relative;
   padding: 0.75rem 1.25rem;
   flex-grow: 1;
@@ -26,7 +26,7 @@ interface CardContentProps extends BoxProps {
   className?: string;
 }
 
-const Content: React.SFC<CardContentProps> = ({
+const Content: React.FunctionComponent<CardContentProps> = ({
   children,
   style,
   className,

@@ -42,7 +42,7 @@ const sizeStyle = css<SizeStyleProps>`
   }};
 `;
 
-const Root = styled<BoxProps & { circle?: boolean }, 'div'>('div')`
+const Root = styled.div<BoxProps & { circle?: boolean }>`
   position: relative;
   display: inline-block;
   ${({ circle }) =>
@@ -53,7 +53,7 @@ const Root = styled<BoxProps & { circle?: boolean }, 'div'>('div')`
   ${superBoxStyle};
 `;
 
-const Image = styled<SizeStyleProps, 'img'>('img')`
+const Image = styled('img')<SizeStyleProps>`
   background-color: ${({ theme }) => theme.grey200};
   box-sizing: border-box;
   ${sizeStyle};
@@ -79,8 +79,6 @@ export interface AvatarProps extends BoxProps {
   builtinTheme?: BuiltinTheme;
   /** Image src html attr of the avatar. */
   src?: string;
-  /** @deprecated Circle style. */
-  round?: boolean;
   /** Circle style. */
   circle?: boolean;
   /** Avatar size, default is `medium`, `xlarge`, `large`, `medium`, `small`, `xsmall` */
@@ -110,7 +108,7 @@ export interface AvatarProps extends BoxProps {
  *  badge="99+"
  *  size="large"
  *  gender="male"
- *  round
+ *  circle
  * />
  */
 export class Avatar extends React.Component<AvatarProps> {
@@ -126,7 +124,6 @@ export class Avatar extends React.Component<AvatarProps> {
   render() {
     const {
       src,
-      round,
       circle,
       size = 'medium',
       badge,
@@ -210,12 +207,11 @@ export class Avatar extends React.Component<AvatarProps> {
     return defaultAvatarRenderer.default(avatarProps);
   };
 
-  private renderBadge = () => {
+  private renderBadge = (): React.ReactNode => {
     const {
       badge,
       size,
-      round,
-      circle = round,
+      circle,
       badgeStyle,
       badgeClassName,
     } = this.props;
@@ -225,7 +221,9 @@ export class Avatar extends React.Component<AvatarProps> {
     if (typeof badge === 'string' || typeof badge === 'number') {
       // FIXME: We skip the size calc since AvatarBadge now doesn't support number;
       return (
+        // @ts-ignore
         <AvatarBadge
+          // @ts-ignore
           className={cn('vital__avatar-badge', badgeClassName)}
           label={badge}
           // @ts-ignore

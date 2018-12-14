@@ -15,7 +15,7 @@ type BtnProps = {
   disabled?: boolean;
 };
 
-const Btn = styled<BtnProps, 'div'>('div')`
+const Btn = styled('div')<BtnProps>`
   width: ${({ theme }) => theme.switch.buttonSize};
   height: ${({ theme }) => theme.switch.buttonSize};
   border-radius: ${props => (props.round ? '50%' : '4px')};
@@ -90,7 +90,7 @@ Input.defaultProps = {
 
 type LabelProps = { round?: boolean; disabled?: boolean };
 
-const Label = styled<LabelProps, 'label'>('label')`
+const Label = styled('label')<LabelProps>`
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -110,7 +110,7 @@ Label.defaultProps = {
   theme: defaultTheme,
 };
 
-const Text = styled<TextProps, 'div'>('div')`
+const Text = styled('div')<TextProps>`
   position: absolute;
   top: 3px;
   right: 8px;

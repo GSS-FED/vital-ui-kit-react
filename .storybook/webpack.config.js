@@ -14,6 +14,7 @@ module.exports = (defaultConfig, env, config) => {
   // any plugin you want to add
   defaultConfig.module.rules[0].use[0].options.plugins = [
     require.resolve('@babel/plugin-proposal-object-rest-spread'),
+    require.resolve('babel-plugin-styled-components'),
   ];
 
   config.module.rules.push({

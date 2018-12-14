@@ -8,7 +8,7 @@ import {
   isElement,
 } from '@vital-ui/react-utils';
 
-const Root = styled<BoxProps, 'div'>('div')`
+const Root = styled('div')<BoxProps>`
   position: relative;
   display: table;
   width: 100%;
@@ -57,7 +57,7 @@ type LabelCellProps = {
   addon?: boolean;
 };
 
-const LabelCell = styled<LabelCellProps, 'div'>('div')`
+const LabelCell = styled('div')<LabelCellProps>`
   display: table-cell;
   vertical-align: top;
 

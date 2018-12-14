@@ -17,7 +17,7 @@ import FooterButton from './FooterButton';
 interface RootProps extends BoxProps {
   shadow?: boolean;
 }
-const Root = styled<RootProps, 'div'>('div')`
+const Root = styled('div')<RootProps>`
   position: relative;
   display: flex;
   margin: auto;
