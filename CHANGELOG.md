@@ -1,4 +1,13 @@
 # Changelog
+## 0.9.4 (2018-12-14)
+
+#### :bug: Bug Fix
+* `avatar`, `badge`, `button`, `card`, `form`, `pill`, `popup`, `theme`, `tooltip`, `utils`
+  * [#382](https://github.com/GSS-FED/vital-ui-kit-react/pull/382) Fix styled-components types error ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.9.1 (2018-10-19)
 
 #### :rocket: Enhancement
