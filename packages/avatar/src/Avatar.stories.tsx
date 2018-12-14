@@ -38,12 +38,12 @@ storiesOf('Packages | Avatar', module)
       circle={boolean('circle', false)}
       outline={boolean('outline', false)}
     />
-  ))
-  .add('Custom size', () => (
-    <Avatar
-      badge={50}
-      size={number('size', 30)}
-      circle={boolean('circle', true)}
-      css={`border 4px solid black`}
-    />
   ));
+// .add('Custom size', () => (
+//   <Avatar
+//     badge={50}
+//     size={number('size', 30)}
+//     circle={boolean('circle', true)}
+//     css={`border 4px solid black`}
+//   />
+// ));

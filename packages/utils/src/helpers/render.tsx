@@ -3,7 +3,7 @@ import { isElement, isReactComponent } from '../is';
 
 export const render = (
   Node: any,
-  Wrapper = React.Fragment,
+  Wrapper: any = React.Fragment,
   props,
 ) => {
   if (isElement(Node)) {

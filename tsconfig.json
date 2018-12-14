@@ -16,7 +16,7 @@
     "pretty": true,
     "removeComments": false,
     "sourceMap": true,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "stripInternal": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -188,7 +188,7 @@ const circleStyle = ({ circle }: StyledButtonProps) =>
     height: 2.066rem;
   `;
 
-const ButtonElement = styled<ButtonElementProps, 'button'>('button')`
+const ButtonElement = styled('button')<ButtonElementProps>`
   /* Basic */
   ${buttonBaseStyle}
   /* subtle */

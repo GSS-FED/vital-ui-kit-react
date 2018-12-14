@@ -64,7 +64,7 @@ type ToggleRender = (
   },
 ) => React.ReactNode;
 
-export const Toggle: React.SFC<{
+export const Toggle: React.FunctionComponent<{
   initial?: boolean;
   onChange?: ValueChange<boolean>;
   children: ToggleRender;

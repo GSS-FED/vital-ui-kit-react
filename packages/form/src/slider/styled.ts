@@ -19,14 +19,14 @@ const SliderRoot = styled.div`
 
 type SliderWrapperProps = { size: Size; disabled: boolean };
 
-const SliderWrapper = styled<SliderWrapperProps, 'div'>('div')`
+const SliderWrapper = styled('div')<SliderWrapperProps>`
   display: block;
   position: relative;
   width: 100%;
   height: ${props => constants[props.size].handlerSize};
 `;
 
-const SlideHandler = styled<{ size: Size }, 'div'>('div')`
+const SlideHandler = styled('div')<{ size: Size }>`
   top: 0;
   position: absolute;
   border-radius: 100%;

@@ -9,7 +9,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 import styled from 'styled-components';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
-const Root = styled<BoxProps, 'div'>('div')`
+const Root = styled('div')<BoxProps>`
   table-layout: fixed;
   display: table;
   width: 100%;
@@ -34,7 +34,7 @@ interface FooterProps extends BoxProps {
   className?: string;
 }
 
-const Footer: React.SFC<FooterProps> = ({
+const Footer: React.FunctionComponent<FooterProps> = ({
   children,
   style,
   className,

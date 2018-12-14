@@ -6,7 +6,7 @@ import { borderRightRadius, stateColor } from '@vital-ui/react-utils';
 import constants from './constants';
 import { Size } from '../types';
 
-const Root = styled<Props, 'div'>('div').attrs({
+const Root = styled('div').attrs<Props>({
   // @ts-ignore
   style: ({ width }) => ({ width }),
 })`
@@ -44,7 +44,7 @@ type Props = {
   success?: boolean;
 };
 
-const Selection: React.SFC<Props> = ({
+const Selection: React.FunctionComponent<Props> = ({
   size = 'medium',
   disabled = false,
   width,

@@ -5,17 +5,20 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import { transitionBase } from '@vital-ui/react-utils';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
+import {
+  superBoxStyle,
+  BoxProps,
+  transitionBase,
+} from '@vital-ui/react-utils';
 import { RadioContext } from './RadioContext';
 
 interface RootProps extends BoxProps {
   disabled?: boolean;
 }
 
-const Root = styled<RootProps, 'label'>('label')`
+const Root = styled('label')<RootProps>`
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -109,7 +112,7 @@ export interface RadioProps
   inputStyle?: React.CSSProperties;
 }
 
-export const Radio: React.SFC<RadioProps> = ({
+export const Radio: React.FunctionComponent<RadioProps> = ({
   label,
   defaultChecked,
   style,

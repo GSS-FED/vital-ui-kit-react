@@ -1,8 +1,8 @@
 import React from 'react';
-import { ControllerStateAndHelpers } from 'downshift';
+import { ControllerStateAndHelpers, DownshiftProps } from 'downshift';
 
 export const Context = React.createContext<
-  ControllerStateAndHelpers<any>
+  ControllerStateAndHelpers<any> & DownshiftProps<any>
   // @ts-ignore
 >(undefined);
 export const withContext = <T extends {}>(

@@ -31,7 +31,7 @@ interface RootProps extends BoxProps {
   inverse?: boolean;
 }
 
-const Root = styled<RootProps, 'span'>('span')`
+const Root = styled('span')<RootProps>`
   display: inline-block;
   vertical-align: middle;
   padding: 0.25rem 0.75rem;
@@ -64,7 +64,7 @@ export interface BadgeProps extends RootProps {
  * <Badge>99</Badge>
  */
 
-export const Badge: React.SFC<BadgeProps> = ({
+export const Badge: React.FunctionComponent<BadgeProps> = ({
   children,
   trunc = true,
   inverse = false,

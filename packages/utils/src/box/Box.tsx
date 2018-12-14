@@ -65,7 +65,6 @@ import {
   ZIndexProps,
 } from 'styled-system';
 import styled, { css } from 'styled-components';
-import { css as cssStyle, CssProps } from '../style';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 export interface BoxProps
@@ -99,7 +98,6 @@ export interface BoxProps
     TopProps,
     WidthProps,
     ZIndexProps,
-    CssProps,
     MinWidthProps {}
 
 export const superBoxStyle = css`
@@ -134,11 +132,10 @@ export const superBoxStyle = css`
   ${fontWeight};
   ${letterSpacing};
   ${fontFamily};
-  ${cssStyle};
   ${minWidth};
 `;
 
-export const Box = styled<BoxProps & ColorProps, 'div'>('div')`
+export const Box = styled('div')<BoxProps & ColorProps>`
   ${superBoxStyle};
   ${color};
 `;

@@ -1,5 +1,3 @@
-import { Interpolation } from 'styled-components';
-
 type StatusProps = {
   alarm?: boolean;
   warning?: boolean;
@@ -50,9 +48,3 @@ export const borderRightRadius = (size: number) => `
   border-bottom-right-radius: ${size}px;
   border-top-right-radius: ${size}px;
 `;
-
-export interface CssProps<T = {}> {
-  css?: Interpolation<T> | string;
-}
-
-export const css = (props: CssProps) => props.css;

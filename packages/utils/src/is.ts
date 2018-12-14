@@ -12,7 +12,7 @@ export function isClassComponent(
 
 export function isFunctionComponent(
   component: any,
-): component is React.SFC<any> {
+): component is React.FunctionComponent<any> {
   return typeof component === 'function' &&
     String(component).includes('return React.createElement')
     ? true

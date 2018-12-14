@@ -13,7 +13,7 @@ import { Context } from './context';
 
 export interface DropdownProps extends PopupProps {}
 
-export const Dropdown: React.SFC<DropdownProps> = ({
+export const Dropdown: React.FunctionComponent<DropdownProps> = ({
   popup,
   children,
   ...props

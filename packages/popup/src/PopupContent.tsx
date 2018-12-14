@@ -21,7 +21,7 @@ export const defaultPopupStyle = css`
   box-shadow: 0 6px 20px 0 rgba(99, 99, 111, 0.2);
 `;
 
-const Root = styled<RootProps, 'div'>('div')`
+const Root = styled('div')<RootProps>`
   ${({ popupStyle }) =>
     popupStyle ? popupStyle : defaultPopupStyle};
   ${windowStyle};

@@ -14,7 +14,7 @@ const fieldInputItemStyle = css`
   position: relative;
 `;
 
-export const FieldInputItem = styled<BoxProps, 'div'>('div')`
+export const FieldInputItem = styled('div')<BoxProps>`
   ${fieldInputItemStyle};
   ${superBoxStyle};
 `;
@@ -38,12 +38,12 @@ const inlineFieldInputItemStyle = css`
   }
 `;
 
-export const InlineFieldInputItem = styled<BoxProps, 'div'>('div')`
+export const InlineFieldInputItem = styled('div')<BoxProps>`
   ${inlineFieldInputItemStyle};
   ${superBoxStyle};
 `;
 
-const Root = styled<RootProps, 'div'>('div')`
+const Root = styled('div')<RootProps>`
   ${({ inline }) =>
     inline ? inlineFieldInputItemStyle : fieldInputItemStyle};
   position: relative;

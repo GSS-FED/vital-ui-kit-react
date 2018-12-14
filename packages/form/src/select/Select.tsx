@@ -26,7 +26,7 @@ const Input = React.forwardRef<HTMLInputElement & InputProps>(
   ),
 );
 
-const Button: React.SFC<{
+const Button: React.FunctionComponent<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text = '', children, ...props }) => (
@@ -45,7 +45,7 @@ Button.defaultProps = {
   children: null,
 };
 
-export class Select<T> extends React.Component<SelectProps<T>> {
+export class Select<T = any> extends React.Component<SelectProps<T>> {
   static Input = withContext(
     Input,
     ({ getInputProps, clearSelection }) => ({
