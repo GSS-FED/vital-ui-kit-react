@@ -16,9 +16,9 @@ export interface LabelProps extends BoxProps {
   style?: React.CSSProperties;
 }
 
-export const Label = styled.span.attrs<LabelProps>({
-  className: props => cn('vital__label', props.className),
-})`
+export const Label = styled.span.attrs<LabelProps>(props => ({
+  className: cn('vital__label', props.className),
+}))`
   position: relative;
   font-size: 0.866rem;
   color: ${({ theme }) => theme.labelColor};

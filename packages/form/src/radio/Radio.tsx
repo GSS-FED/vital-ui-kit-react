@@ -112,7 +112,7 @@ export interface RadioProps
   inputStyle?: React.CSSProperties;
 }
 
-export const Radio: React.FunctionComponent<RadioProps> = ({
+export const Radio: React.SFC<RadioProps> = ({
   label,
   defaultChecked,
   style,

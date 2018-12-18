@@ -109,7 +109,7 @@ export interface TooltipProps extends RcTriggerProps {
   placement?: Placement;
 }
 
-export const Tooltip: React.FunctionComponent<TooltipProps> = ({
+export const Tooltip: React.SFC<TooltipProps> = ({
   children,
   popupStyle,
   popup,

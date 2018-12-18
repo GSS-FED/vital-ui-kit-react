@@ -6,27 +6,44 @@
 import * as React from 'react';
 import Downshift, { ControllerStateAndHelpers } from 'downshift';
 
-import { Input as InputBase, InputProps } from '../input';
+import {
+  Input as InputBase,
+  InputWrapper,
+  RightIconButton,
+} from '../input';
 import { Dropdown, DropdownItem } from './Dropdown';
 import { withContext, Context } from './context';
 import { SelectButton, SelectButtonText } from './styled';
 import { DownshiftProps } from './DownshiftTypes';
+import { CloseIcon } from './icon/CloseIcon';
+import { render } from '@vital-ui/react-utils';
 
 export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
 }
 
-const Input = React.forwardRef<HTMLInputElement & InputProps>(
-  (props: InputProps, ref) => (
-    <InputBase
-      inputRef={ref}
-      {...props}
-      rightIcon={props.value ? props.rightIcon || null : null}
-    />
-  ),
-);
+interface SelectInput {
+  value?: string;
+  icon?: any;
+  onRightButtonClick?: () => void;
+}
 
-const Button: React.FunctionComponent<{
+const Input = React.forwardRef<any, SelectInput>((props, ref) => (
+  <InputWrapper>
+    <InputBase
+      ref={ref}
+      {...props}
+      pr={props.value && '2.2rem'}
+      // rightIcon={props.value ? props.rightIcon || null : null}
+    />
+    {props.value &&
+      render(props.icon || CloseIcon, RightIconButton, {
+        onClick: props.onRightButtonClick,
+      })}
+  </InputWrapper>
+));
+
+const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text = '', children, ...props }) => (

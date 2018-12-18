@@ -6,10 +6,9 @@ import { borderRightRadius, stateColor } from '@vital-ui/react-utils';
 import constants from './constants';
 import { Size } from '../types';
 
-const Root = styled('div').attrs<Props>({
-  // @ts-ignore
-  style: ({ width }) => ({ width }),
-})`
+const Root = styled('div').attrs<Props>(({ width }) => ({
+  style: { width },
+}))`
   position: absolute;
   margin: 0;
   padding: 0;
@@ -19,13 +18,13 @@ const Root = styled('div').attrs<Props>({
   top: 0;
   pointer-events: none;
   background-color: ${(props: any) =>
-      stateColor(
-        props,
-        props.disabled
-          ? props.theme.disabledBackground
-          : props.theme.background,
-      )}
-    ${borderRightRadius(0)};
+    stateColor(
+      props,
+      props.disabled
+        ? props.theme.disabledBackground
+        : props.theme.background,
+    )};
+  ${borderRightRadius(0)};
 `;
 
 Root.defaultProps = {
@@ -44,7 +43,7 @@ type Props = {
   success?: boolean;
 };
 
-const Selection: React.FunctionComponent<Props> = ({
+const Selection: React.SFC<Props> = ({
   size = 'medium',
   disabled = false,
   width,

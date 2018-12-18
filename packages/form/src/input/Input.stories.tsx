@@ -6,10 +6,15 @@ import {
   boolean,
   select,
 } from '@storybook/addon-knobs/react';
-import { Input, IconButton } from '.';
+import { Input, IconButton, InputWrapper } from '.';
 import { FieldInput } from '../FieldInput';
 import { Pen, Share, Star as ViStar } from '@vital-ui/react-icon';
 import styled, { css } from 'styled-components';
+import { RightIconButton, LeftIconButton } from './IconInput';
+
+const StyledInput = styled(Input)`
+  background: red;
+`;
 
 interface StarProps {
   // use data attrs becase `react-icons` cannot recevie uknown dom attr
@@ -30,13 +35,15 @@ const Star = styled(ViStar)<StarProps>`
 `;
 
 interface FavoriteStarProps {
-  isFavorited: boolean;
-  onClick: React.MouseEventHandler;
+  isFavorited?: boolean;
+  onClick?: React.MouseEventHandler;
 }
 
-export const FavoriteStar: React.FunctionComponent<
-  FavoriteStarProps
-> = ({ isFavorited, onClick, ...props }) => (
+export const FavoriteStar: React.SFC<FavoriteStarProps> = ({
+  isFavorited,
+  onClick,
+  ...props
+}) => (
   <IconButton {...props} onClick={onClick}>
     <Star data-is-favorited={isFavorited} />
   </IconButton>
@@ -61,8 +68,19 @@ storiesOf('Packages | Form/Input', module)
   ))
   .add('With Icon', () => (
     <>
-      <Input placeholder="Right side icon" rightIcon={FavoriteStar} />
+      <InputWrapper>
+        <Input placeholder="Right side icon" pr="2.2rem" />
+        <RightIconButton>
+          <FavoriteStar />
+        </RightIconButton>
+      </InputWrapper>
       <br />
-      <Input placeholder="Left side icon" leftIcon={<Share />} />
+      <InputWrapper>
+        <Input placeholder="Left side icon" pl="2.2rem" />
+        <LeftIconButton>
+          <Share />
+        </LeftIconButton>
+      </InputWrapper>
     </>
-  ));
+  ))
+  .add('Extends styled', () => <StyledInput />);

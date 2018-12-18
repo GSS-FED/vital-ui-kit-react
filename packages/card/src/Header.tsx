@@ -67,7 +67,7 @@ interface HeaderProps extends BoxProps {
   badgeClassName?: string;
 }
 
-const Header: React.FunctionComponent<HeaderProps> = ({
+const Header: React.SFC<HeaderProps> = ({
   children,
   image,
   title,

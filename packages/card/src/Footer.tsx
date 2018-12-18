@@ -34,7 +34,7 @@ interface FooterProps extends BoxProps {
   className?: string;
 }
 
-const Footer: React.FunctionComponent<FooterProps> = ({
+const Footer: React.SFC<FooterProps> = ({
   children,
   style,
   className,

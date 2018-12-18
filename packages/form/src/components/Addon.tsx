@@ -3,9 +3,9 @@ import { defaultTheme } from '@vital-ui/react-theme';
 import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 import styled from 'styled-components';
 
-export const Addon = styled.div.attrs<BoxProps>({
-  className: props => cn('vital__addon', props.className),
-})`
+export const Addon = styled.div.attrs<BoxProps>(props => ({
+  className: cn('vital__addon', props.className),
+}))`
   padding: 0.46633rem 0.8rem;
   font-size: 1rem;
   font-weight: 400;

@@ -12,6 +12,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 
 import { ListTitleWrapper, ListLi, ListTitle } from './styled';
 import SubListItem from './SubListItem';
+import { Arrow } from './Arrow';
 
 const Icon = styled('div')<any>`
   pointer-events: none;
@@ -20,6 +21,8 @@ const Icon = styled('div')<any>`
     props.open ? `rotateZ(-180deg)` : `rotateZ(0deg)`};
   transition: transform 0.1s ease-in;
   transform-origin: center center;
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
 `;
 
 Icon.defaultProps = {
@@ -90,7 +93,7 @@ class ListItem extends React.Component<Props, State> {
     badge: null,
     onClick: null,
     style: undefined,
-    iconSize: 10,
+    iconSize: 16,
     className: '',
   };
 
@@ -204,12 +207,11 @@ class ListItem extends React.Component<Props, State> {
           </ListTitle>
           <RightWrapper>
             {badge && this.renderBadge()}
-            {/* {(children || hasLink) && (
-              <Icon
-                open={this.state.open}
-                size={this.props.iconSize}
-              />
-            )} */}
+            {(children || hasLink) && (
+              <Icon open={this.state.open} size={this.props.iconSize}>
+                <Arrow />
+              </Icon>
+            )}
           </RightWrapper>
         </ListTitleWrapper>
         {children && (

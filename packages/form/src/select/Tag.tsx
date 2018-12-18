@@ -35,7 +35,7 @@ export interface TagProps {
   onCloseClick?: () => void;
 }
 
-export const Tag: React.FunctionComponent<TagProps> = ({
+export const Tag: React.SFC<TagProps> = ({
   children,
   onClick,
   onCloseClick,

@@ -4,7 +4,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 export const fieldWrapperBase = ({ theme = defaultTheme }) => css`
   position: relative;
   display: block;
-  /* width: 100%; */
+  width: 100%;
   line-height: 1;
   box-sizing: border-box;
   background-color: ${theme.colors.white};
