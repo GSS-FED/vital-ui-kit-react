@@ -64,7 +64,7 @@ export interface BadgeProps extends RootProps {
  * <Badge>99</Badge>
  */
 
-export const Badge: React.FunctionComponent<BadgeProps> = ({
+export const Badge: React.SFC<BadgeProps> = ({
   children,
   trunc = true,
   inverse = false,

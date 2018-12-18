@@ -56,7 +56,7 @@ class SelectExample extends React.Component<
             </Select.DropdownItem>
           ))}
         >
-          <Select.Input rightIcon={<Close />} />
+          <Select.Input icon={<Close />} />
           {/* <div>yo</div> */}
         </Select.Dropdown>
       </Select>

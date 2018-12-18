@@ -188,7 +188,9 @@ const circleStyle = ({ circle }: StyledButtonProps) =>
     height: 2.066rem;
   `;
 
-const ButtonElement = styled('button')<ButtonElementProps>`
+export const Button = styled('button').attrs(props => ({
+  className: cn('vital__button', props.className),
+}))<ButtonProps>`
   /* Basic */
   ${buttonBaseStyle}
   /* subtle */
@@ -205,9 +207,9 @@ const ButtonElement = styled('button')<ButtonElementProps>`
   ${underlineStyle}
 
   /* circle */
-  ${circleStyle};
+  ${circleStyle}
 
-  ${superBoxStyle};
+  ${superBoxStyle}
 
   &[disabled] {
     color: ${({ theme }) => theme.button.disabled.color};
@@ -218,8 +220,18 @@ const ButtonElement = styled('button')<ButtonElementProps>`
   }
 `;
 
-ButtonElement.defaultProps = {
+Button.defaultProps = {
   theme: defaultTheme,
+  children: '',
+  nature: 'default' as Nature,
+  size: 'medium' as ButtonSize,
+  circle: false,
+  light: false,
+  flat: false,
+  link: false,
+  subtle: false,
+  selected: false,
+  disabled: false,
 };
 
 export interface ButtonProps
@@ -270,41 +282,3 @@ export interface ButtonProps
  *   <Button link>Default</Button>
  * </ButtonGroup>
  */
-
-export class Button extends React.Component<ButtonProps> {
-  static defaultProps = {
-    children: '',
-    nature: 'default' as Nature,
-    size: 'medium' as ButtonSize,
-    circle: false,
-    light: false,
-    flat: false,
-    link: false,
-    subtle: false,
-    selected: false,
-    disabled: false,
-  };
-
-  render() {
-    const {
-      children,
-      className,
-      style,
-      nature = 'default',
-      size = 'medium',
-      unselectable,
-      ...props
-    } = this.props;
-    return (
-      <ButtonElement
-        className={cn('vital__button', className)}
-        style={style}
-        nature={nature}
-        size={size}
-        {...props}
-      >
-        {children}
-      </ButtonElement>
-    );
-  }
-}

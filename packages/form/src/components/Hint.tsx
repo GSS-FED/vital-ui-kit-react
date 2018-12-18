@@ -22,9 +22,9 @@ interface HintProps extends StatusProps, BoxProps {
   style?: React.CSSProperties;
 }
 
-export const Hint = styled('div').attrs<HintProps>({
-  className: props => cn('vital__hint', props.className),
-})`
+export const Hint = styled('div').attrs<HintProps>(props => ({
+  className: cn('vital__hint', props.className),
+}))`
   display: block !important;
   padding-top: 0.4rem;
   font-size: 0.8rem;

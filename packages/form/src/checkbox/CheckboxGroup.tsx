@@ -18,9 +18,7 @@ export interface CheckboxGroupProps
   style?: React.CSSProperties;
 }
 
-export const CheckboxGroup: React.FunctionComponent<
-  CheckboxGroupProps
-> = ({
+export const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
   children,
   style,
   className,

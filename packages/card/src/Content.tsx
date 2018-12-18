@@ -26,7 +26,7 @@ interface CardContentProps extends BoxProps {
   className?: string;
 }
 
-const Content: React.FunctionComponent<CardContentProps> = ({
+const Content: React.SFC<CardContentProps> = ({
   children,
   style,
   className,

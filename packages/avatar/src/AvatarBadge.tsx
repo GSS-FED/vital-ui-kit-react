@@ -84,9 +84,7 @@ export interface AvatarBadgeProps {
   className?: string;
 }
 
-export const AvatarBadge: React.FunctionComponent<
-  AvatarBadgeProps
-> = ({
+export const AvatarBadge: React.SFC<AvatarBadgeProps> = ({
   label,
   size = 'medium',
   circle = false,

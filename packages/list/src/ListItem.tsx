@@ -12,6 +12,7 @@ import { defaultTheme } from '@vital-ui/react-theme';
 
 import { ListTitleWrapper, ListLi, ListTitle } from './styled';
 import SubListItem from './SubListItem';
+import { Arrow } from './Arrow';
 
 const Icon = styled('div')<any>`
   pointer-events: none;
@@ -204,12 +205,11 @@ class ListItem extends React.Component<Props, State> {
           </ListTitle>
           <RightWrapper>
             {badge && this.renderBadge()}
-            {/* {(children || hasLink) && (
-              <Icon
-                open={this.state.open}
-                size={this.props.iconSize}
-              />
-            )} */}
+            {(children || hasLink) && (
+              <Icon open={this.state.open} size={this.props.iconSize}>
+                <Arrow />
+              </Icon>
+            )}
           </RightWrapper>
         </ListTitleWrapper>
         {children && (

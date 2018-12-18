@@ -32,6 +32,7 @@ module.exports = (defaultConfig, env, config) => {
             require.resolve(
               '@babel/plugin-proposal-object-rest-spread',
             ),
+            require.resolve('babel-plugin-styled-components'),
           ],
         },
       },
