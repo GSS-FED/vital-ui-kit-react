@@ -21,6 +21,8 @@ const Icon = styled('div')<any>`
     props.open ? `rotateZ(-180deg)` : `rotateZ(0deg)`};
   transition: transform 0.1s ease-in;
   transform-origin: center center;
+  width: ${({ size }) => `${size}px`};
+  height: ${({ size }) => `${size}px`};
 `;
 
 Icon.defaultProps = {
@@ -91,7 +93,7 @@ class ListItem extends React.Component<Props, State> {
     badge: null,
     onClick: null,
     style: undefined,
-    iconSize: 10,
+    iconSize: 16,
     className: '',
   };
 
