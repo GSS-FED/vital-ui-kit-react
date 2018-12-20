@@ -74,7 +74,7 @@
     "jest": "23.6.0",
     "jest-specific-snapshot": "1.0.0",
     "jest-styled-components": "6.3.1",
-    "lerna": "3.6.0",
+    "lerna": "3.7.1",
     "lerna-changelog": "0.8.2",
     "lint-staged": "8.0.4",
     "markdown-loader-jest": "0.1.1",
