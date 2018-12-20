@@ -188,7 +188,6 @@ export class Checkbox extends React.Component<CheckboxProps> {
           <Root
             style={style}
             className={cn('vital__checkbox', className)}
-            {...props}
           >
             <CheckWrapper
               checked={this.props.checked}
@@ -205,6 +204,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
                 checked={this.props.checked}
                 defaultChecked={defaultChecked}
                 name={name}
+                {...props}
                 onChange={e => {
                   if (onChange) {
                     onChange(e);
