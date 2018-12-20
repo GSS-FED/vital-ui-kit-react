@@ -1,4 +1,14 @@
 # Changelog
+
+## 0.9.6 (2018-12-20)
+
+#### :bug: Bug Fix
+* `form`
+  * [#392](https://github.com/GSS-FED/vital-ui-kit-react/pull/392) Fix checkbox props pass to root ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.9.4 (2018-12-14)
 
 #### :bug: Bug Fix
