@@ -4,9 +4,10 @@
  */
 import * as React from 'react';
 import styled from 'styled-components';
+import { Flex, FlexBoxProps } from '@vital-ui/react-utils';
 import { CloseIcon } from './icon/CloseIcon';
 
-const Li = styled.li`
+const Root = styled(Flex)`
   color: #ffffff;
   border-color: transparent;
   background-color: ${({ theme }) => theme.select.tag.bg};
@@ -15,7 +16,6 @@ const Li = styled.li`
   margin: 4px 0 4px 5px;
   padding: ${({ theme }) => theme.select.tag.padding};
   font-weight: 400;
-  display: flex;
   align-items: center;
   overflow: hidden;
 
@@ -29,18 +29,21 @@ const Content = styled.span`
   text-overflow: ellipsis;
 `;
 
+const noop = () => {};
+
 export interface TagProps {
   children: React.ReactNode;
   onClick?: () => void;
   onCloseClick?: () => void;
 }
 
-export const Tag: React.SFC<TagProps> = ({
+export const Tag: React.SFC<TagProps & FlexBoxProps> = ({
   children,
   onClick,
   onCloseClick,
+  ...props
 }) => (
-  <Li onClick={onClick}>
+  <Root onClick={onClick} {...props}>
     <Content>{children}</Content>
     {onCloseClick && (
       <CloseIcon
@@ -50,10 +53,10 @@ export const Tag: React.SFC<TagProps> = ({
         fontSize={13}
       />
     )}
-  </Li>
+  </Root>
 );
 
 Tag.defaultProps = {
-  onClick: undefined,
-  onCloseClick: undefined,
+  onClick: noop,
+  onCloseClick: noop,
 };
