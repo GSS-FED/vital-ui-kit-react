@@ -35,7 +35,7 @@ export interface FlexBoxProps
   flexGrow?: number;
 }
 
-export const flexBoxStyle = css`
+export const flexBoxStyle = css<FlexBoxProps>`
   display: flex;
   ${flex};
   ${flexBasis};

@@ -85,7 +85,10 @@ export class Select<T = any> extends React.Component<SelectProps<T>> {
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
           <div>
-            <Context.Provider value={{ ...props, ...options }}>
+            <Context.Provider
+              // @ts-ignore
+              value={{ ...props, ...options }}
+            >
               {children}
             </Context.Provider>
           </div>

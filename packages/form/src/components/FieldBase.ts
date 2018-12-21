@@ -95,8 +95,8 @@ export const inputStatus = ({
 `;
 
 const fieldBase = (props: any) => css<{
-  alarm: boolean;
-  warning: boolean;
+  alarm?: boolean;
+  warning?: boolean;
 }>`
   ${fieldWrapperBase};
   ${inputStatus};

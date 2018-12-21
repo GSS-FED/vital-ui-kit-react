@@ -8,7 +8,7 @@ import { Size } from '../types';
 
 const Root = styled('div').attrs<Props>(({ width }) => ({
   style: { width },
-}))`
+}))<Props>`
   position: absolute;
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@ type Props = {
 };
 
 const Selection: React.SFC<Props> = ({
-  size = 'medium',
+  size = 'medium' as Size,
   disabled = false,
   width,
   alarm = false,

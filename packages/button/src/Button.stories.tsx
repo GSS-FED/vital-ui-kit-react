@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
   withKnobs,
@@ -10,6 +10,11 @@ import {
 
 import { Button, ButtonGroup } from '.';
 import { Star } from '../../icon/src';
+
+const StyledButton = styled(Button)`
+  background: transparent;
+  padding: 20px;
+`;
 
 storiesOf('Packages | Button', module)
   .addDecorator(withKnobs)
@@ -108,6 +113,9 @@ storiesOf('Packages | Button', module)
       <Button>{text('Label', 'Button')}</Button>
       <Button>{text('Label', 'Button')}</Button>
     </ButtonGroup>
+  ))
+  .add('extends styles', () => (
+    <StyledButton color="red" m="20px">
+      StyledButton
+    </StyledButton>
   ));
-// .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-// .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>); // storiesOf('Label', module) //   .addDecorator(withKnobs) //   .add( //     'Input Label', //     withInfo(`info`)( //       withNotes('This is label')(() => ( //         <Label>Hello {text('Label', 'Eric')}</Label> //       )), //     ), //   );
