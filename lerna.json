@@ -8,7 +8,7 @@
   "publish": {
     "access": "public"
   },
-  "version": "0.9.6",
+  "version": "0.9.7",
   "changelog": {
     "repo": "GSS-FED/vital-ui-kit-react",
     "labels": {
