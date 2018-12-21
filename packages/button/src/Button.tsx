@@ -189,10 +189,14 @@ const circleStyle = ({ circle }: StyledButtonProps) =>
   `;
 
 export const Button = styled('button').attrs(props => ({
+  type: 'button',
   className: cn('vital__button', props.className),
 }))<ButtonProps>`
   /* Basic */
-  ${buttonBaseStyle}
+  ${
+    // @ts-ignore
+    buttonBaseStyle
+  }
   /* subtle */
   ${subtleStyle}
   /* flat */
@@ -237,10 +241,6 @@ Button.defaultProps = {
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     BoxProps {
-  /** `vital_button` */
-  className?: string;
-  /** The content of the button */
-  children?: React.ReactNode;
   builtinSize?: BuiltinSize;
   /** 6 nature state */
   nature?: Nature;
@@ -258,7 +258,6 @@ export interface ButtonProps
   circle?: boolean;
   /** Selected state */
   selected?: boolean;
-  style?: React.CSSProperties;
   dark?: boolean;
   underline?: boolean;
   disabled?: boolean;
