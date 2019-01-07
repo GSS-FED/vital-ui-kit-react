@@ -9511,7 +9511,7 @@ prr@~1.0.1:
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
-ps-tree@^1.1.0:
+ps-tree@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ps-tree/-/ps-tree-1.2.0.tgz#5e7425b89508736cdd4f2224d028f7bb3f722ebd"
   integrity sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==
@@ -11627,15 +11627,15 @@ ts-loader@5.3.3:
     micromatch "^3.1.4"
     semver "^5.0.1"
 
-tsc-watch@1.0.30:
-  version "1.0.30"
-  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.30.tgz#dc4f0a974cb4ab622e4317bd3e255bfe9b85eb84"
-  integrity sha512-y4aIyRnzSof+614TIxEU14ZBAH5xbn9rrO4Sb/vXlSeEcNIeYIRbn33gjdtuiwiKKmMw3/hhd7FSm57r0mRa4g==
+tsc-watch@1.0.31:
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/tsc-watch/-/tsc-watch-1.0.31.tgz#639fc7866a86abcdd3cf0836d5f1cd1d64dcd5e0"
+  integrity sha512-Sj8wqU1KmDsq8mfLlZLRVT4jRcx11Jilp4lBenXhRTzY/0rBlJIao1OG4bNGyUmB37FUCmqZpsz5o6r7VDli2A==
   dependencies:
     chalk "^2.3.0"
     cross-spawn "^5.1.0"
     node-cleanup "^2.1.2"
-    ps-tree "^1.1.0"
+    ps-tree "^1.2.0"
     string-argv "^0.1.1"
     strip-ansi "^4.0.0"
 
