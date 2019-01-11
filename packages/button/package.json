@@ -19,8 +19,8 @@
     "@vital-ui/react-theme": "^0.9.4",
     "@vital-ui/react-utils": "^0.9.7",
     "classnames": "^2.2.6",
-    "polished": "^2.0.0",
-    "styled-map": "^3.0.0"
+    "polished": "^2.3.3",
+    "styled-map": "^3.2.0-rc.1"
   },
   "devDependencies": {
     "typescript": "3.1.6"

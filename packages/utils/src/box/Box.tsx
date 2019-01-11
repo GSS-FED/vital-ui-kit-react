@@ -1,71 +1,70 @@
+import { defaultTheme } from '@vital-ui/react-theme';
+import styled, { css } from 'styled-components';
 import {
-  space,
-  width,
-  fontSize,
-  color,
-  display,
-  height,
-  maxWidth,
-  maxHeight,
-  minHeight,
-  size,
-  position,
-  zIndex,
-  top,
-  right,
-  left,
-  bottom,
-  boxShadow,
-  backgroundImage,
-  backgroundPosition,
   background,
-  backgroundRepeat,
-  backgroundSize,
-  opacity,
-  borders,
-  borderColor,
-  borderRadius,
-  textAlign,
-  lineHeight,
-  fontWeight,
-  letterSpacing,
-  fontFamily,
+  backgroundImage,
   BackgroundImageProps,
+  backgroundPosition,
   BackgroundPositionProps,
   BackgroundProps,
+  backgroundRepeat,
   BackgroundRepeatProps,
+  backgroundSize,
   BackgroundSizeProps,
+  borderColor,
   BorderColorProps,
+  borderRadius,
   BorderRadiusProps,
+  borders,
   BordersProps,
+  bottom,
   BottomProps,
+  boxShadow,
   BoxShadowProps,
-  ColorProps,
+  color,
+  display,
   DisplayProps,
+  fontFamily,
   FontFamilyProps,
+  fontSize,
   FontSizeProps,
+  fontWeight,
   FontWeightProps,
+  height,
   HeightProps,
+  left,
   LeftProps,
+  letterSpacing,
   LetterSpacingProps,
+  lineHeight,
   LineHeightProps,
+  maxHeight,
   MaxHeightProps,
+  maxWidth,
   MaxWidthProps,
+  minHeight,
   MinHeightProps,
   minWidth,
   MinWidthProps,
+  opacity,
   OpacityProps,
+  position,
   PositionProps,
+  right,
   RightProps,
+  size,
   SizeProps,
+  space,
   SpaceProps,
+  textAlign,
   TextAlignProps,
+  top,
   TopProps,
+  width,
   WidthProps,
+  zIndex,
   ZIndexProps,
 } from 'styled-system';
-import styled, { css } from 'styled-components';
-import { defaultTheme } from '@vital-ui/react-theme';
 
 export interface BoxProps
   extends BackgroundImageProps,
@@ -98,7 +97,9 @@ export interface BoxProps
     TopProps,
     WidthProps,
     ZIndexProps,
-    MinWidthProps {}
+    MinWidthProps {
+  color?: string;
+}
 
 export const superBoxStyle = css`
   ${space};
@@ -133,11 +134,11 @@ export const superBoxStyle = css`
   ${letterSpacing};
   ${fontFamily};
   ${minWidth};
+  ${color};
 `;
 
-export const Box = styled('div')<BoxProps & ColorProps>`
+export const Box = styled('div')<BoxProps>`
   ${superBoxStyle};
-  ${color};
 `;
 
 Box.defaultProps = {
