@@ -1,4 +1,12 @@
 # Changelog
+## 0.9.8 (2019-01-11)
+
+#### :house: Internal
+* `button`, `form`, `list`, `modal`, `theme`, `utils`
+  * [#408](https://github.com/GSS-FED/vital-ui-kit-react/pull/408) Fix types deps ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
 ## 0.9.7 (2018-12-21)
 
 #### :bug: Bug Fix
