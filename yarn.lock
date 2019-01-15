@@ -1958,10 +1958,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-is@16.5.0":
-  version "16.5.0"
-  resolved "https://registry.yarnpkg.com/@types/react-is/-/react-is-16.5.0.tgz#6b0dd43e60fa7c82b48faf7b487543079a61015a"
-  integrity sha512-yUYPioB2Sh5d4csgpW/vJwxWM0RG1/QbGiwYap2m/bEAQKRwbagYRc5C7oK2AM9QC2vr2ZViCgpm0DpDpFQ6XA==
+"@types/react-is@16.7.0":
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/@types/react-is/-/react-is-16.7.0.tgz#27996153237c8aa4034981844479a3c456a6e04c"
+  integrity sha512-CsKZSybTXoMXaiy05Mxdjg5xA40tlL1XAJ6P1k2/oyFv+kekklFbMd4lH/9jnOUkVli79g3UotcQYxTsY78iiQ==
   dependencies:
     "@types/react" "*"
 
