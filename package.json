@@ -10,7 +10,7 @@
   "scripts": {
     "reset": "rimraf node_modules/ yarn.lock packages/*/node_modules",
     "clean-all": "yarn cache clean && yarn run reset && yarn run clean:build",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap && yarn run build",
     "clean:build": "lerna exec -- rimraf dist cjs",
     "build": "lerna run compile --stream",
     "prebuild": "yarn clean:build",
