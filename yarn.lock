@@ -1990,10 +1990,10 @@
     "@types/react" "*"
     csstype "^2.2.0"
 
-"@types/styled-system@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.1.0.tgz#1394fa60516f404df5e85f10616d17902c937d00"
-  integrity sha512-ptinr11BRe/9H1uFVPgfx/zzl0wwZU1pJISIYgEZNAppLxVZl3iKhR7jqMj0NQr4szat7GepecdGWUxiEqeOaQ==
+"@types/styled-system@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.1.1.tgz#ff4430f5b5fe21e6f0dee49fdbf6f7a993bdb502"
+  integrity sha512-jyUmr/I/tMDG4COSLHE4DXzGcGGRxRvSUjLGPV1Xy5jZ3+KLg+EJ+e04rOrw0AzLaKHSnZCM/P1iUwKq6b6cnQ==
   dependencies:
     csstype "^2.2.0"
 
