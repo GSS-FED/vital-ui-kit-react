@@ -16,10 +16,11 @@ import { withContext, Context } from './context';
 import { SelectButton, SelectButtonText } from './styled';
 import { DownshiftProps } from './DownshiftTypes';
 import { CloseIcon } from './icon/CloseIcon';
-import { render } from '@vital-ui/react-utils';
+import { render, BoxProps, Box } from '@vital-ui/react-utils';
 
 export interface SelectProps<T> extends DownshiftProps<T> {
   children: React.ReactNode;
+  rootProps?: BoxProps;
 }
 
 interface SelectInput {
@@ -80,18 +81,18 @@ export class Select<T = any> extends React.Component<SelectProps<T>> {
   static Button = Button;
 
   render() {
-    const { children, ...props } = this.props;
+    const { children, rootProps, ...props } = this.props;
     return (
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
-          <div>
+          <Box {...rootProps}>
             <Context.Provider
               // @ts-ignore
               value={{ ...props, ...options }}
             >
               {children}
             </Context.Provider>
-          </div>
+          </Box>
         )}
       </Downshift>
     );

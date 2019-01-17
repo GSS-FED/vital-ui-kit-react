@@ -1,7 +1,6 @@
 import React from 'react';
 import rerender from 'react-test-renderer';
 import { Slider } from './Slider';
-import { Value } from '@vital-ui/react-utils';
 
 describe('Slider', () => {
   it('should render with default styles', () => {

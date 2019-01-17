@@ -23,12 +23,12 @@ export const Dropdown: React.SFC<DropdownProps> = ({
       {({ getMenuProps, isOpen }) => (
         <Popup
           {...getMenuProps()}
-          {...props}
           popupVisible={isOpen}
           stretch="width"
           popup={
             <PopupContent maxHeight="220px">{popup}</PopupContent>
           }
+          {...props}
         >
           {children}
         </Popup>

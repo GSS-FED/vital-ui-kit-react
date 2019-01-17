@@ -23,6 +23,6 @@
     "styled-map": "^3.2.0-rc.1"
   },
   "devDependencies": {
-    "typescript": "3.1.6"
+    "typescript": "3.2.2"
   }
 }

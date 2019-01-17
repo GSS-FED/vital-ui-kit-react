@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@svgr/cli": "3.1.0",
-    "typescript": "3.1.6"
+    "typescript": "3.2.2"
   },
   "dependencies": {
     "classnames": "^2.2.6"

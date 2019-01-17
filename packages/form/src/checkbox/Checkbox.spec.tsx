@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from 'react-testing-library';
+import { render } from 'react-testing-library';
 import { ThemeProvider } from '@vital-ui/react-theme';
 import { Checkbox } from './Checkbox';
 

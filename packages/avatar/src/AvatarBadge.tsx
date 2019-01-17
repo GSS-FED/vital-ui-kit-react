@@ -86,7 +86,7 @@ export interface AvatarBadgeProps {
 
 export const AvatarBadge: React.SFC<AvatarBadgeProps> = ({
   label,
-  size = 'medium',
+  size = 'medium' as AvatarSize,
   circle = false,
   style = undefined,
   className = undefined,

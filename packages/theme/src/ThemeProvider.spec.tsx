@@ -1,12 +1,10 @@
 import React from 'react';
-import ThemeProvider, {
-  combinedWithComponent,
-  combineTheme,
-} from './ThemeProvider';
-import crmTheme from './theme/crm';
-import defaultVariables from './theme';
 import renderer from 'react-test-renderer';
 import styled, { withTheme } from 'styled-components';
+import defaultVariables from './theme';
+import ThemeProvider, {
+  combinedWithComponent,
+} from './ThemeProvider';
 
 describe('ThemeProvider', () => {
   let combineTheme = defaultVariables;
