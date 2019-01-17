@@ -9899,10 +9899,10 @@ react-modal@^3.6.1:
     react-lifecycles-compat "^3.0.0"
     warning "^3.0.0"
 
-react-priority-navigation@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.3.0.tgz#07a989851cb3ac49574781d82619cb12e2f24213"
-  integrity sha512-zfZV1FVw2f2865wSigFhL/BcdtHQXF/BD61RKNIBhT6AsDFLoAnSSOx9s1bINWLBZbTKK7r2My2iAhrJ+ubMeg==
+react-priority-navigation@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.3.1.tgz#08efbcbd44dfb0ccc23adb886e493dac86f4d528"
+  integrity sha512-WQ7JOY9m4cO8qISgD+A9h3lN/+M/T5q0Fi8ObpG5uamQxspatV0V43MbcH9qtXahxi1VXnSHP/pb6hDB/1rm1Q==
   dependencies:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
