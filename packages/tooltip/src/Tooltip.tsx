@@ -3,15 +3,13 @@
  * MIT license
  */
 
-import * as React from 'react';
-import styled from 'styled-components';
-import Trigger from 'rc-trigger';
-// import 'rc-trigger/assets/index.css';
 import { defaultTheme } from '@vital-ui/react-theme';
-import { rcTooltipStyle } from './styled';
-import { createGlobalStyle } from 'styled-components';
-
+import Trigger from 'rc-trigger';
+import 'rc-trigger/assets/index.css';
+import * as React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
 import { placements } from './placements';
+import { rcTooltipStyle } from './styled';
 
 const TooltipContent = styled.div`
   display: inline-block;
@@ -23,7 +21,7 @@ const TooltipContent = styled.div`
 `;
 
 const RcTooltipStyle = createGlobalStyle`
-  ${rcTooltipStyle};
+${rcTooltipStyle};
 `;
 
 TooltipContent.defaultProps = {

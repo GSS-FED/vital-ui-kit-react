@@ -1,15 +1,22 @@
 import React from 'react';
-import rerender from 'react-test-renderer';
+import { render } from 'react-testing-library';
 import { Tooltip } from './Tooltip';
-import { Value } from '@vital-ui/react-utils';
+import { Button } from '@vital-ui/react-button/src';
 
 describe('Tooltip', () => {
   it('should render with default styles', () => {
-    const tooltip = rerender.create(
-      <Tooltip placement="left" popup={<div>hi</div>}>
-        <button>hover</button>
+    const tooltip = render(
+      <Tooltip
+        placement="left"
+        popup={<div>hi</div>}
+        action={['click']}
+      >
+        <Button>Click</Button>
       </Tooltip>,
     );
-    expect(tooltip.toJSON()).toMatchSnapshot();
+
+    const button = tooltip.getByText('Click');
+    button.click();
+    expect(tooltip).toMatchSnapshot();
   });
 });
