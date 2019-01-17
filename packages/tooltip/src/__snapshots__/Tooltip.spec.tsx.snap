@@ -1,10 +1,144 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip should render with default styles 1`] = `
-<button
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
->
-  hover
-</button>
+Object {
+  "asFragment": [Function],
+  "baseElement": .c1 {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #182d54;
+  border-radius: 4px;
+}
+
+.c0 {
+  position: relative;
+  background: #F7F9FD;
+  color: #456296;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D8E2F5;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: calc(0.533rem - 1px) 1.066rem;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: medium;
+  width: medium;
+}
+
+.c0:hover {
+  background: #D8E2F5;
+}
+
+.c0:active {
+  background: #C3D1EB;
+}
+
+.c0[disabled] {
+  color: #93a8ce;
+  border-color: #eaeff8;
+  background: #F7F9FD;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+<body>
+    <div>
+      <button
+        class="vital__button c0"
+        style=""
+        type="button"
+      >
+        Click
+      </button>
+    </div>
+    <div
+      style="position: absolute; top: 0px; left: 0px; width: 100%;"
+    >
+      <div>
+        <div
+          class="rc-trigger-popup vital-popup rc-trigger-popup-placement-left "
+          style="left: -1009px; top: -999px;"
+        >
+          <div
+            class="rc-trigger-popup-content"
+          >
+            <div
+              class="rc-tooltip-arrow "
+            />
+            <div
+              class="c1"
+            >
+              <div>
+                hi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <button
+      class="sc-ifAKCX vital__button iMfKUs"
+      style=""
+      type="button"
+    >
+      Click
+    </button>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;
