@@ -1,4 +1,17 @@
 # Changelog
+## v0.9.9 (2019-01-17)
+
+#### :bug: Bug Fix
+* `form`
+  * [#412](https://github.com/GSS-FED/vital-ui-kit-react/pull/412) Fix checkbox wrap and update package.json ([@jj811208](https://github.com/jj811208))
+
+#### :house: Internal
+* `avatar`, `badge`, `button`, `card`, `form`, `icon`, `list`, `menu`, `modal`, `pill`, `popup`, `tabs`, `theme`, `tooltip`, `utils`, `web`
+  * [#416](https://github.com/GSS-FED/vital-ui-kit-react/pull/416) Update Select props and all dependencies ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 2
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+- [@jj811208](https://github.com/jj811208)
 ## 0.9.8 (2019-01-11)
 
 #### :house: Internal
