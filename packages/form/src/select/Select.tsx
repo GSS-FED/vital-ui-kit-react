@@ -85,7 +85,7 @@ export class Select<T = any> extends React.Component<SelectProps<T>> {
     return (
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
-          <Box {...rootProps}>
+          <Box {...options.getRootProps()} {...rootProps}>
             <Context.Provider
               // @ts-ignore
               value={{ ...props, ...options }}
