@@ -2263,10 +2263,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/styled-components@4.1.6":
-  version "4.1.6"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.6.tgz#9aa1d47dbc6bae540083869bcc6c639c6e9af0fe"
-  integrity sha512-w/ra/Tk9oPMvWpWId7esZNY1MOa6E9BYUPLl4scVJdYnrYuy5ITLbku8dGDCVH/vjjuegrHBCRYvFLQOYJ+uHg==
+"@types/styled-components@4.1.7":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-4.1.7.tgz#fdb59c66616e847106395f4023e452ca78b13033"
+  integrity sha512-+CZ3z/i8D9Bi1yLkZHjSdU7ldhnWlGUrH8SHceF+lDmwHXpe1Nr0Wm9gnRNLeTjTWiIMwzPPOGEgX7J9goNe1w==
   dependencies:
     "@types/node" "*"
     "@types/react" "*"
