@@ -10,9 +10,19 @@ import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';
 
+import { gloablStyle } from '@vital-ui/react';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  ${gloablStyle.linkStyle};
+  ${gloablStyle.reset};
+  ${gloablStyle.vitalTypographyStyle};
+  ${gloablStyle.robotoFontFamily};
+`;
+
 class App extends PureComponent {
   state = {
-    newColor: defaultTheme.primary,
+    newColor: defaultTheme.colors.primary,
   };
 
   render() {
@@ -24,6 +34,7 @@ class App extends PureComponent {
         }}
       >
         <Layout>
+          <GlobalStyle />
           <Layout.Header>
             <Header
               onChangeColor={color => {

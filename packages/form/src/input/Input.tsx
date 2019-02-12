@@ -20,6 +20,8 @@ export const Input = styled.input.attrs(props => ({
 }))<InputElementProps>`
   ${fieldBase};
   ${superBoxStyle};
+  ${props =>
+    props.theme.form.inputStyle && props.theme.form.inputStyle};
 `;
 
 Input.defaultProps = {

@@ -156,6 +156,7 @@ export const linkStyle = ({ theme }) => css`
 `;
 
 export const robotoFontFamily = css`
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
   font-family: 'Roboto', 'Helvetica', 'PingFang TC', 'Arial',
     'sans-serif', 'Microsoft JhengHei', 'Heiti TC';
 `;
