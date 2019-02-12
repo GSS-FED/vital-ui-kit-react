@@ -163,6 +163,7 @@ export default <T extends any>(theme: T) => ({
     hoverBorderColor: theme.colors.secondary600,
     focusBorderColor: theme.colors.primary500,
     inputPadding: '7px 12px',
+    inputStyle: undefined,
     placeholder: {
       color: theme.colors.secondary,
     },
