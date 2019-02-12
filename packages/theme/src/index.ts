@@ -1,6 +1,6 @@
 import defaultVariables from './theme';
 import defaultComponentsTheme from './theme/components';
-import * as gloablStyle from './globalStyle';
+import * as globalStyle from './globalStyle';
 import { colorPaletteGenerator } from './helper';
 
 const defaultTheme = {
@@ -17,6 +17,6 @@ export {
   defaultVariables,
   defaultComponentsTheme,
   defaultTheme,
-  gloablStyle,
+  globalStyle,
   colorPaletteGenerator,
 };

@@ -1,5 +1,11 @@
 {
-  "name": "vital-ui-react",
-  "alias": ["vital-ui-react", "react.vitaluikit.com"],
-  "type": "static"
+  "name": "speed-vital-react",
+  "version": 2,
+  "builds": [
+    {
+      "src": "examples/speed/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ]
 }
