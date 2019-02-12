@@ -205,6 +205,7 @@ Object {
       "rightHoverColor": "#C3D1EB",
     },
     "inputPadding": "0.46633rem 0.8rem",
+    "inputStyle": undefined,
     "placeholder": Object {
       "color": "#95ABD3",
     },
