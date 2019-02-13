@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-popup",
-  "version": "0.9.9",
+  "version": "0.9.11",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,8 +16,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@vital-ui/react-theme": "^0.9.9",
-    "@vital-ui/react-utils": "^0.9.9",
+    "@vital-ui/react-theme": "^0.9.11",
+    "@vital-ui/react-utils": "^0.9.11",
     "classnames": "^2.2.6",
     "rc-trigger": "2.6.2"
   },
