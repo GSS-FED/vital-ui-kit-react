@@ -2,6 +2,7 @@
   "name": "speed",
   "version": "0.2.6",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@vital-ui/react": "latest",
     "formik": "^0.11.11",
