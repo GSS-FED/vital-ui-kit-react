@@ -6,7 +6,7 @@ import * as React from 'react';
 import { setDefaults } from '@storybook/addon-info';
 import { withOptions } from '@storybook/addon-options';
 import { ThemeProvider } from '../packages/theme/dist';
-import { gloablStyle } from '../packages/theme';
+import { globalStyle } from '../packages/theme';
 import { withInfo } from '@storybook/addon-info';
 import mainTheme from '../packages/theme/src/theme';
 import crmTheme from '../packages/theme/src/theme/crm/';
@@ -35,9 +35,9 @@ const GlobalStyle = createGlobalStyle`
   #root {
     padding: 20px;
   }
-  ${gloablStyle.linkStyle};
-  ${gloablStyle.reset};
-  ${gloablStyle.vitalTypographyStyle};
+  ${globalStyle.linkStyle};
+  ${globalStyle.reset};
+  ${globalStyle.vitalTypographyStyle};
   ${fontFamily};
 `;
 

@@ -10,14 +10,14 @@ import Nav from './components/Layout/Nav';
 import Main from './components/Layout/Main';
 import Header from './components/Layout/Header';
 
-import { gloablStyle } from '@vital-ui/react';
+import { globalStyle } from '@vital-ui/react';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  ${gloablStyle.linkStyle};
-  ${gloablStyle.reset};
-  ${gloablStyle.vitalTypographyStyle};
-  ${gloablStyle.robotoFontFamily};
+  ${globalStyle.linkStyle};
+  ${globalStyle.reset};
+  ${globalStyle.vitalTypographyStyle};
+  ${globalStyle.robotoFontFamily};
 `;
 
 class App extends PureComponent {

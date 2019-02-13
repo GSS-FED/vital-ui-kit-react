@@ -7,6 +7,5 @@
       "use": "@now/static-build",
       "config": { "distDir": "build" }
     }
-  ],
-  "routes": [{ "src": "/", "dest": "/examples/speed/build" }]
+  ]
 }

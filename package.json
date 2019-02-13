@@ -16,7 +16,7 @@
     "prebuild": "yarn clean:build",
     "watch": "cross-env NODE_ENV=development lerna exec --parallel -- tsc-watch",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o /public",
+    "build-storybook": "build-storybook -o /build",
     "lint": "tslint -c tslint.json './**/*.{ts,tsx}'",
     "test": "NODE_ENV=test jest --env=jsdom",
     "format": "prettier --write '**/**.{js,jsx,ts,tsx}'",

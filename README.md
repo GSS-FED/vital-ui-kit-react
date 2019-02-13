@@ -83,15 +83,15 @@ yarn add @vital-ui/react-avatar
 import { ThemeProvier, Button } from '@vital-ui/react' // You can use `ThemeProvider` by styled-components, or @vital-ui/react-theme
 
 // recommend importing the global reset style.
-import { gloablStyle } from '@vital-ui/react';
+import { globalStyle } from '@vital-ui/react';
 import { createGlobalStyle } from 'styled-components'
 
 
 const GlobalStyle = createGlobalStyle`
-  ${gloablStyle.linkStyle};
-  ${gloablStyle.reset};
-  ${gloablStyle.vitalTypographyStyle};
-  ${gloablStyle.robotoFontFamily};
+  ${globalStyle.linkStyle};
+  ${globalStyle.reset};
+  ${globalStyle.vitalTypographyStyle};
+  ${globalStyle.robotoFontFamily};
 `;
 
 /* ... */
