@@ -1,4 +1,18 @@
 # Changelog
+## 0.9.11 (2019-02-13)
+
+#### :rocket: Enhancement
+* `avatar`, `form`, `theme`
+  * [#436](https://github.com/GSS-FED/vital-ui-kit-react/pull/436) Export defaultAvatarSets ([@ericyip](https://github.com/ericyip))
+
+#### :bug: Bug Fix
+* `theme`
+  * [#437](https://github.com/GSS-FED/vital-ui-kit-react/pull/437) Fix export globalStyle ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
+
 ## v0.9.9 (2019-01-17)
 
 #### :bug: Bug Fix
