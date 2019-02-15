@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
-    "@vital-ui/react": "latest",
+    "@vital-ui/react": "*",
     "formik": "^0.11.11",
     "rc-color-picker": "^1.2.6",
     "react": "^16.4.1",
