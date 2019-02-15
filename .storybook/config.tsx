@@ -1,18 +1,16 @@
 // @ts-ignore
-import { createGlobalStyle, css } from 'styled-components';
-// @ts-ignore
-import { configure, addDecorator } from '@storybook/react';
-import * as React from 'react';
-import { setDefaults } from '@storybook/addon-info';
-import { withOptions } from '@storybook/addon-options';
-import { ThemeProvider } from '../packages/theme/dist';
-import { globalStyle } from '../packages/theme';
 import { withInfo } from '@storybook/addon-info';
-import mainTheme from '../packages/theme/src/theme';
-import crmTheme from '../packages/theme/src/theme/crm/';
-import { combinedWithComponent } from '../packages/theme/src';
-import componentTheme from '../packages/theme/src/theme/crm/components';
+import { withOptions } from '@storybook/addon-options';
+// @ts-ignore
+import { addDecorator, configure } from '@storybook/react';
+import * as React from 'react';
 import { withThemes } from 'storybook-styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import { globalStyle } from '../packages/theme';
+import { combinedWithComponent } from '../packages/theme/src';
+import crmTheme from '../packages/theme/src/theme/crm/';
+import componentTheme from '../packages/theme/src/theme/crm/components';
+import mainTheme from '../packages/theme/src/theme/default';
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));

@@ -2,8 +2,8 @@ import React from 'react';
 import { ThemeProvider as Provider } from 'styled-components';
 import merge from 'lodash.merge';
 
-import defaultVariables from './theme';
-import defaultComponentsThemeFn from './theme/components';
+import defaultVariables from './theme/default';
+import defaultComponentsThemeFn from './theme/default/components';
 
 type Props<T> = {
   theme?: T;

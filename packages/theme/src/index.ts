@@ -1,5 +1,5 @@
-import defaultVariables from './theme';
-import defaultComponentsTheme from './theme/components';
+import defaultVariables from './theme/default';
+import defaultComponentsTheme from './theme/default/components';
 import * as globalStyle from './globalStyle';
 import { colorPaletteGenerator } from './helper';
 

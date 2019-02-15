@@ -41,6 +41,7 @@ export default <T extends any>(theme: T) => ({
     inverseColor: theme.colors.info,
   },
   button: {
+    buttonStyle: undefined,
     natureColor: {
       default: theme.colors.secondary700,
       primary: theme.colors.primary,
@@ -68,7 +69,7 @@ export default <T extends any>(theme: T) => ({
     },
     light: {
       bg: theme.colors.white,
-      hoverBg: theme.colors.secondary400,
+      hoverBg: theme.colors.secondary200,
       activeBg: theme.colors.secondary200,
       borderColor: theme.colors.secondary400,
     },
