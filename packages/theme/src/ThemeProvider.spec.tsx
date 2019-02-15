@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import styled, { withTheme } from 'styled-components';
-import defaultVariables from './theme';
+import defaultVariables from './theme/default';
 import ThemeProvider, {
   combinedWithComponent,
 } from './ThemeProvider';
