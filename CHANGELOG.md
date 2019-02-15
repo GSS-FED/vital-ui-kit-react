@@ -1,4 +1,13 @@
 # Changelog
+## 0.9.12 (2019-02-15)
+
+#### :rocket: Enhancement
+* `button`, `theme`, `tooltip`
+  * [#438](https://github.com/GSS-FED/vital-ui-kit-react/pull/438) Add Button style in theme ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.9.11 (2019-02-13)
 
 #### :rocket: Enhancement
