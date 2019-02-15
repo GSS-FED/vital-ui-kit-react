@@ -44,7 +44,7 @@ export const natureColor = (theme: any) => ({
   warning: theme.colors.warning,
 });
 
-const buttonBaseStyle = ({
+export const buttonBaseStyle = ({
   theme,
   size,
   nature,
@@ -79,7 +79,7 @@ const buttonBaseStyle = ({
     }
   `;
 
-const subtleStyle = ({
+export const subtleStyle = ({
   subtle,
   selected,
   theme,
@@ -98,7 +98,11 @@ const subtleStyle = ({
     }
   `;
 
-const flatStyle = ({ flat, nature, theme }: StyledButtonProps) =>
+export const flatStyle = ({
+  flat,
+  nature,
+  theme,
+}: StyledButtonProps) =>
   flat &&
   css`
     background: ${nature === 'default'
@@ -129,7 +133,11 @@ const flatStyle = ({ flat, nature, theme }: StyledButtonProps) =>
     }
   `;
 
-const lightStyle = ({ light, theme, nature }: StyledButtonProps) =>
+export const lightStyle = ({
+  light,
+  theme,
+  nature,
+}: StyledButtonProps) =>
   light &&
   css`
     background: ${theme.button.light.bg};
@@ -143,7 +151,7 @@ const lightStyle = ({ light, theme, nature }: StyledButtonProps) =>
     }
   `;
 
-const linkStyle = ({ link, theme }: StyledButtonProps) =>
+export const linkStyle = ({ link, theme }: StyledButtonProps) =>
   link &&
   css`
     background: ${theme.button.link.bg};
@@ -156,7 +164,11 @@ const linkStyle = ({ link, theme }: StyledButtonProps) =>
     }
   `;
 
-const linkDarkStyle = ({ link, dark, theme }: StyledButtonProps) =>
+export const linkDarkStyle = ({
+  link,
+  dark,
+  theme,
+}: StyledButtonProps) =>
   link &&
   dark &&
   css`
@@ -175,7 +187,7 @@ const underlineStyle = ({ underline }: StyledButtonProps) =>
     }
   `;
 
-const circleStyle = ({ circle }: StyledButtonProps) =>
+export const circleStyle = ({ circle }: StyledButtonProps) =>
   circle &&
   css`
     display: flex;
@@ -222,6 +234,7 @@ export const Button = styled('button').attrs(props => ({
     cursor: not-allowed;
     pointer-events: none;
   }
+  ${props => props.theme.button.buttonStyle};
 `;
 
 Button.defaultProps = {
