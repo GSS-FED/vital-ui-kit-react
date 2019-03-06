@@ -1,4 +1,13 @@
 # Changelog
+## 0.9.13 (2019-03-06)
+
+#### :rocket: Enhancement
+* `form`, `theme`
+  * [#440](https://github.com/GSS-FED/vital-ui-kit-react/pull/440) Checkbox size ([@ga021396](https://github.com/ga021396))
+
+#### Committers: 1
+- ChiFeng ([@ga021396](https://github.com/ga021396))
+
 ## 0.9.12 (2019-02-15)
 
 #### :rocket: Enhancement
