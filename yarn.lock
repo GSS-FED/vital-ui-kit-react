@@ -2456,10 +2456,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.1.tgz#48fd98c1561fe718b61733daed46ff115b496e18"
   integrity sha512-eqz8c/0kwNi/OEHQfvIuJVLTst3in0e7uTKeuY+WL/zfKn0xVujOTp42bS/vUUokhK5P2BppLd9JXMOMHcgbjA==
 
-"@types/react-dom@16.0.11":
-  version "16.0.11"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
-  integrity sha512-x6zUx9/42B5Kl2Vl9HlopV8JF64wLpX3c+Pst9kc1HgzrsH+mkehe/zmHMQTplIrR48H2gpU7ZqurQolYu8XBA==
+"@types/react-dom@16.8.2":
+  version "16.8.2"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.8.2.tgz#9bd7d33f908b243ff0692846ef36c81d4941ad12"
+  integrity sha512-MX7n1wq3G/De15RGAAqnmidzhr2Y9O/ClxPxyqaNg96pGyeXUYPSvujgzEVpLo9oIP4Wn1UETl+rxTN02KEpBw==
   dependencies:
     "@types/react" "*"
 
@@ -2503,10 +2503,10 @@
     "@types/react-native" "*"
     csstype "^2.2.0"
 
-"@types/styled-system@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.1.1.tgz#ff4430f5b5fe21e6f0dee49fdbf6f7a993bdb502"
-  integrity sha512-jyUmr/I/tMDG4COSLHE4DXzGcGGRxRvSUjLGPV1Xy5jZ3+KLg+EJ+e04rOrw0AzLaKHSnZCM/P1iUwKq6b6cnQ==
+"@types/styled-system@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-3.2.2.tgz#a40b30baf20a8d9820808688a370a973cb778e7c"
+  integrity sha512-QjjszVXRIeAT1fAQewWKh1Ewq3/i6xeYp2DH7DC151FfnLNtUbjT8CxUuqpnKrRiessoKdQVLw+3xu/RiMpNBQ==
   dependencies:
     csstype "^2.2.0"
 
