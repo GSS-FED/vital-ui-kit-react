@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeConsumer } from 'styled-components';
+import { defaultTheme } from '@vital-ui/react-theme';
 
 type Props = {
   fontSize?: number | string;
@@ -8,7 +9,7 @@ type Props = {
 
 export const CheckIcon = ({ fontSize, ...props }: Props) => (
   <ThemeConsumer>
-    {theme => (
+    {(theme = defaultTheme) => (
       <svg
         role="img"
         xmlns="http://www.w3.org/2000/svg"
