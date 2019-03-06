@@ -3,15 +3,16 @@ import React from 'react';
 type Props = {
   fontSize?: number | string;
   color?: string;
+  size?: string;
 };
 
-export const CheckIcon = ({ fontSize, ...props }: Props) => (
+export const CheckIcon = ({ size, fontSize, ...props }: Props) => (
   <svg
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    width="1em"
-    height="1em"
+    width={size}
+    height={size}
     fontSize={fontSize}
     {...props}
   >

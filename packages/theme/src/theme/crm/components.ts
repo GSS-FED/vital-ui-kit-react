@@ -132,12 +132,14 @@ export default <T extends any>(theme: T) => ({
     borderColor: theme.colors.secondary400,
     checkedBorderColor: theme.colors.primary700,
     checkedBg: theme.colors.primary700,
+    size: '1.066rem',
     roundBg: theme.colors.white,
     bg: theme.colors.white,
     label: {
       color: theme.colors.secondary700,
     },
     icon: {
+      size: '1rem',
       color: theme.colors.white,
       roundColor: theme.colors.white,
       disabledColor: theme.colors.secondary300,

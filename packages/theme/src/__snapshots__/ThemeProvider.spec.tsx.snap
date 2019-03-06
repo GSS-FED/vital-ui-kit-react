@@ -134,11 +134,13 @@ Object {
       "color": "#0E86FE",
       "disabledColor": "#D8E2F5",
       "roundColor": "#ffffff",
+      "size": "1rem",
     },
     "label": Object {
       "color": "#456296",
     },
     "roundBg": "#ffffff",
+    "size": "1.066rem",
   },
   "colors": Object {
     "alarm": "#EB5000",
