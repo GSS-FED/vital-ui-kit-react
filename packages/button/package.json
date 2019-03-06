@@ -19,7 +19,7 @@
     "@vital-ui/react-theme": "^0.9.13",
     "@vital-ui/react-utils": "^0.9.13",
     "classnames": "^2.2.6",
-    "polished": "^2.3.3",
+    "polished": "^3.0.0",
     "styled-map": "^3.2.0-rc.1"
   },
   "devDependencies": {
