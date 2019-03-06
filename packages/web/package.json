@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "copyfiles": "2.1.0",
-    "typescript": "3.2.2"
+    "typescript": "3.3.3333"
   },
   "license": "MIT",
   "bugs": {
