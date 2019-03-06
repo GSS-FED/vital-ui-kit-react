@@ -4,7 +4,6 @@ import { ThemeConsumer } from 'styled-components';
 type Props = {
   fontSize?: number | string;
   color?: string;
-  size?: string;
 };
 
 export const CheckIcon = ({ fontSize, ...props }: Props) => (
