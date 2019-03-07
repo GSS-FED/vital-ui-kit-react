@@ -15,6 +15,7 @@ const Root = styled.label`
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
+  line-height: ${({ theme }) => theme.checkbox.size};
   display: inline-block;
   &:hover {
     > span:first-child {
