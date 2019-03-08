@@ -17,7 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts ejectyarn ",
+    "eject": "react-scripts eject",
     "now-build": "yarn run build"
   },
   "browserslist": [
