@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import { defaultTheme } from '@vital-ui/react-theme';
 
 import ModalWrapper from './ModalWrapper';
+import { superBoxStyle } from '@vital-ui/react-utils';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -18,7 +19,23 @@ type ModalProps = {
   mountElement?: HTMLElement;
 };
 
-const OverLay = styled.div`
+type OverLayProps = {
+  overlayBg?: string;
+};
+
+const Root = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const OverLay = styled.div<OverLayProps>`
   background-color: ${props => props.theme.grey800};
   z-index: 9999;
   position: fixed;
@@ -27,6 +44,7 @@ const OverLay = styled.div`
   bottom: 0;
   right: 0;
   opacity: 0.5;
+  ${superBoxStyle};
 `;
 
 OverLay.defaultProps = {
@@ -43,12 +61,12 @@ export function Modal({
     return null;
   }
   return ReactDOM.createPortal(
-    <div className="vital__modal">
+    <Root className="vital__modal">
       <OverLay />
       <ModalWrapper>
         {React.Children.only(props.children)}
       </ModalWrapper>
-    </div>,
+    </Root>,
     getNode(),
   );
 }
