@@ -15,6 +15,7 @@ const Root = styled.label`
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
+  line-height: ${({ theme }) => theme.checkbox.size};
   display: inline-block;
   &:hover {
     > span:first-child {
@@ -53,8 +54,8 @@ const CheckWrapper = styled('span')<CheckWrapper>`
     checked
       ? theme.checkbox.checkedBg
       : round
-        ? theme.checkbox.roundBg
-        : theme.checkbox.bg};
+      ? theme.checkbox.roundBg
+      : theme.checkbox.bg};
   transition: ${({ theme }) => theme.defaultTransition};
   margin: -2px 0.6em 0 0;
   vertical-align: middle;
@@ -195,12 +196,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
               round={contextRound || round}
             >
               <IconWrapper checked={this.props.checked}>
-                {contextIcon ||
-                  icon || (
-                    <CheckIcon
-                      size={this.props.theme.checkbox.icon.size}
-                    />
-                  )}
+                {contextIcon || icon || <CheckIcon />}
               </IconWrapper>
             </CheckWrapper>
             <Label>
