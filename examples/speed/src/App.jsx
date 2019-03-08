@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
   ${globalStyle.reset};
   ${globalStyle.vitalTypographyStyle};
   ${globalStyle.robotoFontFamily};
+
+  body {
+    font-family: 'Roboto', 'Helvetica', 'PingFang TC', 'Arial',
+      'sans-serif', 'Microsoft JhengHei', 'Heiti TC';
+  }
 `;
 
 class App extends PureComponent {
@@ -26,6 +31,7 @@ class App extends PureComponent {
   };
 
   render() {
+    console.log(globalStyle.robotoFontFamily);
     return (
       <ThemeProvider
         theme={{
@@ -33,24 +39,26 @@ class App extends PureComponent {
           ...colorPaletteGenerator(this.state.newColor),
         }}
       >
-        <Layout>
+        <React.Fragment>
           <GlobalStyle />
-          <Layout.Header>
-            <Header
-              onChangeColor={color => {
-                this.setState({
-                  newColor: color,
-                });
-              }}
-            />
-          </Layout.Header>
-          <Layout.Sidebar style={{ overflow: 'scroll' }}>
-            <Nav />
-          </Layout.Sidebar>
-          <Layout.Content>
-            <Main />
-          </Layout.Content>
-        </Layout>
+          <Layout>
+            <Layout.Header>
+              <Header
+                onChangeColor={color => {
+                  this.setState({
+                    newColor: color,
+                  });
+                }}
+              />
+            </Layout.Header>
+            <Layout.Sidebar style={{ overflow: 'scroll' }}>
+              <Nav />
+            </Layout.Sidebar>
+            <Layout.Content>
+              <Main />
+            </Layout.Content>
+          </Layout>
+        </React.Fragment>
       </ThemeProvider>
     );
   }
