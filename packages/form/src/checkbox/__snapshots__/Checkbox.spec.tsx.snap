@@ -8,6 +8,7 @@ Object {
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
+  line-height: 1.066rem;
   display: inline-block;
 }
 
@@ -91,7 +92,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa ddktzo"
+      class="vital__checkbox sc-bdVaJa cwScPZ"
     >
       <span
         class="sc-htpNat cUzqxB"
@@ -178,6 +179,7 @@ Object {
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
+  line-height: 1.066rem;
   display: inline-block;
 }
 
@@ -263,7 +265,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa ddktzo"
+      class="vital__checkbox sc-bdVaJa cwScPZ"
     >
       <span
         class="sc-htpNat deAzeE"
@@ -350,6 +352,7 @@ Object {
   font-size: 15px;
   cursor: pointer;
   margin-right: 5px;
+  line-height: 1.066rem;
   display: inline-block;
 }
 
@@ -436,7 +439,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa ddktzo"
+      class="vital__checkbox sc-bdVaJa cwScPZ"
     >
       <span
         class="sc-htpNat deAzeE"
