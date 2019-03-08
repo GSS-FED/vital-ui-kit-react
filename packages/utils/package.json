@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-utils",
-  "version": "0.9.13",
+  "version": "0.9.14",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -19,7 +19,7 @@
     "typescript": "3.3.3333"
   },
   "dependencies": {
-    "@vital-ui/react-theme": "^0.9.13",
+    "@vital-ui/react-theme": "^0.9.14",
     "classnames": "^2.2.6",
     "styled-system": "^3.2.1"
   }
