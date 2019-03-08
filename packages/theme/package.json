@@ -26,6 +26,6 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash.merge": "^4.6.1",
-    "polished": "^2.3.3"
+    "polished": "^3.0.0"
   }
 }
