@@ -1,4 +1,14 @@
 # Changelog
+
+## 0.9.14 (2019-03-08)
+
+#### :bug: Bug Fix
+* `form`
+  * [#452](https://github.com/GSS-FED/vital-ui-kit-react/pull/452) Checkbox fix props ([@ga021396](https://github.com/ga021396))
+
+#### Committers: 1
+- ChiFeng ([@ga021396](https://github.com/ga021396))
+
 ## 0.9.13 (2019-03-06)
 
 #### :rocket: Enhancement
