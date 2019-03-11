@@ -4,13 +4,13 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
-    "@vital-ui/react": "*",
+    "@vital-ui/react": "latest",
     "formik": "^0.11.11",
     "rc-color-picker": "^1.2.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-markdown": "^3.3.0",
-    "react-scripts": "^1.1.4",
+    "react-scripts": "2.1.8",
     "styled-components": "4.1.3"
   },
   "scripts": {
@@ -20,7 +20,10 @@
     "eject": "react-scripts eject",
     "now-build": "yarn run build"
   },
-  "devDependencies": {
-    "eslint": "^5.0.1"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
