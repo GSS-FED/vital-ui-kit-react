@@ -18,6 +18,8 @@ const TooltipContent = styled.div`
   color: ${({ theme }) => theme.tooltip.color};
   background: ${({ theme }) => theme.tooltip.bg};
   border-radius: 4px;
+  max-width: ${({ theme }) => theme.tooltip.maxWidth};
+  ${({ theme }) => theme.tooltip.css && theme.tooltip.css};
 `;
 
 const RcTooltipStyle = createGlobalStyle`

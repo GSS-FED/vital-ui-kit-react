@@ -253,6 +253,7 @@ export default <T extends any>(theme: T) => ({
   tooltip: {
     bg: '#182d54',
     color: theme.colors.white,
+    maxWidth: '330px',
   },
   track: {
     borderColor: theme.colors.secondary,
