@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.9.15 (2019-03-12)
+
+#### :rocket: Enhancement
+* `theme`, `tooltip`
+  * [#463](https://github.com/GSS-FED/vital-ui-kit-react/pull/463) Add max width and custom css CRM Tooltip theme ([@ericyip](https://github.com/ericyip))
+
+#### :house: Internal
+* `modal`
+  * [#457](https://github.com/GSS-FED/vital-ui-kit-react/pull/457) Update storybook V5 ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.9.14 (2019-03-08)
 
 #### :bug: Bug Fix
