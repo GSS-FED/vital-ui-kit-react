@@ -10,6 +10,7 @@ Object {
   color: #ffffff;
   background: #182d54;
   border-radius: 4px;
+  max-width: 330px;
 }
 
 .c0 {
@@ -79,9 +80,7 @@ Object {
             <div
               class="c1"
             >
-              <div>
-                hi
-              </div>
+              hi
             </div>
           </div>
         </div>
