@@ -301,6 +301,7 @@ Object {
   "tooltip": Object {
     "bg": "#182d54",
     "color": "#ffffff",
+    "maxWidth": "330px",
   },
   "track": Object {
     "alarmbg": "#FFD0B8",
