@@ -1,4 +1,5 @@
 import { rgba, lighten } from 'polished';
+import { css } from 'styled-components';
 
 // component theme factory
 export default <T extends any>(theme: T) => ({
@@ -258,8 +259,15 @@ export default <T extends any>(theme: T) => ({
     },
   },
   tooltip: {
-    bg: '#182d54',
+    bg: '#63636F',
     color: theme.colors.white,
+    maxWidth: '330px',
+    css: css`
+      padding: 6px 12px;
+      font-size: 0.928rem;
+      box-shadow: 0 2px 10px 0 rgba(35, 35, 39, 0.3),
+        0 1px 20px 0 rgba(35, 35, 39, 0.15);
+    `,
   },
   track: {
     borderColor: theme.colors.secondary,

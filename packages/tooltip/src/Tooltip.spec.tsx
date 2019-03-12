@@ -6,11 +6,7 @@ import { Button } from '@vital-ui/react-button/src';
 describe('Tooltip', () => {
   it('should render with default styles', () => {
     const tooltip = render(
-      <Tooltip
-        placement="left"
-        popup={<div>hi</div>}
-        action={['click']}
-      >
+      <Tooltip placement="left" popup={'hi'} action={['click']}>
         <Button>Click</Button>
       </Tooltip>,
     );
