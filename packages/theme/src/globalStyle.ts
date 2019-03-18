@@ -95,6 +95,7 @@ export const reset = css`
 export const vitalTypographyStyle = css`
   html {
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   h1 {
     font-size: 2.027rem;
