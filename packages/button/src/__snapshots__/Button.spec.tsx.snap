@@ -1,19 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip should render with default styles 1`] = `
+exports[`Button should render with default styles 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c1 {
-  display: inline-block;
-  padding: 8px 16px;
-  text-align: center;
-  color: #ffffff;
-  background: #182d54;
-  border-radius: 4px;
-  max-width: 330px;
-}
-
-.c0 {
+  "baseElement": .c0 {
   position: relative;
   background: #F7F9FD;
   color: #456296;
@@ -55,43 +45,18 @@ Object {
     <div>
       <button
         class="vital__button c0"
-        style=""
         type="button"
       >
-        Click
+        button text
       </button>
-    </div>
-    <div
-      style="position: absolute; top: 0px; left: 0px; width: 100%;"
-    >
-      <div>
-        <div
-          class="rc-trigger-popup vital-popup rc-trigger-popup-placement-left "
-          style="left: -1009px; top: -999px;"
-        >
-          <div
-            class="rc-trigger-popup-content"
-          >
-            <div
-              class="rc-tooltip-arrow "
-            />
-            <div
-              class="c1"
-            >
-              hi
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>,
   "container": <div>
     <button
-      class="sc-ifAKCX vital__button kXhscO"
-      style=""
+      class="sc-htpNat vital__button japkjZ"
       type="button"
     >
-      Click
+      button text
     </button>
   </div>,
   "debug": [Function],

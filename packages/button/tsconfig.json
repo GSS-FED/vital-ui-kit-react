@@ -10,7 +10,7 @@
     "**/__tests__",
     "**/__mocks__",
     "**/*.test.tsx",
-    "**/*.test.tsx",
+    "**/*.spec.tsx",
     "**/*.stories.tsx"
   ]
 }

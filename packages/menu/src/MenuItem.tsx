@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import cn from 'classnames';
 import { defaultTheme } from '@vital-ui/react-theme';
 
-import { Button } from '@vital-ui/react-button';
+import { SubtleButton } from '@vital-ui/react-button';
 
 const Root = styled.div<{ border: boolean }>`
   display: inline-block;
@@ -27,7 +27,7 @@ Root.defaultProps = {
   theme: defaultTheme,
 };
 
-const MenuButton = styled(Button)`
+const MenuButton = styled(SubtleButton)`
   display: flex;
   border-radius: 0;
   height: 100%;
@@ -61,7 +61,7 @@ export class MenuItem extends React.Component<Props> {
         className={cn('vital__menu-item', className)}
         {...props}
       >
-        <MenuButton subtle>{children}</MenuButton>
+        <MenuButton>{children}</MenuButton>
       </Root>
     );
   }

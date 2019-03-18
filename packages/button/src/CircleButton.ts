@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Button } from './Button';
 
-export const CicleButton = styled(Button)`
+export const CircleButton = styled(Button)`
   display: flex;
   justify-content: center;
   align-items: center;
