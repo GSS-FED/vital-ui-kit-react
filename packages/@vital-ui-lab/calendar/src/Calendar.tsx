@@ -37,7 +37,7 @@ type State = {
   isMonthInternalChanged: boolean;
 };
 
-class Calendar extends React.Component<Props, State> {
+export class Calendar extends React.Component<Props, State> {
   static defaultProps = {
     assignedMonth: undefined,
     assignedYear: undefined,
@@ -246,5 +246,3 @@ class Calendar extends React.Component<Props, State> {
     );
   }
 }
-
-export default Calendar;
