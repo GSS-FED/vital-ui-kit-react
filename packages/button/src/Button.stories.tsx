@@ -13,7 +13,7 @@ import {
   ButtonGroup,
   FlatButton,
   SubtleButton,
-  CicleButton,
+  CircleButton,
   LightButton,
   LinkButton,
 } from '.';
@@ -108,9 +108,9 @@ storiesOf('Packages | Button', module)
     <SubtleButton>{text('Label', 'Subtle Button')}</SubtleButton>
   ))
   .add('Circular style', () => (
-    <CicleButton>
+    <CircleButton>
       <Star name="star" color="#3b5998" />
-    </CicleButton>
+    </CircleButton>
   ))
   .add('ButtonGroup', () => (
     <ButtonGroup>
