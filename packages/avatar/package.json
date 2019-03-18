@@ -21,7 +21,6 @@
     "react-dom": "^16",
     "styled-components": "*"
   },
-  "license": "ISC",
   "dependencies": {
     "@vital-ui/react-theme": "^0.9.15",
     "@vital-ui/react-utils": "^0.9.15",

@@ -1,21 +1,26 @@
 {
-  "name": "@vital-ui/react-chart",
-  "version": "0.8.0",
+  "name": "@vital-ui/react-calendar",
+  "version": "0.9.15",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
   "scripts": {
+    "clean": "rm -rf dist cjs",
     "compile": "tsc && tsc --module commonjs --outdir cjs"
   },
-  "author": "Eric Yip (https://github.com/ericyip)",
+  "files": [
+    "dist",
+    "cjs",
+    "src"
+  ],
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
     "styled-components": "*"
   },
   "dependencies": {
-    "@vital-ui/react-theme": "^0.9.0",
-    "@vital-ui/react-utils": "^0.9.0",
+    "@vital-ui/react-theme": "^0.9.15",
+    "@vital-ui/react-utils": "^0.9.15",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
