@@ -8,7 +8,15 @@ import {
   select,
 } from '@storybook/addon-knobs/react';
 
-import { Button, ButtonGroup } from '.';
+import {
+  Button,
+  ButtonGroup,
+  FlatButton,
+  SubtleButton,
+  CicleButton,
+  LightButton,
+  LinkButton,
+} from '.';
 import { Star } from '../../icon/src';
 
 const StyledButton = styled(Button)`
@@ -48,8 +56,7 @@ storiesOf('Packages | Button', module)
     </Button>
   ))
   .add('Flat', () => (
-    <Button
-      flat={boolean('flat', true)}
+    <FlatButton
       nature={select(
         'Nature',
         {
@@ -64,11 +71,10 @@ storiesOf('Packages | Button', module)
       )}
     >
       {text('Label', 'Flat Button')}
-    </Button>
+    </FlatButton>
   ))
   .add('Light', () => (
-    <Button
-      light={boolean('Light', true)}
+    <LightButton
       nature={select(
         'Nature',
         {
@@ -83,7 +89,7 @@ storiesOf('Packages | Button', module)
       )}
     >
       {text('Label', 'Light Button')}
-    </Button>
+    </LightButton>
   ))
   .add('Disable', () => (
     <Button disabled={boolean('Disabled', true)}>
@@ -91,21 +97,20 @@ storiesOf('Packages | Button', module)
     </Button>
   ))
   .add('Link', () => (
-    <Button
-      link
+    <LinkButton
       dark={boolean('Dark', false)}
       underline={boolean('Underline', false)}
     >
       {text('Label', 'Link Button')}
-    </Button>
+    </LinkButton>
   ))
   .add('Subtle', () => (
-    <Button subtle>{text('Label', 'Subtle Button')}</Button>
+    <SubtleButton>{text('Label', 'Subtle Button')}</SubtleButton>
   ))
   .add('Circular style', () => (
-    <Button circle={boolean('circle', true)}>
+    <CicleButton>
       <Star name="star" color="#3b5998" />
-    </Button>
+    </CicleButton>
   ))
   .add('ButtonGroup', () => (
     <ButtonGroup>

@@ -104,7 +104,7 @@ export interface BoxProps
   color?: string;
 }
 
-export const superBoxStyle = css`
+export const boxStyle = css`
   ${space};
   ${width};
   ${fontSize};
@@ -114,7 +114,6 @@ export const superBoxStyle = css`
   ${maxWidth};
   ${maxHeight};
   ${minHeight};
-  ${size};
   ${position};
   ${zIndex};
   ${top};
@@ -139,6 +138,11 @@ export const superBoxStyle = css`
   ${minWidth};
   ${color};
   ${bgColor};
+`;
+
+export const superBoxStyle = css`
+  ${boxStyle};
+  ${size};
 `;
 
 export const Box = styled('div')<BoxProps>`
