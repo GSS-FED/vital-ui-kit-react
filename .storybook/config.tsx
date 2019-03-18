@@ -1,8 +1,8 @@
 // @ts-ignore
 import { withInfo } from '@storybook/addon-info';
-import { withOptions } from '@storybook/addon-options';
 // @ts-ignore
-import { addDecorator, configure } from '@storybook/react';
+import { create } from '@storybook/theming';
+import { addParameters, configure } from '@storybook/react';
 import * as React from 'react';
 import { withThemes } from 'storybook-styled-components';
 import { createGlobalStyle, css } from 'styled-components';
@@ -35,14 +35,14 @@ const GlobalStyle = createGlobalStyle`
   ${fontFamily};
 `;
 
-addDecorator(withInfo);
-addDecorator(
-  withOptions({
-    name: 'Vital UI Kit React',
-    url: '#',
-    addonPanelInRight: false,
-    sortStoriesByKind: true,
-    sidebarAnimations: false,
+addParameters(withInfo);
+addParameters({
+  options: {
+    theme: create({
+      base: 'light',
+      brandTitle: 'Vital UI Kit React',
+      brandUrl: 'vitaluikit.com',
+    }),
     styles: stylesheet => ({
       ...stylesheet,
       button: {
@@ -54,16 +54,16 @@ addDecorator(
         },
       },
     }),
-  }),
-);
+  },
+});
 
-addDecorator(story => (
+addParameters(story => (
   <>
     <GlobalStyle />
     {story()}
   </>
 ));
-addDecorator(withThemes(vitalThemes));
+addParameters(withThemes(vitalThemes));
 // automatically import all files ending in *.stories.js
 // @ts-ignore
 const req = require.context('../packages', true, /.stories.tsx$/);

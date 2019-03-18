@@ -3,19 +3,33 @@
  * MIT license
  */
 
-import * as React from 'react';
+import { BoxProps, superBoxStyle } from '@vital-ui/react-utils';
 import styled from 'styled-components';
-import { superBoxStyle, BoxProps } from '@vital-ui/react-utils';
 
 export interface ButtonGroupProps extends BoxProps {
   vertical?: boolean;
   /** Horizontal margin between buttons */
   marginHorizontal?: string;
-  /** Buttons as children */
-  children: React.ReactNode;
-  style?: React.CSSProperties;
 }
 
+/**
+ * @name ButtonGroup
+ * @description Button component with group
+ * ```tsx
+ * <ButtonGroup>
+ *   <Button nature="default" size="xlarge">Default</Button>
+ *   <Button nature="primary" size="large">Default</Button>
+ *   <Button nature="success" size="medium">Default</Button>
+ *   <Button nature="info" size="small">Default</Button>
+ *   <Button nature="alarm" size="xsmall">Default</Button>
+ *   <Button nature="warning">Default</Button>
+ *   <Button flat>Default</Button>
+ *   <Button subtle>Default</Button>
+ *   <Button light>Default</Button>
+ *   <Button link>Default</Button>
+ * </ButtonGroup>
+ * ```
+ */
 export const ButtonGroup = styled('div')<ButtonGroupProps>`
   > button:not(:last-child) {
     margin-right: ${({ vertical, marginHorizontal }) =>

@@ -6,5 +6,11 @@
     "noImplicitAny": false
   },
   "include": ["src/**/*"],
-    "exclude": [     "**/__tests__",     "**/__mocks__",     "**/*.test.tsx",     "**/*.test.tsx",     "**/*.stories.tsx"   ]
+  "exclude": [
+    "**/__tests__",
+    "**/__mocks__",
+    "**/*.test.tsx",
+    "**/*.test.tsx",
+    "**/*.stories.tsx"
+  ]
 }
