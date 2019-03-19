@@ -28,12 +28,9 @@ export interface ButtonProps extends BoxProps {
 }
 
 export const Button = styled('button').attrs(props => ({
-  type: 'button',
   className: cn('vital__button', props.className),
-  theme: defaultTheme,
   nature: 'default' as Nature,
   size: 'medium' as ButtonSize,
-  selected: false,
   disabled: false,
 }))<ButtonProps>`
   position: relative;
@@ -76,3 +73,8 @@ export const Button = styled('button').attrs(props => ({
   ${boxStyle};
   ${props => props.theme.button.buttonStyle};
 `;
+
+Button.defaultProps = {
+  type: 'button',
+  theme: defaultTheme,
+};
