@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-card",
-  "version": "0.9.15",
+  "version": "0.10.0",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -15,9 +15,9 @@
     "styled-components": "*"
   },
   "dependencies": {
-    "@vital-ui/react-badge": "^0.9.15",
-    "@vital-ui/react-theme": "^0.9.15",
-    "@vital-ui/react-utils": "^0.9.15",
+    "@vital-ui/react-badge": "^0.10.0",
+    "@vital-ui/react-theme": "^0.10.0",
+    "@vital-ui/react-utils": "^0.10.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {

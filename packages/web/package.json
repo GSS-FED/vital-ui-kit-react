@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react",
-  "version": "0.9.15",
+  "version": "0.10.0",
   "description": "Vital UI Kit for React!",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -26,20 +26,20 @@
     "web"
   ],
   "dependencies": {
-    "@vital-ui/react-avatar": "^0.9.15",
-    "@vital-ui/react-badge": "^0.9.15",
-    "@vital-ui/react-button": "^0.9.15",
-    "@vital-ui/react-card": "^0.9.15",
-    "@vital-ui/react-form": "^0.9.15",
-    "@vital-ui/react-icon": "^0.9.14",
-    "@vital-ui/react-list": "^0.9.15",
-    "@vital-ui/react-menu": "^0.9.15",
-    "@vital-ui/react-modal": "^0.9.15",
-    "@vital-ui/react-pill": "^0.9.15",
-    "@vital-ui/react-tabs": "^0.9.15",
-    "@vital-ui/react-theme": "^0.9.15",
-    "@vital-ui/react-tooltip": "^0.9.15",
-    "@vital-ui/react-utils": "^0.9.15"
+    "@vital-ui/react-avatar": "^0.10.0",
+    "@vital-ui/react-badge": "^0.10.0",
+    "@vital-ui/react-button": "^0.10.0",
+    "@vital-ui/react-card": "^0.10.0",
+    "@vital-ui/react-form": "^0.10.0",
+    "@vital-ui/react-icon": "^0.10.0",
+    "@vital-ui/react-list": "^0.10.0",
+    "@vital-ui/react-menu": "^0.10.0",
+    "@vital-ui/react-modal": "^0.10.0",
+    "@vital-ui/react-pill": "^0.10.0",
+    "@vital-ui/react-tabs": "^0.10.0",
+    "@vital-ui/react-theme": "^0.10.0",
+    "@vital-ui/react-tooltip": "^0.10.0",
+    "@vital-ui/react-utils": "^0.10.0"
   },
   "peerDependencies": {
     "react": "^16",
