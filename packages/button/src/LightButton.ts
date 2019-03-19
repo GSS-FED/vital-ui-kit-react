@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 import { Button } from './Button';
 import { natureColor } from './utils';
 
-export const lightStyle = ({ theme, nature }) =>
-  css`
+export const LightButton = styled(Button)`
+  ${({ theme, nature }) => css`
     background: ${theme.button.light.bg};
     color: ${natureColor(theme)[nature]};
 
@@ -13,8 +13,5 @@ export const lightStyle = ({ theme, nature }) =>
     &:active {
       background: ${theme.button.light.activeBg};
     }
-  `;
-
-export const LightButton = styled(Button)`
-  ${lightStyle};
+  `};
 `;
