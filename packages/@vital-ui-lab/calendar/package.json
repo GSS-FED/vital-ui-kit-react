@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.0",
-    "@vital-ui/react-utils": "^0.9.15",
+    "@vital-ui/react-utils": "^0.10.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
