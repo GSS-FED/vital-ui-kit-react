@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,7 +16,7 @@
     "styled-components": "*"
   },
   "dependencies": {
-    "@vital-ui/react-button": "^0.10.1",
+    "@vital-ui/react-button": "^0.10.2",
     "@vital-ui/react-icon": "^0.10.0",
     "@vital-ui/react-popup": "^0.10.0",
     "@vital-ui/react-theme": "^0.10.0",
