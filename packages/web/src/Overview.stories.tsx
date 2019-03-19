@@ -7,6 +7,9 @@ import {
   Button,
   ButtonProps,
   ButtonGroup,
+  LinkButton,
+  FlatButton,
+  SubtleButton,
 } from '@vital-ui/react-button';
 import { Card } from '@vital-ui/react-card';
 import { Avatar, AvatarProps } from '@vital-ui/react-avatar';
@@ -41,7 +44,7 @@ const AVATAR: Partial<AvatarProps>[] = [
   { gender: 'female', size: 'xlarge', circle: true, badge: 100 },
 ];
 
-const BUTTON_STYLE = ['default', 'flat', 'subtle', 'light'];
+const BUTTON_STYLE = [Button, FlatButton, SubtleButton, LinkButton];
 
 const NATRUE: ButtonProps['nature'][] = [
   'default',
@@ -74,48 +77,38 @@ storiesOf('Getting Started', module).add('Overview', () => (
         marginHorizontal="10px"
         style={{ paddingBottom: '20px' }}
       >
-        <Button link>Link</Button>
-        <Button dark link>
-          Dark Link
-        </Button>
-        <Button link underline>
-          Link underline
-        </Button>
-        <Button link underline dark>
+        <LinkButton>Link</LinkButton>
+        <LinkButton dark>Dark Link</LinkButton>
+        <LinkButton underline>Link underline</LinkButton>
+        <LinkButton underline dark>
           Dark Link underline
-        </Button>
+        </LinkButton>
       </ButtonGroup>
-      {BUTTON_STYLE.map((button, i) => (
+      {BUTTON_STYLE.map((SButton, i) => (
         <ButtonGroup
           key={i}
           marginHorizontal="10px"
           style={{ paddingBottom: '20px' }}
         >
           {NATRUE.map((nature, index) => (
-            <Button
-              nature={nature}
-              key={`next${index}`}
-              flat={button === 'flat'}
-              subtle={button === 'subtle'}
-              light={button === 'light'}
-            >
-              {nature === 'default' ? button : nature}
-            </Button>
+            <SButton key={`next${index}`} nature={nature}>
+              {nature === 'default' ? 'button' : nature}
+            </SButton>
           ))}
         </ButtonGroup>
       ))}
       <ButtonGroup>
         {SIZE.map((size, i) => (
-          <Button size={size} key={i} flat nature="primary">
+          <FlatButton size={size} key={i} nature="primary">
             {size}
-          </Button>
+          </FlatButton>
         ))}
       </ButtonGroup>
       <ButtonGroup>
         {SIZE.reverse().map((size, i) => (
-          <Button key={i} size={size} flat>
+          <FlatButton key={i} size={size}>
             {size}
-          </Button>
+          </FlatButton>
         ))}
       </ButtonGroup>
     </Section>
