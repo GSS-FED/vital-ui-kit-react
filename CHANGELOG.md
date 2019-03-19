@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.10.1 (2019-03-19)
+
+#### :bug: Bug Fix
+* `button`
+  * [#473](https://github.com/GSS-FED/vital-ui-kit-react/pull/473) Fix button type typescript ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.10.0 (2019-03-19)
 
 #### :rocket: Enhancement
