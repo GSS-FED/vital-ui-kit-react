@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.10.0 (2019-03-19)
+
+#### :rocket: Enhancement
+* `theme`
+  * [#467](https://github.com/GSS-FED/vital-ui-kit-react/pull/467) Add font-smoothing on vitalTypographyStyle ([@ericyip](https://github.com/ericyip))
+
+#### :bug: Bug Fix
+* `@vital-ui-lab/calendar`, `button`
+  * [#469](https://github.com/GSS-FED/vital-ui-kit-react/pull/469) Fix Circle button typo on storybook ([@ericyip](https://github.com/ericyip))
+
+#### :house: Internal
+* `@vital-ui-lab/calendar`, `@vital-ui-lab/chart`, `avatar`, `badge`, `button`, `card`, `form`, `list`, `menu`, `modal`, `pill`, `popup`, `tabs`, `tooltip`, `utils`
+  * [#468](https://github.com/GSS-FED/vital-ui-kit-react/pull/468) Add Calendar to lab ([@ericyip](https://github.com/ericyip))
+
+#### :boom: Breaking Change
+* `button`, `form`, `menu`, `tooltip`, `utils`
+  * [#466](https://github.com/GSS-FED/vital-ui-kit-react/pull/466) Separate button ([@ericyip](https://github.com/ericyip))
+
+#### Committers: 1
+- Eric Yip ([@ericyip](https://github.com/ericyip))
+
 ## 0.9.15 (2019-03-12)
 
 #### :rocket: Enhancement
