@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Vital UI Kit for React!",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -28,12 +28,12 @@
   "dependencies": {
     "@vital-ui/react-avatar": "^0.10.0",
     "@vital-ui/react-badge": "^0.10.0",
-    "@vital-ui/react-button": "^0.10.0",
+    "@vital-ui/react-button": "^0.10.1",
     "@vital-ui/react-card": "^0.10.0",
-    "@vital-ui/react-form": "^0.10.0",
+    "@vital-ui/react-form": "^0.10.1",
     "@vital-ui/react-icon": "^0.10.0",
     "@vital-ui/react-list": "^0.10.0",
-    "@vital-ui/react-menu": "^0.10.0",
+    "@vital-ui/react-menu": "^0.10.1",
     "@vital-ui/react-modal": "^0.10.0",
     "@vital-ui/react-pill": "^0.10.0",
     "@vital-ui/react-tabs": "^0.10.0",
