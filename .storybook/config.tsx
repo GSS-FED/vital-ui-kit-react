@@ -2,7 +2,11 @@
 import { withInfo } from '@storybook/addon-info';
 // @ts-ignore
 import { create } from '@storybook/theming';
-import { addParameters, configure } from '@storybook/react';
+import {
+  addParameters,
+  configure,
+  addDecorator,
+} from '@storybook/react';
 import * as React from 'react';
 import { withThemes } from 'storybook-styled-components';
 import { createGlobalStyle, css } from 'styled-components';
@@ -35,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
   ${fontFamily};
 `;
 
-addParameters(withInfo);
+addDecorator(withInfo);
 addParameters({
   options: {
     theme: create({
@@ -57,13 +61,13 @@ addParameters({
   },
 });
 
-addParameters(story => (
+addDecorator(story => (
   <>
     <GlobalStyle />
     {story()}
   </>
 ));
-addParameters(withThemes(vitalThemes));
+addDecorator(withThemes(vitalThemes));
 // automatically import all files ending in *.stories.js
 // @ts-ignore
 const req = require.context('../packages', true, /.stories.tsx$/);
