@@ -21,6 +21,6 @@
     "react-resize-detector": "^3.4.0"
   },
   "devDependencies": {
-    "typescript": "3.3.3333"
+    "typescript": "3.3.4000"
   }
 }
