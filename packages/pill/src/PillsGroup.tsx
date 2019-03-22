@@ -97,7 +97,9 @@ export class PillsGroup extends React.Component<
                 right={0}
                 maxWidth="300px"
               >
-                {dropdownItems}
+                {getDropdownListProps
+                  ? getDropdownListProps(dropdownItems)
+                  : getDropdownListProps}
               </PopupContent>
             }
           >
