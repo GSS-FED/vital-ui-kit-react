@@ -1,10 +1,10 @@
+import { darken, lighten } from 'polished';
 import styled, { css } from 'styled-components';
 import { Button } from './Button';
 import { natureColor } from './utils';
-import { lighten, darken } from 'polished';
 
-export const flatStyle = ({ nature, theme }) =>
-  css`
+export const FlatButton = styled(Button)`
+  ${({ theme, nature }) => css`
     background: ${nature === 'default'
       ? theme.button.flat.bg
       : natureColor(theme)[nature]};
@@ -31,8 +31,5 @@ export const flatStyle = ({ nature, theme }) =>
         ? theme.button.flat.activeBorderColor
         : darken(0.12, natureColor(theme)[nature])};
     }
-  `;
-
-export const FlatButton = styled(Button)`
-  ${flatStyle};
+  `}
 `;

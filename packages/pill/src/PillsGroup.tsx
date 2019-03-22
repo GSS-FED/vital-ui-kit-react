@@ -5,7 +5,8 @@
 
 import * as React from 'react';
 import styled from 'styled-components';
-import PriorityNav from 'react-priority-navigation';
+import { PriorityNav, ToggleButton } from 'react-priority-navigation';
+import { Popup, PopupContent } from '@vital-ui/react-popup';
 import cn from 'classnames';
 
 const Root = styled.div`
@@ -88,9 +89,23 @@ export class PillsGroup extends React.Component<
       <PriorityNav
         className={cn('vital__pill-group', className)}
         style={style}
-        dropdownList={
-          getDropdownListProps || (item => <div>{item}</div>)
-        }
+        dropdown={({ dropdownItems }) => (
+          <Popup
+            popup={
+              <PopupContent
+                position="absolute"
+                right={0}
+                maxWidth="300px"
+              >
+                {getDropdownListProps
+                  ? getDropdownListProps(dropdownItems)
+                  : getDropdownListProps}
+              </PopupContent>
+            }
+          >
+            <ToggleButton />
+          </Popup>
+        )}
       >
         {this.renderChildren()}
       </PriorityNav>
