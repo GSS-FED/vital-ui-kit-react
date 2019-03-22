@@ -10909,13 +10909,13 @@ react-popper@^1.3.3:
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
-react-priority-navigation@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-0.3.1.tgz#08efbcbd44dfb0ccc23adb886e493dac86f4d528"
-  integrity sha512-WQ7JOY9m4cO8qISgD+A9h3lN/+M/T5q0Fi8ObpG5uamQxspatV0V43MbcH9qtXahxi1VXnSHP/pb6hDB/1rm1Q==
+react-priority-navigation@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-1.0.1.tgz#03daca2cfa8604cc9e0732db180a9dda1d2d29d0"
+  integrity sha512-wC6aGxS83g7TMpXVokahtVw5u+F16UZa2W0mP9JBeOFWDRsUyqnb7PGzqsekFsLm7ZtzM0i0ALcRYWC2MHoWIg==
   dependencies:
     lodash.debounce "^4.0.8"
-    resize-observer-polyfill "^1.5.0"
+    resize-observer-polyfill "^1.5.1"
 
 react-resize-detector@^3.2.1, react-resize-detector@^3.4.0:
   version "3.4.0"
@@ -11435,7 +11435,7 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-resize-observer-polyfill@1.5.1, resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
+resize-observer-polyfill@1.5.1, resize-observer-polyfill@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
   integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Trigger from 'rc-trigger';
-// import 'rc-trigger/assets/index.css';
-
+import 'rc-trigger/assets/index.css';
 import { PopupContent } from './PopupContent';
 import { placements, Placement } from './placements';
 
@@ -32,7 +31,7 @@ interface PopupAlign {
   useCssTransform: boolean;
 }
 
-export interface PopupProps {
+interface Props {
   /** whether popup is visible */
   popupVisible?: boolean;
   /** which actions cause popup shown */
@@ -61,10 +60,12 @@ export interface PopupProps {
   stretch?: string;
   /** use preset popup align config from builtinPlacements, can be merged by popupAlign prop */
   popupPlacement?: any;
+  /** call when popup visible is changed */
+  onPopupVisibleChange: (v: boolean) => void;
 }
 
-export class Popup extends React.Component<PopupProps> {
-  static defaultProps: Partial<PopupProps> = {
+class Popup extends React.Component<Props> {
+  static defaultProps: Partial<Props> = {
     action: ['click'],
     placement: 'bottom',
     popupClassName: 'Vital__Popup',
@@ -92,4 +93,21 @@ export class Popup extends React.Component<PopupProps> {
       </Trigger>
     );
   }
+}
+
+export default Popup;
+
+export function usePopup(defaultOpen: boolean = false) {
+  const [isOpen, setIsOpen] = React.useState(defaultOpen);
+  return {
+    isOpen,
+    setIsOpen,
+    bindRoot: {
+      onClick: () => setIsOpen(true),
+    },
+    bind: {
+      popupVisible: isOpen,
+      onPopupVisibleChange: (v: boolean) => !v && setIsOpen(v),
+    },
+  };
 }
