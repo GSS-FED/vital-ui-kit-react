@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-button",
-  "version": "0.10.4",
+  "version": "0.10.5",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -15,8 +15,8 @@
     "styled-components": "*"
   },
   "dependencies": {
-    "@vital-ui/react-theme": "^0.10.4",
-    "@vital-ui/react-utils": "^0.10.4",
+    "@vital-ui/react-theme": "^0.10.5",
+    "@vital-ui/react-utils": "^0.10.5",
     "classnames": "^2.2.6",
     "polished": "^3.0.0",
     "styled-map": "^3.2.0-rc.1"
