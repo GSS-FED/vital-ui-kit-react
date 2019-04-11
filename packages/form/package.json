@@ -1,6 +1,6 @@
 {
   "name": "@vital-ui/react-form",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
@@ -16,12 +16,12 @@
     "styled-components": "*"
   },
   "dependencies": {
-    "@vital-ui/react-button": "^0.10.3",
-    "@vital-ui/react-icon": "^0.10.0",
-    "@vital-ui/react-popup": "^0.10.0",
-    "@vital-ui/react-theme": "^0.10.0",
-    "@vital-ui/react-tooltip": "^0.10.0",
-    "@vital-ui/react-utils": "^0.10.0",
+    "@vital-ui/react-button": "^0.10.4",
+    "@vital-ui/react-icon": "^0.10.4",
+    "@vital-ui/react-popup": "^0.10.4",
+    "@vital-ui/react-theme": "^0.10.4",
+    "@vital-ui/react-tooltip": "^0.10.4",
+    "@vital-ui/react-utils": "^0.10.4",
     "classnames": "^2.2.6",
     "downshift": "^3.1.12",
     "polished": "3.1.0",
