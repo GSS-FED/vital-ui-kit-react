@@ -19,7 +19,7 @@
     "@vital-ui/react-theme": "^0.10.0",
     "@vital-ui/react-utils": "^0.10.0",
     "classnames": "^2.2.6",
-    "react-priority-navigation": "0.3.1"
+    "react-priority-navigation": "1.0.1"
   },
   "devDependencies": {
     "typescript": "3.3.4000"

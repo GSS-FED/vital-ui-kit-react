@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Trigger from 'rc-trigger';
-// import 'rc-trigger/assets/index.css';
-
+import 'rc-trigger/assets/index.css';
 import { PopupContent } from './PopupContent';
 import { placements, Placement } from './placements';
 
@@ -61,6 +60,8 @@ export interface PopupProps {
   stretch?: string;
   /** use preset popup align config from builtinPlacements, can be merged by popupAlign prop */
   popupPlacement?: any;
+  /** call when popup visible is changed */
+  onPopupVisibleChange: (v: boolean) => void;
 }
 
 export class Popup extends React.Component<PopupProps> {
@@ -92,4 +93,19 @@ export class Popup extends React.Component<PopupProps> {
       </Trigger>
     );
   }
+}
+
+export function usePopup(defaultOpen: boolean = false) {
+  const [isOpen, setIsOpen] = React.useState(defaultOpen);
+  return {
+    isOpen,
+    setIsOpen,
+    bindRoot: {
+      onClick: () => setIsOpen(true),
+    },
+    bind: {
+      popupVisible: isOpen,
+      onPopupVisibleChange: (v: boolean) => !v && setIsOpen(v),
+    },
+  };
 }
