@@ -11413,10 +11413,10 @@ react-popper@^1.3.3:
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
-react-priority-navigation@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-1.0.1.tgz#03daca2cfa8604cc9e0732db180a9dda1d2d29d0"
-  integrity sha512-wC6aGxS83g7TMpXVokahtVw5u+F16UZa2W0mP9JBeOFWDRsUyqnb7PGzqsekFsLm7ZtzM0i0ALcRYWC2MHoWIg==
+react-priority-navigation@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-priority-navigation/-/react-priority-navigation-1.0.2.tgz#3c544a9d8d7a6382c453a8cb775c61c940b85003"
+  integrity sha512-DsPa30k7RzgkfmiUL8YWuEPsIGz32N9rlwgHjs3/MElbQHdRR3nCN3a937dFsoTwxhLKaQFmghWasMZ3ClQmmQ==
   dependencies:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.1"
