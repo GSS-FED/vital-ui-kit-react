@@ -1,0 +1,44 @@
+{
+  "name": "data-table",
+  "version": "0.10.5",
+  "description": "> TODO: description",
+  "author": "jason_su <jason_su@gss.com.tw>",
+  "homepage": "https://github.com/GSS-FED/vital-ui-kit-react#readme",
+  "license": "ISC",
+  "main": "cjs/index.js",
+  "module": "dist/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSS-FED/vital-ui-kit-react.git"
+  },
+  "scripts": {
+    "clean": "rm -rf dist lib",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
+  },
+  "bugs": {
+    "url": "https://github.com/GSS-FED/vital-ui-kit-react/issues"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "*"
+  },
+  "dependencies": {
+    "@vital-ui/react-badge": "^0.10.5",
+    "@vital-ui/react-theme": "^0.10.5",
+    "@vital-ui/react-utils": "^0.10.5",
+    "classnames": "^2.2.6",
+    "namor": "^1.1.3",
+    "react-table": "^7.0.0-beta.10"
+  },
+  "devDependencies": {
+    "typescript": "3.3.4000"
+  }
+}
