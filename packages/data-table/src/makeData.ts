@@ -11,6 +11,9 @@ const range = len => {
 const newPerson = () => {
   const statusChance = Math.random();
   return {
+    avatar:
+      'https://loremflickr.com/320/240?random=' +
+      Math.floor(Math.random() * 30),
     name: namor.generate({ words: 1, numbers: 0 }),
     gender: namor.generate({ words: 1, numbers: 0 }),
     age: Math.floor(Math.random() * 30),

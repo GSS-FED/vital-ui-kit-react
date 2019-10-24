@@ -72,7 +72,7 @@ const TablePagination = styled.div`
   padding: 4px 24px;
   background: #f9f9fa;
 `;
-const PaginationButton = styled.div<PaginationButtonProps>`
+const PaginationBtn = styled.div<PaginationButtonProps>`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -111,7 +111,7 @@ const PaginationInput = styled.input<PaginationInputProps>`
   text-align: center;
 `;
 
-const PaginationButtonGroup = styled.div`
+const PaginationBtnGroup = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -144,16 +144,19 @@ const PageBtn = styled.li<PageBtnProps>`
   }
 `;
 
-interface IconProps {
-  left?: boolean;
-}
-// TODO: name
-const Icon = styled.div<IconProps>`
+const NextBtn = styled.div`
   width: 8px;
   line-height: 8px;
-  transform: ${props => (props.left ? 'rotate(180deg)' : 'none')};
-  margin-right: ${props => (props.left ? '4px' : '0')};
-  margin-left: ${props => (props.left ? '0' : '4px')};
+  margin-left: 4px;
+  & svg {
+    fill: #848492;
+  }
+`;
+const PrevBtn = styled.div`
+  width: 8px;
+  line-height: 8px;
+  transform: rotate(180deg);
+  margin-right: 4px;
   & svg {
     fill: #848492;
   }
@@ -225,8 +228,7 @@ export default function DataTable({
                     key={column.id}
                   >
                     <Flex>
-                      {isSortBy &&
-                      typeof column.Header === 'string' ? (
+                      {isSortBy && typeof column.Header === 'string' && (
                         <SortIconWrapper>
                           <Sort
                             iconType={
@@ -238,8 +240,6 @@ export default function DataTable({
                             }
                           />
                         </SortIconWrapper>
-                      ) : (
-                        ''
                       )}
                       {column.render('Header')}
                     </Flex>
@@ -260,14 +260,9 @@ export default function DataTable({
                         // 沒寫 key，因為 key 在 cell.getCellProps() 裡，故 disable tslint
                         // tslint:disable-next-line
                         <td {...cell.getCellProps()}>
-                          {cell.column.Header === 'Name' && (
-                            <AvatarWrapper
-                              size="small"
-                              circle={true}
-                              src="http://placebeard.it/16x16"
-                            />
-                          )}
-                          {cell.render('Cell')}
+                          {!!cell.column.renderer
+                            ? cell.column.renderer(cell.row.original)
+                            : cell.render('Cell')}
                         </td>
                       );
                     })}
@@ -286,22 +281,22 @@ export default function DataTable({
       </TableWrapper>
       {isPagination && (
         <TablePagination>
-          <PaginationButtonGroup>
-            <PaginationButton
+          <PaginationBtnGroup>
+            <PaginationBtn
               onClick={() => gotoPage(0)}
               disabled={!canPreviousPage}
             >
               First
-            </PaginationButton>
-            <PaginationButton
+            </PaginationBtn>
+            <PaginationBtn
               onClick={() => previousPage()}
               disabled={!canPreviousPage}
             >
-              <Icon left>
+              <PrevBtn>
                 <Chevron />
-              </Icon>
+              </PrevBtn>
               Prev
-            </PaginationButton>
+            </PaginationBtn>
             <PageBtnGroup>
               {pageIndex >= 3 && (
                 <PageBtn
@@ -346,21 +341,21 @@ export default function DataTable({
                 </PageBtn>
               )}
             </PageBtnGroup>
-            <PaginationButton
+            <PaginationBtn
               onClick={() => nextPage()}
               disabled={!canNextPage}
             >
               Next
-              <Icon>
+              <NextBtn>
                 <Chevron />
-              </Icon>
-            </PaginationButton>
-            <PaginationButton
+              </NextBtn>
+            </PaginationBtn>
+            <PaginationBtn
               onClick={() => gotoPage(pageCount - 1)}
               disabled={!canNextPage}
             >
               Last
-            </PaginationButton>
+            </PaginationBtn>
             <PaginationInputWrapper>
               Goto
               <PaginationInput
@@ -374,7 +369,7 @@ export default function DataTable({
                 }}
               />
             </PaginationInputWrapper>
-          </PaginationButtonGroup>
+          </PaginationBtnGroup>
           <div>
             {/* <span>
               Page

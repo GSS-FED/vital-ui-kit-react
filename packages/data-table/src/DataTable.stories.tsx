@@ -6,11 +6,16 @@ import { withKnobs, boolean } from '@storybook/addon-knobs/react';
 import DataTable from './DataTable';
 import makeData from './makeData';
 import { Caret } from './Caret';
+import { Avatar } from '../../avatar';
 
 storiesOf('Packages | DataTable', module)
   .addDecorator(withKnobs)
   .add('Basic DataTable', TableExample);
 
+const AvatarWrapper = styled(Avatar)`
+  margin-right: 8px;
+  vertical-align: middle;
+`;
 const LeftCaret = styled.span`
   & svg {
     width: 8px;
@@ -88,13 +93,22 @@ function TableExample() {
     {
       Header: 'Name',
       accessor: 'name',
-      fixed: 'left',
+      renderer: original => {
+        return (
+          <>
+            <AvatarWrapper
+              size="small"
+              circle={true}
+              src={original.avatar}
+            />
+            {original.name}
+          </>
+        );
+      },
     },
     {
       Header: 'Age',
       accessor: 'age',
-      fixed: 'right',
-      // cellRender: 'customerFunction',
     },
     {
       Header: 'Gender',
