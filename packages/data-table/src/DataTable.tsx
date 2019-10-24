@@ -7,7 +7,6 @@ import {
   useExpanded,
   useRowSelect,
 } from 'react-table';
-import { Avatar } from '../../avatar';
 import { Chevron } from './Chevron';
 import { Sort } from './Sort';
 
@@ -58,10 +57,6 @@ const TableBody = styled.tbody`
       background: #f0f0f2;
     }
   }
-`;
-const AvatarWrapper = styled(Avatar)`
-  margin-right: 8px;
-  vertical-align: middle;
 `;
 
 const TablePagination = styled.div`
