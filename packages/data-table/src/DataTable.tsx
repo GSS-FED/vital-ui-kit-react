@@ -211,7 +211,7 @@ export default function DataTable({
       <TableWrapper {...getTableProps()}>
         <TableHead>
           {headerGroups.map(headerGroup => (
-            // key 在 headerGroup.getHeaderGroupProps() 裡
+            // 沒寫 key，因為 key 在 headerGroup.getHeaderGroupProps() 裡，故 disable tslint
             // tslint:disable-next-line
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map(column => {
@@ -257,7 +257,7 @@ export default function DataTable({
                   <tr {...row.getRowProps()}>
                     {row.cells.map(cell => {
                       return (
-                        // key 在 cell.getCellProps() 裡
+                        // 沒寫 key，因為 key 在 cell.getCellProps() 裡，故 disable tslint
                         // tslint:disable-next-line
                         <td {...cell.getCellProps()}>
                           {cell.column.Header === 'Name' && (
@@ -324,13 +324,12 @@ export default function DataTable({
                       page >= pageOptions.length - 5),
                 )
                 .map(page => (
-                  // tslint:disable-next-line
                   <PageBtn
+                    key={page}
                     current={page === pageIndex}
                     onClick={() => gotoPage(page)}
                   >
                     {page + 1}
-                    {console.log(page, 'page')}
                   </PageBtn>
                 ))}
               {pageIndex <= pageOptions.length - 4 && (
