@@ -34,7 +34,7 @@ const DownCaret = styled.span`
 function TableExample() {
   const fakeData = makeData(1200);
   const isExpanded = boolean('isExpanded', true);
-  const isRowSelect = boolean('isRowSelect', false);
+  const isRowSelect = boolean('isRowSelect', true);
   const isSortBy = boolean('isSortBy', true);
   const isPagination = boolean('isPagination', true);
   const renderRowSubComponent = ({ row }) => (
@@ -71,12 +71,10 @@ function TableExample() {
           // The header can use the table's getToggleAllRowsSelectedProps method
           // to render a checkbox
           Header: ({ getToggleAllRowsSelectedProps }) => (
-            <div>
-              <input
-                type="checkbox"
-                {...getToggleAllRowsSelectedProps()}
-              />
-            </div>
+            <input
+              type="checkbox"
+              {...getToggleAllRowsSelectedProps()}
+            />
           ),
           // The cell can use the individual row's getToggleRowSelectedProps method
           // to the render a checkbox

@@ -9,48 +9,58 @@ import {
 } from 'react-table';
 import { Chevron } from './Chevron';
 import { Sort } from './Sort';
-
+import { Flex } from '../../utils/src/box/index';
 interface PaginationButtonProps {
   disabled: boolean;
 }
-
+interface TableTdProps {
+  center?: boolean;
+}
+interface TableHeadThProps {
+  short?: boolean;
+}
 const DataTableWrapper = styled.div`
   text-align: center;
 `;
 const TableWrapper = styled.table`
+  table-layout: fixed;
   border-spacing: 0;
   width: 100%;
   font-size: 14px;
-  th,
-  td {
-    margin: 0;
-    padding: 8px 24px;
-    font-weight: normal;
-    color: #848494;
-    text-align: left;
-  }
 `;
+
+const TableTd = styled.td<TableTdProps>`
+  margin: 0;
+  padding: ${props => (props.center ? '8px 0' : '8px 24px')};
+  font-weight: normal;
+  color: #848494;
+  text-align: ${props => (props.center ? 'center' : 'left')};
+`;
+
 const TableHead = styled.thead`
   text-align: left;
   border-bottom: 2px solid #f0f0f2;
-  & tr {
-    background: #fff;
-  }
-  & th {
-    padding: 8px 24px;
-    color: #000;
-    font-weight: 300;
-  }
 `;
-const TableBody = styled.tbody`
-  tr:nth-child(even) {
+const TableHeadTr = styled.tr`
+  background: #fff;
+`;
+
+const TableHeadTh = styled.th<TableHeadThProps>`
+  padding: 8px 24px;
+  color: #000;
+  font-weight: 300;
+  width: ${props => (props.short ? '48px' : 'auto')};
+`;
+const TableBody = styled.tbody``;
+const TableBodyTr = styled.tr`
+  &:nth-child(even) {
     background: #fff;
     transition: all 0.3s;
     &:hover {
       background: #f0f0f2;
     }
   }
-  tr:nth-child(odd) {
+  &:nth-child(odd) {
     background-color: #f9f9fa;
     transition: all 0.3s;
     &:hover {
@@ -58,7 +68,6 @@ const TableBody = styled.tbody`
     }
   }
 `;
-
 const TablePagination = styled.div`
   font-size: 14px;
   display: flex;
@@ -160,10 +169,6 @@ const SortIconWrapper = styled.div`
   width: 8px;
   margin-right: 4px;
 `;
-const Flex = styled.div`
-  display: flex;
-  align-items: center;
-`;
 
 export default function DataTable({
   columns,
@@ -208,66 +213,86 @@ export default function DataTable({
     <DataTableWrapper>
       <TableWrapper {...getTableProps()}>
         <TableHead>
-          {headerGroups.map(headerGroup => (
-            // 沒寫 key，因為 key 在 headerGroup.getHeaderGroupProps() 裡，故 disable tslint
-            // tslint:disable-next-line
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map(column => {
-                return (
-                  <th
-                    {...(isSortBy
-                      ? column.getHeaderProps(
-                          column.getSortByToggleProps(),
-                        )
-                      : column.getHeaderProps())}
-                    key={column.id}
-                  >
-                    <Flex>
-                      {isSortBy && typeof column.Header === 'string' && (
-                        <SortIconWrapper>
-                          <Sort
-                            iconType={
-                              column.isSorted
-                                ? column.isSortedDesc
-                                  ? 'desc'
-                                  : 'asc'
-                                : 'init'
-                            }
-                          />
-                        </SortIconWrapper>
-                      )}
-                      {column.render('Header')}
-                    </Flex>
-                  </th>
-                );
-              })}
-            </tr>
-          ))}
+          {headerGroups.map(headerGroup => {
+            let {
+              key: trKey,
+              ...HeaderGroupProps
+            }: any = headerGroup.getHeaderGroupProps();
+            return (
+              <TableHeadTr key={trKey} {...HeaderGroupProps}>
+                {headerGroup.headers.map(column => {
+                  const isHeaderString =
+                    typeof column.Header === 'string';
+                  return (
+                    <TableHeadTh
+                      short={!isHeaderString}
+                      {...(isSortBy
+                        ? column.getHeaderProps(
+                            column.getSortByToggleProps(),
+                          )
+                        : column.getHeaderProps())}
+                      key={column.id}
+                    >
+                      <Flex
+                        justifyContent={
+                          isHeaderString ? 'flex-start' : 'center'
+                        }
+                      >
+                        {isSortBy && isHeaderString && (
+                          <SortIconWrapper>
+                            <Sort
+                              iconType={
+                                column.isSorted
+                                  ? column.isSortedDesc
+                                    ? 'desc'
+                                    : 'asc'
+                                  : 'init'
+                              }
+                            />
+                          </SortIconWrapper>
+                        )}
+                        {column.render('Header')}
+                      </Flex>
+                    </TableHeadTh>
+                  );
+                })}
+              </TableHeadTr>
+            );
+          })}
         </TableHead>
         <TableBody {...getTableBodyProps()}>
           {(isPagination ? page : rows).map(
             (row, i) =>
               prepareRow(row) || (
                 <>
-                  <tr {...row.getRowProps()}>
+                  <TableBodyTr {...row.getRowProps()}>
                     {row.cells.map(cell => {
+                      let {
+                        key: tdKey,
+                        ...cells
+                      }: any = cell.getCellProps();
+                      const isCenter = !(
+                        typeof cell.column.Header === 'string'
+                      );
                       return (
-                        // 沒寫 key，因為 key 在 cell.getCellProps() 裡，故 disable tslint
-                        // tslint:disable-next-line
-                        <td {...cell.getCellProps()}>
+                        <TableTd
+                          center={isCenter}
+                          key={tdKey}
+                          {...cells}
+                        >
                           {!!cell.column.renderer
                             ? cell.column.renderer(cell.row.original)
                             : cell.render('Cell')}
-                        </td>
+                        </TableTd>
                       );
                     })}
-                  </tr>
+                  </TableBodyTr>
                   {row.isExpanded ? (
-                    <tr>
-                      <td colSpan={flatColumns.length}>
+                    <TableBodyTr>
+                      <TableTd colSpan={flatColumns.length}>
                         {renderRowSubComponent({ row })}
-                      </td>
-                    </tr>
+                      </TableTd>
+                    </TableBodyTr>
                   ) : null}
                 </>
               ),
