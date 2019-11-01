@@ -19,6 +19,17 @@ interface TableTdProps {
 interface TableHeadThProps {
   short?: boolean;
 }
+
+interface PaginationInputProps {
+  type: string;
+  defaultValue?: any;
+  onChange: (e: any) => void;
+}
+
+interface PageBtnProps {
+  current?: boolean;
+  onClick: () => void;
+}
 const DataTableWrapper = styled.div`
   text-align: center;
 `;
@@ -102,12 +113,6 @@ const PaginationInputWrapper = styled.div`
   padding: 4px 8px;
 `;
 
-interface PaginationInputProps {
-  type: string;
-  defaultValue?: any;
-  onChange: (e: any) => void;
-}
-
 const PaginationInput = styled.input<PaginationInputProps>`
   max-width: 56px;
   margin-left: 8px;
@@ -123,11 +128,6 @@ const PageBtnGroup = styled.ul`
   display: flex;
   align-items: center;
 `;
-
-interface PageBtnProps {
-  current?: boolean;
-  onClick: () => void;
-}
 
 const PageBtn = styled.li<PageBtnProps>`
   cursor: pointer;
@@ -209,6 +209,17 @@ export default function DataTable({
     usePagination,
   );
 
+  function SubTrComponent({ row, isExpanded }: any) {
+    if (!isExpanded) return null;
+    return (
+      <TableBodyTr>
+        <TableTd colSpan={flatColumns.length}>
+          {renderRowSubComponent({ row })}
+        </TableTd>
+      </TableBodyTr>
+    );
+  }
+
   return (
     <DataTableWrapper>
       <TableWrapper {...getTableProps()}>
@@ -261,42 +272,42 @@ export default function DataTable({
           })}
         </TableHead>
         <TableBody {...getTableBodyProps()}>
-          {(isPagination ? page : rows).map(
-            (row, i) =>
-              prepareRow(row) || (
-                <>
-                  <TableBodyTr {...row.getRowProps()}>
-                    {row.cells.map(cell => {
-                      let {
-                        key: tdKey,
-                        ...cells
-                      }: any = cell.getCellProps();
-                      const isCenter = !(
-                        typeof cell.column.Header === 'string'
-                      );
-                      return (
-                        <TableTd
-                          center={isCenter}
-                          key={tdKey}
-                          {...cells}
-                        >
-                          {!!cell.column.renderer
-                            ? cell.column.renderer(cell.row.original)
-                            : cell.render('Cell')}
-                        </TableTd>
-                      );
-                    })}
-                  </TableBodyTr>
-                  {row.isExpanded ? (
-                    <TableBodyTr>
-                      <TableTd colSpan={flatColumns.length}>
-                        {renderRowSubComponent({ row })}
+          {(isPagination ? page : rows).map((row, i) => {
+            return (
+              prepareRow(row) || [
+                <TableBodyTr
+                  {...row.getRowProps()}
+                  key={'row_' + row.index.toString()}
+                >
+                  {row.cells.map(cell => {
+                    let {
+                      key: tdKey,
+                      ...cells
+                    }: any = cell.getCellProps();
+                    const isCenter = !(
+                      typeof cell.column.Header === 'string'
+                    );
+                    return (
+                      <TableTd
+                        center={isCenter}
+                        key={tdKey}
+                        {...cells}
+                      >
+                        {!!cell.column.renderer
+                          ? cell.column.renderer(cell.row.original)
+                          : cell.render('Cell')}
                       </TableTd>
-                    </TableBodyTr>
-                  ) : null}
-                </>
-              ),
-          )}
+                    );
+                  })}
+                </TableBodyTr>,
+                <SubTrComponent
+                  key={'row_' + row.index.toString() + 'sub'}
+                  row={row}
+                  isExpanded={row.isExpanded}
+                />,
+              ]
+            );
+          })}
         </TableBody>
       </TableWrapper>
       {isPagination && (
