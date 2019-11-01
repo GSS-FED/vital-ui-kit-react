@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import {
   useTable,
@@ -225,7 +225,7 @@ export default function DataTable({
       <TableWrapper {...getTableProps()}>
         <TableHead>
           {headerGroups.map(headerGroup => {
-            let {
+            const {
               key: trKey,
               ...HeaderGroupProps
             }: any = headerGroup.getHeaderGroupProps();
@@ -274,38 +274,36 @@ export default function DataTable({
         <TableBody {...getTableBodyProps()}>
           {(isPagination ? page : rows).map((row, i) => {
             return (
-              prepareRow(row) || [
-                <TableBodyTr
-                  {...row.getRowProps()}
-                  key={'row_' + row.index.toString()}
-                >
-                  {row.cells.map(cell => {
-                    let {
-                      key: tdKey,
-                      ...cells
-                    }: any = cell.getCellProps();
-                    const isCenter = !(
-                      typeof cell.column.Header === 'string'
-                    );
-                    return (
-                      <TableTd
-                        center={isCenter}
-                        key={tdKey}
-                        {...cells}
-                      >
-                        {!!cell.column.renderer
-                          ? cell.column.renderer(cell.row.original)
-                          : cell.render('Cell')}
-                      </TableTd>
-                    );
-                  })}
-                </TableBodyTr>,
-                <SubTrComponent
-                  key={'row_' + row.index.toString() + 'sub'}
-                  row={row}
-                  isExpanded={row.isExpanded}
-                />,
-              ]
+              prepareRow(row) || (
+                <Fragment key={'row_' + row.index.toString()}>
+                  <TableBodyTr {...row.getRowProps()}>
+                    {row.cells.map(cell => {
+                      const {
+                        key: tdKey,
+                        ...cells
+                      }: any = cell.getCellProps();
+                      const isCenter = !(
+                        typeof cell.column.Header === 'string'
+                      );
+                      return (
+                        <TableTd
+                          center={isCenter}
+                          key={tdKey}
+                          {...cells}
+                        >
+                          {!!cell.column.renderer
+                            ? cell.column.renderer(cell.row.original)
+                            : cell.render('Cell')}
+                        </TableTd>
+                      );
+                    })}
+                  </TableBodyTr>
+                  <SubTrComponent
+                    row={row}
+                    isExpanded={row.isExpanded}
+                  />
+                </Fragment>
+              )
             );
           })}
         </TableBody>
