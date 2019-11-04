@@ -8,8 +8,10 @@ import {
   useRowSelect,
 } from 'react-table';
 import { Chevron } from './Chevron';
+import { EmptyIconSvg } from './EmptyIconSvg';
 import { Sort } from './Sort';
 import { Flex } from '../../utils/src/box/index';
+import { functionDeclaration } from '@babel/types';
 interface PaginationButtonProps {
   disabled: boolean;
 }
@@ -47,6 +49,10 @@ const TableTd = styled.td<TableTdProps>`
   color: #848494;
   text-align: ${props => (props.center ? 'center' : 'left')};
 `;
+const EmptyTd = styled.td`
+  pointer-events: none;
+  padding: 24px 0;
+`;
 
 const TableHead = styled.thead`
   text-align: left;
@@ -64,14 +70,14 @@ const TableHeadTh = styled.th<TableHeadThProps>`
 `;
 const TableBody = styled.tbody``;
 const TableBodyTr = styled.tr`
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background: #fff;
     transition: all 0.3s;
     &:hover {
       background: #f0f0f2;
     }
   }
-  &:nth-child(odd) {
+  &:nth-child(even) {
     background-color: #f9f9fa;
     transition: all 0.3s;
     &:hover {
@@ -170,6 +176,15 @@ const SortIconWrapper = styled.div`
   margin-right: 4px;
 `;
 
+const EmptyTitle = styled.p`
+  font-size: 20px;
+  color: #848492;
+  margin: 8px 0;
+`;
+const EmptyDes = styled.p`
+  font-size: 14px;
+  color: #a8a8b2;
+`;
 export default function DataTable({
   columns,
   data,
@@ -216,6 +231,18 @@ export default function DataTable({
         <TableTd colSpan={flatColumns.length}>
           {renderRowSubComponent({ row })}
         </TableTd>
+      </TableBodyTr>
+    );
+  }
+
+  function EmptyTrComponent() {
+    return (
+      <TableBodyTr>
+        <EmptyTd colSpan={flatColumns.length}>
+          <EmptyIconSvg />
+          <EmptyTitle>There is no item.</EmptyTitle>
+          <EmptyDes>Now you can start adding an item.</EmptyDes>
+        </EmptyTd>
       </TableBodyTr>
     );
   }
@@ -272,40 +299,46 @@ export default function DataTable({
           })}
         </TableHead>
         <TableBody {...getTableBodyProps()}>
-          {(isPagination ? page : rows).map((row, i) => {
-            return (
-              prepareRow(row) || (
-                <Fragment key={'row_' + row.index.toString()}>
-                  <TableBodyTr {...row.getRowProps()}>
-                    {row.cells.map(cell => {
-                      const {
-                        key: tdKey,
-                        ...cells
-                      }: any = cell.getCellProps();
-                      const isCenter = !(
-                        typeof cell.column.Header === 'string'
-                      );
-                      return (
-                        <TableTd
-                          center={isCenter}
-                          key={tdKey}
-                          {...cells}
-                        >
-                          {!!cell.column.renderer
-                            ? cell.column.renderer(cell.row.original)
-                            : cell.render('Cell')}
-                        </TableTd>
-                      );
-                    })}
-                  </TableBodyTr>
-                  <SubTrComponent
-                    row={row}
-                    isExpanded={row.isExpanded}
-                  />
-                </Fragment>
-              )
-            );
-          })}
+          {rows.length ? (
+            (isPagination ? page : rows).map((row, i) => {
+              return (
+                prepareRow(row) || (
+                  <Fragment key={'row_' + row.index.toString()}>
+                    <TableBodyTr {...row.getRowProps()}>
+                      {row.cells.map(cell => {
+                        const {
+                          key: tdKey,
+                          ...cells
+                        }: any = cell.getCellProps();
+                        const isCenter = !(
+                          typeof cell.column.Header === 'string'
+                        );
+                        return (
+                          <TableTd
+                            center={isCenter}
+                            key={tdKey}
+                            {...cells}
+                          >
+                            {!!cell.column.renderer
+                              ? cell.column.renderer(
+                                  cell.row.original,
+                                )
+                              : cell.render('Cell')}
+                          </TableTd>
+                        );
+                      })}
+                    </TableBodyTr>
+                    <SubTrComponent
+                      row={row}
+                      isExpanded={row.isExpanded}
+                    />
+                  </Fragment>
+                )
+              );
+            })
+          ) : (
+            <EmptyTrComponent />
+          )}
         </TableBody>
       </TableWrapper>
       {isPagination && (

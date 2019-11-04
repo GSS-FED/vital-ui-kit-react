@@ -32,7 +32,7 @@ const DownCaret = styled.span`
   }
 `;
 function TableExample() {
-  const fakeData = makeData(1200);
+  const fakeData = makeData(0);
   const isExpanded = boolean('isExpanded', true);
   const isRowSelect = boolean('isRowSelect', true);
   const isSortBy = boolean('isSortBy', true);
