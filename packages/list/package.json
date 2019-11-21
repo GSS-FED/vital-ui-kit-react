@@ -19,7 +19,7 @@
     "@vital-ui/react-theme": "^0.10.5",
     "@vital-ui/react-utils": "^0.10.5",
     "classnames": "^2.2.6",
-    "popmotion": "8.5.5"
+    "popmotion": "8.7.1"
   },
   "devDependencies": {
     "typescript": "3.3.4000"
