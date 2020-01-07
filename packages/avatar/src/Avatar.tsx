@@ -97,6 +97,7 @@ export interface AvatarProps extends BoxProps {
   /** Default is `vital__avatar-badge` */
   badgeClassName?: string;
   theme?: any;
+  imgProps?: React.PropsWithRef<typeof Image>;
 }
 
 /**
@@ -135,8 +136,10 @@ export class Avatar extends React.Component<AvatarProps> {
       containerClassName,
       imageClassName,
       badgeClassName,
+      imgProps,
       ...props
     } = this.props;
+
     return (
       <Root
         circle={circle}
@@ -151,6 +154,7 @@ export class Avatar extends React.Component<AvatarProps> {
             size={size}
             circle={circle}
             style={imageStyle}
+            {...imgProps}
           />
         ) : (
           <ImageWrapper
