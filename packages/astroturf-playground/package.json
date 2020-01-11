@@ -1,0 +1,30 @@
+{
+  "name": "@vital-ui/astroturf-playground",
+  "version": "0.10.5",
+  "description": "temp",
+  "main": "cjs/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist cjs",
+    "compile": "tsc && tsc --module commonjs --outdir cjs"
+  },
+  "files": [
+    "dist",
+    "cjs",
+    "src"
+  ],
+  "sideEffects": false,
+  "author": "Eric Yip (https://github.com/ericyip)",
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16",
+    "styled-components": "*"
+  },
+  "dependencies": {
+    "astroturf": "^0.10.2",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "typescript": "3.3.4000"
+  }
+}

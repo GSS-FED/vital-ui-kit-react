@@ -1,0 +1,19 @@
+$animation-length: 250;
+
+.compo {
+  background: #000;
+}
+
+.button {
+  color: black;
+  border: 5px solid black;
+  background-color: white;
+
+  &-abc{
+    color:blue;
+  }
+}
+
+:export {
+  asas: $animation-length;
+}

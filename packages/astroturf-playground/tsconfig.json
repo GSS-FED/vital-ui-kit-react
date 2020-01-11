@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "**/__tests__",
+    "**/__mocks__",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "**/*.stories.tsx"
+  ]
+}
