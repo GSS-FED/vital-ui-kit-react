@@ -24,6 +24,7 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.5",
     "@vital-ui/react-utils": "^0.10.5",
+    "astroturf": "^0.10.2",
     "classnames": "^2.2.6"
   },
   "devDependencies": {

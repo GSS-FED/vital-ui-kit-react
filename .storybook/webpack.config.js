@@ -1,21 +1,21 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 module.exports = ({ config, mode }) => {
-  //babel-loader@8 installed and @babel/core@7
-  config.module.rules[0].use[0].loader = require.resolve(
-    'babel-loader',
-  );
+  // //babel-loader@8 installed and @babel/core@7
+  // config.module.rules[0].use[0].loader = require.resolve(
+  //   'babel-loader',
+  // );
 
-  config.module.rules[0].use[0].options.presets = [
-    require.resolve('@babel/preset-react'),
-    require.resolve('@babel/preset-env'),
-  ];
+  // config.module.rules[0].use[0].options.presets = [
+  //   require.resolve('@babel/preset-react'),
+  //   require.resolve('@babel/preset-env'),
+  // ];
 
-  // any plugin you want to add
-  config.module.rules[0].use[0].options.plugins = [
-    require.resolve('@babel/plugin-proposal-object-rest-spread'),
-    require.resolve('babel-plugin-styled-components'),
-  ];
+  // // any plugin you want to add
+  // config.module.rules[0].use[0].options.plugins = [
+  //   require.resolve('@babel/plugin-proposal-object-rest-spread'),
+  //   require.resolve('babel-plugin-styled-components'),
+  // ];
 
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
@@ -60,8 +60,23 @@ module.exports = ({ config, mode }) => {
           parser: 'typescript',
         },
       },
+      {
+        loader: 'astroturf/loader',
+        options: {
+          styledTag: 'abttf',
+          tagName: 'abttfcss',
+          enableCssProp: true,
+          extension: '.module.scss',
+        },
+      },
     ],
   });
+
+  config.module.rules.push({
+    test: /\.module\.scss$/,
+    use: ['style-loader', 'astroturf/css-loader', 'sass-loader'],
+  });
+
   config.resolve.plugins = [
     new TsconfigPathsPlugin({
       configFile: 'tsconfig.storybook.json',
