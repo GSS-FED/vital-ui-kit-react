@@ -35,7 +35,7 @@ export const MenuItem = styled.div<{
   isWrap: boolean;
   hightlighted: boolean;
 }>`
-  display: block;
+  display: flex;
   padding: 0.5em 1em 0.5em;
   clear: both;
   line-height: 1;

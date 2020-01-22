@@ -228,7 +228,7 @@ export default <T extends any>(theme: T) => ({
     },
     item: {
       color: theme.colors.secondary600,
-      hoverBg: theme.colors.secondary200,
+      hoverBg: theme.colors.secondary100,
     },
     button: {
       color: theme.colors.secondary700,

@@ -8,6 +8,7 @@ import { withNotes } from '@storybook/addon-notes';
 
 import { Select, MultiSelect, Tag } from '.';
 import { MoreOption, Close } from '@vital-ui/react-icon';
+import { Checkbox } from '../checkbox';
 
 const FormWrapper = styled.div`
   max-width: 500px;
@@ -121,7 +122,11 @@ class TagExample extends React.Component<
   };
 
   onChangeItem = selectedItem => {
-    this.setState({ selectedItem });
+    if (!this.state.selectedItem.includes(selectedItem))
+      this.setState(prevState => ({
+        selectedItem: [...prevState.selectedItem, ...selectedItem],
+      }));
+    else this.onDeleteItem(selectedItem);
   };
 
   onDeleteItem = item => {
@@ -135,9 +140,8 @@ class TagExample extends React.Component<
   render() {
     return (
       <MultiSelect<Item>
-        // @ts-ignore
         itemToString={item => (item ? item.content : '')}
-        onChange={this.onChangeItem}
+        // onChange={this.onChangeItem}
         values={this.state.selectedItem}
         selection={this.state.selectedItem.map((item, i) => (
           <Tag key={i} onCloseClick={() => this.onDeleteItem(item)}>
@@ -148,13 +152,18 @@ class TagExample extends React.Component<
         <MultiSelect.Dropdown
           popup={items
             // @ts-ignore
-            .filter(item => !this.state.selectedItem.includes(item))
+            // .filter(item => !this.state.selectedItem.includes(item))
             .map((item, i) => (
               <MultiSelect.DropdownItem
                 key={item.content}
                 item={item}
                 index={i}
               >
+                <Checkbox
+                  key={i}
+                  onChange={() => this.onChangeItem(item)}
+                  checked={this.state.selectedItem.includes(item)}
+                />
                 {item.content}
               </MultiSelect.DropdownItem>
             ))}
