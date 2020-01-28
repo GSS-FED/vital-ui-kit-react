@@ -24,7 +24,7 @@
     "@vital-ui/react-utils": "^0.10.5",
     "classnames": "^2.2.6",
     "downshift": "^3.1.12",
-    "polished": "3.1.0",
+    "polished": "3.4.4",
     "react-click-outside": "3",
     "react-is": "^16.4.1",
     "react-resize-detector": "^3.4.0",
