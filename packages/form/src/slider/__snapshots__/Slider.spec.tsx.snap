@@ -121,17 +121,7 @@ exports[`Slider should render with default styles 1`] = `
         }
       }
     />
-    <div
-      style={
-        Object {
-          "display": "none",
-          "height": 0,
-          "position": "absolute",
-          "visibility": "hidden",
-          "width": 0,
-        }
-      }
-    />
+    <div />
   </div>
 </div>
 `;
