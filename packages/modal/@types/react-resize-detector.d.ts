@@ -11,7 +11,7 @@ declare module 'react-resize-detector' {
     /** Do not trigger onResize when a component mounts. Default: false */
     skipOnMount?: boolean;
     /** Id of the element we want to observe. If none provided, parentElement of the component will be used. Default: "" */
-    resizableElementId?: string;
+    querySelector?: string;
     /** Possible values: throttle and debounce */
     refreshMode?: 'throttle' | 'debounce';
     /** Makes sense only when refreshMode is set. Default: 1000. */
