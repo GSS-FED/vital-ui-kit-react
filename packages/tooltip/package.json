@@ -20,7 +20,7 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.5",
     "classnames": "^2.2.6",
-    "rc-trigger": "2.6.2"
+    "rc-trigger": "v4.0.0-alpha.7"
   },
   "devDependencies": {
     "copyfiles": "2.1.0",
