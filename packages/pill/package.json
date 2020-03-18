@@ -18,6 +18,7 @@
     "@vital-ui/react-badge": "^0.10.5",
     "@vital-ui/react-theme": "^0.10.5",
     "@vital-ui/react-utils": "^0.10.5",
+    "@vital-ui/react-popup": "^0.10.5",
     "classnames": "^2.2.6",
     "react-priority-navigation": "1.0.2"
   },
