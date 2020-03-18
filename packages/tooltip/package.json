@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "clean": "rm -rf dist cjs",
-    "compile": "tsc && tsc --module commonjs --outdir cjs"
+    "compile:less": "lessc --include-path=../../node_modules ./src/index.less ./src/index.css",
+    "compile:copy": "cp ./src/index.css ./dist/index.css",
+    "compile": "tsc && tsc --module commonjs --outdir cjs && npm run compile:less && npm run compile:copy"
   },
   "author": "",
   "peerDependencies": {
