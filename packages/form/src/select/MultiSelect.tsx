@@ -62,12 +62,22 @@ type State = {
   isOpen: boolean;
 };
 
+function isReactElement(
+  elem: React.ReactChild | boolean | {},
+): elem is React.ReactElement {
+  return (
+    typeof elem !== 'number' &&
+    typeof elem !== 'string' &&
+    typeof elem !== 'boolean' &&
+    typeof elem !== 'object'
+  );
+}
+
 export interface MultiSelectProps<T> extends SelectProps<T[]> {
   onChange?: (item: T[]) => void;
   selection?:
     | ((selectedItem: T) => React.ReactNode)
     | React.ReactNode;
-  children: React.ReactNode;
   values: T[];
 }
 
@@ -136,6 +146,8 @@ export class MultiSelect<T> extends React.Component<
 
   render() {
     const { children, selection, values, ...props } = this.props;
+    // TODO: use `invariant` to guard the child node
+    const child = React.Children.only(children);
     return (
       <Select<T[]>
         inputValue={this.state.input}
@@ -147,18 +159,20 @@ export class MultiSelect<T> extends React.Component<
         // @ts-ignore
         onChange={this.handleChange}
       >
-        {React.cloneElement(
-          React.Children.only(children),
-          {},
-          <InputWrapper onClick={this.handleInputClick}>
-            {selection && selection}
-            <Input
-              ref={this.input}
-              onChange={this.handleInputChange}
-              onKeyDown={this.handleKeyDown}
-            />
-          </InputWrapper>,
-        )}
+        {isReactElement(child)
+          ? React.cloneElement(
+              child,
+              {},
+              <InputWrapper onClick={this.handleInputClick}>
+                {selection && selection}
+                <Input
+                  ref={this.input}
+                  onChange={this.handleInputChange}
+                  onKeyDown={this.handleKeyDown}
+                />
+              </InputWrapper>,
+            )
+          : child}
         {/* {children} */}
       </Select>
     );
