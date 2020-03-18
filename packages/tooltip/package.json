@@ -20,10 +20,11 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.5",
     "classnames": "^2.2.6",
-    "rc-trigger": "v4.0.0-alpha.7"
+    "rc-trigger": "v4.0.2"
   },
   "devDependencies": {
     "copyfiles": "2.1.0",
+    "less": "^3.11.1",
     "typescript": "3.3.4000"
   }
 }
