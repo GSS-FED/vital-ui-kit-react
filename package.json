@@ -90,7 +90,7 @@
     "react-docgen-typescript-loader": "3.7.1",
     "react-dom": "16.13.0",
     "react-test-renderer": "16.13.0",
-    "react-testing-library": "6.1.2",
+    "react-testing-library": "8.0.1",
     "rimraf": "3.0.2",
     "rxjs": "6.5.4",
     "storybook-styled-components": "1.1.4",
