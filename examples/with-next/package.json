@@ -9,6 +9,7 @@
   },
   "keywords": [],
   "author": "",
+  "license": "MIT",
   "dependencies": {
     "@vital-ui/react": "latest",
     "@zeit/next-css": "^1.0.1",
