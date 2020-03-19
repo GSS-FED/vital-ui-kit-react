@@ -64,8 +64,8 @@ import {
   WidthProps,
   zIndex,
   ZIndexProps,
-  BgColorProps,
-  bgColor,
+  BackgroundColorProps,
+  backgroundColor,
 } from 'styled-system';
 
 export interface BoxProps
@@ -100,7 +100,7 @@ export interface BoxProps
     WidthProps,
     ZIndexProps,
     MinWidthProps,
-    BgColorProps {
+    BackgroundColorProps {
   color?: string;
 }
 
@@ -137,7 +137,7 @@ export const boxStyle = css`
   ${fontFamily};
   ${minWidth};
   ${color};
-  ${bgColor};
+  ${backgroundColor};
 `;
 
 export const superBoxStyle = css`
