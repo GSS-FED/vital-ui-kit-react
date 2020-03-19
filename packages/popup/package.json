@@ -23,7 +23,7 @@
     "rc-trigger": "v4.0.2"
   },
   "devDependencies": {
-    "less": "^3.11.1",
+    "less": "3.11.1",
     "typescript": "3.8.3"
   }
 }
