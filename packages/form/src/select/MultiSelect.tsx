@@ -47,13 +47,12 @@ const Input = React.forwardRef<
   >
 >((props, ref) => (
   <Context.Consumer>
-    {({ getInputProps }) => (
-      <InputBase
+    {({ getInputProps }) => {
+      return (
         // @ts-ignore
-        ref={ref}
-        {...getInputProps({ ...props })}
-      />
-    )}
+        <InputBase ref={ref} {...getInputProps({ ...props })} />
+      );
+    }}
   </Context.Consumer>
 ));
 
