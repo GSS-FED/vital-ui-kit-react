@@ -83,7 +83,7 @@
     "jest-styled-components": "6.3.4",
     "lerna": "3.20.2",
     "lerna-changelog": "1.0.1",
-    "lint-staged": "8.2.1",
+    "lint-staged": "10.0.8",
     "markdown-loader-jest": "0.1.1",
     "prettier": "1.19.1",
     "react": "16.13.0",
