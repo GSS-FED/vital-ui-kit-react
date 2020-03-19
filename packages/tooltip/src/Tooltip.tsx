@@ -119,7 +119,7 @@ export const Tooltip: React.SFC<TooltipProps> = ({
 }) => {
   const TooltipBase = () => [
     <TooltipArrow className="rc-tooltip-arrow" key="arrow" />,
-    <TooltipContent key="content" {...popupStyle}>
+    <TooltipContent key="content" style={popupStyle}>
       {popup}
     </TooltipContent>,
   ];
