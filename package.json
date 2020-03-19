@@ -7,6 +7,9 @@
       "packages/*"
     ]
   },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
   "scripts": {
     "reset": "rm -rf node_modules/ yarn.lock packages/*/node_modules",
     "clean-all": "yarn cache clean && yarn run reset && yarn run clean:build",
@@ -79,7 +82,7 @@
     "jest-specific-snapshot": "2.0.0",
     "jest-styled-components": "6.3.1",
     "lerna": "3.20.2",
-    "lerna-changelog": "0.8.3",
+    "lerna-changelog": "1.0.1",
     "lint-staged": "8.1.5",
     "markdown-loader-jest": "0.1.1",
     "prettier": "1.19.1",
