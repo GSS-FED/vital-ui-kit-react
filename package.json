@@ -68,7 +68,7 @@
     "@types/react-dom": "16.9.5",
     "@types/react-is": "16.7.1",
     "@types/styled-components": "4.4.3",
-    "@types/styled-system": "3.2.2",
+    "@types/styled-system": "5.1.9",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "25.1.0",
     "babel-loader": "8.0.6",
