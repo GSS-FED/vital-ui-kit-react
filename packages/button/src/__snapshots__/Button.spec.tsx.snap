@@ -44,7 +44,7 @@ Object {
 <body>
     <div>
       <button
-        class="vital__button c0"
+        class="c0 vital__button"
         type="button"
       >
         button text
@@ -53,7 +53,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-htpNat vital__button japkjZ"
+      class="sc-htpNat japkjZ vital__button"
       type="button"
     >
       button text

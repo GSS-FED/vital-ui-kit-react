@@ -54,7 +54,7 @@ Object {
 <body>
     <div>
       <button
-        class="vital__button c0"
+        class="c0 vital__button"
         type="button"
       >
         Click
@@ -72,7 +72,7 @@ Object {
             class="rc-trigger-popup-content"
           >
             <div
-              class="rc-tooltip-arrow "
+              class="rc-tooltip-arrow"
             />
             <div
               class="c1"
@@ -86,7 +86,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-ifAKCX vital__button kXhscO"
+      class="sc-ifAKCX kXhscO vital__button"
       type="button"
     >
       Click

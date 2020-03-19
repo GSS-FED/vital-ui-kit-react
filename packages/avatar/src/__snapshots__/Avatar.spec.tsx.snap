@@ -14,10 +14,10 @@ exports[`Avatar should render with default styles 1`] = `
 }
 
 <div
-  className="vital__avatar c0"
+  className="c0 vital__avatar"
 >
   <div
-    className="vital__avatar-image-wrapper c1"
+    className="c1 vital__avatar-image-wrapper"
     size="medium"
   >
     <svg
@@ -63,10 +63,10 @@ exports[`Avatar should render with number size prop 1`] = `
 }
 
 <div
-  className="vital__avatar c0"
+  className="c0 vital__avatar"
 >
   <div
-    className="vital__avatar-image-wrapper c1"
+    className="c1 vital__avatar-image-wrapper"
     size={150}
   >
     <svg
@@ -112,10 +112,10 @@ exports[`Avatar should render with theme props 1`] = `
 }
 
 <div
-  className="vital__avatar c0"
+  className="c0 vital__avatar"
 >
   <div
-    className="vital__avatar-image-wrapper c1"
+    className="c1 vital__avatar-image-wrapper"
     size="xsmall"
   >
     <svg

@@ -56,7 +56,7 @@ Object {
 
 <div>
       <label
-        class="vital__checkbox c0"
+        class="c0 vital__checkbox"
       >
         <span
           class="c1"
@@ -92,7 +92,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa cwScPZ"
+      class="sc-bdVaJa cwScPZ vital__checkbox"
     >
       <span
         class="sc-htpNat cUzqxB"
@@ -244,7 +244,7 @@ Object {
 
 <div>
       <label
-        class="vital__checkbox c0"
+        class="c0 vital__checkbox"
       >
         <span
           class="c1"
@@ -281,7 +281,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa cwScPZ"
+      class="sc-bdVaJa cwScPZ vital__checkbox"
     >
       <span
         class="sc-htpNat deAzeE"
@@ -434,7 +434,7 @@ Object {
 <body>
     <div>
       <label
-        class="vital__checkbox c0"
+        class="c0 vital__checkbox"
       >
         <span
           class="c1"
@@ -471,7 +471,7 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="vital__checkbox sc-bdVaJa cwScPZ"
+      class="sc-bdVaJa cwScPZ vital__checkbox"
     >
       <span
         class="sc-htpNat deAzeE"
