@@ -14312,10 +14312,10 @@ store2@^2.7.1:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.10.0.tgz#46b82bb91878daf1b0d56dec2f1d41e54d5103cf"
   integrity sha512-tWEpK0snS2RPUq1i3R6OahfJNjWCQYNxq0+by1amCSuw0mXtymJpzmZIeYpA1UAa+7B0grCpNYIbDcd7AgTbFg==
 
-storybook-styled-components@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/storybook-styled-components/-/storybook-styled-components-1.1.3.tgz#497a3656ea8245fdf9153de6cd3fb893048559f6"
-  integrity sha512-uKnp+L5FkRxpGMufVclxcV/PGtuZSuxs7jxwG0uRJzPQseXFyZP5hxFq+Jvnm8SvrUEMDiSsETsvEj2A4Jqpdg==
+storybook-styled-components@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/storybook-styled-components/-/storybook-styled-components-1.1.4.tgz#297cac520cc8e92249a60571ff1c7502d9fb880e"
+  integrity sha512-xPxOcj2u9qkRfofmxRYuivSZlVEjzXcbHAF6B9+OdPA76t1J0D0DXscfUbVa1o7jOkpj1cB9U//n9WIwKOjaAA==
 
 stream-browserify@^2.0.1:
   version "2.0.2"
