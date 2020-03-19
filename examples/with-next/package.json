@@ -13,7 +13,7 @@
   "dependencies": {
     "@vital-ui/react": "latest",
     "@zeit/next-css": "^1.0.1",
-    "next": "^7.0.1",
+    "next": "^7.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "styled-components": "^3.4.10"
