@@ -20,6 +20,6 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.5",
     "classnames": "^2.2.6",
-    "styled-system": "^3.2.1"
+    "styled-system": "^5.0.0"
   }
 }
