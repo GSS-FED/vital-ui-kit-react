@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.10.6 (2020-03-19)
+
+#### :rocket: Enhancement
+* `avatar`
+  * [#502](https://github.com/GSS-FED/vital-ui-kit-react/pull/502) add imgProps for onError or other fn ([@ga021396](https://github.com/ga021396))
+
+  #### Committers: 2
+  - ChiFeng ([@ga021396](https://github.com/ga021396))
+  - [@dependabot[bot]](https://github.com/apps/dependabot)
+
 ## 0.10.1 (2019-03-19)
 
 #### :bug: Bug Fix
