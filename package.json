@@ -92,7 +92,7 @@
     "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1",
     "rimraf": "3.0.2",
-    "rxjs": "6.5.4",
+    "rxjs": "6.5.5",
     "storybook-styled-components": "1.1.4",
     "styled-components": "4.4.1",
     "ts-jest": "25.3.0",
