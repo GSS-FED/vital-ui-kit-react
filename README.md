@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://react.vitaluikit.com">
+  <a href="https://gss-fed.github.io/vital-ui-kit-react/">
     <img src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit/develop/assets/img/icon.png" height=72 />
     <img src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit-react/master/assets/uwillx.png" height=72 />
   </a>
@@ -8,7 +8,7 @@
 <p align="center">
   Simple, Themeable, Customizable React UI library
   <br>
-  <a href="http://react.vitaluikit.com/">
+  <a href="https://gss-fed.github.io/vital-ui-kit-react/">
     <strong>View Storybook &raquo;</strong>
   </a>
   <br>
