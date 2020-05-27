@@ -25,7 +25,7 @@
     "rc-trigger": "v4.0.2"
   },
   "devDependencies": {
-    "copyfiles": "2.2.0",
+    "copyfiles": "2.3.0",
     "less": "3.11.1",
     "typescript": "3.8.3"
   }

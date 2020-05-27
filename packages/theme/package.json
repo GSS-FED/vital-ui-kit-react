@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/fs-extra": "9.0.1",
     "@types/lodash.merge": "4.6.6",
-    "copyfiles": "2.2.0",
+    "copyfiles": "2.3.0",
     "fs-extra": "9.0.0",
     "typescript": "3.8.3"
   },
