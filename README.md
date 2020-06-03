@@ -49,7 +49,7 @@ An example of Offical Document contains all Vital UI Kit components
 <img
   src="https://raw.githubusercontent.com/GSS-FED/vital-ui-kit-react/master/assets/demo_screen_shot.png"
 />
-<a href="https://speed-vital-react.netlify.com/"><b>View Demo</b></a>
+<a href="https://gss-fed.github.io/example-speed/"><b>View Demo</b></a>
 
 ### Bit
 
