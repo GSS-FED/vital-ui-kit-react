@@ -1,10 +1,9 @@
 import styled from 'styled-components';
+import { Box } from '../../../packages/utils';
+import { Avatar } from '../../../packages/avatar';
+import { Card } from '../../../packages/card';
+import { Button, ButtonGroup } from '../../../packages/button';
 import {
-  Box,
-  Avatar,
-  Card,
-  Button,
-  ButtonGroup,
   Slider,
   Input,
   FieldInput,
@@ -15,8 +14,8 @@ import {
   Switch,
   Checkbox,
   CheckboxGroup,
-} from '@vital-ui/react';
-import { Music } from '@vital-ui/react-icon';
+} from '../../../packages/form';
+import { Music } from '../../../packages/icon';
 
 const AVATAR = [
   { size: 'xsmall', circle: true, outline: true },
