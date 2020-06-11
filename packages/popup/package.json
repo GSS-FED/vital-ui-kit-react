@@ -7,7 +7,9 @@
   "scripts": {
     "clean": "rm -rf dist lib",
     "compile:less": "lessc --include-path=../../node_modules ./src/index.less ./src/index.css",
-    "compile:copy": "cp ./src/index.css ./dist/index.css",
+    "compile:copy-dist": "cp ./src/index.css ./dist/index.css",
+    "compile:copy-cjs": "cp ./src/index.css ./cjs/index.css",
+    "compile:copy": "npm run compile:copy-dist && npm run compile:copy-cjs",
     "compile": "tsc && tsc --module commonjs --outdir cjs && npm run compile:less && npm run compile:copy"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
