@@ -81,7 +81,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "26.0.1",
     "jest-specific-snapshot": "3.0.0",
-    "jest-styled-components": "6.3.4",
+    "jest-styled-components": "7.0.3",
     "lerna": "3.22.1",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.2.9",
