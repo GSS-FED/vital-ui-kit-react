@@ -4,10 +4,11 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "gen:icons": "svgr -d src lib/vital_icons --ext tsx --icon --replace-attr-values '#27aae1=currentColor'",
-    "clean": "rm -rf dist lib",
-    "compile": "tsc && tsc --module commonjs --outdir cjs"
+    "gen:icons": "svgr -d src assets --ext tsx --icon --replace-attr-values '#27aae1=currentColor'",
+    "clean": "rm -rf dist cjs types",
+    "compile": "rollup --config"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
@@ -16,7 +17,13 @@
     "styled-components": "*"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
     "@svgr/cli": "5.4.0",
+    "rollup": "^2.36.1",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tslib": "^2.1.0",
     "typescript": "3.8.3"
   },
   "dependencies": {
