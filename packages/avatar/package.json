@@ -4,14 +4,16 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "gen:assets": "svgr -d default-avatar assets --ext tsx --icon",
-    "clean": "rm -rf dist cjs",
-    "compile": "tsc && tsc --module commonjs --outdir cjs"
+    "clean": "rm -rf dist cjs types",
+    "compile": "rollup --config"
   },
   "files": [
     "dist",
     "cjs",
+    "types",
     "src"
   ],
   "sideEffects": false,
@@ -27,7 +29,13 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
     "@svgr/cli": "5.4.0",
+    "rollup": "^2.36.1",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tslib": "^2.1.0",
     "typescript": "3.8.3"
   }
 }
