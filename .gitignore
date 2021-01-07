@@ -10,6 +10,7 @@ esm/
 coverage/
 .changelog/
 cjs/
+types/
 js2tsx
 storybook-static
 .awcache
