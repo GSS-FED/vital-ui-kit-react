@@ -4,9 +4,10 @@
   "description": "",
   "main": "cjs/index.js",
   "module": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "clean": "rm -rf dist cjs",
-    "compile": "tsc && tsc --module commonjs --outdir cjs"
+    "clean": "rm -rf dist cjs types",
+    "compile": "rollup --config"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "peerDependencies": {
@@ -20,6 +21,12 @@
     "classnames": "^2.2.6"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "rollup": "^2.36.1",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "tslib": "^2.1.0",
     "typescript": "3.8.3"
   }
 }
