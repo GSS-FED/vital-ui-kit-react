@@ -16,7 +16,7 @@
     "next": "9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^4.4.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.5.1"
