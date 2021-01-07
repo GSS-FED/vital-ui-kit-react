@@ -14,7 +14,7 @@
     "reset": "rm -rf node_modules/ yarn.lock packages/*/node_modules",
     "clean-all": "yarn cache clean && yarn run reset && yarn run clean:build",
     "bootstrap": "lerna bootstrap && yarn run build",
-    "clean:build": "lerna exec -- rm -rf dist cjs",
+    "clean:build": "lerna run clean --stream",
     "build": "lerna run compile --stream",
     "prebuild": "yarn clean:build",
     "watch": "cross-env NODE_ENV=development lerna exec --parallel -- tsc-watch",
