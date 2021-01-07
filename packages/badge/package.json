@@ -10,6 +10,7 @@
     "compile": "rollup --config"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",

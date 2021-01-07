@@ -12,6 +12,7 @@
     "compile": "npm run compile:less && npm run compile:js"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16",
     "react-dom": "^16",
