@@ -7,9 +7,7 @@
   "types": "types/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist cjs types",
-    "compile:less": "lessc --include-path=../../node_modules ./src/index.less ./src/index.css",
-    "compile:js": "rollup --config",
-    "compile": "npm run compile:less && npm run compile:js"
+    "compile": "rollup --config"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
@@ -27,11 +25,10 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
-    "fs-extra": "^9.0.1",
     "less": "3.11.3",
     "rollup": "^2.36.1",
+    "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-typescript2": "^0.29.0",
     "tslib": "^2.1.0",
     "typescript": "3.8.3"
