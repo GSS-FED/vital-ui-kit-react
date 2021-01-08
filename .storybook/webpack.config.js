@@ -61,6 +61,13 @@ module.exports = ({ config, mode }) => {
         },
       },
     ],
+  }, {
+    test: /\.less$/,
+    use: [
+      'style-loader',
+      'css-loader',
+      'less-loader',
+    ]
   });
   config.resolve.plugins = [
     new TsconfigPathsPlugin({
