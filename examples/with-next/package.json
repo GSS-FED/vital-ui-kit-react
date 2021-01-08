@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "next": "9.4.4"
+    "next": "10.0.5"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.5.1"

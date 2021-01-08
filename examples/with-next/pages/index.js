@@ -53,7 +53,7 @@ const Section = ({ title, children }) => (
     {children}
   </Box>
 );
-export default () => (
+const App = () => (
   <div>
     <Section title="Avatar">
       {AVATAR.map((avatar, i) => (
@@ -198,6 +198,8 @@ export default () => (
     </Section>
   </div>
 );
+
+export default App;
 
 const Wrapper = styled.div`
   margin-right: 5px;
