@@ -23,7 +23,7 @@
   "dependencies": {
     "@vital-ui/react-theme": "^0.10.6",
     "classnames": "^2.2.6",
-    "rc-trigger": "v4.3.0"
+    "rc-trigger": "v4.4.3"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
