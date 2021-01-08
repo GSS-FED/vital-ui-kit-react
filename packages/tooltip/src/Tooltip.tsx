@@ -5,7 +5,7 @@
 
 import { defaultTheme } from '@vital-ui/react-theme';
 import Trigger from 'rc-trigger';
-import './index.css';
+import './index.less';
 import * as React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { placements } from './placements';

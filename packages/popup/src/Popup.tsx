@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Trigger from 'rc-trigger';
-import './index.css';
+import './index.less';
 import { PopupContent } from './PopupContent';
 import { placements, Placement } from './placements';
 
