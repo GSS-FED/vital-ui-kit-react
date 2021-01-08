@@ -21,7 +21,7 @@
     "@vital-ui/react-theme": "^0.10.6",
     "@vital-ui/react-utils": "^0.10.6",
     "classnames": "^2.2.6",
-    "react-resize-detector": "^4.0.0"
+    "react-resize-detector": "^5.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
