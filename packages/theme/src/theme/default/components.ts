@@ -1,7 +1,10 @@
 import { rgba, lighten } from 'polished';
+import { default as theme } from '.';
+
+type Theme = typeof theme;
 
 // component theme factory
-export default <T extends any>(theme: T) => ({
+export default (theme: Theme) => ({
   borderColor: theme.colors.secondary300,
   labelColor: theme.colors.secondary600,
   border: `1px solid ${theme.colors.secondary300}`,
@@ -234,9 +237,7 @@ export default <T extends any>(theme: T) => ({
     },
   },
   tab: {
-    bg: `linear-gradient(to left, ${theme.colors.info}, ${
-      theme.colors.primary500
-    })`,
+    bg: `linear-gradient(to left, ${theme.colors.info}, ${theme.colors.primary500})`,
     panel: {
       bg: theme.colors.white,
       color: theme.colors.secondary600,
