@@ -8,7 +8,8 @@
   "scripts": {
     "gen:icons": "svgr -d src assets --ext tsx --icon --replace-attr-values '#27aae1=currentColor'",
     "clean": "rm -rf dist cjs types",
-    "compile": "rollup --config"
+    "compile": "rollup --config",
+    "watch": "rollup --config --watch"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",

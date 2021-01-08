@@ -8,7 +8,8 @@
   "sideEffects": false,
   "scripts": {
     "clean": "rm -rf dist cjs types",
-    "compile": "rollup --config"
+    "compile": "rollup --config",
+    "watch": "rollup --config --watch"
   },
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",

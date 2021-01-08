@@ -8,7 +8,8 @@
   "scripts": {
     "gen:assets": "svgr -d default-avatar assets --ext tsx --icon",
     "clean": "rm -rf dist cjs types",
-    "compile": "rollup --config"
+    "compile": "rollup --config",
+    "watch": "rollup --config --watch"
   },
   "files": [
     "dist",
