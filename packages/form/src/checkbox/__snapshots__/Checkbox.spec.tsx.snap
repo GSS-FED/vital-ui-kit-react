@@ -92,13 +92,13 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="sc-bdVaJa cwScPZ vital__checkbox"
+      class="sc-bdfBwQ dyeZAw vital__checkbox"
     >
       <span
-        class="sc-htpNat cUzqxB"
+        class="sc-dlfnbm fxidRt"
       >
         <div
-          class="sc-ifAKCX hLQgOo"
+          class="sc-eCssSg iruMB"
         >
           <svg
             height="1rem"
@@ -115,10 +115,10 @@ Object {
         </div>
       </span>
       <span
-        class="sc-bwzfXH iuQrxO"
+        class="sc-gsTCUz lbATOu"
       >
         <input
-          class="sc-bxivhb cRvGhf"
+          class="sc-hKgILt bIpQBE"
           type="checkbox"
         />
         round
@@ -273,13 +273,13 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="sc-bdVaJa cwScPZ vital__checkbox"
+      class="sc-bdfBwQ dyeZAw vital__checkbox"
     >
       <span
-        class="sc-htpNat deAzeE"
+        class="sc-dlfnbm dKNEyE"
       >
         <div
-          class="sc-ifAKCX jXwSsA"
+          class="sc-eCssSg Sxutx"
         >
           <svg
             height="1rem"
@@ -296,11 +296,11 @@ Object {
         </div>
       </span>
       <span
-        class="sc-bwzfXH bukUYK"
+        class="sc-gsTCUz dJfTWo"
       >
         <input
           checked=""
-          class="sc-bxivhb cRvGhf"
+          class="sc-hKgILt bIpQBE"
           type="checkbox"
         />
         custom
@@ -455,13 +455,13 @@ Object {
   </body>,
   "container": <div>
     <label
-      class="sc-bdVaJa cwScPZ vital__checkbox"
+      class="sc-bdfBwQ dyeZAw vital__checkbox"
     >
       <span
-        class="sc-htpNat deAzeE"
+        class="sc-dlfnbm dKNEyE"
       >
         <div
-          class="sc-ifAKCX jXwSsA"
+          class="sc-eCssSg Sxutx"
         >
           <svg
             height="1rem"
@@ -478,11 +478,11 @@ Object {
         </div>
       </span>
       <span
-        class="sc-bwzfXH iuQrxO"
+        class="sc-gsTCUz lbATOu"
       >
         <input
           checked=""
-          class="sc-bxivhb cRvGhf"
+          class="sc-hKgILt bIpQBE"
           type="checkbox"
         />
         default

@@ -21,7 +21,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "lint": "tslint -c tslint.json './**/*.{ts,tsx}'",
-    "test": "NODE_ENV=test jest --env=jsdom",
+    "test": "NODE_ENV=test jest",
     "format": "prettier --write '**/**.{js,jsx,ts,tsx}'",
     "changelog": "lerna-changelog",
     "publish": "lerna publish"
