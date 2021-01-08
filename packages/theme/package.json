@@ -24,7 +24,7 @@
     "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-typescript2": "^0.29.0",
     "tslib": "^2.1.0",
-    "typescript": "3.8.3"
+    "typescript": "3.9.7"
   },
   "peerDependencies": {
     "react": "^16",
