@@ -17,7 +17,7 @@
     "clean:build": "lerna run clean --stream",
     "build": "lerna run compile --stream",
     "prebuild": "yarn clean:build",
-    "watch": "cross-env NODE_ENV=development lerna exec --parallel -- tsc-watch",
+    "watch": "cross-env NODE_ENV=development lerna run watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "lint": "tslint -c tslint.json './**/*.{ts,tsx}'",
