@@ -10,13 +10,14 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@vital-ui/react": "latest",
-    "@zeit/next-css": "^1.0.1",
-    "next": "9.4.4",
+  "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.2.1"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "9.4.4"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.5.1"
