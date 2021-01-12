@@ -12,7 +12,7 @@ import {
   BoxProps,
   transitionBase,
 } from '@vital-ui/react-utils';
-import { RadioContext } from './RadioContext';
+import { RadioConsumer } from './RadioContext';
 
 interface RootProps extends BoxProps {
   disabled?: boolean;
@@ -27,8 +27,8 @@ const Root = styled('label')<RootProps>`
   color: ${({ disabled, theme }) => theme.radio.color(disabled)};
   line-height: 1.3333rem;
   font-size: 1rem;
-  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
-  pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
+  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
+  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
 
   :hover {
     input {
@@ -123,7 +123,7 @@ export const Radio: React.SFC<RadioProps> = ({
   onChange,
   ...props
 }) => (
-  <RadioContext.Consumer>
+  <RadioConsumer>
     {({ name, disabled, seletedValue, onChange: handleChange }) => (
       <Root
         style={style}
@@ -146,5 +146,5 @@ export const Radio: React.SFC<RadioProps> = ({
         <Label>{label}</Label>
       </Root>
     )}
-  </RadioContext.Consumer>
+  </RadioConsumer>
 );

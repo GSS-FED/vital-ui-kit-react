@@ -7,6 +7,6 @@ interface RadioContextProps {
   onChange?: (value: any) => void;
 }
 
-export const RadioContext = React.createContext<RadioContextProps>(
-  {},
-);
+const Context = React.createContext<RadioContextProps>({});
+export const RadioProvider = Context.Provider;
+export const RadioConsumer = Context.Consumer;

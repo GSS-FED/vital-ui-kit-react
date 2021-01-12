@@ -6,7 +6,7 @@
 import * as React from 'react';
 import cn from 'classnames';
 import { Box, BoxProps } from '@vital-ui/react-utils';
-import { RadioContext } from './RadioContext';
+import { RadioProvider } from './RadioContext';
 
 export interface RadioGroupProps<T> extends BoxProps {
   onChange?: (selectedValue: T | string | number) => void;
@@ -37,7 +37,7 @@ export class RadioGroup<T> extends React.Component<
     disabled: false,
   };
 
-  handleChange = value => {
+  handleChange = (value) => {
     if (this.props.onChange) {
       this.props.onChange(value);
     }
@@ -58,7 +58,7 @@ export class RadioGroup<T> extends React.Component<
         className={cn('vital__radio-group', className)}
         {...props}
       >
-        <RadioContext.Provider
+        <RadioProvider
           value={{
             name: name,
             disabled: this.props.disabled,
@@ -67,7 +67,7 @@ export class RadioGroup<T> extends React.Component<
           }}
         >
           {this.props.children}
-        </RadioContext.Provider>
+        </RadioProvider>
       </Box>
     );
   }
