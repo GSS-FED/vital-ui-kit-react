@@ -49,12 +49,7 @@
     "styled-components": ">=2 || >=3"
   },
   "devDependencies": {
-    "copyfiles": "2.3.0",
-    "rollup": "^2.36.1",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "tslib": "^2.1.0",
-    "typescript": "3.8.3"
+    "copyfiles": "2.3.0"
   },
   "license": "MIT",
   "bugs": {
