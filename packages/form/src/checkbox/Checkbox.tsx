@@ -9,7 +9,8 @@ import { rgba } from 'polished';
 import { CheckIcon } from './CheckIcon';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
-import { CheckboxContext } from './CheckboxContext';
+import * as CC from './CheckboxContext';
+import { CheckboxConsumer } from './CheckboxContext';
 
 const Root = styled.label`
   font-size: 15px;
@@ -49,7 +50,7 @@ const CheckWrapper = styled('span')<CheckWrapper>`
   width: ${({ theme }) => theme.checkbox.size};
   height: ${({ theme }) => theme.checkbox.size};
   border: ${({ theme }) => `1px solid ${theme.checkbox.borderColor}`};
-  border-radius: ${props => (props.round ? '50%' : '2px')};
+  border-radius: ${(props) => (props.round ? '50%' : '2px')};
   background-color: ${({ checked, round, theme }) =>
     checked
       ? theme.checkbox.checkedBg
@@ -181,7 +182,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
     } = this.props;
 
     return (
-      <CheckboxContext.Consumer>
+      <CheckboxConsumer>
         {({
           round: contextRound,
           disabled: contextDisabled,
@@ -207,7 +208,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
                 defaultChecked={defaultChecked}
                 name={name}
                 {...props}
-                onChange={e => {
+                onChange={(e) => {
                   if (onChange) {
                     onChange(e);
                   }
@@ -220,7 +221,7 @@ export class Checkbox extends React.Component<CheckboxProps> {
             </Label>
           </Root>
         )}
-      </CheckboxContext.Consumer>
+      </CheckboxConsumer>
     );
   }
 }

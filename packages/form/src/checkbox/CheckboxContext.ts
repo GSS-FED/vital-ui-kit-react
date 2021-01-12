@@ -6,6 +6,7 @@ export interface CheckboxContextProps {
   round?: CheckboxProps['round'];
   disabled?: CheckboxProps['disabled'];
 }
-export const CheckboxContext = React.createContext<
-  CheckboxContextProps
->({});
+
+const Context = React.createContext<CheckboxContextProps>({});
+export const CheckboxProvider = Context.Provider;
+export const CheckboxConsumer = Context.Consumer;

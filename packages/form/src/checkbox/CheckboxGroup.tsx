@@ -7,8 +7,8 @@ import * as React from 'react';
 import cn from 'classnames';
 import { Box, BoxProps } from '@vital-ui/react-utils';
 import {
-  CheckboxContext,
   CheckboxContextProps,
+  CheckboxProvider,
 } from './CheckboxContext';
 
 export interface CheckboxGroupProps
@@ -32,7 +32,7 @@ export const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
     className={cn('vital__checkbox-group', className)}
     {...props}
   >
-    <CheckboxContext.Provider
+    <CheckboxProvider
       value={{
         icon,
         round,
@@ -40,6 +40,6 @@ export const CheckboxGroup: React.SFC<CheckboxGroupProps> = ({
       }}
     >
       {children}
-    </CheckboxContext.Provider>
+    </CheckboxProvider>
   </Box>
 );
