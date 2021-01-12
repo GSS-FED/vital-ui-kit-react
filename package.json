@@ -75,7 +75,7 @@
     "babel-plugin-styled-components": "1.10.7",
     "circular-dependency-plugin": "5.2.0",
     "copyfiles": "2.3.0",
-    "cross-env": "7.0.2",
+    "cross-env": "7.0.3",
     "faker": "4.1.0",
     "husky": "4.2.5",
     "identity-obj-proxy": "3.0.0",
