@@ -14,8 +14,6 @@
   "author": "Eric Yip (https://github.com/ericyip)",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
     "@types/fs-extra": "9.0.1",
     "@types/lodash.merge": "4.6.6",
     "copyfiles": "2.3.0",

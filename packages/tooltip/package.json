@@ -26,8 +26,6 @@
     "rc-trigger": "v4.4.3"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
     "less": "3.11.3",
     "rollup": "^2.36.1",
     "rollup-plugin-auto-external": "^2.0.0",

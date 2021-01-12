@@ -26,8 +26,6 @@
     "react-priority-navigation": "1.0.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.1",
     "rollup": "^2.36.1",
     "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-typescript2": "^0.29.0",
