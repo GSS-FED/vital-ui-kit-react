@@ -7,7 +7,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import { Select, SelectProps } from './Select';
-import { Context } from './context';
+import { SelectConsumer } from './context';
 import {
   fieldWrapperBase,
   fieldInputBase,
@@ -46,14 +46,14 @@ const Input = React.forwardRef<
     HTMLInputElement
   >
 >((props, ref) => (
-  <Context.Consumer>
+  <SelectConsumer>
     {({ getInputProps }) => {
       return (
         // @ts-ignore
         <InputBase ref={ref} {...getInputProps({ ...props })} />
       );
     }}
-  </Context.Consumer>
+  </SelectConsumer>
 ));
 
 type State = {
@@ -91,8 +91,6 @@ export class MultiSelect<T> extends React.Component<
 
   static Input: typeof Input = Input;
 
-  static Context: typeof Context = Context;
-
   state: State = {
     input: '',
     isOpen: false,
@@ -125,13 +123,13 @@ export class MultiSelect<T> extends React.Component<
     });
   };
 
-  handleInputChange: React.ChangeEventHandler<
-    HTMLInputElement
-  > = evt => {
+  handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
+    evt,
+  ) => {
     this.setState({ input: evt.target.value, isOpen: true });
   };
 
-  handleKeyDown: React.KeyboardEventHandler = evt => {
+  handleKeyDown: React.KeyboardEventHandler = (evt) => {
     const { values } = this.props;
     if (
       values.length &&

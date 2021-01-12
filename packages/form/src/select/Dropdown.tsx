@@ -9,7 +9,7 @@ import {
   PopupProps,
 } from '@vital-ui/react-popup';
 import { MenuItem } from './styled';
-import { Context } from './context';
+import { SelectConsumer } from './context';
 
 export interface DropdownProps extends PopupProps {}
 
@@ -19,7 +19,7 @@ export const Dropdown: React.SFC<DropdownProps> = ({
   ...props
 }) => {
   return (
-    <Context.Consumer>
+    <SelectConsumer>
       {({ getMenuProps, isOpen }) => (
         <Popup
           {...getMenuProps()}
@@ -33,7 +33,7 @@ export const Dropdown: React.SFC<DropdownProps> = ({
           {children}
         </Popup>
       )}
-    </Context.Consumer>
+    </SelectConsumer>
   );
 };
 
@@ -51,7 +51,7 @@ export const DropdownItem = ({
   wrap = true,
   ...props
 }: Props) => (
-  <Context.Consumer>
+  <SelectConsumer>
     {({ getItemProps, highlightedIndex }) => (
       <li
         {...getItemProps({
@@ -68,5 +68,5 @@ export const DropdownItem = ({
         </MenuItem>
       </li>
     )}
-  </Context.Consumer>
+  </SelectConsumer>
 );

@@ -32,7 +32,7 @@ class SelectExample extends React.Component<
     selectedItem: undefined,
   };
 
-  onChangeItem = selectedItem => {
+  onChangeItem = (selectedItem) => {
     this.setState({
       selectedItem,
     });
@@ -40,9 +40,9 @@ class SelectExample extends React.Component<
 
   render() {
     return (
-      <Select<Item>
+      <Select
         selectedItem={this.state.selectedItem}
-        itemToString={item => (item ? item.value : '')}
+        itemToString={(item) => (item ? item.value : '')}
         onChange={this.onChangeItem}
       >
         <Select.Dropdown
@@ -72,7 +72,7 @@ class DropdownExample extends React.Component<
     selectedItem: undefined,
   };
 
-  onChangeItem = selectedItem => {
+  onChangeItem = (selectedItem) => {
     this.setState({
       selectedItem,
     });
@@ -81,9 +81,9 @@ class DropdownExample extends React.Component<
   render() {
     const defaultText = 'Select an item';
     return (
-      <Select<Item>
+      <Select
         selectedItem={this.state.selectedItem}
-        itemToString={item => (item ? item.content : '')}
+        itemToString={(item) => (item ? item.content : '')}
         onChange={this.onChangeItem}
       >
         <Select.Dropdown
@@ -117,26 +117,26 @@ class TagExample extends React.Component<
   { selectedItem: Item[] }
 > {
   state: { selectedItem: Item[] } = {
-    selectedItem: [],
+    selectedItem: [items[0]],
   };
 
-  onChangeItem = selectedItem => {
+  onChangeItem = (selectedItem) => {
     this.setState({ selectedItem });
   };
 
-  onDeleteItem = item => {
-    this.setState(prevState => ({
+  onDeleteItem = (item) => {
+    this.setState((prevState) => ({
       selectedItem: prevState.selectedItem.filter(
-        x => x.content !== item.content,
+        (x) => x.content !== item.content,
       ),
     }));
   };
 
   render() {
     return (
-      <MultiSelect<Item>
+      <MultiSelect
         // @ts-ignore
-        itemToString={item => (item ? item.content : '')}
+        itemToString={(item) => (item ? item.content : '')}
         onChange={this.onChangeItem}
         values={this.state.selectedItem}
         selection={this.state.selectedItem.map((item, i) => (
@@ -148,7 +148,7 @@ class TagExample extends React.Component<
         <MultiSelect.Dropdown
           popup={items
             // @ts-ignore
-            .filter(item => !this.state.selectedItem.includes(item))
+            .filter((item) => !this.state.selectedItem.includes(item))
             .map((item, i) => (
               <MultiSelect.DropdownItem
                 key={item.content}

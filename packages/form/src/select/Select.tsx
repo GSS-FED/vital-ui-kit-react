@@ -12,7 +12,11 @@ import {
   RightIconButton,
 } from '../input';
 import { Dropdown, DropdownItem } from './Dropdown';
-import { withContext, Context } from './context';
+import {
+  withContext,
+  SelectProvider,
+  SelectConsumer,
+} from './context';
 import { SelectButton, SelectButtonText } from './styled';
 import { DownshiftProps } from './DownshiftTypes';
 import { CloseIcon } from './icon/CloseIcon';
@@ -48,14 +52,14 @@ const Button: React.SFC<{
   text?: string;
   children?: React.ReactNode;
 }> = ({ text = '', children, ...props }) => (
-  <Context.Consumer>
+  <SelectConsumer>
     {({ getToggleButtonProps }) => (
       <SelectButton {...props} {...getToggleButtonProps()}>
         {<SelectButtonText>{text}</SelectButtonText>}
         {children}
       </SelectButton>
     )}
-  </Context.Consumer>
+  </SelectConsumer>
 );
 
 Button.defaultProps = {
@@ -76,8 +80,6 @@ export class Select<T = any> extends React.Component<SelectProps<T>> {
 
   static DropdownItem: typeof DropdownItem = DropdownItem;
 
-  static Context: typeof Context = Context;
-
   static Button = Button;
 
   render() {
@@ -86,12 +88,12 @@ export class Select<T = any> extends React.Component<SelectProps<T>> {
       <Downshift {...props}>
         {(options: ControllerStateAndHelpers<T>) => (
           <Box {...options.getRootProps()} {...rootProps}>
-            <Context.Provider
+            <SelectProvider
               // @ts-ignore
               value={{ ...props, ...options }}
             >
               {children}
-            </Context.Provider>
+            </SelectProvider>
           </Box>
         )}
       </Downshift>
