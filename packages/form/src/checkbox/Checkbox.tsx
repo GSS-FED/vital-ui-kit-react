@@ -9,7 +9,6 @@ import { rgba } from 'polished';
 import { CheckIcon } from './CheckIcon';
 import { defaultTheme } from '@vital-ui/react-theme';
 import cn from 'classnames';
-import * as CC from './CheckboxContext';
 import { CheckboxConsumer } from './CheckboxContext';
 
 const Root = styled.label`
