@@ -7,7 +7,7 @@
   "types": "types/index.d.ts",
   "style": "./dist/global.css",
   "scripts": {
-    "clean": "rm -rf dist cjs types",
+    "clean": "rimraf dist cjs types",
     "compile": "rollup --config",
     "watch": "rollup --config --watch"
   },

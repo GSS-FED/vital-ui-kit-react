@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "clean": "rm -rf dist cjs types",
+    "clean": "rimraf dist cjs types",
     "compile": "rollup --config",
     "watch": "rollup --config --watch"
   },
