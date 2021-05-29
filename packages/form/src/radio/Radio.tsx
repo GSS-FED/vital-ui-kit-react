@@ -27,8 +27,8 @@ const Root = styled('label')<RootProps>`
   color: ${({ disabled, theme }) => theme.radio.color(disabled)};
   line-height: 1.3333rem;
   font-size: 1rem;
-  cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
-  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
+  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
+  pointer-events: ${props => (props.disabled ? 'none' : 'auto')};
 
   :hover {
     input {
@@ -127,7 +127,7 @@ export const Radio: React.SFC<RadioProps> = ({
     {({ name, disabled, seletedValue, onChange: handleChange }) => (
       <Root
         style={style}
-        className={cn('vital__radio')}
+        className={cn('vital__radio', className)}
         disabled={disabled}
       >
         <Input
