@@ -40,7 +40,11 @@ const Footer: React.SFC<FooterProps> = ({
   className,
   ...props
 }) => (
-  <Root style={style} className={cn('vital__card-footer')} {...props}>
+  <Root
+    style={style}
+    className={cn('vital__card-footer', className)}
+    {...props}
+  >
     {children}
   </Root>
 );
