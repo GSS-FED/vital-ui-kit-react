@@ -60,7 +60,7 @@
     "@storybook/addons": "5.3.19",
     "@storybook/react": "5.3.19",
     "@storybook/theming": "5.3.19",
-    "@svgr/cli": "5.4.0",
+    "@svgr/cli": "5.5.0",
     "@testing-library/react": "10.2.1",
     "@types/classnames": "2.2.11",
     "@types/jest": "26.0.20",
