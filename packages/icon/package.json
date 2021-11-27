@@ -18,7 +18,7 @@
     "styled-components": "*"
   },
   "devDependencies": {
-    "@svgr/cli": "5.4.0"
+    "@svgr/cli": "5.5.0"
   },
   "dependencies": {
     "classnames": "^2.2.6"
