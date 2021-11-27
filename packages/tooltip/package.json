@@ -26,6 +26,6 @@
     "rc-trigger": "v4.4.3"
   },
   "devDependencies": {
-    "rollup-plugin-postcss": "^3.1.8"
+    "rollup-plugin-postcss": "3.1.8"
   }
 }
