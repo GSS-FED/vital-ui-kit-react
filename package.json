@@ -88,7 +88,7 @@
     "less-loader": "^7.2.1",
     "lint-staged": "10.2.9",
     "markdown-loader-jest": "0.1.1",
-    "prettier": "2.0.5",
+    "prettier": "2.8.8",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "3.7.2",
     "react-dom": "^16.13.1",
